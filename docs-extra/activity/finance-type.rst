@@ -8,19 +8,34 @@ Example Usage
 
 The code should be declared in any usage of this element:
 
-``
-    <finance-type code="100"/>
-``
+
+
+.. code-block:: xml
+
+
+        <finance-type code="100"/>
+    
+
 
 Additionally, a text description of the code can be provided:
 
-``
-    <finance-type code="100">Grant</finance-type>
-``
+
+
+.. code-block:: xml
+
+
+        <finance-type code="100">Grant</finance-type>
+    
+
 
 Where this text description is in a language that differs from the
 default, then this should be declared accordingly:
 
-``
-    <finance-type code="100" xml:lang="fr">Don</finance-type>
-``
+
+
+.. code-block:: xml
+
+
+        <finance-type code="100" xml:lang="fr">Don</finance-type>
+    
+

@@ -71,5 +71,5 @@ def attribute_loop(element, indent=''):
         ):
         print_column_info( attribute.get('ref') or attribute.get('name'), indent, attribute.get('use') == 'required' )
 
-get_element('iati-activity', '  ')
+get_element('iati-activities', '  ')
 

@@ -27,31 +27,46 @@ Example Usage
 The full name of the organisation receiving the financial transaction
 (receiving in the case of loan and interest repayments).:
 
-``
-<transaction>
-  ....
-    <receiver-org>Ministere du Plan, RDC</receiver-org>
-  ...
-</transaction>
-``
+
+
+.. code-block:: xml
+
+
+    <transaction>
+      ....
+        <receiver-org>Ministere du Plan, RDC</receiver-org>
+      ...
+    </transaction>
+    
+
 
 The unique Organisation Identifier for the receiver.:
 
-``
-<transaction>
-  ....
-    <receiver-org ref="GB-1">DFID</receiver-org>
-  ...
-</transaction>
-``
+
+
+.. code-block:: xml
+
+
+    <transaction>
+      ....
+        <receiver-org ref="GB-1">DFID</receiver-org>
+      ...
+    </transaction>
+    
+
 
 If the funds are being provided to another reported activity, this must
 record the unique activity identifier for that activity:
 
-``
-<transaction>
-  ....
-    <receiver-org receiver-activity-id="CG-3-1440"/>
-  ...
-</transaction>
-``
+
+
+.. code-block:: xml
+
+
+    <transaction>
+      ....
+        <receiver-org receiver-activity-id="CG-3-1440"/>
+      ...
+    </transaction>
+    
+

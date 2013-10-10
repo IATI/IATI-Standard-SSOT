@@ -6,13 +6,53 @@
 Example Usage
 ^^^^^^^^^^^^^
 
-| `` ``\ 
-| `` ``
-| ``   ``\ \ `` ``
-| ``     ``\ 
-| ``   ``\ 
-| ``  ``
-| `` ``\ 
+| 
+
+.. code-block:: xml
+
+     
+\ 
+    | 
+
+   .. code-block:: xml
+
+        ` 
+
+    | 
+
+   .. code-block:: xml
+
+        `   
+    \ \ 
+
+   .. code-block:: xml
+
+        ` 
+
+    | 
+
+   .. code-block:: xml
+
+        `     
+    \ 
+| 
+
+.. code-block:: xml
+
+       
+\ 
+    | 
+
+   .. code-block:: xml
+
+        `  
+
+| 
+
+.. code-block:: xml
+
+     
+\ 
 
 Changelog
 ^^^^^^^^^

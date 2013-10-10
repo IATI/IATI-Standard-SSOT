@@ -4,3 +4,6 @@ done
 for f in *.txt; do pandoc -f mediawiki $f -t rst -o ../docs-extra/`basename $f .txt`; done
 #for f in *.rst; do tail -n+3 $f > tmp; mv tmp $f; done
 
+# Replace code blocks
+# /``ilakd$a..€ýc€ýb code-block:: xmlOjojV/``>/``i€kD€kD
+

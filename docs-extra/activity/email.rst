@@ -6,6 +6,11 @@
 Example Usage
 ^^^^^^^^^^^^^
 
-``
-<email>enquiry@dfid.gov.uk</email>
-``
+
+
+.. code-block:: xml
+
+
+    <email>enquiry@dfid.gov.uk</email>
+    
+

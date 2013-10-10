@@ -10,9 +10,27 @@
 Example Usage
 ^^^^^^^^^^^^^
 
-``
-<capital-spend percentage="88.8"/>
-``
+
+la
+
+kd$a.. code-block:: xml
+O
+jo
+jV/
+
+.. code-block:: xml
+
+
+    >/
+
+
+
+.. code-block:: xml
+
+
+    <capital-spend percentage="88.8"/>
+    
+
 
 Changelog
 ^^^^^^^^^

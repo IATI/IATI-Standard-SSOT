@@ -6,13 +6,63 @@
 Example Usage
 ^^^^^^^^^^^^^
 
-| `` ``\ 
-| ``   ``\ \ ``XXX``\ 
-| ``   ``\ 
-| ``       ``\ \ ``Equal Principal Payments (EPP)``\ 
-| ``       ``\ \ ``Quarterly``\ 
-| ``       ``\ 
-| ``       ``\ 
+| 
+
+.. code-block:: xml
+
+     
+\ 
+    | 
+
+   .. code-block:: xml
+
+        `   
+    \ \ 
+
+   .. code-block:: xml
+
+        `XXX
+    \ 
+| 
+
+.. code-block:: xml
+
+       
+\ 
+    | 
+
+   .. code-block:: xml
+
+        `       
+    \ \ 
+
+   .. code-block:: xml
+
+        `Equal Principal Payments (EPP)
+    \ 
+| 
+
+.. code-block:: xml
+
+           
+\ \ 
+
+.. code-block:: xml
+
+    Quarterly
+\ 
+| 
+
+.. code-block:: xml
+
+           
+\ 
+| 
+
+.. code-block:: xml
+
+           
+\ 
 | ``       ``\ 
 | ``   ``\ 
 | ``   ``\ 

@@ -10,13 +10,31 @@ This is a new element for version 1.03.
 
 This is a child element of country-budget-items
 
-``
-<country-budget-items vocabulary="XXX">
-  <budget-item code="XXX" percentage="100">
-     <description xml:lang="en">XXX</description>
-  </budget-item>
-</country-budget-items>
-``
+
+la
+
+kd$a.. code-block:: xml
+O
+jo
+jV/
+
+.. code-block:: xml
+
+
+    >/
+
+
+
+.. code-block:: xml
+
+
+    <country-budget-items vocabulary="XXX">
+      <budget-item code="XXX" percentage="100">
+         <description xml:lang="en">XXX</description>
+      </budget-item>
+    </country-budget-items>
+    
+
 
 Changelog
 ^^^^^^^^^

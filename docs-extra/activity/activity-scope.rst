@@ -10,9 +10,14 @@
 Example Usage
 ^^^^^^^^^^^^^
 
-``
-<activity-scope code="1" xml:lang="en">Global</activity-scope>
-``
+
+
+.. code-block:: xml
+
+
+    <activity-scope code="1" xml:lang="en">Global</activity-scope>
+    
+
 
 Changelog
 ^^^^^^^^^

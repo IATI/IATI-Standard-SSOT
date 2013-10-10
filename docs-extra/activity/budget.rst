@@ -12,8 +12,26 @@ At this level, the attribute "type" should be used to declare whether
 the budget is an Original (code 1) or Revised (code 2). If omitted
 Original is assumed:
 
-``
-    <budget type="1">
-    ....
-    </budget>
-``
+
+la
+
+kd$a.. code-block:: xml
+O
+jo
+jV/
+
+.. code-block:: xml
+
+
+    >/
+
+
+
+.. code-block:: xml
+
+
+        <budget type="1">
+        ....
+        </budget>
+    
+

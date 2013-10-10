@@ -6,11 +6,46 @@
 Example Usage
 ^^^^^^^^^^^^^
 
-| `` ``\ 
-| ``     ``\ \ ``10000``\ 
-| ``     ``\ \ ``20000``\ 
-| `` ``\ 
-| ``   ``
+| 
+
+.. code-block:: xml
+
+     
+\ 
+    | 
+
+   .. code-block:: xml
+
+        `     
+    \ \ 
+
+   .. code-block:: xml
+
+        `10000
+    \ 
+| 
+
+.. code-block:: xml
+
+         
+\ \ 
+
+.. code-block:: xml
+
+    20000
+\ 
+| 
+
+.. code-block:: xml
+
+     
+\ 
+    | 
+
+   .. code-block:: xml
+
+        `   
+
 
 Changelog
 ^^^^^^^^^

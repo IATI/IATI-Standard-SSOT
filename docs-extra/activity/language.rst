@@ -11,17 +11,27 @@ attribute.
 
 The code should be declared in any usage of this element:
 
-``
-    <language code="en" />
-    <language code="fr" />
-``
+
+
+.. code-block:: xml
+
+
+        <language code="en" />
+        <language code="fr" />
+    
+
 
 Additionally, a text description of the code can be provided:
 
-``
-    <language code="fr" xml:lang="en">French</language>
-    <language code="fr" xml:lang="fr">Francais</language>
-``
+
+
+.. code-block:: xml
+
+
+        <language code="fr" xml:lang="en">French</language>
+        <language code="fr" xml:lang="fr">Francais</language>
+    
+
 
 Changelog
 ^^^^^^^^^

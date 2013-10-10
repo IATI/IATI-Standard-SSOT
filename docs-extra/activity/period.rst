@@ -6,8 +6,13 @@
 Example Usage
 ^^^^^^^^^^^^^
 
-``
-    <period>
-    ....
-    </period>
-``
+
+
+.. code-block:: xml
+
+
+        <period>
+        ....
+        </period>
+    
+

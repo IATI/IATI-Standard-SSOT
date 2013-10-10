@@ -6,7 +6,12 @@
 Example Usage
 ^^^^^^^^^^^^^
 
-``
 
-<organisation>Department for International Development</organisation>
-``
+
+.. code-block:: xml
+
+
+
+    <organisation>Department for International Development</organisation>
+    
+

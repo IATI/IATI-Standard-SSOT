@@ -12,10 +12,15 @@ find Herat on geonames.org you would create a link like this:
 http://www.geonames.org/1140026/ \\\\ The IATI gazeteer-ref for geonames
 is "GEO", so the element would look like:
 
-``
-<location>
-  ....
-  <gazetteer-entry gazeteer-ref="GEO">1140026</gazetteer-entry>
-  ....
-</location>
-``
+
+
+.. code-block:: xml
+
+
+    <location>
+      ....
+      <gazetteer-entry gazeteer-ref="GEO">1140026</gazetteer-entry>
+      ....
+    </location>
+    
+

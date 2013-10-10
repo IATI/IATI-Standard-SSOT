@@ -7,18 +7,28 @@ Example Usage
 ^^^^^^^^^^^^^
 
 Example that uses version 1.03, and was generated on 5th September 2013:
-``
-    <iati-activities version="1.03" generated-datetime="2013-09-05T00:00:00">
-       ....
-    </iati-activities>
-``
+
+
+.. code-block:: xml
+
+
+        <iati-activities version="1.03" generated-datetime="2013-09-05T00:00:00">
+           ....
+        </iati-activities>
+    
+
 
 With the optional linked-data-default attribute, introduced in decimal
-upgrade 1.02 ``
-    <iati-activities version="1.02" generated-datetime="2013-09-05T00:00:00" linked-data-default="">
-       ....
-    </iati-activities>
-``
+upgrade 1.02 
+
+.. code-block:: xml
+
+
+        <iati-activities version="1.02" generated-datetime="2013-09-05T00:00:00" linked-data-default="">
+           ....
+        </iati-activities>
+    
+
 
 Changelog
 ^^^^^^^^^

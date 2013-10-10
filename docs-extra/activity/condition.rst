@@ -52,39 +52,89 @@ standard:documentation:1.03:condition - IATI Documentation
 
    <div id="globalWrapper">
 
-`` ``
 
-.. raw:: html
 
-   <div id="column-content">
+.. code-block:: xml
 
-``   ``
+     
+
+
+    .. raw:: html
+
+       <div id="column-content">
+
+    
+
+   .. code-block:: xml
+
+        `   
+
 
 .. raw:: html
 
    <div id="content">
 
-| ``     ``\ 
-| ``     ``\ 
-| ``     ``
+| 
+
+.. code-block:: xml
+
+         
+\ 
+| 
+
+.. code-block:: xml
+
+         
+\ 
+| 
+
+.. code-block:: xml
+
+         
+
 
 .. raw:: html
 
    <div id="bodyContent">
 
-``       ``
+
+
+.. code-block:: xml
+
+           
+
 
 .. raw:: html
 
    <div class="dokuwiki">
 
-``         ``
+
+
+.. code-block:: xml
+
+             
+
 
 .. raw:: html
 
    <div class="catlinks noprint">
 
-| ``           ``\ \ ``You are here: ``\ \ ``International Aid Transparency Initiative Documentation``\ \ `` » ``\ \ ``IATI Standard``\ \ `` » ``\ \ ``Documentation``\ \ `` » ``\ \ ``1.03``\ \ `` » ``\ \ ``condition``\ 
+| 
+
+.. code-block:: xml
+
+               
+\ \ 
+
+.. code-block:: xml
+
+    You are here: 
+\ \ 
+
+.. code-block:: xml
+
+    International Aid Transparency Initiative Documentation
+\ \ `` » ``\ \ ``IATI Standard``\ \ `` » ``\ \ ``Documentation``\ \ `` » ``\ \ ``1.03``\ \ `` » ``\ \ ``condition``\ 
 | ``         ``
 
 .. raw:: html

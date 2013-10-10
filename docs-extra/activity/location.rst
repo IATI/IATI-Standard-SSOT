@@ -6,32 +6,47 @@
 Example Usage
 ^^^^^^^^^^^^^
 
-The location element is used a contain various other elements ``
-    <location>
-       ....
-    </location>
-``
+The location element is used a contain various other elements 
+
+.. code-block:: xml
+
+
+        <location>
+           ....
+        </location>
+    
+
 
 If more than one location is reported, percentage of activity commitment
-allocated to this location (if available). ``
-    <location percentage="85>
-       ....
-    </location>
-    <location percentage="15>
-       ....
-    </location>
-``
+allocated to this location (if available). 
+
+.. code-block:: xml
+
+
+        <location percentage="85>
+           ....
+        </location>
+        <location percentage="15>
+           ....
+        </location>
+    
+
 
 Example from UNOPS:
 
-``
-<location>
-      <name>Herat</name>
-      <coordinates latitude="34.341944400000003000" longitude="62.203055599999971000" precision="2" />
-      <location-type code="PPL" />
-      <administrative country="AF">Afghanistan, Herat, Injil</administrative>
-    </location>
-``
+
+
+.. code-block:: xml
+
+
+    <location>
+          <name>Herat</name>
+          <coordinates latitude="34.341944400000003000" longitude="62.203055599999971000" precision="2" />
+          <location-type code="PPL" />
+          <administrative country="AF">Afghanistan, Herat, Injil</administrative>
+        </location>
+    
+
 
 Changelog
 ^^^^^^^^^

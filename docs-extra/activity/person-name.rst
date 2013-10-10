@@ -6,6 +6,11 @@
 Example Usage
 ^^^^^^^^^^^^^
 
-``
-<person-name>A Smith</person-name>
-``
+
+
+.. code-block:: xml
+
+
+    <person-name>A Smith</person-name>
+    
+

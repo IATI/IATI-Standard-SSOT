@@ -10,13 +10,18 @@
 Example Usage
 ^^^^^^^^^^^^^
 
-``
-<country-budget-items vocabulary="XXX">
-    <budget-item code="XXX" percentage="100">
-       <description xml:lang="en">XXX</description>
-    </budget-item>
-</country-budget-items>
-``
+
+
+.. code-block:: xml
+
+
+    <country-budget-items vocabulary="XXX">
+        <budget-item code="XXX" percentage="100">
+           <description xml:lang="en">XXX</description>
+        </budget-item>
+    </country-budget-items>
+    
+
 
 Changelog
 ^^^^^^^^^

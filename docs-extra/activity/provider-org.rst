@@ -27,19 +27,34 @@ Example Usage
 The full name of the organisation making the financial transaction
 (receiving in the case of loan and interest repayments).:
 
-``
-    <provider-org>DFID</provider-org>
-``
+
+
+.. code-block:: xml
+
+
+        <provider-org>DFID</provider-org>
+    
+
 
 The unique Organisation Identifier for the provider.:
 
-``
-    <provider-org ref="GB-1">DFID</provider-org>
-``
+
+
+.. code-block:: xml
+
+
+        <provider-org ref="GB-1">DFID</provider-org>
+    
+
 
 If the funds are being provided from another reported activity, this
 must record the unique activity identifier for that activity:
 
-``
-    <provider-org provider-activity-id="GB-1-10538"/>
-``
+
+
+.. code-block:: xml
+
+
+        <provider-org provider-activity-id="GB-1-10538"/>
+    
+

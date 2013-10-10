@@ -14,12 +14,22 @@ Example Usage
 ^^^^^^^^^^^^^
 
 The example below is for an Oxfam (identified by GB-CHC-202918)
-activity, with their internal unique ref. of HECA91 ``
-<iati-identifier>GB-CHC-202918-HECA91</iati-identifier>
-``
+activity, with their internal unique ref. of HECA91 
+
+.. code-block:: xml
+
+
+    <iati-identifier>GB-CHC-202918-HECA91</iati-identifier>
+    
+
 
 This example is illustrated from the World Bank (44000):
 
-``
-<iati-identifier>44000-P002999</iati-identifier>
-``
+
+
+.. code-block:: xml
+
+
+    <iati-identifier>44000-P002999</iati-identifier>
+    
+
