@@ -1,27 +1,23 @@
 
-.. raw:: mediawiki
-
-   {{for revison 1.03}}
+Page for revison 1.03. See this page for: `revison
+1.02 </standard/documentation/1.02/contact-info>`__, `revison
+1.01 </standard/documentation/1.0/contact-info>`__
 
 Example Usage
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
-This element is a container for other sub elements: 
+This element is a container for other sub elements:
 
 .. code-block:: xml
-
 
         <contact-info type="1">
            ....
         </contact-info>
-    
-
 
 This example from DfID, contains the Organisation, telephone, email and
-mailing address for the activity. 
+mailing address for the activity.
 
 .. code-block:: xml
-
 
     <contact-info type="1">
     <person-name>A Smith</person-name>
@@ -33,14 +29,12 @@ mailing address for the activity.
     </mailing-address>
     <website>https://www.gov.uk/government/organisations/department-for-international-development</website>
     </contact-info>
-    
-
 
 Changelog
-^^^^^^^^^
+~~~~~~~~~
 
 1.03
-~~~~
+^^^^
 
 Added the optional contact-info/website element
 
@@ -48,5 +42,10 @@ Added the optional contact-info/@type attribute
 
 Changed the following subelements of contact-info to allow
 multiple-language versions explicitly (no change to parsing; purely
-semantic): \* organisation \* person-name \* job-title \*
-mailing-address
+semantic):
+
+-  organisation
+-  person-name
+-  job-title
+-  mailing-address
+

@@ -1,1751 +1,216 @@
-   <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
-
-.. raw:: html
-
-   <head>
-
-.. raw:: html
-
-   <title>
-
-standard:documentation:1.03:legacy-data - IATI Documentation
-
-.. raw:: html
-
-   </title>
-
-.. raw:: html
-
-   <script type="text/javascript">
-
-/\*\*/
-
-.. raw:: html
-
-   </script>
-
-.. raw:: html
-
-   <script type="text/javascript" charset="utf-8" src="/lib/exe/js.php?tseed=1371128817">
-
-.. raw:: html
-
-   </script>
-
-.. raw:: html
-
-   <script type="text/javascript" charset="utf-8" src="/lib/tpl/monobook/user/user.js">
-
-.. raw:: html
-
-   </script>
-
-.. raw:: html
-
-   </head>
-
-.. raw:: html
-
-   <body class="mediawiki ns-0 ltr">
-
-.. raw:: html
-
-   <div id="globalWrapper">
-
-
-
-.. code-block:: xml
-
-     
-
-
-    .. raw:: html
-
-       <div id="column-content">
-
-    
-
-   .. code-block:: xml
-
-        `   
-
-
-.. raw:: html
-
-   <div id="content">
-
-| 
-
-.. code-block:: xml
-
-         
-\ 
-| 
-
-.. code-block:: xml
-
-         
-\ 
-| 
-
-.. code-block:: xml
-
-         
-
-
-.. raw:: html
-
-   <div id="bodyContent">
-
-
-
-.. code-block:: xml
-
-           
-
-
-.. raw:: html
-
-   <div class="dokuwiki">
-
-
-
-.. code-block:: xml
-
-             
-
-
-.. raw:: html
-
-   <div class="catlinks noprint">
-
-| 
-
-.. code-block:: xml
-
-               
-\ \ 
-
-.. code-block:: xml
-
-    You are here: 
-\ \ 
-
-.. code-block:: xml
-
-    International Aid Transparency Initiative Documentation
-\ \ `` » ``\ \ ``IATI Standard``\ \ `` » ``\ \ ``Documentation``\ \ `` » ``\ \ ``1.03``\ \ `` » ``\ \ ``legacy-data``\ 
-| ``         ``
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   <h1 class="sectionedit1" id="this_topic_does_not_exist_yet">
+`Documentation </standard/documentation/start>`__ »
+`1.03 </standard/documentation/1.03/start>`__ »
+`legacy-data </standard/documentation/1.03/legacy-data>`__
 
 This topic does not exist yet
-
-.. raw:: html
-
-   </h1>
-
-.. raw:: html
-
-   <div class="level1">
+=============================
 
 You've followed a link to a topic that doesn't exist yet. If permissions
 allow, you may create it by clicking on “Create this page”.
 
-.. raw:: html
+| 
 
-   </div>
+Trace:
 
-| ``         ``
-| ``          ``
-| ``         ``
+` </start>`__
 
-.. raw:: html
+-  `Article </standard/documentation/1.03/legacy-data>`__
+-  `Discussion </talk/standard/documentation/1.03/legacy-data>`__
+-  `Show
+   pagesource </standard/documentation/1.03/legacy-data?do=edit&rev=0>`__
 
-   <div class="catlinks noprint">
-
-| ``           ``\ \ ``Trace:``\ 
-| ``         ``
-
-.. raw:: html
-
-   </div>
-
-``         ``
-
-.. raw:: html
-
-   <div class="visualClear">
-
-.. raw:: html
-
-   </div>
-
-``       ``
-
-.. raw:: html
-
-   </div>
-
-``     ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   </div>
-
-`` ``
-
-.. raw:: html
-
-   </div>
-
-`` ``
-
-.. raw:: html
-
-   <div id="column-one" class="noprint">
-
-``   ``
-
-.. raw:: html
-
-   <div class="portlet" id="p-logo">
-
-| ``     ``\ 
-| ``   ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   <div id="p-cactions" class="portlet">
-
-``     ``
-
-#. Article
-#. Discussion
-#. Show pagesource
-
-``   ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   <div id="p-personal" class="portlet">
-
-``     ``
-
-.. raw:: html
-
-   <div class="pBody">
-
-``       ``
-
-#. Login
-
-``     ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   <div class="portlet" id="p-x-navigation">
-
-``     ``
-
-.. raw:: html
-
-   <h5>
+-  `Login </standard/documentation/1.03/legacy-data?do=login>`__
 
 Navigation
-
-.. raw:: html
-
-   </h5>
-
-``     ``
-
-.. raw:: html
-
-   <div class="pBody">
-
-``       ``
-
-.. raw:: html
-
-   <div class="dokuwiki">
-
-Home
-
-.. raw:: html
-
-   <div>
-
-.. raw:: html
-
-   <div id="nojs_indexmenu_1317486705525693c3d8bef" data-jsajax="%26sort%3Dt" class="indexmenu_nojs">
-
-#. 
-
-   .. raw:: html
-
-      <div class="li">
-
-   Technical Community
-
-   .. raw:: html
-
-      </div>
-
-#. 
-
-   .. raw:: html
-
-      <div class="li">
-
-   Technical Roadmap
-
-   .. raw:: html
-
-      </div>
-
-#. 
-
-   .. raw:: html
-
-      <div class="li">
-
-   IATI Standard
-
-   .. raw:: html
-
-      </div>
-
-   #. 
-
-      .. raw:: html
-
-         <div class="li">
-
-      Documentation
-
-      .. raw:: html
-
-         </div>
-
-      #. 
-
-         .. raw:: html
-
-            <div class="li">
-
-         Version 1.01
-
-         .. raw:: html
-
-            </div>
-
-      #. 
-
-         .. raw:: html
-
-            <div class="li">
-
-         1.02
-
-         .. raw:: html
-
-            </div>
-
-      #. 
-
-         .. raw:: html
-
-            <div class="li">
-
-         1.03
-
-         .. raw:: html
-
-            </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Activity Date
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Activity Scope
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Activity Status
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Activity Website
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Actual
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Administrative
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Aid Type
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Aidtype Flag
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Baseline
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Budget
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Budget Item
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Capital Spend
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Category
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Collaboration Type
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Comment
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Commitment Date
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Conditions
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Contact Info
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Coordinates
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Country Budget Items
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            CRS Add
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Default Aid Type
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Default Finance Type
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Default Flow Type
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Default Tied Status
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Description
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Disbursement Channel
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Document Link
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Email
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Finance Type
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Flow Type
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Forecast
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            FSS
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Gazetteer Entry
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            IATI Activities
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            IATI Activity
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            IATI Identifier
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Indicator
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Interest-arrears
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Interest Received
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Job Title
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Language
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Loan Status
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Loan Terms
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Location
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Location Name
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Location Type
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Mailing Address
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Organisation
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Other Identifier
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Participating Organisation
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Period
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Period End
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Period Start
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Person Name
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Planned Disbursement
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Policy Marker
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Principal Arrears
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Principal Outstanding
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Provider Org
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Receiver Org
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Recipient Country
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Recipient Region
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Related Activity
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Repayment Final Date
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Repayment First Date
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Repayment Plan
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Repayment Type
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Reporting Organisation
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Result
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Sector
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Target
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Telephone
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Tied Status
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Title
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Transaction
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Transaction Date
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Transaction Type
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Value
-
-            .. raw:: html
-
-               </div>
-
-         #. 
-
-            .. raw:: html
-
-               <div class="li">
-
-            Website
-
-            .. raw:: html
-
-               </div>
-
-   #. 
-
-      .. raw:: html
-
-         <div class="li">
-
-      Guidance
-
-      .. raw:: html
-
-         </div>
-
-   #. 
-
-      .. raw:: html
-
-         <div class="li">
-
-      Revisions
-
-      .. raw:: html
-
-         </div>
-
-#. 
-
-   .. raw:: html
-
-      <div class="li">
-
-   Discussion
-
-   .. raw:: html
-
-      </div>
-
-#. 
-
-   .. raw:: html
-
-      <div class="li">
-
-   IATI Tools
-
-   .. raw:: html
-
-      </div>
-
-#. 
-
-   .. raw:: html
-
-      <div class="li">
-
-   User Guidance
-
-   .. raw:: html
-
-      </div>
-
-#. 
-
-   .. raw:: html
-
-      <div class="li">
-
-   Working Groups
-
-   .. raw:: html
-
-      </div>
-
-#. 
-
-   .. raw:: html
-
-      <div class="li">
-
-   The Wiki
-
-   .. raw:: html
-
-      </div>
-
-#. 
-
-   .. raw:: html
-
-      <div class="li">
-
-   Where Can I...?
-
-   .. raw:: html
-
-      </div>
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
-
-``       ``
-
-.. raw:: html
-
-   </div>
-
-``     ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   <div class="portlet" id="p-search">
-
-``     ``
-
-.. raw:: html
-
-   <h5>
+''''''''''
+
+**`Home </start>`__**
+
+-  `Technical Community </community/start>`__
+-  `Technical Roadmap </roadmap/start>`__
+-  `IATI Standard </standard/start>`__
+
+   -  `Documentation </standard/documentation/start>`__
+
+      -  `Version 1.01 </standard/documentation/1.0/start>`__
+      -  `1.02 </standard/documentation/1.02/start>`__
+      -  `1.03 </standard/documentation/1.03/start>`__
+
+         -  `Activity
+            Date </standard/documentation/1.03/activity-date>`__
+         -  `Activity
+            Scope </standard/documentation/1.03/activity-scope>`__
+         -  `Activity
+            Status </standard/documentation/1.03/activity-status>`__
+         -  `Activity
+            Website </standard/documentation/1.03/activity-website>`__
+         -  `Actual </standard/documentation/1.03/actual>`__
+         -  `Administrative </standard/documentation/1.03/administrative>`__
+         -  `Aid Type </standard/documentation/1.03/aid-type>`__
+         -  `Aidtype Flag </standard/documentation/1.03/aidtype-flag>`__
+         -  `Baseline </standard/documentation/1.03/baseline>`__
+         -  `Budget </standard/documentation/1.03/budget>`__
+         -  `Budget Item </standard/documentation/1.03/budget-item>`__
+         -  `Capital
+            Spend </standard/documentation/1.03/capital-spend>`__
+         -  `Category </standard/documentation/1.03/category>`__
+         -  `Collaboration
+            Type </standard/documentation/1.03/collaboration-type>`__
+         -  `Comment </standard/documentation/1.03/comment>`__
+         -  `Commitment
+            Date </standard/documentation/1.03/commitment-date>`__
+         -  `Conditions </standard/documentation/1.03/conditions>`__
+         -  `Contact Info </standard/documentation/1.03/contact-info>`__
+         -  `Coordinates </standard/documentation/1.03/coordinates>`__
+         -  `Country Budget
+            Items </standard/documentation/1.03/country-budget-items>`__
+         -  `CRS Add </standard/documentation/1.03/crs-add>`__
+         -  `Default Aid
+            Type </standard/documentation/1.03/default-aid-type>`__
+         -  `Default Finance
+            Type </standard/documentation/1.03/default-finance-type>`__
+         -  `Default Flow
+            Type </standard/documentation/1.03/default-flow-type>`__
+         -  `Default Tied
+            Status </standard/documentation/1.03/default-tied-status>`__
+         -  `Description </standard/documentation/1.03/description>`__
+         -  `Disbursement
+            Channel </standard/documentation/1.03/disbursement-channel>`__
+         -  `Document
+            Link </standard/documentation/1.03/document-link>`__
+         -  `Email </standard/documentation/1.03/email>`__
+         -  `Finance Type </standard/documentation/1.03/finance-type>`__
+         -  `Flow Type </standard/documentation/1.03/flow-type>`__
+         -  `Forecast </standard/documentation/1.03/forecast>`__
+         -  `FSS </standard/documentation/1.03/fss>`__
+         -  `Gazetteer
+            Entry </standard/documentation/1.03/gazetteer-entry>`__
+         -  `IATI
+            Activities </standard/documentation/1.03/iati-activities>`__
+         -  `IATI
+            Activity </standard/documentation/1.03/iati-activity>`__
+         -  `IATI
+            Identifier </standard/documentation/1.03/iati-identifier>`__
+         -  `Indicator </standard/documentation/1.03/indicator>`__
+         -  `Interest-arrears </standard/documentation/1.03/interest-arrears>`__
+         -  `Interest
+            Received </standard/documentation/1.03/interest-received>`__
+         -  `Job Title </standard/documentation/1.03/job-title>`__
+         -  `Language </standard/documentation/1.03/language>`__
+         -  `Loan Status </standard/documentation/1.03/loan-status>`__
+         -  `Loan Terms </standard/documentation/1.03/loan-terms>`__
+         -  `Location </standard/documentation/1.03/location>`__
+         -  `Location
+            Name </standard/documentation/1.03/location-name>`__
+         -  `Location
+            Type </standard/documentation/1.03/location-type>`__
+         -  `Mailing
+            Address </standard/documentation/1.03/mailing-address>`__
+         -  `Organisation </standard/documentation/1.03/organisation>`__
+         -  `Other
+            Identifier </standard/documentation/1.03/other-identifier>`__
+         -  `Participating
+            Organisation </standard/documentation/1.03/participating-org>`__
+         -  `Period </standard/documentation/1.03/period>`__
+         -  `Period End </standard/documentation/1.03/period-end>`__
+         -  `Period Start </standard/documentation/1.03/period-start>`__
+         -  `Person Name </standard/documentation/1.03/person-name>`__
+         -  `Planned
+            Disbursement </standard/documentation/1.03/planned-disbursement>`__
+         -  `Policy
+            Marker </standard/documentation/1.03/policy-marker>`__
+         -  `Principal
+            Arrears </standard/documentation/1.03/principal-arrears>`__
+         -  `Principal
+            Outstanding </standard/documentation/1.03/principal-outstanding>`__
+         -  `Provider Org </standard/documentation/1.03/provider-org>`__
+         -  `Receiver Org </standard/documentation/1.03/receiver-org>`__
+         -  `Recipient
+            Country </standard/documentation/1.03/recipient-country>`__
+         -  `Recipient
+            Region </standard/documentation/1.03/recipient-region>`__
+         -  `Related
+            Activity </standard/documentation/1.03/related-activity>`__
+         -  `Repayment Final
+            Date </standard/documentation/1.03/repayment-final-date>`__
+         -  `Repayment First
+            Date </standard/documentation/1.03/repayment-first-date>`__
+         -  `Repayment
+            Plan </standard/documentation/1.03/repayment-plan>`__
+         -  `Repayment
+            Type </standard/documentation/1.03/repayment-type>`__
+         -  `Reporting
+            Organisation </standard/documentation/1.03/reporting-org>`__
+         -  `Result </standard/documentation/1.03/result>`__
+         -  `Sector </standard/documentation/1.03/sector>`__
+         -  `Target </standard/documentation/1.03/target>`__
+         -  `Telephone </standard/documentation/1.03/telephone>`__
+         -  `Tied Status </standard/documentation/1.03/tied-status>`__
+         -  `Title </standard/documentation/1.03/title>`__
+         -  `Transaction </standard/documentation/1.03/transaction>`__
+         -  `Transaction
+            Date </standard/documentation/1.03/transaction-date>`__
+         -  `Transaction
+            Type </standard/documentation/1.03/transaction-type>`__
+         -  `Value </standard/documentation/1.03/value>`__
+         -  `Website </standard/documentation/1.03/website>`__
+
+   -  `Guidance </standard/guidance/start>`__
+   -  `Revisions </standard/revision/start>`__
+
+-  `Discussion </talk/start>`__
+-  `IATI Tools </tools/start>`__
+-  `User Guidance </user_guidance/start>`__
+-  `Working Groups </wg/start>`__
+-  `The Wiki </wiki/start>`__
+-  `Where Can I...? </where_can_i>`__
 
 Search
-
-.. raw:: html
-
-   </h5>
-
-``     ``
-
-.. raw:: html
-
-   <div class="pBody">
-
-``       ``
-
-.. raw:: html
-
-   <div class="dokuwiki">
-
-.. raw:: html
-
-   <form action="/start" accept-charset="utf-8" id="dw__search" name="dw__search">
-
-| `` ``\ 
-| `` ``\ 
-| `` ``\ \ `` ``
-| `` ``\ 
-
-.. raw:: html
-
-   </form>
-
-``       ``
-
-.. raw:: html
-
-   </div>
-
-``     ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   <div id="qsearch__out" class="ajax_qsearch JSpopup">
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   <div class="portlet" id="p-tb">
-
-``     ``
-
-.. raw:: html
-
-   <h5>
-
-Toolbox
-
-.. raw:: html
-
-   </h5>
-
-``     ``
-
-.. raw:: html
-
-   <div class="pBody">
-
-``       ``
-
-.. raw:: html
-
-   <div class="dokuwiki">
-
-``       ``
-
-#. What links here
-#. Recent changes
-#. Media Manager
-#. Site index
-#. Printable version
-#. Permanent link
-#. Cite this article
-
-``       ``
-
-.. raw:: html
-
-   </div>
-
-``     ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   <div class="portlet" id="p-qrcode">
-
-``     ``
-
-.. raw:: html
-
-   <h5>
-
-QR Code
-
-.. raw:: html
-
-   </h5>
-
-``     ``
-
-.. raw:: html
-
-   <div class="pBody">
-
-``       ``
-
-.. raw:: html
-
-   <div class="dokuwiki">
-
-| ``       ``\ 
-| ``       ``
-
-.. raw:: html
-
-   </div>
-
-``     ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-.. raw:: html
-
-   </div>
-
-`` ``
-
-.. raw:: html
-
-   </div>
-
-`` ``
-
-.. raw:: html
-
-   <div class="visualClear">
-
-.. raw:: html
-
-   </div>
-
-`` ``
-
-.. raw:: html
-
-   <div id="footer">
-
-``   ``
-
-.. raw:: html
-
-   <div id="footer-buttons" class="noprint">
-
-| ``     ``\ 
-| ``     ``\ 
-| ``     ``\ 
-| ``     ``\ 
-| ``     ``\ 
-| ``   ``
-
-.. raw:: html
-
-   </div>
-
-``   ``
-
-#. ``       ``
-   ``      ``
-#. ``       ``
-
-   .. raw:: html
-
-      <div class="dokuwiki">
-
-   .. raw:: html
-
-      <div class="license">
-
-   Except where otherwise noted, content on this wiki is licensed under
-   the following license: CC Attribution 3.0 Unported
-
-   .. raw:: html
-
-      </div>
-
-   .. raw:: html
-
-      </div>
-
-   ``     ``
-
-#. ``       ``
-   ``      ``
-
-`` ``
-
-.. raw:: html
-
-   </div>
-
-.. raw:: html
-
-   </div>
+''''''
 
  
 
-.. raw:: html
+Toolbox
+'''''''
 
-   </body>
+-  `What links
+   here </standard/documentation/1.03/legacy-data?do=backlink>`__
+-  `Recent changes </start?do=recent>`__
+-  `Media Manager </start?do=media>`__
+-  `Site index </start?do=index>`__
+-  `Printable
+   version </standard/documentation/1.03/legacy-data?rev=0&mddo=print>`__
+-  `Permanent link </standard/documentation/1.03/legacy-data?rev=0>`__
+-  `Cite this
+   article </standard/documentation/1.03/legacy-data?rev=0&mddo=cite>`__
 
-.. raw:: html
+QR Code
+'''''''
 
-   </html>
+|QR Code standard:documentation:1.03:legacy-data (generated for current
+page)|
 
+|Recent changes| |monobook template for DokuWiki| |QR Code generator|
+|DokuWiki| |Valid XHTML|
+
+-  
+-  Except where otherwise noted, content on this wiki is licensed under
+   the following license: `CC Attribution 3.0
+   Unported <http://creativecommons.org/licenses/by/3.0/>`__
+-  
+
+`  </start?do=recent>`__ |image6|
+
+.. |QR Code standard:documentation:1.03:legacy-data (generated for current page)| image:: http://api.qrserver.com/v1/create-qr-code/?data=http%3A%2F%2Fwiki.iatistandard.org%2Fstandard%2Fdocumentation%2F1.03%2Flegacy-data&size=130x130&margin=0
+   :target: http://goqr.me/
+.. |Recent changes| image:: /lib/tpl/monobook/static/img/button-rss.png
+   :target: /feed.php
+.. |monobook template for DokuWiki| image:: /lib/tpl/monobook/static/img/button-monobook.png
+   :target: http://andreas-haerter.com/
+.. |QR Code generator| image:: /lib/tpl/monobook/static/img/button-qrcode.png
+   :target: http://goqr.me/
+.. |DokuWiki| image:: /lib/tpl/monobook/static/img/button-dw.png
+   :target: http://www.dokuwiki.org
+.. |Valid XHTML| image:: /lib/tpl/monobook/user/button-xhtml.png
+   :target: http://validator.w3.org/check/referer
+.. |image6| image:: /lib/exe/indexer.php?id=standard%3Adocumentation%3A1.03%3Alegacy-data&1381413167

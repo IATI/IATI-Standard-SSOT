@@ -1,77 +1,24 @@
 
-.. raw:: mediawiki
-
-   {{for revision 1.03}}
+Page for revision 1.03.
 
 Example Usage
-^^^^^^^^^^^^^
-
-| 
+~~~~~~~~~~~~~
 
 .. code-block:: xml
 
-     
-\ 
-    | 
+    <crs-add>
 
-   .. code-block:: xml
-
-        ` 
-
-
-    la
-
-    kd$a.. code-block:: xml
-    O
-    jo
-    jV/
-
-   .. code-block:: xml
-
-        `
-    >/
-
-| 
-
-.. code-block:: xml
-
-       
-\ \ 
-
-.. code-block:: xml
-
-     
-
-    | 
-
-   .. code-block:: xml
-
-        `     
-    \ 
-| 
-
-.. code-block:: xml
-
-       
-\ 
-    | 
-
-   .. code-block:: xml
-
-        `  
-
-| 
-
-.. code-block:: xml
-
-     
-\ 
+      <loan-terms rate-1="" rate-2=""> 
+        <commitment-date iso-date=""></commitment-date>
+      </loan-terms>
+     
+    </crs-add>
 
 Changelog
-^^^^^^^^^
+~~~~~~~~~
 
 1.03
-~~~~
+^^^^
 
-New in 1.03 \\\\ Added the optional crs-add element and its child
-elements
+| New in 1.03
+|  Added the optional crs-add element and its child elements

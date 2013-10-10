@@ -1,16 +1,14 @@
 
-.. raw:: mediawiki
-
-   {{for revison 1.02}}
+Page for revison 1.02. See this page for: `revison
+1.02 </standard/documentation/1.02/coordinates>`__
 
 Example Usage
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
-UNOPS example, with co-ordinates set to a precision of "near exact
-location" (code 2): 
+UNOPS example, with co-ordinates set to a precision of “near exact
+location” (code 2):
 
 .. code-block:: xml
-
 
     <location>
           <name>Herat</name>
@@ -18,5 +16,4 @@ location" (code 2):
           <location-type code="PPL" />
           <administrative country="AF">Afghanistan, Herat, Injil</administrative>
         </location>
-    
 

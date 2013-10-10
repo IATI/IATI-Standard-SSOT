@@ -1,9 +1,10 @@
+mkdir wiki
+cd wiki
 for f in `curl "http://wiki.iatistandard.org/standard/documentation/1.03/?do=export_raw" | grep -Eo "\[\[standard:documentation:1.03:(.*)\]\]" | awk -F ':' '{print $4}' | sed 's/\]\]//'`; do
-    wget "http://wiki.iatistandard.org/standard/documentation/1.03/$f?do=export_raw" -O $f.txt
+    wget "http://wiki.iatistandard.org/standard/documentation/1.03/$f?do=export_xhtmlbody" -O $f.html
 done
-for f in *.txt; do pandoc -f mediawiki $f -t rst -o ../docs-extra/`basename $f .txt`; done
+for f in *.html; do pandoc -f html $f -t rst -o ../docs-extra/activity/`basename $f .html`.rst; done
+#sed -i 's/\.\. code:: code/.. code-block:: xml/' *
 #for f in *.rst; do tail -n+3 $f > tmp; mv tmp $f; done
 
-# Replace code blocks
-# /``ilakd$a..€ýc€ýb code-block:: xmlOjojV/``>/``i€kD€kD
 
