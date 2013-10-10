@@ -1,5 +1,3 @@
-Tied Status
-'''''''''''
 
 .. raw:: mediawiki
 

@@ -1,5 +1,3 @@
-Language
-''''''''
 
 .. raw:: mediawiki
 

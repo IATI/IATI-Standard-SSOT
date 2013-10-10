@@ -1,5 +1,3 @@
-Telephone
-'''''''''
 
 .. raw:: mediawiki
 

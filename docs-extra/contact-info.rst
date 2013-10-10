@@ -1,5 +1,3 @@
-Contact Info
-''''''''''''
 
 .. raw:: mediawiki
 

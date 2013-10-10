@@ -1,5 +1,3 @@
-IATI Identifier
-'''''''''''''''
 
 .. raw:: mediawiki
 

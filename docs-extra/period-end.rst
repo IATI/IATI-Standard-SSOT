@@ -1,5 +1,3 @@
-Period End
-''''''''''
 
 .. raw:: mediawiki
 

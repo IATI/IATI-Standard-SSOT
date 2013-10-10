@@ -1,5 +1,3 @@
-Recipient Country
-'''''''''''''''''
 
 .. raw:: mediawiki
 

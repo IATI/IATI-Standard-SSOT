@@ -1,5 +1,3 @@
-Organisation
-''''''''''''
 
 .. raw:: mediawiki
 

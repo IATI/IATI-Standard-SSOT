@@ -1,5 +1,3 @@
-Location Name
-'''''''''''''
 
 .. raw:: mediawiki
 

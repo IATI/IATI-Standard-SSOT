@@ -1,5 +1,3 @@
-Provider Org
-''''''''''''
 
 .. raw:: mediawiki
 

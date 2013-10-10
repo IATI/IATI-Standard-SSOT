@@ -1,5 +1,3 @@
-Aid Type
-''''''''
 
 .. raw:: mediawiki
 

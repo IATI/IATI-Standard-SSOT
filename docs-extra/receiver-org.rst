@@ -1,5 +1,3 @@
-Receiver Org
-''''''''''''
 
 .. raw:: mediawiki
 

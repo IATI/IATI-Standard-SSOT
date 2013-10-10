@@ -1,5 +1,3 @@
-Forecast
-''''''''
 
 .. raw:: mediawiki
 

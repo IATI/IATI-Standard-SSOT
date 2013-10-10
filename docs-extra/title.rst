@@ -1,5 +1,3 @@
-Title
-'''''
 
 .. raw:: mediawiki
 

@@ -1,5 +1,3 @@
-Other Identifier
-''''''''''''''''
 
 .. raw:: mediawiki
 

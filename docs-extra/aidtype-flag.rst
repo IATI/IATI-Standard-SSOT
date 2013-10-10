@@ -1,5 +1,3 @@
-Aidtype Flag
-''''''''''''
 
 .. raw:: mediawiki
 

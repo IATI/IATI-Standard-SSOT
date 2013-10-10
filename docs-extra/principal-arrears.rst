@@ -1,5 +1,3 @@
-Principal Arrears
-'''''''''''''''''
 
 .. raw:: mediawiki
 

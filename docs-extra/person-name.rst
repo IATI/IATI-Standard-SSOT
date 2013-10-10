@@ -1,5 +1,3 @@
-Person Name
-'''''''''''
 
 .. raw:: mediawiki
 

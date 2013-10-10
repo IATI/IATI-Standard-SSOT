@@ -1,5 +1,3 @@
-Transaction Type
-''''''''''''''''
 
 .. raw:: mediawiki
 

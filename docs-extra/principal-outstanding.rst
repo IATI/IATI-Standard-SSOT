@@ -1,5 +1,3 @@
-Principal Outstanding
-'''''''''''''''''''''
 
 .. raw:: mediawiki
 

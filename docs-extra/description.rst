@@ -1,5 +1,3 @@
-Description
-'''''''''''
 
 .. raw:: mediawiki
 

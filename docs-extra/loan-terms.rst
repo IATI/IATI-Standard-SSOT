@@ -1,5 +1,3 @@
-Loan Terms
-''''''''''
 
 .. raw:: mediawiki
 

@@ -1,5 +1,3 @@
-Location Type
-'''''''''''''
 
 .. raw:: mediawiki
 

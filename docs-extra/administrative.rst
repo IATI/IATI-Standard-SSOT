@@ -1,5 +1,3 @@
-Administrative
-''''''''''''''
 
 .. raw:: mediawiki
 

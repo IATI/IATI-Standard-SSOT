@@ -1,5 +1,3 @@
-Target
-''''''
 
 .. raw:: mediawiki
 

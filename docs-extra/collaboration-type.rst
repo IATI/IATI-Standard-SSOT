@@ -1,5 +1,3 @@
-Collaboration Type
-''''''''''''''''''
 
 .. raw:: mediawiki
 

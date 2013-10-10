@@ -1,5 +1,3 @@
-Recipient Region
-''''''''''''''''
 
 .. raw:: mediawiki
 

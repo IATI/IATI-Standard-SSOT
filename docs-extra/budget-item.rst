@@ -1,5 +1,3 @@
-Budget Item
-'''''''''''
 
 .. raw:: mediawiki
 

@@ -1,5 +1,3 @@
-Policy Marker
-'''''''''''''
 
 .. raw:: mediawiki
 

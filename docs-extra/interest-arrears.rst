@@ -1,5 +1,3 @@
-Interest-arrears
-''''''''''''''''
 
 .. raw:: mediawiki
 

@@ -1,5 +1,3 @@
-Reporting Organisation
-''''''''''''''''''''''
 
 .. raw:: mediawiki
 

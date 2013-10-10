@@ -1,5 +1,3 @@
-Actual
-''''''
 
 .. raw:: mediawiki
 

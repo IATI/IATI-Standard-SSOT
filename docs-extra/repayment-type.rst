@@ -1,5 +1,3 @@
-Repayment Type
-''''''''''''''
 
 .. raw:: mediawiki
 

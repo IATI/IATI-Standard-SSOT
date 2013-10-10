@@ -1,5 +1,3 @@
-Repayment Final Date
-''''''''''''''''''''
 
 .. raw:: mediawiki
 

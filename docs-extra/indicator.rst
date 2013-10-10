@@ -1,5 +1,3 @@
-Indicator
-'''''''''
 
 .. raw:: mediawiki
 

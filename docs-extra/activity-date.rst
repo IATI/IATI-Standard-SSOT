@@ -1,5 +1,3 @@
-Activity Date
-'''''''''''''
 
 .. raw:: mediawiki
 

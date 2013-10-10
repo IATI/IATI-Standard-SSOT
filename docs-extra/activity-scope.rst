@@ -1,5 +1,3 @@
-Activity Scope
-''''''''''''''
 
 .. raw:: mediawiki
 

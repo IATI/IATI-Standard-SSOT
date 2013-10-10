@@ -1,5 +1,3 @@
-Capital Spend
-'''''''''''''
 
 .. raw:: mediawiki
 

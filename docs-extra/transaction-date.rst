@@ -1,5 +1,3 @@
-Transaction Date
-''''''''''''''''
 
 .. raw:: mediawiki
 

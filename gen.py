@@ -23,9 +23,10 @@ def get_element(element_name, indent=''):
 
     index.write('   '+element_name+'\n')
     with open('docs/'+element_name+'.rst', 'w') as fp:
-        fp.write(element_name+'\n====\n\n')
-        fp.write('From the schema\n----\n\n')
+        fp.write(element_name+'\n'+('='*len(element_name))+'\n\n')
+        fp.write('From the schema\n^^^^^^^^^^^^^^^\n\n')
         fp.write(element.find(".//xsd:documentation", namespaces=namespaces).text)
+        fp.write('\n\n')
 
     element_loop(element, indent)
 

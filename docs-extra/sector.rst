@@ -1,5 +1,3 @@
-Sector
-''''''
 
 .. raw:: mediawiki
 

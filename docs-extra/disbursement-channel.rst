@@ -1,5 +1,3 @@
-Disbursement Channel
-''''''''''''''''''''
 
 .. raw:: mediawiki
 

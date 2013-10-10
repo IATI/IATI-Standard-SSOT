@@ -1,5 +1,3 @@
-Activity Status
-'''''''''''''''
 
 .. raw:: mediawiki
 

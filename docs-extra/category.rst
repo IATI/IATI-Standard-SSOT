@@ -1,5 +1,3 @@
-Category
-''''''''
 
 .. raw:: mediawiki
 

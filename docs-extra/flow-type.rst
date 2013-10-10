@@ -1,5 +1,3 @@
-Flow Type
-'''''''''
 
 .. raw:: mediawiki
 

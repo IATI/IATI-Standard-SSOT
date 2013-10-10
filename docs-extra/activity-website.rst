@@ -1,5 +1,3 @@
-Activity Website
-''''''''''''''''
 
 .. raw:: mediawiki
 

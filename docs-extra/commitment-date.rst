@@ -1,5 +1,3 @@
-Commitment Date
-'''''''''''''''
 
 .. raw:: mediawiki
 

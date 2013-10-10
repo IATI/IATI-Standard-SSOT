@@ -1,5 +1,3 @@
-Baseline
-''''''''
 
 .. raw:: mediawiki
 

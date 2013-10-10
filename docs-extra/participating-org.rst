@@ -1,5 +1,3 @@
-Participating Organisation
-''''''''''''''''''''''''''
 
 .. raw:: mediawiki
 

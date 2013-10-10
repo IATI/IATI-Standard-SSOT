@@ -1,5 +1,3 @@
-Default Finance Type
-''''''''''''''''''''
 
 .. raw:: mediawiki
 

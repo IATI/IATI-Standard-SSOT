@@ -1,5 +1,3 @@
-Planned Disbursement
-''''''''''''''''''''
 
 .. raw:: mediawiki
 

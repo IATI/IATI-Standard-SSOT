@@ -1,5 +1,3 @@
-Coordinates
-'''''''''''
 
 .. raw:: mediawiki
 

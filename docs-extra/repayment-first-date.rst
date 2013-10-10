@@ -1,5 +1,3 @@
-Repayment First Date
-''''''''''''''''''''
 
 .. raw:: mediawiki
 

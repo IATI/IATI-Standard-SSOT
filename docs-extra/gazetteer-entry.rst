@@ -1,5 +1,3 @@
-Gazetteer Entry
-'''''''''''''''
 
 .. raw:: mediawiki
 

@@ -1,5 +1,3 @@
-Country Budget Items
-''''''''''''''''''''
 
 .. raw:: mediawiki
 

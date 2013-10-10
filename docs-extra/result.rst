@@ -1,5 +1,3 @@
-Result
-''''''
 
 .. raw:: mediawiki
 

@@ -1,5 +1,3 @@
-Document Link
-'''''''''''''
 
 .. raw:: mediawiki
 

@@ -1,5 +1,3 @@
-Related Activity
-''''''''''''''''
 
 .. raw:: mediawiki
 

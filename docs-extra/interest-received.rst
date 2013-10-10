@@ -1,5 +1,3 @@
-Interest Received
-'''''''''''''''''
 
 .. raw:: mediawiki
 

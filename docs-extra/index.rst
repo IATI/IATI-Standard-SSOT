@@ -1,5 +1,3 @@
-Description
------------
 
 The activity standard is designed for reporting the details of individual aid activities. An activity is defined by the reporting organisation – depending on who is reporting, it might be a large programme, a small project or another logical grouping of work and resources.
 

@@ -1,5 +1,3 @@
-Mailing Address
-'''''''''''''''
 
 .. raw:: mediawiki
 

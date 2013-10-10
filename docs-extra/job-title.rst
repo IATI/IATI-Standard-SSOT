@@ -1,5 +1,3 @@
-Job Title
-'''''''''
 
 .. raw:: mediawiki
 

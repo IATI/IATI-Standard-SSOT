@@ -1,5 +1,3 @@
-Value
-'''''
 
 .. raw:: mediawiki
 

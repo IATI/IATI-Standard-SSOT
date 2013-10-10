@@ -1,5 +1,3 @@
-Repayment Plan
-''''''''''''''
 
 .. raw:: mediawiki
 

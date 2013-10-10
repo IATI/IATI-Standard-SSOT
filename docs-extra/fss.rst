@@ -1,5 +1,3 @@
-FSS
-'''
 
 .. raw:: mediawiki
 

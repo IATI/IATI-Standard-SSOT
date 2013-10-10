@@ -1,5 +1,3 @@
-IATI Activities
-'''''''''''''''
 
 .. raw:: mediawiki
 

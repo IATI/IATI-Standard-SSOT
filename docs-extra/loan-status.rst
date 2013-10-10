@@ -1,5 +1,3 @@
-Loan Status
-'''''''''''
 
 .. raw:: mediawiki
 
