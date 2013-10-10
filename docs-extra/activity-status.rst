@@ -1,0 +1,14 @@
+Activity Status
+'''''''''''''''
+
+.. raw:: mediawiki
+
+   {{for revison 1.02}}
+
+Example Usage
+^^^^^^^^^^^^^
+
+This example declares that an activity has reached completion (code 3)
+``
+    <activity-status code="3">Completion</activity-status>
+``

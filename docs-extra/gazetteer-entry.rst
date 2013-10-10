@@ -1,0 +1,23 @@
+Gazetteer Entry
+'''''''''''''''
+
+.. raw:: mediawiki
+
+   {{for revison 1.02}}
+
+Example Usage
+^^^^^^^^^^^^^
+
+Example for the \*\*Herat region of Afghanistan\*\* - which has an ID of
+\*\*1140026\*\* on `geonames.org <http://www.geonames.org/>`__. \\\\ To
+find Herat on geonames.org you would create a link like this:
+http://www.geonames.org/1140026/ \\\\ The IATI gazeteer-ref for geonames
+is "GEO", so the element would look like:
+
+``
+<location>
+  ....
+  <gazetteer-entry gazeteer-ref="GEO">1140026</gazetteer-entry>
+  ....
+</location>
+``
