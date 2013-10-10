@@ -10,9 +10,8 @@ namespaces = {
 
 import re
 
-index = open('docs/index.rst', 'w')
+index = open('docs/activity/index.rst', 'w')
 index.write('IATI Activities Standard\n====\n\n')
-index.write('Elements\n----\n\n')
 index.write('.. toctree::\n   :maxdepth: 1\n\n')
 
 def get_element(element_name, indent=''):
@@ -22,7 +21,7 @@ def get_element(element_name, indent=''):
     if element is None: return
 
     index.write('   '+element_name+'\n')
-    with open('docs/'+element_name+'.rst', 'w') as fp:
+    with open('docs/activity/'+element_name+'.rst', 'w') as fp:
         fp.write(element_name+'\n'+('='*len(element_name))+'\n\n')
         fp.write('From the schema\n^^^^^^^^^^^^^^^\n\n')
         fp.write(element.find(".//xsd:documentation", namespaces=namespaces).text)
