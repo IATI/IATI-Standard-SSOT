@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.02 </standard/documentation/1.02/location-type>`__, `revison
-1.01 </standard/documentation/1.0/location-type>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -24,4 +21,3 @@ then this should be declared:
 .. code-block:: xml
 
     <location-type code="PPL" xml:lang-"fr">region peuplee</location-type>
-

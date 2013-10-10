@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.02 </standard/documentation/1.02/indicator>`__, `revison
-1.01 </standard/documentation/1.0/indicator>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -36,4 +33,3 @@ If omitted 'true' is assumed.
         </indicator>
     .....
     </result>    
-

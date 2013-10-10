@@ -1,6 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.02 </standard/documentation/1.02/description>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -16,4 +14,3 @@ been, it is recommended not to re-declare the language attribute again.
     <description type="1" xml:lang="en">
     Description text
     </description>
-

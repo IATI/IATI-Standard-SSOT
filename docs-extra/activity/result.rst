@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.02 </standard/documentation/1.02/result>`__, `revison
-1.01 </standard/documentation/1.0/result>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -24,4 +21,3 @@ aggregated. If omitted 'true' is assumed.
         <result type="output" aggregation-status="false">
         ....
         </result>
-

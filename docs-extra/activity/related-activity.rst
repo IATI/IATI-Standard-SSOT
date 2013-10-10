@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.02 </standard/documentation/1.02/related-activity>`__, `revison
-1.01 </standard/documentation/1.0/related-activity>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -25,4 +22,3 @@ Where this text is in a language that differs from the default set in
 .. code-block:: xml
 
         <related-activity type="1" ref="GB-1-105838" xml:lang="fr">Programme du secteur commercial</related-activity>
-

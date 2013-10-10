@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.01 </standard/documentation/1.0/conditions>`__, `revison
-1.02 </standard/documentation/1.02/conditions>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -23,4 +20,3 @@ For conditions:
     <conditions attached="1">
     ....
     </conditions>
-

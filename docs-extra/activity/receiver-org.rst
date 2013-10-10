@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.02 </standard/documentation/1.02/receiver-org>`__, `revison
-1.01 </standard/documentation/1.0/receiver-org>`__
 
 Notes
 ~~~~~
@@ -55,4 +52,3 @@ record the unique activity identifier for that activity:
         <receiver-org receiver-activity-id="CG-3-1440"/>
       ...
     </transaction>
-

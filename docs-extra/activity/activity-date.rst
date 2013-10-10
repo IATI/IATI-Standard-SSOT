@@ -1,11 +1,4 @@
 
-Page for revison 1.02. See this page for: `release
-1.02 </standard/documentation/1.02/activity-date>`__, `release
-1.01 </standard/documentation/1.0/activity-date>`__
-
-Page for release 1.02. See this page for: `release
-1.02 </standard/documentation/1.02/activity-date>`__, `release
-1.01 </standard/documentation/1.0/activity-date>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -27,4 +20,3 @@ activity:
 
         <activity-date type="start-actual" iso-date="2010-03-01"/>
         <activity-date type="end-planned" iso-date="2013-03-30"/>
-

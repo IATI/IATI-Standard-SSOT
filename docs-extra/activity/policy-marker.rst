@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.01 </standard/documentation/1.0/policy-marker>`__, `revison
-1.02 </standard/documentation/1.02/policy-marker>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -45,4 +42,3 @@ set for the activity, then this should be declared as follows:
 .. code-block:: xml
 
     <policy-marker vocabulary="DAC" code="04" xml:lang="fr">Developpement du commerce</policy-marker>
-

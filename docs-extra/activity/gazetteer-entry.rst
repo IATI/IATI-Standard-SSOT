@@ -1,6 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.02 </standard/documentation/1.02/gazetteer-entry>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -19,4 +17,3 @@ look like:
       <gazetteer-entry gazeteer-ref="GEO">1140026</gazetteer-entry>
       ....
     </location>
-

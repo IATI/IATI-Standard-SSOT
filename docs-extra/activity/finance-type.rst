@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.02 </standard/documentation/1.02/finance-type>`__, `revison
-1.01 </standard/documentation/1.0/finance-type>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -24,4 +21,3 @@ default, then this should be declared accordingly:
 .. code-block:: xml
 
         <finance-type code="100" xml:lang="fr">Don</finance-type>
-

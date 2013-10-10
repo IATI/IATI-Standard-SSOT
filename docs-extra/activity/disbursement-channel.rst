@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.02 </standard/documentation/1.02/disbursement-channel>`__, `revison
-1.01 </standard/documentation/1.0/disbursement-channel>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -25,4 +22,3 @@ default, then this should be declared accordingly:
 
     <disbursement-channel code="1" xml:lang="en">Cash to treasury</disbursement-channel-code>
      
-

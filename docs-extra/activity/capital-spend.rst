@@ -1,7 +1,4 @@
 
-Page for revison 1.03.
-
-Page for release 1.03.
 
 Example Usage
 ~~~~~~~~~~~~~

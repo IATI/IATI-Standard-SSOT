@@ -1,6 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.02 </standard/documentation/1.02/provider-org>`__
 
 Notes
 ~~~~~
@@ -42,4 +40,3 @@ must record the unique activity identifier for that activity:
 .. code-block:: xml
 
         <provider-org provider-activity-id="GB-1-10538"/>
-

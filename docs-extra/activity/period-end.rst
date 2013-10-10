@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.01 </standard/documentation/1.0/period-end>`__, `revison
-1.02 </standard/documentation/1.02/period-end>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -18,4 +15,3 @@ Where a precise date cannot be provided, freetext can be stated:
 .. code-block:: xml
 
     <period-end>Last quarter 2011</period-end>
-

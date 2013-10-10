@@ -1,5 +1,4 @@
 
-Page for revision 1.03.
 
 Example Usage
 ~~~~~~~~~~~~~

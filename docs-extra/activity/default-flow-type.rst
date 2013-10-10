@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.01 </standard/documentation/1.0/default-flow-type>`__, `revison
-1.02 </standard/documentation/1.02/default-flow-type>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -24,4 +21,3 @@ default, then this should be declared accordingly:
 .. code-block:: xml
 
         <default-flow-type code="10" xml:lang="fr"> APD</default-flow-type>
-

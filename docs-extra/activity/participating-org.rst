@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.02 </standard/documentation/1.02/participating-org>`__, `revison
-1.01 </standard/documentation/1.0/participating-org>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -24,4 +21,3 @@ also declared for two.
     <participating-org ref="GB" type="10" role="Funding">UNITED KINGDOM</participating-org>
     <participating-org ref="GB-1" type="10" role="Extending">Department for International Development</participating-org>
     <participating-org ref="22000" role="Implementing">Donor country-based NGO</participating-org>
-

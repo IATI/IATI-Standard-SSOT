@@ -1,7 +1,4 @@
 
-Page for revison 1.02. See this page for: `revison
-1.02 </standard/documentation/1.02/transaction>`__, `revison
-1.01 </standard/documentation/1.0/transaction>`__
 
 Example Usage
 ~~~~~~~~~~~~~
@@ -16,4 +13,3 @@ this transaction in another system:
         <transaction ref="200304678">
         ....
         </transaction>
-

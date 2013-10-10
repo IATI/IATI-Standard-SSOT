@@ -6,5 +6,6 @@ done
 for f in *.html; do pandoc -f html $f -t rst -o ../docs-extra/activity/`basename $f .html`.rst; done
 #sed -i 's/\.\. code:: code/.. code-block:: xml/' *
 #for f in *.rst; do tail -n+3 $f > tmp; mv tmp $f; done
+#for f in *.rst; do sed -e '/./{H;$!d;}' -e 'x;/Page for revision/d' $f > tmp; mv tmp $f; done
 
 
