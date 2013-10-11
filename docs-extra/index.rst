@@ -2,6 +2,7 @@ IATI
 ====
 
 .. toctree::
-   :maxdepth: 2
+   :titlesonly:
 
-   activity/index
+   iati-activities 
+   iati-organisations
