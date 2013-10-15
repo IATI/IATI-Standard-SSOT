@@ -1,4 +1,3 @@
 {%- if display_toc %}
-  <h3><a href="{{ pathto(master_doc) }}">{{ _('Table Of Contents') }}</a></h3>
-  {{ toctree(titles_only=true) }}
+  {{ toctree(titles_only=true) |replace("current", "current_page_item page-has-children")| replace("<ul class=\"", "<ul class=\"children ")| replace("<ul>", "<ul class=\"children\">") |replace("<li class=\"", "<li class=\"page-item ") }}
 {%- endif %}
