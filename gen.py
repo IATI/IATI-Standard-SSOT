@@ -48,13 +48,15 @@ class Schema2Doc(object):
             fp.write(element_name+'\n'+('='*len(element_name))+'\n\n')
             
             fp.write('\nFrom the schema\n~~~~~~~~~~~~~~~\n\n')
-            fp.write(element.find(".//xsd:documentation", namespaces=namespaces).text)
+            fp.write(textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text))
             fp.write('\n\n')
 
             #FIXME (element_loop does not belong here)
             attributes = self.attribute_loop(element)
-            fp.write('Attributes\n~~~~~~~~~~\n\n')
-            fp.write('\n'.join([ a[0]+'\n  '+textwrap.dedent(a[1]).strip().replace('\n','\n  ') for a in attributes ]))
+            if attributes:
+                fp.write('Attributes\n~~~~~~~~~~\n\n')
+                fp.write('\n'.join([ '@'+a[0]+'\n  '+textwrap.dedent(a[1]).strip().replace('\n','\n  ') for a in attributes ]))
+                fp.write('\n\n')
 
             #FIXME (element_loop does not belong here)
             childnames = self.element_loop(element, path)
