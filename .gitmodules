@@ -1,6 +1,6 @@
-[submodule "iati-schemas"]
-	path = iati-schemas
-	url = https://github.com/Bjwebb/iati-schemas.git
+[submodule "IATI-Schemas"]
+	path = IATI-Schemas
+	url = https://github.com/Bjwebb/IATI-Schemas.git
 [submodule "IATI-Rulesets"]
 	path = IATI-Rulesets
 	url = https://github.com/Bjwebb/IATI-Rulesets.git
