@@ -6,6 +6,7 @@ IATI
 
    iati-activities 
    iati-organisations
+   codelists
 
 Indices and tables
 ------------------
