@@ -19,6 +19,10 @@ for f in IATI-Codelists/out/csv/*; do
     echo "$fname
 $underline
 
+\`XML <https://github.com/Bjwebb/IATI-Codelists-Output/blob/master/xml/${fname}.xml>\`_
+\`CSV <https://github.com/Bjwebb/IATI-Codelists-Output/blob/master/csv/${fname}.csv>\`_
+\`JSON <https://github.com/Bjwebb/IATI-Codelists-Output/blob/master/json/${fname}.json>\`_
+
 .. csv-table::
    :file: ../../$f
     
