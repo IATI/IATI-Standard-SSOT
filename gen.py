@@ -40,7 +40,7 @@ class Schema2Doc(object):
 
 
     def output_docs(self, element_name, element, path):
-        #print element_name
+        url = element.base.replace('./iati-schemas/', 'https://github.com/Bjwebb/IATI-Schemas/blob/master/') + '#L' + str(element.sourceline)
         try:
             os.makedirs('docs/'+path)
         except OSError: pass
@@ -49,6 +49,7 @@ class Schema2Doc(object):
             fp.write('DRAFT\n-----\n\n')
             
             fp.write('\nFrom the schema\n~~~~~~~~~~~~~~~\n\n')
+            fp.write('`View this element in the schema source <'+url+'>`_\n')
             fp.write(textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text))
             fp.write('\n\n')
 
@@ -63,7 +64,7 @@ class Schema2Doc(object):
             childnames = self.element_loop(element, path)
             if childnames:
                 fp.write('\nSubelements\n~~~~~~~~~~~\n\n')
-                fp.write('.. toctree::\n   :titlesonly:\n\n')
+                fp.write('.. toctree::\n   :titlesonly:\n   :maxdepth: 1\n\n')
                 fp.write('\n'.join([ '   '+element_name+'/'+c for c in childnames]))
                 fp.write('\n\n')
             
