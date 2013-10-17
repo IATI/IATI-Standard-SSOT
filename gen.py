@@ -13,6 +13,19 @@ custom_attributes = {
 
 import re
 
+codelist_mappings = ET.parse('./IATI-Codelists/mapping.xml').getroot().findall('mapping')
+def match_codelist(path):
+    for mapping in codelist_mappings:
+        if mapping.find('path').text.startswith('//'):
+            #print mapping.find('path').text.strip('/'), path
+            if mapping.find('path').text.strip('/') in path:
+                return mapping.find('codelist').attrib['ref']
+            else:
+                pass # FIXME
+    return
+
+
+
 class Schema2Doc(object):
     def __init__(self, schema):
         self.tree = ET.parse("./IATI-Schemas/"+schema)
@@ -57,7 +70,11 @@ class Schema2Doc(object):
             attributes = self.attribute_loop(element)
             if attributes:
                 fp.write('Attributes\n~~~~~~~~~~\n\n')
-                fp.write('\n'.join([ '@'+a[0]+'\n  '+textwrap.dedent(a[1]).strip().replace('\n','\n  ') for a in attributes ]))
+                for attribute, text in attributes:
+                    fp.write('\n'.join([ '@'+a[0]+'\n  '+textwrap.dedent(a[1]).strip().replace('\n','\n  ') for a in attributes ]))
+                    codelist = match_codelist(path+element_name+'/@'+attribute)
+                    if codelist is not None:
+                        fp.write('\n  \n  This value should be on the :doc:`{0} codelist </codelists/{0}>`.\n'.format(codelist)) 
                 fp.write('\n\n')
 
             #FIXME (element_loop does not belong here)
@@ -130,7 +147,7 @@ class Schema2Doc(object):
 activities = Schema2Doc('iati-activities-schema.xsd')
 activities.get_element('iati-activities', '')
 
-orgs = Schema2Doc('iati-organisations-schema.xsd')
-orgs.get_element('iati-organisations', '')
+#orgs = Schema2Doc('iati-organisations-schema.xsd')
+#orgs.get_element('iati-organisations', '')
 
 
