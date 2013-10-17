@@ -15,8 +15,8 @@ import re
 
 class Schema2Doc(object):
     def __init__(self, schema):
-        self.tree = ET.parse("./iati-schemas/"+schema)
-        self.tree2 = ET.parse("./iati-schemas/iati-common.xsd")
+        self.tree = ET.parse("./IATI-Schemas/"+schema)
+        self.tree2 = ET.parse("./IATI-Schemas/iati-common.xsd")
 
     def get_complexType(self, complexType_name):
         complexType = self.tree.find("//xsd:complexType[@name='{0}']".format(complexType_name), namespaces=namespaces)
@@ -40,7 +40,7 @@ class Schema2Doc(object):
 
 
     def output_docs(self, element_name, element, path):
-        url = element.base.replace('./iati-schemas/', 'https://github.com/Bjwebb/IATI-Schemas/blob/master/') + '#L' + str(element.sourceline)
+        url = element.base.replace('./IATI-Schemas/', 'https://github.com/Bjwebb/IATI-Schemas/blob/master/') + '#L' + str(element.sourceline)
         try:
             os.makedirs('docs/'+path)
         except OSError: pass

@@ -16,8 +16,11 @@ cd ..
 for f in IATI-Codelists/out/csv/*; do
     fname=`basename $f .csv`
     underline=`echo $fname | sed s/./=/g`
+    description=`xmllint --xpath "string(/codelist/@description)" IATI-Codelists/xml/$fname.xml`
     echo "$fname
 $underline
+
+$description
 
 \`XML <https://github.com/Bjwebb/IATI-Codelists-Output/blob/master/xml/${fname}.xml>\`_
 \`CSV <https://github.com/Bjwebb/IATI-Codelists-Output/blob/master/csv/${fname}.csv>\`_
