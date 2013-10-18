@@ -37,6 +37,12 @@ class Schema2Doc(object):
             complexType = self.tree2.find("//xsd:complexType[@name='{0}']".format(complexType_name), namespaces=namespaces)
         return complexType
 
+    def get_attributeGroup(self, attributeGroup_name):
+        attributeGroup = self.tree.find("//xsd:attributeGroup[@name='{0}']".format(attributeGroup_name), namespaces=namespaces)
+        if attributeGroup is None:
+            attributeGroup = self.tree2.find("//xsd:attributeGroup[@name='{0}']".format(attributeGroup_name), namespaces=namespaces)
+        return attributeGroup
+
     def get_attribute(self, attribute_name):
         attribute = self.tree.find("//xsd:attribute[@name='{0}']".format(attribute_name), namespaces=namespaces)
         if attribute is None:
@@ -108,12 +114,14 @@ class Schema2Doc(object):
             
         a = element.attrib
         type_attributes = []
+        type_attributeGroups = []
         if 'type' in a:
             complexType = self.get_complexType(a['type'])
             if complexType is None:
                 print 'Notice: No attributes for', a['type']
             else:
                 type_attributes = complexType.findall('xsd:attribute', namespaces=namespaces)
+                type_attributeGroups = complexType.findall('xsd:attributeGroup', namespaces=namespaces)
             #print_column_info('text', indent+'  ')
             """"
             if a['type'] == 'codeReqType':
@@ -127,11 +135,19 @@ class Schema2Doc(object):
                 print_column_info('iso-date', indent+'  ', False)
             """
 
+        group_attributes = []
+        for attributeGroup in ( 
+            element.findall('xsd:complexType/xsd:attributeGroup', namespaces=namespaces) +
+            element.findall('xsd:complexType/xsd:simpleContent/xsd:extension/xsd:attributeGroup', namespaces=namespaces) +
+            type_attributeGroups
+            ):
+            group_attributes += self.get_attributeGroup(attributeGroup.attrib['ref']).findall('xsd:attribute', namespaces=namespaces)
+
         out = []
         for attribute in (
             element.findall('xsd:complexType/xsd:attribute', namespaces=namespaces) +
             element.findall('xsd:complexType/xsd:simpleContent/xsd:extension/xsd:attribute', namespaces=namespaces) +
-            type_attributes
+            type_attributes + group_attributes
             ):
             if 'ref' in attribute.attrib:
                 if attribute.get('ref') in custom_attributes:
