@@ -71,10 +71,11 @@ class Schema2Doc(object):
             if attributes:
                 fp.write('Attributes\n~~~~~~~~~~\n\n')
                 for attribute, text in attributes:
-                    fp.write('\n'.join([ '@'+a[0]+'\n  '+textwrap.dedent(a[1]).strip().replace('\n','\n  ') for a in attributes ]))
+                    fp.write( '@'+attribute+'\n  '+textwrap.dedent(text).strip().replace('\n','\n  ') )
                     codelist = match_codelist(path+element_name+'/@'+attribute)
                     if codelist is not None:
                         fp.write('\n  \n  This value should be on the :doc:`{0} codelist </codelists/{0}>`.\n'.format(codelist)) 
+                    fp.write('\n')
                 fp.write('\n\n')
 
             #FIXME (element_loop does not belong here)
