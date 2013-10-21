@@ -71,14 +71,23 @@ class Schema2Doc(object):
             fp.write('`View this element in the schema source <'+url+'>`_\n')
             fp.write(textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text))
             fp.write('\n\n')
+            for extended_type in element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces):
+                if extended_type.startswith('xsd:'):
+                    fp.write('The text in this element should be of type {0}.\n'.format(extended_type))
+                    fp.write('\n\n')
+            if element.get('type') and element.get('type').startswith('xsd:'):
+                fp.write('The text in this element should be of type {0}.\n'.format(element.get('type')))
+                fp.write('\n\n')
 
             #FIXME (element_loop does not belong here)
             attributes = self.attribute_loop(element)
             if attributes:
                 fp.write('Attributes\n~~~~~~~~~~\n\n')
-                for attribute, text in attributes:
+                for attribute, attribute_type, text in attributes:
                     fp.write( '@'+attribute+'\n  '+textwrap.dedent(text).strip().replace('\n','\n  ') )
                     codelist = match_codelist(path+element_name+'/@'+attribute)
+                    if attribute_type:
+                        fp.write('\n  \n  This value should be of type {0}.\n'.format(attribute_type)) 
                     if codelist is not None:
                         fp.write('\n  \n  This value should be on the :doc:`{0} codelist </codelists/{0}>`.\n'.format(codelist)) 
                     fp.write('\n')
@@ -151,12 +160,12 @@ class Schema2Doc(object):
             ):
             if 'ref' in attribute.attrib:
                 if attribute.get('ref') in custom_attributes:
-                    out.append((attribute.get('ref'), custom_attributes[attribute.get('ref')]))
+                    out.append((attribute.get('ref'), '', custom_attributes[attribute.get('ref')]))
                     continue
                 attribute = self.get_attribute(attribute.get('ref'))
             doc = attribute.find(".//xsd:documentation", namespaces=namespaces)
             if doc is not None:
-                out.append((attribute.get('name'), doc.text))
+                out.append((attribute.get('name'), attribute.get('type'), doc.text))
             else:   
                 print 'Ack', ET.tostring(attribute)
         return out
