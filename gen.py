@@ -2,6 +2,7 @@ from lxml import etree as ET
 import string
 import os
 import textwrap
+import json
 
 
 namespaces = {
@@ -12,6 +13,42 @@ custom_attributes = {
 }
 
 import re
+
+def human_list(l):
+    return ', '.join(l)
+
+rulesets = json.load(open('./IATI-Rulesets/rulesets.json'))
+def ruleset_text(path):
+    out = ''
+    for xpath, rules in rulesets.items():
+        if xpath.startswith('//'):
+            try:
+                reduced_path = path.split(xpath[2:]+'/')[1]
+                for rule in rules:
+                    cases = rules[rule]['cases']
+                    for case in cases:
+                        if 'paths' in case:
+                            for case_path in case['paths']:
+                                # Don't forget [@ ]
+                                if case_path == reduced_path:
+                                    other_paths = case['paths']
+                                    other_paths.remove(case_path)
+                                    if rule == 'only_one':
+                                        out += 'This element must be present only once. '
+                                        if other_paths:
+                                            out += 'This element must not be present if {0} are present. '.format(human_list(other_paths))
+                                    elif rule == 'atleast_one':
+                                        if other_paths:
+                                            out += 'Either this element or {0} must be present. '.format(human_list)
+                                        else:
+                                            out += 'This element must be present. ' 
+                                    else: print case_path, rule, case['paths'] 
+                                    break
+            except IndexError:
+                pass
+    out += '(`see rulesets.json <https://github.com/Bjwebb/IATI-Rulesets/blob/master/rulesets.json>`_)'
+    return out
+
 
 codelist_mappings = ET.parse('./IATI-Codelists/mapping.xml').getroot().findall('mapping')
 def match_codelist(path):
@@ -71,6 +108,8 @@ class Schema2Doc(object):
             fp.write('`View this element in the schema source <'+url+'>`_\n')
             fp.write(textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text))
             fp.write('\n\n')
+            fp.write(ruleset_text(path+element_name))
+            fp.write('\n\n')
             for extended_type in element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces):
                 if extended_type.startswith('xsd:'):
                     fp.write('The text in this element should be of type {0}.\n'.format(extended_type))
@@ -90,6 +129,7 @@ class Schema2Doc(object):
                         fp.write('\n  \n  This value should be of type {0}.\n'.format(attribute_type)) 
                     if codelist is not None:
                         fp.write('\n  \n  This value should be on the :doc:`{0} codelist </codelists/{0}>`.\n'.format(codelist)) 
+                    fp.write('\n  \n  '+ruleset_text(path+element_name+'/@'+attribute))
                     fp.write('\n')
                 fp.write('\n\n')
 
