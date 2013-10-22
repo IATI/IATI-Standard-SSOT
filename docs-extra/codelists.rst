@@ -1,0 +1,8 @@
+Codelists
+=========
+
+.. toctree::
+   :glob:
+
+   codelists/*
+
