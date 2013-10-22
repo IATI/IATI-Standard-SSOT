@@ -46,7 +46,8 @@ def ruleset_text(path):
                                     break
             except IndexError:
                 pass
-    out += '(`see rulesets.json <https://github.com/Bjwebb/IATI-Rulesets/blob/master/rulesets.json>`_)'
+    if out != '':
+        out += '(`see rulesets.json <https://github.com/Bjwebb/IATI-Rulesets/blob/master/rulesets.json>`_)'
     return out
 
 
@@ -213,7 +214,7 @@ class Schema2Doc(object):
 activities = Schema2Doc('iati-activities-schema.xsd')
 activities.get_element('iati-activities', '')
 
-#orgs = Schema2Doc('iati-organisations-schema.xsd')
-#orgs.get_element('iati-organisations', '')
+orgs = Schema2Doc('iati-organisations-schema.xsd')
+orgs.get_element('iati-organisations', '')
 
 
