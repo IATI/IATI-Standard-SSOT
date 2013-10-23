@@ -1,18 +1,20 @@
 #!/bin/bash
+set -o nounset
+
 rm -r docs
 mkdir docs
 mkdir docs/codelists
-cd docs-extra
+cd docs-extra || exit 1
 find -type d -exec mkdir ../docs/{} \;
-cd ..
-python2 gen.py
-cd docs-extra
+cd .. || exit 1
+python gen.py || exit 1
+cd docs-extra || exit 1
 find -type f -exec bash -c 'cat {} >> ../docs/{}' \;
-cd ..
+cd .. || exit 1
 
-cd IATI-Codelists
-./gen.sh
-cd ..
+cd IATI-Codelists || exit 1
+./gen.sh || exit 1
+cd .. || exit 1
 for f in IATI-Codelists/out/csv/*; do
     fname=`basename $f .csv`
     underline=`echo $fname | sed s/./=/g`
@@ -32,7 +34,7 @@ $description
     " > docs/codelists/${fname}.rst;
 done
 
-cd docs
+cd docs || exit 1
 make html
 
 
