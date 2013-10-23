@@ -69,27 +69,27 @@ class Schema2Doc(object):
         self.tree2 = ET.parse("./IATI-Schemas/iati-common.xsd")
 
     def get_complexType(self, complexType_name):
-        complexType = self.tree.find("//xsd:complexType[@name='{0}']".format(complexType_name), namespaces=namespaces)
+        complexType = self.tree.find("xsd:complexType[@name='{0}']".format(complexType_name), namespaces=namespaces)
         if complexType is None:
-            complexType = self.tree2.find("//xsd:complexType[@name='{0}']".format(complexType_name), namespaces=namespaces)
+            complexType = self.tree2.find("xsd:complexType[@name='{0}']".format(complexType_name), namespaces=namespaces)
         return complexType
 
     def get_attributeGroup(self, attributeGroup_name):
-        attributeGroup = self.tree.find("//xsd:attributeGroup[@name='{0}']".format(attributeGroup_name), namespaces=namespaces)
+        attributeGroup = self.tree.find("xsd:attributeGroup[@name='{0}']".format(attributeGroup_name), namespaces=namespaces)
         if attributeGroup is None:
-            attributeGroup = self.tree2.find("//xsd:attributeGroup[@name='{0}']".format(attributeGroup_name), namespaces=namespaces)
+            attributeGroup = self.tree2.find("xsd:attributeGroup[@name='{0}']".format(attributeGroup_name), namespaces=namespaces)
         return attributeGroup
 
     def get_attribute(self, attribute_name):
-        attribute = self.tree.find("//xsd:attribute[@name='{0}']".format(attribute_name), namespaces=namespaces)
+        attribute = self.tree.find("xsd:attribute[@name='{0}']".format(attribute_name), namespaces=namespaces)
         if attribute is None:
-            attribute = self.tree2.find("//xsd:attribute[@name='{0}']".format(attribute_name), namespaces=namespaces)
+            attribute = self.tree2.find("xsd:attribute[@name='{0}']".format(attribute_name), namespaces=namespaces)
         return attribute
 
     def get_element(self, element_name, path):
-        element = self.tree.find("//xsd:element[@name='{0}']".format(element_name), namespaces=namespaces)
+        element = self.tree.find("xsd:element[@name='{0}']".format(element_name), namespaces=namespaces)
         if element is None:
-            element = self.tree2.find("//xsd:element[@name='{0}']".format(element_name), namespaces=namespaces)
+            element = self.tree2.find("xsd:element[@name='{0}']".format(element_name), namespaces=namespaces)
         if element is None: return
 
         self.output_docs(element_name, element, path)
