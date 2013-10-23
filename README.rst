@@ -18,7 +18,9 @@ Pull in the git submodules:::
     git submodule init
     git sudmodule update
 
-Set up a virtual environment:::
+Set up a virtual environment:
+
+.. code-block:: bash
 
     # Create a virtual environment
     virtualenv pyenv
