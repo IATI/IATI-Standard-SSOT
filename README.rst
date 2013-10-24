@@ -16,7 +16,7 @@ Fetch the source code:::
 Pull in the git submodules:::
     
     git submodule init
-    git sudmodule update
+    git submodule update
 
 Set up a virtual environment:
 
@@ -42,5 +42,5 @@ The built documentation is now in ``docs/_build/html``
 Editing the documentation
 =========================
 
-Make any changes in ``docs-extra``, as the ``docs`` directory is generated from
+Make any changes in ``IATI-Extra-Documentation``, as the ``docs`` directory is generated from
 this and other sources each time ``./gen.sh`` is run. 

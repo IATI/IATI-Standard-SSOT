@@ -4,11 +4,11 @@ set -o nounset
 rm -r docs
 mkdir docs
 mkdir docs/codelists
-cd docs-extra || exit 1
+cd IATI-Extra-Documentation || exit 1
 find -type d -exec mkdir ../docs/{} \;
 cd .. || exit 1
 python gen.py || exit 1
-cd docs-extra || exit 1
+cd IATI-Extra-Documentation || exit 1
 find -type f -exec bash -c 'cat {} >> ../docs/{}' \;
 cd .. || exit 1
 

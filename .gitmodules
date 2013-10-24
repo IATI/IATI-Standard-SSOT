@@ -7,3 +7,6 @@
 [submodule "IATI-Codelists"]
 	path = IATI-Codelists
 	url = https://github.com/Bjwebb/IATI-Codelists.git
+[submodule "IATI-Extra-Documentation"]
+	path = IATI-Extra-Documentation
+	url = https://github.com/Bjwebb/IATI-Extra-Documentation.git
