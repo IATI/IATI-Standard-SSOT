@@ -102,6 +102,7 @@ class Schema2Doc(object):
         except OSError: pass
         with open('docs/'+path+element_name+'.rst', 'w') as fp:
             fp.write(element_name+'\n'+('='*len(element_name))+'\n\n')
+            fp.write('.. index::\n  single: '+element_name+'\n\n')
             fp.write('DRAFT\n-----\n\n')
             
             fp.write('\nFrom the schema\n~~~~~~~~~~~~~~~\n\n')
