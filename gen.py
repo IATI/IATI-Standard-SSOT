@@ -102,11 +102,14 @@ class Schema2Doc(object):
         except OSError: pass
         with open('docs/'+path+element_name+'.rst', 'w') as fp:
             fp.write(element_name+'\n'+('='*len(element_name))+'\n\n')
+            fp.write('``'+path+element_name+'``\n\n')
             fp.write('.. index::\n  single: '+element_name+'\n\n')
             fp.write('DRAFT\n-----\n\n')
             
-            fp.write('\nFrom the schema\n~~~~~~~~~~~~~~~\n\n')
+            fp.write('\nDeveloper tools\n~~~~~~~~~~~~~~~\n\n')
             fp.write('`View this element in the schema source <'+url+'>`_\n')
+
+            fp.write('\nFrom the schema\n~~~~~~~~~~~~~~~\n\n')
             fp.write(textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text))
             fp.write('\n\n')
             fp.write(ruleset_text(path+element_name))

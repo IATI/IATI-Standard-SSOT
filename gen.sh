@@ -15,6 +15,8 @@ cd .. || exit 1
 cd IATI-Codelists || exit 1
 ./gen.sh || exit 1
 cd .. || exit 1
+mkdir docs/_static
+cp -r IATI-Codelists/out/ docs/_static/codelists/
 for f in IATI-Codelists/out/csv/*; do
     fname=`basename $f .csv`
     underline=`echo $fname | sed s/./=/g`
@@ -22,8 +24,14 @@ for f in IATI-Codelists/out/csv/*; do
     echo "$fname
 $underline
 
+
 $description
 
+Download this codelist:
+\`XML <../_static/codelists/xml/${fname}.xml>\`_
+\`CSV <../_static/codelists/csv/${fname}.csv>\`_
+\`JSON <../_static/codelists/json/${fname}.json>\`_
+View on github:
 \`XML <https://github.com/Bjwebb/IATI-Codelists-Output/blob/master/xml/${fname}.xml>\`_
 \`CSV <https://github.com/Bjwebb/IATI-Codelists-Output/blob/master/csv/${fname}.csv>\`_
 \`JSON <https://github.com/Bjwebb/IATI-Codelists-Output/blob/master/json/${fname}.json>\`_
