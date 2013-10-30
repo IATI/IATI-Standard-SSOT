@@ -173,20 +173,14 @@ class Schema2Doc(object):
             if complexType is None:
                 print 'Notice: No attributes for', a['type']
             else:
-                type_attributes = complexType.findall('xsd:attribute', namespaces=namespaces)
-                type_attributeGroups = complexType.findall('xsd:attributeGroup', namespaces=namespaces)
-            #print_column_info('text', indent+'  ')
-            """"
-            if a['type'] == 'codeReqType':
-                print_column_info('code', indent+'  ', True)
-            if a['type'] == 'codeType':
-                print_column_info('code', indent+'  ', False)
-            if a['type'] == 'currencyType':
-                print_column_info('currency', indent+'  ', False)
-                print_column_info('value-date', indent+'  ', False)
-            if a['type'] == 'dateType':
-                print_column_info('iso-date', indent+'  ', False)
-            """
+                type_attributes = (
+                    complexType.findall('xsd:attribute', namespaces=namespaces) +
+                    complexType.findall('xsd:simpleContent/xsd:extension/xsd:attribute', namespaces=namespaces)
+                    )
+                type_attributeGroups = (
+                    complexType.findall('xsd:attributeGroup', namespaces=namespaces) +
+                    complexType.findall('xsd:simpleContent/xsd:extension/xsd:attributeGroup', namespaces=namespaces)
+                    )
 
         group_attributes = []
         for attributeGroup in ( 
@@ -214,8 +208,8 @@ class Schema2Doc(object):
                 print 'Ack', ET.tostring(attribute)
         return out
 
-activities = Schema2Doc('iati-activities-schema.xsd')
-activities.get_element('iati-activities', '')
+#activities = Schema2Doc('iati-activities-schema.xsd')
+#activities.get_element('iati-activities', '')
 
 orgs = Schema2Doc('iati-organisations-schema.xsd')
 orgs.get_element('iati-organisations', '')
