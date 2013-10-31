@@ -208,8 +208,8 @@ class Schema2Doc(object):
                 print 'Ack', ET.tostring(attribute)
         return out
 
-#activities = Schema2Doc('iati-activities-schema.xsd')
-#activities.get_element('iati-activities', '')
+activities = Schema2Doc('iati-activities-schema.xsd')
+activities.get_element('iati-activities', '')
 
 orgs = Schema2Doc('iati-organisations-schema.xsd')
 orgs.get_element('iati-organisations', '')
