@@ -1,12 +1,12 @@
 [submodule "IATI-Schemas"]
 	path = IATI-Schemas
-	url = https://github.com/Bjwebb/IATI-Schemas.git
+	url = https://github.com/IATI/IATI-Schemas.git
 [submodule "IATI-Rulesets"]
 	path = IATI-Rulesets
-	url = https://github.com/Bjwebb/IATI-Rulesets.git
+	url = https://github.com/IATI/IATI-Rulesets.git
 [submodule "IATI-Codelists"]
 	path = IATI-Codelists
-	url = https://github.com/Bjwebb/IATI-Codelists.git
+	url = https://github.com/IATI/IATI-Codelists.git
 [submodule "IATI-Extra-Documentation"]
 	path = IATI-Extra-Documentation
-	url = https://github.com/Bjwebb/IATI-Extra-Documentation.git
+	url = https://github.com/IATI/IATI-Extra-Documentation.git
