@@ -46,7 +46,7 @@ def ruleset_text(path):
             except IndexError:
                 pass
     if out != '':
-        out += '(`see rulesets.json <https://github.com/Bjwebb/IATI-Rulesets/blob/master/rulesets.json>`_)'
+        out += '(`see rulesets.json <https://github.com/IATI/IATI-Rulesets/blob/master/rulesets.json>`_)'
     return out
 
 
@@ -96,7 +96,7 @@ class Schema2Doc(object):
 
 
     def output_docs(self, element_name, element, path):
-        url = element.base.replace('./IATI-Schemas/', 'https://github.com/Bjwebb/IATI-Schemas/blob/master/') + '#L' + str(element.sourceline)
+        url = element.base.replace('./IATI-Schemas/', 'https://github.com/IATI/IATI-Schemas/blob/master/') + '#L' + str(element.sourceline)
         try:
             os.makedirs('docs/'+path)
         except OSError: pass
