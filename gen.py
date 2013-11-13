@@ -71,30 +71,15 @@ class Schema2Doc(object):
         self.tree = ET.parse("./IATI-Schemas/"+schema)
         self.tree2 = ET.parse("./IATI-Schemas/iati-common.xsd")
 
-    def get_complexType(self, complexType_name):
-        complexType = self.tree.find("xsd:complexType[@name='{0}']".format(complexType_name), namespaces=namespaces)
-        if complexType is None:
-            complexType = self.tree2.find("xsd:complexType[@name='{0}']".format(complexType_name), namespaces=namespaces)
-        return complexType
-
-    def get_attributeGroup(self, attributeGroup_name):
-        attributeGroup = self.tree.find("xsd:attributeGroup[@name='{0}']".format(attributeGroup_name), namespaces=namespaces)
-        if attributeGroup is None:
-            attributeGroup = self.tree2.find("xsd:attributeGroup[@name='{0}']".format(attributeGroup_name), namespaces=namespaces)
-        return attributeGroup
-
-    def get_attribute(self, attribute_name):
-        attribute = self.tree.find("xsd:attribute[@name='{0}']".format(attribute_name), namespaces=namespaces)
-        if attribute is None:
-            attribute = self.tree2.find("xsd:attribute[@name='{0}']".format(attribute_name), namespaces=namespaces)
-        return attribute
+    def get_schema_element(self, schema_element_name, name_attribute_value):
+        schema_element = self.tree.find("xsd:{0}[@name='{1}']".format(schema_element_name, name_attribute_value), namespaces=namespaces)
+        if schema_element is None:
+            schema_element = self.tree2.find("xsd:{0}[@name='{1}']".format(schema_element_name, name_attribute_value), namespaces=namespaces)
+        return schema_element
 
     def get_element(self, element_name, path):
-        element = self.tree.find("xsd:element[@name='{0}']".format(element_name), namespaces=namespaces)
-        if element is None:
-            element = self.tree2.find("xsd:element[@name='{0}']".format(element_name), namespaces=namespaces)
+        element = self.get_schema_element('element', element_name)
         if element is None: return
-
         self.output_docs(element_name, element, path)
 
 
@@ -143,7 +128,7 @@ class Schema2Doc(object):
         type_attributes = []
         type_attributeGroups = []
         if 'type' in a:
-            complexType = self.get_complexType(a['type'])
+            complexType = self.get_schema_element('complexType', a['type'])
             if complexType is None:
                 print 'Notice: No attributes for', a['type']
             else:
@@ -162,7 +147,7 @@ class Schema2Doc(object):
             element.findall('xsd:complexType/xsd:simpleContent/xsd:extension/xsd:attributeGroup', namespaces=namespaces) +
             type_attributeGroups
             ):
-            group_attributes += self.get_attributeGroup(attributeGroup.attrib['ref']).findall('xsd:attribute', namespaces=namespaces)
+            group_attributes += self.get_schema_element('attributeGroup', attributeGroup.attrib['ref']).findall('xsd:attribute', namespaces=namespaces)
 
         out = []
         for attribute in (
@@ -174,7 +159,7 @@ class Schema2Doc(object):
                 if attribute.get('ref') in custom_attributes:
                     out.append((attribute.get('ref'), '', custom_attributes[attribute.get('ref')]))
                     continue
-                attribute = self.get_attribute(attribute.get('ref'))
+                attribute = self.get_schema_element('attribute', attribute.get('ref'))
             doc = attribute.find(".//xsd:documentation", namespaces=namespaces)
             if doc is not None:
                 out.append((attribute.get('name'), attribute.get('type'), doc.text))
