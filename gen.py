@@ -3,6 +3,9 @@ import string
 import os
 import textwrap
 import json
+import jinja2
+env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
+
 
 namespaces = {
     'xsd': 'http://www.w3.org/2001/XMLSchema'
@@ -101,50 +104,21 @@ class Schema2Doc(object):
             os.makedirs('docs/'+path)
         except OSError: pass
         with open('docs/'+path+element_name+'.rst', 'w') as fp:
-            fp.write(element_name+'\n'+('='*len(element_name))+'\n\n')
-            fp.write('``'+path+element_name+'``\n\n')
-            fp.write('.. index::\n  single: '+element_name+'\n\n')
-            fp.write('DRAFT\n-----\n\n')
-            
-            fp.write('\nDeveloper tools\n~~~~~~~~~~~~~~~\n\n')
-            fp.write('`View this element in the schema source <'+url+'>`_\n')
+            t = env.get_template('schema_element.rst')
+            fp.write(t.render(
+                element_name=element_name,
+                element_name_underline='='*len(element_name),
+                element=element,
+                path=path,
+                url=url,
+                schema_documentation=textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
+                ruleset_text=ruleset_text(path+element_name),
+                extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
+                attributes=self.attribute_loop(element),
+                textwrap=textwrap, match_codelist=match_codelist, ruleset_text_=ruleset_text, #FIXME
+                childnames = self.element_loop(element, path)
+            ))
 
-            fp.write('\nFrom the schema\n~~~~~~~~~~~~~~~\n\n')
-            fp.write(textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text))
-            fp.write('\n\n')
-            fp.write(ruleset_text(path+element_name))
-            fp.write('\n\n')
-            for extended_type in element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces):
-                if extended_type.startswith('xsd:'):
-                    fp.write('The text in this element should be of type {0}.\n'.format(extended_type))
-                    fp.write('\n\n')
-            if element.get('type') and element.get('type').startswith('xsd:'):
-                fp.write('The text in this element should be of type {0}.\n'.format(element.get('type')))
-                fp.write('\n\n')
-
-            #FIXME (element_loop does not belong here)
-            attributes = self.attribute_loop(element)
-            if attributes:
-                fp.write('Attributes\n~~~~~~~~~~\n\n')
-                for attribute, attribute_type, text in attributes:
-                    fp.write( '@'+attribute+'\n  '+textwrap.dedent(text).strip().replace('\n','\n  ') )
-                    codelist = match_codelist(path+element_name+'/@'+attribute)
-                    if attribute_type:
-                        fp.write('\n  \n  This value should be of type {0}.\n'.format(attribute_type)) 
-                    if codelist is not None:
-                        fp.write('\n  \n  This value should be on the :doc:`{0} codelist </codelists/{0}>`.\n'.format(codelist)) 
-                    fp.write('\n  \n  '+ruleset_text(path+element_name+'/@'+attribute))
-                    fp.write('\n')
-                fp.write('\n\n')
-
-            #FIXME (element_loop does not belong here)
-            childnames = self.element_loop(element, path)
-            if childnames:
-                fp.write('\nSubelements\n~~~~~~~~~~~\n\n')
-                fp.write('.. toctree::\n   :titlesonly:\n   :maxdepth: 1\n\n')
-                fp.write('\n'.join([ '   '+element_name+'/'+c for c in childnames]))
-                fp.write('\n\n')
-            
 
 
     def element_loop(self, element, path):
