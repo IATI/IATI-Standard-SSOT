@@ -218,10 +218,28 @@ class Schema2Doc(object):
                 print 'Ack', ET.tostring(attribute)
         return out
 
+
+def codelists_to_docs():
+    dirname = 'IATI-Codelists/out/csv'
+    for fname in os.listdir(dirname):
+        csv_file = os.path.join(dirname, fname)
+        if not fname.endswith('.csv'): continue
+        fname = fname[:-4]
+        underline = '='*len(fname)
+        xml = ET.parse('IATI-Codelists/xml/{0}.xml'.format(fname))
+        description = ''.join(xml.getroot().xpath('/codelist/@description'))
+        with open('docs/codelists/{0}.rst'.format(fname), 'w') as fp:
+            jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
+            t = jinja_env.get_template('codelist.rst')
+            fp.write(t.render(csv_file=csv_file, fname=fname, underline=underline, description=description))
+
+
 if __name__ == '__main__':
     activities = Schema2Doc('iati-activities-schema.xsd')
     activities.output_docs('iati-activities', '')
 
     orgs = Schema2Doc('iati-organisations-schema.xsd')
     orgs.output_docs('iati-organisations', '')
+    
+    codelists_to_docs()
 
