@@ -15,5 +15,5 @@ View on github:
 `JSON <https://github.com/Bjwebb/IATI-Codelists-Output/blob/master/json/{{fname}}.json>`_
 
 .. csv-table::
-   :file: ../../{{csv_file}}
+   :file: ../../../{{csv_file}}
     

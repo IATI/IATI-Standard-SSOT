@@ -4,6 +4,8 @@ import textwrap
 import json
 import jinja2
 
+languages = ['en','fr']
+
 # Namespaces necessary for opening schema files
 namespaces = {
     'xsd': 'http://www.w3.org/2001/XMLSchema'
@@ -82,7 +84,7 @@ class Schema2Doc(object):
     reStructuredText format.
 
     """
-    def __init__(self, schema):
+    def __init__(self, schema, lang):
         """
         schema -- the filename of the schema to use, e.g.
                   'iati-activities-schema.xsd'
@@ -91,6 +93,7 @@ class Schema2Doc(object):
         self.tree = ET.parse("./IATI-Schemas/"+schema)
         self.tree2 = ET.parse("./IATI-Schemas/iati-common.xsd")
         self.jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
+        self.lang = lang
 
     def get_schema_element(self, tag_name, name_attribute):
         """
@@ -125,11 +128,14 @@ class Schema2Doc(object):
 
         url = element.base.replace('./IATI-Schemas/', 'https://github.com/IATI/IATI-Schemas/blob/master/') + '#L' + str(element.sourceline)
         try:
-            os.makedirs('docs/'+path)
+            os.makedirs('docs/en/'+path)
         except OSError:
             pass
-        with open('docs/'+path+element_name+'.rst', 'w') as fp:
-            t = self.jinja_env.get_template('schema_element.rst')
+        try:
+            os.mkdir('docs/'+self.lang+'/'+path)
+        except OSError: pass
+        with open('docs/'+self.lang+'/'+path+element_name+'.rst', 'w') as fp:
+            t = self.jinja_env.get_template(self.lang+'/schema_element.rst')
             fp.write(t.render(
                 element_name=element_name,
                 element_name_underline='='*len(element_name),
@@ -219,27 +225,32 @@ class Schema2Doc(object):
         return out
 
 
-def codelists_to_docs():
-    dirname = 'IATI-Codelists/out/csv'
+def codelists_to_docs(lang):
+    dirname = 'IATI-Codelists/out/csv/'+lang
+    try:
+        os.mkdir('docs/'+lang+'/codelists/')
+    except OSError: pass
+
     for fname in os.listdir(dirname):
         csv_file = os.path.join(dirname, fname)
         if not fname.endswith('.csv'): continue
         fname = fname[:-4]
         underline = '='*len(fname)
-        xml = ET.parse('IATI-Codelists/xml/{0}.xml'.format(fname))
+        xml = ET.parse('IATI-Codelists/combined-xml/{0}.xml'.format(fname))
         description = ''.join(xml.getroot().xpath('/codelist/@description'))
-        with open('docs/codelists/{0}.rst'.format(fname), 'w') as fp:
+        with open('docs/{0}/codelists/{1}.rst'.format(lang, fname), 'w') as fp:
             jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
-            t = jinja_env.get_template('codelist.rst')
+            t = jinja_env.get_template(lang+'/codelist.rst')
             fp.write(t.render(csv_file=csv_file, fname=fname, underline=underline, description=description))
 
 
 if __name__ == '__main__':
-    activities = Schema2Doc('iati-activities-schema.xsd')
-    activities.output_docs('iati-activities', '')
+    for language in languages:
+        activities = Schema2Doc('iati-activities-schema.xsd', lang=language)
+        activities.output_docs('iati-activities', '')
 
-    orgs = Schema2Doc('iati-organisations-schema.xsd')
-    orgs.output_docs('iati-organisations', '')
-    
-    codelists_to_docs()
+        orgs = Schema2Doc('iati-organisations-schema.xsd', lang=language)
+        orgs.output_docs('iati-organisations', '')
+        
+        codelists_to_docs(lang=language)
 

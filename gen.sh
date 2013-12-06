@@ -4,8 +4,7 @@ set -o nounset
 # Remove docs (the output directory), and recreate directory structure
 rm -r docs
 mkdir docs
-mkdir docs/codelists
-cd IATI-Extra-Documentation || exit 1
+cd IATI-Extra-Documentation/ || exit 1
 find -type d -exec mkdir ../docs/{} \;
 cd .. || exit 1
 
@@ -21,11 +20,13 @@ python gen.py || exit 1
 
 # Append Extra-Documentation to the documentation we've just generated
 cd IATI-Extra-Documentation || exit 1
-find -type f -exec bash -c 'cat {} >> ../docs/{}' \;
+find -follow -type f -exec bash -c 'cat {} >> ../docs/{}' \;
 cd .. || exit 1
 
 # Build the documentation (generate html etc.) using sphinx
-cd docs || exit 1
+cd docs/en || exit 1
 make html
-
+cd ../../ || exit 1
+cd docs/fr || exit 1
+make html
 
