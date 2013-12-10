@@ -25,6 +25,7 @@ cd .. || exit 1
 
 # Build the documentation (generate html etc.) using sphinx
 cd docs/en || exit 1
+(echo '.. raw:: html'; echo ''; curl "https://raw.github.com/okfn/iati-datastore/master/iati_datastore/iatilib/frontend/docs/index.md" | pandoc -f markdown_github -t html | sed 's/^/   /') > datastore.rst
 make html
 cd ../../ || exit 1
 cd docs/fr || exit 1
