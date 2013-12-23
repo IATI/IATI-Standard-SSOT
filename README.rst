@@ -20,7 +20,7 @@ Requirements:
 
 Fetch the source code:::
 
-    git clone git@github.com:Bjwebb/IATI-Documentation.git
+    git clone https://github.com/IATI/IATI-Standard-SSOT.git
 
 Pull in the git submodules:::
     
