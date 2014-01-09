@@ -215,7 +215,7 @@ forward, and should be split out into those rules that are definitely
 part of the standard (a start date is by definition before an end date)
 and those that should be split out into optional files.
 
-    TODO: Decide what rules we should have.
+    TODO: Decide what rules we should have.
 
 Generated Repositories
 ----------------------
