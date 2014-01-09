@@ -196,8 +196,10 @@ been created afresh, in a new easy to parse JSON format. This is very
 much a work in progress, and my working notes can be found at
 `http://iati.titanpad.com/5 <http://iati.titanpad.com/5>`__
 
-`Python <https://github.com/IATI/IATI-Rulesets/blob/master/testrules.py>`__ and
-`PHP <https://github.com/IATI/IATI-Rulesets/blob/master/testrules.php>`__ libraries
+    TODO: make notes accessible (password needed now)
+
+`Python <https://github.com/IATI/IATI-Rulesets/blob/master/testrules.py>`__ and
+`PHP <https://github.com/IATI/IATI-Rulesets/blob/master/testrules.php>`__ libraries
 for testing against these rulesets - with the idea that it should be
 easy to write one for any other programming language.
 
@@ -221,11 +223,13 @@ Generated Repositories
 Some of the SSOT repositories, can be used to generate extra text/data,
 which might also be useful to track in git repositories:
 
--  `https://github.com/IATI/IATI-Codelists-Output <https://github.com/IATI/IATI-Codelists-Output>`__
-
+-  `<https://github.com/Bjwebb/IATI-Codelists-Output>`__
 -  XML codelists converted into json and csv, and also an `automatically
    generated xml list of
-   codelists <https://raw.github.com/IATI/IATI-Codelists-Output/master/codelists.xml>`__
+   codelists <https://raw.github.com/Bjwebb/IATI-Codelists-Output/master/codelists.xml>`__
+
+       TODO: the repository and link above still are under Bjwebb, not IATI
+
 -  generated from
    `https://github.com/IATI/IATI-Codelists <https://github.com/IATI/IATI-Codelists>`__ (see
    `Machine Consumption`_)
@@ -255,8 +259,7 @@ The advantages of using github repositories for this are:
    repositories
 
 (There may be other generated data repositories we have, unrelated to
-the SSOT, such as
-`https://github.com/IATI/IATI-Data-Snapshot <https://github.com/IATI/IATI-Data-Snapshot>`__)
+the SSOT, such as `<https://github.com/Bjwebb/IATI-Data-Snapshot>`__)
 
 Branches
 --------
@@ -304,7 +307,7 @@ Standard.
     knowledge base
 
 Issues are categorised using Milestones and Labels - only people with
-push access can add these. This means there is a task for one of u to
+push access can add these. This means there is a task for one of us to
 add the appropriate labels and milestones for each issue that is added.
 There are advantages to this, since we know that every label and
 milestone has been determined by us.
@@ -432,6 +435,13 @@ branches but create a `feature branch <Branches_>`_ for the
 change they are suggesting. A pull request can then be submitted to the
 relevant branch.
 
+It is also possible (for IATI Tech team members and anyone else) to fork 
+the SSOT and edit their own copy to incorporate the desired changes. A 
+pull request can then be submitted back to the relevant repository within
+the SSOT. The details of including the changes can be discussed via 
+Github's pull request queue.
+
+
 Suggested improvements through GitHub issue
 -------------------------------------------
 
@@ -498,7 +508,7 @@ Much of the technical backend of the Single Source of Truth is set up
 now. The big next step is to work on the human processes of managing the
 git repositories properly etc.
 
-We can do this in tandem with our work on 1.04 - dev.iatistandard.org
+We can do this in tandem with our work on 1.04 - `<http://dev.iatistandard.org>`__
 will be set up to build from the Single Source of Truth, and this will
 become the new website when 1.04 is released.
 
