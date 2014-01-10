@@ -351,7 +351,7 @@ Custom labels - these should be added
 -  Activity XML - for issues relating to the activity xml
 -  Organisation XML - for issues relating to the organisation xml
 
-    TODO: Decide is these custom labels make sense, then add them to all SSOT repositories.
+    TODO: Decide if these custom labels make sense, then add them to all SSOT repositories.
 
 Issues in correct repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
