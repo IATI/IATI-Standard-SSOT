@@ -193,10 +193,7 @@ IATI-Rulesets
 The rulesets
 `https://github.com/IATI/IATI-Rulesets/blob/master/rulesets.json <https://github.com/IATI/IATI-Rulesets/blob/master/rulesets.json>`__ have
 been created afresh, in a new easy to parse JSON format. This is very
-much a work in progress, and my working notes can be found at
-`http://iati.titanpad.com/5 <http://iati.titanpad.com/5>`__
-
-    TODO: make notes accessible (password needed now)
+much a work in progress, and more information can be found at `<https://github.com/IATI/IATI-Rulesets/blob/master/README.rst>`__
 
 `Python <https://github.com/IATI/IATI-Rulesets/blob/master/testrules.py>`__ and
 `PHP <https://github.com/IATI/IATI-Rulesets/blob/master/testrules.php>`__ libraries
