@@ -24,7 +24,7 @@ def human_list(l):
     return ', '.join(l)
 
 # TODO - This function should be moved into the IATI-Rulesets submodule
-rulesets = json.load(open('./IATI-Rulesets/rulesets.json'))
+rulesets = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
 def ruleset_text(path):
     """ Return text describing the rulesets for a given path (xpath) """
     out = ''
@@ -55,7 +55,7 @@ def ruleset_text(path):
             except IndexError:
                 pass
     if out != '':
-        out += '(`see rulesets.json <https://github.com/IATI/IATI-Rulesets/blob/master/rulesets.json>`_)'
+        out += '(`see standard.json <https://github.com/IATI/IATI-Rulesets/blob/master/rulesets/standard.json>`_)'
     return out
 
 

@@ -191,7 +191,7 @@ IATI-Rulesets
 ~~~~~~~~~~~~~
 
 The rulesets
-`https://github.com/IATI/IATI-Rulesets/blob/master/rulesets.json <https://github.com/IATI/IATI-Rulesets/blob/master/rulesets.json>`__ have
+`https://github.com/IATI/IATI-Rulesets/blob/master/rulesets/standard.json <https://github.com/IATI/IATI-Rulesets/blob/master/rulesets/standard.json>`__ have
 been created afresh, in a new easy to parse JSON format. This is very
 much a work in progress, and more information can be found at `<https://github.com/IATI/IATI-Rulesets/blob/master/README.rst>`__
 
