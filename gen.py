@@ -128,11 +128,7 @@ class Schema2Doc(object):
 
         url = element.base.replace('./IATI-Schemas/', 'https://github.com/IATI/IATI-Schemas/blob/master/') + '#L' + str(element.sourceline)
         try:
-            os.makedirs('docs/en/'+path)
-        except OSError:
-            pass
-        try:
-            os.mkdir('docs/'+self.lang+'/'+path)
+            os.makedirs('docs/'+self.lang+'/'+path)
         except OSError: pass
         with open('docs/'+self.lang+'/'+path+element_name+'.rst', 'w') as fp:
             t = self.jinja_env.get_template(self.lang+'/schema_element.rst')
@@ -241,7 +237,7 @@ def codelists_to_docs(lang):
         with open('docs/{0}/codelists/{1}.rst'.format(lang, fname), 'w') as fp:
             jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
             t = jinja_env.get_template(lang+'/codelist.rst')
-            fp.write(t.render(csv_file=csv_file, fname=fname, underline=underline, description=description))
+            fp.write(t.render(csv_file=csv_file, fname=fname, underline=underline, description=description, lang=lang))
 
 
 if __name__ == '__main__':
