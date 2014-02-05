@@ -14,7 +14,7 @@ Requirements:
 * Git
 * Unix based setup (e.g. Linux, Mac OS X) with bash etc.
 * Python 2.7
-* `python-virtualenv<http://www.virtualenv.org/en/latest/>`_ (recommended)
+* `python-virtualenv <http://www.virtualenv.org/en/latest/>`_ (recommended)
 * gcc
 * Development files for libxml and libxslt e.g. libxml2-dev, libxslt-dev
 
