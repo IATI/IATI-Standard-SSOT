@@ -233,11 +233,15 @@ def codelists_to_docs(lang):
         fname = fname[:-4]
         underline = '='*len(fname)
         xml = ET.parse('IATI-Codelists/combined-xml/{0}.xml'.format(fname))
-        description = ''.join(xml.getroot().xpath('/codelist/@description'))
+        description_elements = xml.getroot().xpath('/codelist/metadata/description')
+        if description_elements:
+            description = description_elements[0].text
+        else:
+            description = ''
         with open('docs/{0}/codelists/{1}.rst'.format(lang, fname), 'w') as fp:
             jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
             t = jinja_env.get_template(lang+'/codelist.rst')
-            fp.write(t.render(csv_file=csv_file, fname=fname, underline=underline, description=description, lang=lang))
+            fp.write(t.render(csv_file=csv_file, fname=fname, underline=underline, description=description, lang=lang).encode('utf-8'))
 
 
 if __name__ == '__main__':
