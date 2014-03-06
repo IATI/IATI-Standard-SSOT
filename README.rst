@@ -45,7 +45,7 @@ Build the documentation:::
 
     ./gen.sh
 
-The built documentation is now in ``docs/_build/html`` 
+The built documentation is now in ``docs/<language>/_build/dirhtml`` 
 
 
 Editing the documentation
