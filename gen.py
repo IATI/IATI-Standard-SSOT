@@ -247,10 +247,10 @@ def codelists_to_docs(lang):
 if __name__ == '__main__':
     for language in languages:
         activities = Schema2Doc('iati-activities-schema.xsd', lang=language)
-        activities.output_docs('iati-activities', '')
+        activities.output_docs('iati-activities', 'activities-standard/')
 
         orgs = Schema2Doc('iati-organisations-schema.xsd', lang=language)
-        orgs.output_docs('iati-organisations', '')
+        orgs.output_docs('iati-organisations', 'organisation-standard/')
         
         codelists_to_docs(lang=language)
 
