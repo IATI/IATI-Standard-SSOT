@@ -354,13 +354,6 @@ manually move any issues that have been reported in the the wrong
 repository. This would involving labelling as duplicate and closing the
 old issue, and adding a link to the newly open issue.
 
-Github Team
------------
-
-A Github Team will be set up for the Single Source of Truth, with push
-access to each of the repositories. Members of this team will also be
-able to have issues assigned to them.
-
 Changes After Release
 ---------------------
 
@@ -498,7 +491,7 @@ now. The big next step is to work on the human processes of managing the
 git repositories properly etc.
 
 We can do this in tandem with our work on 1.04 - `<http://dev.iatistandard.org>`__
-will be set up to build from the Single Source of Truth, and this will
+has been set up to build from the Single Source of Truth, and this will
 become the new website when 1.04 is released.
 
 
