@@ -2,13 +2,27 @@
 {{underline}}
 
 
-{{description}}
+{{codelist_json.metadata.description}}
 
 Download this codelist:
 `XML <../_static/codelists/xml/{{fname}}.xml>`_
 `CSV <../_static/codelists/csv/{{lang}}/{{fname}}.csv>`_
 `JSON <../_static/codelists/json/{{lang}}/{{fname}}.json>`_
 
-.. csv-table::
-   :file: ../../../{{csv_file}}
-    
+.. _{{codelist_json.metadata.name}}:
+.. list-table::
+
+
+   * - Code
+     - Name
+     - Description
+     - Category
+
+   {% for codelist_item in codelist_json.data %}
+
+   * - {{codelist_item.code}}
+     - {{codelist_item.name}}
+     - {{codelist_item.description}}
+     - {% if codelist_item.category %}:ref:`{{codelist_item.category}} <{{codelist_json.metadata['category-codelist']}}>`{% endif %}
+
+   {% endfor %}

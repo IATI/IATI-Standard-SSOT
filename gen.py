@@ -3,6 +3,7 @@ import os
 import textwrap
 import json
 import jinja2
+import csv
 
 languages = ['en','fr']
 
@@ -222,26 +223,24 @@ class Schema2Doc(object):
 
 
 def codelists_to_docs(lang):
-    dirname = 'IATI-Codelists/out/csv/'+lang
+    dirname = 'IATI-Codelists/out/json/'+lang
     try:
         os.mkdir('docs/'+lang+'/codelists/')
     except OSError: pass
 
     for fname in os.listdir(dirname):
-        csv_file = os.path.join(dirname, fname)
-        if not fname.endswith('.csv'): continue
-        fname = fname[:-4]
+        json_file = os.path.join(dirname, fname)
+        if not fname.endswith('.json'): continue
+        with open(json_file) as fp: 
+            codelist_json = json.load(fp)
+        
+        fname = fname[:-5]
         underline = '='*len(fname)
-        xml = ET.parse('IATI-Codelists/combined-xml/{0}.xml'.format(fname))
-        description_elements = xml.getroot().xpath('/codelist/metadata/description')
-        if description_elements:
-            description = description_elements[0].text
-        else:
-            description = ''
+
         with open('docs/{0}/codelists/{1}.rst'.format(lang, fname), 'w') as fp:
             jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
             t = jinja_env.get_template(lang+'/codelist.rst')
-            fp.write(t.render(csv_file=csv_file, fname=fname, underline=underline, description=description, lang=lang).encode('utf-8'))
+            fp.write(t.render(codelist_json=codelist_json, fname=fname, underline=underline, lang=lang).encode('utf-8'))
 
 
 if __name__ == '__main__':
