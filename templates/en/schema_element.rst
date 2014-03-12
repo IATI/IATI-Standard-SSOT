@@ -31,7 +31,10 @@ From the schema
 {% endif %}{% if attributes %}Attributes
 ~~~~~~~~~~
 
-{% for attribute, attribute_type, text in attributes %}@{{attribute}}
+{% for attribute, attribute_type, text in attributes %}
+.. _{{path_to_ref(path+element_name+'/@'+attribute)}}:
+
+@{{attribute}}
   {{ textwrap.dedent(text).strip().replace('\n','\n  ') }}
 {% set codelist = match_codelist(path+element_name+'/@'+attribute) %}{% if attribute_type %}  
   This value should be of type {{attribute_type}}.

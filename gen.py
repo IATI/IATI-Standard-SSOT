@@ -60,6 +60,8 @@ def ruleset_text(path):
     return out
 
 
+from collections import defaultdict
+codelists_paths = defaultdict(list)
 # TODO - This function should be moved into the IATI-Codelists submodule
 codelist_mappings = ET.parse('./IATI-Codelists/mapping.xml').getroot().findall('mapping')
 def match_codelist(path):
@@ -72,11 +74,15 @@ def match_codelist(path):
         if mapping.find('path').text.startswith('//'):
             #print mapping.find('path').text.strip('/'), path
             if mapping.find('path').text.strip('/') in path:
-                return mapping.find('codelist').attrib['ref']
+                codelist = mapping.find('codelist').attrib['ref']
+                codelists_paths[codelist].append(path)
+                return codelist
             else:
                 pass # FIXME
     return
 
+def path_to_ref(path):
+    return path.replace('//','_').replace('@','.')
 
 
 class Schema2Doc(object):
@@ -143,7 +149,10 @@ class Schema2Doc(object):
                 ruleset_text=ruleset_text(path+element_name),
                 extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
                 attributes=self.attribute_loop(element),
-                textwrap=textwrap, match_codelist=match_codelist, ruleset_text_=ruleset_text, #FIXME
+                textwrap=textwrap,
+                match_codelist=match_codelist,
+                path_to_ref=path_to_ref,
+                ruleset_text_=ruleset_text, #FIXME
                 childnames = self.element_loop(element, path)
             ))
 
@@ -240,7 +249,13 @@ def codelists_to_docs(lang):
         with open('docs/{0}/codelists/{1}.rst'.format(lang, fname), 'w') as fp:
             jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
             t = jinja_env.get_template(lang+'/codelist.rst')
-            fp.write(t.render(codelist_json=codelist_json, fname=fname, underline=underline, lang=lang).encode('utf-8'))
+            fp.write(t.render(
+                codelist_json=codelist_json,
+                fname=fname,
+                underline=underline,
+                codelist_paths=codelists_paths.get(fname),
+                path_to_ref=path_to_ref,
+                lang=lang).encode('utf-8'))
 
 
 if __name__ == '__main__':

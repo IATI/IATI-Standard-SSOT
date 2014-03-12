@@ -1,9 +1,20 @@
 {{fname}}
 {{underline}}
 
+{% if codelist_json.metadata.description %}
 {{codelist_json.metadata.description}}
+{% endif %}
 
-Download this codelist:
+{% if codelist_paths %}
+Attributes
+----------
+{% for path in codelist_paths %}
+* :ref:`{{path}} <{{path_to_ref(path)}}>`
+{% endfor %}
+{% endif %}
+
+Download this codelist
+----------------------
 
 Old format:
 `XML <../../_static/codelists/v1/codelist/{{fname}}.xml>`_
@@ -14,6 +25,9 @@ New format:
 `XML <../../_static/codelists/xml/{{fname}}.xml>`_
 `CSV <../../_static/codelists/csv/{{lang}}/{{fname}}.csv>`_
 `JSON <../../_static/codelists/json/{{lang}}/{{fname}}.json>`_
+
+Codes
+-----
 
 .. _{{codelist_json.metadata.name}}:
 .. list-table::
