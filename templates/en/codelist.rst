@@ -1,13 +1,19 @@
 {{fname}}
 {{underline}}
 
-
 {{codelist_json.metadata.description}}
 
 Download this codelist:
-`XML <../_static/codelists/xml/{{fname}}.xml>`_
-`CSV <../_static/codelists/csv/{{lang}}/{{fname}}.csv>`_
-`JSON <../_static/codelists/json/{{lang}}/{{fname}}.json>`_
+
+Old format:
+`XML <../../_static/codelists/v1/codelist/{{fname}}.xml>`_
+`CSV <../../_static/codelists/v1/codelist/{{fname}}.csv>`_
+`JSON <../../_static/codelists/v1/codelist/{{fname}}.json>`_
+
+New format: 
+`XML <../../_static/codelists/xml/{{fname}}.xml>`_
+`CSV <../../_static/codelists/csv/{{lang}}/{{fname}}.csv>`_
+`JSON <../../_static/codelists/json/{{lang}}/{{fname}}.json>`_
 
 .. _{{codelist_json.metadata.name}}:
 .. list-table::
