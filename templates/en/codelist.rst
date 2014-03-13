@@ -46,3 +46,5 @@ Codes
      - {% if codelist_item.category %}:ref:`{{codelist_item.category}} <{{codelist_json.metadata['category-codelist']}}>`{% endif %}
 
    {% endfor %}
+
+{{extra_docs}}

@@ -9,12 +9,6 @@
 DRAFT
 -----
 
-
-Developer tools
-~~~~~~~~~~~~~~~
-
-`View this element in the schema source <{{url}}>`_
-
 From the schema
 ~~~~~~~~~~~~~~~
 
@@ -57,3 +51,10 @@ Subelements
 {% for childname in childnames %}   {{element_name}}/{{childname}}
 {%endfor%}
 {% endif %}
+
+{{extra_docs}}
+
+Developer tools
+~~~~~~~~~~~~~~~
+
+`View this element in the schema source <{{url}}>`_

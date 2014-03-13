@@ -18,8 +18,3 @@ cp -r IATI-Codelists/out/ docs/_static/codelists/
 # Generate documentation from the Schema and Codelists etc
 python gen.py || exit 1
 
-# Append Extra-Documentation to the documentation we've just generated
-cd IATI-Extra-Documentation || exit 1
-find \( ! -path '*/.*' \) -follow -type f -exec bash -c 'cat {} >> ../docs/{}' \;
-cd .. || exit 1
-

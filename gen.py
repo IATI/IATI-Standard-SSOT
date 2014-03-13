@@ -1,9 +1,7 @@
 from lxml import etree as ET
-import os
+import os, json, csv, shutil
 import textwrap
-import json
 import jinja2
-import csv
 
 languages = ['en','fr']
 
@@ -85,6 +83,16 @@ def path_to_ref(path):
     return path.replace('//','_').replace('@','.')
 
 
+def get_extra_docs(rst_filename):
+    extra_docs_file = os.path.join('IATI-Extra-Documentation', rst_filename)
+    if os.path.isfile(extra_docs_file):
+        with open(extra_docs_file) as fp:
+            return fp.read().decode('utf8')
+    else:
+        return ''
+            
+
+
 class Schema2Doc(object):
     """
     Class for converting an IATI XML schema to documentation in the
@@ -135,9 +143,13 @@ class Schema2Doc(object):
 
         url = element.base.replace('./IATI-Schemas/', 'https://github.com/IATI/IATI-Schemas/blob/master/') + '#L' + str(element.sourceline)
         try:
-            os.makedirs('docs/'+self.lang+'/'+path)
+            os.makedirs(os.path.join('docs', self.lang, path))
         except OSError: pass
-        with open('docs/'+self.lang+'/'+path+element_name+'.rst', 'w') as fp:
+
+        rst_filename = os.path.join(self.lang, path, element_name+'.rst')
+
+                
+        with open('docs/'+rst_filename, 'w') as fp:
             t = self.jinja_env.get_template(self.lang+'/schema_element.rst')
             fp.write(t.render(
                 element_name=element_name,
@@ -153,8 +165,10 @@ class Schema2Doc(object):
                 match_codelist=match_codelist,
                 path_to_ref=path_to_ref,
                 ruleset_text_=ruleset_text, #FIXME
-                childnames = self.element_loop(element, path)
-            ))
+                childnames = self.element_loop(element, path),
+                extra_docs=get_extra_docs(rst_filename)
+            ).encode('utf8'))
+
 
     def element_loop(self, element, path):
         """
@@ -245,8 +259,8 @@ def codelists_to_docs(lang):
         
         fname = fname[:-5]
         underline = '='*len(fname)
-
-        with open('docs/{0}/codelists/{1}.rst'.format(lang, fname), 'w') as fp:
+        rst_filename = os.path.join(lang, 'codelists', fname+'.rst')
+        with open(os.path.join('docs', rst_filename), 'w') as fp:
             jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
             t = jinja_env.get_template(lang+'/codelist.rst')
             fp.write(t.render(
@@ -255,8 +269,32 @@ def codelists_to_docs(lang):
                 underline=underline,
                 codelist_paths=codelists_paths.get(fname),
                 path_to_ref=path_to_ref,
+                extra_docs=get_extra_docs(rst_filename),
                 lang=lang).encode('utf-8'))
 
+def extra_extra_docs():
+    """
+    Copy over files from IATI-Extra-Documentation that haven't been created in
+    the docs folder by another function.
+
+    """
+    for dirname, dirs, files in os.walk('IATI-Extra-Documentation', followlinks=True):
+        for fname in files:
+            if len(dirname.split(os.path.sep)) == 1:
+                rst_dirname = ''
+            else:
+                rst_dirname = os.path.join(*dirname.split(os.path.sep)[1:])
+            rst_filename = os.path.join(rst_dirname, fname)
+            if not os.path.exists(os.path.join('docs', rst_filename)):
+                try:
+                    os.makedirs(os.path.join('docs', rst_dirname))
+                except OSError:
+                    pass
+                if fname.endswith('.rst'):
+                    with open(os.path.join('docs', rst_filename), 'w') as fp:
+                        fp.write(get_extra_docs(rst_filename).encode('utf-8'))
+                else:
+                    shutil.copy(os.path.join(dirname,fname), os.path.join('docs', rst_filename))
 
 if __name__ == '__main__':
     for language in languages:
@@ -267,4 +305,5 @@ if __name__ == '__main__':
         orgs.output_docs('iati-organisations', 'organisation-standard/')
         
         codelists_to_docs(lang=language)
+    extra_extra_docs()
 
