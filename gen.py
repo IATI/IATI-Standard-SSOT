@@ -158,6 +158,9 @@ class Schema2Doc(object):
 
         rst_filename = os.path.join(self.lang, path, element_name+'.rst')
 
+        children = self.element_loop(element, path)
+        for child_name, child_element in children:
+            self.output_docs(child_name, path+element.attrib['name']+'/', child_element)
                 
         with open('docs/'+rst_filename, 'w') as fp:
             t = self.jinja_env.get_template(self.lang+'/schema_element.rst')
@@ -175,9 +178,39 @@ class Schema2Doc(object):
                 match_codelist=match_codelist,
                 path_to_ref=path_to_ref,
                 ruleset_text_=ruleset_text, #FIXME
-                childnames = self.element_loop(element, path),
+                childnames = [x[0] for x in children],
                 extra_docs=get_extra_docs(rst_filename)
             ).encode('utf8'))
+
+
+    def output_schema_table(self, element_name, path, element=None, output=False):
+        if element is None:
+            element = self.get_schema_element('element', element_name)
+            if element is None:
+                return
+
+        extended_types = element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces)
+        rows = [{
+            'name': element_name,
+            'path': '/'.join(path.split('/')[1:])+element_name,
+            'doc': path+element_name,
+            'description': textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
+            'type': element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else ''.join([x for x in extended_types if x.startswith('xsd:')])
+        }]
+
+        for child_name, child_element in self.element_loop(element, path):
+            rows += self.output_schema_table(child_name, path+element.attrib['name']+'/', child_element)
+
+        if output:
+            with open(os.path.join('docs', self.lang, 'activity-schema-table.rst'), 'w') as fp:
+                t = self.jinja_env.get_template(self.lang+'/schema_table.rst')
+                fp.write(t.render(
+                    rows=rows
+                ).encode('utf8'))
+        else:
+            return rows
+            
+        
 
 
     def element_loop(self, element, path):
@@ -189,16 +222,14 @@ class Schema2Doc(object):
         """
         children = ( element.findall('xsd:complexType/xsd:choice/xsd:element', namespaces=namespaces)
             + element.findall("xsd:complexType/xsd:all/xsd:element", namespaces=namespaces) )
-        childnames = []
+        child_tuples = []
         for child in children:
             a = child.attrib
             if 'name' in a:
-                self.output_docs(a['name'], path+element.attrib['name']+'/', child)
-                childnames.append(a['name'])
+                child_tuples.append((a['name'], child))
             else:
-                self.output_docs(a['ref'], path+element.attrib['name']+'/')
-                childnames.append(a['ref'])
-        return childnames
+                child_tuples.append((a['ref'], None))
+        return child_tuples
 
     def attribute_loop(self, element):
         """
@@ -316,6 +347,7 @@ if __name__ == '__main__':
     for language in languages:
         activities = Schema2Doc('iati-activities-schema.xsd', lang=language)
         activities.output_docs('iati-activities', 'activities-standard/')
+        activities.output_schema_table('iati-activities', 'activities-standard/', output=True)
 
         orgs = Schema2Doc('iati-organisations-schema.xsd', lang=language)
         orgs.output_docs('iati-organisations', 'organisation-standard/')

@@ -1,12 +1,8 @@
 #!/bin/bash
 set -o nounset
 
-# Remove docs (the output directory), and recreate directory structure
+# Remove docs (the output directory), and recreate
 rm -r docs/*
-mkdir docs
-cd IATI-Extra-Documentation/ || exit 1
-find -type d -exec mkdir ../docs/{} \;
-cd .. || exit 1
 
 # Generate csvs etc. from codelists
 cd IATI-Codelists || exit 1

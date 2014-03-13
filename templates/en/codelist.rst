@@ -17,16 +17,16 @@ Download this codelist
 ----------------------
 
 Old format:
-`XML <../../_static/codelists/v1/codelist/{{fname}}.xml>`_
-`CSV <../../_static/codelists/v1/codelist/{{fname}}.csv>`_
-`JSON <../../_static/codelists/v1/codelist/{{fname}}.json>`_
+`XML <../../_static/codelists/v1/codelist/{{fname}}.xml>`__
+`CSV <../../_static/codelists/v1/codelist/{{fname}}.csv>`__
+`JSON <../../_static/codelists/v1/codelist/{{fname}}.json>`__
 
 New format: 
-`XML <../../_static/codelists/xml/{{fname}}.xml>`_
-`CSV <../../_static/codelists/csv/{{lang}}/{{fname}}.csv>`_
-`JSON <../../_static/codelists/json/{{lang}}/{{fname}}.json>`_
+`XML <../../_static/codelists/xml/{{fname}}.xml>`__
+`CSV <../../_static/codelists/csv/{{lang}}/{{fname}}.csv>`__
+`JSON <../../_static/codelists/json/{{lang}}/{{fname}}.json>`__
 
-`Github Source <{{github_url}}>`_
+`Github Source <{{github_url}}>`__
 
 Codes
 -----
