@@ -26,6 +26,8 @@ New format:
 `CSV <../../_static/codelists/csv/{{lang}}/{{fname}}.csv>`_
 `JSON <../../_static/codelists/json/{{lang}}/{{fname}}.json>`_
 
+`Github Source <{{github_url}}>`_
+
 Codes
 -----
 

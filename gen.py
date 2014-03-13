@@ -14,6 +14,16 @@ custom_attributes = {
     'xml:lang': 'ISO 2 letter code specifying the language of text in this element.'
 }
 
+def get_github_url(repo, path=''):
+    github_branches = {
+        'IATI-Schemas': '1.04dev',
+        'IATI-Codelists': '1.04dev',
+        'IATI-Rulesets': 'master',
+        'IATI-Extra-Documentation': 'master',
+        'IATI-Codelists-NonEmbedded': 'master',
+    }
+    return 'https://github.com/IATI/{0}/blob/{1}/{2}'.format(repo, github_branches[repo], path)
+
 def human_list(l):
     """
     Returns a human friendly version of a list. Currently seperates list items
@@ -54,7 +64,7 @@ def ruleset_text(path):
             except IndexError:
                 pass
     if out != '':
-        out += '(`see standard.json <https://github.com/IATI/IATI-Rulesets/blob/master/rulesets/standard.json>`_)'
+        out += '(`see standard.json <{0}>`_)'.format(get_github_url('IATI-Rulesets', 'rulesets/standard.json'))
     return out
 
 
@@ -141,7 +151,7 @@ class Schema2Doc(object):
             if element is None:
                 return
 
-        url = element.base.replace('./IATI-Schemas/', 'https://github.com/IATI/IATI-Schemas/blob/master/') + '#L' + str(element.sourceline)
+        github_url = element.base.replace('./IATI-Schemas/', get_github_url('IATI-Schemas')) + '#L' + str(element.sourceline)
         try:
             os.makedirs(os.path.join('docs', self.lang, path))
         except OSError: pass
@@ -156,7 +166,7 @@ class Schema2Doc(object):
                 element_name_underline='='*len(element_name),
                 element=element,
                 path=path,
-                url=url,
+                github_url=github_url,
                 schema_documentation=textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
                 ruleset_text=ruleset_text(path+element_name),
                 extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
@@ -259,6 +269,11 @@ def codelists_to_docs(lang):
         
         fname = fname[:-5]
         underline = '='*len(fname)
+        if os.path.exists(os.path.join('IATI-Codelists','xml',fname+'.xml')):
+            github_url = get_github_url('IATI-Codelists', 'xml/{0}.xml'.format(fname))
+        else:
+            github_url = get_github_url('IATI-Codelists-NonEmbedded', 'xml/{0}.xml'.format(fname))
+
         rst_filename = os.path.join(lang, 'codelists', fname+'.rst')
         with open(os.path.join('docs', rst_filename), 'w') as fp:
             jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
@@ -267,6 +282,7 @@ def codelists_to_docs(lang):
                 codelist_json=codelist_json,
                 fname=fname,
                 underline=underline,
+                github_url=github_url,
                 codelist_paths=codelists_paths.get(fname),
                 path_to_ref=path_to_ref,
                 extra_docs=get_extra_docs(rst_filename),

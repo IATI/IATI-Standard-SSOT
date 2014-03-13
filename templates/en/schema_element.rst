@@ -57,4 +57,4 @@ Subelements
 Developer tools
 ~~~~~~~~~~~~~~~
 
-`View this element in the schema source <{{url}}>`_
+`View this element in the schema source <{{github_url}}>`_
