@@ -199,12 +199,13 @@ class Schema2Doc(object):
             'section': len(path.split('/')) < 5
         }]
 
-        for a_name, a_type, a_description in self.attribute_loop(element):
+        for a_name, a_type, a_description, a_required in self.attribute_loop(element):
             rows.append({
                 'attribute_name': a_name,
                 'path': '/'.join(path.split('/')[1:])+element_name+'/@'+a_name,
                 'description': textwrap.dedent(a_description),
                 'type': a_type,
+                'occur': '1..1' if a_required else '0..1'
             })
 
         for child_name, child_element in self.element_loop(element, path):
@@ -286,12 +287,12 @@ class Schema2Doc(object):
             ):
             if 'ref' in attribute.attrib:
                 if attribute.get('ref') in custom_attributes:
-                    out.append((attribute.get('ref'), '', custom_attributes[attribute.get('ref')]))
+                    out.append((attribute.get('ref'), '', custom_attributes[attribute.get('ref')], attribute.get('use')=='required'))
                     continue
                 attribute = self.get_schema_element('attribute', attribute.get('ref'))
             doc = attribute.find(".//xsd:documentation", namespaces=namespaces)
             if doc is not None:
-                out.append((attribute.get('name'), attribute.get('type'), doc.text))
+                out.append((attribute.get('name'), attribute.get('type'), doc.text, attribute.get('use')=='required'))
             else:
                 print 'Ack', ET.tostring(attribute)
         return out

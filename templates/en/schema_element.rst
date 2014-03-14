@@ -25,7 +25,7 @@ From the schema
 {% endif %}{% if attributes %}Attributes
 ~~~~~~~~~~
 
-{% for attribute, attribute_type, text in attributes %}
+{% for attribute, attribute_type, text, required in attributes %}
 .. _{{path_to_ref(path+element_name+'/@'+attribute)}}:
 
 @{{attribute}}
