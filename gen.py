@@ -195,17 +195,28 @@ class Schema2Doc(object):
             'path': '/'.join(path.split('/')[1:])+element_name,
             'doc': path+element_name,
             'description': textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
-            'type': element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else ''.join([x for x in extended_types if x.startswith('xsd:')])
+            'type': element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else ''.join([x for x in extended_types if x.startswith('xsd:')]),
+            'section': len(path.split('/')) < 5
         }]
+
+        for a_name, a_type, a_description in self.attribute_loop(element):
+            rows.append({
+                'attribute_name': a_name,
+                'path': '/'.join(path.split('/')[1:])+element_name+'/@'+a_name,
+                'description': textwrap.dedent(a_description),
+                'type': a_type,
+            })
 
         for child_name, child_element in self.element_loop(element, path):
             rows += self.output_schema_table(child_name, path+element.attrib['name']+'/', child_element)
 
         if output:
+            title = 'Activity Schema Table'
             with open(os.path.join('docs', self.lang, 'activity-schema-table.rst'), 'w') as fp:
                 t = self.jinja_env.get_template(self.lang+'/schema_table.rst')
                 fp.write(t.render(
-                    rows=rows
+                    rows=rows,
+                    title=title
                 ).encode('utf8'))
         else:
             return rows
