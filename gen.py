@@ -195,9 +195,16 @@ class Schema2Doc(object):
             'path': '/'.join(path.split('/')[1:])+element_name,
             'doc': path+element_name,
             'description': textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
-            'type': element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else ''.join([x for x in extended_types if x.startswith('xsd:')]),
+            'type': element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else '',
             'section': len(path.split('/')) < 5
         }]
+
+        if element.xpath('xsd:complexType[@mixed="true"] or xsd:complexType/xsd:simpleContent', namespaces=namespaces):
+            rows.append({
+                'path': '/'.join(path.split('/')[1:])+element_name+'/text()',
+                'description': '',
+                'type': 'mixed' if element.xpath('xsd:complexType[@mixed="true"]', namespaces=namespaces) else  ','.join([x for x in extended_types if x.startswith('xsd:')]),
+            })
 
         for a_name, a_type, a_description, a_required in self.attribute_loop(element):
             rows.append({
