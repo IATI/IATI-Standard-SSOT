@@ -39,13 +39,17 @@ Codes
      - Name
      - Description
      - Category
+     - URL
+{% if fname == 'OrganisationRegistrationAgency' %}     - Public Database?{% endif %}
 
    {% for codelist_item in codelist_json.data %}
 
    * - {{codelist_item.code}}
      - {{codelist_item.name}}
-     - {{codelist_item.description}}
+     - {% if codelist_item.description %}{{codelist_item.description}}{% endif %}
      - {% if codelist_item.category %}:ref:`{{codelist_item.category}} <{{codelist_json.metadata['category-codelist']}}>`{% endif %}
+     - {% if codelist_item.url %}{{codelist_item.url}}{% endif %}
+{% if fname == 'OrganisationRegistrationAgency' %}     - {{codelist_item['public-database']}}{% endif %}
 
    {% endfor %}
 
