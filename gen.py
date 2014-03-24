@@ -83,7 +83,8 @@ def match_codelist(path):
             #print mapping.find('path').text.strip('/'), path
             if mapping.find('path').text.strip('/') in path:
                 codelist = mapping.find('codelist').attrib['ref']
-                codelists_paths[codelist].append(path)
+                if not path in codelists_paths[codelist]:
+                    codelists_paths[codelist].append(path)
                 return codelist
             else:
                 pass # FIXME
@@ -224,7 +225,8 @@ class Schema2Doc(object):
                 t = self.jinja_env.get_template(self.lang+'/schema_table.rst')
                 fp.write(t.render(
                     rows=rows,
-                    title=title
+                    title=title,
+                    match_codelist=match_codelist
                 ).encode('utf8'))
         else:
             return rows
