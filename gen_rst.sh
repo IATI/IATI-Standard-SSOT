@@ -8,7 +8,8 @@ rm -r docs/*
 cd IATI-Codelists || exit 1
 ./gen.sh || exit 1
 cd .. || exit 1
-mkdir docs/_static
+mkdir -p docs/_static/schemas/
+cp IATI-Schemas/* docs/_static/schemas/
 cp -r IATI-Codelists/out/ docs/_static/codelists/
 
 # Generate documentation from the Schema and Codelists etc
