@@ -5,6 +5,10 @@
 {{codelist_json.metadata.description}}
 {% endif %}
 
+{% if codelist_json.metadata.url %}
+External URL: {{codelist_json.metadata.url}}
+{% endif %}
+
 {% if codelist_paths %}
 Attributes
 ----------
