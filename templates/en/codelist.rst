@@ -1,5 +1,5 @@
-{{fname}}
-{{underline}}
+{{codelist_json.metadata.name}}
+{{'='*len(codelist_json.metadata.name)}}
 
 {% if codelist_json.metadata.description %}
 {{codelist_json.metadata.description}}

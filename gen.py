@@ -320,7 +320,6 @@ def codelists_to_docs(lang):
             codelist_json = json.load(fp)
         
         fname = fname[:-5]
-        underline = '='*len(fname)
         if os.path.exists(os.path.join('IATI-Codelists','xml',fname+'.xml')):
             github_url = get_github_url('IATI-Codelists', 'xml/{0}.xml'.format(fname))
         else:
@@ -333,7 +332,7 @@ def codelists_to_docs(lang):
             fp.write(t.render(
                 codelist_json=codelist_json,
                 fname=fname,
-                underline=underline,
+                len=len,
                 github_url=github_url,
                 codelist_paths=codelists_paths.get(fname),
                 path_to_ref=path_to_ref,
