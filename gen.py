@@ -225,6 +225,7 @@ class Schema2Doc(object):
                 fp.write(t.render(
                     rows=rows,
                     title=title,
+                    root_path=path,
                     match_codelist=match_codelist,
                     description=self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text
                 ).encode('utf8'))
