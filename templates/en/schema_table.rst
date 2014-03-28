@@ -20,3 +20,7 @@
       - ``{{row.path}}``
       - {{row.occur}}
 {% endfor %}
+
+::
+
+  {{description.replace('\n','\n  ')}}
