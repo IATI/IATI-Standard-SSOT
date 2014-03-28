@@ -6,9 +6,6 @@
 .. index::
   single: {{element_name}}
 
-DRAFT
------
-
 From the schema
 ~~~~~~~~~~~~~~~
 
