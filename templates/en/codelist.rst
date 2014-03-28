@@ -35,7 +35,7 @@ New format:
 Codes
 -----
 
-.. _{{codelist_json.metadata.name}}:
+.. _{{fname}}:
 .. list-table::
 
 
@@ -51,7 +51,7 @@ Codes
    * - {{codelist_item.code}}
      - {{codelist_item.name}}
      - {% if codelist_item.description %}{{codelist_item.description}}{% endif %}
-     - {% if codelist_item.category %}:ref:`{{codelist_item.category}} <{{codelist_json.metadata['category-codelist']}}>`{% endif %}
+     - {% if codelist_item.category %}:ref:`{{codelist_item.category}} <{{codelist_json.attributes['category-codelist']}}>`{% endif %}
      - {% if codelist_item.url %}{{codelist_item.url}}{% endif %}
 {% if fname == 'OrganisationRegistrationAgency' %}     - {{codelist_item['public-database']}}{% endif %}
 
