@@ -184,7 +184,7 @@ class Schema2Doc(object):
             ).encode('utf8'))
 
 
-    def output_schema_table(self, element_name, path, element=None, output=False):
+    def output_schema_table(self, element_name, path, element=None, output=False, filename='', title=''):
         if element is None:
             element = self.get_schema_element('element', element_name)
             if element is None:
@@ -220,8 +220,7 @@ class Schema2Doc(object):
             rows += self.output_schema_table(child_name, path+element.attrib['name']+'/', child_element)
 
         if output:
-            title = 'Activity Schema Table'
-            with open(os.path.join('docs', self.lang, 'activity-schema-table.rst'), 'w') as fp:
+            with open(os.path.join('docs', self.lang, filename), 'w') as fp:
                 t = self.jinja_env.get_template(self.lang+'/schema_table.rst')
                 fp.write(t.render(
                     rows=rows,
@@ -367,10 +366,15 @@ if __name__ == '__main__':
     for language in languages:
         activities = Schema2Doc('iati-activities-schema.xsd', lang=language)
         activities.output_docs('iati-activities', 'activities-standard/')
-        activities.output_schema_table('iati-activities', 'activities-standard/', output=True)
+        activities.output_schema_table('iati-activities', 'activities-standard/', output=True,
+            filename='activity-schema-table.rst',
+            title='Activity Schema Table')
 
         orgs = Schema2Doc('iati-organisations-schema.xsd', lang=language)
         orgs.output_docs('iati-organisations', 'organisation-standard/')
+        orgs.output_schema_table('iati-organisations', 'organisation-standard/', output=True,
+            filename='organisation-schema-table.rst',
+            title='Organisation Schema Table')
         
         codelists_to_docs(lang=language)
     extra_extra_docs()
