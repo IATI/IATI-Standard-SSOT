@@ -373,14 +373,14 @@ if __name__ == '__main__':
         activities = Schema2Doc('iati-activities-schema.xsd', lang=language)
         activities.output_docs('iati-activities', 'activities-standard/')
         activities.output_schema_table('iati-activities', 'activities-standard/', output=True,
-            filename='activity-schema-table.rst',
-            title='Activity Schema Table')
+            filename='activities-standard/overview-table.rst',
+            title='Activity Standard Overview Table')
 
         orgs = Schema2Doc('iati-organisations-schema.xsd', lang=language)
         orgs.output_docs('iati-organisations', 'organisation-standard/')
         orgs.output_schema_table('iati-organisations', 'organisation-standard/', output=True,
-            filename='organisation-schema-table.rst',
-            title='Organisation Schema Table')
+            filename='organisation-standard/overview-table.rst',
+            title='Organisation Standard Overview Table')
         
         codelists_to_docs(lang=language)
     extra_extra_docs()
