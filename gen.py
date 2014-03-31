@@ -295,12 +295,16 @@ class Schema2Doc(object):
             element.findall('xsd:complexType/xsd:simpleContent/xsd:extension/xsd:attribute', namespaces=namespaces) +
             type_attributes + group_attributes
             ):
+            doc = attribute.find(".//xsd:documentation", namespaces=namespaces)
             if 'ref' in attribute.attrib:
                 if attribute.get('ref') in custom_attributes:
                     out.append((attribute.get('ref'), '', custom_attributes[attribute.get('ref')], attribute.get('use')=='required'))
                     continue
                 attribute = self.get_schema_element('attribute', attribute.get('ref'))
-            doc = attribute.find(".//xsd:documentation", namespaces=namespaces)
+                if doc is None:
+                    # Only fetch the documentation of the referenced definition
+                    # if we don't already have documentation.
+                    doc = attribute.find(".//xsd:documentation", namespaces=namespaces)
             if doc is not None:
                 out.append((attribute.get('name'), attribute.get('type'), doc.text, attribute.get('use')=='required'))
             else:
