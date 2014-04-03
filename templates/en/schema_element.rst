@@ -54,4 +54,8 @@ Subelements
 Developer tools
 ~~~~~~~~~~~~~~~
 
-`View this element in the schema source <{{github_url}}>`_
+Find the source of this documentation on github:
+
+* `Schema <{{github_urls.schema}}>`_
+* `Extra Documentation <{{github_urls.extra_documentation}}>`_
+

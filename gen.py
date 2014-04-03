@@ -9,7 +9,7 @@ languages = ['en','fr']
 namespaces = {
     'xsd': 'http://www.w3.org/2001/XMLSchema'
 }
-# Attrbitues that have documentation that differs to that in the schema
+# Attributes that have documentation that differs to that in the schema
 custom_attributes = {
     'xml:lang': 'ISO 2 letter code specifying the language of text in this element.'
 }
@@ -19,7 +19,7 @@ def get_github_url(repo, path=''):
         'IATI-Schemas': '1.04dev',
         'IATI-Codelists': '1.04dev',
         'IATI-Rulesets': 'master',
-        'IATI-Extra-Documentation': 'master',
+        'IATI-Extra-Documentation': '1.04dev',
         'IATI-Codelists-NonEmbedded': 'master',
     }
     return 'https://github.com/IATI/{0}/blob/{1}/{2}'.format(repo, github_branches[repo], path)
@@ -152,7 +152,10 @@ class Schema2Doc(object):
             if element is None:
                 return
 
-        github_url = element.base.replace('./IATI-Schemas/', get_github_url('IATI-Schemas')) + '#L' + str(element.sourceline)
+        github_urls = {
+            'schema': element.base.replace('./IATI-Schemas/', get_github_url('IATI-Schemas')) + '#L' + str(element.sourceline),
+            'extra_documentation': get_github_url('IATI-Extra-Documentation', self.lang+'/'+path[:-1]+'.rst')
+        }
         try:
             os.makedirs(os.path.join('docs', self.lang, path))
         except OSError: pass
@@ -170,7 +173,7 @@ class Schema2Doc(object):
                 element_name_underline='='*len(element_name),
                 element=element,
                 path=path,
-                github_url=github_url,
+                github_urls=github_urls,
                 schema_documentation=textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
                 ruleset_text=ruleset_text(path+element_name),
                 extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
