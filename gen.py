@@ -172,7 +172,7 @@ class Schema2Doc(object):
                 element_name=element_name,
                 element_name_underline='='*len(element_name),
                 element=element,
-                path=path,
+                path='/'.join(path.split('/')[1:]),
                 github_urls=github_urls,
                 schema_documentation=textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
                 ruleset_text=ruleset_text(path+element_name),
