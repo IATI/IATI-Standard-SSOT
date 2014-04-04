@@ -11,15 +11,24 @@ From the schema
 
 {{schema_documentation}}
 
-{{ruleset_text}}
+{% for extended_type in extended_types %}
+{% if extended_type.startswith('xsd:') %}The text in this element should be of type {{extended_type}}.{% endif %}
+{% endfor %}
 
-{% for extended_type in extended_types %}{% if extended_type.startswith('xsd:') %}The text in this element should be of type {{extended_type}}.
+{% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element should be of type {{element.get('type')}}.
+{% endif %}
 
+{% set rtext = ruleset_text(path+element_name) %}
+{% if rtext %}
+Rules
+~~~~~
 
-{% endif %}{% endfor %}{% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element should be of type {{element.get('type')}}.
+{{'\n\n'.join(rtext)}}
 
+{%endif%}
 
-{% endif %}{% if attributes %}Attributes
+{% if attributes %}
+Attributes
 ~~~~~~~~~~
 
 {% for attribute, attribute_type, text, required in attributes %}
@@ -35,9 +44,12 @@ From the schema
 
 {% endif %}  
   
-{{ ruleset_text_(path+element_name+'/@'+attribute) }}{% endfor %}
+{{ '\n  '.join(ruleset_text(path+element_name+'/@'+attribute)) }}{% endfor %}
 
-{% endif %}{% if childnames %}
+{% endif %}
+
+
+{% if childnames %}
 Subelements
 ~~~~~~~~~~~
 

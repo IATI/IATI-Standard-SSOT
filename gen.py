@@ -1,5 +1,5 @@
 from lxml import etree as ET
-import os, json, csv, shutil
+import os, json, csv, shutil, re
 import textwrap
 import jinja2
 
@@ -35,8 +35,8 @@ def human_list(l):
 # TODO - This function should be moved into the IATI-Rulesets submodule
 rulesets = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
 def ruleset_text(path):
-    """ Return text describing the rulesets for a given path (xpath) """
-    out = ''
+    """ Return a list of text describing the rulesets for a given path (xpath) """
+    out = []
     for xpath, rules in rulesets.items():
         if xpath.startswith('//'):
             try:
@@ -44,27 +44,36 @@ def ruleset_text(path):
                 for rule in rules:
                     cases = rules[rule]['cases']
                     for case in cases:
+                        simplify_xpath = lambda x: re.sub('\[[^\]]*\]', '', x)
                         if 'paths' in case:
                             for case_path in case['paths']:
                                 # Don't forget [@ ]
-                                if case_path == reduced_path:
+                                if simplify_xpath(case_path) == reduced_path:
                                     other_paths = case['paths']
                                     other_paths.remove(case_path)
                                     if rule == 'only_one':
-                                        out += 'This element must be present only once. '
+                                        out.append('``{0}`` must be present only once.'.format(case_path))
                                         if other_paths:
-                                            out += 'This element must not be present if {0} are present. '.format(human_list(other_paths))
+                                            out.append('``{0}`` must not be present if ``{1}`` are present.'.format(case_path, human_list(other_paths)))
                                     elif rule == 'atleast_one':
                                         if other_paths:
-                                            out += 'Either this element or {0} must be present. '.format(human_list(other_paths))
+                                            out.append('Either ``{0}`` or ``{1}`` must be present.'.format(case_path, human_list(other_paths)))
                                         else:
-                                            out += 'This element must be present. ' 
+                                            out.append('``{0}`` must be present.\n\n'.format(case_path))
+                                    elif rule == 'startswith':
+                                        out.append('``{0}`` should start with the value in ``{1}``'.format(case_path, case['start']))
                                     else: print case_path, rule, case['paths'] 
-                                    break
+                        elif rule == 'date_order':
+                            if simplify_xpath(case['less']) == reduced_path or simplify_xpath(case['more']) == reduced_path:
+                                if case['less'] == 'NOW':
+                                    out.append('``{0}`` must be in the future.\n\n'.format(case['more']))
+                                elif case['more'] == 'NOW':
+                                    out.append('``{0}`` must be today, or in the past.\n\n'.format(case['less']))
+                                else:
+                                    out.append('``{0}`` must be before ``{1}``\n\n'.format(case['less'], case['more']))
+                        else: print case_path, rule, case['paths'] 
             except IndexError:
                 pass
-    if out != '':
-        out += '(`see standard.json <{0}>`_)'.format(get_github_url('IATI-Rulesets', 'rulesets/standard.json'))
     return out
 
 
@@ -175,13 +184,12 @@ class Schema2Doc(object):
                 path='/'.join(path.split('/')[1:]),
                 github_urls=github_urls,
                 schema_documentation=textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
-                ruleset_text=ruleset_text(path+element_name),
                 extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
                 attributes=self.attribute_loop(element),
                 textwrap=textwrap,
                 match_codelist=match_codelist,
                 path_to_ref=path_to_ref,
-                ruleset_text_=ruleset_text, #FIXME
+                ruleset_text=ruleset_text,
                 childnames = [x[0] for x in children],
                 extra_docs=get_extra_docs(rst_filename)
             ).encode('utf8'))
