@@ -20,6 +20,10 @@ done
 cd .. || exit 1
 ./gen_html.sh || exit $?
 
+echo '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' > docs/en/_build/dirhtml/sitemap.xml
+find docs/en/_build/dirhtml | grep -v _static | grep index.html$ | sed 's|index.html$|</loc></url>|' | sed 's|docs/en/_build/dirhtml|<url><loc>http://dev.iatistandard.org|' >> docs/en/_build/dirhtml/sitemap.xml
+echo '</urlset>' >> docs/en/_build/dirhtml/sitemap.xml
+
 rm -rf docs-copy
 cp -r docs docs-copy
 
