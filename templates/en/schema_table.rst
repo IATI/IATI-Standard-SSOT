@@ -2,6 +2,7 @@
 {{'='*(title|count)}}
 
 .. list-table::
+    :header-rows: 1
 
     * - Section
       - Item
