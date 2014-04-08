@@ -217,23 +217,12 @@ and those that should be split out into optional files.
 Generated Repositories
 ----------------------
 
-Some of the SSOT repositories, can be used to generate extra text/data,
+    *Note: this section represents a proposal that is not currently being
+    implemented, due to its complexity. See `Machine Consumption`_ for our
+    alternate approach.*
+
+Some of the SSOT repositories, could be used to generate extra text/data,
 which might also be useful to track in git repositories:
-
--  `<https://github.com/Bjwebb/IATI-Codelists-Output>`__
--  XML codelists converted into json and csv, and also an `automatically
-   generated xml list of
-   codelists <https://raw.github.com/Bjwebb/IATI-Codelists-Output/master/codelists.xml>`__
-
-       TODO: the repository and link above still are under Bjwebb, not IATI
-
--  generated from
-   `https://github.com/IATI/IATI-Codelists <https://github.com/IATI/IATI-Codelists>`__ (see
-   `Machine Consumption`_)
--  This would form the basis of/be the new Codelist API
-
--  We could also have a github repository for the generated
-   documentation
 
 These could be generated automatically using github webhooks. They
 should be tagged and branched in the same way as the source
@@ -255,8 +244,10 @@ The advantages of using github repositories for this are:
    different versions by using the same branches and tags as the source
    repositories
 
-(There may be other generated data repositories we have, unrelated to
-the SSOT, such as `<https://github.com/Bjwebb/IATI-Data-Snapshot>`__)
+**However**, generated repositories are not currently being pursued due to the
+complexity of keeping mutliple branches properly in sync with the source
+repository. Generated data will still be availible, linked with specific source
+commits, see `Machine Consumption`_ for more information.
 
 Branches
 --------
@@ -363,13 +354,6 @@ manually move any issues that have been reported in the the wrong
 repository. This would involving labelling as duplicate and closing the
 old issue, and adding a link to the newly open issue.
 
-Github Team
------------
-
-A Github Team will be set up for the Single Source of Truth, with push
-access to each of the repositories. Members of this team will also be
-able to have issues assigned to them.
-
 Changes After Release
 ---------------------
 
@@ -472,20 +456,21 @@ Machine Consumption
 -------------------
 
 Moving forward, the preferred method of fetching machine readable
-information from the Single Source of truth will be via
-github. The advantage of this is that, via
-branching, there will be a consistent way for people to query different
-versions of the standard, without any extra effort on our side. (The
-downside is that github doesn’t look as authoritative as hosting it on
-iatistandard.org ourselves - one compromised would be redirects from
-`http://iatistandard.org/api/something <http://iatistandard.org/api/something>`__ to
-the appropiate github page)
+information from the Single Source of truth will be via github.
 
-    TODO: Discuss.
+The advantage of this is that, via branching, there will be a consistent way
+for people to query different versions of the standard, without any extra
+effort on our side. 
 
-In some cases, we will make the data easier to consume automatically by
-preprocessing it, and pushing it to ‘Generated Data’ repositories. See
-the `Generated Repositories`_ section for more.
+The downsides of github are that it doesn’t look authoritative, and only
+contains data in its source formats (e.g. XML for codelists). The github
+repositories contain code for converting some of this data into other formats.
+One option is for people to download and convert this themself - but this may
+be tedious if they haven't got the necessary software installed.
+
+Therefore, converted and original versions of machine readable data will be
+availible in a folder of the iatistandard website.
+e.g. http://dev.iatistandard.org/_static/codelists/
 
 Case Studies
 ------------
@@ -506,7 +491,7 @@ now. The big next step is to work on the human processes of managing the
 git repositories properly etc.
 
 We can do this in tandem with our work on 1.04 - `<http://dev.iatistandard.org>`__
-will be set up to build from the Single Source of Truth, and this will
+has been set up to build from the Single Source of Truth, and this will
 become the new website when 1.04 is released.
 
 
