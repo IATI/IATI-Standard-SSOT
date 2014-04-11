@@ -205,7 +205,7 @@ class Schema2Doc(object):
         rows = [{
             'name': element_name,
             'path': '/'.join(path.split('/')[1:])+element_name,
-            'doc': path+element_name,
+            'doc': '/'+path+element_name,
             'description': textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
             'type': element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else '',
             'section': len(path.split('/')) < 5
@@ -384,14 +384,14 @@ if __name__ == '__main__':
         activities = Schema2Doc('iati-activities-schema.xsd', lang=language)
         activities.output_docs('iati-activities', 'activities-standard/')
         activities.output_schema_table('iati-activities', 'activities-standard/', output=True,
-            filename='activities-standard/overview-table.rst',
-            title='Activity Standard Overview Table')
+            filename='activities-standard/summary-table.rst',
+            title='Activity Standard Summary Table')
 
         orgs = Schema2Doc('iati-organisations-schema.xsd', lang=language)
         orgs.output_docs('iati-organisations', 'organisation-standard/')
         orgs.output_schema_table('iati-organisations', 'organisation-standard/', output=True,
-            filename='organisation-standard/overview-table.rst',
-            title='Organisation Standard Overview Table')
+            filename='organisation-standard/summary-table.rst',
+            title='Organisation Standard Summary Table')
         
         codelists_to_docs(lang=language)
     extra_extra_docs()
