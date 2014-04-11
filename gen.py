@@ -189,14 +189,14 @@ class Schema2Doc(object):
         children = self.element_loop(element, path)
         for child_name, child_element in children:
             self.output_docs(child_name, path+element.attrib['name']+'/', child_element)
-                
+
         with open('docs/'+rst_filename, 'w') as fp:
             t = self.jinja_env.get_template(self.lang+'/schema_element.rst')
             fp.write(t.render(
                 element_name=element_name,
                 element_name_underline='='*len(element_name),
                 element=element,
-                path='/'.join(path.split('/')[1:]),
+                path='/'.join(path.split('/')[1:]), # Strip e.g. activity-standard/ from the path
                 github_urls=github_urls,
                 schema_documentation=textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
                 extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
@@ -251,7 +251,7 @@ class Schema2Doc(object):
                 fp.write(t.render(
                     rows=rows,
                     title=title,
-                    root_path=path,
+                    root_path='/'.join(path.split('/')[1:]), # Strip e.g. activity-standard/ from the path
                     match_codelist=match_codelist,
                     description=self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text
                 ).encode('utf8'))
