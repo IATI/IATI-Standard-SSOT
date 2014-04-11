@@ -2,7 +2,7 @@
 {{'='*len(codelist_json.metadata.name)}}
 
 {% if codelist_json.metadata.description %}
-{{codelist_json.metadata.description}}
+{{dedent(codelist_json.metadata.description)}}
 {% endif %}
 
 {% if codelist_json.metadata.url %}
