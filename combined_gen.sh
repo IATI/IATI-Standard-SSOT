@@ -5,10 +5,10 @@
 cd docs || exit 1
 
 mkdir en/developer
-cp ../../IATI-Developer-Documentation/*.rst en/developer
-cp -r ../../IATI-Developer-Documentation/*/ en/developer
-cp ../..//IATI-Guidance/en/*.rst en/
-cp -r ../../IATI-Guidance/en/*/ en/
+cp -n ../../IATI-Developer-Documentation/*.rst en/developer
+cp -rn ../../IATI-Developer-Documentation/*/ en/developer
+cp -n ../..//IATI-Guidance/en/*.rst en/
+cp -rn ../../IATI-Guidance/en/*/ en/
 cp ../combined_sitemap.rst en/sitemap.rst
 
 git add .

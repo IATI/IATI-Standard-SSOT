@@ -5,6 +5,7 @@ Sitemap
    :titlesonly:
 
    overview
+   faqs
    activities-standard
    organisation-standard
    codelists
