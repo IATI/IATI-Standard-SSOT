@@ -48,6 +48,15 @@ Attributes
 
 {% endif %}
 
+{{extra_docs}}
+
+Developer tools
+~~~~~~~~~~~~~~~
+
+Find the source of this documentation on github:
+
+* `Schema <{{github_urls.schema}}>`_
+* `Extra Documentation <{{github_urls.extra_documentation}}>`_
 
 {% if childnames %}
 Subelements
@@ -60,14 +69,3 @@ Subelements
 {% for childname in childnames %}   {{element_name}}/{{childname}}
 {%endfor%}
 {% endif %}
-
-{{extra_docs}}
-
-Developer tools
-~~~~~~~~~~~~~~~
-
-Find the source of this documentation on github:
-
-* `Schema <{{github_urls.schema}}>`_
-* `Extra Documentation <{{github_urls.extra_documentation}}>`_
-
