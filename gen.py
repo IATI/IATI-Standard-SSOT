@@ -378,7 +378,9 @@ def extra_extra_docs():
 
     """
     for dirname, dirs, files in os.walk('IATI-Extra-Documentation', followlinks=True):
+        if dirname.startswith('.'): continue
         for fname in files:
+            if fname.startswith('.'): continue
             if len(dirname.split(os.path.sep)) == 1:
                 rst_dirname = ''
             else:
