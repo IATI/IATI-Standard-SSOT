@@ -23,7 +23,7 @@ Download this codelist
 | CLv1 (Current): `XML <../../_static/codelists/clv1/codelist/{{fname}}.xml>`__ `CSV <../../_static/codelists/clv1/codelist/{{fname}}.csv>`__ `JSON <../../_static/codelists/clv1/codelist/{{fname}}.json>`__
 | CLv2 (New): `XML <../../_static/codelists/clv2/xml/{{fname}}.xml>`__ `CSV <../../_static/codelists/clv2/csv/{{lang}}/{{fname}}.csv>`__ `JSON <../../_static/codelists/clv2/json/{{lang}}/{{fname}}.json>`__
 
-`Github Source (New XML) <{{github_url}}>`__
+`GitHub Source (New XML) <{{github_url}}>`__
 
 Codes
 -----
