@@ -10,8 +10,8 @@ External URL: {{codelist_json.metadata.url}}
 {% endif %}
 
 {% if codelist_paths %}
-Attributes
-----------
+Use this codelist for
+---------------------
 {% for path in codelist_paths %}
 * :ref:`{{path}} <{{path_to_ref(path)}}>`
 {% endfor %}
@@ -20,17 +20,10 @@ Attributes
 Download this codelist
 ----------------------
 
-Old format:
-`XML <../../_static/codelists/v1/codelist/{{fname}}.xml>`__
-`CSV <../../_static/codelists/v1/codelist/{{fname}}.csv>`__
-`JSON <../../_static/codelists/v1/codelist/{{fname}}.json>`__
+| CLv1 (Current): `XML <../../_static/codelists/clv1/codelist/{{fname}}.xml>`__ `CSV <../../_static/codelists/clv1/codelist/{{fname}}.csv>`__ `JSON <../../_static/codelists/clv1/codelist/{{fname}}.json>`__
+| CLv2 (New): `XML <../../_static/codelists/clv2/xml/{{fname}}.xml>`__ `CSV <../../_static/codelists/clv2/csv/{{lang}}/{{fname}}.csv>`__ `JSON <../../_static/codelists/clv2/json/{{lang}}/{{fname}}.json>`__
 
-New format: 
-`XML <../../_static/codelists/xml/{{fname}}.xml>`__
-`CSV <../../_static/codelists/csv/{{lang}}/{{fname}}.csv>`__
-`JSON <../../_static/codelists/json/{{lang}}/{{fname}}.json>`__
-
-`Github Source <{{github_url}}>`__
+`Github Source (New XML) <{{github_url}}>`__
 
 Codes
 -----

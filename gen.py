@@ -34,21 +34,22 @@ def human_list(l):
     return ', '.join(l)
 
 
+
+standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
+
 def ruleset_page(lang):
     jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
-    ruleset = { xpath:rules_text(rules, '', True) for xpath, rules in rulesets.items() }
+    ruleset = { xpath:rules_text(rules, '', True) for xpath, rules in standard_ruleset.items() }
     with open(os.path.join('docs', lang, 'ruleset.rst'), 'w') as fp:
         t = jinja_env.get_template(lang+'/ruleset.rst')
         fp.write(t.render(
             ruleset = ruleset
         ).encode('utf8'))
 
-# TODO - This function should be moved into the IATI-Rulesets submodule
-rulesets = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
 def ruleset_text(path):
     """ Return a list of text describing the rulesets for a given path (xpath) """
     out = []
-    for xpath, rules in rulesets.items():
+    for xpath, rules in standard_ruleset.items():
         if xpath.startswith('//'):
             try:
                 reduced_path = path.split(xpath[2:]+'/')[1]
@@ -305,7 +306,7 @@ class Schema2Doc(object):
 
 
 def codelists_to_docs(lang):
-    dirname = 'IATI-Codelists/out/json/'+lang
+    dirname = 'IATI-Codelists/out/clv2/json/'+lang
     try:
         os.mkdir('docs/'+lang+'/codelists/')
     except OSError: pass
