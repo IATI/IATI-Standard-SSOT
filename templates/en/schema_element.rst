@@ -6,8 +6,8 @@
 .. index::
   single: {{element_name}}
 
-From the schema
-~~~~~~~~~~~~~~~
+Definition
+~~~~~~~~~~
 
 {{schema_documentation}}
 
