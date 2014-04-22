@@ -10,6 +10,6 @@ Sitemap
    organisation-standard
    codelists
    schema
-   updates
+   upgrades
    developer/index
 
