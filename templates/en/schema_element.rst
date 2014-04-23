@@ -18,6 +18,10 @@ Definition
 {% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element should be of type {{element.get('type')}}.
 {% endif %}
 
+{% if min_occurs > 0 %}
+The schema states that this element must have at least {{min_occurs}} subelement{% if min_occurs > 1 %}s{% endif %}.
+{% endif %}
+
 {% set rtext = ruleset_text(path+element_name) %}
 {% if rtext %}
 Rules

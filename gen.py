@@ -157,6 +157,12 @@ class Schema2Doc(object):
         for child_name, child_element in children:
             self.output_docs(child_name, path+element.attrib['name']+'/', child_element)
 
+        min_occurss = element.xpath('xsd:complexType/xsd:choice/@minOccurs', namespaces=namespaces)
+        if min_occurss:
+            min_occurs = int(min_occurss[0])
+        else:
+            min_occurs = 0
+
         with open('docs/'+rst_filename, 'w') as fp:
             t = self.jinja_env.get_template(self.lang+'/schema_element.rst')
             fp.write(t.render(
@@ -173,7 +179,8 @@ class Schema2Doc(object):
                 path_to_ref=path_to_ref,
                 ruleset_text=ruleset_text,
                 childnames = [x[0] for x in children],
-                extra_docs=get_extra_docs(rst_filename)
+                extra_docs=get_extra_docs(rst_filename),
+                min_occurs=min_occurs
             ).encode('utf8'))
 
 
