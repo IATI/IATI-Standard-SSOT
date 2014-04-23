@@ -18,7 +18,7 @@
       - {{row.description.replace('\n', '\n        ').strip(' \n')}}
       - {{row.type}}
       - {% set codelist = match_codelist(root_path+row.path) %}{% if codelist %}:doc:`/codelists/{{codelist}}`{% endif %}
-      - ``{{row.path}}``
+      - {{row.path.replace('@','\@')}}
       - {{row.occur}}
 {% endfor %}
 
