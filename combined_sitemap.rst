@@ -4,8 +4,7 @@ Sitemap
 .. toctree::
    :titlesonly:
 
-   overview
-   faqs
+   how-to-publish
    activities-standard
    organisation-standard
    codelists
