@@ -325,7 +325,8 @@ def codelists_to_docs(lang):
             codelist_json = json.load(fp)
         
         fname = fname[:-5]
-        if os.path.exists(os.path.join('IATI-Codelists','xml',fname+'.xml')):
+        embedded = os.path.exists(os.path.join('IATI-Codelists','xml',fname+'.xml'))
+        if embedded:
             github_url = get_github_url('IATI-Codelists', 'xml/{0}.xml'.format(fname))
         else:
             github_url = get_github_url('IATI-Codelists-NonEmbedded', 'xml/{0}.xml'.format(fname))
@@ -343,6 +344,7 @@ def codelists_to_docs(lang):
                 path_to_ref=path_to_ref,
                 extra_docs=get_extra_docs(rst_filename),
                 dedent=textwrap.dedent,
+                embedded=embedded,
                 lang=lang).encode('utf-8'))
 
 def extra_extra_docs():

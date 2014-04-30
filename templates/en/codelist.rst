@@ -9,6 +9,12 @@
 External URL: {{codelist_json.metadata.url}}
 {% endif %}
 
+{% if embedded %}
+This is an :ref:`Embedded codelist <embedded_codelist>`.
+{% else %}
+This is a :ref:`Non-Embedded codelist <non_embedded_codelist>`.
+{% endif %}
+
 {% if codelist_paths %}
 Use this codelist for
 ---------------------
