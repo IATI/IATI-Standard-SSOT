@@ -376,9 +376,9 @@ def extra_extra_docs():
 if __name__ == '__main__':
     for language in languages:
         activities = Schema2Doc('iati-activities-schema.xsd', lang=language)
-        activities.output_docs('iati-activities', 'activities-standard/')
-        activities.output_schema_table('iati-activities', 'activities-standard/', output=True,
-            filename='activities-standard/summary-table.rst',
+        activities.output_docs('iati-activities', 'activity-standard/')
+        activities.output_schema_table('iati-activities', 'activity-standard/', output=True,
+            filename='activity-standard/summary-table.rst',
             title='Activity Standard Summary Table')
 
         orgs = Schema2Doc('iati-organisations-schema.xsd', lang=language)

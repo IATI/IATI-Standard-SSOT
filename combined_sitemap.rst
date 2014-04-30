@@ -5,7 +5,7 @@ Sitemap
    :titlesonly:
 
    how-to-publish
-   activities-standard
+   activity-standard 
    organisation-standard
    codelists
    schema
