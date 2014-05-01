@@ -26,4 +26,5 @@ echo '</urlset>' >> docs/en/_build/dirhtml/sitemap.xml
 
 rm -rf docs-copy
 cp -r docs docs-copy
+sed -i 's/\.\.\//\//g' docs-copy/en/_build/dirhtml/404/index.html
 
