@@ -35,11 +35,12 @@ def human_list(l):
 
 
 def lookup_see_also(standard, mapping, path):
-    if path == '': return None
+    if path == '': return
     for overview, elements in mapping.items():
         if path in elements:
-            return overview
-    return lookup_see_also(standard, mapping, '/'.join(path.split('/')[:-1]))
+            yield '/'+standard+'/overview/'+overview
+    for x in lookup_see_also(standard, mapping, '/'.join(path.split('/')[:-1])):
+        yield x
 
 def see_also(path, lang):
     standard = path.split('/')[0]
@@ -49,10 +50,7 @@ def see_also(path, lang):
         # Using this prevents subpages of iati-activity using the activity file overview
         simpler = len(path.split('/')) > 3 
         simple_path = '/'.join(path.split('/')[3:]) if simpler else path
-        overview = lookup_see_also(standard, mapping, simple_path)
-        return '/'+standard+'/overview/'+overview if overview else None
-
-
+        return list(lookup_see_also(standard, mapping, simple_path))
 
 standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
 

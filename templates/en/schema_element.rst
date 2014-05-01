@@ -3,7 +3,7 @@
 
 ``{{path}}{{element_name}}``
 
-This is the reference page for the XML element {{element_name}}. {% if see_also %}See also the :doc:`{{see_also}}` overview page.{% endif %}
+This is the reference page for the XML element ``{{element_name}}``. {% if see_also %}See also the relevant overview page{% if see_also|count > 1%}s{%endif%}: {% for page in see_also %}:doc:`{{page}}`{% if not loop.last %}, {% endif %} {% endfor %}{% endif %}
 
 .. index::
   single: {{element_name}}
