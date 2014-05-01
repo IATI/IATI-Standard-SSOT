@@ -5,6 +5,7 @@ Sitemap
    :titlesonly:
 
    how-to-publish
+   organisation-identifiers
    activity-standard 
    organisation-standard
    codelists
