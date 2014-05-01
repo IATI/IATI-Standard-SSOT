@@ -3,6 +3,8 @@
 
 ``{{path}}{{element_name}}``
 
+This is the reference page for the XML element {{element_name}}. {% if see_also %}See also the :doc:`{{see_also}}` overview page.{% endif %}
+
 .. index::
   single: {{element_name}}
 
