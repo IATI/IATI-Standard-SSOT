@@ -251,7 +251,29 @@ class Schema2Doc(object):
                 ).encode('utf8'))
         else:
             return rows
-            
+
+    def output_overview_pages(self, standard):
+        if self.lang == 'en': # FIXME
+            try:
+                os.mkdir(os.path.join('docs', self.lang, standard, 'overview'))
+            except OSError: pass
+
+            mapping = json.load(open(os.path.join('IATI-Extra-Documentation', self.lang, standard, 'overview-mapping.json')))
+            for page, reference_pages in mapping.items():
+                self.output_overview_page(standard, page, reference_pages)
+
+    def output_overview_page(self, standard, page, reference_pages):
+        if standard == 'activity-standard':
+            f = lambda x: x if x.startswith('iati-activities') else 'iati-activities/iati-activity/'+x
+        else:
+            f = lambda x: x if x.startswith('iati-organisations') else 'iati-organisations/iati-organisation/'+x
+        reference_pages = [ (x, '/'+standard+'/'+f(x)) for x in reference_pages ]
+        with open(os.path.join('docs', self.lang, standard, 'overview', page+'.rst'), 'w') as fp:
+            t = self.jinja_env.get_template(self.lang+'/overview.rst')
+            fp.write(t.render(
+                extra_docs=get_extra_docs(os.path.join(self.lang, standard, 'overview', page+'.rst')),
+                reference_pages=reference_pages
+            ).encode('utf8'))
         
 
 
@@ -400,12 +422,14 @@ if __name__ == '__main__':
         activities.output_schema_table('iati-activities', 'activity-standard/', output=True,
             filename='activity-standard/summary-table.rst',
             title='Activity Standard Summary Table')
+        activities.output_overview_pages('activity-standard')
 
         orgs = Schema2Doc('iati-organisations-schema.xsd', lang=language)
         orgs.output_docs('iati-organisations', 'organisation-standard/')
         orgs.output_schema_table('iati-organisations', 'organisation-standard/', output=True,
             filename='organisation-standard/summary-table.rst',
             title='Organisation Standard Summary Table')
+        orgs.output_overview_pages('organisation-standard')
         
         ruleset_page(lang=language)
         codelists_to_docs(lang=language)
