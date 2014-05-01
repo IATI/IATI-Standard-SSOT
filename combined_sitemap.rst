@@ -10,5 +10,6 @@ Sitemap
    codelists
    schema
    upgrades
+   datastore
    developer/index
 
