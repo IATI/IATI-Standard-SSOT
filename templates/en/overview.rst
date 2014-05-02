@@ -1,7 +1,7 @@
 {{extra_docs}}
 
-Reference
-=========
+Reference pages
+---------------
 
 {% for name, path in reference_pages %}
 * :doc:`{{name}} <{{path}}>`
