@@ -4,11 +4,13 @@ Sitemap
 .. toctree::
    :titlesonly:
 
-   overview
-   activities-standard
+   how-to-publish
+   organisation-identifiers
+   activity-standard 
    organisation-standard
    codelists
    schema
-   updates
+   upgrades
+   datastore
    developer/index
 

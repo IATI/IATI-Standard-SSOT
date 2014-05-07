@@ -2,6 +2,7 @@ from lxml import etree as ET
 import os, json, csv, shutil, re
 import textwrap
 import jinja2
+from iatirulesets.text import rules_text
 
 languages = ['en','fr']
 
@@ -32,48 +33,46 @@ def human_list(l):
     """
     return ', '.join(l)
 
-# TODO - This function should be moved into the IATI-Rulesets submodule
-rulesets = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
+
+def lookup_see_also(standard, mapping, path):
+    if path == '': return
+    for overview, elements in mapping.items():
+        if path in elements:
+            yield '/'+standard+'/overview/'+overview
+    for x in lookup_see_also(standard, mapping, '/'.join(path.split('/')[:-1])):
+        yield x
+
+def see_also(path, lang):
+    standard = path.split('/')[0]
+    if lang == 'en': # FIXME
+        mapping = json.load(open(os.path.join('IATI-Extra-Documentation', lang, standard, 'overview-mapping.json'))) # Loading this file is incredibly inefficient
+        # Common 'simple' path e.g. iati-activities or budget/period-start
+        # Using this prevents subpages of iati-activity using the activity file overview
+        simpler = len(path.split('/')) > 3 
+        simple_path = '/'.join(path.split('/')[3:]) if simpler else path
+        return list(lookup_see_also(standard, mapping, simple_path))
+
+standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
+
+def ruleset_page(lang):
+    jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
+    ruleset = { xpath:rules_text(rules, '', True) for xpath, rules in standard_ruleset.items() }
+    with open(os.path.join('docs', lang, 'ruleset.rst'), 'w') as fp:
+        t = jinja_env.get_template(lang+'/ruleset.rst')
+        fp.write(t.render(
+            ruleset = ruleset
+        ).encode('utf8'))
+
 def ruleset_text(path):
     """ Return a list of text describing the rulesets for a given path (xpath) """
     out = []
-    for xpath, rules in rulesets.items():
+    for xpath, rules in standard_ruleset.items():
         if xpath.startswith('//'):
             try:
                 reduced_path = path.split(xpath[2:]+'/')[1]
-                for rule in rules:
-                    cases = rules[rule]['cases']
-                    for case in cases:
-                        simplify_xpath = lambda x: re.sub('\[[^\]]*\]', '', x)
-                        if 'paths' in case:
-                            for case_path in case['paths']:
-                                # Don't forget [@ ]
-                                if simplify_xpath(case_path) == reduced_path:
-                                    other_paths = case['paths']
-                                    other_paths.remove(case_path)
-                                    if rule == 'only_one':
-                                        out.append('``{0}`` must be present only once.'.format(case_path))
-                                        if other_paths:
-                                            out.append('``{0}`` must not be present if ``{1}`` are present.'.format(case_path, human_list(other_paths)))
-                                    elif rule == 'atleast_one':
-                                        if other_paths:
-                                            out.append('Either ``{0}`` or ``{1}`` must be present.'.format(case_path, human_list(other_paths)))
-                                        else:
-                                            out.append('``{0}`` must be present.\n\n'.format(case_path))
-                                    elif rule == 'startswith':
-                                        out.append('``{0}`` should start with the value in ``{1}``'.format(case_path, case['start']))
-                                    else: print case_path, rule, case['paths'] 
-                        elif rule == 'date_order':
-                            if simplify_xpath(case['less']) == reduced_path or simplify_xpath(case['more']) == reduced_path:
-                                if case['less'] == 'NOW':
-                                    out.append('``{0}`` must be in the future.\n\n'.format(case['more']))
-                                elif case['more'] == 'NOW':
-                                    out.append('``{0}`` must be today, or in the past.\n\n'.format(case['less']))
-                                else:
-                                    out.append('``{0}`` must be before ``{1}``\n\n'.format(case['less'], case['more']))
-                        else: print case_path, rule, case['paths'] 
             except IndexError:
-                pass
+                continue
+            out += rules_text(rules, reduced_path)
     return out
 
 
@@ -174,14 +173,20 @@ class Schema2Doc(object):
         children = self.element_loop(element, path)
         for child_name, child_element in children:
             self.output_docs(child_name, path+element.attrib['name']+'/', child_element)
-                
+
+        min_occurss = element.xpath('xsd:complexType/xsd:choice/@minOccurs', namespaces=namespaces)
+        if min_occurss:
+            min_occurs = int(min_occurss[0])
+        else:
+            min_occurs = 0
+
         with open('docs/'+rst_filename, 'w') as fp:
             t = self.jinja_env.get_template(self.lang+'/schema_element.rst')
             fp.write(t.render(
                 element_name=element_name,
                 element_name_underline='='*len(element_name),
                 element=element,
-                path='/'.join(path.split('/')[1:]),
+                path='/'.join(path.split('/')[1:]), # Strip e.g. activity-standard/ from the path
                 github_urls=github_urls,
                 schema_documentation=textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
                 extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
@@ -191,7 +196,9 @@ class Schema2Doc(object):
                 path_to_ref=path_to_ref,
                 ruleset_text=ruleset_text,
                 childnames = [x[0] for x in children],
-                extra_docs=get_extra_docs(rst_filename)
+                extra_docs=get_extra_docs(rst_filename),
+                min_occurs=min_occurs,
+                see_also=see_also(path+element_name, self.lang)
             ).encode('utf8'))
 
 
@@ -205,7 +212,7 @@ class Schema2Doc(object):
         rows = [{
             'name': element_name,
             'path': '/'.join(path.split('/')[1:])+element_name,
-            'doc': path+element_name,
+            'doc': '/'+path+element_name,
             'description': textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
             'type': element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else '',
             'section': len(path.split('/')) < 5
@@ -236,13 +243,35 @@ class Schema2Doc(object):
                 fp.write(t.render(
                     rows=rows,
                     title=title,
-                    root_path=path,
+                    root_path='/'.join(path.split('/')[1:]), # Strip e.g. activity-standard/ from the path
                     match_codelist=match_codelist,
                     description=self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text
                 ).encode('utf8'))
         else:
             return rows
-            
+
+    def output_overview_pages(self, standard):
+        if self.lang == 'en': # FIXME
+            try:
+                os.mkdir(os.path.join('docs', self.lang, standard, 'overview'))
+            except OSError: pass
+
+            mapping = json.load(open(os.path.join('IATI-Extra-Documentation', self.lang, standard, 'overview-mapping.json')))
+            for page, reference_pages in mapping.items():
+                self.output_overview_page(standard, page, reference_pages)
+
+    def output_overview_page(self, standard, page, reference_pages):
+        if standard == 'activity-standard':
+            f = lambda x: x if x.startswith('iati-activities') else 'iati-activities/iati-activity/'+x
+        else:
+            f = lambda x: x if x.startswith('iati-organisations') else 'iati-organisations/iati-organisation/'+x
+        reference_pages = [ (x, '/'+standard+'/'+f(x)) for x in reference_pages ]
+        with open(os.path.join('docs', self.lang, standard, 'overview', page+'.rst'), 'w') as fp:
+            t = self.jinja_env.get_template(self.lang+'/overview.rst')
+            fp.write(t.render(
+                extra_docs=get_extra_docs(os.path.join(self.lang, standard, 'overview', page+'.rst')),
+                reference_pages=reference_pages
+            ).encode('utf8'))
         
 
 
@@ -324,7 +353,7 @@ class Schema2Doc(object):
 
 
 def codelists_to_docs(lang):
-    dirname = 'IATI-Codelists/out/json/'+lang
+    dirname = 'IATI-Codelists/out/clv2/json/'+lang
     try:
         os.mkdir('docs/'+lang+'/codelists/')
     except OSError: pass
@@ -336,7 +365,8 @@ def codelists_to_docs(lang):
             codelist_json = json.load(fp)
         
         fname = fname[:-5]
-        if os.path.exists(os.path.join('IATI-Codelists','xml',fname+'.xml')):
+        embedded = os.path.exists(os.path.join('IATI-Codelists','xml',fname+'.xml'))
+        if embedded:
             github_url = get_github_url('IATI-Codelists', 'xml/{0}.xml'.format(fname))
         else:
             github_url = get_github_url('IATI-Codelists-NonEmbedded', 'xml/{0}.xml'.format(fname))
@@ -353,6 +383,8 @@ def codelists_to_docs(lang):
                 codelist_paths=codelists_paths.get(fname),
                 path_to_ref=path_to_ref,
                 extra_docs=get_extra_docs(rst_filename),
+                dedent=textwrap.dedent,
+                embedded=embedded,
                 lang=lang).encode('utf-8'))
 
 def extra_extra_docs():
@@ -362,7 +394,9 @@ def extra_extra_docs():
 
     """
     for dirname, dirs, files in os.walk('IATI-Extra-Documentation', followlinks=True):
+        if dirname.startswith('.'): continue
         for fname in files:
+            if fname.startswith('.'): continue
             if len(dirname.split(os.path.sep)) == 1:
                 rst_dirname = ''
             else:
@@ -382,17 +416,20 @@ def extra_extra_docs():
 if __name__ == '__main__':
     for language in languages:
         activities = Schema2Doc('iati-activities-schema.xsd', lang=language)
-        activities.output_docs('iati-activities', 'activities-standard/')
-        activities.output_schema_table('iati-activities', 'activities-standard/', output=True,
-            filename='activities-standard/overview-table.rst',
-            title='Activity Standard Overview Table')
+        activities.output_docs('iati-activities', 'activity-standard/')
+        activities.output_schema_table('iati-activities', 'activity-standard/', output=True,
+            filename='activity-standard/summary-table.rst',
+            title='Activity Standard Summary Table')
+        activities.output_overview_pages('activity-standard')
 
         orgs = Schema2Doc('iati-organisations-schema.xsd', lang=language)
         orgs.output_docs('iati-organisations', 'organisation-standard/')
         orgs.output_schema_table('iati-organisations', 'organisation-standard/', output=True,
-            filename='organisation-standard/overview-table.rst',
-            title='Organisation Standard Overview Table')
+            filename='organisation-standard/summary-table.rst',
+            title='Organisation Standard Summary Table')
+        orgs.output_overview_pages('organisation-standard')
         
+        ruleset_page(lang=language)
         codelists_to_docs(lang=language)
     extra_extra_docs()
 

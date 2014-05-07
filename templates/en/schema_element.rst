@@ -3,11 +3,13 @@
 
 ``{{path}}{{element_name}}``
 
+This is the reference page for the XML element ``{{element_name}}``. {% if see_also %}See also the relevant overview page{% if see_also|count > 1%}s{%endif%}: {% for page in see_also %}:doc:`{{page}}`{% if not loop.last %}, {% endif %} {% endfor %}{% endif %}
+
 .. index::
   single: {{element_name}}
 
-From the schema
-~~~~~~~~~~~~~~~
+Definition
+~~~~~~~~~~
 
 {{schema_documentation}}
 
@@ -16,6 +18,10 @@ From the schema
 {% endfor %}
 
 {% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element should be of type {{element.get('type')}}.
+{% endif %}
+
+{% if min_occurs > 0 %}
+The schema states that this element must have at least {{min_occurs}} subelement{% if min_occurs > 1 %}s{% endif %}.
 {% endif %}
 
 {% set rtext = ruleset_text(path+element_name) %}
@@ -48,6 +54,15 @@ Attributes
 
 {% endif %}
 
+{{extra_docs}}
+
+Developer tools
+~~~~~~~~~~~~~~~
+
+Find the source of this documentation on github:
+
+* `Schema <{{github_urls.schema}}>`_
+* `Extra Documentation <{{github_urls.extra_documentation}}>`_
 
 {% if childnames %}
 Subelements
@@ -60,14 +75,3 @@ Subelements
 {% for childname in childnames %}   {{element_name}}/{{childname}}
 {%endfor%}
 {% endif %}
-
-{{extra_docs}}
-
-Developer tools
-~~~~~~~~~~~~~~~
-
-Find the source of this documentation on github:
-
-* `Schema <{{github_urls.schema}}>`_
-* `Extra Documentation <{{github_urls.extra_documentation}}>`_
-
