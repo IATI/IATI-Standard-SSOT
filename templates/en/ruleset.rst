@@ -7,8 +7,7 @@ Ruleset
 {{'='*(xpath|count)}}
 
 {% for rule_text in rule_texts %}
-{{rule_text}}
-
+* {{rule_text}}
 {% endfor %}
 
 {% endfor %}
