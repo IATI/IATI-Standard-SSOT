@@ -11,6 +11,7 @@
       - Codelist
       - XML
       - Occur
+      - Rules
 
 {% for row in rows %}
     * - {%if row.section%}:doc:`{{row.name}} <{{row.doc}}>`{%endif%}
@@ -20,6 +21,7 @@
       - {% set codelist = match_codelist(root_path+row.path) %}{% if codelist %}:doc:`/codelists/{{codelist}}`{% endif %}
       - {{row.path.replace('@','\@')}}
       - {{row.occur}}
+      - {{'\n        '.join(ruleset_text(row.path))}}
 {% endfor %}
 
 ::

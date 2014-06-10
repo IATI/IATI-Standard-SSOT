@@ -245,6 +245,7 @@ class Schema2Doc(object):
                     title=title,
                     root_path='/'.join(path.split('/')[1:]), # Strip e.g. activity-standard/ from the path
                     match_codelist=match_codelist,
+                    ruleset_text=ruleset_text,
                     description=self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text
                 ).encode('utf8'))
         else:
