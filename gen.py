@@ -12,7 +12,6 @@ namespaces = {
 }
 # Attributes that have documentation that differs to that in the schema
 custom_attributes = {
-    'xml:lang': 'ISO 2 letter code specifying the language of text in this element.'
 }
 
 def get_github_url(repo, path=''):
@@ -283,8 +282,17 @@ class Schema2Doc(object):
         Returns the names of the child elements.
 
         """
+
+        a = element.attrib
+        type_elements = []
+        if 'type' in a:
+            complexType = self.get_schema_element('complexType', a['type'])
+            if complexType is not None:
+                type_elements = complexType.findall('xsd:choice/xsd:element', namespaces=namespaces)
+
         children = ( element.findall('xsd:complexType/xsd:choice/xsd:element', namespaces=namespaces)
-            + element.findall("xsd:complexType/xsd:all/xsd:element", namespaces=namespaces) )
+            + element.findall("xsd:complexType/xsd:all/xsd:element", namespaces=namespaces)
+            + type_elements)
         child_tuples = []
         for child in children:
             a = child.attrib
@@ -341,13 +349,15 @@ class Schema2Doc(object):
                 if attribute.get('ref') in custom_attributes:
                     out.append((attribute.get('ref'), '', custom_attributes[attribute.get('ref')], attribute.get('use')=='required'))
                     continue
-                attribute = self.get_schema_element('attribute', attribute.get('ref'))
+                referenced_attribute = self.get_schema_element('attribute', attribute.get('ref'))
+                if referenced_attribute is not None:
+                    attribute = referenced_attribute
                 if doc is None:
                     # Only fetch the documentation of the referenced definition
                     # if we don't already have documentation.
                     doc = attribute.find(".//xsd:documentation", namespaces=namespaces)
             if doc is not None:
-                out.append((attribute.get('name'), attribute.get('type'), doc.text, attribute.get('use')=='required'))
+                out.append((attribute.get('name') or attribute.get('ref'), attribute.get('type'), doc.text, attribute.get('use')=='required'))
             else:
                 print 'Ack', ET.tostring(attribute)
         return out
