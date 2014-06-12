@@ -54,7 +54,10 @@ Attributes
 
 {% endif %}
 
-{{extra_docs}}
+Example Usage
+~~~~~~~~~~~~~
+
+Example usage and changelog are hidden becuase they have not yet been updated for 2.01.
 
 Developer tools
 ~~~~~~~~~~~~~~~
