@@ -5,6 +5,7 @@ Sitemap
    :titlesonly:
 
    how-to-publish
+   faqs
    organisation-identifiers
    activity-standard 
    organisation-standard
