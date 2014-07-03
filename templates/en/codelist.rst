@@ -26,8 +26,20 @@ Use this codelist for
 Download this codelist
 ----------------------
 
-| CLv1 (Current): `XML <../downloads/clv1/codelist/{{fname}}.xml>`__ `CSV <../downloads/clv1/codelist/{{fname}}.csv>`__ `JSON <../downloads/clv1/codelist/{{fname}}.json>`__
-| CLv2 (New): `XML <../downloads/clv2/xml/{{fname}}.xml>`__ `CSV <../downloads/clv2/csv/{{lang}}/{{fname}}.csv>`__ `JSON <../downloads/clv2/json/{{lang}}/{{fname}}.json>`__
+.. list-table::
+   :header-rows: 1
+
+   * - :ref:`CLv1 (Current) <codelist_api_1.04>`:
+     - :ref:`CLv2 (New) <codelist_api_1.04>`:
+
+   * - `CSV <../downloads/clv1/codelist/{{fname}}.csv>`__
+     - `CSV <../downloads/clv2/csv/{{lang}}/{{fname}}.csv>`__
+
+   * - `JSON <../downloads/clv1/codelist/{{fname}}.json>`__
+     - `JSON <../downloads/clv2/json/{{lang}}/{{fname}}.json>`__
+
+   * - `XML <../downloads/clv1/codelist/{{fname}}.xml>`__
+     - `XML <../downloads/clv2/xml/{{fname}}.xml>`__
 
 `GitHub Source (New XML) <{{github_url}}>`__
 
