@@ -162,7 +162,7 @@ class Schema2Doc(object):
 
         github_urls = {
             'schema': element.base.replace('./IATI-Schemas/', get_github_url('IATI-Schemas')) + '#L' + str(element.sourceline),
-            'extra_documentation': get_github_url('IATI-Extra-Documentation', self.lang+'/'+path[:-1]+'.rst')
+            'extra_documentation': get_github_url('IATI-Extra-Documentation', self.lang+'/'+path+element_name+'.rst')
         }
         try:
             os.makedirs(os.path.join('docs', self.lang, path))
