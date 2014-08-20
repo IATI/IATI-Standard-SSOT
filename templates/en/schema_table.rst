@@ -17,7 +17,7 @@
     * - {%if row.section%}:doc:`{{row.name}} <{{row.doc}}>`{%endif%}
       - {%if not row.section%}{%if row.name%}:doc:`{{row.name}} <{{row.doc}}>`{%else%}{{row.attribute_name}}{%endif%}{%endif%}
       - {{row.description.replace('\n', '\n        ').strip(' \n')}}
-      - {{row.type}}
+      - {% if row.type %}{{row.type}}{% endif %}
       - {% set codelist = match_codelist(root_path+row.path) %}{% if codelist %}:doc:`/codelists/{{codelist}}`{% endif %}
       - {{row.path.replace('@','\@')}}
       - {{row.occur}}
