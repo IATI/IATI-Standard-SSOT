@@ -173,7 +173,7 @@ class Schema2Doc(object):
         for child_name, child_element in children:
             self.output_docs(child_name, path+element.attrib['name']+'/', child_element)
 
-        min_occurss = element.xpath('xsd:complexType/xsd:choice/@minOccurs', namespaces=namespaces)
+        min_occurss = element.xpath('xsd:complexType/xsd:choice/@minOccur', namespaces=namespaces)
         if min_occurss:
             min_occurs = int(min_occurss[0])
         else:
@@ -288,9 +288,11 @@ class Schema2Doc(object):
         if 'type' in a:
             complexType = self.get_schema_element('complexType', a['type'])
             if complexType is not None:
-                type_elements = complexType.findall('xsd:choice/xsd:element', namespaces=namespaces)
+                type_elements = ( complexType.findall('xsd:choice/xsd:element', namespaces=namespaces) +
+                    complexType.findall('xsd:sequence/xsd:element', namespaces=namespaces) )
 
         children = ( element.findall('xsd:complexType/xsd:choice/xsd:element', namespaces=namespaces)
+            + element.findall('xsd:complexType/xsd:sequence/xsd:element', namespaces=namespaces)
             + element.findall("xsd:complexType/xsd:all/xsd:element", namespaces=namespaces)
             + type_elements)
         child_tuples = []
