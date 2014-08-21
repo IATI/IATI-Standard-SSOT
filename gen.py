@@ -187,6 +187,7 @@ class Schema2Doc(object):
                 element_name_underline='='*len(element_name),
                 element=element,
                 path='/'.join(path.split('/')[1:]), # Strip e.g. activity-standard/ from the path
+                dashboard_url='http://dashboard.iatistandard.org/element/'+'_'.join(path.split('/')[2:])+element_name+'.html',
                 github_urls=github_urls,
                 schema_documentation=textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
                 extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
