@@ -144,7 +144,7 @@ class Schema2Doc(object):
             schema_element = self.tree2.find("xsd:{0}[@name='{1}']".format(tag_name, name_attribute), namespaces=namespaces)
         return schema_element
 
-    def output_docs(self, element_name, path, element=None):
+    def output_docs(self, element_name, path, element=None, minOccurs='', maxOccurs=''):
         """
         Output documentation for the given element, and it's children.
 
@@ -171,10 +171,14 @@ class Schema2Doc(object):
         rst_filename = os.path.join(self.lang, path, element_name+'.rst')
 
         children = self.element_loop(element, path)
-        for child_name, child_element, _, _ in children:
-            self.output_docs(child_name, path+element.attrib['name']+'/', child_element)
+        for child_name, child_element, minOccurs, maxOccurs in children:
+            self.output_docs(child_name, path+element.attrib['name']+'/', child_element, minOccurs, maxOccurs)
 
         min_occurss = element.xpath('xsd:complexType/xsd:choice/@minOccur', namespaces=namespaces)
+        # Note that this min_occurs is different to the python variables
+        # minOccurs and maxOccurs, because this is read from a choice element,
+        # whereas those are read from the individual element definitions (only
+        # possible within a sequence element)
         if min_occurss:
             min_occurs = int(min_occurss[0])
         else:
@@ -198,6 +202,8 @@ class Schema2Doc(object):
                 childnames = [x[0] for x in children],
                 extra_docs=get_extra_docs(rst_filename),
                 min_occurs=min_occurs,
+                minOccurs=minOccurs,
+                maxOccurs=maxOccurs,
                 see_also=see_also(path+element_name, self.lang)
             ).encode('utf8'))
 

@@ -20,6 +20,24 @@ Definition
 {% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element should be of type {{element.get('type')}}.
 {% endif %}
 
+{% if min_occurs > 0 %}
+The schema states that this element must have at least {{min_occurs}} subelement{% if min_occurs > 1 %}s{% endif %}.
+{% endif %}
+
+{% if minOccurs and maxOccurs %}
+{% if minOccurs=='1' and maxOccurs=='1' %}
+This element element should occur once and only once (within each parent element).
+{% elif minOccurs=='0' and maxOccurs=='1' %}
+This element element should occur no more than once (within each parent element).
+{% elif minOccurs=='0' and maxOccurs=='unbounded' %}
+This element may occur any number of times.
+{% elif minOccurs=='1' and maxOccurs=='unbounded' %}
+This element should occur at least once (within each parent element).
+{% else %}
+This element should occur {{minOccurs}} to {{maxOccurs}} times.
+{% endif %}
+{% endif %}
+
 {% set rtext = ruleset_text(path+element_name) %}
 {% if rtext %}
 Rules
