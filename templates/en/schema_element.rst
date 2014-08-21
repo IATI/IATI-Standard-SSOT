@@ -38,11 +38,11 @@ Attributes
 
 @{{attribute}}
   {{ textwrap.dedent(text).strip().replace('\n','\n  ') }}
-{% set codelist = match_codelist(path+element_name+'/@'+attribute) %}{% if attribute_type %}  
+{% set codelist_tuple = match_codelist(path+element_name+'/@'+attribute) %}{% if attribute_type %}  
   This value should be of type {{attribute_type}}.
 
-{% endif %}{% if codelist %}  
-  This value should be on the :doc:`{{codelist}} codelist </codelists/{{codelist}}>`.
+{% endif %}{% if codelist_tuple[0] %}  
+  This value should be on the :doc:`{{codelist_tuple[0]}} codelist </codelists/{{codelist_tuple[0]}}>`{% if codelist_tuple[1] %}, if the relevant vocabulary is used{% endif %}.
 
 {% endif %}  
   

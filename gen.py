@@ -81,8 +81,9 @@ codelists_paths = defaultdict(list)
 codelist_mappings = ET.parse('./IATI-Codelists/mapping.xml').getroot().findall('mapping')
 def match_codelist(path):
     """
-    Returns the name of the codelist that the given path (xpath) should be on.
-    If there is no codelist for the given path, None is returned.
+    Looks up the codelist that the given path (xpath) should be on.
+    Returns a tuble of the codelist name, and whether any conditions apply.
+    If there is no codelist for the given path, the first part of the tuple is None.
 
     """
     for mapping in codelist_mappings:
@@ -92,7 +93,7 @@ def match_codelist(path):
                 codelist = mapping.find('codelist').attrib['ref']
                 if not path in codelists_paths[codelist]:
                     codelists_paths[codelist].append(path)
-                return codelist
+                return (codelist, mapping.find('condition') is not None)
             else:
                 pass # FIXME
     return
