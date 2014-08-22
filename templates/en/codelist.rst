@@ -53,19 +53,19 @@ Codes
 
    * - Code
      - Name
-     - Description
-     - Category
-     - URL
-{% if fname == 'OrganisationRegistrationAgency' %}     - Public Database?{% endif %}
+     - Description{% if show_category_column %}
+     - Category{% endif %}{% if show_url_column %}
+     - URL{% endif %}{% if fname == 'OrganisationRegistrationAgency' %}
+     - Public Database?{% endif %}
 
    {% for codelist_item in codelist_json.data %}
 
    * - {{codelist_item.code}}
      - {{codelist_item.name}}
-     - {% if codelist_item.description %}{{codelist_item.description}}{% endif %}
-     - {% if codelist_item.category %}{% if codelist_json.attributes['category-codelist'] %}:ref:`{{codelist_item.category}} <{{codelist_json.attributes['category-codelist']}}>`{%else%}{{codelist_item.category}}{%endif%}{% endif %}
-     - {% if codelist_item.url %}{{codelist_item.url}}{% endif %}
-{% if fname == 'OrganisationRegistrationAgency' %}     - {{codelist_item['public-database']}}{% endif %}
+     - {% if codelist_item.description %}{{codelist_item.description}}{% endif %}{% if show_category_column %}
+     - {% if codelist_item.category %}{% if codelist_json.attributes['category-codelist'] %}:ref:`{{codelist_item.category}} <{{codelist_json.attributes['category-codelist']}}>`{%else%}{{codelist_item.category}}{%endif%}{% endif %}{% endif %}{% if show_url_column %}
+     - {% if codelist_item.url %}{{codelist_item.url}}{% endif %}{% if fname == 'OrganisationRegistrationAgency' %}
+     - {{codelist_item['public-database']}}{% endif %}{% endif %}
 
    {% endfor %}
 

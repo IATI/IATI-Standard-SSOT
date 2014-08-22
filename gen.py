@@ -398,6 +398,8 @@ def codelists_to_docs(lang):
             t = jinja_env.get_template(lang+'/codelist.rst')
             fp.write(t.render(
                 codelist_json=codelist_json,
+                show_category_column=not all(not 'category' in x for x in codelist_json['data']),
+                show_url_column=not all(not 'url' in x for x in codelist_json['data']),
                 fname=fname,
                 len=len,
                 github_url=github_url,
