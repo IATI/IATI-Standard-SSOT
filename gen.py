@@ -144,7 +144,15 @@ class Schema2Doc(object):
             schema_element = self.tree2.find("xsd:{0}[@name='{1}']".format(tag_name, name_attribute), namespaces=namespaces)
         return schema_element
 
-    def output_docs(self, element_name, path, element=None, minOccurs='', maxOccurs=''):
+    def schema_documentation(self, element, ref_element):
+        if ref_element is not None:
+            xsd_docuementation = ref_element.find(".//xsd:documentation", namespaces=namespaces)
+            if xsd_docuementation is not None:
+                return ref_element.find(".//xsd:documentation", namespaces=namespaces).text
+        return element.find(".//xsd:documentation", namespaces=namespaces).text
+
+
+    def output_docs(self, element_name, path, element=None, minOccurs='', maxOccurs='', ref_element=None):
         """
         Output documentation for the given element, and it's children.
 
@@ -171,8 +179,8 @@ class Schema2Doc(object):
         rst_filename = os.path.join(self.lang, path, element_name+'.rst')
 
         children = self.element_loop(element, path)
-        for child_name, child_element, minOccurs, maxOccurs in children:
-            self.output_docs(child_name, path+element.attrib['name']+'/', child_element, minOccurs, maxOccurs)
+        for child_name, child_element, ref_element, minOccurs, maxOccurs in children:
+            self.output_docs(child_name, path+element.attrib['name']+'/', child_element, minOccurs, maxOccurs, ref_element)
 
         min_occurss = element.xpath('xsd:complexType/xsd:choice/@minOccur', namespaces=namespaces)
         # Note that this min_occurs is different to the python variables
@@ -192,7 +200,7 @@ class Schema2Doc(object):
                 element=element,
                 path='/'.join(path.split('/')[1:]), # Strip e.g. activity-standard/ from the path
                 github_urls=github_urls,
-                schema_documentation=textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
+                schema_documentation=textwrap.dedent(self.schema_documentation(element, ref_element)),
                 extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
                 attributes=self.attribute_loop(element),
                 textwrap=textwrap,
@@ -208,18 +216,19 @@ class Schema2Doc(object):
             ).encode('utf8'))
 
 
-    def output_schema_table(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs=''):
+    def output_schema_table(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None):
         if element is None:
             element = self.get_schema_element('element', element_name)
             if element is None:
                 return
+
 
         extended_types = element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces)
         rows = [{
             'name': element_name,
             'path': '/'.join(path.split('/')[1:])+element_name,
             'doc': '/'+path+element_name,
-            'description': textwrap.dedent(element.find(".//xsd:documentation", namespaces=namespaces).text),
+            'description': textwrap.dedent(self.schema_documentation(element, ref_element)),
             'type': element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else '',
             'occur': (minOccurs or '') + '..' + ('*' if maxOccurs=='unbounded' else maxOccurs or ''),
             'section': len(path.split('/')) < 5
@@ -241,8 +250,8 @@ class Schema2Doc(object):
                 'occur': '1..1' if a_required else '0..1'
             })
 
-        for child_name, child_element, minOccurs, maxOccurs in self.element_loop(element, path):
-            rows += self.output_schema_table(child_name, path+element.attrib['name']+'/', child_element, minOccurs=minOccurs, maxOccurs=maxOccurs)
+        for child_name, child_element, ref_element, minOccurs, maxOccurs in self.element_loop(element, path):
+            rows += self.output_schema_table(child_name, path+element.attrib['name']+'/', child_element, minOccurs=minOccurs, maxOccurs=maxOccurs, ref_element=ref_element)
 
         if output:
             with open(os.path.join('docs', self.lang, filename), 'w') as fp:
@@ -307,9 +316,9 @@ class Schema2Doc(object):
         for child in children:
             a = child.attrib
             if 'name' in a:
-                child_tuples.append((a['name'], child, a.get('minOccurs'), a.get('maxOccurs')))
+                child_tuples.append((a['name'], child, None, a.get('minOccurs'), a.get('maxOccurs')))
             else:
-                child_tuples.append((a['ref'], None, a.get('minOccurs'), a.get('maxOccurs')))
+                child_tuples.append((a['ref'], None, child, a.get('minOccurs'), a.get('maxOccurs')))
         return child_tuples
 
     def attribute_loop(self, element):
