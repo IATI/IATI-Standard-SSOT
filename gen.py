@@ -17,10 +17,10 @@ custom_attributes = {
 
 def get_github_url(repo, path=''):
     github_branches = {
-        'IATI-Schemas': 'version-1.04',
-        'IATI-Codelists': 'version-1.04',
-        'IATI-Rulesets': 'version-1.04',
-        'IATI-Extra-Documentation': 'version-1.04',
+        'IATI-Schemas': 'version-1.05',
+        'IATI-Codelists': 'version-1.05',
+        'IATI-Rulesets': 'version-1.05',
+        'IATI-Extra-Documentation': 'version-1.05',
         'IATI-Codelists-NonEmbedded': 'master',
     }
     return 'https://github.com/IATI/{0}/blob/{1}/{2}'.format(repo, github_branches[repo], path)
