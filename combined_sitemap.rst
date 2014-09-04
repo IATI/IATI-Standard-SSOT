@@ -5,6 +5,7 @@ Sitemap
    :titlesonly:
 
    introduction
+   key-considerations
    guidance/index
    reference
    upgrades

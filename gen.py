@@ -56,10 +56,17 @@ standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
 def ruleset_page(lang):
     jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
     ruleset = { xpath:rules_text(rules, '', True) for xpath, rules in standard_ruleset.items() }
-    with open(os.path.join('docs', lang, 'ruleset.rst'), 'w') as fp:
+    rst_filename = os.path.join(lang, 'rulesets', 'standard-ruleset.rst')
+
+    try:
+        os.mkdir(os.path.join('docs', lang, 'rulesets'))
+    except OSError: pass
+
+    with open(os.path.join('docs', rst_filename), 'w') as fp:
         t = jinja_env.get_template(lang+'/ruleset.rst')
         fp.write(t.render(
-            ruleset = ruleset
+            ruleset = ruleset,
+            extra_docs=get_extra_docs(rst_filename)
         ).encode('utf8'))
 
 def ruleset_text(path):

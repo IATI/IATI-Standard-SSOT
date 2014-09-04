@@ -9,6 +9,10 @@ cd IATI-Codelists || exit 1
 ./gen.sh || exit 1
 cd .. || exit 1
 
+
 # Generate documentation from the Schema and Codelists etc
 python gen.py || exit 1
+
+# Copy rulesets SPEC
+cp IATI-Rulesets/SPEC.rst docs/en/rulesets/ruleset-spec.rst
 
