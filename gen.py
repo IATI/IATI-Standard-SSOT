@@ -186,8 +186,8 @@ class Schema2Doc(object):
         rst_filename = os.path.join(self.lang, path, element_name+'.rst')
 
         children = self.element_loop(element, path)
-        for child_name, child_element, ref_element, minOccurs, maxOccurs in children:
-            self.output_docs(child_name, path+element.attrib['name']+'/', child_element, minOccurs, maxOccurs, ref_element)
+        for child_name, child_element, ref_element, child_minOccurs, child_maxOccurs in children:
+            self.output_docs(child_name, path+element.attrib['name']+'/', child_element, child_minOccurs, child_maxOccurs, ref_element)
 
         min_occurss = element.xpath('xsd:complexType/xsd:choice/@minOccur', namespaces=namespaces)
         # Note that this min_occurs is different to the python variables
