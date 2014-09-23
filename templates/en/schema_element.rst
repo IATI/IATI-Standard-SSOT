@@ -13,6 +13,8 @@ Definition
 
 {{schema_documentation}}
 
+Rules
+~~~~~
 {% for extended_type in extended_types %}
 {% if extended_type.startswith('xsd:') %}The text in this element should be of type {{extended_type}}.{% endif %}
 {% endfor %}
@@ -26,9 +28,9 @@ The schema states that this element must have at least {{min_occurs}} subelement
 
 {% if minOccurs and maxOccurs %}
 {% if minOccurs=='1' and maxOccurs=='1' %}
-This element element should occur once and only once (within each parent element).
+This element should occur once and only once (within each parent element).
 {% elif minOccurs=='0' and maxOccurs=='1' %}
-This element element should occur no more than once (within each parent element).
+This element should occur no more than once (within each parent element).
 {% elif minOccurs=='0' and maxOccurs=='unbounded' %}
 This element may occur any number of times.
 {% elif minOccurs=='1' and maxOccurs=='unbounded' %}
@@ -40,8 +42,7 @@ This element should occur {{minOccurs}} to {{maxOccurs}} times.
 
 {% set rtext = ruleset_text(path+element_name) %}
 {% if rtext %}
-Rules
-~~~~~
+
 
 {{'\n\n'.join(rtext)}}
 
