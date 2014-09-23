@@ -384,8 +384,6 @@ class Schema2Doc(object):
                     doc = attribute.find(".//xsd:documentation", namespaces=namespaces)
             if doc is not None:
                 out.append((attribute.get('name') or attribute.get('ref'), attribute.get('type'), doc.text, attribute.get('use')=='required'))
-            else:
-                print 'Ack', ET.tostring(attribute)
         return out
 
 
