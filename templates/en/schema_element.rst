@@ -57,7 +57,10 @@ Attributes
 
 @{{attribute}}
   {{ textwrap.dedent(text).strip().replace('\n','\n  ') }}
-{% set codelist_tuple = match_codelist(path+element_name+'/@'+attribute) %}{% if attribute_type %}  
+{% if required %}
+  This attribute is required.
+
+{% endif %}{% set codelist_tuple = match_codelist(path+element_name+'/@'+attribute) %}{% if attribute_type %}  
   This value should be of type {{attribute_type}}.
 
 {% endif %}{% if codelist_tuple[0] %}  
