@@ -382,8 +382,7 @@ class Schema2Doc(object):
                     # Only fetch the documentation of the referenced definition
                     # if we don't already have documentation.
                     doc = attribute.find(".//xsd:documentation", namespaces=namespaces)
-            if doc is not None:
-                out.append((attribute.get('name') or attribute.get('ref'), attribute.get('type'), doc.text, attribute.get('use')=='required'))
+            out.append((attribute.get('name') or attribute.get('ref'), attribute.get('type'), doc.text if doc else '', attribute.get('use')=='required'))
         return out
 
 
