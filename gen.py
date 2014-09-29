@@ -1,3 +1,4 @@
+from __future__ import print_function
 from lxml import etree as ET
 import os, json, csv, shutil, re
 import textwrap
@@ -75,7 +76,8 @@ def ruleset_text(path):
     for xpath, rules in standard_ruleset.items():
         if xpath.startswith('//'):
             try:
-                reduced_path = path.split(xpath[2:]+'/')[1]
+                # Use slice 1: to ensure we match /budget/ but not /total-budget/
+                reduced_path = path.split(xpath[1:]+'/')[1]
             except IndexError:
                 continue
             out += rules_text(rules, reduced_path)
@@ -345,7 +347,7 @@ class Schema2Doc(object):
         if 'type' in a:
             complexType = self.get_schema_element('complexType', a['type'])
             if complexType is None:
-                print 'Notice: No attributes for', a['type']
+                print('Notice: No attributes for', a['type'])
             else:
                 type_attributes = (
                     complexType.findall('xsd:attribute', namespaces=namespaces) +
