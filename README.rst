@@ -3,9 +3,6 @@ IATI Standard SSOT
 
 This is the main github repository for the IATI Standard Single Source of Truth (SSOT). For more detailed information about the SSOT, please see http://iatistandard.org/developer/ssot/ 
 
-This repository is currently under development, and does not necessarily represent any current or future version of the IATI standard.
-
-
 Building the documentation
 ==========================
 
