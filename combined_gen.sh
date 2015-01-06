@@ -14,6 +14,7 @@ mv en/guidance/404.rst en/
 mv en/guidance/upgrades* en/
 mv en/guidance/introduction* en/
 mv en/guidance/key-considerations* en/
+mv en/guidance/license* en/
 cp ../combined_sitemap.rst en/sitemap.rst
 
 git add .
