@@ -1,6 +1,15 @@
 IATI Standard SSOT
 ==================
 
+.. image:: https://requires.io/github/IATI/IATI-Standard-SSOT/requirements.svg?branch=version-2.01
+    :target: https://requires.io/github/IATI/IATI-Standard-SSOT/requirements/?branch=version-2.01
+    :alt: Requirements Status
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :target: https://github.com/IATI/IATI-Standard-SSOT/blob/master/LICENSE
+
+Introduction
+------------
+
 This is the main github repository for the IATI Standard Single Source of Truth (SSOT). For more detailed information about the SSOT, please see http://iatistandard.org/developer/ssot/ 
 
 Building the documentation
