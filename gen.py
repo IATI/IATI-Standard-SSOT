@@ -91,7 +91,7 @@ codelist_mappings = ET.parse('./IATI-Codelists/mapping.xml').getroot().findall('
 def match_codelist(path):
     """
     Looks up the codelist that the given path (xpath) should be on.
-    Returns a tuble of the codelist name, and whether any conditions apply.
+    Returns a tuble of the codelist name, and a boolean as describing whether any conditions apply.
     If there is no codelist for the given path, the first part of the tuple is None.
 
     """
@@ -131,6 +131,7 @@ class Schema2Doc(object):
         """
         schema -- the filename of the schema to use, e.g.
                   'iati-activities-schema.xsd'
+        lang -- the language code to build the documentation for (e.g. 'en')
 
         """
         self.tree = ET.parse("./IATI-Schemas/"+schema)
@@ -335,7 +336,7 @@ class Schema2Doc(object):
         Returns a list containing a tuple for each attribute the given element
         can have.
 
-        The format of the tuple is (name, type, documentation)
+        The format of the tuple is (name, type, documentation, is_required)
 
         """
         #if element.find("xsd:complexType[@mixed='true']", namespaces=namespaces) is not None:
