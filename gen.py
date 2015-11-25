@@ -21,7 +21,7 @@ def get_github_url(repo, path=''):
         'IATI-Codelists': 'version-2.02',
         'IATI-Rulesets': 'version-2.02',
         'IATI-Extra-Documentation': 'version-2.02',
-        'IATI-Codelists-NonEmbedded': 'master',
+        'IATI-Codelists-NonEmbedded': 'version-2.02-additions',
     }
     return 'https://github.com/IATI/{0}/blob/{1}/{2}'.format(repo, github_branches[repo], path)
 
