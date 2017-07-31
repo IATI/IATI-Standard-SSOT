@@ -97,8 +97,7 @@ def match_codelist(path):
     """
     for mapping in codelist_mappings:
         if mapping.find('path').text.startswith('//'):
-            #print mapping.find('path').text.strip('/'), path
-            if mapping.find('path').text.strip('/') in path:
+            if path.endswith(mapping.find('path').text.strip('/')):
                 codelist = mapping.find('codelist').attrib['ref']
                 if not path in codelists_paths[codelist]:
                     codelists_paths[codelist].append(path)

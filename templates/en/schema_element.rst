@@ -16,10 +16,10 @@ Definition
 Rules
 ~~~~~
 {% for extended_type in extended_types %}
-{% if extended_type.startswith('xsd:') %}The text in this element should be of type {{extended_type}}.{% endif %}
+{% if extended_type.startswith('xsd:') %}The text in this element must be of type {{extended_type}}.{% endif %}
 {% endfor %}
 
-{% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element should be of type {{element.get('type')}}.
+{% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element must be of type {{element.get('type')}}.
 {% endif %}
 
 {% if min_occurs > 0 %}
@@ -28,15 +28,15 @@ The schema states that this element must have at least {{min_occurs}} subelement
 
 {% if minOccurs and maxOccurs %}
 {% if minOccurs=='1' and maxOccurs=='1' %}
-This element should occur once and only once (within each parent element).
+This element must occur once and only once (within each parent element).
 {% elif minOccurs=='0' and maxOccurs=='1' %}
-This element should occur no more than once (within each parent element).
+This element must occur no more than once (within each parent element).
 {% elif minOccurs=='0' and maxOccurs=='unbounded' %}
 This element may occur any number of times.
 {% elif minOccurs=='1' and maxOccurs=='unbounded' %}
-This element should occur at least once (within each parent element).
+This element must occur at least once (within each parent element).
 {% else %}
-This element should occur {{minOccurs}} to {{maxOccurs}} times.
+This element must occur {{minOccurs}} to {{maxOccurs}} times.
 {% endif %}
 {% endif %}
 
