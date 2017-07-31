@@ -2,6 +2,7 @@ Sitemap
 =======
 
 .. toctree::
+   :includehidden:
    :titlesonly:
 
    introduction

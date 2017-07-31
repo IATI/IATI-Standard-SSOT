@@ -14,10 +14,10 @@ Definition
 {{schema_documentation}}
 
 {% for extended_type in extended_types %}
-{% if extended_type.startswith('xsd:') %}The text in this element should be of type {{extended_type}}.{% endif %}
+{% if extended_type.startswith('xsd:') %}The text in this element must be of type {{extended_type}}.{% endif %}
 {% endfor %}
 
-{% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element should be of type {{element.get('type')}}.
+{% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element must be of type {{element.get('type')}}.
 {% endif %}
 
 {% if min_occurs > 0 %}
@@ -42,6 +42,7 @@ Attributes
 
 @{{attribute}}
   {{ textwrap.dedent(text).strip().replace('\n','\n  ') }}
+
 {% set codelist = match_codelist(path+element_name+'/@'+attribute) %}{% if attribute_type %}
   This value should be of type {{attribute_type}}.
 
