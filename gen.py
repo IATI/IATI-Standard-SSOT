@@ -48,7 +48,7 @@ def see_also(path, lang):
         mapping = json.load(open(os.path.join('IATI-Extra-Documentation', lang, standard, 'overview-mapping.json'))) # Loading this file is incredibly inefficient
         # Common 'simple' path e.g. iati-activities or budget/period-start
         # Using this prevents subpages of iati-activity using the activity file overview
-        simpler = len(path.split('/')) > 3 
+        simpler = len(path.split('/')) > 3
         simple_path = '/'.join(path.split('/')[3:]) if simpler else path
         return list(lookup_see_also(standard, mapping, simple_path))
 
@@ -105,6 +105,30 @@ def match_codelist(path):
                 pass # FIXME
     return
 
+def is_complete_codelist(codelist_name):
+    """Determine whether the specified Codelist is complete.
+
+    Args:
+        codelist_name (str): The name of the Codelist. This is case-sensitive and must match the mapping file.
+
+    Returns:
+        bool: Whether the Codelist is complete.
+
+    Note:
+        Need to manually specify which Codelists are incomplete - it is not auto-detected. This is due to the surrounding architecture making it a challenge to auto-detect this information.
+
+    """
+    # use a list of incomplete Codelists since it is shorter
+    incomplete_codelists = [
+        'Country',
+        'HumanitarianScopeType',
+        'HumanitarianScopeVocabulary',
+        'IndicatorVocabulary',
+        'OrganisationIdentifier',
+        'OrganisationRegistrationAgency'
+    ]
+    return codelist_name not in incomplete_codelists
+
 def path_to_ref(path):
     return path.replace('//','_').replace('@','.')
 
@@ -116,7 +140,7 @@ def get_extra_docs(rst_filename):
             return fp.read().decode('utf8')
     else:
         return ''
-            
+
 
 
 class Schema2Doc(object):
@@ -159,7 +183,7 @@ class Schema2Doc(object):
         element_name.
 
         path is the xpath of the context where this element was found, for the
-        root context, this is the empty string 
+        root context, this is the empty string
 
         """
         if element is None:
@@ -279,7 +303,7 @@ class Schema2Doc(object):
                 extra_docs=get_extra_docs(os.path.join(self.lang, standard, 'overview', page+'.rst')),
                 reference_pages=reference_pages
             ).encode('utf8'))
-        
+
 
 
     def element_loop(self, element, path):
@@ -310,7 +334,7 @@ class Schema2Doc(object):
         """
         #if element.find("xsd:complexType[@mixed='true']", namespaces=namespaces) is not None:
         #    print_column_info('text', indent)
-            
+
         a = element.attrib
         type_attributes = []
         type_attributeGroups = []
@@ -329,7 +353,7 @@ class Schema2Doc(object):
                     )
 
         group_attributes = []
-        for attributeGroup in ( 
+        for attributeGroup in (
             element.findall('xsd:complexType/xsd:attributeGroup', namespaces=namespaces) +
             element.findall('xsd:complexType/xsd:simpleContent/xsd:extension/xsd:attributeGroup', namespaces=namespaces) +
             type_attributeGroups
@@ -368,9 +392,9 @@ def codelists_to_docs(lang):
     for fname in os.listdir(dirname):
         json_file = os.path.join(dirname, fname)
         if not fname.endswith('.json'): continue
-        with open(json_file) as fp: 
+        with open(json_file) as fp:
             codelist_json = json.load(fp)
-        
+
         fname = fname[:-5]
         embedded = os.path.exists(os.path.join('IATI-Codelists','xml',fname+'.xml'))
         if embedded:
@@ -435,7 +459,7 @@ if __name__ == '__main__':
             filename='organisation-standard/summary-table.rst',
             title='Organisation Standard Summary Table')
         orgs.output_overview_pages('organisation-standard')
-        
+
         ruleset_page(lang=language)
         codelists_to_docs(lang=language)
     extra_extra_docs()
