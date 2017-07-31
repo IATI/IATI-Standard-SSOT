@@ -17,10 +17,10 @@ custom_attributes = {
 
 def get_github_url(repo, path=''):
     github_branches = {
-        'IATI-Schemas': 'version-2.01',
-        'IATI-Codelists': 'version-2.01',
-        'IATI-Rulesets': 'version-2.01',
-        'IATI-Extra-Documentation': 'version-2.01',
+        'IATI-Schemas': 'version-2.02',
+        'IATI-Codelists': 'version-2.02',
+        'IATI-Rulesets': 'version-2.02',
+        'IATI-Extra-Documentation': 'version-2.02',
         'IATI-Codelists-NonEmbedded': 'master',
     }
     return 'https://github.com/IATI/{0}/blob/{1}/{2}'.format(repo, github_branches[repo], path)
@@ -97,8 +97,7 @@ def match_codelist(path):
     """
     for mapping in codelist_mappings:
         if mapping.find('path').text.startswith('//'):
-            #print mapping.find('path').text.strip('/'), path
-            if mapping.find('path').text.strip('/') in path:
+            if path.endswith(mapping.find('path').text.strip('/')):
                 codelist = mapping.find('codelist').attrib['ref']
                 if not path in codelists_paths[codelist]:
                     codelists_paths[codelist].append(path)
