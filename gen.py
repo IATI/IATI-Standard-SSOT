@@ -158,6 +158,8 @@ class Schema2Doc(object):
         self.tree2 = ET.parse("./IATI-Schemas/iati-common.xsd")
         self.jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
         self.lang = lang
+        
+        self.jinja_env.filters['is_complete_codelist'] = is_complete_codelist
 
     def get_schema_element(self, tag_name, name_attribute):
         """
