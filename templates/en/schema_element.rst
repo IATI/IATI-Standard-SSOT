@@ -42,14 +42,15 @@ Attributes
 
 @{{attribute}}
   {{ textwrap.dedent(text).strip().replace('\n','\n  ') }}
-{% set codelist = match_codelist(path+element_name+'/@'+attribute) %}{% if attribute_type %}  
+
+{% set codelist = match_codelist(path+element_name+'/@'+attribute) %}{% if attribute_type %}
   This value must be of type {{attribute_type}}.
 
-{% endif %}{% if codelist %}  
-  This value must be on the :doc:`{{codelist}} codelist </codelists/{{codelist}}>`.
+{% endif %}{% if codelist %}
+  This value {% if codelist|is_complete_codelist() %}must{% else %}should{% endif %} be on the :doc:`{{codelist}} codelist </codelists/{{codelist}}>`.
 
-{% endif %}  
-  
+{% endif %}
+
 {{ '\n  '.join(ruleset_text(path+element_name+'/@'+attribute)) }}{% endfor %}
 
 {% endif %}
