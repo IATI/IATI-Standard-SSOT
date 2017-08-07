@@ -47,7 +47,7 @@ Attributes
   This value must be of type {{attribute_type}}.
 
 {% endif %}{% if codelist %}
-  This value {% if is_complete_codelist(codelist) %}must{% else %}should{% endif %} be on the :doc:`{{codelist}} codelist </codelists/{{codelist}}>`.
+  This value {% if codelist|is_complete_codelist() %}must{% else %}should{% endif %} be on the :doc:`{{codelist}} codelist </codelists/{{codelist}}>`.
 
 {% endif %}
 
