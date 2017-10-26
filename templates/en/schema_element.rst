@@ -3,6 +3,8 @@
 
 ``{{path}}{{element_name}}``
 
+``{{dashboard_url}}``
+
 This is the reference page for the XML element ``{{element_name}}``. {% if see_also %}See also the relevant overview page{% if see_also|count > 1%}s{%endif%}: {% for page in see_also %}:doc:`{{page}}`{% if not loop.last %}, {% endif %} {% endfor %}{% endif %}
 
 .. index::
