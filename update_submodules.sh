@@ -3,7 +3,7 @@
 
 timestamp=$(date +%s)
 
-for version in 1.04 1.05 2.01 2.02; do
+for version in 1.04 1.05 2.01 2.02 2.03; do
 	# Checkout to the specified version for the SSOT directory
 	git checkout version-$version
 
