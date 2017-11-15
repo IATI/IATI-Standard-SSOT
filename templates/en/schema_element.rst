@@ -19,6 +19,11 @@ Rules
 {% if extended_type.startswith('xsd:') %}The text in this element must be of type {{extended_type}}.{% endif %}
 {% endfor %}
 
+{% set codelist_tuple = match_codelist(path+element_name+'/text()') %}
+{% if codelist_tuple[0] %}
+The text in this element {% if codelist_tuple[0]|is_complete_codelist() %}must{% else %}should{% endif %} be on the :doc:`{{codelist_tuple[0]}} codelist </codelists/{{codelist_tuple[0]}}>`{% if codelist_tuple[1] %}, if the relevant vocabulary is used{% endif %}.
+{% endif %}
+
 {% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element must be of type {{element.get('type')}}.
 {% endif %}
 
