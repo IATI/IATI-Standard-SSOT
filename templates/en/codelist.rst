@@ -19,7 +19,11 @@ This is a :ref:`Non-Embedded codelist <non_embedded_codelist>`.
 Use this codelist for
 ---------------------
 {% for path in codelist_paths %}
+{% if path.endswith('/text()') %}
+* :doc:`{{path}} </{% if path.startswith('iati-activities') %}activity-standard{% else %}organisation-standard{% endif %}/{{path.replace('/text()', '')}}>`
+{% else %}
 * :ref:`{{path}} <{{path_to_ref(path)}}>`
+{% endif %}
 {% endfor %}
 {% endif %}
 
