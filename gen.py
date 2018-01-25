@@ -17,11 +17,11 @@ custom_attributes = {
 
 def get_github_url(repo, path=''):
     github_branches = {
-        'IATI-Schemas': 'version-2.03',
-        'IATI-Codelists': 'version-2.03',
-        'IATI-Rulesets': 'version-2.03',
-        'IATI-Extra-Documentation': 'version-2.03',
-        'IATI-Codelists-NonEmbedded': 'master',
+        'IATI-Schemas': 'version-2.03dev',
+        'IATI-Codelists': 'version-2.03dev',
+        'IATI-Rulesets': 'version-2.03dev',
+        'IATI-Extra-Documentation': 'version-2.03dev',
+        'IATI-Codelists-NonEmbedded': 'version-2.03dev',
     }
     return 'https://github.com/IATI/{0}/blob/{1}/{2}'.format(repo, github_branches[repo], path)
 
@@ -161,7 +161,7 @@ class Schema2Doc(object):
         self.tree2 = ET.parse("./IATI-Schemas/iati-common.xsd")
         self.jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
         self.lang = lang
-        
+
         self.jinja_env.filters['is_complete_codelist'] = is_complete_codelist
 
     def get_schema_element(self, tag_name, name_attribute):
@@ -496,4 +496,3 @@ if __name__ == '__main__':
         ruleset_page(lang=language)
         codelists_to_docs(lang=language)
     extra_extra_docs()
-
