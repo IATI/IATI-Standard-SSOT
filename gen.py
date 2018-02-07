@@ -201,15 +201,21 @@ class Schema2Doc(object):
         return schema_element
 
 
-    def schema_documentation(self, element, ref_element):
+    def schema_documentation(self, element, ref_element, type_element=None):
         """Return a documention string for either a given ref_element (if not None) or an element.
         Args:
             element (lxml.etree._Element): An xsd element definition.
-            ref_element (lxml.etree._Element): An xsd element definition.  If set to None, the documention string for the element is returned.
+            ref_element (lxml.etree._Element): An element that the `element` inherits properties definitions from (using the xsd `ref` inheritance).  If set to None, the documention string for the element is returned.
+            type_element (lxml.etree._Element): An element that the `element` inherits properties definitions from (using the xsd `type` inheritance). Defaults to None, implying element properties/definitions are defined within `element` or `ref_element`.
 
         Returns:
             str: The documentation string, extracted from the input ref_element or element.
         """
+        if type_element is not None:
+            xsd_documentation = type_element.find(".//xsd:documentation", namespaces=namespaces)
+            if xsd_documentation is not None:
+                return type_element.find(".//xsd:documentation", namespaces=namespaces).text
+
         if ref_element is not None:
             xsd_docuementation = ref_element.find(".//xsd:documentation", namespaces=namespaces)
             if xsd_docuementation is not None:
@@ -217,7 +223,7 @@ class Schema2Doc(object):
         return element.find(".//xsd:documentation", namespaces=namespaces).text
 
 
-    def output_docs(self, element_name, path, element=None, minOccurs='', maxOccurs='', ref_element=None):
+    def output_docs(self, element_name, path, element=None, minOccurs='', maxOccurs='', ref_element=None, type_element=None):
         """
         Output documentation for the given element, and it's children.
 
@@ -230,7 +236,8 @@ class Schema2Doc(object):
             element (lxml.etree._Element): If element is not given, we try to find it in the schema using it's element_name.
             minOccurs (str): The number of minimum occurances for the given element_name / element.
             maxOccurs (str): The number of minimum occurances for the given element_name / element.
-            ref_element (lxml.etree._Element): Unknown.
+            ref_element (lxml.etree._Element): An element that the `element` inherits properties definitions from (using the xsd `ref` inheritance). Defaults to None, implying element properties are defined within `element` or `type_element`.
+            type_element (lxml.etree._Element): An element that the `element` inherits properties definitions from (using the xsd `type` inheritance). Defaults to None, implying element properties are defined within `element` or `ref_element`.
         """
         if element is None:
             element = self.get_schema_element('element', element_name)
@@ -248,8 +255,8 @@ class Schema2Doc(object):
         rst_filename = os.path.join(self.lang, path, element_name+'.rst')
 
         children = self.element_loop(element, path)
-        for child_name, child_element, child_ref_element, child_minOccurs, child_maxOccurs in children:
-            self.output_docs(child_name, path+element.attrib['name']+'/', child_element, child_minOccurs, child_maxOccurs, child_ref_element)
+        for child_name, child_element, child_ref_element, child_type_element, child_minOccurs, child_maxOccurs in children:
+            self.output_docs(child_name, path+element.attrib['name']+'/', child_element, child_minOccurs, child_maxOccurs, child_ref_element, child_type_element)
 
         min_occurss = element.xpath('xsd:complexType/xsd:choice/@minOccur', namespaces=namespaces)
         # Note that this min_occurs is different to the python variables
@@ -269,7 +276,7 @@ class Schema2Doc(object):
                 element=element,
                 path='/'.join(path.split('/')[1:]), # Strip e.g. activity-standard/ from the path
                 github_urls=github_urls,
-                schema_documentation=textwrap.dedent(self.schema_documentation(element, ref_element)),
+                schema_documentation=textwrap.dedent(self.schema_documentation(element, ref_element, type_element)),
                 extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
                 attributes=self.attribute_loop(element),
                 textwrap=textwrap,
@@ -285,7 +292,7 @@ class Schema2Doc(object):
             ).encode('utf8'))
 
 
-    def output_schema_table(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None):
+    def output_schema_table(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None, type_element=None):
         if element is None:
             element = self.get_schema_element('element', element_name)
             if element is None:
@@ -296,7 +303,7 @@ class Schema2Doc(object):
             'name': element_name,
             'path': '/'.join(path.split('/')[1:])+element_name,
             'doc': '/'+path+element_name,
-            'description': textwrap.dedent(self.schema_documentation(element, ref_element)),
+            'description': textwrap.dedent(self.schema_documentation(element, ref_element, type_element)),
             'type': element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else '',
             'occur': (minOccurs or '') + '..' + ('*' if maxOccurs=='unbounded' else maxOccurs or ''),
             'section': len(path.split('/')) < 5
@@ -318,8 +325,8 @@ class Schema2Doc(object):
                 'occur': '1..1' if a_required else '0..1'
             })
 
-        for child_name, child_element, child_ref_element, minOccurs, maxOccurs in self.element_loop(element, path):
-            rows += self.output_schema_table(child_name, path+element.attrib['name']+'/', child_element, minOccurs=minOccurs, maxOccurs=maxOccurs, ref_element=child_ref_element)
+        for child_name, child_element, child_ref_element, child_type_element, minOccurs, maxOccurs in self.element_loop(element, path):
+            rows += self.output_schema_table(child_name, path+element.attrib['name']+'/', child_element, minOccurs=minOccurs, maxOccurs=maxOccurs, ref_element=child_ref_element, type_element=child_type_element)
 
         if output:
             with open(os.path.join('docs', self.lang, filename), 'w') as fp:
@@ -373,6 +380,7 @@ class Schema2Doc(object):
                 str: Element name,
                 lxml.etree._Element: Represention of the element,
                 Unknown: ref element,
+                lxml.etree._Element or None: type_element,
                 str: minimum number of occurances,
                 str: maximum number of occurances (could be a number or 'unbounded')
         """
@@ -392,10 +400,16 @@ class Schema2Doc(object):
         child_tuples = []
         for child in children:
             a = child.attrib
-            if 'name' in a:
-                child_tuples.append((a['name'], child, None, a.get('minOccurs'), a.get('maxOccurs')))
+            if 'type' in a:
+                type_element = self.get_schema_element('complexType', a['type'])
             else:
-                child_tuples.append((a['ref'], None, child, a.get('minOccurs'), a.get('maxOccurs')))
+                type_element = None
+
+            if 'name' in a:
+                child_tuples.append((a['name'], child, None, type_element, a.get('minOccurs'), a.get('maxOccurs')))
+            else:
+                child_tuples.append((a['ref'], None, child, type_element, a.get('minOccurs'), a.get('maxOccurs')))
+
         return child_tuples
 
 
