@@ -224,8 +224,7 @@ class Schema2Doc(object):
 
 
     def output_docs(self, element_name, path, element=None, minOccurs='', maxOccurs='', ref_element=None, type_element=None):
-        """
-        Output documentation for the given element, and it's children.
+        """Output documentation for the given element, and it's children.
 
         If element is not given, we try to find it in the schema using it's
         element_name.
