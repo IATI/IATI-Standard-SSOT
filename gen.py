@@ -26,11 +26,11 @@ def get_github_url(repo, path=''):
         str: Link to the Github UI page.
     """
     github_branches = {
-        'IATI-Schemas': 'version-2.03dev',
-        'IATI-Codelists': 'version-2.03dev',
-        'IATI-Rulesets': 'version-2.03dev',
-        'IATI-Extra-Documentation': 'version-2.03dev',
-        'IATI-Codelists-NonEmbedded': 'version-2.03dev',
+        'IATI-Schemas': 'version-2.03',
+        'IATI-Codelists': 'version-2.03',
+        'IATI-Rulesets': 'version-2.03',
+        'IATI-Extra-Documentation': 'version-2.03',
+        'IATI-Codelists-NonEmbedded': 'master',
     }
     return 'https://github.com/IATI/{0}/blob/{1}/{2}'.format(repo, github_branches[repo], path)
 
