@@ -110,23 +110,25 @@ from collections import defaultdict
 codelists_paths = defaultdict(list)
 # TODO - This function should be moved into the IATI-Codelists submodule
 codelist_mappings = ET.parse('./IATI-Codelists/mapping.xml').getroot().findall('mapping')
-def match_codelist(path):
+def match_codelists(path):
     """
     Looks up the codelist that the given path (xpath) should be on.
     Returns a tuble of the codelist name, and a boolean as describing whether any conditions apply.
     If there is no codelist for the given path, the first part of the tuple is None.
 
     """
+    codelist_tuples = []
     for mapping in codelist_mappings:
         if mapping.find('path').text.startswith('//'):
             if path.endswith(mapping.find('path').text.strip('/')):
                 codelist = mapping.find('codelist').attrib['ref']
-                if not path in codelists_paths[codelist]:
+                if path not in codelists_paths[codelist]:
                     codelists_paths[codelist].append(path)
-                return (codelist, mapping.find('condition') is not None)
+                tup = (codelist, mapping.find('condition') is not None)
+                codelist_tuples.append(tup)
             else:
                 pass # FIXME
-    return
+    return codelist_tuples
 
 def is_complete_codelist(codelist_name):
     """Determine whether the specified Codelist is complete.
@@ -279,7 +281,7 @@ class Schema2Doc(object):
                 extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
                 attributes=self.attribute_loop(element),
                 textwrap=textwrap,
-                match_codelist=match_codelist,
+                match_codelists=match_codelists,
                 path_to_ref=path_to_ref,
                 ruleset_text=ruleset_text,
                 childnames = [x[0] for x in children],
@@ -334,7 +336,7 @@ class Schema2Doc(object):
                     rows=rows,
                     title=title,
                     root_path='/'.join(path.split('/')[1:]), # Strip e.g. activity-standard/ from the path
-                    match_codelist=match_codelist,
+                    match_codelists=match_codelists,
                     ruleset_text=ruleset_text,
                     description=self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text
                 ).encode('utf8'))
