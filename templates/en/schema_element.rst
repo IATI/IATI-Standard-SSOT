@@ -60,13 +60,14 @@ Attributes
 {% if required %}
   This attribute is required.
 
-{% endif %}{% set codelist_tuple = match_codelist(path+element_name+'/@'+attribute) %}{% if attribute_type %}
+{% endif %}{% set codelist_tuples = match_codelists(path+element_name+'/@'+attribute) %}{% if attribute_type %}
+
   This value must be of type {{attribute_type}}.
 
-{% endif %}{% if codelist_tuple[0] %}
+{% endif %}{% for codelist_tuple in codelist_tuples %}
   This value {% if codelist_tuple[0]|is_complete_codelist() %}must{% else %}should{% endif %} be on the :doc:`{{codelist_tuple[0]}} codelist </codelists/{{codelist_tuple[0]}}>`{% if codelist_tuple[1] %}, if the relevant vocabulary is used{% endif %}.
 
-{% endif %}
+{% endfor %}
 
   {{ '\n\n  '.join(ruleset_text(path+element_name+'/@'+attribute)) }}
 

@@ -18,7 +18,7 @@
       - {%if not row.section%}{%if row.name%}:doc:`{{row.name}} <{{row.doc}}>`{%else%}{{row.attribute_name}}{%endif%}{%endif%}
       - {{row.description.replace('\n', '\n        ').strip(' \n')}}
       - {% if row.type %}{{row.type}}{% endif %}
-      - {% set codelist_tuple = match_codelist(root_path+row.path) %}{% if codelist_tuple[0] %}{%if codelist_tuple[1]%}({%endif%}:doc:`/codelists/{{codelist_tuple[0]}}`{%if codelist_tuple[1]%}){%endif%}{% endif %}
+      - {% set codelist_tuples = match_codelists(root_path+row.path) %}{% for codelist_tuple in codelist_tuples %}{%if codelist_tuple[1]%}({%endif%}:doc:`/codelists/{{codelist_tuple[0]}}`{%if codelist_tuple[1]%}){%endif%}{% endfor %}
       - {{row.path.replace('@','\@')}}
       - {{row.occur}}
       - {{'\n        '.join(ruleset_text(row.path))}}
