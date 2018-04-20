@@ -1,11 +1,11 @@
 IATI Standard SSOT
 ==================
 
-.. image:: https://requires.io/github/IATI/IATI-Standard-SSOT/requirements.svg?branch=version-2.01
-    :target: https://requires.io/github/IATI/IATI-Standard-SSOT/requirements/?branch=version-2.01
+.. image:: https://requires.io/github/IATI/IATI-Standard-SSOT/requirements.svg?branch=version-2.03
+    :target: https://requires.io/github/IATI/IATI-Standard-SSOT/requirements/?branch=version-2.03
     :alt: Requirements Status
 .. image:: https://img.shields.io/badge/license-MIT-blue.svg
-    :target: https://github.com/IATI/IATI-Standard-SSOT/blob/version-2.01/LICENSE
+    :target: https://github.com/IATI/IATI-Standard-SSOT/blob/version-2.03/LICENSE
 
 Introduction
 ------------
