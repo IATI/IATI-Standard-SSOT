@@ -1,6 +1,8 @@
 IATI Standard SSOT
 ==================
 
+.. image:: https://travis-ci.org/IATI/IATI-Standard-SSOT.svg?branch=version-1.05
+    :target: https://travis-ci.org/IATI/IATI-Standard-SSOT
 .. image:: https://requires.io/github/IATI/IATI-Standard-SSOT/requirements.svg?branch=version-1.05
     :target: https://requires.io/github/IATI/IATI-Standard-SSOT/requirements/?branch=version-1.05
     :alt: Requirements Status
