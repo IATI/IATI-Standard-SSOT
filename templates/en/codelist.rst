@@ -60,7 +60,8 @@ Codes
      - Description{% if show_category_column %}
      - Category{% endif %}{% if show_url_column %}
      - URL{% endif %}{% if fname == 'OrganisationRegistrationAgency' %}
-     - Public Database?{% endif %}
+     - Public Database?{% endif %}{% if show_status_column %}
+     - Status{% endif %}
 
    {% for codelist_item in codelist_json.data %}
 
@@ -69,7 +70,8 @@ Codes
      - {% if codelist_item.description %}{{codelist_item.description}}{% endif %}{% if show_category_column %}
      - {% if codelist_item.category %}{% if codelist_json.attributes['category-codelist'] %}:ref:`{{codelist_item.category}} <{{codelist_json.attributes['category-codelist']}}>`{%else%}{{codelist_item.category}}{%endif%}{% endif %}{% endif %}{% if show_url_column %}
      - {% if codelist_item.url %}{{codelist_item.url}}{% endif %}{% if fname == 'OrganisationRegistrationAgency' %}
-     - {{codelist_item['public-database']}}{% endif %}{% endif %}
+     - {{codelist_item['public-database']}}{% endif %}{% endif %}{% if show_status_column %}
+     - {% if codelist_item.status == 'withdrawn' %}Withdrawn{% endif %}{% endif %}
 
    {% endfor %}
 
