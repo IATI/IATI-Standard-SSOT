@@ -10,7 +10,7 @@ IATI Standard SSOT
 Introduction
 ------------
 
-This is the main github repository for the IATI Standard Single Source of Truth (SSOT). For more detailed information about the SSOT, please see http://iatistandard.org/developer/ssot/ 
+This is the main github repository for the IATI Standard Single Source of Truth (SSOT). For more detailed information about the SSOT, please see http://iatistandard.org/developer/ssot/
 
 Building the documentation
 ==========================
@@ -29,7 +29,7 @@ Fetch the source code:::
     git clone https://github.com/IATI/IATI-Standard-SSOT.git
 
 Pull in the git submodules:::
-    
+
     git submodule init
     git submodule update
 
@@ -46,19 +46,19 @@ Set up a virtual environment:
 
     # Install python requirements
     pip install -r requirements.txt
-    
+
 Build the documentation:::
 
     ./gen.sh
 
-The built documentation is now in ``docs/<language>/_build/dirhtml`` 
+The built documentation is now in ``docs/<language>/_build/dirhtml``
 
 
 Editing the documentation
 =========================
 
 Make any changes in ``IATI-Extra-Documentation``, as the ``docs`` directory is generated from
-this and other sources each time ``./gen.sh`` is run. 
+this and other sources each time ``./gen.sh`` is run.
 
 
 Building a website that also includes additonal guidance
@@ -87,3 +87,28 @@ To generate a copy of the website with these extra repositories included, run:
 This generates the website in the ``docs`` directory, but then copies it to ``docs-copy`` at the end, so that a webserver can be pointed to ``docs-copy/en/_build/dirhtml`` and not be interrupted when the site is being rebuilt.
 
 The ``docs`` directory should be a git repository in order to support adding the "Last updated" line to the bottom of the page. We build the live and dev websites in different directories so that the last updated date corresponds to when the site was actually changed, not when the relevant commit was added to the source git respository.
+
+
+Generating a local version with the IATI theme
+==============================================
+
+A local version of the website (with the full IATI theme) can be generated after cloning the theme files and setting up the required symlinks for Sphinx to follow when generating the HTML files.
+
+.. code-block:: bash
+
+   # Clone the repoitory containing the IATI theme
+   git clone https://github.com/IATI/IATI-Websites.git IATI-Websites
+
+   # Set-up symlinks to the template file/folders
+   ln -s ../../IATI-Websites/iatistandard/_templates/ IATI-Extra-Documentation/en/_templates
+   ln -s ../../IATI-Websites/iatistandard/_static/ IATI-Extra-Documentation/en/_static
+   ln -s layout_dev.html IATI-Extra-Documentation/en/_templates/layout.html
+
+   # Generate a version of the documentation
+   ./combined_gen.sh
+
+   # The documentation HTML files are stored in the `docs-copy/en/_build/dirhtml` folder
+   # You can navigate around your generated version of the site using a Python HTTP webserver
+   cd docs-copy/en/_build/dirhtml
+   python -m SimpleHTTPServer 8000
+   # View the site in a browser at http://0.0.0.0:8000/

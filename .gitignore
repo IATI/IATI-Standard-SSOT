@@ -1,4 +1,10 @@
-docs
 *.swp
 *.pyc
 pyenv
+
+# Output HTML folders
+docs/
+docs-copy/
+
+# IATI Theme (for generating a local version of the reference HTML with full IATI branding)
+IATI-Websites/
