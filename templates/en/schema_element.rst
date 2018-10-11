@@ -68,7 +68,9 @@ Attributes
 
 {% endif %}
 
-  {{ '\n\n  '.join(ruleset_text(path+element_name+'/@'+attribute)) }}{% endfor %}
+  {{ '\n\n  '.join(ruleset_text(path+element_name+'/@'+attribute)) }}
+
+{% endfor %}
 
 {% endif %}
 
