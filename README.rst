@@ -1,7 +1,18 @@
 IATI Standard SSOT
 ==================
 
-This is the main github repository for the IATI Standard Single Source of Truth (SSOT). For more detailed information about the SSOT, please see http://iatistandard.org/developer/ssot/ 
+.. image:: https://travis-ci.org/IATI/IATI-Standard-SSOT.svg?branch=version-1.04
+    :target: https://travis-ci.org/IATI/IATI-Standard-SSOT
+.. image:: https://requires.io/github/IATI/IATI-Standard-SSOT/requirements.svg?branch=version-1.04
+    :target: https://requires.io/github/IATI/IATI-Standard-SSOT/requirements/?branch=version-1.04
+    :alt: Requirements Status
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :target: https://github.com/IATI/IATI-Standard-SSOT/blob/version-1.04/LICENSE
+
+Introduction
+------------
+
+This is the main github repository for the IATI Standard Single Source of Truth (SSOT). For more detailed information about the SSOT, please see http://iatistandard.org/developer/ssot/
 
 Building the documentation
 ==========================
@@ -20,7 +31,7 @@ Fetch the source code:::
     git clone https://github.com/IATI/IATI-Standard-SSOT.git
 
 Pull in the git submodules:::
-    
+
     git submodule init
     git submodule update
 
@@ -37,16 +48,16 @@ Set up a virtual environment:
 
     # Install python requirements
     pip install -r requirements.txt
-    
+
 Build the documentation:::
 
     ./gen.sh
 
-The built documentation is now in ``docs/<language>/_build/dirhtml`` 
+The built documentation is now in ``docs/<language>/_build/dirhtml``
 
 
 Editing the documentation
 =========================
 
 Make any changes in ``IATI-Extra-Documentation``, as the ``docs`` directory is generated from
-this and other sources each time ``./gen.sh`` is run. 
+this and other sources each time ``./gen.sh`` is run.
