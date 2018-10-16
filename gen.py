@@ -5,7 +5,7 @@ import textwrap
 import jinja2
 from iatirulesets.text import rules_text
 
-languages = ['en','fr']
+languages = ['en']
 
 # Namespaces necessary for opening schema files
 namespaces = {
