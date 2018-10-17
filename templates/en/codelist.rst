@@ -63,14 +63,22 @@ Codes
      - Public Database?{% endif %}
 
    {% for codelist_item in codelist_json.data %}
-
+       {% if codelist_item.status == 'withdrawn' %}
+       .. rst-class:: withdrawn
+   * - *{{codelist_item.code}}*
+     - *{{codelist_item.name}}*
+     - {% if codelist_item.description %}*{{codelist_item.description}}*{% endif %}{% if show_category_column %}
+     - {% if codelist_item.category %}{% if codelist_json.attributes['category-codelist'] %}*:ref:`{{codelist_item.category}} <{{codelist_json.attributes['category-codelist']}}>`*{%else%}*{{codelist_item.category}}*{%endif%}{% endif %}{% endif %}{% if show_url_column %}
+     - {% if codelist_item.url %}*{{codelist_item.url}}*{% endif %}{% if fname == 'OrganisationRegistrationAgency' %}
+     - *{{codelist_item['public-database']}}*{% endif %}{% endif %}
+       {% else %}
    * - {{codelist_item.code}}
      - {{codelist_item.name}}
      - {% if codelist_item.description %}{{codelist_item.description}}{% endif %}{% if show_category_column %}
      - {% if codelist_item.category %}{% if codelist_json.attributes['category-codelist'] %}:ref:`{{codelist_item.category}} <{{codelist_json.attributes['category-codelist']}}>`{%else%}{{codelist_item.category}}{%endif%}{% endif %}{% endif %}{% if show_url_column %}
      - {% if codelist_item.url %}{{codelist_item.url}}{% endif %}{% if fname == 'OrganisationRegistrationAgency' %}
      - {{codelist_item['public-database']}}{% endif %}{% endif %}
-
+       {% endif %}
    {% endfor %}
 
 {{extra_docs}}
