@@ -47,6 +47,12 @@ Download this codelist
 
 `GitHub Source <{{github_url}}>`__
 
+{% if show_withdrawn and embedded==False %}
+Withdrawn codes
+----------------------
+(Placeholder) This codelist has some withdrawn elements `Non-Embedded Codelist changelog record <http://iatistandard.org/upgrades/nonembedded-codelist-changelog>`__
+{% endif %}
+
 Codes
 -----
 
