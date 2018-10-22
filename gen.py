@@ -503,10 +503,7 @@ def codelists_to_docs(lang):
         if not fname.endswith('.json'): continue
         with open(json_file) as fp:
             codelist_json = json.load(fp)
-            for i, x in enumerate(codelist_json['data']):
-                    if ('status' in x and x['status'] != 'active'):
-                        codelist_json['data'][i]['code'] = codelist_json['data'][i]['code'] + " (withdrawn)"
-
+            
         fname = fname[:-5]
         embedded = os.path.exists(os.path.join('IATI-Codelists','xml',fname+'.xml'))
         if embedded:

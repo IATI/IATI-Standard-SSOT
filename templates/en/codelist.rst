@@ -68,9 +68,12 @@ Codes
      - Public Database?{% endif %}
 
    {% for codelist_item in codelist_json.data %}
-       {% if codelist_item.status == 'withdrawn' %} .. rst-class:: withdrawn
+       {% if codelist_item.status == 'withdrawn' %} 
+       .. rst-class:: withdrawn
+   * - {{codelist_item.code + " (withdrawn)"}}
+       {% else %}
+   * - {{codelist_item.code}}   
        {% endif %}
-   * - {{codelist_item.code}}
      - {{codelist_item.name}}
      - {% if codelist_item.description %}{{codelist_item.description}}{% endif %}{% if show_category_column %}
      - {% if codelist_item.category %}{% if codelist_json.attributes['category-codelist'] %}:ref:`{{codelist_item.category}} <{{codelist_json.attributes['category-codelist']}}>`{%else%}{{codelist_item.category}}{%endif%}{% endif %}{% endif %}{% if show_url_column %}
