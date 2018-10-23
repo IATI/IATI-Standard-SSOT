@@ -503,7 +503,7 @@ def codelists_to_docs(lang):
         if not fname.endswith('.json'): continue
         with open(json_file) as fp:
             codelist_json = json.load(fp)
-
+            
         fname = fname[:-5]
         embedded = os.path.exists(os.path.join('IATI-Codelists','xml',fname+'.xml'))
         if embedded:
@@ -519,6 +519,7 @@ def codelists_to_docs(lang):
                 codelist_json=codelist_json,
                 show_category_column=not all(not 'category' in x for x in codelist_json['data']),
                 show_url_column=not all(not 'url' in x for x in codelist_json['data']),
+                show_withdrawn=any('status' in x and x['status'] != 'active' for x in codelist_json['data']),
                 fname=fname,
                 len=len,
                 github_url=github_url,
