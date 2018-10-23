@@ -441,6 +441,7 @@ def codelists_to_docs(lang):
                 codelist_json=codelist_json,
                 show_category_column=not all(not 'category' in x for x in codelist_json['data']),
                 show_url_column=not all(not 'url' in x for x in codelist_json['data']),
+                show_withdrawn=any('status' in x and x['status'] != 'active' for x in codelist_json['data']),
                 fname=fname,
                 len=len,
                 github_url=github_url,
