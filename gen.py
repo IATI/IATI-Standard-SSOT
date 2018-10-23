@@ -158,7 +158,7 @@ class Schema2Doc(object):
         self.tree2 = ET.parse("./IATI-Schemas/iati-common.xsd")
         self.jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
         self.lang = lang
-        
+
         self.jinja_env.filters['is_complete_codelist'] = is_complete_codelist
 
     def get_schema_element(self, tag_name, name_attribute):
@@ -409,6 +409,7 @@ def codelists_to_docs(lang):
             t = jinja_env.get_template(lang+'/codelist.rst')
             fp.write(t.render(
                 codelist_json=codelist_json,
+                show_withdrawn=any('status' in x and x['status'] != 'active' for x in codelist_json['data']),
                 fname=fname,
                 len=len,
                 github_url=github_url,
