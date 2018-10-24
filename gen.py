@@ -212,6 +212,10 @@ class Schema2Doc(object):
             str: The documentation string, extracted from the input ref_element or element.
         """
         if type_element is not None:
+            if(element.get("name") == "document-link" and type_element.find(".//xsd:extension", namespaces=namespaces) is not None):
+                base_name = type_element.find(".//xsd:extension", namespaces=namespaces).get("base")
+                base_element = self.tree2.find("xsd:{0}[@name='{1}']".format("complexType", base_name), namespaces=namespaces)
+                return base_element.find(".//xsd:documentation", namespaces=namespaces).text
             xsd_documentation = type_element.find(".//xsd:documentation", namespaces=namespaces)
             if xsd_documentation is not None:
                 return type_element.find(".//xsd:documentation", namespaces=namespaces).text
