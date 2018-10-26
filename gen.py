@@ -5,7 +5,7 @@ import textwrap
 import jinja2
 from iatirulesets.text import rules_text
 
-languages = ['en','fr']
+languages = ['en']
 
 # Define the namespaces necessary for opening schema files
 namespaces = {
@@ -128,6 +128,30 @@ def match_codelist(path):
                 pass # FIXME
     return
 
+def is_complete_codelist(codelist_name):
+    """Determine whether the specified Codelist is complete.
+
+    Args:
+        codelist_name (str): The name of the Codelist. This is case-sensitive and must match the mapping file.
+
+    Returns:
+        bool: Whether the Codelist is complete.
+
+    Note:
+        Need to manually specify which Codelists are incomplete - it is not auto-detected. This is due to the surrounding architecture making it a challenge to auto-detect this information.
+
+    """
+    # use a list of incomplete Codelists since it is shorter
+    incomplete_codelists = [
+        'Country',
+        'HumanitarianScopeType',
+        'HumanitarianScopeVocabulary',
+        'IndicatorVocabulary',
+        'OrganisationIdentifier',
+        'OrganisationRegistrationAgency'
+    ]
+    return codelist_name not in incomplete_codelists
+
 def path_to_ref(path):
     return path.replace('//','_').replace('@','.')
 
@@ -138,6 +162,10 @@ def get_extra_docs(rst_filename):
             return fp.read().decode('utf8')
     else:
         return ''
+<<<<<<< HEAD
+=======
+
+>>>>>>> version-2.02
 
 
 class Schema2Doc(object):
@@ -158,6 +186,8 @@ class Schema2Doc(object):
         self.tree2 = ET.parse("./IATI-Schemas/iati-common.xsd")
         self.jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
         self.lang = lang
+        
+        self.jinja_env.filters['is_complete_codelist'] = is_complete_codelist
 
 
     def get_schema_element(self, tag_name, name_attribute):
@@ -193,6 +223,7 @@ class Schema2Doc(object):
 
 
     def output_docs(self, element_name, path, element=None, minOccurs='', maxOccurs='', ref_element=None):
+<<<<<<< HEAD
         """Output documentation for the given element, and it's children.
 
         Args:
@@ -202,6 +233,17 @@ class Schema2Doc(object):
             minOccurs (str): The number of minimum occurances for the given element_name / element.
             maxOccurs (str): The number of minimum occurances for the given element_name / element.
             ref_element (lxml.etree._Element): Unknown.
+=======
+        """
+        Output documentation for the given element, and it's children.
+
+        If element is not given, we try to find it in the schema using it's
+        element_name.
+
+        path is the xpath of the context where this element was found, for the
+        root context, this is the empty string
+
+>>>>>>> version-2.02
         """
         if element is None:
             element = self.get_schema_element('element', element_name)
@@ -330,6 +372,10 @@ class Schema2Doc(object):
                 extra_docs=get_extra_docs(os.path.join(self.lang, standard, 'overview', page+'.rst')),
                 reference_pages=reference_pages
             ).encode('utf8'))
+<<<<<<< HEAD
+=======
+
+>>>>>>> version-2.02
 
 
     def element_loop(self, element, path):
@@ -460,6 +506,7 @@ def codelists_to_docs(lang):
                 codelist_json=codelist_json,
                 show_category_column=not all(not 'category' in x for x in codelist_json['data']),
                 show_url_column=not all(not 'url' in x for x in codelist_json['data']),
+                show_withdrawn=any('status' in x and x['status'] != 'active' for x in codelist_json['data']),
                 fname=fname,
                 len=len,
                 github_url=github_url,

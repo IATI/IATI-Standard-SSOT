@@ -47,6 +47,11 @@ Download this codelist
 
 `GitHub Source <{{github_url}}>`__
 
+{% if show_withdrawn and embedded==False %}
+
+This codelist has some withdrawn elements, for details on these check the `Non-Embedded Codelist changelog record <http://iatistandard.org/upgrades/nonembedded-codelist-changelog>`__
+{% endif %}
+
 Codes
 -----
 
@@ -63,14 +68,17 @@ Codes
      - Public Database?{% endif %}
 
    {% for codelist_item in codelist_json.data %}
-
-   * - {{codelist_item.code}}
+       {% if codelist_item.status == 'withdrawn' %} 
+       .. rst-class:: withdrawn
+   * - {{codelist_item.code + " (withdrawn)"}}
+       {% else %}
+   * - {{codelist_item.code}}   
+       {% endif %}
      - {{codelist_item.name}}
      - {% if codelist_item.description %}{{codelist_item.description}}{% endif %}{% if show_category_column %}
      - {% if codelist_item.category %}{% if codelist_json.attributes['category-codelist'] %}:ref:`{{codelist_item.category}} <{{codelist_json.attributes['category-codelist']}}>`{%else%}{{codelist_item.category}}{%endif%}{% endif %}{% endif %}{% if show_url_column %}
      - {% if codelist_item.url %}{{codelist_item.url}}{% endif %}{% if fname == 'OrganisationRegistrationAgency' %}
      - {{codelist_item['public-database']}}{% endif %}{% endif %}
-
    {% endfor %}
 
 {{extra_docs}}
