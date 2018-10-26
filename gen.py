@@ -47,15 +47,15 @@ def human_list(l):
     return ', '.join(l)
 
 def lookup_see_also(standard, mapping, path):
-    """Return a generator object containing ???
+    """Return a generator object containing paths relating to the current element as defined by overview-mapping.json
 
     Args:
-        standard (str): Unknown
-        mapping (list): Unknown
-        path (str): Unknown
+        standard (str): Can be either organisation-standard or activity-standard)
+        mapping (list): List for all templates elements within [standard]/overview-mapping.json
+        path (str): Last sections of the path passed to see_also, if shorter than 3 sections it will just be the entire path
 
     Returns:
-        generator or str: Unknown
+        generator or str: Yields paths of elements related to the current element
     """
     if path == '': return
     for overview, elements in mapping.items():
