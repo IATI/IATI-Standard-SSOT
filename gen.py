@@ -162,11 +162,6 @@ def get_extra_docs(rst_filename):
             return fp.read().decode('utf8')
     else:
         return ''
-<<<<<<< HEAD
-=======
-
->>>>>>> version-2.02
-
 
 class Schema2Doc(object):
     """Class for converting an IATI XML schema to documentation in the reStructuredText format."""
@@ -223,7 +218,7 @@ class Schema2Doc(object):
 
 
     def output_docs(self, element_name, path, element=None, minOccurs='', maxOccurs='', ref_element=None):
-<<<<<<< HEAD
+
         """Output documentation for the given element, and it's children.
 
         Args:
@@ -233,18 +228,8 @@ class Schema2Doc(object):
             minOccurs (str): The number of minimum occurances for the given element_name / element.
             maxOccurs (str): The number of minimum occurances for the given element_name / element.
             ref_element (lxml.etree._Element): Unknown.
-=======
         """
-        Output documentation for the given element, and it's children.
 
-        If element is not given, we try to find it in the schema using it's
-        element_name.
-
-        path is the xpath of the context where this element was found, for the
-        root context, this is the empty string
-
->>>>>>> version-2.02
-        """
         if element is None:
             element = self.get_schema_element('element', element_name)
             if element is None:
@@ -372,11 +357,6 @@ class Schema2Doc(object):
                 extra_docs=get_extra_docs(os.path.join(self.lang, standard, 'overview', page+'.rst')),
                 reference_pages=reference_pages
             ).encode('utf8'))
-<<<<<<< HEAD
-=======
-
->>>>>>> version-2.02
-
 
     def element_loop(self, element, path):
         """Find child elements for a given input element.
