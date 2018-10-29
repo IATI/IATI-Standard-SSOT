@@ -2,7 +2,7 @@ pip==18.1
 Sphinx==1.8.1
 lxml==4.2.5
 Jinja2==2.10
-pytz==2018.6
+pytz==2018.7
 
 # These are requirements above, added here to pin versions
 docutils==0.14
