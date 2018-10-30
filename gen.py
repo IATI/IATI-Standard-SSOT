@@ -7,11 +7,11 @@ from iatirulesets.text import rules_text
 
 languages = ['en']
 
-# Namespaces necessary for opening schema files
+# Define the namespaces necessary for opening schema files
 namespaces = {
     'xsd': 'http://www.w3.org/2001/XMLSchema'
 }
-# Attributes that have documentation that differs to that in the schema
+# Define attributes that have documentation that differs to that in the schema
 custom_attributes = {
 }
 
@@ -26,15 +26,29 @@ def get_github_url(repo, path=''):
     return 'https://github.com/IATI/{0}/blob/{1}/{2}'.format(repo, github_branches[repo], path)
 
 def human_list(l):
-    """
-    Returns a human friendly version of a list. Currently seperates list items
-    with comas, but could be extended to insert 'and'/'or' correctly.
+    """Return a human-friendly version of a list.
+    Currently seperates list items with commas, but could be extended to insert 'and'/'or' correctly.
 
+    Args:
+        l (list): The list to be made human-friendly.
+
+    Returns:
+        str: The human-friendly represention of the list.
     """
     return ', '.join(l)
 
 
 def lookup_see_also(standard, mapping, path):
+    """Return a generator object containing paths relating to the current element as defined by overview-mapping.json
+
+    Args:
+        standard (str): Can be either organisation-standard or activity-standard)
+        mapping (list): List for all templates elements within [standard]/overview-mapping.json
+        path (str): Last sections of the path passed to see_also, if shorter than 3 sections it will just be the entire path
+
+    Returns:
+        generator or str: Yields paths of elements related to the current element
+    """
     if path == '': return
     for overview, elements in mapping.items():
         if path in elements:
@@ -152,10 +166,15 @@ class Schema2Doc(object):
     """
     def __init__(self, schema, lang):
         """
-        schema -- the filename of the schema to use, e.g.
-                  'iati-activities-schema.xsd'
-        lang -- the language code to build the documentation for (e.g. 'en')
+        Args:
+            schema (str): The filename of the schema to use, e.g. 'iati-activities-schema.xsd'
+            lang (str): A two-letter (ISO 639-1) language code to build the documentation for (e.g. 'en')
 
+        Sets:
+            self.tree (lxml.etree._ElementTree): Representing the input schema.
+            self.tree2 (lxml.etree._ElementTree): Representing the iati-common.xsd schema.
+            self.jinja_env (jinja2.environment.Environment): The templates contained within the 'templates' folder.
+            self.lang (str): The input language.
         """
         self.tree = ET.parse("./IATI-Schemas/"+schema)
         self.tree2 = ET.parse("./IATI-Schemas/iati-common.xsd")
@@ -165,14 +184,14 @@ class Schema2Doc(object):
         self.jinja_env.filters['is_complete_codelist'] = is_complete_codelist
 
     def get_schema_element(self, tag_name, name_attribute):
-        """
-        Returns the specified element from the schema.
+         """Returns the xsd definition for a given element from schemas defined in `self.tree` (or `self.tree2` if nothing found).
 
-        tag_name -- the name of the tag in the schema, e.g. 'complexType'
-        name_attribute -- the value of the 'name' attribute in the schema, ie.
-                          the name of the element/type etc. being described,
-                          e.g. iati-activities
+        Args:
+            tag_name (str): The name of the tag in the schema - will typically be 'element'.
+            name_attribute (str): The value of the 'name' attribute in the schema - i.e. the name of the element/type etc. being described, e.g. 'iati-activities'.
 
+        Returns:
+            None / lxml.etree._Element: The element tree representng the xsd definition for the given inputs. None if no match found.
         """
         schema_element = self.tree.find("xsd:{0}[@name='{1}']".format(tag_name, name_attribute), namespaces=namespaces)
         if schema_element is None:
@@ -180,6 +199,14 @@ class Schema2Doc(object):
         return schema_element
 
     def schema_documentation(self, element, ref_element):
+        """Return a documention string for either a given ref_element (if not None) or an element.
+        Args:
+            element (lxml.etree._Element): An xsd element definition.
+            ref_element (lxml.etree._Element): An xsd element definition.  If set to None, the documention string for the element is returned.
+
+        Returns:
+            str: The documentation string, extracted from the input ref_element or element.
+        """
         if ref_element is not None:
             xsd_docuementation = ref_element.find(".//xsd:documentation", namespaces=namespaces)
             if xsd_docuementation is not None:
@@ -188,16 +215,17 @@ class Schema2Doc(object):
 
 
     def output_docs(self, element_name, path, element=None, minOccurs='', maxOccurs='', ref_element=None):
+        """Output documentation for the given element, and it's children.
+
+        Args:
+            element_name (str):
+            path (str): The xpath of the context where this element was found. For the root context (i.e. iati-activities), this is an empty string.
+            element (lxml.etree._Element): If element is not given, we try to find it in the schema using it's element_name.
+            minOccurs (str): The number of minimum occurances for the given element_name / element.
+            maxOccurs (str): The number of minimum occurances for the given element_name / element.
+            ref_element (lxml.etree._Element): Unknown.
         """
-        Output documentation for the given element, and it's children.
-
-        If element is not given, we try to find it in the schema using it's
-        element_name.
-
-        path is the xpath of the context where this element was found, for the
-        root context, this is the empty string
-
-        """
+        
         if element is None:
             element = self.get_schema_element('element', element_name)
             if element is None:
@@ -328,11 +356,19 @@ class Schema2Doc(object):
 
 
     def element_loop(self, element, path):
-        """
-        Loop over the children of a given element, and run output_docs on each.
+        """Find child elements for a given input element.
 
-        Returns the names of the child elements.
+        Args:
+            element (lxml.etree._Element): The base element to find child elements for.
+            path (str): Unused.
 
+        Returns:
+            list: A list containing tuples for each child element found. Each tuple takes the form of:
+                str: Element name,
+                lxml.etree._Element: Represention of the element,
+                Unknown: ref element,
+                str: minimum number of occurances,
+                str: maximum number of occurances (could be a number or 'unbounded')
         """
 
         a = element.attrib
@@ -357,12 +393,17 @@ class Schema2Doc(object):
         return child_tuples
 
     def attribute_loop(self, element):
-        """
-        Returns a list containing a tuple for each attribute the given element
-        can have.
+        """Returns a list containing a tuple for each attribute that the input element can have.
 
-        The format of the tuple is (name, type, documentation, is_required)
+        Args:
+            element (lxml.etree._Element): The base element to find attributes for.
 
+        Returns:
+            list: A list containing tuples for each attribute found. Each tuple takes the form of:
+                str: The name of the attribute.
+                str: The xsd type of the attribute.
+                str: The documentation string for the given attribute.
+                bool: A boolean value representing if the attribute is required.
         """
         #if element.find("xsd:complexType[@mixed='true']", namespaces=namespaces) is not None:
         #    print_column_info('text', indent)
