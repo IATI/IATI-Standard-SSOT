@@ -47,15 +47,15 @@ def human_list(l):
     return ', '.join(l)
 
 def lookup_see_also(standard, mapping, path):
-    """Return a generator object containing ???
+    """Return a generator object containing paths relating to the current element as defined by overview-mapping.json
 
-    Args:
-        standard (str): Unknown
-        mapping (list): Unknown
-        path (str): Unknown
+     Args:
+        standard (str): Can be either organisation-standard or activity-standard)
+        mapping (list): List for all templates elements within [standard]/overview-mapping.json
+        path (str): Last sections of the path passed to see_also, if shorter than 3 sections it will just be the entire path
 
-    Returns:
-        generator or str: Unknown
+     Returns:
+        generator or str: Yields paths of elements related to the current element
     """
     if path == '': return
     for overview, elements in mapping.items():
@@ -203,6 +203,9 @@ class Schema2Doc(object):
 
     def schema_documentation(self, element, ref_element, type_element=None):
         """Return a documention string for either a given ref_element (if not None) or an element.
+
+        If the element is a document-link, it will obtain the documentation string from its extension root instead of the extension itself.
+
         Args:
             element (lxml.etree._Element): An xsd element definition.
             ref_element (lxml.etree._Element): An element that the `element` inherits properties definitions from (using the xsd `ref` inheritance).  If set to None, the documention string for the element is returned.
