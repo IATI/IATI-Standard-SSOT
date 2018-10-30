@@ -184,7 +184,7 @@ class Schema2Doc(object):
         self.jinja_env.filters['is_complete_codelist'] = is_complete_codelist
 
     def get_schema_element(self, tag_name, name_attribute):
-         """Returns the xsd definition for a given element from schemas defined in `self.tree` (or `self.tree2` if nothing found).
+        """Returns the xsd definition for a given element from schemas defined in `self.tree` (or `self.tree2` if nothing found).
 
         Args:
             tag_name (str): The name of the tag in the schema - will typically be 'element'.
