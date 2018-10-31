@@ -1,6 +1,7 @@
 *.swp
 *.pyc
 pyenv
+.DS_Store
 
 # Output HTML folders
 docs/
