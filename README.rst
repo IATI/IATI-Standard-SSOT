@@ -98,15 +98,18 @@ A local version of the website (with the full IATI theme) can be generated after
 
 .. code-block:: bash
 
-   # Clone the repoitory containing the IATI theme
+   # Clone the repository containing the IATI theme at the same level where you cloned IATI-Standard-SSOT
    git clone https://github.com/IATI/IATI-Websites.git IATI-Websites
 
    # Set-up symlinks to the template file/folders
-   ln -s ../../IATI-Websites/iatistandard/_templates/ IATI-Extra-Documentation/en/_templates
-   ln -s ../../IATI-Websites/iatistandard/_static/ IATI-Extra-Documentation/en/_static
-   ln -s layout_dev.html IATI-Extra-Documentation/en/_templates/layout.html
+   # for the symlinks to work, you'll have to be inside the IATI-Extra-Documentation folder cloned inside IATI-Standard-SSOT
+   cd IATI-Extra-Documentation
+   ln -s ../../../IATI-Websites/iatistandard/_templates/ ./
+   ln -s ../../../IATI-Websites/iatistandard/_static/ ./
+   ln -s ../../../IATI-Websites/iatistandard/_templates/layout_dev.html ./_templates/layout.html
 
    # Generate a version of the documentation
+   cd ../../
    ./combined_gen.sh
 
    # The documentation HTML files are stored in the `docs-copy/en/_build/dirhtml` folder
