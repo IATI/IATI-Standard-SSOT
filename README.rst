@@ -87,3 +87,31 @@ To generate a copy of the website with these extra repositories included, run:
    ./combined_gen.sh
 
 This generates the website in the ``docs`` directory, but then copies it to ``docs-copy`` at the end, so that a webserver can be pointed to ``docs-copy/en/_build/dirhtml`` and not be interrupted when the site is being rebuilt.
+
+
+Generating a local version with the IATI theme
+==============================================
+
+A local version of the website (with the full IATI theme) can be generated after cloning the theme files and setting up the required symlinks for Sphinx to follow when generating the HTML files.
+
+.. code-block:: bash
+
+   # Clone the repository containing the IATI theme at the same level where you cloned IATI-Standard-SSOT
+   git clone https://github.com/IATI/IATI-Websites.git IATI-Websites
+
+   # Set-up symlinks to the template file/folders
+   # for the symlinks to work, you'll have to be inside the IATI-Extra-Documentation folder cloned inside IATI-Standard-SSOT
+   cd IATI-Extra-Documentation
+   ln -s ../../../IATI-Websites/iatistandard/_templates/ ./
+   ln -s ../../../IATI-Websites/iatistandard/_static/ ./
+   ln -s ../../../IATI-Websites/iatistandard/_templates/layout_dev.html ./_templates/layout.html
+
+   # Generate a version of the documentation
+   cd ../../
+   ./combined_gen.sh
+
+   # The documentation HTML files are stored in the `docs-copy/en/_build/dirhtml` folder
+   # You can navigate around your generated version of the site using a Python HTTP webserver
+   cd docs-copy/en/_build/dirhtml
+   python -m SimpleHTTPServer 8000
+   # View the site in a browser at http://0.0.0.0:8000/
