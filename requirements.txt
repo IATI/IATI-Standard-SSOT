@@ -6,5 +6,5 @@ pytz==2018.7
 
 # These are requirements above, added here to pin versions
 docutils==0.14
-MarkupSafe==1.0
+MarkupSafe==1.1.0
 Pygments==2.2.0
