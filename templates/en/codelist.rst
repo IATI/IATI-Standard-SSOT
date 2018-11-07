@@ -58,9 +58,11 @@ Codes
 .. _{{fname}}:
 .. list-table::
    :header-rows: 1
+   :stub-columns: 1
 
 
-   * - Code
+   * - Status
+     - Code
      - Name
      - Description{% if show_category_column %}
      - Category{% endif %}{% if show_url_column %}
@@ -68,11 +70,12 @@ Codes
      - Public Database?{% endif %}
 
    {% for codelist_item in codelist_json.data %}
-       {% if codelist_item.status == 'withdrawn' %} 
+   * - {{codelist_item.status}}
+       {% if codelist_item.status == 'withdrawn' %}
        .. rst-class:: withdrawn
-   * - {{codelist_item.code + " (withdrawn)"}}
+     - {{codelist_item.code}} (withdrawn)
        {% else %}
-   * - {{codelist_item.code}}   
+     - {{codelist_item.code}}
        {% endif %}
      - {{codelist_item.name}}
      - {% if codelist_item.description %}{{codelist_item.description}}{% endif %}{% if show_category_column %}
