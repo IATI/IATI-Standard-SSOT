@@ -103,7 +103,7 @@ A local version of the website (with the full IATI theme) can be generated after
 
    # Set-up symlinks to the template file/folders
    # for the symlinks to work, you'll have to be inside the IATI-Extra-Documentation folder cloned inside IATI-Standard-SSOT
-   cd IATI-Extra-Documentation
+   cd IATI-Extra-Documentation/en
    ln -s ../../../IATI-Websites/iatistandard/_templates/ ./
    ln -s ../../../IATI-Websites/iatistandard/_static/ ./
    ln -s ../../../IATI-Websites/iatistandard/_templates/layout_dev.html ./_templates/layout.html
