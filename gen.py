@@ -139,6 +139,7 @@ def is_complete_codelist(codelist_name):
         'HumanitarianScopeType',
         'HumanitarianScopeVocabulary',
         'IndicatorVocabulary',
+        'Language',
         'OrganisationIdentifier',
         'OrganisationRegistrationAgency'
     ]
