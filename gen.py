@@ -380,8 +380,10 @@ class Schema2Doc(object):
         if 'type' in a:
             complexType = self.get_schema_element('complexType', a['type'])
             if complexType is not None:
-                type_elements = ( complexType.findall('xsd:choice/xsd:element', namespaces=namespaces) +
-                    complexType.findall('xsd:sequence/xsd:element', namespaces=namespaces) )
+                type_elements = (
+                    complexType.findall('xsd:choice/xsd:element', namespaces=namespaces) +
+                    complexType.findall('xsd:sequence/xsd:element', namespaces=namespaces) +
+                    complexType.findall('xsd:complexContent/xsd:extension/xsd:sequence/xsd:element', namespaces=namespaces))
 
         children = ( element.findall('xsd:complexType/xsd:choice/xsd:element', namespaces=namespaces)
             + element.findall('xsd:complexType/xsd:sequence/xsd:element', namespaces=namespaces)
