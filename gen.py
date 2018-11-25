@@ -217,21 +217,26 @@ class Schema2Doc(object):
         Returns:
             str: The documentation string, extracted from the input ref_element or element.
         """
-        if type_element is not None:
-            if(element.get("name") == "document-link" and type_element.find(".//xsd:extension", namespaces=namespaces) is not None):
-                base_name = type_element.find(".//xsd:extension", namespaces=namespaces).get("base")
-                base_element = self.tree2.find("xsd:{0}[@name='{1}']".format("complexType", base_name), namespaces=namespaces)
-                return base_element.find(".//xsd:documentation", namespaces=namespaces).text
-            xsd_documentation = type_element.find(".//xsd:documentation", namespaces=namespaces)
-            if xsd_documentation is not None:
-                return type_element.find(".//xsd:documentation", namespaces=namespaces).text
-
         if ref_element is not None:
             xsd_docuementation = ref_element.find(".//xsd:documentation", namespaces=namespaces)
             if xsd_docuementation is not None:
-                return ref_element.find(".//xsd:documentation", namespaces=namespaces).text
-        return element.find(".//xsd:documentation", namespaces=namespaces).text
+                return xsd_docuementation.text
 
+        xsd_documentation = element.find(".//xsd:documentation", namespaces=namespaces)
+        if xsd_documentation is not None:
+            return xsd_documentation.text
+
+        if type_element is not None:
+            xsd_documentation = type_element.find(".//xsd:documentation", namespaces=namespaces)
+            if xsd_documentation is not None:
+                return xsd_documentation.text
+
+            extension = type_element.find(".//xsd:extension", namespaces=namespaces)
+            if extension is not None:
+                base_name = type_element.find(".//xsd:extension", namespaces=namespaces).get("base")
+                base_element = self.get_schema_element('complexType', base_name)
+                if base_element is not None:
+                    return base_element.find(".//xsd:documentation", namespaces=namespaces).text
 
     def output_docs(self, element_name, path, element=None, minOccurs='', maxOccurs='', ref_element=None, type_element=None):
         """Output documentation for the given element, and it's children.
