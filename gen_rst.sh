@@ -6,7 +6,7 @@ rm -r docs/*
 
 # Generate csvs etc. from codelists
 cd IATI-Codelists || exit 1
-./gen.sh || exit 1
+../scripts/codelists/gen.sh || exit 1
 cd .. || exit 1
 
 
@@ -15,4 +15,3 @@ python gen.py || exit 1
 
 # Copy rulesets SPEC
 cp IATI-Rulesets/SPEC.rst docs/en/rulesets/ruleset-spec.rst
-
