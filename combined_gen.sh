@@ -6,11 +6,11 @@
 cd docs || exit 1
 
 mkdir en/developer
-cp -n ../../IATI-Developer-Documentation/*.rst en/developer
-cp -rn ../../IATI-Developer-Documentation/*/ en/developer
+cp -n ../IATI-Developer-Documentation/*.rst en/developer
+cp -rn ../IATI-Developer-Documentation/*/ en/developer
 mkdir en/guidance
-cp -n ../..//IATI-Guidance/en/*.rst en/guidance
-cp -rn ../../IATI-Guidance/en/*/ en/guidance
+cp -n ../IATI-Guidance/en/*.rst en/guidance
+cp -rn ../IATI-Guidance/en/*/ en/guidance
 mv en/guidance/404.rst en/
 mv en/guidance/upgrades* en/
 mv en/guidance/introduction* en/
