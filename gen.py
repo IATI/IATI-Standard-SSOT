@@ -369,6 +369,7 @@ class Schema2Doc(object):
             type_attributes + group_attributes
             ):
             doc = attribute.find(".//xsd:documentation", namespaces=namespaces)
+            occurs = attribute.get('use')
             if 'ref' in attribute.attrib:
                 if attribute.get('ref') in custom_attributes:
                     out.append((attribute.get('ref'), '', custom_attributes[attribute.get('ref')], attribute.get('use')=='required'))
@@ -378,8 +379,10 @@ class Schema2Doc(object):
                     # Only fetch the documentation of the referenced definition
                     # if we don't already have documentation.
                     doc = attribute.find(".//xsd:documentation", namespaces=namespaces)
+                if occurs is None:
+                    occurs = attribute.get('use')
             if doc is not None:
-                out.append((attribute.get('name'), attribute.get('type'), doc.text, attribute.get('use')=='required'))
+                out.append((attribute.get('name'), attribute.get('type'), doc.text, occurs == 'required'))
             else:
                 print 'Ack', ET.tostring(attribute)
         return out
