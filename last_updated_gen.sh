@@ -1,5 +1,5 @@
 #!/bin/bash
-./gen_rst.sh || exit $?
+./scripts/main/gen_rst.sh || exit $?
 cd docs || exit 1
 git add .
 git commit -a -m 'Auto'

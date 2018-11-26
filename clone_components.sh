@@ -3,12 +3,6 @@
 
 timestamp=$(date +%s)
 
-# make sure IATI-Websites exists in the previous folder
-if [ ! -d "../IATI-Websites" ]; then
-  echo "Please clone IATI-Websites first"
-  exit 1
-fi
-
 # main git url
 IATI_GIT_BASE="git@github.com:IATI/"
 
@@ -22,6 +16,7 @@ SSOT_COMPONENTS=(
 
 # optional components
 OPTIONAL_COMPONENTS=(
+	"IATI-Websites"
 	"IATI-Guidance"
 	"IATI-Developer-Documentation"
 )
