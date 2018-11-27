@@ -10,6 +10,3 @@ source pyenv/bin/activate
 
 # Install python requirements
 pip install -r requirements.txt
-
-# Clones the initial components
-sh clone_components.sh
