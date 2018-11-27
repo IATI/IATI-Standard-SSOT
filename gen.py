@@ -568,7 +568,11 @@ def extra_extra_docs():
                     with open(os.path.join('docs', rst_filename), 'w') as fp:
                         fp.write(get_extra_docs(rst_filename).encode('utf-8'))
                 else:
-                    shutil.copy(os.path.join(dirname,fname), os.path.join('docs', rst_filename))
+                    shutil.copy(
+                        os.path.join(dirname, fname),
+                        os.path.join('docs', rst_filename)
+                    )
+
 
 if __name__ == '__main__':
     for language in languages:

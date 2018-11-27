@@ -1,4 +1,5 @@
 #!/bin/bash
+set -o nounset
 
 # Create a virtual environment (recommended)
 virtualenv pyenv

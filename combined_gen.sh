@@ -5,12 +5,13 @@ echo "Setting up live templates symlinks IATI-Websites -> IATI-Extra-Documentati
 cd IATI-Extra-Documentation/en
 ln -s ../../IATI-Websites/iatistandard/_templates/ ./
 ln -s ../../IATI-Websites/iatistandard/_static/ ./
-ln -s ../../IATI-Websites/iatistandard/_templates/layout_dev.html ./_templates/layout.html
-cd ../.. || exit 1
+cd _templates
+ln -s ../../../IATI-Websites/iatistandard/_templates/layout_live.html layout.html
+cd ../../..
 
 
 echo "Generating RST copy"
-./scripts/main/gen_rst.sh || exit $?
+sh scripts/main/gen_rst.sh || exit $?
 
 cd docs || exit 1
 
@@ -37,7 +38,7 @@ cd .. || exit 1
 
 
 echo "Generating HTML copy"
-./scripts/main/gen_html.sh || exit $?
+sh scripts/main/gen_html.sh || exit $?
 
 echo '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' > docs/en/_build/dirhtml/sitemap.xml
 find docs/en/_build/dirhtml | grep -v _static | grep index.html$ | sed 's|index.html$|</loc></url>|' | sed "s|docs/en/_build/dirhtml|<url><loc>http://`cat URL`|" >> docs/en/_build/dirhtml/sitemap.xml
