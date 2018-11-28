@@ -18,7 +18,7 @@ This is the main github repository for the IATI Standard Single Source of Truth 
 Building the documentation
 ==========================
 
-Requirements:
+**Requirements**::
 
 * Git
 * Unix based setup (e.g. Linux, Mac OS X) with bash etc.
@@ -28,38 +28,46 @@ Requirements:
 * Development files for libxml and libxslt e.g. libxml2-dev, libxslt-dev
 
 
-Fetch the source code:
+**Fetching the source code**::
 
-    git clone https://github.com/IATI/IATI-Standard-SSOT.git
+    $~ git clone https://github.com/IATI/IATI-Standard-SSOT.git
 
-Running the initial setup:
 
-    make dev_install
+**Running the initial setup**::
 
-or run each step separately:
+    $~ make dev_install
 
-    make clean
 
-    make setup
+*or each step separately*::
+
+    $~ make clean
+
+    $~ make setup
     
-    make clone_components
+    $~ make clone_components
+
+
+**Building the documentation**::
     
+    $~ make build_docs
 
-Building the documentation
-    
-    make build_docs
-
-The built documentation is now in ``docs/<language>/_build/dirhtml``
+*the built documentation is now in ``docs/<language>/_build/dirhtml``*
 
 
-Building the entire site (with full content)
+**Building the entire site (with full content and IATI theme)**::
 
-    make build_dev
+    $~ make build_dev
 
 
-Running the server
+**Running the server**::
 
-    make run
+    $~ make run
+
+**Switching version of the Standard**::
+
+    $~ make switch_version VERSION=[2.01, 2.02, 1,05..]
+
+*after switching version, you'll have to build the site/documentation again*
 
 
 Editing the documentation
