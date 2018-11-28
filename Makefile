@@ -41,7 +41,7 @@ build_html:
 build_dev:
 	sh scripts/main/combined_gen.sh
 
-build_dev_light: build_rst build_html
+build_docs: build_rst build_html
 
 build_live:
 	sh scripts/main/combined_gen.sh
