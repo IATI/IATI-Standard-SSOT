@@ -1,7 +1,7 @@
 # Usage:
 #
 #     make [command]
-
+#
 
 setup:
 	virtualenv pyenv; \
@@ -30,7 +30,7 @@ run:
 	cd -
 
 switch_version:
-	echo "Not yet implemented"
+	sh scripts/main/clone_components.sh -s true -ver $(VERSION)
 
 build_rst:
 	sh scripts/main/gen_rst.sh
@@ -43,8 +43,7 @@ build_dev:
 
 build_docs: build_rst build_html
 
-build_live:
-	sh scripts/main/combined_gen.sh
+build_live: build_dev
 
 deploy_dev:
 	echo "Not yet implemented"
