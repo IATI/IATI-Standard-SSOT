@@ -436,6 +436,15 @@ class Schema2Doc(object):
         type_attributeGroups = []
         if 'type' in a:
             complexType = self.get_schema_element('complexType', a['type'])
+
+            # If this complexType is an extension of another complexType, find the base element and use this to find any attributes
+            try:
+                base_name = complexType.find('.//xsd:complexContent/xsd:extension', namespaces=namespaces).attrib.get('base')
+                complexType = self.get_schema_element('complexType', base_name)
+            except AttributeError:
+                pass
+                # This complexType is not extended from a complexType base
+
             if complexType is None:
                 print('Notice: No attributes for', a['type'])
             else:
