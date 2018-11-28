@@ -1,19 +1,33 @@
+# Usage:
 #
-# Makefile for IATI's Standard SSOT reference site
-# 
+#     make [command]
+
+
+setup:
+	virtualenv pyenv; \
+	source pyenv/bin/activate; \
+	pip install -r requirements.txt
 
 clone_components:
 	sh scripts/main/clone_components.sh
 
-install:
-	sh scripts/main/setup.sh
-	clone_components
+clean_virtualenv:
+	rm -rf pyenv
 
-clean:
-	sh scripts/main/clean.sh
+clean: clean_virtualenv; \
+	rm -rf IATI-*; \
+	rm -rf docs docs-copy
+
+reinstall_dependencies: clean_virtualenv setup
+
+dev_install: clean setup clone_components
+
+live_install: dev_install
 
 run:
-	sh scripts/main/runserver.sh
+	cd docs-copy/en/_build/dirhtml; \
+	python -m SimpleHTTPServer 8000; \
+	cd -
 
 switch_version:
 	echo "Not yet implemented"
@@ -26,6 +40,8 @@ build_html:
 
 build_dev:
 	sh scripts/main/combined_gen.sh
+
+build_dev_light: build_rst build_html
 
 build_live:
 	sh scripts/main/combined_gen.sh
