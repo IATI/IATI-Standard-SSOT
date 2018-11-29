@@ -6,7 +6,7 @@ rm -r docs/*
 
 # Generate csvs etc. from codelists
 cd IATI-Codelists || exit 1
-sh ../scripts/codelists/gen.sh || exit 1
+bash ../scripts/codelists/gen.sh || exit 1
 cd .. || exit 1
 
 

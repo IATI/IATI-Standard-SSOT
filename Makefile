@@ -9,7 +9,7 @@ setup:
 	pip install -r requirements.txt
 
 clone_components:
-	sh scripts/main/clone_components.sh
+	bash scripts/main/clone_components.sh
 
 clean_virtualenv:
 	rm -rf pyenv
@@ -31,19 +31,19 @@ run:
 
 switch_version:
 	. pyenv/bin/activate; \
-	sh scripts/main/clone_components.sh -s true -ver $(VERSION)
+	bash scripts/main/clone_components.sh -s true -ver $(VERSION)
 
 build_rst:
 	. pyenv/bin/activate; \
-	sh scripts/main/gen_rst.sh
+	bash scripts/main/gen_rst.sh
 
 build_html:
 	. pyenv/bin/activate; \
-	sh scripts/main/gen_html.sh
+	bash scripts/main/gen_html.sh
 
 build_dev:
 	. pyenv/bin/activate; \
-	sh scripts/main/combined_gen.sh
+	bash scripts/main/combined_gen.sh
 
 build_docs: build_rst build_html
 
