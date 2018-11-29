@@ -5,7 +5,7 @@
 
 setup:
 	virtualenv pyenv; \
-	source pyenv/bin/activate; \
+	. pyenv/bin/activate; \
 	pip install -r requirements.txt
 
 clone_components:
@@ -30,19 +30,19 @@ run:
 	cd -
 
 switch_version:
-	source pyenv/bin/activate; \
+	. pyenv/bin/activate; \
 	sh scripts/main/clone_components.sh -s true -ver $(VERSION)
 
 build_rst:
-	source pyenv/bin/activate; \
+	. pyenv/bin/activate; \
 	sh scripts/main/gen_rst.sh
 
 build_html:
-	source pyenv/bin/activate; \
+	. pyenv/bin/activate; \
 	sh scripts/main/gen_html.sh
 
 build_dev:
-	source pyenv/bin/activate; \
+	. pyenv/bin/activate; \
 	sh scripts/main/combined_gen.sh
 
 build_docs: build_rst build_html
