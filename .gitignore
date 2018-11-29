@@ -9,3 +9,11 @@ docs-copy/
 
 # IATI Theme (for generating a local version of the reference HTML with full IATI branding)
 IATI-Websites/
+
+# SSOT components, Guidance, Developer Documentation folders
+IATI-Codelists
+IATI-Schemas
+IATI-Rulesets
+IATI-Extra-Documentation
+IATI-Guidance
+IATI-Developer-Documentation
