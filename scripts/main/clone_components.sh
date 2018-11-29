@@ -1,3 +1,4 @@
+#!/bin/bash
 # Script to update each of the 4 main components + 2 optional ones in the IATI-SSOT repository
 #
 source scripts/main/CONFIG.FILE

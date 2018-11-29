@@ -1,6 +1,6 @@
 #!/bin/bash
 # main git url
-IATI_GIT_BASE="git@github.com:IATI/"
+IATI_GIT_BASE="https://github.com/IATI/"
 
 # main ssot components
 SSOT_COMPONENTS=(
