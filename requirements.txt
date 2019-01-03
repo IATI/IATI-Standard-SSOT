@@ -1,6 +1,6 @@
 pip==18.1
 Sphinx==1.8.3
-lxml==4.2.5
+lxml==4.2.6
 Jinja2==2.10
 pytz==2018.7
 
