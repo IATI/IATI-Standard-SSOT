@@ -204,7 +204,7 @@ class Schema2Doc(object):
         return schema_element
 
 
-    def schema_documentation(self, element, ref_element):
+    def schema_documentation(self, element, ref_element, type_element=None):
         """Return a documention string for either a given ref_element (if not None) or an element.
         Args:
             element (lxml.etree._Element): An xsd element definition.
