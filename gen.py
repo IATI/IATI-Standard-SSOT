@@ -201,7 +201,7 @@ class Schema2Doc(object):
             schema_element = self.tree2.find("xsd:{0}[@name='{1}']".format(tag_name, name_attribute), namespaces=namespaces)
         return schema_element
 
-    def schema_documentation(self, element, ref_element):
+    def schema_documentation(self, element, ref_element, type_element=None):
         """Return a documention string for either a given ref_element (if not None) or an element.
         Args:
             element (lxml.etree._Element): An xsd element definition.
