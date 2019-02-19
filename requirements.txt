@@ -3,7 +3,7 @@ Sphinx==1.2.3
 lxml==3.4.1
 Jinja2==2.7.3
 pytz==2014.10
-
+python-dateutil==2.8.0
 # These are requirements above, added here to pin versions
 docutils==0.12
 MarkupSafe==0.23
