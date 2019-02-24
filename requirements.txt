@@ -6,5 +6,5 @@ pytz==2018.9
 python-dateutil==2.8.0
 # These are requirements above, added here to pin versions
 docutils==0.14
-MarkupSafe==1.1.0
+MarkupSafe==1.1.1
 Pygments==2.3.1
