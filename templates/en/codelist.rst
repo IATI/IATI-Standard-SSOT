@@ -9,10 +9,10 @@
 External URL: {{codelist_json.metadata.url}}
 {% endif %}
 
-{% if codelist_json.metadata.category=="Core" %}
+{% if codelist_json.metadata.category.narrative=="Core" %}
 This is an :ref:`Core codelist <core_codelist>`.
 {% else %}
-This is a :ref:`{{codelist_json.metadata.category}} codelist <non_core_codelist>`.
+This is a :ref:`{{codelist_json.metadata.category.narrative}} codelist <non_core_codelist>`.
 {% endif %}
 
 {% if codelist_paths %}
