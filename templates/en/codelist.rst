@@ -47,6 +47,7 @@ Download this codelist
    * - `XML <../downloads/clv1/codelist/{{fname}}.xml>`__
      - `XML <../downloads/clv2/xml/{{fname}}.xml>`__
      - `XML <../downloads/clv3/xml/{{fname}}.xml>`__
+     - `XML <../downloads/clv3/xml/{{fname}}.xml>`__
 
 `GitHub Source <{{github_url}}>`__
 
