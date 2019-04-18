@@ -10,7 +10,7 @@ External URL: {{codelist_json.metadata.url}}
 {% endif %}
 
 {% if codelist_json.metadata.category=="Core" %}
-This is an :ref:`Core codelist <core_codelist>`.
+This is a :ref:`Core codelist <core_codelist>`.
 {% else %}
 This is a :ref:`{{codelist_json.metadata.category}} codelist <non_core_codelist>`.
 {% endif %}
@@ -32,17 +32,21 @@ Download this codelist
    * - :ref:`CLv1 <codelist_api_1.04>`:
      - :ref:`CLv2 <codelist_api_1.04>`:
      - :ref:`CLv3 <codelist_api_1.04>`:
+     - :ref:`CLv3 (french) <codelist_api_1.04>`:
 
    * - `CSV <../downloads/clv1/codelist/{{fname}}.csv>`__
      - `CSV <../downloads/clv2/csv/{{lang}}/{{fname}}.csv>`__
      - `CSV <../downloads/clv3/csv/{{lang}}/{{fname}}.csv>`__
+     - `CSV <../downloads/clv3/csv/fr/{{fname}}.csv>`__
 
    * - `JSON <../downloads/clv1/codelist/{{fname}}.json>`__
      - `JSON <../downloads/clv2/json/{{lang}}/{{fname}}.json>`__
      - `JSON <../downloads/clv3/json/{{lang}}/{{fname}}.json>`__
+     - `JSON <../downloads/clv3/json/fr/{{fname}}.json>`__
 
    * - `XML <../downloads/clv1/codelist/{{fname}}.xml>`__
      - `XML <../downloads/clv2/xml/{{fname}}.xml>`__
+     - `XML <../downloads/clv3/xml/{{fname}}.xml>`__
      - `XML <../downloads/clv3/xml/{{fname}}.xml>`__
 
 `GitHub Source <{{github_url}}>`__
