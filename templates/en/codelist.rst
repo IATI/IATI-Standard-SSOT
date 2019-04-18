@@ -16,7 +16,7 @@ This is a :ref:`{{codelist_json.metadata.category.text }} codelist <non_core_cod
 {% endif %}
 
 {% if codelist_paths %}
-Use this codelist for
+Use this codelist for (yup)
 ---------------------
 {% for path in codelist_paths %}
 * :ref:`{{path}} <{{path_to_ref(path)}}>`
