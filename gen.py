@@ -549,7 +549,6 @@ def codelists_to_docs(lang):
                 path_to_ref=path_to_ref,
                 extra_docs=get_extra_docs(rst_filename),
                 dedent=textwrap.dedent,
-                embedded=embedded,
                 lang=lang).encode('utf-8'))
 
 def extra_extra_docs():
