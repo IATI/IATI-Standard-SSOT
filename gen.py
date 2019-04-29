@@ -1,8 +1,11 @@
 from __future__ import print_function
-from lxml import etree as ET
-import os, json, csv, shutil, re
+import os
+import json
+import shutil
 import textwrap
 import jinja2
+from lxml import etree as ET
+from collections import defaultdict
 from iatirulesets.text import rules_text
 
 languages = ['en']
@@ -14,6 +17,7 @@ namespaces = {
 # Define attributes that have documentation that differs to that in the schema
 custom_attributes = {
 }
+
 
 def get_github_url(repo, path=''):
     """Return a link to the Github UI for a given repository and filepath.
@@ -34,8 +38,10 @@ def get_github_url(repo, path=''):
     }
     return 'https://github.com/IATI/{0}/blob/{1}/{2}'.format(repo, github_branches[repo], path)
 
+
 def human_list(l):
     """Return a human-friendly version of a list.
+
     Currently seperates list items with commas, but could be extended to insert 'and'/'or' correctly.
 
     Args:
@@ -46,70 +52,78 @@ def human_list(l):
     """
     return ', '.join(l)
 
-def lookup_see_also(standard, mapping, path):
-    """Return a generator object containing paths relating to the current element as defined by overview-mapping.json
 
-     Args:
+def lookup_see_also(standard, mapping, path):
+    """Return a generator object containing paths relating to the current element as defined by overview-mapping.json.
+
+    Args:
         standard (str): Can be either organisation-standard or activity-standard)
         mapping (list): List for all templates elements within [standard]/overview-mapping.json
         path (str): Last sections of the path passed to see_also, if shorter than 3 sections it will just be the entire path
 
-     Returns:
+    Returns:
         generator or str: Yields paths of elements related to the current element
     """
-    if path == '': return
+    if path == '':
+        return
     for overview, elements in mapping.items():
         if path in elements:
-            yield '/'+standard+'/overview/'+overview
+            yield '/' + standard + '/overview/' + overview
     for x in lookup_see_also(standard, mapping, '/'.join(path.split('/')[:-1])):
         yield x
 
+
 def see_also(path, lang):
     standard = path.split('/')[0]
-    if lang == 'en': # FIXME
-        mapping = json.load(open(os.path.join('IATI-Extra-Documentation', lang, standard, 'overview-mapping.json'))) # Loading this file is incredibly inefficient
+    if lang == 'en':  # FIXME
+        mapping = json.load(open(os.path.join('IATI-Extra-Documentation', lang, standard, 'overview-mapping.json')))  # Loading this file is incredibly inefficient
         # Common 'simple' path e.g. iati-activities or budget/period-start
         # Using this prevents subpages of iati-activity using the activity file overview
         simpler = len(path.split('/')) > 3
         simple_path = '/'.join(path.split('/')[3:]) if simpler else path
         return list(lookup_see_also(standard, mapping, simple_path))
 
+
 standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
+
 
 def ruleset_page(lang):
     jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
-    ruleset = { xpath:rules_text(rules, '', True) for xpath, rules in standard_ruleset.items() }
+    ruleset = {xpath: rules_text(rules, '', True) for xpath, rules in standard_ruleset.items()}
     rst_filename = os.path.join(lang, 'rulesets', 'standard-ruleset.rst')
 
     try:
         os.mkdir(os.path.join('docs', lang, 'rulesets'))
-    except OSError: pass
+    except OSError:
+        pass
 
     with open(os.path.join('docs', rst_filename), 'w') as fp:
-        t = jinja_env.get_template(lang+'/ruleset.rst')
+        t = jinja_env.get_template(lang + '/ruleset.rst')
         fp.write(t.render(
-            ruleset = ruleset,
+            ruleset=ruleset,
             extra_docs=get_extra_docs(rst_filename)
         ).encode('utf8'))
 
+
 def ruleset_text(path):
-    """ Return a list of text describing the rulesets for a given path (xpath) """
+    """Return a list of text describing the rulesets for a given path (xpath)"""
     out = []
     for xpath, rules in standard_ruleset.items():
         if xpath.startswith('//'):
             try:
                 # Use slice 1: to ensure we match /budget/ but not /total-budget/
-                reduced_path = path.split(xpath[1:]+'/')[1]
+                reduced_path = path.split(xpath[1:] + '/')[1]
             except IndexError:
                 continue
             out += rules_text(rules, reduced_path)
     return out
 
 
-from collections import defaultdict
 codelists_paths = defaultdict(list)
 # TODO - This function should be moved into the IATI-Codelists submodule
 codelist_mappings = ET.parse('./IATI-Codelists/mapping.xml').getroot().findall('mapping')
+
+
 def match_codelists(path):
     """
     Looks up the codelist that the given path (xpath) should be on.
@@ -127,8 +141,9 @@ def match_codelists(path):
                 tup = (codelist, mapping.find('condition') is not None)
                 codelist_tuples.append(tup)
             else:
-                pass # FIXME
+                pass  # FIXME
     return codelist_tuples
+
 
 def is_complete_codelist(codelist_name):
     """Determine whether the specified Codelist is complete.
@@ -155,8 +170,10 @@ def is_complete_codelist(codelist_name):
     ]
     return codelist_name not in incomplete_codelists
 
+
 def path_to_ref(path):
-    return path.replace('//','_').replace('@','.')
+    return path.replace('//', '_').replace('@', '.')
+
 
 def get_extra_docs(rst_filename):
     extra_docs_file = os.path.join('IATI-Extra-Documentation', rst_filename)
@@ -181,7 +198,7 @@ class Schema2Doc(object):
             self.jinja_env (jinja2.environment.Environment): The templates contained within the 'templates' folder.
             self.lang (str): The input language.
         """
-        self.tree = ET.parse("./IATI-Schemas/"+schema)
+        self.tree = ET.parse("./IATI-Schemas/" + schema)
         self.tree2 = ET.parse("./IATI-Schemas/iati-common.xsd")
         self.jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
         self.lang = lang
@@ -202,7 +219,6 @@ class Schema2Doc(object):
         if schema_element is None:
             schema_element = self.tree2.find("xsd:{0}[@name='{1}']".format(tag_name, name_attribute), namespaces=namespaces)
         return schema_element
-
 
     def schema_documentation(self, element, ref_element, type_element=None):
         """Return a documention string for either a given ref_element (if not None) or an element.
@@ -260,17 +276,18 @@ class Schema2Doc(object):
 
         github_urls = {
             'schema': element.base.replace('./IATI-Schemas/', get_github_url('IATI-Schemas')) + '#L' + str(element.sourceline),
-            'extra_documentation': get_github_url('IATI-Extra-Documentation', self.lang+'/'+path+element_name+'.rst')
+            'extra_documentation': get_github_url('IATI-Extra-Documentation', self.lang + '/' + path + element_name + '.rst')
         }
         try:
             os.makedirs(os.path.join('docs', self.lang, path))
-        except OSError: pass
+        except OSError:
+            pass
 
-        rst_filename = os.path.join(self.lang, path, element_name+'.rst')
+        rst_filename = os.path.join(self.lang, path, element_name + '.rst')
 
         children = self.element_loop(element, path)
         for child_name, child_element, child_ref_element, child_type_element, child_minOccurs, child_maxOccurs in children:
-            self.output_docs(child_name, path+element.attrib['name']+'/', child_element, child_minOccurs, child_maxOccurs, child_ref_element, child_type_element)
+            self.output_docs(child_name, path + element.attrib['name'] + '/', child_element, child_minOccurs, child_maxOccurs, child_ref_element, child_type_element)
 
         min_occurss = element.xpath('xsd:complexType/xsd:choice/@minOccur', namespaces=namespaces)
         # Note that this min_occurs is different to the python variables
@@ -282,13 +299,13 @@ class Schema2Doc(object):
         else:
             min_occurs = 0
 
-        with open('docs/'+rst_filename, 'w') as fp:
-            t = self.jinja_env.get_template(self.lang+'/schema_element.rst')
+        with open('docs/' + rst_filename, 'w') as fp:
+            t = self.jinja_env.get_template(self.lang + '/schema_element.rst')
             fp.write(t.render(
                 element_name=element_name,
-                element_name_underline='='*len(element_name),
+                element_name_underline='=' * len(element_name),
                 element=element,
-                path='/'.join(path.split('/')[1:]), # Strip e.g. activity-standard/ from the path
+                path='/'.join(path.split('/')[1:]),  # Strip e.g. activity-standard/ from the path
                 github_urls=github_urls,
                 schema_documentation=textwrap.dedent(self.schema_documentation(element, ref_element, type_element)),
                 extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
@@ -297,14 +314,13 @@ class Schema2Doc(object):
                 match_codelists=match_codelists,
                 path_to_ref=path_to_ref,
                 ruleset_text=ruleset_text,
-                childnames = [x[0] for x in children],
+                childnames=[x[0] for x in children],
                 extra_docs=get_extra_docs(rst_filename),
                 min_occurs=min_occurs,
                 minOccurs=minOccurs,
                 maxOccurs=maxOccurs,
-                see_also=see_also(path+element_name, self.lang)
+                see_also=see_also(path + element_name, self.lang)
             ).encode('utf8'))
-
 
     def output_schema_table(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None, type_element=None):
         if element is None:
@@ -315,40 +331,40 @@ class Schema2Doc(object):
         extended_types = element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces)
         rows = [{
             'name': element_name,
-            'path': '/'.join(path.split('/')[1:])+element_name,
-            'doc': '/'+path+element_name,
+            'path': '/'.join(path.split('/')[1:]) + element_name,
+            'doc': '/' + path + element_name,
             'description': textwrap.dedent(self.schema_documentation(element, ref_element, type_element)),
             'type': element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else '',
-            'occur': (minOccurs or '') + '..' + ('*' if maxOccurs=='unbounded' else maxOccurs or ''),
+            'occur': (minOccurs or '') + '..' + ('*' if maxOccurs == 'unbounded' else maxOccurs or ''),
             'section': len(path.split('/')) < 5
         }]
 
         if element.xpath('xsd:complexType[@mixed="true"] or xsd:complexType/xsd:simpleContent', namespaces=namespaces):
             rows.append({
-                'path': '/'.join(path.split('/')[1:])+element_name+'/text()',
+                'path': '/'.join(path.split('/')[1:]) + element_name + '/text()',
                 'description': '',
-                'type': 'mixed' if element.xpath('xsd:complexType[@mixed="true"]', namespaces=namespaces) else  ','.join([x for x in extended_types if x.startswith('xsd:')]),
+                'type': 'mixed' if element.xpath('xsd:complexType[@mixed="true"]', namespaces=namespaces) else ','.join([x for x in extended_types if x.startswith('xsd:')]),
             })
 
         for a_name, a_type, a_description, a_required in self.attribute_loop(element):
             rows.append({
                 'attribute_name': a_name,
-                'path': '/'.join(path.split('/')[1:])+element_name+'/@'+a_name,
+                'path': '/'.join(path.split('/')[1:]) + element_name + '/@' + a_name,
                 'description': textwrap.dedent(a_description),
                 'type': a_type,
                 'occur': '1..1' if a_required else '0..1'
             })
 
         for child_name, child_element, child_ref_element, child_type_element, minOccurs, maxOccurs in self.element_loop(element, path):
-            rows += self.output_schema_table(child_name, path+element.attrib['name']+'/', child_element, minOccurs=minOccurs, maxOccurs=maxOccurs, ref_element=child_ref_element, type_element=child_type_element)
+            rows += self.output_schema_table(child_name, path + element.attrib['name'] + '/', child_element, minOccurs=minOccurs, maxOccurs=maxOccurs, ref_element=child_ref_element, type_element=child_type_element)
 
         if output:
             with open(os.path.join('docs', self.lang, filename), 'w') as fp:
-                t = self.jinja_env.get_template(self.lang+'/schema_table.rst')
+                t = self.jinja_env.get_template(self.lang + '/schema_table.rst')
                 fp.write(t.render(
                     rows=rows,
                     title=title,
-                    root_path='/'.join(path.split('/')[1:]), # Strip e.g. activity-standard/ from the path
+                    root_path='/'.join(path.split('/')[1:]),  # Strip e.g. activity-standard/ from the path
                     match_codelists=match_codelists,
                     ruleset_text=ruleset_text,
                     description=self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text
@@ -356,31 +372,29 @@ class Schema2Doc(object):
         else:
             return rows
 
-
     def output_overview_pages(self, standard):
-        if self.lang == 'en': # FIXME
+        if self.lang == 'en':  # FIXME
             try:
                 os.mkdir(os.path.join('docs', self.lang, standard, 'overview'))
-            except OSError: pass
+            except OSError:
+                pass
 
             mapping = json.load(open(os.path.join('IATI-Extra-Documentation', self.lang, standard, 'overview-mapping.json')))
             for page, reference_pages in mapping.items():
                 self.output_overview_page(standard, page, reference_pages)
 
-
     def output_overview_page(self, standard, page, reference_pages):
         if standard == 'activity-standard':
-            f = lambda x: x if x.startswith('iati-activities') else 'iati-activities/iati-activity/'+x
+            f = lambda x: x if x.startswith('iati-activities') else 'iati-activities/iati-activity/' + x
         else:
-            f = lambda x: x if x.startswith('iati-organisations') else 'iati-organisations/iati-organisation/'+x
-        reference_pages = [ (x, '/'+standard+'/'+f(x)) for x in reference_pages ]
-        with open(os.path.join('docs', self.lang, standard, 'overview', page+'.rst'), 'w') as fp:
-            t = self.jinja_env.get_template(self.lang+'/overview.rst')
+            f = lambda x: x if x.startswith('iati-organisations') else 'iati-organisations/iati-organisation/' + x
+        reference_pages = [(x, '/' + standard + '/' + f(x)) for x in reference_pages]
+        with open(os.path.join('docs', self.lang, standard, 'overview', page + '.rst'), 'w') as fp:
+            t = self.jinja_env.get_template(self.lang + '/overview.rst')
             fp.write(t.render(
-                extra_docs=get_extra_docs(os.path.join(self.lang, standard, 'overview', page+'.rst')),
+                extra_docs=get_extra_docs(os.path.join(self.lang, standard, 'overview', page + '.rst')),
                 reference_pages=reference_pages
             ).encode('utf8'))
-
 
     def element_loop(self, element, path):
         """Find child elements for a given input element.
@@ -419,10 +433,12 @@ class Schema2Doc(object):
                     pass
                     # This complexType is not extended from a complexType base
 
-        children = ( element.findall('xsd:complexType/xsd:choice/xsd:element', namespaces=namespaces)
+        children = (
+            element.findall('xsd:complexType/xsd:choice/xsd:element', namespaces=namespaces)
             + element.findall('xsd:complexType/xsd:sequence/xsd:element', namespaces=namespaces)
             + element.findall("xsd:complexType/xsd:all/xsd:element", namespaces=namespaces)
-            + type_elements)
+            + type_elements
+        )
         child_tuples = []
         for child in children:
             a = child.attrib
@@ -438,7 +454,6 @@ class Schema2Doc(object):
 
         return child_tuples
 
-
     def attribute_loop(self, element):
         """Returns a list containing a tuple for each attribute that the input element can have.
 
@@ -452,8 +467,8 @@ class Schema2Doc(object):
                 str: The documentation string for the given attribute.
                 bool: A boolean value representing if the attribute is required.
         """
-        #if element.find("xsd:complexType[@mixed='true']", namespaces=namespaces) is not None:
-        #    print_column_info('text', indent)
+        # if element.find("xsd:complexType[@mixed='true']", namespaces=namespaces) is not None:
+        # print_column_info('text', indent)
 
         a = element.attrib
         type_attributes = []
@@ -475,18 +490,18 @@ class Schema2Doc(object):
                 type_attributes = (
                     complexType.findall('xsd:attribute', namespaces=namespaces) +
                     complexType.findall('xsd:simpleContent/xsd:extension/xsd:attribute', namespaces=namespaces)
-                    )
+                )
                 type_attributeGroups = (
                     complexType.findall('xsd:attributeGroup', namespaces=namespaces) +
                     complexType.findall('xsd:simpleContent/xsd:extension/xsd:attributeGroup', namespaces=namespaces)
-                    )
+                )
 
         group_attributes = []
         for attributeGroup in (
             element.findall('xsd:complexType/xsd:attributeGroup', namespaces=namespaces) +
             element.findall('xsd:complexType/xsd:simpleContent/xsd:extension/xsd:attributeGroup', namespaces=namespaces) +
             type_attributeGroups
-            ):
+        ):
             group_attributes += self.get_schema_element('attributeGroup', attributeGroup.attrib['ref']).findall('xsd:attribute', namespaces=namespaces)
 
         out = []
@@ -494,12 +509,12 @@ class Schema2Doc(object):
             element.findall('xsd:complexType/xsd:attribute', namespaces=namespaces) +
             element.findall('xsd:complexType/xsd:simpleContent/xsd:extension/xsd:attribute', namespaces=namespaces) +
             type_attributes + group_attributes
-            ):
+        ):
             doc = attribute.find(".//xsd:documentation", namespaces=namespaces)
             occurs = attribute.get('use')
             if 'ref' in attribute.attrib:
                 if attribute.get('ref') in custom_attributes:
-                    out.append((attribute.get('ref'), '', custom_attributes[attribute.get('ref')], attribute.get('use')=='required'))
+                    out.append((attribute.get('ref'), '', custom_attributes[attribute.get('ref')], attribute.get('use') == 'required'))
                     continue
                 referenced_attribute = self.get_schema_element('attribute', attribute.get('ref'))
                 if referenced_attribute is not None:
@@ -515,32 +530,34 @@ class Schema2Doc(object):
 
 
 def codelists_to_docs(lang):
-    dirname = 'IATI-Codelists/out/clv2/json/'+lang
+    dirname = 'IATI-Codelists/out/clv2/json/' + lang
     try:
-        os.mkdir('docs/'+lang+'/codelists/')
-    except OSError: pass
+        os.mkdir('docs/' + lang + '/codelists/')
+    except OSError:
+        pass
 
     for fname in os.listdir(dirname):
         json_file = os.path.join(dirname, fname)
-        if not fname.endswith('.json'): continue
+        if not fname.endswith('.json'):
+            continue
         with open(json_file) as fp:
             codelist_json = json.load(fp)
-            
+
         fname = fname[:-5]
-        embedded = os.path.exists(os.path.join('IATI-Codelists','xml',fname+'.xml'))
+        embedded = os.path.exists(os.path.join('IATI-Codelists', 'xml', fname + '.xml'))
         if embedded:
             github_url = get_github_url('IATI-Codelists', 'xml/{0}.xml'.format(fname))
         else:
             github_url = get_github_url('IATI-Codelists-NonEmbedded', 'xml/{0}.xml'.format(fname))
 
-        rst_filename = os.path.join(lang, 'codelists', fname+'.rst')
+        rst_filename = os.path.join(lang, 'codelists', fname + '.rst')
         with open(os.path.join('docs', rst_filename), 'w') as fp:
             jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
-            t = jinja_env.get_template(lang+'/codelist.rst')
+            t = jinja_env.get_template(lang + '/codelist.rst')
             fp.write(t.render(
                 codelist_json=codelist_json,
-                show_category_column=not all(not 'category' in x for x in codelist_json['data']),
-                show_url_column=not all(not 'url' in x for x in codelist_json['data']),
+                show_category_column=not all('category' not in x for x in codelist_json['data']),
+                show_url_column=not all('url' not in x for x in codelist_json['data']),
                 show_withdrawn=any('status' in x and x['status'] != 'active' for x in codelist_json['data']),
                 fname=fname,
                 len=len,
@@ -551,6 +568,7 @@ def codelists_to_docs(lang):
                 dedent=textwrap.dedent,
                 lang=lang).encode('utf-8'))
 
+
 def extra_extra_docs():
     """
     Copy over files from IATI-Extra-Documentation that haven't been created in
@@ -558,9 +576,11 @@ def extra_extra_docs():
 
     """
     for dirname, dirs, files in os.walk('IATI-Extra-Documentation', followlinks=True):
-        if dirname.startswith('.'): continue
+        if dirname.startswith('.'):
+            continue
         for fname in files:
-            if fname.startswith('.'): continue
+            if fname.startswith('.'):
+                continue
             if len(dirname.split(os.path.sep)) == 1:
                 rst_dirname = ''
             else:
@@ -575,22 +595,27 @@ def extra_extra_docs():
                     with open(os.path.join('docs', rst_filename), 'w') as fp:
                         fp.write(get_extra_docs(rst_filename).encode('utf-8'))
                 else:
-                    shutil.copy(os.path.join(dirname,fname), os.path.join('docs', rst_filename))
+                    shutil.copy(os.path.join(dirname, fname), os.path.join('docs', rst_filename))
+
 
 if __name__ == '__main__':
     for language in languages:
         activities = Schema2Doc('iati-activities-schema.xsd', lang=language)
         activities.output_docs('iati-activities', 'activity-standard/')
-        activities.output_schema_table('iati-activities', 'activity-standard/', output=True,
+        activities.output_schema_table(
+            'iati-activities', 'activity-standard/', output=True,
             filename='activity-standard/summary-table.rst',
-            title='Activity Standard Summary Table')
+            title='Activity Standard Summary Table'
+        )
         activities.output_overview_pages('activity-standard')
 
         orgs = Schema2Doc('iati-organisations-schema.xsd', lang=language)
         orgs.output_docs('iati-organisations', 'organisation-standard/')
-        orgs.output_schema_table('iati-organisations', 'organisation-standard/', output=True,
+        orgs.output_schema_table(
+            'iati-organisations', 'organisation-standard/', output=True,
             filename='organisation-standard/summary-table.rst',
-            title='Organisation Standard Summary Table')
+            title='Organisation Standard Summary Table'
+        )
         orgs.output_overview_pages('organisation-standard')
 
         ruleset_page(lang=language)
