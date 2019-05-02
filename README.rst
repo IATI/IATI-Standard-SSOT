@@ -21,8 +21,7 @@ Requirements:
 
 * Git
 * Unix based setup (e.g. Linux, Mac OS X) with bash etc.
-* Python 2.7
-* `python-virtualenv <http://www.virtualenv.org/en/latest/>`_ (recommended)
+* Python 3.x
 * gcc
 * Development files for libxml and libxslt e.g. libxml2-dev, libxslt-dev
 
@@ -40,7 +39,7 @@ Set up a virtual environment:
 .. code-block:: bash
 
     # Create a virtual environment (recommended)
-    virtualenv pyenv
+    python3 -m venv pyenv
 
     # Activate the virtual environment if you created one
     # This must repeated each time you open a new shell
