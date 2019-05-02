@@ -11,8 +11,8 @@ jobs:
     include:
         - stage: flake8 lint
           script: flake8 --exclude=pyenv,pyenv3 --ignore E501,E731,W504,W503
-        # - stage: test
-        #   script: ./gen.sh
+        - stage: test
+          script: ./gen.sh
 stages:
     - flake8 lint
-    # - test
+    - test
