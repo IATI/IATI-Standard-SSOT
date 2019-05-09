@@ -5,11 +5,11 @@
 [submodule "IATI-Rulesets"]
 	path = IATI-Rulesets
 	url = https://github.com/IATI/IATI-Rulesets.git
-	branch = version-2.03
+	branch = python-3-upgrade
 [submodule "IATI-Codelists"]
 	path = IATI-Codelists
 	url = https://github.com/IATI/IATI-Codelists.git
-	branch = version-2.03
+	branch = python-3-upgrade
 [submodule "IATI-Extra-Documentation"]
 	path = IATI-Extra-Documentation
 	url = https://github.com/IATI/IATI-Extra-Documentation.git
