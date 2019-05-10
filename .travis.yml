@@ -10,7 +10,7 @@ install:
 jobs:
     include:
         - stage: flake8 lint
-          script: flake8 --exclude=conf.py --ignore E501,E731,W504,W503
+          script: flake8
         - stage: test
           script: ./gen.sh
 stages:
