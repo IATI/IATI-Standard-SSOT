@@ -1,6 +1,6 @@
 pip==6.0.6
 Sphinx==1.2.3
-lxml==3.4.1
+lxml==4.3.3
 Jinja2==2.7.3
 pytz==2014.10
 python-dateutil==2.8.0
