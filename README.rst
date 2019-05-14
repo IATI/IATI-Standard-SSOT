@@ -112,6 +112,6 @@ A local version of the website (with the full IATI theme) can be generated after
    # The documentation HTML files are stored in the `docs-copy/en/_build/dirhtml` folder
    # You can navigate around your generated version of the site using a Python HTTP webserver
    cd docs-copy/en/_build/dirhtml
-   python -m SimpleHTTPServer 8000
+   python3 -m http.server
    # View the site in a browser at http://0.0.0.0:8000/
 
