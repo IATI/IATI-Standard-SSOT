@@ -1,8 +1,19 @@
-language: python
-python:
-  - "2.7"
-before_install:
-    - sudo apt-get update -qq
-    - sudo apt-get install -qq libxml2-utils
-script:
-    - ./gen.sh
+---
+dist: xenial
+language: python  language: python
+python: python: 3.7
+  - "2.7" 
+before_install: before_install:
+    - sudo apt-get update -qq     - sudo apt-get update -qq
+    - sudo apt-get install -qq libxml2-utils      - sudo apt-get install -qq libxml2-utils
+script: install:
+    - ./gen.sh      - pip install -r requirements.txt
+jobs:
+    include:
+        - stage: flake8 lint
+          script: flake8
+        - stage: test
+          script: ./gen.sh
+stages:
+    - flake8 lint
+    - test
