@@ -100,7 +100,7 @@ def ruleset_page(lang):
         fp.write(t.render(
             ruleset=ruleset,
             extra_docs=get_extra_docs(rst_filename)
-        ).encode('utf8'))
+        ))
 
 
 def ruleset_text(path):
@@ -177,7 +177,7 @@ def get_extra_docs(rst_filename):
     extra_docs_file = os.path.join('IATI-Extra-Documentation', rst_filename)
     if os.path.isfile(extra_docs_file):
         with open(extra_docs_file) as fp:
-            return fp.read().decode('utf8')
+            return fp.read()
     else:
         return ''
 
@@ -311,7 +311,7 @@ class Schema2Doc(object):
                 minOccurs=minOccurs,
                 maxOccurs=maxOccurs,
                 see_also=see_also(path + element_name, self.lang)
-            ).encode('utf8'))
+            ))
 
     def output_schema_table(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None):
         if element is None:
@@ -359,7 +359,7 @@ class Schema2Doc(object):
                     match_codelists=match_codelists,
                     ruleset_text=ruleset_text,
                     description=self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text
-                ).encode('utf8'))
+                ))
         else:
             return rows
 
@@ -385,7 +385,7 @@ class Schema2Doc(object):
             fp.write(t.render(
                 extra_docs=get_extra_docs(os.path.join(self.lang, standard, 'overview', page + '.rst')),
                 reference_pages=reference_pages
-            ).encode('utf8'))
+            ))
 
     def element_loop(self, element, path):
         """Find child elements for a given input element.
@@ -540,7 +540,7 @@ def codelists_to_docs(lang):
                 path_to_ref=path_to_ref,
                 extra_docs=get_extra_docs(rst_filename),
                 dedent=textwrap.dedent,
-                lang=lang).encode('utf-8'))
+                lang=lang))
 
 
 def extra_extra_docs():
@@ -567,7 +567,7 @@ def extra_extra_docs():
                     pass
                 if fname.endswith('.rst'):
                     with open(os.path.join('docs', rst_filename), 'w') as fp:
-                        fp.write(get_extra_docs(rst_filename).encode('utf-8'))
+                        fp.write(get_extra_docs(rst_filename))
                 else:
                     shutil.copy(os.path.join(dirname, fname), os.path.join('docs', rst_filename))
 
