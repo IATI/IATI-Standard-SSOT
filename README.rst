@@ -21,8 +21,7 @@ Requirements:
 
 * Git
 * Unix based setup (e.g. Linux, Mac OS X) with bash etc.
-* Python 2.7
-* `python-virtualenv <http://www.virtualenv.org/en/latest/>`_ (recommended)
+* Python 3.x
 * gcc
 * Development files for libxml and libxslt e.g. libxml2-dev, libxslt-dev
 
@@ -44,7 +43,7 @@ Set up a virtual environment:
 
     # Activate the virtual environment if you created one
     # This must repeated each time you open a new shell
-    source pyenv/bin/activate
+    python3 -m venv pyenv
 
     # Install python requirements
     pip install -r requirements.txt
@@ -113,6 +112,6 @@ A local version of the website (with the full IATI theme) can be generated after
    # The documentation HTML files are stored in the `docs-copy/en/_build/dirhtml` folder
    # You can navigate around your generated version of the site using a Python HTTP webserver
    cd docs-copy/en/_build/dirhtml
-   python -m SimpleHTTPServer 8000
+   python3 -m http.server
    # View the site in a browser at http://0.0.0.0:8000/
 
