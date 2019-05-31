@@ -29,17 +29,21 @@ Download this codelist
 .. list-table::
    :header-rows: 1
 
-   * - :ref:`CLv1 (Current) <codelist_api_1.04>`:
-     - :ref:`CLv2 (New) <codelist_api_1.04>`:
+   * - :ref:`CLv1 <codelist_api_1.04>`:
+     - :ref:`CLv2 <codelist_api_1.04>`:
+     - :ref:`CLv3 <codelist_api_1.04>`:
 
    * - `CSV <../downloads/clv1/codelist/{{fname}}.csv>`__
      - `CSV <../downloads/clv2/csv/{{lang}}/{{fname}}.csv>`__
+     - `CSV <../downloads/clv3/csv/{{lang}}/{{fname}}.csv>`__
 
    * - `JSON <../downloads/clv1/codelist/{{fname}}.json>`__
      - `JSON <../downloads/clv2/json/{{lang}}/{{fname}}.json>`__
+     - `JSON <../downloads/clv3/json/{{lang}}/{{fname}}.json>`__
 
    * - `XML <../downloads/clv1/codelist/{{fname}}.xml>`__
      - `XML <../downloads/clv2/xml/{{fname}}.xml>`__
+     - `XML <../downloads/clv3/xml/{{fname}}.xml>`__
 
 `GitHub Source (New XML) <{{github_url}}>`__
 
