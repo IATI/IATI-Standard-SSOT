@@ -1,6 +1,6 @@
 *.swp
 *.pyc
-pyenv
+pyenv*
 .DS_Store
 
 # Output HTML folders
