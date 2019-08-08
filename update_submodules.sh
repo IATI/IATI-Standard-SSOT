@@ -3,33 +3,26 @@
 
 timestamp=$(date +%s)
 
-for version in 1.04 1.05 2.01 2.02 2.03; do
-	# Checkout to the specified version for the SSOT directory
-	git checkout version-$version
+for version in 2.01 2.02 2.03; do
+	# fetch the latest version from the remote
+	git fetch origin version-$version
 
-	# Pull the latest code from origin for this version (i.e. Git branch) of the SSOT directory
-	git pull origin version-$version
+	# Checkout to the specified version for the SSOT directory
+	git checkout --force origin/version-$version
+
+	# Discard local changes to submodules
+	# See: https://stackoverflow.com/a/27415757/2323348
+	git submodule deinit -f .
+	git submodule update --init
 
 	# Check out a new branch to get around branch protection
 	git checkout -b update-submodules-$timestamp-$version
 
-	# Loop over each subfolder, pull the latest version and add to staging
-	for folder in IATI-Codelists IATI-Extra-Documentation IATI-Schemas IATI-Rulesets; do
-		# Enter the specified folder (which contains the submodule)
-		cd $folder
+	# Pull the latest versions of submodules
+	git submodule update --remote
 
-		# Ensure that we are on the correct branch (i.e. Git branch)
-		git checkout version-$version
-
-		# Pull the latest code from origin for this version (i.e. Git branch)
-		git pull origin version-$version
-
-		# Go back to the SSOT folder
-		cd ..
-
-		# Add the specified folder (which contains the submodule) to staging
-		git add $folder
-	done
+	# Git add submodules
+	git add IATI-Codelists IATI-Extra-Documentation IATI-Schemas IATI-Rulesets
 
 	# Commit updated submodules
 	git commit -m "Updated submodules (using script) "$version
