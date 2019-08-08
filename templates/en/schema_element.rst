@@ -16,10 +16,10 @@ Definition
 Rules
 ~~~~~
 {% for extended_type in extended_types %}
-{% if extended_type.startswith('xsd:') %}The text in this element should be of type {{extended_type}}.{% endif %}
+{% if extended_type.startswith('xsd:') %}The text in this element must be of type {{extended_type}}.{% endif %}
 {% endfor %}
 
-{% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element should be of type {{element.get('type')}}.
+{% if element.get('type') and element.get('type').startswith('xsd:') %}The text in this element must be of type {{element.get('type')}}.
 {% endif %}
 
 {% if min_occurs > 0 %}
@@ -28,15 +28,15 @@ The schema states that this element must have at least {{min_occurs}} subelement
 
 {% if minOccurs and maxOccurs %}
 {% if minOccurs=='1' and maxOccurs=='1' %}
-This element should occur once and only once (within each parent element).
+This element must occur once and only once (within each parent element).
 {% elif minOccurs=='0' and maxOccurs=='1' %}
-This element should occur no more than once (within each parent element).
+This element must occur no more than once (within each parent element).
 {% elif minOccurs=='0' and maxOccurs=='unbounded' %}
 This element may occur any number of times.
 {% elif minOccurs=='1' and maxOccurs=='unbounded' %}
-This element should occur at least once (within each parent element).
+This element must occur at least once (within each parent element).
 {% else %}
-This element should occur {{minOccurs}} to {{maxOccurs}} times.
+This element must occur {{minOccurs}} to {{maxOccurs}} times.
 {% endif %}
 {% endif %}
 
@@ -60,15 +60,18 @@ Attributes
 {% if required %}
   This attribute is required.
 
-{% endif %}{% set codelist_tuple = match_codelist(path+element_name+'/@'+attribute) %}{% if attribute_type %}  
-  This value should be of type {{attribute_type}}.
+{% endif %}{% set codelist_tuples = match_codelists(path+element_name+'/@'+attribute) %}{% if attribute_type %}
 
-{% endif %}{% if codelist_tuple[0] %}  
-  This value should be on the :doc:`{{codelist_tuple[0]}} codelist </codelists/{{codelist_tuple[0]}}>`{% if codelist_tuple[1] %}, if the relevant vocabulary is used{% endif %}.
+  This value must be of type {{attribute_type}}.
 
-{% endif %}  
-  
-  {{ '\n\n  '.join(ruleset_text(path+element_name+'/@'+attribute)) }}{% endfor %}
+{% endif %}{% for codelist_tuple in codelist_tuples %}
+  This value {% if codelist_tuple[0]|is_complete_codelist() %}must{% else %}should{% endif %} be on the :doc:`{{codelist_tuple[0]}} codelist </codelists/{{codelist_tuple[0]}}>`{% if codelist_tuple[1] %}, if the relevant vocabulary is used{% endif %}.
+
+{% endfor %}
+
+  {{ '\n\n  '.join(ruleset_text(path+element_name+'/@'+attribute)) }}
+
+{% endfor %}
 
 {% endif %}
 
