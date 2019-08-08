@@ -1,10 +1,11 @@
-pip==9.0.1
-Sphinx==1.7.0
-lxml==4.1.1
-Jinja2==2.10
-pytz==2018.3
-
+pip==19.2.1
+Sphinx==2.1.2
+lxml==4.4.0
+flake8==3.7.8
+Jinja2==2.10.1
+pytz==2019.2
+python-dateutil==2.8.0
 # These are requirements above, added here to pin versions
-docutils==0.14
-MarkupSafe==1.0
-Pygments==2.2.0
+docutils==0.15.2
+MarkupSafe==1.1.1
+Pygments==2.4.2
