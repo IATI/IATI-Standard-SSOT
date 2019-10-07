@@ -1,5 +1,5 @@
 pip==19.2.1
-Sphinx==1.6.7
+Sphinx==1.6.7  # rq.filter: <1.7.0
 lxml==4.4.0
 flake8==3.7.8
 Jinja2==2.10.1
