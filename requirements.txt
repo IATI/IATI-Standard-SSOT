@@ -3,7 +3,7 @@ Sphinx==2.2.0
 lxml==4.4.1
 flake8==3.7.8
 Jinja2==2.10.3
-pytz==2019.2
+pytz==2019.3
 python-dateutil==2.8.0
 # These are requirements above, added here to pin versions
 docutils==0.15.2
