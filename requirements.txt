@@ -1,6 +1,6 @@
 pip==19.3.1
 Sphinx==2.2.1
-lxml==4.4.1
+lxml==4.4.2
 flake8==3.7.9
 Jinja2==2.10.3
 pytz==2019.3
