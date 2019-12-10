@@ -279,11 +279,11 @@ class Schema2Doc(object):
             'extra_documentation': get_github_url('IATI-Extra-Documentation', self.lang + '/' + path + element_name + '.rst')
         }
         try:
-            os.makedirs(os.path.join('docs', self.lang, path))
+            os.makedirs(os.path.join('outputs', self.lang, path))
         except OSError:
             pass
 
-        rst_filename = os.path.join(self.lang, path, element_name + '.rst')
+        rst_filename = os.path.join(self.lang, path, element_name + '.json')
 
         children = self.element_loop(element, path)
         for child_name, child_element, child_ref_element, child_type_element, child_minOccurs, child_maxOccurs in children:
@@ -298,29 +298,38 @@ class Schema2Doc(object):
             min_occurs = int(min_occurss[0])
         else:
             min_occurs = 0
+        attributes = []
+        for attribute, attribute_type, text, required in self.attribute_loop(element):
+            attrib_path = '/'.join(path.split('/')[1:]) + element_name + '/@' + attribute
+            attributes.append({
+                'attribute': attribute,
+                'attribute_type': attribute_type,
+                'text': textwrap.dedent(text).strip().replace('\n', '\n  '),
+                'required': required,
+                'path_to_ref': path_to_ref(attrib_path),
+                'match_codelists': match_codelists(attrib_path),
+                'ruleset_text': ruleset_text(attrib_path)
+            })
 
-        with open('docs/' + rst_filename, 'w') as fp:
-            t = self.jinja_env.get_template(self.lang + '/schema_element.rst')
-            fp.write(t.render(
-                element_name=element_name,
-                element_name_underline='=' * len(element_name),
-                element=element,
-                path='/'.join(path.split('/')[1:]),  # Strip e.g. activity-standard/ from the path
-                github_urls=github_urls,
-                schema_documentation=textwrap.dedent(self.schema_documentation(element, ref_element, type_element)),
-                extended_types=element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
-                attributes=self.attribute_loop(element),
-                textwrap=textwrap,
-                match_codelists=match_codelists,
-                path_to_ref=path_to_ref,
-                ruleset_text=ruleset_text,
-                childnames=[x[0] for x in children],
-                extra_docs=get_extra_docs(rst_filename),
-                min_occurs=min_occurs,
-                minOccurs=minOccurs,
-                maxOccurs=maxOccurs,
-                see_also=see_also(path + element_name, self.lang)
-            ))
+        with open('outputs/' + rst_filename, 'w') as fp:
+            # t = self.jinja_env.get_template(self.lang + '/schema_element.rst')
+            outputdict = {
+                'element_name': element_name,
+                'element': element.get('type'),
+                'path': '/'.join(path.split('/')[1:]),  # Strip e.g. activity-standard/ from the path
+                'github_urls': github_urls,
+                'schema_documentation': textwrap.dedent(self.schema_documentation(element, ref_element, type_element)),
+                'extended_types': element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
+                'attributes': attributes,
+                'childnames': [x[0] for x in children],
+                'extra_docs': get_extra_docs(rst_filename),
+                'min_occurs': min_occurs,
+                'minOccurs': minOccurs,
+                'maxOccurs': maxOccurs,
+                'see_also': see_also(path + element_name, self.lang)
+            }
+            json.dump(outputdict, fp, indent=2)
+
 
     def output_schema_table(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None, type_element=None):
         if element is None:
@@ -359,16 +368,19 @@ class Schema2Doc(object):
             rows += self.output_schema_table(child_name, path + element.attrib['name'] + '/', child_element, minOccurs=minOccurs, maxOccurs=maxOccurs, ref_element=child_ref_element, type_element=child_type_element)
 
         if output:
-            with open(os.path.join('docs', self.lang, filename), 'w') as fp:
-                t = self.jinja_env.get_template(self.lang + '/schema_table.rst')
-                fp.write(t.render(
-                    rows=rows,
-                    title=title,
-                    root_path='/'.join(path.split('/')[1:]),  # Strip e.g. activity-standard/ from the path
-                    match_codelists=match_codelists,
-                    ruleset_text=ruleset_text,
-                    description=self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text
-                ))
+            for row in rows:
+                row['match_codelists'] = match_codelists('/'.join(path.split('/')[1:])+row['path'])
+                row['ruleset_text'] = ruleset_text(row['path'])
+
+            with open(os.path.join('outputs', self.lang, filename), 'w') as fp:
+                # t = self.jinja_env.get_template(self.lang + '/schema_table.rst')
+                outputdict = {
+                    'rows': rows,
+                    'title': title,
+                    'root_path': '/'.join(path.split('/')[1:]),  # Strip e.g. activity-standard/ from the path
+                    'description': self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text
+                }
+                json.dump(outputdict, fp, indent=2)
         else:
             return rows
 
@@ -604,7 +616,7 @@ if __name__ == '__main__':
         activities.output_docs('iati-activities', 'activity-standard/')
         activities.output_schema_table(
             'iati-activities', 'activity-standard/', output=True,
-            filename='activity-standard/summary-table.rst',
+            filename='activity-standard/summary-table.json',
             title='Activity Standard Summary Table'
         )
         activities.output_overview_pages('activity-standard')
@@ -613,7 +625,7 @@ if __name__ == '__main__':
         orgs.output_docs('iati-organisations', 'organisation-standard/')
         orgs.output_schema_table(
             'iati-organisations', 'organisation-standard/', output=True,
-            filename='organisation-standard/summary-table.rst',
+            filename='organisation-standard/summary-table.json',
             title='Organisation Standard Summary Table'
         )
         orgs.output_overview_pages('organisation-standard')
