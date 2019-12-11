@@ -12,7 +12,7 @@ jobs:
         - stage: flake8 lint
           script: flake8
         - stage: test
-          script: ./gen.sh
+          script: ./gen_rst.sh
 stages:
     - flake8 lint
     - test

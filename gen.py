@@ -3,12 +3,11 @@ import os
 import json
 import shutil
 import textwrap
-import jinja2
 from lxml import etree as ET
 from collections import defaultdict
 from iatirulesets.text import rules_text
 
-languages = ['en']
+languages = ['en', 'fr']
 
 # Define the namespaces necessary for opening schema files
 namespaces = {
@@ -88,7 +87,6 @@ standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
 
 
 def ruleset_page(lang):
-    # jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
     ruleset = {xpath: rules_text(rules, '', True) for xpath, rules in standard_ruleset.items()}
     rst_filename = os.path.join(lang, 'rulesets', 'standard-ruleset')
 
@@ -98,7 +96,6 @@ def ruleset_page(lang):
         pass
 
     with open(os.path.join('outputs', rst_filename + '.json'), 'w') as fp:
-        # t = jinja_env.get_template(lang + '/ruleset.rst')
         outputdict = {
             'ruleset': ruleset,
             'extra_docs': get_extra_docs(rst_filename + '.rst')
@@ -196,15 +193,11 @@ class Schema2Doc(object):
         Sets:
             self.tree (lxml.etree._ElementTree): Representing the input schema.
             self.tree2 (lxml.etree._ElementTree): Representing the iati-common.xsd schema.
-            self.jinja_env (jinja2.environment.Environment): The templates contained within the 'templates' folder.
             self.lang (str): The input language.
         """
         self.tree = ET.parse("./IATI-Schemas/" + schema)
         self.tree2 = ET.parse("./IATI-Schemas/iati-common.xsd")
-        self.jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
         self.lang = lang
-
-        self.jinja_env.filters['is_complete_codelist'] = is_complete_codelist
 
     def get_schema_element(self, tag_name, name_attribute):
         """Returns the xsd definition for a given element from schemas defined in `self.tree` (or `self.tree2` if nothing found).
@@ -313,7 +306,6 @@ class Schema2Doc(object):
             })
 
         with open('outputs/' + rst_filename, 'w') as fp:
-            # t = self.jinja_env.get_template(self.lang + '/schema_element.rst')
             outputdict = {
                 'element_name': element_name,
                 'element': element.get('type'),
@@ -374,7 +366,6 @@ class Schema2Doc(object):
                 row['ruleset_text'] = ruleset_text(row['path'])
 
             with open(os.path.join('outputs', self.lang, filename), 'w') as fp:
-                # t = self.jinja_env.get_template(self.lang + '/schema_table.rst')
                 outputdict = {
                     'rows': rows,
                     'title': title,
@@ -403,7 +394,6 @@ class Schema2Doc(object):
             f = lambda x: x if x.startswith('iati-organisations') else 'iati-organisations/iati-organisation/' + x
         reference_pages = [(x, '/' + standard + '/' + f(x)) for x in reference_pages]
         with open(os.path.join('outputs', self.lang, standard, 'overview', page + '.json'), 'w') as fp:
-            # t = self.jinja_env.get_template(self.lang + '/overview.rst')
             outputdict = {
                 'extra_docs': get_extra_docs(os.path.join(self.lang, standard, 'overview', page + '.rst')),
                 'reference_pages': reference_pages
@@ -575,8 +565,6 @@ def codelists_to_docs(lang):
 
 
         with open(os.path.join('outputs', rst_filename), 'w') as fp:
-            # jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
-            # t = jinja_env.get_template(lang + '/codelist.rst')
             outputdict = {
                 'codelist_json': codelist_json,
                 'show_category_column': not all('category' not in x for x in codelist_json['data']),
