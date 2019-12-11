@@ -88,21 +88,22 @@ standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
 
 
 def ruleset_page(lang):
-    jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
+    # jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
     ruleset = {xpath: rules_text(rules, '', True) for xpath, rules in standard_ruleset.items()}
-    rst_filename = os.path.join(lang, 'rulesets', 'standard-ruleset.rst')
+    rst_filename = os.path.join(lang, 'rulesets', 'standard-ruleset')
 
     try:
-        os.mkdir(os.path.join('docs', lang, 'rulesets'))
+        os.mkdir(os.path.join('outputs', lang, 'rulesets'))
     except OSError:
         pass
 
-    with open(os.path.join('docs', rst_filename), 'w') as fp:
-        t = jinja_env.get_template(lang + '/ruleset.rst')
-        fp.write(t.render(
-            ruleset=ruleset,
-            extra_docs=get_extra_docs(rst_filename)
-        ))
+    with open(os.path.join('outputs', rst_filename + '.json'), 'w') as fp:
+        # t = jinja_env.get_template(lang + '/ruleset.rst')
+        outputdict = {
+            'ruleset': ruleset,
+            'extra_docs': get_extra_docs(rst_filename + '.rst')
+        }
+        json.dump(outputdict, fp, indent=2)
 
 
 def ruleset_text(path):
@@ -387,7 +388,7 @@ class Schema2Doc(object):
     def output_overview_pages(self, standard):
         if self.lang == 'en':  # FIXME
             try:
-                os.mkdir(os.path.join('docs', self.lang, standard, 'overview'))
+                os.mkdir(os.path.join('outputs', self.lang, standard, 'overview'))
             except OSError:
                 pass
 
@@ -401,12 +402,13 @@ class Schema2Doc(object):
         else:
             f = lambda x: x if x.startswith('iati-organisations') else 'iati-organisations/iati-organisation/' + x
         reference_pages = [(x, '/' + standard + '/' + f(x)) for x in reference_pages]
-        with open(os.path.join('docs', self.lang, standard, 'overview', page + '.rst'), 'w') as fp:
-            t = self.jinja_env.get_template(self.lang + '/overview.rst')
-            fp.write(t.render(
-                extra_docs=get_extra_docs(os.path.join(self.lang, standard, 'overview', page + '.rst')),
-                reference_pages=reference_pages
-            ))
+        with open(os.path.join('outputs', self.lang, standard, 'overview', page + '.json'), 'w') as fp:
+            # t = self.jinja_env.get_template(self.lang + '/overview.rst')
+            outputdict = {
+                'extra_docs': get_extra_docs(os.path.join(self.lang, standard, 'overview', page + '.rst')),
+                'reference_pages': reference_pages
+            }
+            json.dump(outputdict, fp, indent=2)
 
     def element_loop(self, element, path):
         """Find child elements for a given input element.
@@ -544,7 +546,7 @@ class Schema2Doc(object):
 def codelists_to_docs(lang):
     dirname = 'IATI-Codelists/out/clv2/json/' + lang
     try:
-        os.mkdir('docs/' + lang + '/codelists/')
+        os.mkdir('outputs/' + lang + '/codelists/')
     except OSError:
         pass
 
@@ -562,23 +564,33 @@ def codelists_to_docs(lang):
         else:
             github_url = get_github_url('IATI-Codelists-NonEmbedded', 'xml/{0}.xml'.format(fname))
 
-        rst_filename = os.path.join(lang, 'codelists', fname + '.rst')
-        with open(os.path.join('docs', rst_filename), 'w') as fp:
-            jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
-            t = jinja_env.get_template(lang + '/codelist.rst')
-            fp.write(t.render(
-                codelist_json=codelist_json,
-                show_category_column=not all('category' not in x for x in codelist_json['data']),
-                show_url_column=not all('url' not in x for x in codelist_json['data']),
-                show_withdrawn=any('status' in x and x['status'] != 'active' for x in codelist_json['data']),
-                fname=fname,
-                len=len,
-                github_url=github_url,
-                codelist_paths=codelists_paths.get(fname),
-                path_to_ref=path_to_ref,
-                extra_docs=get_extra_docs(rst_filename),
-                dedent=textwrap.dedent,
-                lang=lang))
+        rst_filename = os.path.join(lang, 'codelists', fname + '.json')
+        code_paths = []
+        if codelists_paths.get(fname):
+            for path in codelists_paths.get(fname):
+                code_paths.append({
+                    'codelist_path': path,
+                    'path_to_ref': path_to_ref(path)
+                })
+
+
+        with open(os.path.join('outputs', rst_filename), 'w') as fp:
+            # jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
+            # t = jinja_env.get_template(lang + '/codelist.rst')
+            outputdict = {
+                'codelist_json': codelist_json,
+                'show_category_column': not all('category' not in x for x in codelist_json['data']),
+                'show_url_column': not all('url' not in x for x in codelist_json['data']),
+                'show_withdrawn': any('status' in x and x['status'] != 'active' for x in codelist_json['data']),
+                'fname': fname,
+                'len': len(codelist_json['metadata']['name']),
+                'github_url': github_url,
+                'codelist_paths': code_paths,
+                'extra_docs': get_extra_docs(rst_filename),
+                'dedent': textwrap.dedent(codelist_json['metadata']['description']) if codelist_json['metadata']['description'] else '',
+                'lang': lang
+            }
+            json.dump(outputdict, fp, indent=2)
 
 
 def extra_extra_docs():
