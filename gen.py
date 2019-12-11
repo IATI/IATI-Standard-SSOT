@@ -323,7 +323,6 @@ class Schema2Doc(object):
             }
             json.dump(outputdict, fp, indent=2)
 
-
     def output_schema_table(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None, type_element=None):
         if element is None:
             element = self.get_schema_element('element', element_name)
@@ -362,7 +361,7 @@ class Schema2Doc(object):
 
         if output:
             for row in rows:
-                row['match_codelists'] = match_codelists('/'.join(path.split('/')[1:])+row['path'])
+                row['match_codelists'] = match_codelists('/'.join(path.split('/')[1:]) + row['path'])
                 row['ruleset_text'] = ruleset_text(row['path'])
 
             with open(os.path.join('outputs', self.lang, filename), 'w') as fp:
@@ -562,7 +561,6 @@ def codelists_to_docs(lang):
                     'codelist_path': path,
                     'path_to_ref': path_to_ref(path)
                 })
-
 
         with open(os.path.join('outputs', rst_filename), 'w') as fp:
             outputdict = {
