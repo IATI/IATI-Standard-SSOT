@@ -174,7 +174,7 @@ def path_to_ref(path):
 
 
 def get_extra_docs(rst_filename):
-    extra_docs_file = os.path.join('IATI-Extra-Documentation', rst_filename)
+    extra_docs_file = os.path.join('IATI-Extra-Documentation', rst_filename[:len(rst_filename)-5] + '.rst')
     if os.path.isfile(extra_docs_file):
         with open(extra_docs_file) as fp:
             return fp.read()
@@ -283,15 +283,6 @@ class Schema2Doc(object):
         for child_name, child_element, child_ref_element, child_type_element, child_minOccurs, child_maxOccurs in children:
             self.output_docs(child_name, path + element.attrib['name'] + '/', child_element, child_minOccurs, child_maxOccurs, child_ref_element, child_type_element)
 
-        min_occurss = element.xpath('xsd:complexType/xsd:choice/@minOccur', namespaces=namespaces)
-        # Note that this min_occurs is different to the python variables
-        # minOccurs and maxOccurs, because this is read from a choice element,
-        # whereas those are read from the individual element definitions (only
-        # possible within a sequence element)
-        if min_occurss:
-            min_occurs = int(min_occurss[0])
-        else:
-            min_occurs = 0
         attributes = []
         for attribute, attribute_type, text, required in self.attribute_loop(element):
             attrib_path = '/'.join(path.split('/')[1:]) + element_name + '/@' + attribute
@@ -300,23 +291,22 @@ class Schema2Doc(object):
                 'attribute_type': attribute_type,
                 'text': textwrap.dedent(text).strip().replace('\n', '\n  '),
                 'required': required,
-                'path_to_ref': path_to_ref(attrib_path),
                 'match_codelists': match_codelists(attrib_path),
+                'path': attrib_path,
                 'ruleset_text': ruleset_text(attrib_path)
             })
 
         with open('outputs/' + rst_filename, 'w') as fp:
             outputdict = {
                 'element_name': element_name,
-                'element': element.get('type'),
+                'element_type': element.get('type'),
                 'path': '/'.join(path.split('/')[1:]),  # Strip e.g. activity-standard/ from the path
                 'github_urls': github_urls,
-                'schema_documentation': textwrap.dedent(self.schema_documentation(element, ref_element, type_element)),
+                'schema_documentation': self.schema_documentation(element, ref_element, type_element),
                 'extended_types': element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
                 'attributes': attributes,
                 'childnames': [x[0] for x in children],
                 'extra_docs': get_extra_docs(rst_filename),
-                'min_occurs': min_occurs,
                 'minOccurs': minOccurs,
                 'maxOccurs': maxOccurs,
                 'see_also': see_also(path + element_name, self.lang)
@@ -554,13 +544,6 @@ def codelists_to_docs(lang):
             github_url = get_github_url('IATI-Codelists-NonEmbedded', 'xml/{0}.xml'.format(fname))
 
         rst_filename = os.path.join(lang, 'codelists', fname + '.json')
-        code_paths = []
-        if codelists_paths.get(fname):
-            for path in codelists_paths.get(fname):
-                code_paths.append({
-                    'codelist_path': path,
-                    'path_to_ref': path_to_ref(path)
-                })
 
         with open(os.path.join('outputs', rst_filename), 'w') as fp:
             outputdict = {
@@ -568,12 +551,9 @@ def codelists_to_docs(lang):
                 'show_category_column': not all('category' not in x for x in codelist_json['data']),
                 'show_url_column': not all('url' not in x for x in codelist_json['data']),
                 'show_withdrawn': any('status' in x and x['status'] != 'active' for x in codelist_json['data']),
-                'fname': fname,
-                'len': len(codelist_json['metadata']['name']),
                 'github_url': github_url,
-                'codelist_paths': code_paths,
+                'codelist_paths': codelists_paths.get(fname),
                 'extra_docs': get_extra_docs(rst_filename),
-                'dedent': textwrap.dedent(codelist_json['metadata']['description']) if codelist_json['metadata']['description'] else '',
                 'lang': lang
             }
             json.dump(outputdict, fp, indent=2)
