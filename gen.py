@@ -7,6 +7,12 @@ from lxml import etree as ET
 from collections import defaultdict
 from iatirulesets.text import rules_text
 
+from docutils.utils import new_document
+from docutils.frontend import OptionParser
+from sphinx.application import Sphinx
+from sphinx.parsers import RSTParser
+
+
 languages = ['en', 'fr']
 
 # Define the namespaces necessary for opening schema files
@@ -174,10 +180,25 @@ def path_to_ref(path):
 
 
 def get_extra_docs(rst_filename):
-    extra_docs_file = os.path.join('IATI-Extra-Documentation', rst_filename[:len(rst_filename)-5] + '.rst')
+    rst_root = os.path.splitext(rst_filename)[0]
+    extra_docs_file = os.path.join('IATI-Extra-Documentation', rst_root + '.rst')
     if os.path.isfile(extra_docs_file):
+        app = Sphinx(
+            srcdir="./",
+            confdir="./",
+            outdir="./",
+            doctreedir="./",
+            buildername=None
+        )
+        parser = RSTParser(app=app)
+        settings = OptionParser().get_default_values()
+        settings.tab_width = 8
+        settings.pep_references = False
+        settings.rfc_references = False
+        document = new_document("./outputs", settings)
         with open(extra_docs_file) as fp:
-            return fp.read()
+            import pdb; pdb.set_trace()
+            return parser.parse(fp.read(), document)
     else:
         return ''
 
