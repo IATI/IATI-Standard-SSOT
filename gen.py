@@ -9,7 +9,7 @@ from iatirulesets.text import rules_text
 
 from docutils.frontend import OptionParser
 from docutils.parsers.rst import Parser
-from docutils.utils import new_document
+from docutils.utils import new_document, SystemMessage
 
 
 languages = ['en', 'fr']
@@ -194,7 +194,11 @@ def get_extra_docs(rst_filename):
         with open(extra_docs_file, "r") as extra_docs_f:
             extra_docs_text = extra_docs_f.read().replace("literalinclude", "include")
             extra_docs_text = extra_docs_text.replace(":language: xml\n\t", "")
-            parser.parse(extra_docs_text, document)
+            extra_docs_text = extra_docs_text.replace(":language: xml\n", "\n")  # needed for organisation-standard/iati-organisations/iati-organisation/document-link/description/narrative
+            try:
+                parser.parse(extra_docs_text, document)
+            except SystemMessage:
+                return document.astext()  # needed for activity-standard/iati-activities/iati-activity/activity-website
             return document.astext()
     else:
         return ''
