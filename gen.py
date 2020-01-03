@@ -201,8 +201,7 @@ def get_extra_docs(rst_filename):
             parser.parse(extra_docs_text, document)
             # Remove system messages
             for node in document.traverse(nodes.system_message):
-                if node['level'] < settings.report_level:
-                    node.parent.remove(node)
+                node.parent.remove(node)
             return document.astext()
     else:
         return ''
