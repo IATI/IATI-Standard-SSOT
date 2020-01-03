@@ -7,10 +7,9 @@ from lxml import etree as ET
 from collections import defaultdict
 from iatirulesets.text import rules_text
 
-from docutils.utils import new_document
 from docutils.frontend import OptionParser
-from sphinx.application import Sphinx
-from sphinx.parsers import RSTParser
+from docutils.parsers.rst import Parser
+from docutils.utils import new_document
 
 
 languages = ['en', 'fr']
@@ -183,22 +182,20 @@ def get_extra_docs(rst_filename):
     rst_root = os.path.splitext(rst_filename)[0]
     extra_docs_file = os.path.join('IATI-Extra-Documentation', rst_root + '.rst')
     if os.path.isfile(extra_docs_file):
-        app = Sphinx(
-            srcdir="./",
-            confdir="./",
-            outdir="./",
-            doctreedir="./",
-            buildername=None
-        )
-        parser = RSTParser(app=app)
+        parser = Parser()
         settings = OptionParser().get_default_values()
         settings.tab_width = 8
         settings.pep_references = False
         settings.rfc_references = False
-        document = new_document("./outputs", settings)
-        with open(extra_docs_file) as fp:
-            import pdb; pdb.set_trace()
-            return parser.parse(fp.read(), document)
+        settings.file_insertion_enabled = True
+        settings.syntax_highlight = False
+        settings.raw_enabled = True
+        document = new_document(extra_docs_file, settings)
+        with open(extra_docs_file, "r") as extra_docs_f:
+            extra_docs_text = extra_docs_f.read().replace("literalinclude", "include")
+            extra_docs_text = extra_docs_text.replace(":language: xml\n\t", "")
+            parser.parse(extra_docs_text, document)
+            return document.astext()
     else:
         return ''
 
