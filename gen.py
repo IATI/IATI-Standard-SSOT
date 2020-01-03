@@ -7,9 +7,10 @@ from lxml import etree as ET
 from collections import defaultdict
 from iatirulesets.text import rules_text
 
-from docutils.frontend import OptionParser
+from docutils import nodes
 from docutils.parsers.rst import Parser
-from docutils.utils import new_document, SystemMessage
+from docutils.frontend import OptionParser
+from docutils.utils import new_document
 
 
 languages = ['en', 'fr']
@@ -190,15 +191,18 @@ def get_extra_docs(rst_filename):
         settings.file_insertion_enabled = True
         settings.syntax_highlight = False
         settings.raw_enabled = True
+        settings.halt_level = 5
+        settings.report_level = 5
         document = new_document(extra_docs_file, settings)
         with open(extra_docs_file, "r") as extra_docs_f:
             extra_docs_text = extra_docs_f.read().replace("literalinclude", "include")
             extra_docs_text = extra_docs_text.replace(":language: xml\n\t", "")
             extra_docs_text = extra_docs_text.replace(":language: xml\n", "\n")  # needed for organisation-standard/iati-organisations/iati-organisation/document-link/description/narrative
-            try:
-                parser.parse(extra_docs_text, document)
-            except SystemMessage:
-                return document.astext()  # needed for activity-standard/iati-activities/iati-activity/activity-website
+            parser.parse(extra_docs_text, document)
+            # Remove system messages
+            for node in document.traverse(nodes.system_message):
+                if node['level'] < settings.report_level:
+                    node.parent.remove(node)
             return document.astext()
     else:
         return ''
