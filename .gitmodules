@@ -14,3 +14,6 @@
 	path = IATI-Extra-Documentation
 	url = https://github.com/IATI/IATI-Extra-Documentation.git
 	branch = version-2.03
+[submodule "IATI-Guidance"]
+	path = IATI-Guidance
+	url = https://github.com/IATI/IATI-Guidance.git

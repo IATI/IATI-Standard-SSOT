@@ -193,6 +193,7 @@ def get_extra_docs(rst_filename):
         settings.raw_enabled = True
         settings.halt_level = 5
         settings.report_level = 5
+        settings.character_level_inline_markup = False
         document = new_document(extra_docs_file, settings)
         with open(extra_docs_file, "r") as extra_docs_f:
             extra_docs_text = extra_docs_f.read().replace("literalinclude", "include")
@@ -591,6 +592,27 @@ def extra_extra_docs():
 
     """
     for dirname, dirs, files in os.walk('IATI-Extra-Documentation', followlinks=True):
+        if dirname.startswith('.'):
+            continue
+        for fname in files:
+            if fname.startswith('.'):
+                continue
+            if len(dirname.split(os.path.sep)) == 1:
+                rst_dirname = ''
+            else:
+                rst_dirname = os.path.join(*dirname.split(os.path.sep)[1:])
+            rst_filename = os.path.join(rst_dirname, fname)
+            if not os.path.exists(os.path.join('docs', rst_filename)):
+                try:
+                    os.makedirs(os.path.join('docs', rst_dirname))
+                except OSError:
+                    pass
+                if fname.endswith('.rst'):
+                    with open(os.path.join('docs', rst_filename), 'w') as fp:
+                        fp.write(get_extra_docs(rst_filename))
+                else:
+                    shutil.copy(os.path.join(dirname, fname), os.path.join('docs', rst_filename))
+    for dirname, dirs, files in os.walk('IATI-Guidance', followlinks=True):
         if dirname.startswith('.'):
             continue
         for fname in files:
