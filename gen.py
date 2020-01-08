@@ -179,9 +179,9 @@ def path_to_ref(path):
     return path.replace('//', '_').replace('@', '.')
 
 
-def get_extra_docs(rst_filename):
+def get_extra_docs(rst_filename, source_repository='IATI-Extra-Documentation'):
     rst_root = os.path.splitext(rst_filename)[0]
-    extra_docs_file = os.path.join('IATI-Extra-Documentation', rst_root + '.rst')
+    extra_docs_file = os.path.join(source_repository, rst_root + '.rst')
     if os.path.isfile(extra_docs_file):
         parser = Parser()
         settings = OptionParser().get_default_values()
@@ -602,16 +602,20 @@ def extra_extra_docs():
             else:
                 rst_dirname = os.path.join(*dirname.split(os.path.sep)[1:])
             rst_filename = os.path.join(rst_dirname, fname)
-            if not os.path.exists(os.path.join('docs', rst_filename)):
+            if fname.endswith('.rst'):
+                json_filename = os.path.join(rst_dirname, fname[:-3]+'json')
+            else:
+                json_filename = os.path.join(rst_dirname, fname)
+            if not os.path.exists(os.path.join('outputs', json_filename)):
                 try:
-                    os.makedirs(os.path.join('docs', rst_dirname))
+                    os.makedirs(os.path.join('outputs', rst_dirname))
                 except OSError:
                     pass
                 if fname.endswith('.rst'):
-                    with open(os.path.join('docs', rst_filename), 'w') as fp:
-                        fp.write(get_extra_docs(rst_filename))
+                    with open(os.path.join('outputs', json_filename), 'w') as fp:
+                        json.dump({'extra_docs':get_extra_docs(rst_filename)}, fp, indent=2)
                 else:
-                    shutil.copy(os.path.join(dirname, fname), os.path.join('docs', rst_filename))
+                    shutil.copy(os.path.join(dirname, fname), os.path.join('outputs', json_filename))
     for dirname, dirs, files in os.walk('IATI-Guidance', followlinks=True):
         if dirname.startswith('.'):
             continue
@@ -623,16 +627,20 @@ def extra_extra_docs():
             else:
                 rst_dirname = os.path.join(*dirname.split(os.path.sep)[1:])
             rst_filename = os.path.join(rst_dirname, fname)
-            if not os.path.exists(os.path.join('docs', rst_filename)):
+            if fname.endswith('.rst'):
+                json_filename = os.path.join(rst_dirname, fname[:-3]+'json')
+            else:
+                json_filename = os.path.join(rst_dirname, fname)
+            if not os.path.exists(os.path.join('outputs', json_filename)):
                 try:
-                    os.makedirs(os.path.join('docs', rst_dirname))
+                    os.makedirs(os.path.join('outputs', rst_dirname))
                 except OSError:
                     pass
                 if fname.endswith('.rst'):
-                    with open(os.path.join('docs', rst_filename), 'w') as fp:
-                        fp.write(get_extra_docs(rst_filename))
+                    with open(os.path.join('outputs', json_filename), 'w') as fp:
+                        json.dump({'extra_docs':get_extra_docs(rst_filename, 'IATI-Guidance')}, fp, indent=2)
                 else:
-                    shutil.copy(os.path.join(dirname, fname), os.path.join('docs', rst_filename))
+                    shutil.copy(os.path.join(dirname, fname), os.path.join('outputs', json_filename))
 
 
 if __name__ == '__main__':
