@@ -12,7 +12,7 @@ from docutils.parsers.rst import Parser
 from docutils.frontend import OptionParser
 from docutils.utils import new_document
 
-
+OUTPUT_DIRECTORY = 'outputs/version-2.03'
 languages = ['en', 'fr']
 
 # Define the namespaces necessary for opening schema files
