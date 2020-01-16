@@ -97,11 +97,11 @@ def ruleset_page(lang):
     rst_filename = os.path.join(lang, 'rulesets', 'standard-ruleset')
 
     try:
-        os.mkdir(os.path.join('outputs', lang, 'rulesets'))
+        os.mkdir(os.path.join(OUTPUT_DIRECTORY, lang, 'rulesets'))
     except OSError:
         pass
 
-    with open(os.path.join('outputs', rst_filename + '.json'), 'w') as fp:
+    with open(os.path.join(OUTPUT_DIRECTORY, rst_filename + '.json'), 'w') as fp:
         outputdict = {
             'ruleset': ruleset,
             'extra_docs': get_extra_docs(rst_filename + '.rst')
@@ -299,7 +299,7 @@ class Schema2Doc(object):
             'extra_documentation': get_github_url('IATI-Extra-Documentation', self.lang + '/' + path + element_name + '.rst')
         }
         try:
-            os.makedirs(os.path.join('outputs', self.lang, path))
+            os.makedirs(os.path.join(OUTPUT_DIRECTORY, self.lang, path))
         except OSError:
             pass
 
@@ -322,7 +322,7 @@ class Schema2Doc(object):
                 'ruleset_text': ruleset_text(attrib_path)
             })
 
-        with open('outputs/' + rst_filename, 'w') as fp:
+        with open(OUTPUT_DIRECTORY + '/' + rst_filename, 'w') as fp:
             outputdict = {
                 'element_name': element_name,
                 'element_type': element.get('type'),
@@ -380,7 +380,7 @@ class Schema2Doc(object):
                 row['match_codelists'] = match_codelists('/'.join(path.split('/')[1:]) + row['path'])
                 row['ruleset_text'] = ruleset_text(row['path'])
 
-            with open(os.path.join('outputs', self.lang, filename), 'w') as fp:
+            with open(os.path.join(OUTPUT_DIRECTORY, self.lang, filename), 'w') as fp:
                 outputdict = {
                     'rows': rows,
                     'title': title,
@@ -394,7 +394,7 @@ class Schema2Doc(object):
     def output_overview_pages(self, standard):
         if self.lang == 'en':  # FIXME
             try:
-                os.mkdir(os.path.join('outputs', self.lang, standard, 'overview'))
+                os.mkdir(os.path.join(OUTPUT_DIRECTORY, self.lang, standard, 'overview'))
             except OSError:
                 pass
 
@@ -408,7 +408,7 @@ class Schema2Doc(object):
         else:
             f = lambda x: x if x.startswith('iati-organisations') else 'iati-organisations/iati-organisation/' + x
         reference_pages = [(x, '/' + standard + '/' + f(x)) for x in reference_pages]
-        with open(os.path.join('outputs', self.lang, standard, 'overview', page + '.json'), 'w') as fp:
+        with open(os.path.join(OUTPUT_DIRECTORY, self.lang, standard, 'overview', page + '.json'), 'w') as fp:
             outputdict = {
                 'extra_docs': get_extra_docs(os.path.join(self.lang, standard, 'overview', page + '.rst')),
                 'reference_pages': reference_pages
@@ -551,7 +551,7 @@ class Schema2Doc(object):
 def codelists_to_docs(lang):
     dirname = 'IATI-Codelists/out/clv2/json/' + lang
     try:
-        os.mkdir('outputs/' + lang + '/codelists/')
+        os.mkdir(OUTPUT_DIRECTORY + '/' + lang + '/codelists/')
     except OSError:
         pass
 
@@ -571,7 +571,7 @@ def codelists_to_docs(lang):
 
         rst_filename = os.path.join(lang, 'codelists', fname + '.json')
 
-        with open(os.path.join('outputs', rst_filename), 'w') as fp:
+        with open(os.path.join(OUTPUT_DIRECTORY, rst_filename), 'w') as fp:
             outputdict = {
                 'codelist_json': codelist_json,
                 'show_category_column': not all('category' not in x for x in codelist_json['data']),
@@ -606,16 +606,16 @@ def extra_extra_docs():
                 json_filename = os.path.join(rst_dirname, fname[:-3]+'json')
             else:
                 json_filename = os.path.join(rst_dirname, fname)
-            if not os.path.exists(os.path.join('outputs', json_filename)):
+            if not os.path.exists(os.path.join(OUTPUT_DIRECTORY, json_filename)):
                 try:
-                    os.makedirs(os.path.join('outputs', rst_dirname))
+                    os.makedirs(os.path.join(OUTPUT_DIRECTORY, rst_dirname))
                 except OSError:
                     pass
                 if fname.endswith('.rst'):
-                    with open(os.path.join('outputs', json_filename), 'w') as fp:
+                    with open(os.path.join(OUTPUT_DIRECTORY, json_filename), 'w') as fp:
                         json.dump({'extra_docs':get_extra_docs(rst_filename)}, fp, indent=2)
                 else:
-                    shutil.copy(os.path.join(dirname, fname), os.path.join('outputs', json_filename))
+                    shutil.copy(os.path.join(dirname, fname), os.path.join(OUTPUT_DIRECTORY, json_filename))
     for dirname, dirs, files in os.walk('IATI-Guidance', followlinks=True):
         if dirname.startswith('.'):
             continue
@@ -631,16 +631,16 @@ def extra_extra_docs():
                 json_filename = os.path.join(rst_dirname, fname[:-3]+'json')
             else:
                 json_filename = os.path.join(rst_dirname, fname)
-            if not os.path.exists(os.path.join('outputs', json_filename)):
+            if not os.path.exists(os.path.join(OUTPUT_DIRECTORY, json_filename)):
                 try:
-                    os.makedirs(os.path.join('outputs', rst_dirname))
+                    os.makedirs(os.path.join(OUTPUT_DIRECTORY, rst_dirname))
                 except OSError:
                     pass
                 if fname.endswith('.rst'):
-                    with open(os.path.join('outputs', json_filename), 'w') as fp:
+                    with open(os.path.join(OUTPUT_DIRECTORY, json_filename), 'w') as fp:
                         json.dump({'extra_docs':get_extra_docs(rst_filename, 'IATI-Guidance')}, fp, indent=2)
                 else:
-                    shutil.copy(os.path.join(dirname, fname), os.path.join('outputs', json_filename))
+                    shutil.copy(os.path.join(dirname, fname), os.path.join(OUTPUT_DIRECTORY, json_filename))
 
 
 if __name__ == '__main__':
