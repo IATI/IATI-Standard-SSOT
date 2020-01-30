@@ -330,12 +330,12 @@ class Schema2Doc(object):
                 'github_urls': github_urls,
                 'schema_documentation': self.schema_documentation(element, ref_element, type_element),
                 'extended_types': element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces),
+                'ruleset': ruleset_text('/'.join(path.split('/')[1:]) + element_name),
                 'attributes': attributes,
                 'childnames': [x[0] for x in children],
                 'extra_docs': get_extra_docs(rst_filename),
                 'minOccurs': minOccurs,
                 'maxOccurs': maxOccurs,
-                'see_also': see_also(path + element_name, self.lang)
             }
             json.dump(outputdict, fp, indent=2)
 
@@ -592,7 +592,7 @@ def extra_extra_docs():
 
     """
     for dirname, dirs, files in os.walk('IATI-Extra-Documentation', followlinks=True):
-        if dirname.startswith('.'):
+        if dirname.startswith('.') or 'overview' in dirname:
             continue
         for fname in files:
             if fname.startswith('.'):
@@ -638,7 +638,7 @@ def extra_extra_docs():
                     pass
                 if fname.endswith('.rst'):
                     with open(os.path.join(OUTPUT_DIRECTORY, json_filename), 'w') as fp:
-                        json.dump({'extra_docs':get_extra_docs(rst_filename, 'IATI-Guidance')}, fp, indent=2)
+                        json.dump({'guidance_page':get_extra_docs(rst_filename, 'IATI-Guidance')}, fp, indent=2)
                 else:
                     shutil.copy(os.path.join(dirname, fname), os.path.join(OUTPUT_DIRECTORY, json_filename))
 
@@ -652,7 +652,7 @@ if __name__ == '__main__':
             filename='activity-standard/summary-table.json',
             title='Activity Standard Summary Table'
         )
-        activities.output_overview_pages('activity-standard')
+        # activities.output_overview_pages('activity-standard')
 
         orgs = Schema2Doc('iati-organisations-schema.xsd', lang=language)
         orgs.output_docs('iati-organisations', 'organisation-standard/')
@@ -661,7 +661,7 @@ if __name__ == '__main__':
             filename='organisation-standard/summary-table.json',
             title='Organisation Standard Summary Table'
         )
-        orgs.output_overview_pages('organisation-standard')
+        # orgs.output_overview_pages('organisation-standard')
 
         ruleset_page(lang=language)
         codelists_to_docs(lang=language)
