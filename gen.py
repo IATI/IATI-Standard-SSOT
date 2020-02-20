@@ -13,6 +13,7 @@ from docutils.frontend import OptionParser
 from docutils.utils import new_document
 
 OUTPUT_DIRECTORY = 'outputs/version-2.03'
+EXTRA_DOC_PAGES = ['activity-standard.rst', 'codelists.rst', 'organisation-standard.rst', 'rulesets.rst', 'codelist-api.rst', 'codelist-management.rst']
 languages = ['en', 'fr']
 
 # Define the namespaces necessary for opening schema files
@@ -585,62 +586,94 @@ def codelists_to_docs(lang):
             json.dump(outputdict, fp, indent=2)
 
 
-def extra_extra_docs():
+def extra_documentation_pages():
     """
-    Copy over files from IATI-Extra-Documentation that haven't been created in
-    the docs folder by another function.
-
+    Copy Extra-Documentation and Guidance pages that are used in the Reference section of iatistandard.org.
     """
     for dirname, dirs, files in os.walk('IATI-Extra-Documentation', followlinks=True):
-        if dirname.startswith('.') or 'overview' in dirname:
-            continue
         for fname in files:
-            if fname.startswith('.'):
-                continue
-            if len(dirname.split(os.path.sep)) == 1:
-                rst_dirname = ''
-            else:
-                rst_dirname = os.path.join(*dirname.split(os.path.sep)[1:])
-            rst_filename = os.path.join(rst_dirname, fname)
-            if fname.endswith('.rst'):
-                json_filename = os.path.join(rst_dirname, fname[:-3]+'json')
-            else:
-                json_filename = os.path.join(rst_dirname, fname)
-            if not os.path.exists(os.path.join(OUTPUT_DIRECTORY, json_filename)):
-                try:
-                    os.makedirs(os.path.join(OUTPUT_DIRECTORY, rst_dirname))
-                except OSError:
-                    pass
-                if fname.endswith('.rst'):
-                    with open(os.path.join(OUTPUT_DIRECTORY, json_filename), 'w') as fp:
-                        json.dump({'extra_docs':get_extra_docs(rst_filename)}, fp, indent=2)
-                else:
-                    shutil.copy(os.path.join(dirname, fname), os.path.join(OUTPUT_DIRECTORY, json_filename))
-    for dirname, dirs, files in os.walk('IATI-Guidance', followlinks=True):
-        if dirname.startswith('.'):
-            continue
+            if fname in EXTRA_DOC_PAGES:
+                create_documentation_json(dirname, fname)
+    create_documentation_json('IATI-Guidance/en', 'upgrades.rst', 'IATI-Guidance')
+    for dirname, dirs, files in os.walk('IATI-Guidance/en/upgrades', followlinks=True):
         for fname in files:
-            if fname.startswith('.'):
-                continue
-            if len(dirname.split(os.path.sep)) == 1:
-                rst_dirname = ''
-            else:
-                rst_dirname = os.path.join(*dirname.split(os.path.sep)[1:])
-            rst_filename = os.path.join(rst_dirname, fname)
-            if fname.endswith('.rst'):
-                json_filename = os.path.join(rst_dirname, fname[:-3]+'json')
-            else:
-                json_filename = os.path.join(rst_dirname, fname)
-            if not os.path.exists(os.path.join(OUTPUT_DIRECTORY, json_filename)):
-                try:
-                    os.makedirs(os.path.join(OUTPUT_DIRECTORY, rst_dirname))
-                except OSError:
-                    pass
-                if fname.endswith('.rst'):
-                    with open(os.path.join(OUTPUT_DIRECTORY, json_filename), 'w') as fp:
-                        json.dump({'guidance_page':get_extra_docs(rst_filename, 'IATI-Guidance')}, fp, indent=2)
-                else:
-                    shutil.copy(os.path.join(dirname, fname), os.path.join(OUTPUT_DIRECTORY, json_filename))
+            create_documentation_json(dirname, fname, 'IATI-Guidance')
+
+
+def create_documentation_json(dirname, fname, flag='IATI-Extra-Documentation'):
+    if len(dirname.split(os.path.sep))==1:
+        directory_name = ''
+    else:
+        directory_name = os.path.join(*dirname.split(os.path.sep)[1:])
+    rst_filename = os.path.join(directory_name, fname)
+    json_filename = os.path.join(directory_name, fname[:-3]+'json')
+    if not os.path.exists(os.path.join(OUTPUT_DIRECTORY, json_filename)):
+        try:
+            os.makedirs(os.path.join(OUTPUT_DIRECTORY, directory_name))
+        except OSError:
+            pass
+        if fname.endswith('.rst'):
+            with open(os.path.join(OUTPUT_DIRECTORY, json_filename), 'w') as fp:
+                json.dump({'extra_docs': get_extra_docs(rst_filename, flag)}, fp, indent=2)
+        else:
+            shutil.copy(os.path.join(dirname, fname), os.path.join(OUTPUT_DIRECTORY, json_filename))
+
+# def extra_extra_docs():
+#     """
+#     Copy over files from IATI-Extra-Documentation that haven't been created in
+#     the docs folder by another function.
+#
+#     """
+#     for dirname, dirs, files in os.walk('IATI-Extra-Documentation', followlinks=True):
+#         if dirname.startswith('.') or 'overview' in dirname:
+#             continue
+#         for fname in files:
+#             if fname.startswith('.'):
+#                 continue
+#             if len(dirname.split(os.path.sep)) == 1:
+#                 rst_dirname = ''
+#             else:
+#                 rst_dirname = os.path.join(*dirname.split(os.path.sep)[1:])
+#             rst_filename = os.path.join(rst_dirname, fname)
+#             if fname.endswith('.rst'):
+#                 json_filename = os.path.join(rst_dirname, fname[:-3]+'json')
+#             else:
+#                 json_filename = os.path.join(rst_dirname, fname)
+#             if not os.path.exists(os.path.join(OUTPUT_DIRECTORY, json_filename)):
+#                 try:
+#                     os.makedirs(os.path.join(OUTPUT_DIRECTORY, rst_dirname))
+#                 except OSError:
+#                     pass
+#                 if fname.endswith('.rst'):
+#                     with open(os.path.join(OUTPUT_DIRECTORY, json_filename), 'w') as fp:
+#                         json.dump({'extra_docs':get_extra_docs(rst_filename)}, fp, indent=2)
+#                 else:
+#                     shutil.copy(os.path.join(dirname, fname), os.path.join(OUTPUT_DIRECTORY, json_filename))
+#     for dirname, dirs, files in os.walk('IATI-Guidance', followlinks=True):
+#         if dirname.startswith('.'):
+#             continue
+#         for fname in files:
+#             if fname.startswith('.'):
+#                 continue
+#             if len(dirname.split(os.path.sep)) == 1:
+#                 rst_dirname = ''
+#             else:
+#                 rst_dirname = os.path.join(*dirname.split(os.path.sep)[1:])
+#             rst_filename = os.path.join(rst_dirname, fname)
+#             if fname.endswith('.rst'):
+#                 json_filename = os.path.join(rst_dirname, fname[:-3]+'json')
+#             else:
+#                 json_filename = os.path.join(rst_dirname, fname)
+#             if not os.path.exists(os.path.join(OUTPUT_DIRECTORY, json_filename)):
+#                 try:
+#                     os.makedirs(os.path.join(OUTPUT_DIRECTORY, rst_dirname))
+#                 except OSError:
+#                     pass
+#                 if fname.endswith('.rst'):
+#                     with open(os.path.join(OUTPUT_DIRECTORY, json_filename), 'w') as fp:
+#                         json.dump({'guidance_page':get_extra_docs(rst_filename, 'IATI-Guidance')}, fp, indent=2)
+#                 else:
+#                     shutil.copy(os.path.join(dirname, fname), os.path.join(OUTPUT_DIRECTORY, json_filename))
 
 
 if __name__ == '__main__':
@@ -665,4 +698,4 @@ if __name__ == '__main__':
 
         ruleset_page(lang=language)
         codelists_to_docs(lang=language)
-    extra_extra_docs()
+    extra_documentation_pages()
