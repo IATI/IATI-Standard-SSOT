@@ -13,7 +13,7 @@ from docutils.frontend import OptionParser
 from docutils.utils import new_document
 
 OUTPUT_DIRECTORY = 'outputs/version-2.03'
-EXTRA_DOC_PAGES = ['activity-standard.rst', 'codelists.rst', 'organisation-standard.rst', 'rulesets.rst', 'codelist-api.rst', 'codelist-management.rst']
+EXTRA_DOC_PAGES = ['schema.rst', 'activity-standard.rst', 'codelists.rst', 'organisation-standard.rst', 'rulesets.rst', 'standard_ruleset.rst', 'ruleset-development.rst']
 languages = ['en', 'fr']
 
 # Define the namespaces necessary for opening schema files
@@ -593,14 +593,16 @@ def extra_documentation_pages():
     for dirname, dirs, files in os.walk('IATI-Extra-Documentation', followlinks=True):
         for fname in files:
             if fname in EXTRA_DOC_PAGES:
-                create_documentation_json(dirname, fname)
-    create_documentation_json('IATI-Guidance/en', 'upgrades.rst', 'IATI-Guidance')
+                create_documentation_json(dirname, fname, 'IATI-Extra-Documentation', OUTPUT_DIRECTORY)
+            elif fname=='codelist-management.rst':
+                create_documentation_json(dirname, fname, 'IATI-Extra-Documentation')
+    create_documentation_json('IATI-Guidance/en', 'upgrades.rst')
     for dirname, dirs, files in os.walk('IATI-Guidance/en/upgrades', followlinks=True):
         for fname in files:
-            create_documentation_json(dirname, fname, 'IATI-Guidance')
+            create_documentation_json(dirname, fname)
 
 
-def create_documentation_json(dirname, fname, flag='IATI-Extra-Documentation'):
+def create_documentation_json(dirname, fname, flag='IATI-Guidance', out='outputs/'):
     if len(dirname.split(os.path.sep))==1:
         directory_name = ''
     else:
@@ -609,14 +611,13 @@ def create_documentation_json(dirname, fname, flag='IATI-Extra-Documentation'):
     json_filename = os.path.join(directory_name, fname[:-3]+'json')
     if not os.path.exists(os.path.join(OUTPUT_DIRECTORY, json_filename)):
         try:
-            os.makedirs(os.path.join(OUTPUT_DIRECTORY, directory_name))
+            os.makedirs(os.path.join(out, directory_name))
         except OSError:
             pass
         if fname.endswith('.rst'):
-            with open(os.path.join(OUTPUT_DIRECTORY, json_filename), 'w') as fp:
+            with open(os.path.join(out, json_filename), 'w') as fp:
                 json.dump({'extra_docs': get_extra_docs(rst_filename, flag)}, fp, indent=2)
-        else:
-            shutil.copy(os.path.join(dirname, fname), os.path.join(OUTPUT_DIRECTORY, json_filename))
+
 
 # def extra_extra_docs():
 #     """
