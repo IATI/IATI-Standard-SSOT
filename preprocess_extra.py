@@ -7,10 +7,24 @@ from docutils.parsers.rst import Parser
 from docutils.frontend import OptionParser
 from docutils.utils import new_document
 
-
+languages = ['en', 'fr']
+top_levels = ["IATI-Extra-Documentation", "IATI-Guidance"]
 ref_dict = {
-    "1_04_activities_schema_changes": "/iati-standard/upgrades/decimal-upgrade-to-1-04/1-04-changes#1_04_activities_schema_changes"
+    "1_04_activities_schema_changes": "/iati-standard/upgrades/decimal-upgrade-to-1-04/1-04-changes#1_04_activities_schema_changes",
+    "#update-to-other-identifier-element": "/iati-standard/upgrades/integer-upgrade-to-2-01/migrating/#update-to-other-identifier-element"
 }
+
+parser = Parser()
+settings = OptionParser().get_default_values()
+settings.tab_width = 8
+settings.pep_references = False
+settings.rfc_references = False
+settings.file_insertion_enabled = True
+settings.syntax_highlight = False
+settings.raw_enabled = True
+settings.halt_level = 5
+settings.report_level = 5
+settings.character_level_inline_markup = False
 
 
 def doc_to_ref(var):
@@ -44,16 +58,21 @@ def recursive_tree_traversal(node):
     if node.tagname == "system_message":
         return None
     if node.tagname == "reference":
-        try:
-            return {"name": node.attributes['name'], "href": node.attributes['refuri']}
-        except KeyError:
-            child_name = str(node.children[0])
-            return {"name": child_name, "href": node.attributes['refuri']}
+        if 'name' in node.attributes.keys():
+            node_name = node.attributes['name']
+        else:
+            node_name = str(node.children[0])
+        if 'refuri' in node.attributes.keys():
+            node_href = node.attributes['refuri']
+        else:
+            node_href = node.attributes['refname']
+        return {"name": node_name, "href": node_href}
     if node.tagname == "target":
-        try:
-            return {"id": node.attributes['ids'][0], "href": node.attributes['refuri']}
-        except KeyError:
-            return {"id": node.attributes['ids'][0], "href": node.attributes['names'][0]} # Map these
+        if 'refuri' in node.attributes.keys():
+            node_href = node.attributes['refuri']
+        else:
+            node_href = node.attributes['names'][0]  # TODO: Map these with ref_dict
+        return {"id": node.attributes['ids'][0], "href": node_href}
     if node.tagname == "#text":
         return str(node)
     children = node.children
@@ -67,36 +86,23 @@ def recursive_tree_traversal(node):
     return child_list
 
 
-languages = ['en', 'fr']
-parser = Parser()
-settings = OptionParser().get_default_values()
-settings.tab_width = 8
-settings.pep_references = False
-settings.rfc_references = False
-settings.file_insertion_enabled = True
-settings.syntax_highlight = False
-settings.raw_enabled = True
-settings.halt_level = 5
-settings.report_level = 5
-settings.character_level_inline_markup = False
-
-
-for language in languages:
-    for dirname, dirs, files in os.walk('IATI-Extra-Documentation/{}'.format(language), followlinks=True):
-        dir_split = dirname.split(os.path.sep)
-        rst_files = [file for file in files if os.path.splitext(file)[1] == ".rst"]
-        for rst_file in rst_files:
-            input_path = os.path.sep.join([dirname, rst_file])
-            document = new_document(input_path, settings)
-            with open(input_path, 'r') as extra_docs_f:
-                extra_docs_text = sphinx_to_docutils(extra_docs_f.read())
-                parser.parse(extra_docs_text, document)
-                # Remove system messages
-                for node in document.traverse(nodes.system_message):
-                    node.parent.remove(node)
-                json_text = json.dumps(recursive_tree_traversal(document), indent=4)
-                output_path = os.path.sep.join([dirname, os.path.splitext(rst_file)[0] + ".json"])
-                if "problematic" in json_text:
-                    pdb.set_trace()
-                with open(output_path, 'w') as output_json:
-                    output_json.write(json_text)
+for top_level in top_levels:
+    for language in languages:
+        for dirname, dirs, files in os.walk('{}/{}'.format(top_level, language), followlinks=True):
+            dir_split = dirname.split(os.path.sep)
+            rst_files = [file for file in files if os.path.splitext(file)[1] == ".rst"]
+            for rst_file in rst_files:
+                input_path = os.path.sep.join([dirname, rst_file])
+                document = new_document(input_path, settings)
+                with open(input_path, 'r') as extra_docs_f:
+                    extra_docs_text = sphinx_to_docutils(extra_docs_f.read())
+                    parser.parse(extra_docs_text, document)
+                    # Remove system messages
+                    for node in document.traverse(nodes.system_message):
+                        node.parent.remove(node)
+                    json_text = json.dumps(recursive_tree_traversal(document), indent=4)
+                    output_path = os.path.sep.join([dirname, os.path.splitext(rst_file)[0] + ".json"])
+                    if "problematic" in json_text:
+                        pdb.set_trace()
+                    with open(output_path, 'w') as output_json:
+                        output_json.write(json_text)
