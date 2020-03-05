@@ -8,11 +8,21 @@ from docutils.frontend import OptionParser
 from docutils.utils import new_document
 
 
+ref_dict = {
+    "1_04_activities_schema_changes": "/iati-standard/upgrades/decimal-upgrade-to-1-04/1-04-changes#1_04_activities_schema_changes"
+}
+
+
 def doc_to_ref(var):
     doc_full_string = var.group(2)
+    link_type = var.group(1)
     try:
         doc_text = re.findall(r"^(.*)(?=<)", doc_full_string)[0].strip()
-        hyperlink_href = "/iati-standard/" + re.findall(r"(?<=<)(.*)(?=>)", doc_full_string)[0]
+        hyperlink_href = re.findall(r"(?<=<)(.*)(?=>)", doc_full_string)[0]
+        if link_type == ':doc:`':
+            hyperlink_href = os.path.join("/iati-standard", hyperlink_href)
+        else:
+            hyperlink_href = ref_dict[hyperlink_href]
     except IndexError:
         doc_text = doc_full_string
         hyperlink_href = doc_full_string
@@ -26,10 +36,13 @@ def sphinx_to_docutils(full_text):
     full_text = full_text.replace(":language: xml\n\t", "")
     full_text = full_text.replace(":language: xml\n", "\n")  # needed for organisation-standard/iati-organisations/iati-organisation/document-link/description/narrative
     full_text = re.sub(r"(:doc:`)(.*?)(`)", doc_to_ref, full_text)
+    full_text = re.sub(r"(:ref:`)(.*?)(`)", doc_to_ref, full_text)
     return full_text
 
 
 def recursive_tree_traversal(node):
+    if node.tagname == "system_message":
+        return None
     if node.tagname == "reference":
         try:
             return {"name": node.attributes['name'], "href": node.attributes['refuri']}
@@ -37,7 +50,10 @@ def recursive_tree_traversal(node):
             child_name = str(node.children[0])
             return {"name": child_name, "href": node.attributes['refuri']}
     if node.tagname == "target":
-        return {"id": node.attributes['ids'][0], "href": node.attributes['refuri']}
+        try:
+            return {"id": node.attributes['ids'][0], "href": node.attributes['refuri']}
+        except KeyError:
+            return {"id": node.attributes['ids'][0], "href": node.attributes['names'][0]} # Map these
     if node.tagname == "#text":
         return str(node)
     children = node.children
