@@ -7,10 +7,6 @@ from lxml import etree as ET
 from collections import defaultdict
 from iatirulesets.text import rules_text
 
-from docutils import nodes
-from docutils.parsers.rst import Parser
-from docutils.frontend import OptionParser
-from docutils.utils import new_document
 
 OUTPUT_DIRECTORY = 'outputs/version-2.03'
 EXTRA_DOC_PAGES = ['schema.rst', 'activity-standard.rst', 'codelists.rst', 'organisation-standard.rst', 'rulesets.rst', 'standard_ruleset.rst', 'ruleset-development.rst']
@@ -182,31 +178,13 @@ def path_to_ref(path):
 
 def get_extra_docs(rst_filename, source_repository='IATI-Extra-Documentation'):
     rst_root = os.path.splitext(rst_filename)[0]
-    extra_docs_file = os.path.join(source_repository, rst_root + '.rst')
+    extra_docs_file = os.path.join(source_repository, rst_root + '.json')
     if os.path.isfile(extra_docs_file):
-        parser = Parser()
-        settings = OptionParser().get_default_values()
-        settings.tab_width = 8
-        settings.pep_references = False
-        settings.rfc_references = False
-        settings.file_insertion_enabled = True
-        settings.syntax_highlight = False
-        settings.raw_enabled = True
-        settings.halt_level = 5
-        settings.report_level = 5
-        settings.character_level_inline_markup = False
-        document = new_document(extra_docs_file, settings)
         with open(extra_docs_file, "r") as extra_docs_f:
-            extra_docs_text = extra_docs_f.read().replace("literalinclude", "include")
-            extra_docs_text = extra_docs_text.replace(":language: xml\n\t", "")
-            extra_docs_text = extra_docs_text.replace(":language: xml\n", "\n")  # needed for organisation-standard/iati-organisations/iati-organisation/document-link/description/narrative
-            parser.parse(extra_docs_text, document)
-            # Remove system messages
-            for node in document.traverse(nodes.system_message):
-                node.parent.remove(node)
-            return document.astext()
+            extra_docs_json = json.loads(extra_docs_f.read())
+            return extra_docs_json
     else:
-        return ''
+        return list()
 
 
 class Schema2Doc(object):
