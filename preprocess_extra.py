@@ -42,7 +42,7 @@ def doc_to_ref(var):
         doc_text = re.findall(r"^(.*)(?=<)", doc_full_string)[0].strip()
         hyperlink_href = re.findall(r"(?<=<)(.*)(?=>)", doc_full_string)[0]
         if link_type == ':doc:`':
-            hyperlink_href = os.path.join("/iati-standard", hyperlink_href)
+            hyperlink_href = hyperlink_href
         else:
             hyperlink_href = ref_dict[hyperlink_href]
     except IndexError:
