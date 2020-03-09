@@ -1,7 +1,6 @@
 from __future__ import print_function
 import os
 import json
-import shutil
 import textwrap
 from lxml import etree as ET
 from collections import defaultdict
@@ -572,7 +571,7 @@ def extra_documentation_pages():
         for fname in files:
             if fname in EXTRA_DOC_PAGES:
                 create_documentation_json(dirname, fname, 'IATI-Extra-Documentation', OUTPUT_DIRECTORY)
-            elif fname=='codelist-management.rst':
+            elif fname == 'codelist-management.rst':
                 create_documentation_json(dirname, fname, 'IATI-Extra-Documentation')
     create_documentation_json('IATI-Guidance/en', 'upgrades.rst')
     for dirname, dirs, files in os.walk('IATI-Guidance/en/upgrades', followlinks=True):
@@ -581,12 +580,12 @@ def extra_documentation_pages():
 
 
 def create_documentation_json(dirname, fname, flag='IATI-Guidance', out='outputs/'):
-    if len(dirname.split(os.path.sep))==1:
+    if len(dirname.split(os.path.sep)) == 1:
         directory_name = ''
     else:
         directory_name = os.path.join(*dirname.split(os.path.sep)[1:])
     rst_filename = os.path.join(directory_name, fname)
-    json_filename = os.path.join(directory_name, fname[:-3]+'json')
+    json_filename = os.path.join(directory_name, fname[:-3] + 'json')
     if not os.path.exists(os.path.join(OUTPUT_DIRECTORY, json_filename)):
         try:
             os.makedirs(os.path.join(out, directory_name))

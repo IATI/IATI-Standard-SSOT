@@ -26,7 +26,6 @@ settings.character_level_inline_markup = False
 
 def doc_to_ref_mapping(var):
     doc_full_string = var.group(2)
-    link_type = var.group(1)
     try:
         doc_text = re.findall(r"^(.*)(?=<)", doc_full_string)[0].strip()
         hyperlink_href = re.findall(r"(?<=<)(.*)(?=>)", doc_full_string)[0]
