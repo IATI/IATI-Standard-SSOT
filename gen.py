@@ -72,14 +72,7 @@ def lookup_see_also(standard, mapping, path):
 
 
 def see_also(path, lang):
-    standard = path.split('/')[0]
-    if lang == 'en':  # FIXME
-        mapping = json.load(open(os.path.join('IATI-Extra-Documentation', lang, standard, 'overview-mapping.json')))  # Loading this file is incredibly inefficient
-        # Common 'simple' path e.g. iati-activities or budget/period-start
-        # Using this prevents subpages of iati-activity using the activity file overview
-        simpler = len(path.split('/')) > 3
-        simple_path = '/'.join(path.split('/')[3:]) if simpler else path
-        return list(lookup_see_also(standard, mapping, simple_path))
+    return list()
 
 
 standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
@@ -581,7 +574,7 @@ if __name__ == '__main__':
             filename='activity-standard/summary-table.rst',
             title='Activity Standard Summary Table'
         )
-        activities.output_overview_pages('activity-standard')
+        # activities.output_overview_pages('activity-standard')
 
         orgs = Schema2Doc('iati-organisations-schema.xsd', lang=language)
         orgs.output_docs('iati-organisations', 'organisation-standard/')
@@ -590,7 +583,7 @@ if __name__ == '__main__':
             filename='organisation-standard/summary-table.rst',
             title='Organisation Standard Summary Table'
         )
-        orgs.output_overview_pages('organisation-standard')
+        # orgs.output_overview_pages('organisation-standard')
 
         ruleset_page(lang=language)
         codelists_to_docs(lang=language)
