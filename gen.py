@@ -52,6 +52,7 @@ def lookup_see_also(standard, mapping, path):
 def see_also(path, lang):
     return list()
 
+
 standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
 
 
