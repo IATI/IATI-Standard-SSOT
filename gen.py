@@ -306,7 +306,7 @@ class Schema2Doc(object):
                 see_also=see_also(path + element_name, self.lang)
             ))
 
-    def output_schema_table(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None):
+    def output_/en/ble(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None):
         if element is None:
             element = self.get_schema_element('element', element_name)
             if element is None:
@@ -351,7 +351,8 @@ class Schema2Doc(object):
                     root_path='/'.join(path.split('/')[1:]),  # Strip e.g. activity-standard/ from the path
                     match_codelists=match_codelists,
                     ruleset_text=ruleset_text,
-                    description=self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text
+                    description=self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text,
+                    extra_docs=get_extra_docs(os.path.join(self.lang, filename))
                 ))
         else:
             return rows
