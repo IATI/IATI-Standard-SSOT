@@ -306,7 +306,7 @@ class Schema2Doc(object):
                 see_also=see_also(path + element_name, self.lang)
             ))
 
-    def output_/en/ble(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None):
+    def output_schema_table(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None):
         if element is None:
             element = self.get_schema_element('element', element_name)
             if element is None:
