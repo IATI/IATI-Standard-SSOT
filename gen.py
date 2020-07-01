@@ -285,7 +285,8 @@ class Schema2Doc(object):
                     title=title,
                     root_path='/'.join(path.split('/')[1:]),  # Strip e.g. activity-standard/ from the path
                     match_codelists=match_codelists,
-                    description=self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text
+                    description=self.tree.xpath('xsd:annotation/xsd:documentation[@xml:lang="en"]', namespaces=namespaces)[0].text,
+                    extra_docs=get_extra_docs(os.path.join(self.lang, filename))
                 ))
         else:
             return rows
