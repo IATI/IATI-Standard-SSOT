@@ -27,3 +27,5 @@
 ::
 
   {{description.replace('\n','\n  ')}}
+
+{{extra_docs}}
