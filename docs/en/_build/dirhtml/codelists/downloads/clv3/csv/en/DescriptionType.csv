@@ -1,0 +1,5 @@
+code,name,description,category,url,status
+1,General,"Unstructured, long description of the activity",,,active
+2,Objectives,"Specific objectives for the activity, e.g. taken from logical framework",,,active
+3,Target Groups,Details of groups that are intended to benefit from the activity,,,active
+4,Other,For miscellaneous use. A further classification or breakdown may be included in the narrative,,,active

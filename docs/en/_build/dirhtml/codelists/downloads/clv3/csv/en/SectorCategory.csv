@@ -1,0 +1,45 @@
+code,name,description,category,url,status
+111,"Education, Level Unspecified",The codes in this category are to be used only when level of education is unspecified or unknown (e.g. training of primary school teachers should be coded under 11220).,,,active
+112,Basic Education,,,,active
+113,Secondary Education,,,,active
+114,Post-Secondary Education,,,,active
+121,"Health, General",,,,active
+122,Basic Health,,,,active
+123,Non-communicable diseases (NCDs),,,,active
+130,Population Policies/Programmes & Reproductive Health,,,,active
+140,Water Supply & Sanitation,,,,active
+151,Government & Civil Society-general,N.B. Use code 51010 for general budget support.,,,active
+152,"Conflict, Peace & Security","N.B. Further notes on ODA eligibility (and exclusions) of conflict, peace and security related activities are given in paragraphs 76-81 of the Directives.",,,active
+160,Other Social Infrastructure & Services,,,,active
+210,Transport & Storage,Note: Manufacturing of transport equipment should be included under code 32172.,,,active
+220,Communications,,,,active
+230,ENERGY GENERATION AND SUPPLY,"Energy sector policy, planning and programmes; aid to energy ministries; institution capacity building and advice; unspecified energy activities including energy conservation.",,,withdrawn
+231,Energy Policy,,,,active
+232,"Energy generation, renewable sources",,,,active
+233,"Energy generation, non-renewable sources",,,,active
+234,Hybrid energy plants,,,,active
+235,Nuclear energy plants,,,,active
+236,Energy distribution,,,,active
+240,Banking & Financial Services,,,,active
+250,Business & Other Services,,,,active
+311,Agriculture,,,,active
+312,Forestry,,,,active
+313,Fishing,,,,active
+321,Industry,,,,active
+322,Mineral Resources & Mining,,,,active
+323,Construction,,,,active
+331,Trade Policies & Regulations,,,,active
+332,Tourism,,,,active
+410,General Environment Protection,"Covers activities concerned with conservation, protection or amelioration of the physical environment without sector allocation.",,,active
+430,Other Multisector,,,,active
+510,General Budget Support,Budget support in the form of sector-wide approaches (SWAps) should be included in the respective sectors.,,,active
+520,Development Food Assistance,,,,active
+530,Other Commodity Assistance,Non-food commodity assistance (when benefiting sector not specified).,,,active
+600,Action Relating to Debt,,,,active
+720,Emergency Response,An emergency is a situation which results from man made crises and/or natural disasters.,,,active
+730,Reconstruction Relief & Rehabilitation,This relates to activities during and in the aftermath of an emergency situation. Longer-term activities to improve the level of infrastructure or social services should be reported under the relevant economic and social sector codes. See also guideline on distinguishing humanitarian from sector-allocable aid.,,,active
+740,Disaster Prevention & Preparedness,See code 43060 for disaster risk reduction.,,,active
+910,Administrative Costs of Donors,,,,active
+920,SUPPORT TO NON- GOVERNMENTAL ORGANISATIONS (NGOs),In the donor country.,,,withdrawn
+930,Refugees in Donor Countries,,,,active
+998,Unallocated / Unspecified,Contributions to general development of the recipient should be included under programme assistance (51010).,,,active

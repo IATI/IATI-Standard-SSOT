@@ -1,0 +1,45 @@
+<codelist name="IndicatorMeasure" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Indicator Measure</name>
+        <description>To specify how an indicator is being measured. This includes qualitative and quantitative values.</description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Unit</name>
+            <name xml:lang="fr">Unit&#233;</name>
+            <description>The indicator is measured in units.</description>
+            <description xml:lang="fr">L'indicateur est mesur&#233; &#224; l'aide d'unit&#233;s.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Percentage</name>
+            <name xml:lang="fr">Pourcentage</name>
+            <description>The indicator is measured in percentages</description>
+            <description xml:lang="fr">L'indicateur est mesur&#233; en pourcentage.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Nominal</name>
+            <name xml:lang="fr">Nominal</name>
+            <description>The indicator is measured as a quantitative nominal scale.</description>
+            <description xml:lang="fr">L'indicateur est mesur&#233; selon une &#233;chelle nominale quantitative.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Ordinal</name>
+            <name xml:lang="fr">Ordinal</name>
+            <description>The indicator is measured as a quantitative ordinal scale.</description>
+            <description xml:lang="fr">L'indicateur est mesur&#233;e selon une &#233;chelle ordinale quantitative.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>Qualitative</name>
+            <name xml:lang="fr">Qualitatif</name>
+            <description>The indicator is qualitative.</description>
+            <description xml:lang="fr">L'indicateur est qualitatif.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

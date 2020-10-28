@@ -1,0 +1,5 @@
+code,name,description,language,category,category-name,category-description
+1,Agrovoc,"A controlled vocabulary covering all areas of interest of the Food and Agriculture Organization (FAO) of the United Nations, including food, nutrition, agriculture, fisheries, forestry, environment etc.",en,,,
+2,UN Sustainable Development Goals (SDG),A value from the top-level list of UN sustainable development goals (SDGs) (e.g. ‘1’),en,,,
+3,UN Sustainable Development Goals (SDG) Targets,A value from the second-level list of UN sustainable development goals (SDGs) (e.g. ‘1.1’),en,,,
+99,Reporting Organisation,,en,,,

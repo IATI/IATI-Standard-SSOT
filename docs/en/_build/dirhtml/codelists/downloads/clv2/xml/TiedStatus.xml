@@ -1,0 +1,31 @@
+<codelist name="TiedStatus" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Tied Status</name>
+        <name xml:lang="fr">Condition de l&#8217;aide</name>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>3</code>
+            <name>Partially tied</name>
+            <name xml:lang="fr">Semi-conditionnelle</name>
+            <description>Official Development Assistance for which the associated goods and services must be procured from a restricted number of countries, which must however include substantially all aid recipient countries and can include the donor country.</description>
+            <description xml:lang="fr">Aide publique au d&#233;veloppement dont les biens et services correspondants doivent &#234;tre achet&#233;s dans un nombre restreint de pays, qui doivent toutefois comprendre tous les pays b&#233;n&#233;ficiaires de l&#8217;aide et &#233;ventuellement le pays donateur.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Tied</name>
+            <name xml:lang="fr">Conditionnelle</name>
+            <description>Official grants or loans where procurement of the goods or services involved is limited to the donor country or to a group of countries which does not include substantially all aid recipient countries.</description>
+            <description xml:lang="fr">Subventions ou pr&#234;ts officiels dont les dispositions indiquent que les biens ou services associ&#233;s ne peuvent provenir que du pays donateur ou d&#8217;un groupe de pays qui ne comprend pas n&#233;cessairement tous les pays b&#233;n&#233;ficiaires de l&#8217;aide.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>Untied</name>
+            <name xml:lang="fr">Sans condition</name>
+            <description>Untied aid is defined as loans and grants whose proceeds are fully and freely available to finance procurement from all OECD countries and substantially all developing countries.</description>
+            <description xml:lang="fr">Subventions et pr&#234;ts pouvant &#234;tre librement et int&#233;gralement utilis&#233;s pour financer les approvisionnements aupr&#232;s de tous les pays de l&#8217;OCDE et de la plupart des pays en d&#233;veloppement.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

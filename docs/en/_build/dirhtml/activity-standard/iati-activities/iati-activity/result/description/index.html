@@ -1,0 +1,262 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>description &#8212; IATI Standard 2.03 documentation</title>
+    <link rel="stylesheet" href="../../../../../_static/traditional.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '2.03',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex/" />
+    <link rel="search" title="Search" href="../../../../../search/" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="../../../../../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="description">
+<h1>description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal"><span class="pre">iati-activities/iati-activity/result/description</span></code></p>
+<p>This is the reference page for the XML element <code class="docutils literal"><span class="pre">description</span></code>.</p>
+<div class="section" id="definition">
+<span id="index-0"></span><h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h2>
+<p>A longer, human-readable description.</p>
+</div>
+<div class="section" id="rules">
+<h2>Rules<a class="headerlink" href="#rules" title="Permalink to this headline">¶</a></h2>
+<p>This element must occur no more than once (within each parent element).</p>
+</div>
+<div class="section" id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<p>Example usage of <code class="docutils literal"><span class="pre">description</span></code> in a <code class="docutils literal"><span class="pre">result</span></code> of an <code class="docutils literal"><span class="pre">iati-activity</span></code>.</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span>  <span class="nt">&lt;result</span> <span class="na">type=</span><span class="s">&quot;1&quot;</span> <span class="na">aggregation-status=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;title&gt;</span>
+    <span class="nt">&lt;narrative&gt;</span>Result title<span class="nt">&lt;/narrative&gt;</span>
+   <span class="nt">&lt;/title&gt;</span>
+   <span class="nt">&lt;description&gt;</span>
+    <span class="nt">&lt;narrative&gt;</span>Result description text<span class="nt">&lt;/narrative&gt;</span>
+   <span class="nt">&lt;/description&gt;</span>
+   <span class="c">&lt;!--result-document-link example starts--&gt;</span>
+   <span class="nt">&lt;document-link</span> <span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span> <span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/result_en.odt&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>
+     <span class="nt">&lt;narrative&gt;</span>Results Report 2013<span class="nt">&lt;/narrative&gt;</span>
+    <span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;description&gt;</span>
+      <span class="nt">&lt;narrative&gt;</span>Report of results<span class="nt">&lt;/narrative&gt;</span>
+    <span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;category</span> <span class="na">code=</span><span class="s">&quot;A01&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;language</span> <span class="na">code=</span><span class="s">&quot;en&quot;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;document-date</span> <span class="na">iso-date=</span><span class="s">&quot;2014-02-05&quot;</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;/document-link&gt;</span>
+<span class="c">&lt;!--result-document-link example ends--&gt;</span>
+<span class="c">&lt;!--result-reference starts--&gt;</span>
+   <span class="nt">&lt;reference</span> <span class="na">vocabulary=</span><span class="s">&quot;99&quot;</span> <span class="na">code=</span><span class="s">&quot;B1&quot;</span> <span class="na">vocabulary-uri=</span><span class="s">&quot;http://example.com/indicators.html&quot;</span> <span class="nt">/&gt;</span>
+<span class="c">&lt;!--result-reference ends--&gt;</span>
+<span class="c">&lt;!--result-indicator starts--&gt;</span>
+   <span class="nt">&lt;indicator</span> <span class="na">measure=</span><span class="s">&quot;1&quot;</span> <span class="na">ascending=</span><span class="s">&quot;1&quot;</span> <span class="na">aggregation-status=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;title&gt;</span>
+      <span class="nt">&lt;narrative&gt;</span>Indicator title<span class="nt">&lt;/narrative&gt;</span>
+     <span class="nt">&lt;/title&gt;</span>
+     <span class="nt">&lt;description&gt;</span>
+      <span class="nt">&lt;narrative&gt;</span>Indicator description text<span class="nt">&lt;/narrative&gt;</span>
+     <span class="nt">&lt;/description&gt;</span>
+     <span class="nt">&lt;document-link</span> <span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span> <span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/result_indicator_en.odt&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;title&gt;</span>
+       <span class="nt">&lt;narrative&gt;</span>Results Indicator Report 2013<span class="nt">&lt;/narrative&gt;</span>
+      <span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;description&gt;</span>
+        <span class="nt">&lt;narrative&gt;</span>Report of results indicator<span class="nt">&lt;/narrative&gt;</span>
+      <span class="nt">&lt;/description&gt;</span>
+      <span class="nt">&lt;category</span> <span class="na">code=</span><span class="s">&quot;A01&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;language</span> <span class="na">code=</span><span class="s">&quot;en&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;document-date</span> <span class="na">iso-date=</span><span class="s">&quot;2014-02-05&quot;</span> <span class="nt">/&gt;</span>
+     <span class="nt">&lt;/document-link&gt;</span>
+     <span class="nt">&lt;reference</span> <span class="na">vocabulary=</span><span class="s">&quot;1&quot;</span> <span class="na">code=</span><span class="s">&quot;3429&quot;</span> <span class="nt">/&gt;</span>
+     <span class="nt">&lt;reference</span> <span class="na">vocabulary=</span><span class="s">&quot;7&quot;</span> <span class="na">code=</span><span class="s">&quot;861&quot;</span> <span class="nt">/&gt;</span>
+     <span class="nt">&lt;reference</span> <span class="na">vocabulary=</span><span class="s">&quot;99&quot;</span> <span class="na">code=</span><span class="s">&quot;B1&quot;</span> <span class="na">indicator-uri=</span><span class="s">&quot;http://example.com/indicators.html&quot;</span> <span class="nt">/&gt;</span>
+<span class="c">&lt;!--result-baseline starts--&gt;</span>
+     <span class="nt">&lt;baseline</span> <span class="na">year=</span><span class="s">&quot;2012&quot;</span> <span class="na">iso-date=</span><span class="s">&quot;2012-01-01&quot;</span> <span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;location</span> <span class="na">ref=</span><span class="s">&quot;AF-KAN&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;location</span> <span class="na">ref=</span><span class="s">&quot;KH-PNH&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dimension</span> <span class="na">name=</span><span class="s">&quot;sex&quot;</span> <span class="na">value=</span><span class="s">&quot;female&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;dimension</span> <span class="na">name=</span><span class="s">&quot;age&quot;</span> <span class="na">value=</span><span class="s">&quot;adult&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;document-link</span> <span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span> <span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/result_baseline_en.odt&quot;</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;title&gt;</span>
+        <span class="nt">&lt;narrative&gt;</span>Results Baseline Report 2013<span class="nt">&lt;/narrative&gt;</span>
+       <span class="nt">&lt;/title&gt;</span>
+       <span class="nt">&lt;description&gt;</span>
+         <span class="nt">&lt;narrative&gt;</span>Report of results baseline<span class="nt">&lt;/narrative&gt;</span>
+       <span class="nt">&lt;/description&gt;</span>
+       <span class="nt">&lt;category</span> <span class="na">code=</span><span class="s">&quot;A01&quot;</span> <span class="nt">/&gt;</span>
+       <span class="nt">&lt;language</span> <span class="na">code=</span><span class="s">&quot;en&quot;</span> <span class="nt">/&gt;</span>
+       <span class="nt">&lt;document-date</span> <span class="na">iso-date=</span><span class="s">&quot;2014-02-05&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/document-link&gt;</span>
+      <span class="nt">&lt;comment&gt;</span>
+       <span class="nt">&lt;narrative&gt;</span>Baseline comment text<span class="nt">&lt;/narrative&gt;</span>
+      <span class="nt">&lt;/comment&gt;</span>
+     <span class="nt">&lt;/baseline&gt;</span>
+     <span class="c">&lt;!--result-baseline ends--&gt;</span>
+     <span class="c">&lt;!--result-period starts--&gt;</span>
+     <span class="nt">&lt;period&gt;</span>
+      <span class="nt">&lt;period-start</span> <span class="na">iso-date=</span><span class="s">&quot;2013-01-01&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;period-end</span> <span class="na">iso-date=</span><span class="s">&quot;2013-03-31&quot;</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;target</span> <span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;location</span> <span class="na">ref=</span><span class="s">&quot;AF-KAN&quot;</span> <span class="nt">/&gt;</span>
+       <span class="nt">&lt;location</span> <span class="na">ref=</span><span class="s">&quot;KH-PNH&quot;</span> <span class="nt">/&gt;</span>
+       <span class="nt">&lt;dimension</span> <span class="na">name=</span><span class="s">&quot;sex&quot;</span> <span class="na">value=</span><span class="s">&quot;female&quot;</span> <span class="nt">/&gt;</span>
+       <span class="nt">&lt;dimension</span> <span class="na">name=</span><span class="s">&quot;age&quot;</span> <span class="na">value=</span><span class="s">&quot;adult&quot;</span> <span class="nt">/&gt;</span>
+       <span class="nt">&lt;comment&gt;</span>
+        <span class="nt">&lt;narrative&gt;</span>Target comment text<span class="nt">&lt;/narrative&gt;</span>
+       <span class="nt">&lt;/comment&gt;</span>
+       <span class="nt">&lt;document-link</span> <span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span> <span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/result_period_target_en.odt&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;title&gt;</span>
+         <span class="nt">&lt;narrative&gt;</span>Results Period Target Report 2013<span class="nt">&lt;/narrative&gt;</span>
+        <span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;description&gt;</span>
+          <span class="nt">&lt;narrative&gt;</span>Report of results period target<span class="nt">&lt;/narrative&gt;</span>
+        <span class="nt">&lt;/description&gt;</span>
+        <span class="nt">&lt;category</span> <span class="na">code=</span><span class="s">&quot;A01&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;language</span> <span class="na">code=</span><span class="s">&quot;en&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;document-date</span> <span class="na">iso-date=</span><span class="s">&quot;2014-02-05&quot;</span> <span class="nt">/&gt;</span>
+       <span class="nt">&lt;/document-link&gt;</span>
+      <span class="nt">&lt;/target&gt;</span>
+      <span class="nt">&lt;actual</span> <span class="na">value=</span><span class="s">&quot;11&quot;</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;location</span> <span class="na">ref=</span><span class="s">&quot;AF-KAN&quot;</span> <span class="nt">/&gt;</span>
+       <span class="nt">&lt;location</span> <span class="na">ref=</span><span class="s">&quot;KH-PNH&quot;</span> <span class="nt">/&gt;</span>
+       <span class="nt">&lt;dimension</span> <span class="na">name=</span><span class="s">&quot;sex&quot;</span> <span class="na">value=</span><span class="s">&quot;female&quot;</span> <span class="nt">/&gt;</span>
+       <span class="nt">&lt;dimension</span> <span class="na">name=</span><span class="s">&quot;age&quot;</span> <span class="na">value=</span><span class="s">&quot;adult&quot;</span> <span class="nt">/&gt;</span>
+       <span class="nt">&lt;comment&gt;</span>
+         <span class="nt">&lt;narrative&gt;</span>Actual comment text<span class="nt">&lt;/narrative&gt;</span>
+       <span class="nt">&lt;/comment&gt;</span>
+       <span class="nt">&lt;document-link</span> <span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span> <span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/result_period_actual_en.odt&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;title&gt;</span>
+         <span class="nt">&lt;narrative&gt;</span>Results Period Actual Report 2013<span class="nt">&lt;/narrative&gt;</span>
+        <span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;description&gt;</span>
+          <span class="nt">&lt;narrative&gt;</span>Report of results period actual<span class="nt">&lt;/narrative&gt;</span>
+        <span class="nt">&lt;/description&gt;</span>
+        <span class="nt">&lt;category</span> <span class="na">code=</span><span class="s">&quot;A01&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;language</span> <span class="na">code=</span><span class="s">&quot;en&quot;</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;document-date</span> <span class="na">iso-date=</span><span class="s">&quot;2014-02-05&quot;</span> <span class="nt">/&gt;</span>
+       <span class="nt">&lt;/document-link&gt;</span>
+      <span class="nt">&lt;/actual&gt;</span>
+     <span class="nt">&lt;/period&gt;</span>
+     <span class="c">&lt;!--result-period ends--&gt;</span>
+   <span class="nt">&lt;/indicator&gt;</span>
+   <span class="c">&lt;!--result-indicator ends--&gt;</span>
+  <span class="nt">&lt;/result&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="changelog">
+<h2>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>2.01<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Freetext is no longer allowed with this element.  It should <a class="reference external" href="http://iatistandard.org/upgrades/integer-upgrade-to-2-01/2-01-changes/#narrative-new-elements">now be declared</a>  with the new child <code class="docutils literal"><span class="pre">narrative</span></code> element.</p>
+<div class="line-block">
+<div class="line">The &#64;type attribute was <a class="reference external" href="http://iatistandard.org/upgrades/integer-upgrade-to-2-01/2-01-changes/#description-removed-attributes">removed</a>.</div>
+</div>
+</div>
+</div>
+<div class="section" id="developer-tools">
+<h2>Developer tools<a class="headerlink" href="#developer-tools" title="Permalink to this headline">¶</a></h2>
+<p>Find the source of this documentation on github:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-common.xsd#L58">Schema</a></li>
+<li><a class="reference external" href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/result/description.rst">Extra Documentation</a></li>
+</ul>
+</div>
+<div class="section" id="subelements">
+<h2>Subelements<a class="headerlink" href="#subelements" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="narrative/">narrative</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../../../sitemap/">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">description</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#rules">Rules</a></li>
+<li><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li><a class="reference internal" href="#changelog">Changelog</a><ul>
+<li><a class="reference internal" href="#id1">2.01</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#developer-tools">Developer tools</a></li>
+<li><a class="reference internal" href="#subelements">Subelements</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../../../_sources/activity-standard/iati-activities/iati-activity/result/description.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search/" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="../../../../../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

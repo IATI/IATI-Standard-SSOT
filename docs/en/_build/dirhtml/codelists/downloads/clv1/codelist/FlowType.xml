@@ -1,0 +1,62 @@
+<codelist name="FlowType" date-last-modified="2020-10-28T16:50:17.964771+00:00" version="" xml:lang="en">
+  <FlowType>
+    <code>10</code>
+    <name>ODA</name>
+    <language>en</language>
+    <description>Official Development Assistance</description>
+  </FlowType>
+  <FlowType>
+    <code>20</code>
+    <name>OOF</name>
+    <language>en</language>
+    <description>Other Official Flows</description>
+  </FlowType>
+  <FlowType>
+    <code>21</code>
+    <name>Non-export credit OOF</name>
+    <language>en</language>
+    <description>Other Official Flows, excl. export credits</description>
+  </FlowType>
+  <FlowType>
+    <code>22</code>
+    <name>Officially supported export credits</name>
+    <language>en</language>
+    <description>Officially supported export credits. Covers both official direct export credits and private export credits under official guarantee or insurance</description>
+  </FlowType>
+  <FlowType>
+    <code>30</code>
+    <name>Private Development Finance</name>
+    <language>en</language>
+    <description>Financing by civil society organisations (NGOs, philantropic foundations, etc.)</description>
+  </FlowType>
+  <FlowType>
+    <code>35</code>
+    <name>Private Market</name>
+    <language>en</language>
+    <description>Private long-term (i.e. over one-year maturity) capital transactions made by residents of DAC countries</description>
+  </FlowType>
+  <FlowType>
+    <code>36</code>
+    <name>Private Foreign Direct Investment</name>
+    <language>en</language>
+    <description>Private Foreign Direct Investment</description>
+  </FlowType>
+  <FlowType>
+    <code>37</code>
+    <name>Other Private flows at market terms</name>
+    <language>en</language>
+    <description>Private long-term (i.e. over one-year maturity) capital transactions made by residents of DAC countries</description>
+  </FlowType>
+  <FlowType>
+    <code>40</code>
+    <name>Non flow</name>
+    <language>en</language>
+    <description>e.g. GNI, ODA%GNI, Population etc</description>
+  </FlowType>
+  <FlowType>
+    <code>50</code>
+    <name>Other flows</name>
+    <language>en</language>
+    <description>e.g. non-ODA component of peacebuilding operations</description>
+  </FlowType>
+</codelist>

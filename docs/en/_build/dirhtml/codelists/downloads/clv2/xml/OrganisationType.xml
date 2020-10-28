@@ -1,0 +1,88 @@
+<codelist name="OrganisationType" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Organisation Type</name>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>10</code>
+            <name>Government</name>
+            <name xml:lang="fr">Gouvernement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11</code>
+            <name>Local Government</name>
+            <description>Any local (sub national) government organisation in either donor or recipient country.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>15</code>
+            <name>Other Public Sector</name>
+            <name xml:lang="fr">Autre secteur public</name>
+        </codelist-item>
+        <codelist-item>
+            <code>21</code>
+            <name>International NGO</name>
+            <name xml:lang="fr">ONG internationale</name>
+        </codelist-item>
+        <codelist-item>
+            <code>22</code>
+            <name>National NGO</name>
+            <name xml:lang="fr">ONG nationale</name>
+        </codelist-item>
+        <codelist-item>
+            <code>23</code>
+            <name>Regional NGO</name>
+            <name xml:lang="fr">ONG regionale</name>
+        </codelist-item>
+        <codelist-item>
+            <code>24</code>
+            <name>Partner Country based NGO</name>
+            <description>Local and National NGO / CSO based in aid/assistance recipient country</description>
+        </codelist-item>
+        <codelist-item>
+            <code>30</code>
+            <name>Public Private Partnership</name>
+            <name xml:lang="fr">Partenariat public-priv&#233;</name>
+        </codelist-item>
+        <codelist-item>
+            <code>40</code>
+            <name>Multilateral</name>
+            <name xml:lang="fr">Multilat&#233;ral</name>
+        </codelist-item>
+        <codelist-item>
+            <code>60</code>
+            <name>Foundation</name>
+            <name xml:lang="fr">Fondation</name>
+        </codelist-item>
+        <codelist-item>
+            <code>70</code>
+            <name>Private Sector</name>
+            <name xml:lang="fr">Secteur priv&#233;</name>
+        </codelist-item>
+        <codelist-item>
+            <code>71</code>
+            <name>Private Sector in Provider Country</name>
+            <description>Is in provider / donor country.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>72</code>
+            <name>Private Sector in Aid Recipient Country</name>
+            <description>Is in aid recipient country.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>73</code>
+            <name>Private Sector in Third Country</name>
+            <description>Is not in either a donor or aid recipient country.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>80</code>
+            <name>Academic, Training and Research</name>
+            <name xml:lang="fr">Universitaire, formation et recherche</name>
+        </codelist-item>
+        <codelist-item>
+            <code>90</code>
+            <name>Other</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

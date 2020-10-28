@@ -1,0 +1,108 @@
+<codelist name="SectorVocabulary" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Sector Vocabulary</name>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <url>http://reference.iatistandard.org/codelists/Sector/</url>
+            <name>OECD DAC CRS Purpose Codes (5 digit)</name>
+            <name xml:lang="fr">Codes-secteurs OCDE CAD SNPC (5 chiffres)</name>
+            <description>The sector reported corresponds to an OECD DAC CRS 5-digit purpose code</description>
+            <description xml:lang="fr">Le secteur d&#233;clar&#233; correspond &#224; un code de secteur OCDE CAD SNPC &#224; cinq chiffres</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <url>http://reference.iatistandard.org/codelists/SectorCategory/</url>
+            <name>OECD DAC CRS Purpose Codes (3 digit)</name>
+            <name xml:lang="fr">Codes-secteurs OCDE CAD SNPC (3 chiffres)</name>
+            <description>The sector reported corresponds to an OECD DAC CRS 3-digit purpose code</description>
+            <description xml:lang="fr">Le secteur d&#233;clar&#233; correspond &#224; un code de secteur OCDE CAD SNPC &#224; trois chiffres</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <url>http://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=4</url>
+            <name>Classification of the Functions of Government (UN)</name>
+            <name xml:lang="fr">Classification des fonctions gouvernementales (ONU)</name>
+            <description>The sector reported corresponds to the UN Classification of the Functions of Government (CoFoG)</description>
+            <description xml:lang="fr">Le secteur d&#233;clar&#233; correspond &#224; la Classification des fonctions gouvernementales (COFOG) de l'ONU</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <url>http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&amp;StrNom=NACE_REV2&amp;StrLanguageCode=EN</url>
+            <name>Statistical classification of economic activities in the European Community</name>
+            <name xml:lang="fr">Classification statistique sur les activit&#233;s &#233;conomiques dans l'Union europ&#233;enne</name>
+            <description>The sector reported corresponds to the statistical classifications of economic activities in the European Community</description>
+            <description xml:lang="fr">Le secteur d&#233;clar&#233; correspond aux classifications statistiques des activit&#233;s &#233;conomiques dans l'Union europ&#233;enne</description>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <url>http://nccs.urban.org/classification/NTEE.cfm</url>
+            <name>National Taxonomy for Exempt Entities (USA)</name>
+            <name xml:lang="fr">Taxonomie nationale des entit&#233;s exemptes (&#201;tats-Unis)</name>
+            <description>The sector reported corresponds to the National Taxonomy for Exempt Entities (NTEE) - USA</description>
+            <description xml:lang="fr">Le secteur d&#233;clar&#233; correspond &#224; la taxonomie nationale des entit&#233;s exon&#233;r&#233;es (NTEE) - &#201;tats-Unis</description>
+        </codelist-item>
+        <codelist-item>
+            <code>6</code>
+            <name>AidData</name>
+            <name xml:lang="fr">AidData</name>
+            <description>The sector reported corresponds to AidData classifications</description>
+            <description xml:lang="fr">Le secteur d&#233;clar&#233;  correspond aux classifications AidData</description>
+        </codelist-item>
+        <codelist-item>
+            <code>7</code>
+            <url>https://sustainabledevelopment.un.org/?menu=1300</url>
+            <name>SDG Goal</name>
+            <name xml:lang="fr">ODD (objectif)</name>
+            <description>A value from the top-level list of UN sustainable development goals (SDGs) (e.g. &#8216;1&#8217;)</description>
+            <description xml:lang="fr">Valeur tir&#233;e de la liste des principaux objectifs de d&#233;veloppement durable (ODD) de l'ONU (p. ex. '1')</description>
+        </codelist-item>
+        <codelist-item>
+            <code>8</code>
+            <url>http://unstats.un.org/sdgs/indicators/indicators-list/</url>
+            <name>SDG Target</name>
+            <name xml:lang="fr">ODD (cible)</name>
+            <description>A value from the second-level list of UN sustainable development goals (SDGs) (e.g. &#8216;1.1&#8217;)</description>
+            <description xml:lang="fr">Valeur tir&#233;e de la liste des sous-objectifs de d&#233;veloppement durable (ODD) de l'ONU (p. ex. '1.1')</description>
+        </codelist-item>
+        <codelist-item>
+            <code>9</code>
+            <url>http://unstats.un.org/sdgs/indicators/indicators-list/</url>
+            <name>SDG Indicator</name>
+            <name xml:lang="fr">ODD (indicateur)</name>
+            <description>A value from the second-level list of UN sustainable development (SDG) indicators</description>
+            <description xml:lang="fr">Valeur tir&#233;e de la liste des indicateurs de d&#233;veloppement durable (ODD) de deuxi&#232;me niveau de l'ONU</description>
+        </codelist-item>
+        <codelist-item>
+            <code>10</code>
+            <url>https://data.humdata.org/dataset/global-coordination-groups-beta</url>
+            <name>Humanitarian Global Clusters (Inter-Agency Standing Committee)</name>
+            <name xml:lang="fr">Groupes sectoriels d'aide humanitaire (Comit&#233; permanent interorganisations)</name>
+            <description>The sector reported corresponds to an Inter-Agency Standard Committee Humanitarian Global Cluster code</description>
+            <description xml:lang="fr">Le secteur d&#233;clar&#233; correspond &#224; un code de groupe sectoriel du Comit&#233; permanent interorganisations</description>
+        </codelist-item>
+        <codelist-item>
+            <code>11</code>
+            <url>https://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017</url>
+            <name>North American Industry Classification System (NAICS)</name>
+            <description>The sector reported corresponds to the NAICS codelist</description>
+        </codelist-item>
+        <codelist-item>
+            <code>99</code>
+            <name>Reporting Organisation</name>
+            <name xml:lang="fr">Organisation d&#233;clarante</name>
+            <description>The sector reported corresponds to a sector vocabulary maintained by the reporting organisation for this activity</description>
+            <description xml:lang="fr">Le secteur d&#233;clar&#233; correspond &#224; un vocabulaire sectoriel maintenu par l'organisation d&#233;clarante aux fins de l'activit&#233;</description>
+        </codelist-item>
+        <codelist-item>
+            <code>98</code>
+            <name>Reporting Organisation 2</name>
+            <name xml:lang="fr">Organisation d&#233;clarante 2</name>
+            <description>The sector reported corresponds to a sector vocabulary maintained by the reporting organisation for this activity (if they are referencing more than one)</description>
+            <description xml:lang="fr">Le secteur d&#233;clar&#233; correspond &#224; un vocabulaire sectoriel maintenu par l'organisation d&#233;clarante aux fins de l'activit&#233; (si l'organisation en indique plus d'un)</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

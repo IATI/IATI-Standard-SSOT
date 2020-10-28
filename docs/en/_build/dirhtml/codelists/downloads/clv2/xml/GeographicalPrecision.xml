@@ -1,0 +1,73 @@
+<codelist name="GeographicalPrecision" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Geographical Precision</name>
+        <description>A system for clarifying the accuracy and usage of geographical coordinates </description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Exact location</name>
+            <name xml:lang="fr">Lieu pr&#233;cis</name>
+            <description>The coordinates corresponds to an exact location, such as a populated place or a hill. The code is also used for locations that join a location which is a line (such as a road or railroad). Lines are not coded only the points that connect lines. All points that are mentioned in the source are coded.</description>
+            <description xml:lang="fr">Les coordonn&#233;es correspondent &#224; un lieu pr&#233;cis, comme un endroit peupl&#233; ou une colline. Le code est aussi utilis&#233; pour les lieux qui rejoignent un autre endroit et qui est lin&#233;aire (comme une route ou une voie ferr&#233;e). Les lignes ne sont pas cod&#233;es, seulement les points qui les forment. Tous les points mentionn&#233;s dans la source sont cod&#233;s.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Near exact location</name>
+            <name xml:lang="fr">Pr&#232;s d'un lieu pr&#233;cis</name>
+            <description>The location is mentioned in the source as being "near", in the "area" of, or up to 25 km away from an exact location. The coordinates refer to that adjacent, exact, location.</description>
+            <description xml:lang="fr">Le lieu est mentionn&#233; dans la source comme &#233;tant &#171;&#160;pr&#232;s&#160;&#187;, dans le &#171;&#160;secteur&#160;&#187; ou se trouvant &#224; jusqu'&#224; 25 km d'un lieu pr&#233;cis. Les coordonn&#233;es renvoient &#224; ce lieu pr&#233;cis adjacent.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Second order administrative division</name>
+            <name xml:lang="fr">Division administrative de second niveau</name>
+            <description>The location is, or lies in, a second order administrative division (ADM2), such as a district, municipality or commune</description>
+            <description xml:lang="fr">Le lieu est ou se trouve dans une division administrative de second niveau (ADM2), comme un district, une municipalit&#233; ou une commune.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>First order administrative division</name>
+            <name xml:lang="fr">Division administrative de premier niveau</name>
+            <description>The location is, or lies in, a first order administrative division (ADM1), such as a province, state or governorate.</description>
+            <description xml:lang="fr">Le lien est ou se trouve dans une division administrative de premier niveau (ADM1), comme une province, un &#201;tat ou un gouvernorat.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>Estimated coordinates</name>
+            <name xml:lang="fr">Coordonn&#233;es estim&#233;es</name>
+            <description>The location can only be related to estimated coordinates, such as when a location lies between populated places; along rivers, roads and borders; more than 25 km away from a specific location; or when sources refer to parts of a country greater than ADM1 (e.g. "northern Uganda").</description>
+            <description xml:lang="fr">On ne peut d&#233;signer le lieu qu'au moyen de coordonn&#233;es estim&#233;es, par exemple pour un lieu situ&#233; entre deux endroits peupl&#233;s.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>6</code>
+            <name>Independent political entity</name>
+            <name xml:lang="fr">Entit&#233; politique autonome</name>
+            <description>The location can only be related to an independent political entity, meaning the pair of coordinates that represent a country.</description>
+            <description xml:lang="fr">On ne peut d&#233;signer le lieu que par rapport &#224; une entit&#233; politique autonome, ce qui signifie la paire de coordonn&#233;es repr&#233;sentant un pays.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>7</code>
+            <name>Unclear - capital</name>
+            <name xml:lang="fr">Impr&#233;cis - Capitale</name>
+            <description>Unclear. The capital is assumed to be one of two possible locations. (The other option is the country level, with precision 9.)</description>
+            <description xml:lang="fr">Impr&#233;cis. On suppose que la capitale est l'un de deux lieux possibles. (L'autre possibilit&#233; est le niveau du pays, avec la pr&#233;cision 9.)</description>
+        </codelist-item>
+        <codelist-item>
+            <code>8</code>
+            <name>Local or national capital</name>
+            <name xml:lang="fr">Capitale locale ou nationale</name>
+            <description>The location is estimated to be a seat of an administrative division (local capital) or the national capital. If aid goes to Luanda without further specification on the location, and there is an ADM1 and a capital called Luanda, then code the coordinates of the capital with precision 8. If it is not spelled out that aid goes to the capital; but if it is clear that it goes to a government ministry or to government financial institutions; and if those institutions are most likely located in the capital; then the coordinates of the capital are coded with precision 8. (However, if it can be verified that the recipient institution is located in the capital then precision 1 is used.)</description>
+            <description xml:lang="fr">On estime que le lieu est le si&#232;ge d'une division administrative (capitale locale) ou la capitale nationale. Si de l'aide est dirig&#233;e vers Luanda sans autre pr&#233;cision sur le lieu et qu'il existe une ADM1 et une capitale nomm&#233;e Luanda, les coordonn&#233;es de la capitale doivent &#234;tre inscrites avec la pr&#233;cision 8. En l'absence d'indication que l'aide va &#224; la capitale</description>
+        </codelist-item>
+        <codelist-item>
+            <code>9</code>
+            <name>Unclear - country</name>
+            <name xml:lang="fr">Impr&#233;cis - Pays</name>
+            <description>Unclear. The locations is estimated to be the country level (often paired with the capital, with precision 7)</description>
+            <description xml:lang="fr">Impr&#233;cis. On estime que lieu est un pays (accompagne souvent la capitale, avec la pr&#233;cision 7)</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

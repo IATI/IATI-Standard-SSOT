@@ -1,0 +1,1012 @@
+IATI Schema Changes -*-Outline-*-
+
+* (pre) Version 2.01
+(see http://support.iatistandard.org/forums/21200855-2-01-Integer-Upgrade)
+
+[*] designates a backwards-incompatible change
+  
+  * all complexType mixed="true" have been removed from the schema
+
+** Activities
+  * order of elements is now enforced by the schema
+  * iati-activities/@version is now a string instead of a decimal
+  * iati-activities/@version is now required
+  * iati-activities/@linked-data-default is now of type xsd:anyURI instead
+    of xsd:string
+  * iati-activity/@linked-data-uri is now of type xsd:anyURI instead
+    of xsd:string
+    
+  The following are all relative to the iati-activity element:
+  * iati-identifier is required once and only once
+  * reporting-org is required once and only once
+  * title is required once and only once
+  * title element requires at least one narrative element
+  * description is required at least once
+  * description element requires at least one narrative element
+  * participating-org is required at least once
+  * participating-org element has optional narrative element
+  * participating-org element no longer has the textAtts attribute group
+  * activity-scope is no longer of type: codeType
+  * recipient-country has optional narrative element
+  * recipient-country element no longer has the textAtts attribute group
+  * recipient-country/@code is now required
+  * recipient-region has optional narrative element
+  * recipient-region element no longer has the textAtts attribute group
+  * recipient-region/@code is now required
+  * other-identifier no longer has the @owner-ref attribute
+  * other-identifier no longer has the @owner-name attribute
+  * new attribute: other-identifier/@ref
+  * new attribute: other-identifier/@type
+  * new element added: other-identifier/owner-org
+  * sector no longer has the textAtts attribute group
+  * sector has optional narrative element
+  * activity-status is required once and only once
+  * activity-date is required at least once
+  * activity-date has optional narrative element
+  * activity-scope when used may only occur once
+  * contact-info/organisation may occur no more than once
+  * new element added : contact-info/department
+  * contact-info/person-name may occur no more than once
+  * contact-info/job-title may occur no more than once
+  * policy-marker has optional narrative element
+  * policy-marker/@significance is now required
+  * policy-marker/@code is now required
+  * transaction/transaction-type is required once and only once
+  * transaction/transaction-date is required once and only once
+  * transaction/value is required once and only once
+  * transaction/description when used may only occur once
+  * transaction/provider-org when used may only occur once
+  * transaction/provider-org has optional narrative element
+  * transaction/receiver-org when used may only occur once
+  * transaction/receiver-org has optional narrative element
+  * transaction/disbursement-channel when used may only occur once
+  * new element added: transaction/sector
+  * new element added: transaction/recipient-country
+  * new element added: transaction/recipient-region
+  * transaction/flow-type when used may only occur once
+  * transaction/finance-type when used may only occur once
+  * transaction/aid-type when used may only occur once
+  * transaction/tied-status when used may only occur once
+  * location/location-reach when used may only occur once
+  * location/location-reach/@code is required
+  * location/location-id/@code is required
+  * location/location-id/@vocabulary is required
+  * location/name becomes of type: textRequiredType
+  * location/name when used may only occur once
+  * location/description becomes of type: textRequiredType
+  * location/description when used may only occur once
+  * location/activity-description becomes of type: textRequiredType
+  * location/activity-description when used may only occur once
+  * location/administrative/@code is required
+  * location/administrative/@vocabulary is required
+  * attribute removed: location/administrative/@adm1
+  * attribute removed: location/administrative/@adm2
+  * attribute removed: location/administrative/@country
+  * location/activity-description when used may only occur once
+  * location/point when used may only occur once
+  * location/point/pos is required
+  * location/exactness when used may only occur once 
+  * location/exactness/@code is required
+  * location/location-class when used may only occur once 
+  * location/location-class/@code is required
+  * location/feature-designations when used may only occur once 
+  * location/feature-designation/@code is required
+  * element removed: location/coordinates
+  * country-budget-items when used may only occur once
+  * country-budget-items/budget-item is required at least once
+  * country-budget-items/budget-item/description becomes of type: textRequiredType
+  * result/title is required once and only once
+  * result/description when used may only occur once
+  * result/indicator is required at least once
+  * result/indicator/title is required once and only once
+  * result/indicator/description when used may only occur once
+  * result/indicator/baseline when used may only occur once
+  * result/indicator/baseline/comment when used may only occur once
+  * result/indicator/baseline/period/period-start is required once and only once
+  * result/indicator/baseline/period/period-end is required once and only once
+  * result/indicator/baseline/target when used may only occur once
+  * result/indicator/baseline/target/comment when used may only occur once
+  * result/indicator/baseline/actual when used may only occur once
+  * result/indicator/baseline/actual/comment when used may only occur once
+  * collaboration-type when used may only occur once
+  * default-flow-type when used may only occur once
+  * default-finance-type when used may only occur once
+  * default-aid-type when used may only occur once
+  * default-tied-status when used may only occur once
+  * capital-spend when used may only occur once
+  * conditions when used may only occur once
+  * crs-add when used may only occur once
+  * fss when used may only occur once
+  * element removed: activity-website
+  * conditions/condition has required narrative element
+  * budget/period-start is required once and only once
+  * budget/period-end is required once and only once
+  * budget/value is required once and only once
+  * planned-disbursement/period-start is required once and only once
+  * planned-disbursement/period-end is required once and only once
+  * planned-disbursement/value is required once and only once
+  * element renamed: crs-add/aidtype-flag renamed crs-add/other-flags
+  * new element: crs-add/other-flags (see above)
+  * element removed: crs-add/aidtype-flag (see above)
+  * crs-add/loan-terms when used may only occur once
+  * crs-add/loan-terms/repayment-type when used may only occur once
+  * crs-add/loan-terms/repayment-plan when used may only occur once
+  * crs-add/loan-terms/commitment-date when used may only occur once
+  * crs-add/loan-terms/repayment-first-date when used may only occur once
+  * crs-add/loan-terms/repayment-final-date when used may only occur once
+  * crs-add/loan-status when used may only occur once
+  * crs-add/loan-status/interest-received when used may only occur once
+  * crs-add/loan-status/principal-outstanding when used may only occur once
+  * crs-add/loan-status/principal-arrears when used may only occur once
+  * crs-add/loan-status/interest-arrears when used may only occur once
+  * document-link element requires a single title element
+  * document-link element requires at least one category element
+  - new element optional added: document-link/recipient-country
+
+  * complexType: currencyType now defined here  
+  * complexType removed: indicatorOutcomeType
+  
+  * attribute: currency now defined here
+  
+  
+** Organisations
+  * order of elements is now enforced by the schema
+  - iati-organisations/@version is now a string instead of a decimal
+  * iati-organisations/@version is now required
+  * iati-identifier element has been removed
+  * new element added: organisation-identifier element 
+  * name element is required once and only once
+  * name element requires at least on narrative element
+  * reporting-org is required once and only once
+  * total-budget/period-start is required once and only once
+  * total-budget/period-end is required once and only once
+  * total-budget/value is required once and only once
+  - new optional element added: total-budget/budget-line
+  * recipient-org-budget/recipient-org is required once and only once
+  * recipient-org-budget/recipient-org requires at least on narrative element
+  * recipient-org-budget/period-start is required once and only once  
+  * recipient-org-budget/period-end is required once and only once
+  * recipient-org-budget/value is required once and only once
+  - new element added: recipient-org-budget/budget-line
+  * recipient-country-budget/period-start is required once and only once  
+  * recipient-country-budget/period-end is required once and only once
+  * recipient-country-budget/value is required once and only once
+  - new element optional added: recipient-country-budget/budget-line
+  - new element optional added: document-link is now defined in the Organisations schema
+  * document-link element requires a single title element
+  * document-link element requires at least one category element
+  - new element optional added: document-link/recipient-country
+  * complexType: currencyType now defined here
+  * attribute: currency now defined here
+
+** Common
+  * new element added: narrative element is used for text fields
+  - new type added: textRequiredType
+  * title element changes type to textRequiredType
+  * description element requires at least on narrative element
+  * description element no longer has the textAtts attribute group
+  * description element no longer has a @type attribute
+  * comment element changes type to textRequiredType
+  - iati-identifier element removed from common schema and into activity schema
+  * reporting-org element requires at least on narrative element
+  - Frequently-used attributes, @code, @ref, @type, @percentage, @currency
+    removed from the common schema and defined where used instead
+  * attribute group: textAtts removed from the common schema
+  * complexType: plainType removed from the common schema
+  * complexType: textType has optional narrative element
+  * complexType: textType no longer has the textAtts attribute group
+  * complexType: codeType removed from the common schema
+  * complexType: textRequiredType added
+  * complexType: refType removed from the common schema
+  * complexType: refReqType removed from the common schema
+  * complexType: currencyType removed from the common schema
+  * complexType: dateType removed from the common schema
+  * complexType: dateReqType removed from the common schema 
+
+* (pre) Version 1.05
+
+(see http://support.iatistandard.org/forums/22895158-1-05-Decimal-Upgrade)
+
+[*] designates a backwards-incompatible change
+
+** Activities
+- added a descripton to the planned-disbursement element
+
+
+* (pre) Version 1.04
+
+(see http://support.iatistandard.org/forums/22743317-1-04-Decimal-Upgrade)
+
+[*] designates a backwards-incompatible change
+
+** Activities
+
+- added reporting-org/@secondary-reporter attribute
+
+- made a number of changes to the location element
+  * added location/@ref attribute
+  * added location/location-reach element
+  * added location/location-id element
+  * added location/activity-description element
+  * location/administrative gets new attributes:  @level, @vocabulary, @code, @xml:lang
+  * location/administrative has the following attributes deprecated: @country, @adm1, @adm2
+  * added location/point element
+  * added location/exactness element
+  * added location/location-class element
+  * added location/feature-designation element
+  * deprecated location/gazetteer-entry element
+  * deprecated location/coordinates element
+  * deprecated location/location-type element
+
+- some documentation has been altered slightly
+
+- country-budget-items/budget-item/@percentage is now optional rather than required
+
+- added conditions/condition/@xml:lang attribute
+
+* (pre2) Version 1.03
+
+[*] designates a backwards-incompatible change
+
+** Activities
+
+- added the optional contact-info/website element
+
+- added the optional contact-info/@type attribute
+
+- changed the following subelements of contact-info to allow
+  multiple-language versions explicitly (no change to parsing; purely
+  semantic): organisation, person-name, job-title, mailing-address
+
+
+* (pre) Version 1.03
+
+(see http://wiki.iatistandard.org/standard/revision/1.03/changes_specification)
+
+[*] designates a backwards-incompatible change
+
+** Activities
+
+- Version numbers now included in the document root. Versions match the
+  version of the standard, not the document, although documents will 
+  only change in line with the standard.
+
+- globally changed the @percentage attribute to allow decimals
+  (e.g. "55.5" as well as "50")
+
+- globally changed the @currency attribute to allow decimals
+  (e.g. "99.99" as well as "99")
+
+- added the optional country-budget-item element
+
+- added the optional contact-info/job-title element
+
+- added the optional capital-spend element
+
+- added the optional crs-add element and its child elements
+
+- added the optional fss element and its child elements
+
+- added the activity-scope element
+
+- added optional recipient-region/@vocabulary attribute
+
+** Organisations
+
+- Version numbers now included in the document root. Versions match the
+  version of the standard, not the document, although documents will 
+  only change in line with the standard.
+
+- globally changed the @currency attribute to allow decimals
+  (e.g. "99.99" as well as "99")
+
+** Common
+- Version numbers now included in the document root. Versions match the
+  version of the standard, not the document, although documents will 
+  only change in line with the standard.
+
+- Currency values are now allowed to be declared as decimals instead of 
+  integers.
+
+- Moved the @percentage attribute to common, so that it can be reused.
+  
+** Registry Record
+- Version numbers now included in the document root. Versions match the
+  version of the standard, not the document, although documents will 
+  only change in line with the standard.
+  
+* 1.02beta (2012-11-23)
+
+(See http://wiki.iatistandard.org/standard/revision/1.02/changes_specification)
+
+[*] designates a backwards-incompatible change
+
+- bumped version to 1.02 in preparation for 2012-12-17 release
+
+** Activities
+
+- [*] replaced document-link/@language with element document-link/language
+
+- [*] changed type of iati-activity/@hierarchy from xsd:string to
+  xsd:int
+
+- introduced the optional iati-activities/@linked-data-default attribute
+
+- introduced the optional iati-activity/@linked-data-uri attribute
+
+** Organisations
+
+- [*] replaced document-link/@language with element document-link/language
+
+
+* Version 1.01
+
+(These changes made it into the IATI 1.01 final release.)
+
+- removed documentation references to obsolete draft of standard
+
+** Activities
+
+- [*] result model changed entirely - backwards incompatible
+
+- [*] correct content model for conditions/condition, which previously
+  was hidden by misplaced xsd:annotation element (Redmine issue #72)
+
+- [*] added explicit content type for contact-info/organisation
+
+- in documentation, no longer specify default for optional
+  iati-activities/@version attribute
+
+- add optional transaction/description element
+
+- make budget/@type, budget/period-start/@iso-date, and
+  budget/period-end/@iso-date optional
+
+- make planned-disbursement/period-start/@iso-date and
+  planned-disbursement/period-end/@iso-date optional
+
+- make participating-org/@type optional again
+
+- make activity-status/@code optional again
+
+- [*] remove location/description/@type
+
+- make location/coordinates/@precision optional
+
+- [*] change activity-date/@iso-date, budget/period-start/@iso-date,
+  planned-disbursement/period-start/@iso-date,
+  planned-disbursement/period-end/@iso-date,
+  budget/period-end/@iso-date, transaction/transaction-date/@iso-date,
+  planned-disbursement/value/@value-date, budget/value/@value-date,
+  and transaction/value/@value-date to use xsd:date rather than
+  xsd:dateTime (e.g. "2011-06-01" instead of previous
+  "2011-06-01T12:00:00Z").
+
+
+** Organisations
+
+- made recipient-org-budget/recipient-org/@ref optional again
+
+- added top-level iati-organisations element, similar to
+  iati-activies, to allow multiple organisation records in a single
+  file
+
+- added reporting-org to iati-organisations, to allow reporting by an
+  organisation other than the one being described
+
+- [*] change total-budget/period-start/@iso-date,
+  recipient-org-budget/period-start/@iso-date,
+  recipient-country-budget/period-start/@iso-date,
+  total-budget/period-end/@iso-date,
+  recipient-country-budget/period-end/@iso-date,
+  recipient-org-budget/period-end/@iso-date,
+  total-budget/value/@value-date,
+  recipient-org-budget/value/@value-date, and
+  recipient-country-budget/value/@value-date to use xsd:date rather
+  than xsd:dateTime (e.g. "2011-06-01" instead of previous
+  "2011-06-01T12:00:00Z")
+
+
+* 2011-03-11 changes (version 2.0 beta)
+
+WARNING: this release contains a large number of
+backwards-incompatible changes for alignment with the most
+recently-approved IATI standard (see exceptions below).
+
+[*] designates a backwards-incompatible change
+
+** Activities
+
+- [*] make reporting-org/@ref required
+
+- [*] make reporting-org/@type required
+
+- [*] make participating-org/@role required
+
+- [*] make participating-org/@type required
+
+- [*] remove recipient-country/@type
+
+- [*] make recipient-country/@code required
+
+- [*] remove collaboration-type/@type
+
+- [*] remove default-flow-type/@type
+
+- [*] remove default-aid-type/@type
+
+- [*] remove default-finance-type/@type
+
+- [*] remove sector/@type
+
+- [*] remove default-tied-status/@type
+
+- make policy-marker/@significance optional
+
+- make policy-marker/@code optional
+
+- [*] remove policy-marker/@type
+
+- [*] remove activity-status/@type
+
+- [*] remove contact-info/person-name/@xml:lang
+
+- [*] remove activity-website/@xml:lang
+
+- [*] remove transaction/status
+
+- [*] remove transaction/provider-activity
+
+- [*] remove transaction/receiver-activity
+
+- [*] remove transaction/@flow
+
+- [*] remove transaction/@type
+
+- [*] make transaction/transaction-type/@code required
+
+- [*] remove transaction/transaction-type/@type
+
+- [*] remove transaction/provider-org/@type
+
+- [*] remove transaction/provider-org/@xml:lang
+
+- [*] remove transaction/receiver-org/@type
+
+- [*] remove transaction/receiver-org/@xml:lang
+
+- [*] remove transaction/value/@type
+
+- [*] remove transaction/flow-type/@type
+
+- [*] remove transaction/finance-type/@type
+
+- [*] remove transaction/aid-type/@type
+
+- [*] remove transaction/disbursement-channel/@type
+
+- [*] remove transaction/tied-status/@type
+
+- [*] remove document-link/category/@type
+
+- [*] remove location/location-type/@type
+
+- add budget as specified in the standard
+
+- add planned-disbursement as specified in the standard
+
+- add conditions as specified in the standard
+
+- add result as specified in the standard
+
+- [*] remove total-cost
+
+- [*] remove budget-planned
+
+- [*] remove related-initiative
+
+
+*** Differences from the Standard
+
+- not enforcing occurrence of iati-activity or its top-level children
+
+- not enforcing order or occurrence of children of contact-info or
+  transaction
+
+- not enforcing when text content is required (e.g. iati-identifier)
+
+- kept @xml:lang in transaction/disbursement-channel,
+  transaction/tied-status, document-link/category, and
+  location/location-type to allow specifying the language of the text
+  label, and for consistency with other elements using references or
+  codes (including default-tied-status)
+
+- add @xml:lang to result/indicator/baseline, result/indicator/target,
+  and result/indicator/actual
+
+- use @iso-date for period-start and period-end under budget and
+  planned-disbursement, for consistency with other uses of the same
+  elements
+
+** Organisations
+
+- [*] make total-budget/period-start/@iso-date required
+
+- [*] make total-budget/period-end/@iso-date required
+
+- [*] remove total-budget/value/@type
+
+- [*] make recipient-org-budget/recipient-org/@ref required
+
+- [*] remove recipient-org-budget/recipient-org/@type
+
+- [*] make recipient-org-budget/period-start/@iso-date required
+
+- [*] make recipient-org-budget/period-end/@iso-date required
+
+- [*] remove recipient-org-budget/value/@type
+
+- [*] remove recipient-country-budget/recipient-country/@ref
+
+- [*] remove recipient-country-budget/recipient-country/@type
+
+- [*] add recipient-country-budget/recipient-country/@code (required)
+
+- [*] make recipient-country-budget/period-start/@iso-date required
+
+- [*] make recipient-country-budget/period-end/@iso-date required
+
+- [*] remove recipient-country-budget/value/@type
+
+- [*] remove document-link/category/@type
+
+- [*] remove organisation-website
+
+
+*** Differences from the Standard
+
+- not enforcing order or occurrence of top-level elements
+
+- not enforcing when text content is required
+
+
+* 2010-11-15 changes (version 1.01 beta2)
+
+WARNING: this release includes backwards-incompatible changes to the
+Registry Record extension schema -- see below for details.
+
+** General
+
+- moved iati-identifier from Organisations and Activities schemas to
+  iati-common.xsd
+
+- removed non-required declarations of xml namespace, to avoid
+  confusing some non-conformant XML processing tools
+
+** Registry Record (extension)
+
+- [backwards-incompatible] new requried registry-record/@title
+  attribute
+
+- [backwards-incompatible] new requried
+  registry-record/@last-updated-datetime attribute
+
+- [backwards-incompatible] new requried
+  registry-record/@generated-datetime attribute
+
+- [backwards-incompatible] new requried
+  registry-record/@format attribute
+
+- [backwards-incompatible] new requried registry-record/@license
+  attribute
+
+- add optional registry-record/@xml:lang attribute
+
+- make registry-record/@donor-id and registry-record/@donor-type
+  optional rather than required
+
+- add new optional registry-record/@donor-country attribute
+
+- add new optional registry-record/@activity-period attribute
+
+- include an XML namespace declaration for the target namespace, even
+  though it's not explicitly referenced, to avoid confusing some
+  non-conformant XML processing tools
+
+
+* 2010-11-10 changes (version 1.01 beta)
+
+WARNING: this release includes backwards-incompatible changes. IATI
+documents that were valid with the 2010-07-07 schema release (version
+1.0) may be invalid with this release.
+
+** General
+
+- separated common markup components into iati-common.xsd, to avoid
+  duplication between the Organisations and Activities schemas; like
+  xml.xsd, iati-common.xsd must be in the same directory as the
+  principal schema
+
+- new application-specific Registry Record schema (see below); this is
+  an extension rather than part of the IATI standard, and provides a
+  model of how other extensions could be written (inside or outside
+  IATI)
+
+** Activities
+
+- [backwards-incompatible] renamed contact-info/organization to
+  contact-info/organisation
+
+- [backwards-incompatible] make @code attribute mandatory for
+  collaboration-type, default-flow-type, transaction/flow-type,
+  default-aid-type, transaction/aid-type, default-finance-type,
+  transaction/finance-type, default-tied-status,
+  transaction/tied-status, policy-marker, and activity-status
+
+- [backwards-incompatible] remove transaction/transaction-date/@type
+
+- [backwards-incompatible] make @ref and @type mandatory for
+  related-activity
+
+- add optional iati-activity/@version attribute
+
+- add new transaction/disbursement-channel element
+
+- add new document-link element and subelements
+
+- add new location element and subelements
+
+- change structure of budget-planned/period-start and
+  budget-planned/period-end so that content doesn't have to be an ISO
+  date (and add optional @iso-date attribute)
+
+** Organizations
+
+- [backwards-incompatible] rename iati-organization to
+  iati-organisation
+
+- [backwards-incompatible] rename organization-website to
+  organisation-website
+
+- add optional iati-organisation/@version attribute
+
+- add new document-link element and subelements
+
+** Registry Record (extension)
+
+- Added new application-specific extension schema to add an import
+  label for the IATI registry (not part of the IATI standards).
+
+
+* 2010-07-07 Changes (version 1.0)
+
+** Activities
+
+- add xsd:any to most text content, to allow mixed-content
+  extensibility (e.g. in text, description, etc.)
+
+- add xsd:anyAttribute wherever possible
+
+- change @ref to @code anywhere the attribute represents an enumerated
+  list rather than the identifier of a business object:
+  collaboration-type, (default-)flow-type, default-aid-type,
+  transaction/aid-type, (default-)finance-type, sector,
+  default-tied-status, tied-status, policy-marker,
+  transaction/transaction-type, activity-status, target-location,
+  transaction/status
+
+- modify the currencyType complex type so that financial values must
+  be integers: affects total-cost, budget-planned/value,
+  transaction/value
+
+- make total-cost/value/@value-date, budget-planned/value/@value-date,
+  and transaction/value/@value-date required 
+
+- rename finance-type to default-finance-type and add
+  transaction/finance-type
+
+- rename flow-type to default-flow-type and add transaction/flow-type
+
+- add transaction/transaction-date/@iso-date (required), and use the
+  content to hold an optional text description
+
+- make transaction-date/@type optional
+
+- add legacy-data element to hold original (non-IATI) values
+
+- add budget-planned/receiver-org and budget-planned/description
+
+- add iati-activity/@hierarchy
+
+
+** Organizations
+
+- add xsd:any and xsd:anyAttribute various places to improve
+  extensibility
+
+- modify the currencyType complex type so that financial values must
+  be integers: affects total-budget and recipient-org-budget
+
+- make total-budget/value/@value-date and
+  recipient-org-budget/value/@value-date required
+
+- change structure of */period-start and */period-end to use @iso-date
+  attribute (required) and optional free-form content, as in the
+  activities schema
+
+- add recipient-country-budget
+
+
+** Tests
+
+- add a completely new set of unit tests for each schema
+
+
+* 2010-05-04 Changes
+
+** Organizations
+
+- added iati-organizations-schema.xsd for organization reports
+
+** Extensibility
+
+- changed schema to allow extensibility using attributes and elements
+  from explicit namespaces
+
+** Pilots
+
+- added test files from other pilots (not in the test script, yet, due
+  to issues)
+
+** Tests
+
+- reorganized tests by type
+
+
+* 2010-04-27 Changes
+
+** Update iati-activity
+
+- rename optional attribute 'default-current' to 'default-currency'
+
+** Update 03.05 Recipient Country
+
+- remove attributes ref and type
+
+- add required attribute 'code', holding the ISO 3166-1-alpha-2 code
+  for the country
+
+** Add 03.05.1 Recipient Region
+
+- add optional and repeatable element 'recipient-region', with same
+  model as recipient-country
+
+** Rename 03.07.1 Type of Aid
+
+- rename element activity/aid-type to activity/default-aid-type
+
+** Rename 03.09 Identifier
+
+- rename element identifier to other-identifier
+
+** Add 03.09.1 IATI Identifier
+
+- add (required, non-repeatable) element iati-identifier
+
+** Update 03.10 Title
+
+- documentation updates only -- title should be a single line
+
+** Update 03.16 Detailed Geographic Info
+
+- documentation updates only -- make it clear that this element is for
+  only subnational geographical info, and distinguish from
+  geopolitical info
+
+** Add 03.17 Tied aid status
+
+- add optional element default-tied-status (was in 2010-04-17 release, but not
+  enabled in activity element)
+
+** Add 03.18 Other Policy Markers
+
+- add optional and repeatable element 'policy-marker'
+
+** Add 04.02 Annual activity budgets
+
+- add optional and repeatable element budget-planned
+
+** Rename and extend 04.03 Total amount committed by individual donor
+
+- rename optional and repeatable element incoming-contribution to
+  transaction
+
+- change documentation to specify that this element also now covers
+  04.05, 04.06, 04.07, and 04.08
+
+- remove transaction/contribution-type and make into an optional @type
+  attribute for transaction/value (e.g. "funds", "in-kind")
+
+- make transaction/value/@currency optional (since it can be provided with
+  iati-activity/@default-currency as well)
+
+- add transaction/transaction-type (commitment, disbursement, etc.)
+
+- rename element transaction/donor-org to transaction/provider-org
+
+- rename attribute transaction/donor-org/donor-activity-id to
+  transaction/provider-org/provider-activity-id and clarify purpose in
+  documentation
+
+- rename optional element transaction/recipient-org to
+  transaction/receiver-org
+
+- rename optional attribute
+  transaction/recipient-org/recipient-activity-id to
+  transaction/receiver-org/receiver-activity-id and clarify purpose in
+  documentation
+
+- rename optional element source-activity to provider-activity, and
+  specify in docs that it should be present only when
+  transaction/@flow is "incoming"
+
+- add optional element receiver-activity, and specify in docs that it
+  should be present only when transaction/@flow is "outgoing"
+
+- add optional element aid-type, to override top-level element
+  iati-activity/default-aid-type
+
+- add optional element tied-status, to override top-level element
+  iati-activity/default-tied-status
+
+** X.XX Related Activity
+
+- add optional and repeatable element related-activity, similar to
+  related-initiative (but for other IATI activities)
+
+
+* 2010-04-17 Changes
+
+** updated iati2idml.xsl
+
+* 2010-04-16 Changes based on 2010-04-15 teleconference
+
+** add 2.12 Project Website
+
+- add element activity-website
+
+** simplify 3.01 Reporting Organization and 3.02 Participating Organization
+
+- remove attribute reporting-org/@role - must now also list the
+  organization under participating-org if it's actually involved in
+  the project
+
+- remove attribute reporting-org/@acronym and
+  participating-org/@acronym - just include it in the text if desired
+
+- update documentation
+
+** update 3.05 Recipient Country
+
+- add recipient-country/@percentage to show what percentage of the
+  project is allocated to each country (if known)
+
+** support 3.06 Collaboration Type for phase 1
+
+- add optional element collaboration-type
+
+** support 3.07 Flow Type for phase 1
+
+- add optional element flow-type
+
+** support 3.08 Finance Type for phase 1
+
+- add optional element finance-type
+
+** for 3.9 Aid Activity ID, use a single element
+
+- delete element primary-id
+
+- rename element other-id to identifier, and use for both primary
+  and alternative identifiers
+
+- update documentation
+
+** Update 3.12 General/Detailed Sector with additional facets
+
+- add optional attribute sector/@vocabulary to specify when a non-DAC
+  sector scheme/vocabulary/taxonomy/codelist is in use
+
+- add optional attribute sector/@percentage to specify the percentage
+  of the project targetted at a specific sector within each vocabulary
+
+** Use one generic element for 3.13 Project Dates
+
+- remove elements start-date-planned and end-date-planned
+
+- add element activity-date
+
+- add @type attribute for segmentation
+
+- add @iso-date attribute for the ISO date (allowing free-form text
+  date descriptions in the content)
+
+- add optional @xml:lang attribute to describe language of freeform
+  text
+
+** Support 3.14 Activity Status / Stage
+
+- add optional element activity-status
+
+** Support 3.15 Activity Contacts
+
+- add optional element contact-info
+
+** Updated 3.16 Detailed geographic info
+
+- add optional attribute target-location/@vocabulary
+
+- merge optional attributes target-location/@latitude-deg and
+  target-location/@longitude-deg into @gis
+
+** Support 3.17 Tied Aid Status
+
+- add optional element tied-status
+
+** remove USD-specific information from all currency amounts, and add a general value date instead
+
+- remove total-cost/@usd-equivalent and
+  total-cost/@usd-conversion-date
+
+- add total-cost/@value-date
+
+** replace "project" with "activity" throughout
+
+- change documentation throughout
+
+- rename schema file from "iati-projects-schema.xsd" to
+  "iati-activities-schema.xsd"
+
+- rename element iati-projects to iati-activities
+
+- rename element project to iati-activity
+
+- rename attribute incoming-contribution/@donor-project-id to
+  @donor-activity-id
+
+- rename attribute incoming-contribution/@recipient-project-id to
+  @recipient-activity-id
+
+- rename element incoming-contribution/source-project to
+  source-activity
+
+** support a default language for an activity (3.XX Default Language)
+
+- add optional attribute iati-activity/@xml:lang
+
+** support a default currency for an activity (4.XX Default Currency)
+
+- add optional attribute iati-activity/@default-currency
+
+** generalize Related Initiative
+
+- change documentation to specify that element related-initiative can
+  refer to another activity as well as an appeal, etc.
+
+
+* 2010-03-16
+
+- renamed incoming-contribution/donor to
+  incoming-contribution/donor-org
+
+- added incoming-contribution/recipient-org to cover case where the
+  organization receiving a contribution isn't the reporting-org (I
+  don't think that happens with OCHA's FTS data, but it could happen
+  with other projects)
+
+
+* 2010-03-14
+
+- initial version
+
+__end__

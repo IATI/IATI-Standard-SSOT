@@ -1,0 +1,4 @@
+code,name,description,language,category,category-name,category-description
+1,OECD DAC,Supra-national regions according to OECD DAC CRS recipient codes,en,,,
+2,UN,Supra-national regions maintained by UN Statistics Division (M49 standard),en,,,
+99,Reporting Organisation,The region reported corresponds to a region vocabulary maintained by the reporting organisation for this activity.,en,,,

@@ -1,0 +1,38 @@
+<codelist name="LoanRepaymentType" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Loan Repayment Type</name>
+        <description>used in additional CRS elements</description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Equal Principal Payments (EPP)</name>
+            <name xml:lang="fr">Remboursements en tranches &#233;gales du principal</name>
+            <description>As required and defined by CRS++ reporting format Column 44</description>
+            <description xml:lang="fr">Tel que requis et d&#233;fini dans le gabarit CRS++ colonne 44</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Annuity</name>
+            <name xml:lang="fr">Rente</name>
+            <description>As required and defined by CRS++ reporting format Column 44</description>
+            <description xml:lang="fr">Tel que requis et d&#233;fini dans le gabarit CRS++ colonne 44</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Lump sum</name>
+            <name xml:lang="fr">Montant forfaitaire</name>
+            <description>As required and defined by CRS++ reporting format Column 44</description>
+            <description xml:lang="fr">Tel que requis et d&#233;fini dans le gabarit CRS++ colonne 44</description>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>Other</name>
+            <name xml:lang="fr">Autre</name>
+            <description>As required and defined by CRS++ reporting format Column 44</description>
+            <description xml:lang="fr">Tel que requis et d&#233;fini dans le gabarit CRS++ colonne 44</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

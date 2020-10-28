@@ -1,0 +1,1 @@
+{"attributes": {"name": "PublisherType", "complete": "1", "embedded": "0", "category-codelist": null}, "metadata": {"name": "", "description": "", "category": "", "url": ""}, "data": [{"code": "1", "name": "Donateur", "status": "active"}, {"code": "2", "name": "R\u00e9cipiendaire", "status": "active"}, {"code": "3", "name": "Agr\u00e9gateur", "status": "active"}]}

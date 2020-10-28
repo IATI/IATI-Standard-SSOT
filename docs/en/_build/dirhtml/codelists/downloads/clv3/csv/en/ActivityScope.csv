@@ -1,0 +1,9 @@
+code,name,description,category,url,status
+1,Global,The activity scope is global,,,active
+2,Regional,The activity scope is a supranational region,,,active
+3,Multi-national,"The activity scope covers multiple countries, that don't constitute a region",,,active
+4,National,The activity scope covers one country,,,active
+5,Sub-national: Multi-first-level administrative areas,"The activity scope covers more than one first-level subnational administrative areas (e.g. counties, provinces, states)",,,active
+6,Sub-national: Single first-level administrative area,"The activity scope covers one first-level subnational administrative area (e.g. country, province, state)",,,active
+7,Sub-national: Single second-level administrative area,The activity scope covers one second-level subnational administrative area (e.g. municipality or district),,,active
+8,Single location,"The activity scope covers one single location (e.g. town, village, farm)",,,active

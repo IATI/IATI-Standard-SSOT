@@ -1,0 +1,175 @@
+code,name,description,category,url,status
+AED,UAE Dirham,,,,active
+AFN,Afghani,,,,active
+ALL,Lek,,,,active
+AMD,Armenian Dram,,,,active
+ANG,Netherlands Antillian Guilder,,,,active
+AOA,Kwanza,,,,active
+ARS,Argentine Peso,,,,active
+AUD,Australian Dollar,,,,active
+AWG,Aruban Guilder,,,,active
+AZN,Azerbaijanian Manat,,,,active
+BAM,Convertible Marks,,,,active
+BBD,Barbados Dollar,,,,active
+BDT,Taka,,,,active
+BGN,Bulgarian Lev,,,,active
+BHD,Bahraini Dinar,,,,active
+BIF,Burundi Franc,,,,active
+BMD,Bermudian Dollar,,,,active
+BND,Brunei Dollar,,,,active
+BOB,Boliviano,,,,active
+BOV,Mvdol,,,,active
+BRL,Brazilian Real,,,,active
+BSD,Bahamian Dollar,,,,active
+BTN,Ngultrum,,,,active
+BWP,Pula,,,,active
+BYR,Belarussian Ruble,Withdrawn from ISO Currency codelist. Use code BYN.,,,withdrawn
+BYN,Belarussian Ruble,,,,active
+BZD,Belize Dollar,,,,active
+CAD,Canadian Dollar,,,,active
+CDF,Congolese Franc,,,,active
+CHF,Swiss Franc,,,,active
+CLF,Unidades de fomento,,,,active
+CLP,Chilean Peso,,,,active
+CNY,Yuan Renminbi,,,,active
+COP,Colombian Peso,,,,active
+COU,Unidad de Valor Real,,,,active
+CRC,Costa Rican Colon,,,,active
+CUC,Peso Convertible,,,,active
+CUP,Cuban Peso,,,,active
+CVE,Cape Verde Escudo,,,,active
+CZK,Czech Koruna,,,,active
+DJF,Djibouti Franc,,,,active
+DKK,Danish Krone,,,,active
+DOP,Dominican Peso,,,,active
+DZD,Algerian Dinar,,,,active
+EEK,Kroon,Withdrawn from ISO Currency codelist,,,withdrawn
+EGP,Egyptian Pound,,,,active
+ERN,Nakfa,,,,active
+ETB,Ethiopian Birr,,,,active
+EUR,Euro,,,,active
+FJD,Fiji Dollar,,,,active
+FKP,Falkland Islands Pound,,,,active
+GBP,Pound Sterling,,,,active
+GEL,Lari,,,,active
+GHS,Cedi,,,,active
+GIP,Gibraltar Pound,,,,active
+GMD,Dalasi,,,,active
+GNF,Guinea Franc,,,,active
+GTQ,Quetzal,,,,active
+GYD,Guyana Dollar,,,,active
+HKD,Hong Kong Dollar,,,,active
+HNL,Lempira,,,,active
+HRK,Kuna,,,,active
+HTG,Gourde,,,,active
+HUF,Forint,,,,active
+IDR,Rupiah,,,,active
+ILS,New Israeli Sheqel,,,,active
+INR,Indian Rupee,,,,active
+IQD,Iraqi Dinar,,,,active
+IRR,Iranian Rial,,,,active
+ISK,Iceland Krona,,,,active
+JMD,Jamaican Dollar,,,,active
+JOD,Jordanian Dinar,,,,active
+JPY,Yen,,,,active
+KES,Kenyan Shilling,,,,active
+KGS,Som,,,,active
+KHR,Riel,,,,active
+KMF,Comoro Franc,,,,active
+KPW,North Korean Won,,,,active
+KRW,Won,,,,active
+KWD,Kuwaiti Dinar,,,,active
+KYD,Cayman Islands Dollar,,,,active
+KZT,Tenge,,,,active
+LAK,Kip,,,,active
+LBP,Lebanese Pound,,,,active
+LKR,Sri Lanka Rupee,,,,active
+LRD,Liberian Dollar,,,,active
+LSL,Loti,,,,active
+LTL,Lithuanian Litas,Withdrawn from ISO Currency codelist,,,withdrawn
+LVL,Latvian Lats,Withdrawn from ISO Currency codelist,,,withdrawn
+LYD,Libyan Dinar,,,,active
+MAD,Moroccan Dirham,,,,active
+MDL,Moldovan Leu,,,,active
+MGA,Malagasy Ariary,,,,active
+MKD,Denar,,,,active
+MMK,Kyat,,,,active
+MNT,Tugrik,,,,active
+MOP,Pataca,,,,active
+MRO,Ouguiya,Withdrawn from ISO Currency codelist. Use code MRU.,,,withdrawn
+MRU,Ouguiya,,,,active
+MUR,Mauritius Rupee,,,,active
+MVR,Rufiyaa,,,,active
+MWK,Malawi Kwacha,,,,active
+MXN,Mexican Peso,,,,active
+MXV,Mexican Unidad de Inversion (UDI),,,,active
+MYR,Malaysian Ringgit,,,,active
+MZN,Metical,,,,active
+NAD,Namibia Dollar,,,,active
+NGN,Naira,,,,active
+NIO,Cordoba Oro,,,,active
+NOK,Norwegian Krone,,,,active
+NPR,Nepalese Rupee,,,,active
+NZD,New Zealand Dollar,,,,active
+OMR,Rial Omani,,,,active
+PAB,Balboa,,,,active
+PEN,Nuevo Sol,,,,active
+PGK,Kina,,,,active
+PHP,Philippine Peso,,,,active
+PKR,Pakistan Rupee,,,,active
+PLN,Zloty,,,,active
+PYG,Guarani,,,,active
+QAR,Qatari Rial,,,,active
+RON,Romanian Leu,,,,active
+RSD,Serbian Dinar,,,,active
+RUB,Russian Ruble,,,,active
+RWF,Rwanda Franc,,,,active
+SAR,Saudi Riyal,,,,active
+SBD,Solomon Islands Dollar,,,,active
+SCR,Seychelles Rupee,,,,active
+SDG,Sudanese Pound,,,,active
+SEK,Swedish Krona,,,,active
+SGD,Singapore Dollar,,,,active
+SHP,Saint Helena Pound,,,,active
+SLL,Leone,,,,active
+SOS,Somali Shilling,,,,active
+SSP,South Sudanese Pound,,,,active
+SRD,Surinam Dollar,,,,active
+STD,Dobra,Withdrawn from ISO Currency codelist. Use code STN.,,,withdrawn
+STN,Dobra,,,,active
+SVC,El Salvador Colon,,,,active
+SYP,Syrian Pound,,,,active
+SZL,Lilangeni,,,,active
+THB,Baht,,,,active
+TJS,Somoni,,,,active
+TMT,Manat,,,,active
+TND,Tunisian Dinar,,,,active
+TOP,Paanga,,,,active
+TRY,Turkish Lira,,,,active
+TTD,Trinidad and Tobago Dollar,,,,active
+TWD,New Taiwan Dollar,,,,active
+TZS,Tanzanian Shilling,,,,active
+UAH,Hryvnia,,,,active
+UGX,Uganda Shilling,,,,active
+USD,US Dollar,,,,active
+USN,US Dollar (Next day),,,,active
+USS,US Dollar (Same day),Withdrawn from ISO Currency codelist.,,,withdrawn
+UYI,Uruguay Peso en Unidades Indexadas,,,,active
+UYU,Peso Uruguayo,,,,active
+UZS,Uzbekistan Sum,,,,active
+VEF,Bolivar,,,,withdrawn
+VES,Bolivar Soberano,,,,active
+VND,Dong,,,,active
+VUV,Vatu,,,,active
+WST,Tala,,,,active
+XAF,CFA Franc BEAC,,,,active
+XBT,Bitcoin,,,,active
+XCD,East Caribbean Dollar,,,,active
+XDR,International Monetary Fund (IMF) Special Drawing Right (SDR),,,,active
+XOF,CFA Franc BCEAO,,,,active
+XPF,CFP Franc,,,,active
+YER,Yemeni Rial,,,,active
+ZAR,Rand,,,,active
+ZMK,Zambian Kwacha,Withdrawn from ISO Country codelist. Use code ZMW.,,,withdrawn
+ZMW,Zambian Kwacha,,,,active
+ZWL,Zimbabwe Dollar,,,,active

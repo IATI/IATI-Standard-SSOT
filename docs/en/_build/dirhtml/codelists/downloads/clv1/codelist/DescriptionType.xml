@@ -1,0 +1,26 @@
+<codelist name="DescriptionType" date-last-modified="2020-10-28T16:50:18.878052+00:00" version="" xml:lang="en">
+  <DescriptionType>
+    <code>1</code>
+    <name>General</name>
+    <language>en</language>
+    <description>Unstructured, long description of the activity </description>
+  </DescriptionType>
+  <DescriptionType>
+    <code>2</code>
+    <name>Objectives</name>
+    <language>en</language>
+    <description>Specific objectives for the activity, e.g. taken from logical framework</description>
+  </DescriptionType>
+  <DescriptionType>
+    <code>3</code>
+    <name>Target Groups</name>
+    <language>en</language>
+    <description>Details of groups that are intended to benefit from the activity</description>
+  </DescriptionType>
+  <DescriptionType>
+    <code>4</code>
+    <name>Other</name>
+    <language>en</language>
+    <description>For miscellaneous use. A further classification or breakdown may be included in the narrative</description>
+  </DescriptionType>
+</codelist>

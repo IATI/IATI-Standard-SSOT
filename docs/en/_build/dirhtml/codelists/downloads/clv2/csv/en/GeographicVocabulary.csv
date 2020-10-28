@@ -1,0 +1,7 @@
+code,name,description,category,url,status
+A1,Global Admininistrative Unit Layers,,,http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691,active
+A2,UN Second Administrative Level Boundary Project,"Note: the unsalb.org website is no longer accessible, and public access to the boundaries resources has been removed http://www.ungiwg.org/content/united-nations-international-and-administrative-boundaries-resources",,http://www.unsalb.org/,active
+A3,Global Administrative Areas,,,http://www.gadm.org/,active
+A4,ISO Country (3166-1 alpha-2),,,http://reference.iatistandard.org/codelists/Country/,active
+G1,Geonames,,,http://www.geonames.org/,active
+G2,OpenStreetMap,"Note: the code should be formed by prefixing the relevant OpenStreetMap ID with node/ way/ or relation/ as appropriate, e.g. node/1234567",,http://www.openstreetmap.org/,active

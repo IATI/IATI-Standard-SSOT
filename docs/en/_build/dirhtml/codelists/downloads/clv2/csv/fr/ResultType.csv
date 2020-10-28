@@ -1,0 +1,5 @@
+code,name,description,category,url,status
+1,Extrant,"Résultats de l'activité découlant directement de votre travail et précisions connexes (ce qui est fait, les communautés rejointes). Par exemple, X nombre de personnes.",,,active
+2,Effet,"Les résultats de l'activité qui produisent un effet sur les communautés générales ou les grands enjeux sur lesquels vous intervenez. Par exemple, taux d'infection réduit après une campagne de vaccination.",,,active
+3,Impact,"Les incidences à long terme des effets qui mènent à des résultats de niveau supérieur et de grande envergure, comme une amélioration de l'espérance de vie.",,,active
+9,Autre,Autre type de résultat non décrit ci-dessus.,,,active

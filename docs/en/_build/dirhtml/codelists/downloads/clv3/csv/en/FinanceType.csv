@@ -1,0 +1,69 @@
+code,name,description,category,url,status
+1,GNI: Gross National Income,,0,,active
+110,Standard grant,Grants are transfers in cash or in kind for which no legal debt is incurred by the recipient.,100,,active
+1100,Guarantees/insurance,,1000,,active
+111,Subsidies to national private investors,,100,,withdrawn
+2,ODA % GNI,,0,,active
+210,Interest subsidy,"A payment to soften the terms of private export credits, or loans or credits by the banking sector.",100,,active
+211,Interest subsidy to national private exporters,,100,,withdrawn
+3,Total Flows % GNI,,0,,active
+310,Capital subscription on deposit basis,"Payments to multilateral agencies in the form of notes and similar instruments, unconditionally encashable at sight by the recipient institutions.",100,,active
+311,Capital subscription on encashment basis,"Payments to multilateral agencies in the form of notes and similar instruments, unconditionally encashable at sight by the recipient institutions.",100,,active
+4,Population,,0,,active
+410,Aid loan excluding debt reorganisation,,400,,withdrawn
+411,Investment-related loan to developing countries,,400,,withdrawn
+412,Loan in a joint venture with the recipient,,400,,withdrawn
+413,Loan to national private investor,,400,,withdrawn
+414,Loan to national private exporter,,400,,withdrawn
+421,Standard loan,"Transfers in cash or in kind for which the recipient incurs legal debt (and the resulting claim is not intended to be traded). Since payment obligations on standard loan are senior obligations, i.e. creditors are entitled to receive payments against their claims before anyone else, they are also referred to as senior loans.",420,,active
+422,Reimbursable grant,"A contribution provided to a recipient institution for investment purposes, with the expectation of long-term reflows at conditions specified in the financing agreement. The provider assumes the risk of total or partial failure of the investment; it can also decide if and when to reclaim its investment.",420,,active
+423,Bonds,"Fixed-interest debt instruments, issued by governments, public utilities, banks or companies, tradable in financial markets.",420,,active
+424,Asset-backed securities,Securities whose value and income payments are derived from and backed by a specific pool of underlying assets.,420,,active
+425,Other debt securities,,420,,active
+431,Subordinated loan,"A loan that, in the event of default, will only be repaid after all senior obligations have been satisfied. In compensation for the increased risk, mezzanine debt holders require a higher return for their investment than secured or more senior lenders.",430,,active
+432,Preferred equity,"Equity that, in the event of default, will be repaid after all senior obligations and subordinated loans have been satisfied; and will be paid before common equity holders. It is a more expensive source of finance than senior debt, a less expensive source than equity.",430,,active
+433,Other hybrid instruments,Including convertible debt or equity.,430,,active
+451,Non-banks guaranteed export credits,,450,,withdrawn
+452,Non-banks non-guaranteed portions of guaranteed export credits,,400,,withdrawn
+453,Bank export credits,,400,,withdrawn
+510,Common equity,A share in the ownership of a corporation that gives the owner claims on the residual value of the corporation after creditors’ claims have been met.,500,,active
+511,Acquisition of equity not part of joint venture in developing countries,,500,,withdrawn
+512,Other acquisition of equity,,500,,withdrawn
+520,Shares in collective investment vehicles,Collective undertakings through which investors pool funds for investment in financial or nonfinancial assets or both. These vehicles issue shares (if a corporate structure is used) or units (if a trust structure is used).,500,,active
+530,Reinvested earnings,This item is only applicable to Foreign Direct Investment (FDI). Reinvested earnings on FDI consist of the retained earnings of a direct foreign investment enterprise which are treated as if they were distributed and remitted to foreign direct investors in proportion to their ownership of the equity of the enterprise and then reinvested by them in the enterprise.,500,,active
+610,Debt forgiveness: ODA claims (P),,600,,active
+611,Debt forgiveness: ODA claims (I),,600,,active
+612,Debt forgiveness: OOF claims (P),,600,,active
+613,Debt forgiveness: OOF claims (I),,600,,active
+614,Debt forgiveness: Private claims (P),,600,,active
+615,Debt forgiveness: Private claims (I),,600,,active
+616,Debt forgiveness: OOF claims (DSR),,600,,active
+617,Debt forgiveness: Private claims (DSR),,600,,active
+618,Debt forgiveness: Other,,600,,active
+620,Debt rescheduling: ODA claims (P),,600,,active
+621,Debt rescheduling: ODA claims (I),,600,,active
+622,Debt rescheduling: OOF claims (P),,600,,active
+623,Debt rescheduling: OOF claims (I),,600,,active
+624,Debt rescheduling: Private claims (P),,600,,active
+625,Debt rescheduling: Private claims (I),,600,,active
+626,Debt rescheduling: OOF claims (DSR),,600,,active
+627,Debt rescheduling: Private claims (DSR),,600,,active
+630,Debt rescheduling: OOF claim (DSR – original loan principal),,600,,active
+631,Debt rescheduling: OOF claim (DSR – original loan interest),,600,,active
+632,Debt rescheduling: Private claim (DSR – original loan principal),,600,,active
+633,Debt forgiveness/conversion: export credit claims (P),,600,,active
+634,Debt forgiveness/conversion: export credit claims (I),,600,,active
+635,Debt forgiveness: export credit claims (DSR),,600,,active
+636,Debt rescheduling: export credit claims (P),,600,,active
+637,Debt rescheduling: export credit claims (I),,600,,active
+638,Debt rescheduling: export credit claims (DSR),,600,,active
+639,Debt rescheduling: export credit claim (DSR – original loan principal),,600,,active
+710,"Foreign direct investment, new capital outflow (includes reinvested earnings if separate identification not available)",,700,,withdrawn
+711,"Other foreign direct investment, including reinvested earnings",,700,,withdrawn
+712,"Foreign direct investment, reinvested earnings",,700,,withdrawn
+810,Bank bonds,,800,,withdrawn
+811,Non-bank bonds,,800,,withdrawn
+910,Other bank securities/claims,,900,,withdrawn
+911,Other non-bank securities/claims,,900,,withdrawn
+912,Purchase of securities from issuing agencies,,900,,withdrawn
+913,Securities and other instruments originally issued by multilateral agencies,,900,,withdrawn

@@ -1,0 +1,5 @@
+code,name,description,language,category,category-name,category-description
+1,Unearmarked,"Any or all of the Earmarking Modality codes A,B or C.",en,,,
+2,Softly Earmarked,"Any or all of the Earmarking Modality codes D,E or F.",en,,,
+3,Earmarked,Any or all of the Earmarking Modality codes G or H.,en,,,
+4,Tightly Earmarked,"Any or all of the Earmarking Modality codes I,J or K.",en,,,

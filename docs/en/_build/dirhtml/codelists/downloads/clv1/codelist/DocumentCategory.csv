@@ -1,0 +1,31 @@
+code,name,description,language,category,category-name,category-description
+A01,Pre- and post-project impact appraisal,,en,A,Activity Level,The document is relevant to a specific activity
+A02,Objectives / Purpose of activity,,en,A,Activity Level,The document is relevant to a specific activity
+A03,Intended ultimate beneficiaries,,en,A,Activity Level,The document is relevant to a specific activity
+A04,Conditions,,en,A,Activity Level,The document is relevant to a specific activity
+A05,Budget,,en,A,Activity Level,The document is relevant to a specific activity
+A06,Summary information about contract,,en,A,Activity Level,The document is relevant to a specific activity
+A07,Review of project performance and evaluation,,en,A,Activity Level,The document is relevant to a specific activity
+A08,"Results, outcomes and outputs",,en,A,Activity Level,The document is relevant to a specific activity
+A09,Memorandum of understanding (If agreed by all parties),,en,A,Activity Level,The document is relevant to a specific activity
+A10,Tender,,en,A,Activity Level,The document is relevant to a specific activity
+A11,Contract,,en,A,Activity Level,The document is relevant to a specific activity
+A12,Activity web page,,en,A,Activity Level,The document is relevant to a specific activity
+B01,Annual report,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B02,Institutional Strategy paper,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B03,Country strategy paper,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B04,Aid Allocation Policy,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B05,Procurement Policy and Procedure,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B06,Institutional Audit Report,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B07,Country Audit Report,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B08,Exclusions Policy,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B09,Institutional Evaluation Report,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B10,Country Evaluation Report,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B11,Sector strategy,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B12,Thematic strategy,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B13,Country-level Memorandum of Understanding,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B14,Evaluations policy,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B15,General Terms and Conditions,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B16,Organisation web page,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B17,Country/Region web page,,en,B,Organisation Level,The document is relevant to the organisation as a whole
+B18,Sector web page,,en,B,Organisation Level,The document is relevant to the organisation as a whole

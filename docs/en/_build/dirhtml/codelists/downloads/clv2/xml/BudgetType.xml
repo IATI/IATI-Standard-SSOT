@@ -1,0 +1,24 @@
+<codelist name="BudgetType" xml:lang="en" complete="1" embedded="1">
+    <metadata>
+        <name>Budget Type</name>
+        <category>Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Original</name>
+            <name xml:lang="en">Original</name>
+            <name xml:lang="fr">Original</name>
+            <description>The original budget allocated to the activity</description>
+            <description xml:lang="fr">Le budget initialement affect&#233; &#224; l'activit&#233;.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Revised</name>
+            <name xml:lang="fr">R&#233;vis&#233;</name>
+            <description>The updated budget for an activity</description>
+            <description xml:lang="fr">Le budget mis &#224; jour pour une activit&#233;.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

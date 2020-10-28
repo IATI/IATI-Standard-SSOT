@@ -1,0 +1,1 @@
+{"name": "BudgetStatus", "date-last-modified": "2020-10-28T16:50:17.984769+00:00", "version": "", "xml:lang": "en", "BudgetStatus": [{"code": "1", "name": "Indicative", "language": "en", "description": "A non-binding estimate for the described budget."}, {"code": "2", "name": "Committed", "language": "en", "description": "A binding agreement for the described budget."}]}

@@ -1,0 +1,420 @@
+code,name,description,category,url,status
+AT-1,Federal Ministry of Finance,,,,active
+AT-10,Ministry for Agriculture and Environment,,,,active
+AT-11,Ministry of Defense,,,,active
+AT-12,Ministry of Interior,,,,active
+AT-2,Various ministries,,,,active
+AT-3,Federal Government of Austria,,,,active
+AT-4,Oesterreichische Kontrollbank AG,,,,active
+AT-5,Federal Ministry of Foreign Affairs,,,,active
+AT-6,"Provincial governments, local communities",,,,active
+AT-8,Austrian Development Agency,,,,active
+AT-9,Education and Science Ministry,,,,active
+AT-99,Miscellaneous,,,,active
+AU-5,Australian Agency for International Development,,,,active
+AU-72,Export Finance and Insurance Corporation,,,,active
+BE-10,Directorate General for Co-operation and Development,,,,active
+BE-20,Official Federal Service of Foreign Affairs (excl. DGCD),,,,active
+BE-30,Official Federal Service of Finance,,,,active
+BE-31,Ducroire National Office,,,,active
+BE-39,Other Official Federal Services,,,,active
+BE-70,Flanders Official Regional Ministries,,,,active
+BE-80,Walloon Official Regional Ministries,,,,active
+BE-91,Brussels Official Regional Ministries,,,,active
+BE-94,German speaking Official Regional Ministries,,,,active
+CA-1,Canadian International Development Agency,,,,active
+CA-2,International Development Research Centre,,,,active
+CA-31,Export Development Corporation,,,,active
+CA-4,Department of Finance,,,,active
+CH-1,Federal Administration (various departments),,,,active
+CH-10,"Swiss Agency for the Environment, Forests and Landscape",,,,active
+CH-11,Municipalities,,,,active
+CH-4,Swiss Agency for Development and Co-operation,,,,active
+CH-5,State Secretariat for Economic Affairs,,,,active
+CH-6,Federal Department of Foreign Affairs,,,,active
+CH-7,State Secretariat for Education and Research,,,,active
+CH-8,Federal Office for Migration,,,,active
+CH-9,"Federal Department for Defence, Civil Protection and Sports",,,,active
+DE-1,Bundesministerium für Wirtschaftliche Zusammenarbeit und Entwicklung,,,,active
+DE-11,Foreign Office,,,,active
+DE-12,Federal States & Local Governments,,,,active
+DE-14,Federal Institutions,,,,active
+DE-16,Federal Ministries,,,,active
+DE-17,Foundations/Societies/Misc. (non federal),,,,active
+DE-2,Kreditanstalt für Wiederaufbau,,,,active
+DE-34,Hermes Kreditversicherungs-AG,,,,active
+DE-4,German Investment and Development Company,,,,active
+DE-52,Deutsche Gesellschaft für Technische Zusammenarbeit,,,,active
+DK-1,Ministry of Foreign Affairs,,,,active
+DK-2,Danish International Development Agency (Not in CRS Directives),,,,active
+DK-4,Not in CRS Directives,,,,active
+DK-72,EKR,,,,active
+ES-1,Instituto de Credito Oficial,,,,active
+ES-10,Ministry of Environment,,,,active
+ES-11,Ministry of Health,,,,active
+ES-12,Ministry of Labour and Social Affairs,,,,active
+ES-13,Ministry of Interior,,,,active
+ES-14,Ministry of Public Administration,,,,active
+ES-15,Compania Espanola de Seguros de Credito a la Exportación,,,,active
+ES-16,Municipalities,,,,active
+ES-17,Miscellaneous,,,,active
+ES-18,Ministry of Science and Technology,,,,active
+ES-19,Ministry of Defense,,,,active
+ES-2,Autonomous Governments,,,,active
+ES-4,"Ministry of Agriculture, Fisheries, and Food",,,,active
+ES-5,Ministry of Foreign Affairs,,,,active
+ES-6,Ministry of Economy and Finance,,,,active
+ES-7,"Ministry of Education, Culture and Sports",,,,active
+ES-8,Ministry of Public Works,,,,active
+ES-9,Ministry of Industry and Energy,,,,active
+EU-1,Commission of the European Communities,,,,active
+EU-2,European Development Fund,,,,active
+EU-3,European Investment Bank,,,,active
+EU-4,Humanitarian Aid Office of the European Commission,,,,active
+FI-1,Finnish Government,,,,active
+FI-2,FinnFund,,,,active
+FI-3,Ministry of Foreign Affairs,,,,active
+FI-4,FIDE,,,,active
+FI-72,FinnVera,,,,active
+FR-10,"Ministry of Economy, Finance and Industry",,,,active
+FR-17,"Ministry of Education, Higher education and Research",,,,active
+FR-3,French Development Agency,,,,active
+FR-43,Coface,,,,active
+FR-6,Ministry of Foreign Affairs,,,,active
+GB-1,Department for International Development,,,,active
+GB-2,CDC Capital Partners PLC,,,,active
+GB-5,Export Credit Guarantee Department,,,,active
+GR-1,Ministry of Foreign Affairs,,,,active
+GR-2,Ministry of National Economy,,,,active
+GR-20,Miscellaneous,,,,active
+GR-3,"Ministry of the Interior, Public Administration and Decentralisation",,,,active
+GR-4,Ministry of National Defence,,,,active
+GR-5,"Ministry of the Environment, Land Planning and Public Works",,,,active
+GR-6,Ministry of National Education and Religions,,,,active
+GR-7,Ministry of Agriculture,,,,active
+GR-8,Ministry of Health - Welfare,,,,active
+GR-9,Ministry of Merchant Marine,,,,active
+IE-1,Department of Foreign Affairs,,,,active
+IE-71,Department of Industry and Commerce,,,,active
+IT-2,Agenzia Erogazioni Per l'Agricoltura,,,,active
+IT-4,Direzione Generale per la Cooperazione allo Sviluppo,,,,active
+IT-5,Not in CRS Directives,,,,active
+IT-7,Central administration,,,,active
+IT-74,Sezione Speciale per l'Assicurazione del Credito all'Esportazione,,,,active
+IT-8,Local administration,,,,active
+IT-9,Artigiancassa,,,,active
+JP-1,"Ministry of Agriculture, Forestry and Fisheries",,,,active
+JP-10,Japan Overseas Development Co-operation,,,,active
+JP-11,Japan Bank for International Co-operation,,,,active
+JP-12,Other Ministries,,,,active
+JP-13,Public Corporations,,,,active
+JP-14,Prefectures,,,,active
+JP-15,Ordinance-designed Cities,,,,active
+JP-2,Ministry of Foreign Affairs,,,,active
+JP-7,Overseas Fishery Co-operation Foundation,,,,active
+JP-71,Nippon Export and Investment Insurance,,,,active
+JP-8,Japanese International Co-operation Agency,,,,active
+LU-1,Lux-Development,,,,active
+LU-2,Ministry of Foreign Affairs,,,,active
+LU-22,Ducroire Office,,,,active
+NL-1,Ministry of Foreign Affairs (DGIS),,,,active
+NL-33,NCM Credit Management Worldwide,,,,active
+NL-4,Netherlands Gov. through Netherlands Investment Bank for Developing Countries,,,,active
+NO-1,Norwegian Agency for Development Co-operation,,,,active
+NO-4,Ministry of Foreign Affairs,,,,active
+NO-7,Statens Nærings og Distriksutviklingsfond,,,,active
+NO-71,Garantiinstituttet for Eksportkreditt,,,,active
+NO-72,Eksport Finans,,,,active
+NO-8,NORFUND,,,,active
+NZ-1,Ministry of Foreign Affairs and Trade,,,,active
+NZ-2,New Zealand International Aid and Development Agency,,,,active
+PT-1,Portuguese Government,,,,active
+PT-2,Institute for Portuguese Development Aid,,,,active
+PT-3,Other,,,,active
+PT-71,Conselho de garantias financeiras,,,,active
+SE-2,Ministry of Foreign Affairs,,,,active
+SE-6,Swedish International Development Authority,,,,active
+SE-71,Swedish Export Credits Guarantee Board,,,,active
+US-1,Agency for International Development,,,,active
+US-10,Peace Corps,,,,active
+US-11,State Department,,,,active
+US-12,Trade and Development Agency,,,,active
+US-13,African Development Foundation,,,,active
+US-15,Centers for Disease Control and Prevention,,,,active
+US-16,National Institutes of Health,,,,active
+US-17,Department of Labor,,,,active
+US-2,Department of Agriculture,,,,active
+US-31,Export Import Bank,,,,active
+US-5,Department of Transportation,,,,active
+US-6,Department of Treasury,,,,active
+US-7,Department of Defense,,,,active
+US-8,Miscellaneous,,,,active
+US-9,Department of Interior,,,,active
+41101,Convention to Combat Desertification,,,,active
+41102,Desert Locust Control Organisation for Eastern Africa,,,,active
+41103,Economic Commission for Africa,,,,active
+41104,Economic Commission for Latin America and the Caribbean,,,,active
+41105,Economic and Social Commission for Western Asia,,,,active
+41106,Economic and Social Commission for Asia and the Pacific,,,,active
+41107,International Atomic Energy Agency (Contributions to Technical Cooperation Fund Only),,,,active
+41108,International Fund for Agricultural Development,,,,active
+41109,International Research and Training Institute for the Advancement of Women,,,,active
+41110,Joint United Nations Programme on HIV/AIDS,,,,active
+41111,United Nations Capital Development Fund,,,,active
+41112,United Nations Conference on Trade and Development,,,,active
+41114,United Nations Development Programme,,,,active
+41116,United Nations Environment Programme,,,,active
+41118,United Nations Framework Convention on Climate Change,,,,active
+41119,United Nations Population Fund,,,,active
+41120,United Nations Human Settlement Programme,,,,active
+41121,United Nations Office of the United Nations High Commissioner for Refugees,,,,active
+41122,United Nations Children's Fund,,,,active
+41123,United Nations Industrial Development Organisation,,,,active
+41124,United Nations Development Fund for Women,,,,active
+41125,United Nations Institute for Training and Research,,,,active
+41126,United Nations Mine Action Service,,,,active
+41127,United Nations Office of Co-ordination of Humanitarian Affairs,,,,active
+41128,United Nations Office on Drugs and Crime,,,,active
+41129,United Nations Research Institute for Social Development,,,,active
+41130,United Nations Relief and Works Agency for Palestine Refugees in the Near East,,,,active
+41131,United Nations System Staff College,,,,active
+41132,United Nations System Standing Committee on Nutrition,,,,active
+41133,United Nations Special Initiative on Africa,,,,active
+41134,United Nations University (including Endowment Fund),,,,active
+41135,United Nations Volunteers,,,,active
+41136,United Nations Voluntary Fund on Disability,,,,active
+41137,United Nations Voluntary Fund for Technical Co-operation in the Field of Human Rights,,,,active
+41138,United Nations Voluntary Fund for Victims of Torture,,,,active
+41140,World Food Programme,,,,active
+41141,United Nations Peacebuilding Fund (Window Two: Restricted Contributions Only),,,,active
+41142,United Nations Democracy Fund,,,,active
+41143,World Health Organisation - core voluntary contributions account,,,,active
+41301,Food and Agricultural Organisation,,,,active
+41302,International Labour Organisation,,,,active
+41303,International Telecommunications Union,,,,active
+41304,"United Nations Educational, Scientific and Cultural Organisation",,,,active
+41305,United Nations,,,,active
+41306,Universal Postal Union,,,,active
+41307,World Health Organisation - assessed contributions,,,,active
+41308,World Intellectual Property Organisation,,,,active
+41309,World Meteorological Organisation,,,,active
+41310,"United Nations Department of Peacekeeping Operations (excluding UNTSO, UNMOGIP, UNFICYP, UNDOF)",,,,active
+41311,United Nations Peacebuilding Fund (Window One: Flexible Contributions Only),,,,active
+41312,International Atomic Energy Agency - assessed contributions,,,,active
+41313,United Nations High Commissioner for Human Rights (extrabudgetary contributions only),,,,active
+41314,United Nations Economic Commission for Europe (extrabudgetary contributions only),,,,active
+42001,European Commission - Development Share of Budget,,,,active
+42003,European Commission - European Development Fund,,,,active
+42004,European Investment Bank (interest subsidies only),,,,active
+42005,Facility for Euro-Mediterranean Investment and Partnership Trust Fund,,,,active
+42006,Global Energy Efficiency and Renewable Energy Fund,,,,active
+43001,International Monetary Fund - Poverty Reduction and Growth Facility Trust,,,,active
+43002,"International Monetary Fund - Poverty Reduction and Growth Facility - Heavily Indebted Poor Countries Initiative Trust (includes HIPC, PRGF and PRGF-HIPC sub-accounts)",,,,active
+43003,International Monetary Fund - Subsidization of IMF Emergency Assistance for Natural Disasters,,,,active
+44001,International Bank for Reconstruction and Development,,,,active
+44002,International Development Association,,,,active
+44003,International Development Association - Heavily Indebted Poor Countries Debt Initiative Trust Fund,,,,active
+44004,International Finance Corporation,,,,active
+44005,Multilateral Investment Guarantee Agency,,,,active
+44006,Advance Market Commitments,,,,active
+44007,International Development Association - Multilateral Debt Relief Initiative,,,,active
+45001,World Trade Organisation - International Trade Centre,,,,active
+45002,World Trade Organisation - Advisory Centre on WTO Law,,,,active
+45003,World Trade Organisation - Doha Development Agenda Global Trust Fund,,,,active
+46001,African Solidarity Fund,,,,active
+46002,African Development Bank,,,,active
+46003,African Development Fund,,,,active
+46004,Asian Development Bank,,,,active
+46005,Asian Development Fund,,,,active
+46006,Black Sea Trade and Development Bank,,,,active
+46007,Central American Bank for Economic Integration,,,,active
+46008,Andean Development Corporation,,,,active
+46009,Caribbean Development Bank,,,,active
+46012,"Inter-American Development Bank, Inter-American Investment Corporation and Multilateral Investment Fund",,,,active
+46013,Inter-American Development Fund for Special Operations,,,,active
+47001,African Capacity Building Foundation,,,,active
+47002,Asian Productivity Organisation,,,,active
+47003,Association of South East Asian Nations: Economic Co-operation,,,,active
+47004,ASEAN Cultural Fund,,,,active
+47005,African Union (excluding peacekeeping facilities),,,,active
+47008,World Vegetable Centre,,,,active
+47009,African and Malagasy Council for Higher Education,,,,active
+47010,Commonwealth Agency for Public Administration and Management,,,,active
+47011,Caribbean Community Secretariat,,,,active
+47012,Caribbean Epidemiology Centre,,,,active
+47013,Commonwealth Foundation,,,,active
+47014,Commonwealth Fund for Technical Co-operation,,,,active
+47015,Consultative Group on International Agricultural Research,,,,active
+47016,Commonwealth Institute,,,,active
+47017,International Centre for Tropical Agriculture,,,,active
+47018,Centre for International Forestry Research,,,,active
+47019,International Centre for Advanced Mediterranean Agronomic Studies,,,,active
+47020,International Maize and Wheat Improvement Centre,,,,active
+47021,International Potato Centre,,,,active
+47022,Convention on International Trade in Endangered Species of Wild Flora and Fauna,,,,active
+47023,Commonwealth Legal Advisory Service,,,,active
+47024,Commonwealth Media Development Fund,,,,active
+47025,Commonwealth of Learning,,,,active
+47026,Community of Portuguese Speaking Countries,,,,active
+47027,Colombo Plan,,,,active
+47028,Commonwealth Partnership for Technical Management,,,,active
+47029,Sahel and West Africa Club,,,,active
+47030,Commonwealth Scientific Council,,,,active
+47031,Commonwealth Small States Office,,,,active
+47032,Commonwealth Trade and Investment Access Facility,,,,active
+47033,Commonwealth Youth Programme,,,,active
+47034,Economic Community of West African States,,,,active
+47035,Environmental Development Action in the Third World,,,,active
+47036,European and Mediterranean Plant Protection Organisation,,,,active
+47037,Eastern-Regional Organisation of Public Administration,,,,active
+47038,INTERPOL Fund for Aid and Technical Assistance to Developing Countries,,,,active
+47040,Forum Fisheries Agency,,,,active
+47041,Food and Fertilizer Technology Centre,,,,active
+47042,Foundation for International Training,,,,active
+47043,Global Crop Diversity Trust,,,,active
+47044,Global Environment Facility,,,,active
+47045,"Global Fund to Fight AIDS, Tuberculosis and Malaria",,,,active
+47046,International Organisation of the Francophonic,,,,active
+47047,International African Institute,,,,active
+47048,Inter-American Indian Institute,,,,active
+47049,International Bureau of Education - International Educational Reporting System (IERS),,,,active
+47050,International Cotton Advisory Committee,,,,active
+47051,International Centre for Agricultural Research in Dry Areas,,,,active
+47053,Centre for Health and Population Research,,,,active
+47054,International Centre of Insect Physiology and Ecology,,,,active
+47055,International Centre for Development Oriented Research in Agriculture,,,,active
+47056,World AgroForestry Centre,,,,active
+47057,International Crop Research for Semi-Arid Tropics,,,,active
+47058,International Institute for Democracy and Electoral Assistance,,,,active
+47059,International Development Law Organisation,,,,active
+47060,International Institute for Cotton,,,,active
+47061,Inter-American Institute for Co-operation on Agriculture,,,,active
+47062,International Institute of Tropical Agriculture,,,,active
+47063,International Livestock Research Institute,,,,active
+47064,International Network for Bamboo and Rattan,,,,active
+47065,Intergovernmental Oceanographic Commission,,,,active
+47066,International Organisation for Migration,,,,active
+47067,Intergovernmental Panel on Climate Change,,,,active
+47068,Asia-Pacific Fishery Commission,,,,active
+47069,Biodiversity International,,,,active
+47070,International Rice Research Institute,,,,active
+47071,International Seed Testing Association,,,,active
+47073,International Tropical Timber Organisation,,,,active
+47074,International Vaccine Institute,,,,active
+47075,International Water Management Institute,,,,active
+47076,Justice Studies Centre of the Americas,,,,active
+47077,Mekong River Commission,,,,active
+47078,Multilateral Fund for the Implementation of the Montreal Protocol,,,,active
+47079,Organisation of American States,,,,active
+47080,Organisation for Economic Co-operation and Development (Contributions to special funds for Technical Co-operation Activities Only),,,,active
+47081,OECD Development Centre,,,,active
+47082,Organisation of Eastern Caribbean States,,,,active
+47083,Pan-American Health Organisation,,,,active
+47084,Pan-American Institute of Geography and History,,,,active
+47085,Pan-American Railway Congress Association,,,,active
+47086,Private Infrastructure Development Group,,,,active
+47087,Pacific Islands Forum Secretariat,,,,active
+47088,Relief Net,,,,active
+47089,Southern African Development Community,,,,active
+47090,Southern African Transport and Communications Commission,,,,active
+47091,(Colombo Plan) Special Commonwealth African Assistance Programme,,,,active
+47092,South East Asian Fisheries Development Centre,,,,active
+47093,South East Asian Ministers of Education,,,,active
+47094,South Pacific Applied Geoscience Commission,,,,active
+47095,South Pacific Board for Educational Assessment,,,,active
+47096,Secretariat of the Pacific Community,,,,active
+47097,Pacific Regional Environment Programme,,,,active
+47098,Unrepresented Nations and Peoples' Organisation,,,,active
+47099,University of the South Pacific,,,,active
+47100,West African Monetary Union,,,,active
+47101,Africa Rice Centre,,,,active
+47102,World Customs Organisation Fellowship Programme,,,,active
+47103,World Maritime University,,,,active
+47104,WorldFish Centre,,,,active
+47105,Common Fund for Commodities,,,,active
+47106,Geneva Centre for the Democratic Control of Armed Forces,,,,active
+47107,International Finance Facility for Immunisation,,,,active
+47108,Multi-Country Demobilisation and Reintegration Program,,,,active
+47109,Asia-Pacific Economic Cooperation Support Fund (except contributions tied to counter-terrorism activities),,,,active
+47110,Organisation of the Black Sea Economic Cooperation,,,,active
+47111,Adaptation Fund,,,,active
+47112,Central European Initiative - Special Fund for Climate and Environmental Protection,,,,active
+47113,Economic and Monetary Community of Central Africa,,,,active
+47116,Integrated Framework for Trade-Related Technical Assistance to Least Developed Countries,,,,active
+47117,New Partnership for Africa's Development,,,,active
+47118,Regional Organisation for the Strengthening of Supreme Audit Institutions of Francophone Sub-Saharan Countries,,,,active
+47119,Sahara and Sahel Observatory,,,,active
+47120,South Asian Association for Regional Cooperation,,,,active
+47121,United Cities and Local Governments of Africa,,,,active
+47122,Global Alliance for Vaccines and Immunization,,,,active
+47123,Geneva International Centre for Humanitarian Demining,,,,active
+47125,European Bank for Reconstruction and Development - Early Transition Countries Initiative,,,,active
+47126,European Bank for Reconstruction and Development - Western Balkans Trust Fund,,,,active
+47127,Latin-American Energy Organisation,,,,active
+21001,Association of Geoscientists for International Development,,,,active
+21002,Agency for International Trade Information and Co-operation,,,,active
+21003,Latin American Council for Social Sciences,,,,active
+21004,Council for the Development of Economic and Social Research in Africa,,,,active
+21005,Consumer Unity and Trust Society International,,,,active
+21006,Development Gateway Foundation,,,,active
+21007,Environmental Liaison Centre International,,,,active
+21008,Eurostep,,,,active
+21009,Forum for Agricultural Research in Africa,,,,active
+21010,Forum for African Women Educationalists,,,,active
+21011,Global Campaign for Education,,,,active
+21013,Health Action International,,,,active
+21014,Human Rights Information and Documentation Systems,,,,active
+21015,International Catholic Rural Association,,,,active
+21016,International Committee of the Red Cross,,,,active
+21017,International Centre for Trade and Sustainable Development,,,,active
+21018,International Federation of Red Cross and Red Crescent Societies,,,,active
+21019,International Federation of Settlements and Neighbourhood Centres,,,,active
+21020,International HIV/AIDS Alliance,,,,active
+21021,International Institute for Environment and Development,,,,active
+21022,International Network for Alternative Financial Institutions,,,,active
+21023,International Planned Parenthood Federation,,,,active
+21024,"Inter Press Service, International Association",,,,active
+21025,International Seismological Centre,,,,active
+21026,International Service for Human Rights,,,,active
+21027,International Trust Fund for Demining and Mine Victims Assistance,,,,active
+21028,International University Exchange Fund - IUEF Stip. in Africa and Latin America,,,,active
+21029,Doctors Without Borders,,,,active
+21030,Pan African Institute for Development,,,,active
+21031,PANOS Institute,,,,active
+21032,Population Services International,,,,active
+21033,Transparency International,,,,active
+21034,International Union Against Tuberculosis and Lung Disease,,,,active
+21035,World Organisation Against Torture,,,,active
+21036,World University Service,,,,active
+21037,Women's World Banking,,,,active
+21038,International Alert,,,,active
+21039,International Institute for Sustainable Development,,,,active
+21040,International Women's Tribune Centre,,,,active
+21041,Society for International Development,,,,active
+21042,International Peacebuilding Alliance,,,,active
+21043,European Parliamentarians for Africa,,,,active
+21044,International Council for the Control of Iodine Deficiency Disorders,,,,active
+21045,African Medical and Research Foundation,,,,active
+21046,Agency for Cooperation and Research in Development,,,,active
+21047,AgriCord,,,,active
+21048,Association of African Universities,,,,active
+21049,European Centre for Development Policy Management,,,,active
+21050,Geneva Call,,,,active
+21051,Institut Supérieur Panafricaine d'Economie Coopérative,,,,active
+21053,"IPAS-Protecting Women's Health, Advancing Women's Reproductive Rights",,,,active
+21054,Life and Peace Institute,,,,active
+21055,Regional AIDS Training Network,,,,active
+21056,Renewable Energy and Energy Efficiency Partnership,,,,active
+21057,International Centre for Transitional Justice,,,,active
+30001,Global Alliance for Improved Nutrition,,,,active
+30003,Global e-Schools and Communities Initiative,,,,active
+30004,Global Water Partnership,,,,active
+30005,International AIDS Vaccine Initiative,,,,active
+30006,International Partnership on Microbicides,,,,active
+30007,Global Alliance for ICT and Development,,,,active
+30008,Cities Alliance,,,,active
+30009,Small Arms Survey,,,,active
+30010,International drug purchase facility,,,,active
+30011,International Union for the Conservation of Nature,,,,active
+31001,Global Development Network,,,,active
+31002,Global Knowledge Partnership,,,,active

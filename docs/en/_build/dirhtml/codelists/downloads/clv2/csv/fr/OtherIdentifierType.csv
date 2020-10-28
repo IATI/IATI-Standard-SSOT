@@ -1,0 +1,7 @@
+code,name,description,category,url,status
+A1,Identifiant interne de l’activité dans l’organisation en charge de l’élaboration du rapport,,,,active
+A2,Identifiant de l’activité dans le Système de notification des pays créanciers,,,,active
+A3,Identifiant précédent de l’activité,"La norme insiste sur le fait qu’un identifiant d’activité transmis à l’IITA NE DOIT PAS être modifié, même si le notificateur modifie l’identifiant de l’organisation. Si des circonstances exceptionnelles empêchent le respect de cette règle, il convient de renseigner l’identifiant précédent à l’aide de ce code.",,,active
+A9,Autre identifiant de l’activité,,,,active
+B1,Identifiant précédent de l’organisation en charge de l’élaboration du rapport,,,,active
+B9,Autre identifiant de l’organisation,,,,active

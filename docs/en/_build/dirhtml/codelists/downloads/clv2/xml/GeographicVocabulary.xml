@@ -1,0 +1,50 @@
+<codelist name="GeographicVocabulary" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Geographic Vocabulary</name>
+        <description/>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>A1</code>
+            <url>http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691</url>
+            <name>Global Admininistrative Unit Layers</name>
+            <name xml:lang="fr">Global Administrative Unit Layers</name>
+        </codelist-item>
+        <codelist-item>
+            <code>A2</code>
+            <url>http://www.unsalb.org/</url>
+            <name>UN Second Administrative Level Boundary Project</name>
+            <name xml:lang="fr">UN Second Administrative Level Boundary Project</name>
+            <description>Note: the unsalb.org website is no longer accessible, and public access to the boundaries resources has been removed http://www.ungiwg.org/content/united-nations-international-and-administrative-boundaries-resources</description>
+            <description xml:lang="fr">Remarque&#160;: Le site Web unsalb.org n'est plus accessible et l'acc&#232;s public aux ressources sur les fronti&#232;res a &#233;t&#233; retir&#233; http://www.ungiwg.org/content/united-nations-international-and-administrative-boundaries-resources</description>
+        </codelist-item>
+        <codelist-item>
+            <code>A3</code>
+            <url>http://www.gadm.org/</url>
+            <name>Global Administrative Areas</name>
+            <name xml:lang="fr">Global Administrative Areas</name>
+        </codelist-item>
+        <codelist-item>
+            <code>A4</code>
+            <url>http://reference.iatistandard.org/codelists/Country/</url>
+            <name>ISO Country (3166-1 alpha-2)</name>
+            <name xml:lang="fr">Pays ISO (3166-1 alpha-2)</name>
+        </codelist-item>
+        <codelist-item>
+            <code>G1</code>
+            <url>http://www.geonames.org/</url>
+            <name>Geonames</name>
+            <name xml:lang="fr">Geonames</name>
+        </codelist-item>
+        <codelist-item>
+            <code>G2</code>
+            <url>http://www.openstreetmap.org/</url>
+            <name>OpenStreetMap</name>
+            <name xml:lang="fr">OpenStreetMap</name>
+            <description>Note: the code should be formed by prefixing the relevant OpenStreetMap ID with node/ way/ or relation/ as appropriate, e.g. node/1234567</description>
+            <description xml:lang="fr">Remarque&#160;: Le code doit &#234;tre produit en faisant pr&#233;c&#233;der le code OpenStreetMap pertinent du pr&#233;fixe &#171;&#160;node/&#160;&#187;, &#171;&#160;way/&#160;&#187; ou &#171;&#160;relation/&#160;&#187;, selon le cas, p. ex. node/1234567</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

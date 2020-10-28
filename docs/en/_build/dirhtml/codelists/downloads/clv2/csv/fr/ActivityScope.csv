@@ -1,0 +1,9 @@
+code,name,description,category,url,status
+1,Mondial,L'activité est de portée mondiale,,,active
+2,Régional,La portée de l'activité concerne une région supranationale,,,active
+3,Multinational,La portée de l'activité concerne de multiples pays qui ne constituent pas une région,,,active
+4,National,La portée de l'activité correspond à un pays,,,active
+5,Infranational: multiples régions administratives de premier niveau,"La portée de l'activité concerne plus d'une région administrative infranationale de premier niveau (p. ex. comtés, provinces, états)",,,active
+6,Infranational: région administrative de premier niveau unique,"La portée de l'activité concerne une seule région administrative infranationale de premier niveau (p. ex. comté, province, état)",,,active
+7,Infranational: région administrative de second niveau unique,La portée de l'activité concerne une seule région administrative infranationale de deuxième niveau (p. ex. municipalité ou district),,,active
+8,Un seul emplacement,"La portée de l'activité concerne un seul endroit (p. ex. ville, village, ferme)",,,active

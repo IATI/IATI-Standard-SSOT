@@ -1,0 +1,165 @@
+<codelist name="BudgetIdentifierSector" xml:lang="en" category-codelist="BudgetIdentifierSector-category" complete="1" embedded="0">
+    <metadata>
+        <name>Budget Identifier Sector</name>
+        <description>This codelists exists to group the Budget Identifier codelist into sectors. It is not used as a codelist in its own right.</description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1.1</code>
+            <category>1</category>
+            <name>Executive</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.2</code>
+            <category>1</category>
+            <name>Legislative</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.3</code>
+            <category>1</category>
+            <name>Accountability</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.4</code>
+            <category>1</category>
+            <name>External Affairs</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.5</code>
+            <category>1</category>
+            <name>General Personnel Services</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.6</code>
+            <category>1</category>
+            <name>Statistics</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.7</code>
+            <category>1</category>
+            <name>Other General Services</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.8</code>
+            <category>1</category>
+            <name>Elections</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2.1</code>
+            <category>2</category>
+            <name>Justice, Law and Order</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2.2</code>
+            <category>2</category>
+            <name>Defence</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.1</code>
+            <category>3</category>
+            <name>General Economic, Commercial and Labour Affairs</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.2</code>
+            <category>3</category>
+            <name>Public Works</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.3</code>
+            <category>3</category>
+            <name>Agriculture</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.4</code>
+            <category>3</category>
+            <name>Forestry</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.5</code>
+            <category>3</category>
+            <name>Fishing and Hunting</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.6</code>
+            <category>3</category>
+            <name>Energy</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.7</code>
+            <category>3</category>
+            <name>Mining and Mineral Development</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.8</code>
+            <category>3</category>
+            <name>Transport</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.9</code>
+            <category>3</category>
+            <name>Industry</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.10</code>
+            <category>3</category>
+            <name>Communications</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.11</code>
+            <category>3</category>
+            <name>Tourism</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.12</code>
+            <category>3</category>
+            <name>Microfinance and financial services</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4.1</code>
+            <category>4</category>
+            <name>Water supply and Sanitation</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4.2</code>
+            <category>4</category>
+            <name>Environment</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.1</code>
+            <category>5</category>
+            <name>Health</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.2</code>
+            <category>5</category>
+            <name>Recreation, Culture and Religion</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.3</code>
+            <category>5</category>
+            <name>Education</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.4</code>
+            <category>5</category>
+            <name>Social Protection, Land Housing and Community Amenities</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6.1</code>
+            <category>6</category>
+            <name>Development Partner affairs</name>
+        </codelist-item>
+        <codelist-item>
+            <code>7.1</code>
+            <category>7</category>
+            <name>External to government sector</name>
+        </codelist-item>
+        <codelist-item>
+            <code>7.2</code>
+            <category>7</category>
+            <name>General Budget Support</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

@@ -1,0 +1,140 @@
+<codelist name="Region" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <url>http://www.oecd.org/dac/stats/dacandcrscodelists.htm</url>
+        <name>Region</name>
+        <category>Replicated</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>88</code>
+            <name>States Ex-Yugoslavia unspecified</name>
+            <name xml:lang="fr">Etats ex-Yougoslavie non sp&#233;cifi&#233;</name>
+        </codelist-item>
+        <codelist-item>
+            <code>89</code>
+            <name>Europe, regional</name>
+            <name xml:lang="fr">Europe, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>189</code>
+            <name>North of Sahara, regional</name>
+            <name xml:lang="fr">Nord du Sahara, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>289</code>
+            <name>South of Sahara, regional</name>
+            <name xml:lang="fr">Sud du Sahara, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>298</code>
+            <name>Africa, regional</name>
+            <name xml:lang="fr">Afrique, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2020-05-04">
+            <code>380</code>
+            <name>West Indies, regional</name>
+            <name xml:lang="fr">Indes occ., r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>389</code>
+            <name>North &amp; Central America, regional</name>
+            <name xml:lang="fr">Am&#233;rique N. &amp; C., r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>489</code>
+            <name>South America, regional</name>
+            <name xml:lang="fr">Am&#233;rique du Sud, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>498</code>
+            <name>America, regional</name>
+            <name xml:lang="fr">Am&#233;rique, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>589</code>
+            <name>Middle East, regional</name>
+            <name xml:lang="fr">Moyen-Orient, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>619</code>
+            <name>Central Asia, regional</name>
+            <name xml:lang="fr">Asie centrale, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>679</code>
+            <name>South Asia, regional</name>
+            <name xml:lang="fr">Asie du Sud, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>689</code>
+            <name>South &amp; Central Asia, regional</name>
+            <name xml:lang="fr">Asie du Sud &amp; C., r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>789</code>
+            <name>Far East Asia, regional</name>
+            <name xml:lang="fr">Extr&#234;me-Orient, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>798</code>
+            <name>Asia, regional</name>
+            <name xml:lang="fr">Asie, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>889</code>
+            <name>Oceania, regional</name>
+            <name xml:lang="fr">Oc&#233;anie, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item>
+            <code>998</code>
+            <name>Developing countries, unspecified</name>
+            <name xml:lang="fr">Pays en d&#233;veloppement, non sp&#233;cifi&#233;</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2020-05-04">
+            <code>1027</code>
+            <name>Eastern Africa, regional</name>
+            <name xml:lang="fr">Afrique de l'est, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2020-05-04">
+            <code>1028</code>
+            <name>Middle Africa, regional</name>
+            <name xml:lang="fr">Afrique centrale, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2020-05-04">
+            <code>1029</code>
+            <name>Southern Africa, regional</name>
+            <name xml:lang="fr">Afrique australe, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2020-05-04">
+            <code>1030</code>
+            <name>Western Africa, regional</name>
+            <name xml:lang="fr">Afrique occidentale, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2020-05-04">
+            <code>1031</code>
+            <name>Caribbean, regional</name>
+            <name xml:lang="fr">Cara&#239;bes, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2020-05-04">
+            <code>1032</code>
+            <name>Central America, regional</name>
+            <name xml:lang="fr">Am&#233;rique centrale, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2020-05-04">
+            <code>1033</code>
+            <name>Melanesia, regional</name>
+            <name xml:lang="fr">M&#233;lan&#233;sie, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2020-05-04">
+            <code>1034</code>
+            <name>Micronesia, regional</name>
+            <name xml:lang="fr">Micron&#233;sie, r&#233;gional</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2020-05-04">
+            <code>1035</code>
+            <name>Polynesia, regional</name>
+            <name xml:lang="fr">Polyn&#233;sie, r&#233;gional</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

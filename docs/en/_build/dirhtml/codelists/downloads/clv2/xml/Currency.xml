@@ -1,0 +1,715 @@
+<codelist name="Currency" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <url>http://www.iso.org/iso/home/standards/currency_codes.htm</url>
+        <name>Currency</name>
+        <description>ISO 4217 Currency used for all transactions and budgets</description>
+        <category>Replicated</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>AED</code>
+            <name>UAE Dirham</name>
+        </codelist-item>
+        <codelist-item>
+            <code>AFN</code>
+            <name>Afghani</name>
+        </codelist-item>
+        <codelist-item>
+            <code>ALL</code>
+            <name>Lek</name>
+        </codelist-item>
+        <codelist-item>
+            <code>AMD</code>
+            <name>Armenian Dram</name>
+        </codelist-item>
+        <codelist-item>
+            <code>ANG</code>
+            <name>Netherlands Antillian Guilder</name>
+        </codelist-item>
+        <codelist-item>
+            <code>AOA</code>
+            <name>Kwanza</name>
+        </codelist-item>
+        <codelist-item>
+            <code>ARS</code>
+            <name>Argentine Peso</name>
+        </codelist-item>
+        <codelist-item>
+            <code>AUD</code>
+            <name>Australian Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>AWG</code>
+            <name>Aruban Guilder</name>
+        </codelist-item>
+        <codelist-item>
+            <code>AZN</code>
+            <name>Azerbaijanian Manat</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BAM</code>
+            <name>Convertible Marks</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BBD</code>
+            <name>Barbados Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BDT</code>
+            <name>Taka</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BGN</code>
+            <name>Bulgarian Lev</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BHD</code>
+            <name>Bahraini Dinar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BIF</code>
+            <name>Burundi Franc</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BMD</code>
+            <name>Bermudian Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BND</code>
+            <name>Brunei Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BOB</code>
+            <name>Boliviano</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BOV</code>
+            <name>Mvdol</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BRL</code>
+            <name>Brazilian Real</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BSD</code>
+            <name>Bahamian Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BTN</code>
+            <name>Ngultrum</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BWP</code>
+            <name>Pula</name>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2018-08-08">
+            <code>BYR</code>
+            <name>Belarussian Ruble</name>
+            <description>Withdrawn from ISO Currency codelist. Use code BYN.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>BYN</code>
+            <name>Belarussian Ruble</name>
+        </codelist-item>
+        <codelist-item>
+            <code>BZD</code>
+            <name>Belize Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>CAD</code>
+            <name>Canadian Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>CDF</code>
+            <name>Congolese Franc</name>
+        </codelist-item>
+        <codelist-item>
+            <code>CHF</code>
+            <name>Swiss Franc</name>
+        </codelist-item>
+        <codelist-item>
+            <code>CLF</code>
+            <name>Unidades de fomento</name>
+        </codelist-item>
+        <codelist-item>
+            <code>CLP</code>
+            <name>Chilean Peso</name>
+        </codelist-item>
+        <codelist-item>
+            <code>CNY</code>
+            <name>Yuan Renminbi</name>
+        </codelist-item>
+        <codelist-item>
+            <code>COP</code>
+            <name>Colombian Peso</name>
+        </codelist-item>
+        <codelist-item>
+            <code>COU</code>
+            <name>Unidad de Valor Real</name>
+        </codelist-item>
+        <codelist-item>
+            <code>CRC</code>
+            <name>Costa Rican Colon</name>
+        </codelist-item>
+        <codelist-item>
+            <code>CUC</code>
+            <name>Peso Convertible</name>
+        </codelist-item>
+        <codelist-item>
+            <code>CUP</code>
+            <name>Cuban Peso</name>
+        </codelist-item>
+        <codelist-item>
+            <code>CVE</code>
+            <name>Cape Verde Escudo</name>
+        </codelist-item>
+        <codelist-item>
+            <code>CZK</code>
+            <name>Czech Koruna</name>
+        </codelist-item>
+        <codelist-item>
+            <code>DJF</code>
+            <name>Djibouti Franc</name>
+        </codelist-item>
+        <codelist-item>
+            <code>DKK</code>
+            <name>Danish Krone</name>
+        </codelist-item>
+        <codelist-item>
+            <code>DOP</code>
+            <name>Dominican Peso</name>
+        </codelist-item>
+        <codelist-item>
+            <code>DZD</code>
+            <name>Algerian Dinar</name>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2018-08-08">
+            <code>EEK</code>
+            <name>Kroon</name>
+            <description>Withdrawn from ISO Currency codelist</description>
+        </codelist-item>
+        <codelist-item>
+            <code>EGP</code>
+            <name>Egyptian Pound</name>
+        </codelist-item>
+        <codelist-item>
+            <code>ERN</code>
+            <name>Nakfa</name>
+        </codelist-item>
+        <codelist-item>
+            <code>ETB</code>
+            <name>Ethiopian Birr</name>
+        </codelist-item>
+        <codelist-item>
+            <code>EUR</code>
+            <name>Euro</name>
+        </codelist-item>
+        <codelist-item>
+            <code>FJD</code>
+            <name>Fiji Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>FKP</code>
+            <name>Falkland Islands Pound</name>
+        </codelist-item>
+        <codelist-item>
+            <code>GBP</code>
+            <name>Pound Sterling</name>
+        </codelist-item>
+        <codelist-item>
+            <code>GEL</code>
+            <name>Lari</name>
+        </codelist-item>
+        <codelist-item>
+            <code>GHS</code>
+            <name>Cedi</name>
+        </codelist-item>
+        <codelist-item>
+            <code>GIP</code>
+            <name>Gibraltar Pound</name>
+        </codelist-item>
+        <codelist-item>
+            <code>GMD</code>
+            <name>Dalasi</name>
+        </codelist-item>
+        <codelist-item>
+            <code>GNF</code>
+            <name>Guinea Franc</name>
+        </codelist-item>
+        <codelist-item>
+            <code>GTQ</code>
+            <name>Quetzal</name>
+        </codelist-item>
+        <codelist-item>
+            <code>GYD</code>
+            <name>Guyana Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>HKD</code>
+            <name>Hong Kong Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>HNL</code>
+            <name>Lempira</name>
+        </codelist-item>
+        <codelist-item>
+            <code>HRK</code>
+            <name>Kuna</name>
+        </codelist-item>
+        <codelist-item>
+            <code>HTG</code>
+            <name>Gourde</name>
+        </codelist-item>
+        <codelist-item>
+            <code>HUF</code>
+            <name>Forint</name>
+        </codelist-item>
+        <codelist-item>
+            <code>IDR</code>
+            <name>Rupiah</name>
+        </codelist-item>
+        <codelist-item>
+            <code>ILS</code>
+            <name>New Israeli Sheqel</name>
+        </codelist-item>
+        <codelist-item>
+            <code>INR</code>
+            <name>Indian Rupee</name>
+        </codelist-item>
+        <codelist-item>
+            <code>IQD</code>
+            <name>Iraqi Dinar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>IRR</code>
+            <name>Iranian Rial</name>
+        </codelist-item>
+        <codelist-item>
+            <code>ISK</code>
+            <name>Iceland Krona</name>
+        </codelist-item>
+        <codelist-item>
+            <code>JMD</code>
+            <name>Jamaican Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>JOD</code>
+            <name>Jordanian Dinar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>JPY</code>
+            <name>Yen</name>
+        </codelist-item>
+        <codelist-item>
+            <code>KES</code>
+            <name>Kenyan Shilling</name>
+        </codelist-item>
+        <codelist-item>
+            <code>KGS</code>
+            <name>Som</name>
+        </codelist-item>
+        <codelist-item>
+            <code>KHR</code>
+            <name>Riel</name>
+        </codelist-item>
+        <codelist-item>
+            <code>KMF</code>
+            <name>Comoro Franc</name>
+        </codelist-item>
+        <codelist-item>
+            <code>KPW</code>
+            <name>North Korean Won</name>
+        </codelist-item>
+        <codelist-item>
+            <code>KRW</code>
+            <name>Won</name>
+        </codelist-item>
+        <codelist-item>
+            <code>KWD</code>
+            <name>Kuwaiti Dinar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>KYD</code>
+            <name>Cayman Islands Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>KZT</code>
+            <name>Tenge</name>
+        </codelist-item>
+        <codelist-item>
+            <code>LAK</code>
+            <name>Kip</name>
+        </codelist-item>
+        <codelist-item>
+            <code>LBP</code>
+            <name>Lebanese Pound</name>
+        </codelist-item>
+        <codelist-item>
+            <code>LKR</code>
+            <name>Sri Lanka Rupee</name>
+        </codelist-item>
+        <codelist-item>
+            <code>LRD</code>
+            <name>Liberian Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>LSL</code>
+            <name>Loti</name>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2018-08-08">
+            <code>LTL</code>
+            <name>Lithuanian Litas</name>
+            <description>Withdrawn from ISO Currency codelist</description>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2018-08-08">
+            <code>LVL</code>
+            <name>Latvian Lats</name>
+            <description>Withdrawn from ISO Currency codelist</description>
+        </codelist-item>
+        <codelist-item>
+            <code>LYD</code>
+            <name>Libyan Dinar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MAD</code>
+            <name>Moroccan Dirham</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MDL</code>
+            <name>Moldovan Leu</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MGA</code>
+            <name>Malagasy Ariary</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MKD</code>
+            <name>Denar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MMK</code>
+            <name>Kyat</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MNT</code>
+            <name>Tugrik</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MOP</code>
+            <name>Pataca</name>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2018-08-08">
+            <code>MRO</code>
+            <name>Ouguiya</name>
+            <description>Withdrawn from ISO Currency codelist. Use code MRU.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>MRU</code>
+            <name>Ouguiya</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MUR</code>
+            <name>Mauritius Rupee</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MVR</code>
+            <name>Rufiyaa</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MWK</code>
+            <name>Malawi Kwacha</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MXN</code>
+            <name>Mexican Peso</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MXV</code>
+            <name>Mexican Unidad de Inversion (UDI)</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MYR</code>
+            <name>Malaysian Ringgit</name>
+        </codelist-item>
+        <codelist-item>
+            <code>MZN</code>
+            <name>Metical</name>
+        </codelist-item>
+        <codelist-item>
+            <code>NAD</code>
+            <name>Namibia Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>NGN</code>
+            <name>Naira</name>
+        </codelist-item>
+        <codelist-item>
+            <code>NIO</code>
+            <name>Cordoba Oro</name>
+        </codelist-item>
+        <codelist-item>
+            <code>NOK</code>
+            <name>Norwegian Krone</name>
+        </codelist-item>
+        <codelist-item>
+            <code>NPR</code>
+            <name>Nepalese Rupee</name>
+        </codelist-item>
+        <codelist-item>
+            <code>NZD</code>
+            <name>New Zealand Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>OMR</code>
+            <name>Rial Omani</name>
+        </codelist-item>
+        <codelist-item>
+            <code>PAB</code>
+            <name>Balboa</name>
+        </codelist-item>
+        <codelist-item>
+            <code>PEN</code>
+            <name>Nuevo Sol</name>
+        </codelist-item>
+        <codelist-item>
+            <code>PGK</code>
+            <name>Kina</name>
+        </codelist-item>
+        <codelist-item>
+            <code>PHP</code>
+            <name>Philippine Peso</name>
+        </codelist-item>
+        <codelist-item>
+            <code>PKR</code>
+            <name>Pakistan Rupee</name>
+        </codelist-item>
+        <codelist-item>
+            <code>PLN</code>
+            <name>Zloty</name>
+        </codelist-item>
+        <codelist-item>
+            <code>PYG</code>
+            <name>Guarani</name>
+        </codelist-item>
+        <codelist-item>
+            <code>QAR</code>
+            <name>Qatari Rial</name>
+        </codelist-item>
+        <codelist-item>
+            <code>RON</code>
+            <name>Romanian Leu</name>
+        </codelist-item>
+        <codelist-item>
+            <code>RSD</code>
+            <name>Serbian Dinar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>RUB</code>
+            <name>Russian Ruble</name>
+        </codelist-item>
+        <codelist-item>
+            <code>RWF</code>
+            <name>Rwanda Franc</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SAR</code>
+            <name>Saudi Riyal</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SBD</code>
+            <name>Solomon Islands Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SCR</code>
+            <name>Seychelles Rupee</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SDG</code>
+            <name>Sudanese Pound</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SEK</code>
+            <name>Swedish Krona</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SGD</code>
+            <name>Singapore Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SHP</code>
+            <name>Saint Helena Pound</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SLL</code>
+            <name>Leone</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SOS</code>
+            <name>Somali Shilling</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SSP</code>
+            <name>South Sudanese Pound</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SRD</code>
+            <name>Surinam Dollar</name>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2018-08-08">
+            <code>STD</code>
+            <name>Dobra</name>
+            <description>Withdrawn from ISO Currency codelist. Use code STN.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>STN</code>
+            <name>Dobra</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SVC</code>
+            <name>El Salvador Colon</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SYP</code>
+            <name>Syrian Pound</name>
+        </codelist-item>
+        <codelist-item>
+            <code>SZL</code>
+            <name>Lilangeni</name>
+        </codelist-item>
+        <codelist-item>
+            <code>THB</code>
+            <name>Baht</name>
+        </codelist-item>
+        <codelist-item>
+            <code>TJS</code>
+            <name>Somoni</name>
+        </codelist-item>
+        <codelist-item>
+            <code>TMT</code>
+            <name>Manat</name>
+        </codelist-item>
+        <codelist-item>
+            <code>TND</code>
+            <name>Tunisian Dinar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>TOP</code>
+            <name>Paanga</name>
+        </codelist-item>
+        <codelist-item>
+            <code>TRY</code>
+            <name>Turkish Lira</name>
+        </codelist-item>
+        <codelist-item>
+            <code>TTD</code>
+            <name>Trinidad and Tobago Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>TWD</code>
+            <name>New Taiwan Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>TZS</code>
+            <name>Tanzanian Shilling</name>
+        </codelist-item>
+        <codelist-item>
+            <code>UAH</code>
+            <name>Hryvnia</name>
+        </codelist-item>
+        <codelist-item>
+            <code>UGX</code>
+            <name>Uganda Shilling</name>
+        </codelist-item>
+        <codelist-item>
+            <code>USD</code>
+            <name>US Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>USN</code>
+            <name>US Dollar (Next day)</name>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2018-08-20">
+            <code>USS</code>
+            <name>US Dollar (Same day)</name>
+            <description>Withdrawn from ISO Currency codelist.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>UYI</code>
+            <name>Uruguay Peso en Unidades Indexadas</name>
+        </codelist-item>
+        <codelist-item>
+            <code>UYU</code>
+            <name>Peso Uruguayo</name>
+        </codelist-item>
+        <codelist-item>
+            <code>UZS</code>
+            <name>Uzbekistan Sum</name>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2018-12-06">
+            <code>VEF</code>
+            <name>Bolivar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>VES</code>
+            <name>Bolivar Soberano</name>
+        </codelist-item>
+        <codelist-item>
+            <code>VND</code>
+            <name>Dong</name>
+        </codelist-item>
+        <codelist-item>
+            <code>VUV</code>
+            <name>Vatu</name>
+        </codelist-item>
+        <codelist-item>
+            <code>WST</code>
+            <name>Tala</name>
+        </codelist-item>
+        <codelist-item>
+            <code>XAF</code>
+            <name>CFA Franc BEAC</name>
+        </codelist-item>
+        <codelist-item>
+            <code>XBT</code>
+            <name>Bitcoin</name>
+        </codelist-item>
+        <codelist-item>
+            <code>XCD</code>
+            <name>East Caribbean Dollar</name>
+        </codelist-item>
+        <codelist-item>
+            <code>XDR</code>
+            <name>International Monetary Fund (IMF) Special Drawing Right (SDR)</name>
+        </codelist-item>
+        <codelist-item>
+            <code>XOF</code>
+            <name>CFA Franc BCEAO</name>
+        </codelist-item>
+        <codelist-item>
+            <code>XPF</code>
+            <name>CFP Franc</name>
+        </codelist-item>
+        <codelist-item>
+            <code>YER</code>
+            <name>Yemeni Rial</name>
+        </codelist-item>
+        <codelist-item>
+            <code>ZAR</code>
+            <name>Rand</name>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2018-08-08">
+            <code>ZMK</code>
+            <name>Zambian Kwacha</name>
+            <description>Withdrawn from ISO Country codelist. Use code ZMW.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>ZMW</code>
+            <name>Zambian Kwacha</name>
+        </codelist-item>
+        <codelist-item>
+            <code>ZWL</code>
+            <name>Zimbabwe Dollar</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

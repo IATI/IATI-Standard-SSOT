@@ -1,0 +1,37 @@
+<codelist name="ContactType" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Contact Type</name>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>General Enquiries</name>
+            <name xml:lang="fr">Renseignements g&#233;n&#233;raux</name>
+            <description>General Enquiries</description>
+            <description xml:lang="fr">Renseignements g&#233;n&#233;raux</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Project Management</name>
+            <name xml:lang="fr">Gestion de projet</name>
+            <description>Project Management</description>
+            <description xml:lang="fr">Gestion de projet</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Financial Management</name>
+            <name xml:lang="fr">Gestion financi&#232;re</name>
+            <description>Financial Management</description>
+            <description xml:lang="fr">Gestion financi&#232;re</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Communications</name>
+            <name xml:lang="fr">Communications</name>
+            <description>Communications</description>
+            <description xml:lang="fr">Communications</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

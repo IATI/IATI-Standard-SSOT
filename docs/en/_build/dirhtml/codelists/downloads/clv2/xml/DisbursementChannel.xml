@@ -1,0 +1,38 @@
+<codelist name="DisbursementChannel" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Disbursement Channel</name>
+        <description>Categories of information included in published documents</description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Money is disbursed through central Ministry of Finance or Treasury</name>
+            <name xml:lang="fr">Les fonds sont d&#233;bours&#233;s par l'entremise du minist&#232;re des Finances ou du Tr&#233;sor central</name>
+            <description>Money is disbursed through central Ministry of Finance or Treasury</description>
+            <description xml:lang="fr">Les fonds sont d&#233;bours&#233;s par l'entremise du minist&#232;re des Finances ou du Tr&#233;sor central</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Money is disbursed directly to the implementing institution and managed through a separate bank account</name>
+            <name xml:lang="fr">Les fonds sont vers&#233;s directement &#224; l'organisation responsable de la mise en &#339;uvre et g&#233;r&#233;s au moyen d'un compte bancaire distinct</name>
+            <description>Money is disbursed directly to the implementing institution and managed through a separate bank account</description>
+            <description xml:lang="fr">Les fonds sont vers&#233;s directement &#224; l'organisation responsable de la mise en &#339;uvre et g&#233;r&#233;s au moyen d'un compte bancaire distinct</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Aid in kind: Donors utilise third party agencies, e.g. NGOs or management companies</name>
+            <name xml:lang="fr">Aide en nature&#160;: Les donateurs utilisent des organisations tierces, p. ex. des ONG ou des soci&#233;t&#233;s de gestion</name>
+            <description>Aid in kind: Donors utilise third party agencies, e.g. NGOs or management companies</description>
+            <description xml:lang="fr">Aide en nature&#160;: Les donateurs utilisent des organisations tierces, p. ex. des ONG ou des soci&#233;t&#233;s de gestion</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Aid in kind: Donors manage funds themselves</name>
+            <name xml:lang="fr">Aide en nature&#160;: Les donateurs g&#232;rent eux-m&#234;mes les fonds</name>
+            <description>Aid in kind: Donors manage funds themselves</description>
+            <description xml:lang="fr">Aide en nature&#160;: Les donateurs g&#232;rent eux-m&#234;mes les fonds</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

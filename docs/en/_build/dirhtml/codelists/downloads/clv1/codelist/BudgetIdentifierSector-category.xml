@@ -1,0 +1,37 @@
+<codelist name="BudgetIdentifierSector-category" date-last-modified="2020-10-28T16:50:18.485173+00:00" version="" xml:lang="en">
+  <BudgetIdentifierSector-category>
+    <code>1</code>
+    <name>General Public Service</name>
+    <language>en</language>
+  </BudgetIdentifierSector-category>
+  <BudgetIdentifierSector-category>
+    <code>2</code>
+    <name>Justice, Law, Order and Security</name>
+    <language>en</language>
+  </BudgetIdentifierSector-category>
+  <BudgetIdentifierSector-category>
+    <code>3</code>
+    <name>Economic Affairs</name>
+    <language>en</language>
+  </BudgetIdentifierSector-category>
+  <BudgetIdentifierSector-category>
+    <code>4</code>
+    <name>Water, Natural Resource Management and Environment</name>
+    <language>en</language>
+  </BudgetIdentifierSector-category>
+  <BudgetIdentifierSector-category>
+    <code>5</code>
+    <name>Social Affairs</name>
+    <language>en</language>
+  </BudgetIdentifierSector-category>
+  <BudgetIdentifierSector-category>
+    <code>6</code>
+    <name>Development Partner Affairs</name>
+    <language>en</language>
+  </BudgetIdentifierSector-category>
+  <BudgetIdentifierSector-category>
+    <code>7</code>
+    <name>General Budget Support and Aid support external to General Government Sector</name>
+    <language>en</language>
+  </BudgetIdentifierSector-category>
+</codelist>

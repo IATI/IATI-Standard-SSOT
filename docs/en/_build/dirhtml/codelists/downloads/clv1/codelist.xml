@@ -1,0 +1,398 @@
+<codelists>
+  <codelist>
+    <name>TiedStatus</name>
+    <description></description>
+    <count>3</count>
+  </codelist>
+  <codelist>
+    <name>GeographicLocationClass</name>
+    <description></description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>RegionVocabulary</name>
+    <description></description>
+    <count>3</count>
+  </codelist>
+  <codelist>
+    <name>Region</name>
+    <description></description>
+    <count>26</count>
+  </codelist>
+  <codelist>
+    <name>FinanceType</name>
+    <description>DAC/CRS transaction classification used to distinguish financial instruments,  e.g. grants or loans.</description>
+    <count>68</count>
+  </codelist>
+  <codelist>
+    <name>EarmarkingCategory</name>
+    <description>This codelist has been created by IATI and is derived from the Grand Bargain Earmarking Modality codelist.</description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>LoanRepaymentPeriod</name>
+    <description>CRS Loan Repayment No of Payments </description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>GazetteerAgency</name>
+    <description>An online resource that holds coordinates and descriptions of geographic locations </description>
+    <count>3</count>
+  </codelist>
+  <codelist>
+    <name>ConditionType</name>
+    <description>Condition type &#8211; e.g. policy, performance.</description>
+    <count>3</count>
+  </codelist>
+  <codelist>
+    <name>AidTypeVocabulary</name>
+    <description>The AidTypeVocabulary codelist defines a range of external codelists which themselves provide codes and descriptions for aid type.</description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>ResultType</name>
+    <description></description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>FlowType</name>
+    <description>DAC/CRS distinction between ODA (official development assistance) and other types of resource flow.</description>
+    <count>10</count>
+  </codelist>
+  <codelist>
+    <name>DocumentCategory</name>
+    <description></description>
+    <count>30</count>
+  </codelist>
+  <codelist>
+    <name>BudgetNotProvided</name>
+    <description>A codelist defining the reasons why an activity does not contain any iati-activity/budget elements.</description>
+    <count>3</count>
+  </codelist>
+  <codelist>
+    <name>ActivityDateType</name>
+    <description>
+            Types of date for activities.
+        
+            There are many different business models and dates that can be used
+            to describe the start and end of activities. It is recommended that
+            each publisher adopts their own consistent approach that provides
+            users with a meaningful indication of the lifespan of an activity.
+        </description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>BudgetStatus</name>
+    <description>Code to denote if the described budget is binding.</description>
+    <count>2</count>
+  </codelist>
+  <codelist>
+    <name>CRSChannelCode</name>
+    <description></description>
+    <count>414</count>
+  </codelist>
+  <codelist>
+    <name>TagVocabulary</name>
+    <description>The Tag Vocabulary codelist defines external codelists which themselves provide codes and descriptions for tag elements.</description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>IATIOrganisationIdentifier</name>
+    <description>
+            This is a list of organisation identifiers that is maintained by the IATI Secretariat.
+            The prefix for organisations on this list is XI-IATI
+
+            If a bona fide organisation is not registered with any recognised or appropriate registration agency (http://iatistandard.org/202/codelists/OrganisationRegistrationAgency/) they should contact the IATI Technical Team who will exceptionally allocate an organisation identifier using the XI-IATI prefix.
+
+            While some of these identifiers have been derived from DAC codes, this 'meaning' is not carried forward. i.e. IATI generated identifiers have no intrinsic meaning.
+
+            For general guidance about constructing Organisation Identifiers, please see http://iatistandard.org/organisation-identifiers/
+            </description>
+    <count>39</count>
+  </codelist>
+  <codelist>
+    <name>Country</name>
+    <description>
+            The Country codelist is generated from the ISO 3166-1 part of the
+            ISO 3166 standard. The standard makes allowance, alongside the
+            officially assigned codes, for code elements to be expanded by
+            using either reserved codes or user-assigned codes. IATI currently
+            defines additional codes in the XA -XZ range.
+        </description>
+    <count>251</count>
+  </codelist>
+  <codelist>
+    <name>IndicatorMeasure</name>
+    <description>To specify how an indicator is being measured. This includes qualitative and quantitative values.</description>
+    <count>5</count>
+  </codelist>
+  <codelist>
+    <name>ContactType</name>
+    <description></description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>UNSDG-Goals</name>
+    <description>A value from the top-level list of UN sustainable development goals (SDGs) (e.g. &#8216;1&#8217;)</description>
+    <count>17</count>
+  </codelist>
+  <codelist>
+    <name>ActivityStatus</name>
+    <description>Lifecycle status of the activity from pipeline to completion</description>
+    <count>6</count>
+  </codelist>
+  <codelist>
+    <name>CashandVoucherModalities</name>
+    <description>This codelist has been created by IATI following agreements and recommendations of the Tracking Cash and Voucher Assistance (CVA) Working Group. Definitions of the codes have been aligned with the CaLP Glossary:http://www.cashlearning.org/resources/glossary.</description>
+    <count>2</count>
+  </codelist>
+  <codelist>
+    <name>DocumentCategory-category</name>
+    <description>This codelists exists to group the Document Category codelist into categories. It is not used as a codelist in its own right.</description>
+    <count>2</count>
+  </codelist>
+  <codelist>
+    <name>GeographicVocabulary</name>
+    <description></description>
+    <count>6</count>
+  </codelist>
+  <codelist>
+    <name>FinanceType-category</name>
+    <description>This codelists exists to group the Finance Type codelist into categories. It is not used as a codelist in its own right.</description>
+    <count>13</count>
+  </codelist>
+  <codelist>
+    <name>GeographicLocationReach</name>
+    <description></description>
+    <count>2</count>
+  </codelist>
+  <codelist>
+    <name>IndicatorVocabulary</name>
+    <description>
+                The Indicator Vocabulary codelist defines a range of external codelists which themselves provide codes and descriptions for indicators, for example to specify results.
+            </description>
+    <count>10</count>
+  </codelist>
+  <codelist>
+    <name>OrganisationType</name>
+    <description></description>
+    <count>16</count>
+  </codelist>
+  <codelist>
+    <name>Sector</name>
+    <description></description>
+    <count>323</count>
+  </codelist>
+  <codelist>
+    <name>OrganisationIdentifier</name>
+    <description>
+            As of 1.04 this list is no longer maintained. http://support.iatistandard.org/entries/28497976-Retire-the-Organisation-Identifier-codelist#view-post-25368673
+
+            For general guidance about constructing Organisation Identifiers, please see http://iatistandard.org/organisation-identifiers/
+        </description>
+    <count>419</count>
+  </codelist>
+  <codelist>
+    <name>BudgetIdentifierSector-category</name>
+    <description>This codelists exists to group the Budget Identifier codelist into categories. It is not used as a codelist in its own right.</description>
+    <count>7</count>
+  </codelist>
+  <codelist>
+    <name>AidType-category</name>
+    <description>This codelists exists to group the Aid Type codelist into categories. It is not used as a codelist in its own right.</description>
+    <count>8</count>
+  </codelist>
+  <codelist>
+    <name>PublisherType</name>
+    <description></description>
+    <count>3</count>
+  </codelist>
+  <codelist>
+    <name>ResultVocabulary</name>
+    <description>The ResultVocabulary codelist currently includes only 1 code (99) that can be used by organisations to define different results frameworks they are using.</description>
+    <count>1</count>
+  </codelist>
+  <codelist>
+    <name>LocationType-category</name>
+    <description>This category is equivalent to US NGA's "Feature Class"</description>
+    <count>9</count>
+  </codelist>
+  <codelist>
+    <name>Version</name>
+    <description>
+       Version of the IATI Standard 
+    </description>
+    <count>8</count>
+  </codelist>
+  <codelist>
+    <name>UNSDG-Targets</name>
+    <description>A value from the second-level list of UN sustainable development goals (SDGs) (e.g. &#8216;1.1&#8217;)</description>
+    <count>169</count>
+  </codelist>
+  <codelist>
+    <name>RelatedActivityType</name>
+    <description></description>
+    <count>5</count>
+  </codelist>
+  <codelist>
+    <name>OrganisationRegistrationAgency</name>
+    <description>
+                The values from this codelist are used to identify the particular list that an organisation identifier was drawn from. The codelist provides a register of known identifier lists, including national company registers, NGO directories and international and multilateral organisation lists - along with guidance and online resources to help locate the identifiers assigned to a specific organisation.
+
+                As of 17 July 2017 this list is maintained by the org-id.guide project. Data publishers can now search for and locate the relevant list for a particular organisation identifier using the `org-id.guide website &lt;http://org-id.guide/&gt;`__. The full register of identifier sources is also available to download in `XML &lt;http://org-id.guide/download.xml&gt;`__, `JSON &lt;http://org-id.guide/download.json&gt;`__ and `CSV &lt;http://org-id.guide/download.csv&gt;`__ formats.
+
+                IATI periodically replicates the codelist of identifier sources from org-id.guide, to assist those accessing IATI documentation. However, it is advised that the most up-to-date source is the `org-id.guide project &lt;http://org-id.guide/&gt;`__.
+
+                If org-id.guide does not contain an entry for the kind of organisation you need to identify, you can make a request a new list is included in the register following the `guidance &lt;http://docs.org-id.guide/en/latest/contribute/&gt;`__ or by getting in touch with org-id.guide at: contact@org-id.guide.
+            </description>
+    <count>197</count>
+  </codelist>
+  <codelist>
+    <name>GeographicExactness</name>
+    <description></description>
+    <count>2</count>
+  </codelist>
+  <codelist>
+    <name>OtherIdentifierType</name>
+    <description></description>
+    <count>6</count>
+  </codelist>
+  <codelist>
+    <name>HumanitarianScopeType</name>
+    <description>
+                The Humanitarian Scope Type codelist defines codes for types of humanitarian events and actions.
+            </description>
+    <count>2</count>
+  </codelist>
+  <codelist>
+    <name>Currency</name>
+    <description>ISO 4217 Currency used for all transactions and budgets</description>
+    <count>174</count>
+  </codelist>
+  <codelist>
+    <name>BudgetType</name>
+    <description></description>
+    <count>2</count>
+  </codelist>
+  <codelist>
+    <name>GeographicalPrecision</name>
+    <description>A system for clarifying the accuracy and usage of geographical coordinates </description>
+    <count>9</count>
+  </codelist>
+  <codelist>
+    <name>SectorVocabulary</name>
+    <description></description>
+    <count>13</count>
+  </codelist>
+  <codelist>
+    <name>DescriptionType</name>
+    <description>Activity decription types. (General, objectives, etc)</description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>PolicyMarker</name>
+    <description>The Policy Marker codelist is derived from the policy markers declared by the WP-STAT. The codes themselves are created by IATI.</description>
+    <count>12</count>
+  </codelist>
+  <codelist>
+    <name>Language</name>
+    <description></description>
+    <count>181</count>
+  </codelist>
+  <codelist>
+    <name>VerificationStatus</name>
+    <description></description>
+    <count>2</count>
+  </codelist>
+  <codelist>
+    <name>TransactionType</name>
+    <description></description>
+    <count>13</count>
+  </codelist>
+  <codelist>
+    <name>FileFormat</name>
+    <description>File format of published documents.</description>
+    <count>1652</count>
+  </codelist>
+  <codelist>
+    <name>OrganisationRole</name>
+    <description>IATI codes for the role of an organisation within an activity. An organisation can play more than one role within an activity.</description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>CollaborationType</name>
+    <description>OECD DAC classification used to determine the character of resource flows (bilateral or multilateral).</description>
+    <count>7</count>
+  </codelist>
+  <codelist>
+    <name>HumanitarianScopeVocabulary</name>
+    <description>
+                The Humanitarian Scope Vocabulary codelist defines a range of external codelists which themselves provide codes and descriptions for humanitarian events and actions.
+            </description>
+    <count>3</count>
+  </codelist>
+  <codelist>
+    <name>DisbursementChannel</name>
+    <description>Categories of information included in published documents</description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>SectorCategory</name>
+    <description></description>
+    <count>44</count>
+  </codelist>
+  <codelist>
+    <name>PolicyMarkerVocabulary</name>
+    <description></description>
+    <count>2</count>
+  </codelist>
+  <codelist>
+    <name>CRSAddOtherFlags</name>
+    <description>OECD DAC classification used to distinguish aid modalities. </description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>ActivityScope</name>
+    <description>Geographic scope of activity</description>
+    <count>8</count>
+  </codelist>
+  <codelist>
+    <name>LocationType</name>
+    <description>
+            US NGA Feature Designation Codes
+            
+            On this codelist 'category' is used for the Feature Class.
+        </description>
+    <count>682</count>
+  </codelist>
+  <codelist>
+    <name>LoanRepaymentType</name>
+    <description>used in additional CRS elements</description>
+    <count>4</count>
+  </codelist>
+  <codelist>
+    <name>AidType</name>
+    <description></description>
+    <count>18</count>
+  </codelist>
+  <codelist>
+    <name>BudgetIdentifierVocabulary</name>
+    <description></description>
+    <count>5</count>
+  </codelist>
+  <codelist>
+    <name>PolicySignificance</name>
+    <description></description>
+    <count>5</count>
+  </codelist>
+  <codelist>
+    <name>BudgetIdentifier</name>
+    <description>IATI Functional and Administrative Common Code : One of several possible Budget Identifier Vocabularies. As of version 2.03 this codelist has been deprecated.</description>
+    <count>152</count>
+  </codelist>
+  <codelist>
+    <name>BudgetIdentifierSector</name>
+    <description>This codelists exists to group the Budget Identifier codelist into sectors. It is not used as a codelist in its own right.</description>
+    <count>31</count>
+  </codelist>
+</codelists>

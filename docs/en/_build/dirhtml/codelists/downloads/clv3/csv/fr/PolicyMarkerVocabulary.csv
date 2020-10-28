@@ -1,0 +1,3 @@
+code,name,description,category,url,status
+1,OCDE CAD CRS,"Le marqueur de politique est un marqueur de politique OCDE CAD SNPC, indiqué dans les colonnes 20-23, 28-31 et 54 du format de préparation de déclaration SNPC++.",,http://reference.iatistandard.org/codelists/PolicyMarker/,active
+99,Organisation déclarante,Le marqueur de politique est un marqueur défini et suivi par l'organisation déclarante,,,active

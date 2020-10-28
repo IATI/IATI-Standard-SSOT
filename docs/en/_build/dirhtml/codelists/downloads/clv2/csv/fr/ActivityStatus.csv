@@ -1,0 +1,7 @@
+code,name,description,category,url,status
+1,Planification,On planifie l'activité ou on en établit la portée,,,active
+2,Actif,L'activité est en cours de mise en œuvre,,,active
+3,Finalisation,"L'activité concrète est terminée ou le débours final a été effectué, mais l'activité reste ouverte en attendant une signature de l'autorité financière ou une évaluation (C et E).",,,active
+4,Fermé,L'activité concrète est terminée ou le dernier débours a été effectué.,,,active
+5,Annulé,L'activité a été annulée,,,active
+6,Suspendu,L'activité a été suspendue temporairement,,,active

@@ -1,0 +1,219 @@
+<codelist name="BudgetIdentifierSector" date-last-modified="2020-10-28T16:50:19.571707+00:00" version="" xml:lang="en">
+  <BudgetIdentifierSector>
+    <code>1.1</code>
+    <name>Executive</name>
+    <language>en</language>
+    <category>1</category>
+    <category-name>General Public Service</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>1.2</code>
+    <name>Legislative</name>
+    <language>en</language>
+    <category>1</category>
+    <category-name>General Public Service</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>1.3</code>
+    <name>Accountability</name>
+    <language>en</language>
+    <category>1</category>
+    <category-name>General Public Service</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>1.4</code>
+    <name>External Affairs</name>
+    <language>en</language>
+    <category>1</category>
+    <category-name>General Public Service</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>1.5</code>
+    <name>General Personnel Services</name>
+    <language>en</language>
+    <category>1</category>
+    <category-name>General Public Service</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>1.6</code>
+    <name>Statistics</name>
+    <language>en</language>
+    <category>1</category>
+    <category-name>General Public Service</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>1.7</code>
+    <name>Other General Services</name>
+    <language>en</language>
+    <category>1</category>
+    <category-name>General Public Service</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>1.8</code>
+    <name>Elections</name>
+    <language>en</language>
+    <category>1</category>
+    <category-name>General Public Service</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>2.1</code>
+    <name>Justice, Law and Order</name>
+    <language>en</language>
+    <category>2</category>
+    <category-name>Justice, Law, Order and Security</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>2.2</code>
+    <name>Defence</name>
+    <language>en</language>
+    <category>2</category>
+    <category-name>Justice, Law, Order and Security</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>3.1</code>
+    <name>General Economic, Commercial and Labour Affairs</name>
+    <language>en</language>
+    <category>3</category>
+    <category-name>Economic Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>3.2</code>
+    <name>Public Works</name>
+    <language>en</language>
+    <category>3</category>
+    <category-name>Economic Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>3.3</code>
+    <name>Agriculture</name>
+    <language>en</language>
+    <category>3</category>
+    <category-name>Economic Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>3.4</code>
+    <name>Forestry</name>
+    <language>en</language>
+    <category>3</category>
+    <category-name>Economic Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>3.5</code>
+    <name>Fishing and Hunting</name>
+    <language>en</language>
+    <category>3</category>
+    <category-name>Economic Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>3.6</code>
+    <name>Energy</name>
+    <language>en</language>
+    <category>3</category>
+    <category-name>Economic Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>3.7</code>
+    <name>Mining and Mineral Development</name>
+    <language>en</language>
+    <category>3</category>
+    <category-name>Economic Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>3.8</code>
+    <name>Transport</name>
+    <language>en</language>
+    <category>3</category>
+    <category-name>Economic Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>3.9</code>
+    <name>Industry</name>
+    <language>en</language>
+    <category>3</category>
+    <category-name>Economic Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>3.10</code>
+    <name>Communications</name>
+    <language>en</language>
+    <category>3</category>
+    <category-name>Economic Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>3.11</code>
+    <name>Tourism</name>
+    <language>en</language>
+    <category>3</category>
+    <category-name>Economic Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>3.12</code>
+    <name>Microfinance and financial services</name>
+    <language>en</language>
+    <category>3</category>
+    <category-name>Economic Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>4.1</code>
+    <name>Water supply and Sanitation</name>
+    <language>en</language>
+    <category>4</category>
+    <category-name>Water, Natural Resource Management and Environment</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>4.2</code>
+    <name>Environment</name>
+    <language>en</language>
+    <category>4</category>
+    <category-name>Water, Natural Resource Management and Environment</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>5.1</code>
+    <name>Health</name>
+    <language>en</language>
+    <category>5</category>
+    <category-name>Social Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>5.2</code>
+    <name>Recreation, Culture and Religion</name>
+    <language>en</language>
+    <category>5</category>
+    <category-name>Social Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>5.3</code>
+    <name>Education</name>
+    <language>en</language>
+    <category>5</category>
+    <category-name>Social Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>5.4</code>
+    <name>Social Protection, Land Housing and Community Amenities</name>
+    <language>en</language>
+    <category>5</category>
+    <category-name>Social Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>6.1</code>
+    <name>Development Partner affairs</name>
+    <language>en</language>
+    <category>6</category>
+    <category-name>Development Partner Affairs</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>7.1</code>
+    <name>External to government sector</name>
+    <language>en</language>
+    <category>7</category>
+    <category-name>General Budget Support and Aid support external to General Government Sector</category-name>
+  </BudgetIdentifierSector>
+  <BudgetIdentifierSector>
+    <code>7.2</code>
+    <name>General Budget Support</name>
+    <language>en</language>
+    <category>7</category>
+    <category-name>General Budget Support and Aid support external to General Government Sector</category-name>
+  </BudgetIdentifierSector>
+</codelist>

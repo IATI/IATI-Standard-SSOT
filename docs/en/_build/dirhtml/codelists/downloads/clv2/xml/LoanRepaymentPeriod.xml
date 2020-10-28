@@ -1,0 +1,38 @@
+<codelist name="LoanRepaymentPeriod" xml:lang="en" embedded="0">
+    <metadata>
+        <name>Loan Repayment Period</name>
+        <description>CRS Loan Repayment No of Payments </description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Annual</name>
+            <name xml:lang="fr">Annuel</name>
+            <description>The loan has 1 repayment per year</description>
+            <description xml:lang="fr">Le pr&#234;t a 1 remboursement par an</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Semi-annual</name>
+            <name xml:lang="fr">Semi-annuel</name>
+            <description>The loan has 2 repayments per year</description>
+            <description xml:lang="fr">Le pr&#234;t a 2 remboursements par an</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Quarterly</name>
+            <name xml:lang="fr">Trimestriel</name>
+            <description>The loan has 4 repayments per year </description>
+            <description xml:lang="fr">Le pr&#234;t a 4 remboursements par an</description>
+        </codelist-item>
+        <codelist-item>
+            <code>12</code>
+            <name>Monthly</name>
+            <name xml:lang="fr">Mensuel</name>
+            <description>The loan has 12, monthly repayments per year</description>
+            <description xml:lang="fr">Le pr&#234;t a 12 remboursements par an</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

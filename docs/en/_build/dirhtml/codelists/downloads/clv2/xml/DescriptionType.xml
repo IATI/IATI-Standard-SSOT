@@ -1,0 +1,38 @@
+<codelist name="DescriptionType" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Description Type</name>
+        <description>Activity decription types. (General, objectives, etc)</description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>General</name>
+            <name xml:lang="fr">G&#233;n&#233;ral</name>
+            <description>Unstructured, long description of the activity </description>
+            <description xml:lang="fr">Description longue et non structur&#233;e de l'activit&#233;</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Objectives</name>
+            <name xml:lang="fr">Objectifs</name>
+            <description>Specific objectives for the activity, e.g. taken from logical framework</description>
+            <description xml:lang="fr">Objectifs pr&#233;cis pour l'activit&#233;, p. ex. tir&#233;s d'un cadre logique</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Target Groups</name>
+            <name xml:lang="fr">Groupes cibles</name>
+            <description>Details of groups that are intended to benefit from the activity</description>
+            <description xml:lang="fr">D&#233;tails sur les groupes qui devraient profiter de l'activit&#233;</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Other</name>
+            <name xml:lang="fr">Autre</name>
+            <description>For miscellaneous use. A further classification or breakdown may be included in the narrative</description>
+            <description xml:lang="fr">Pour utilisation diverse. Une classification ou une ventilation suppl&#233;mentaires peuvent figurer dans le texte</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

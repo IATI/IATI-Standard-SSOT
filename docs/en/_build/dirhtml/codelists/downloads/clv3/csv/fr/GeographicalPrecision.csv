@@ -1,0 +1,10 @@
+code,name,description,category,url,status
+1,Lieu précis,"Les coordonnées correspondent à un lieu précis, comme un endroit peuplé ou une colline. Le code est aussi utilisé pour les lieux qui rejoignent un autre endroit et qui est linéaire (comme une route ou une voie ferrée). Les lignes ne sont pas codées, seulement les points qui les forment. Tous les points mentionnés dans la source sont codés.",,,active
+2,Près d'un lieu précis,"Le lieu est mentionné dans la source comme étant « près », dans le « secteur » ou se trouvant à jusqu'à 25 km d'un lieu précis. Les coordonnées renvoient à ce lieu précis adjacent.",,,active
+3,Division administrative de second niveau,"Le lieu est ou se trouve dans une division administrative de second niveau (ADM2), comme un district, une municipalité ou une commune.",,,active
+4,Division administrative de premier niveau,"Le lien est ou se trouve dans une division administrative de premier niveau (ADM1), comme une province, un État ou un gouvernorat.",,,active
+5,Coordonnées estimées,"On ne peut désigner le lieu qu'au moyen de coordonnées estimées, par exemple pour un lieu situé entre deux endroits peuplés.",,,active
+6,Entité politique autonome,"On ne peut désigner le lieu que par rapport à une entité politique autonome, ce qui signifie la paire de coordonnées représentant un pays.",,,active
+7,Imprécis - Capitale,"Imprécis. On suppose que la capitale est l'un de deux lieux possibles. (L'autre possibilité est le niveau du pays, avec la précision 9.)",,,active
+8,Capitale locale ou nationale,"On estime que le lieu est le siège d'une division administrative (capitale locale) ou la capitale nationale. Si de l'aide est dirigée vers Luanda sans autre précision sur le lieu et qu'il existe une ADM1 et une capitale nommée Luanda, les coordonnées de la capitale doivent être inscrites avec la précision 8. En l'absence d'indication que l'aide va à la capitale",,,active
+9,Imprécis - Pays,"Imprécis. On estime que lieu est un pays (accompagne souvent la capitale, avec la précision 7)",,,active

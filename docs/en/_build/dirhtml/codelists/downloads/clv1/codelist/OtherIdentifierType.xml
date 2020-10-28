@@ -1,0 +1,33 @@
+<codelist name="OtherIdentifierType" date-last-modified="2020-10-28T16:50:18.845422+00:00" version="" xml:lang="en">
+  <OtherIdentifierType>
+    <code>A1</code>
+    <name>Reporting Organisation's internal activity identifier</name>
+    <language>en</language>
+  </OtherIdentifierType>
+  <OtherIdentifierType>
+    <code>A2</code>
+    <name>CRS Activity identifier</name>
+    <language>en</language>
+  </OtherIdentifierType>
+  <OtherIdentifierType>
+    <code>A3</code>
+    <name>Previous Activity Identifier</name>
+    <language>en</language>
+    <description>The standard insists that once an activity has been reported to IATI its identifier MUST NOT be changed, even if the reporting organisation changes its organisation identifier. There may be exceptional circumstances in which this rule cannot be followed, in which case the previous identifier should be reported using this code.</description>
+  </OtherIdentifierType>
+  <OtherIdentifierType>
+    <code>A9</code>
+    <name>Other Activity Identifier</name>
+    <language>en</language>
+  </OtherIdentifierType>
+  <OtherIdentifierType>
+    <code>B1</code>
+    <name>Previous Reporting Organisation Identifier</name>
+    <language>en</language>
+  </OtherIdentifierType>
+  <OtherIdentifierType>
+    <code>B9</code>
+    <name>Other Organisation Identifier</name>
+    <language>en</language>
+  </OtherIdentifierType>
+</codelist>

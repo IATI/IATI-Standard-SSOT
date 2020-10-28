@@ -1,0 +1,69 @@
+code,name,description,language,category,category-name,category-description
+1,GNI: Gross National Income,,en,0,NON FLOW ITEMS,Non resource flow items requested on DAC table 1
+110,Standard grant,Grants are transfers in cash or in kind for which no legal debt is incurred by the recipient.,en,100,GRANTS,
+1100,Guarantees/insurance,,en,1000,GUARANTEES AND OTHER UNFUNDED CONTINGENT LIABILITIES,
+111,Subsidies to national private investors,,en,100,GRANTS,
+2,ODA % GNI,,en,0,NON FLOW ITEMS,Non resource flow items requested on DAC table 1
+210,Interest subsidy,"A payment to soften the terms of private export credits, or loans or credits by the banking sector.",en,100,GRANTS,
+211,Interest subsidy to national private exporters,,en,100,GRANTS,
+3,Total Flows % GNI,,en,0,NON FLOW ITEMS,Non resource flow items requested on DAC table 1
+310,Capital subscription on deposit basis,"Payments to multilateral agencies in the form of notes and similar instruments, unconditionally encashable at sight by the recipient institutions.",en,100,GRANTS,
+311,Capital subscription on encashment basis,"Payments to multilateral agencies in the form of notes and similar instruments, unconditionally encashable at sight by the recipient institutions.",en,100,GRANTS,
+4,Population,,en,0,NON FLOW ITEMS,Non resource flow items requested on DAC table 1
+410,Aid loan excluding debt reorganisation,,en,400,LOAN,Transfers in cash or in kind for which the recipient incurs legal debt.
+411,Investment-related loan to developing countries,,en,400,LOAN,Transfers in cash or in kind for which the recipient incurs legal debt.
+412,Loan in a joint venture with the recipient,,en,400,LOAN,Transfers in cash or in kind for which the recipient incurs legal debt.
+413,Loan to national private investor,,en,400,LOAN,Transfers in cash or in kind for which the recipient incurs legal debt.
+414,Loan to national private exporter,,en,400,LOAN,Transfers in cash or in kind for which the recipient incurs legal debt.
+421,Standard loan,"Transfers in cash or in kind for which the recipient incurs legal debt (and the resulting claim is not intended to be traded).  Since payment obligations on standard loan are senior obligations, i.e. creditors are entitled to receive payments against their claims before anyone else, they are also referred to as senior loans.",en,420,DEBT INSTRUMENTS,
+422,Reimbursable grant,"A contribution provided to a recipient institution for investment purposes, with the expectation of long-term reflows at conditions specified in the financing agreement. The provider assumes the risk of total or partial failure of the investment; it can also decide if and when to reclaim its investment.",en,420,DEBT INSTRUMENTS,
+423,Bonds,"Fixed-interest debt instruments, issued by governments, public utilities, banks or companies, tradable in financial markets.",en,420,DEBT INSTRUMENTS,
+424,Asset-backed securities,Securities whose value and income payments are derived from and backed by a specific pool of underlying assets.,en,420,DEBT INSTRUMENTS,
+425,Other debt securities,,en,420,DEBT INSTRUMENTS,
+431,Subordinated loan,"A loan that, in the event of default, will only be repaid after all senior obligations have been satisfied.  In compensation for the increased risk, mezzanine debt holders require a higher return for their investment than secured or more senior lenders.",en,430,MEZZANINE FINANCE INSTRUMENTS,
+432,Preferred equity,"Equity that, in the event of default, will be repaid after all senior obligations and subordinated loans have been satisfied; and will be paid before common equity holders. It is a more expensive source of finance than senior debt, a less expensive source than equity.",en,430,MEZZANINE FINANCE INSTRUMENTS,
+433,Other hybrid instruments,Including convertible debt or equity.,en,430,MEZZANINE FINANCE INSTRUMENTS,
+451,Non-banks guaranteed export credits,,en,450,,
+452,Non-banks non-guaranteed portions of guaranteed export credits,,en,400,LOAN,Transfers in cash or in kind for which the recipient incurs legal debt.
+453,Bank export credits,,en,400,LOAN,Transfers in cash or in kind for which the recipient incurs legal debt.
+510,Common equity,A share in the ownership of a corporation that gives the owner claims on the residual value of the corporation after creditors’ claims have been met.,en,500,EQUITY  AND SHARES IN COLLECTIVE INVESTMENT VEHICLES,
+511,Acquisition of equity not part of joint venture in developing countries,,en,500,EQUITY  AND SHARES IN COLLECTIVE INVESTMENT VEHICLES,
+512,Other acquisition of equity,,en,500,EQUITY  AND SHARES IN COLLECTIVE INVESTMENT VEHICLES,
+520,Shares in collective investment vehicles,Collective undertakings through which investors pool funds for investment in financial or nonfinancial assets or both. These vehicles issue shares (if a corporate structure is used) or units (if a trust structure is used).,en,500,EQUITY  AND SHARES IN COLLECTIVE INVESTMENT VEHICLES,
+530,Reinvested earnings,This item is only applicable to Foreign Direct Investment (FDI). Reinvested earnings on FDI consist of the retained earnings of a direct foreign investment enterprise which are treated as if they were distributed and remitted to foreign direct investors in proportion to their ownership of the equity of the enterprise and then reinvested by them in the enterprise.,en,500,EQUITY  AND SHARES IN COLLECTIVE INVESTMENT VEHICLES,
+610,Debt forgiveness:  ODA claims (P),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+611,Debt forgiveness: ODA claims (I),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+612,Debt forgiveness: OOF claims (P),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+613,Debt forgiveness: OOF claims (I),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+614,Debt forgiveness:  Private claims (P),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+615,Debt forgiveness:  Private claims (I),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+616,Debt forgiveness: OOF claims (DSR),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+617,Debt forgiveness:  Private claims (DSR),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+618,Debt forgiveness: Other,,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+620,Debt rescheduling: ODA claims (P),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+621,Debt rescheduling: ODA claims (I),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+622,Debt rescheduling: OOF claims (P),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+623,Debt rescheduling: OOF claims (I),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+624,Debt rescheduling:  Private claims (P),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+625,Debt rescheduling:  Private claims (I),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+626,Debt rescheduling: OOF claims (DSR),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+627,Debt rescheduling:  Private claims (DSR),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+630,Debt rescheduling: OOF claim (DSR – original loan principal),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+631,Debt rescheduling: OOF claim (DSR – original loan interest),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+632,Debt rescheduling: Private claim (DSR – original loan principal),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+633,Debt forgiveness/conversion: export credit claims (P),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+634,Debt forgiveness/conversion:  export credit claims (I),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+635,Debt forgiveness:  export credit claims (DSR),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+636,Debt rescheduling:  export credit claims (P),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+637,Debt rescheduling:  export credit claims (I),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+638,Debt rescheduling:  export credit claims (DSR),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+639,Debt rescheduling:  export credit claim (DSR – original loan principal),,en,600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club."
+710,"Foreign direct investment, new capital outflow (includes reinvested earnings if separate identification not available)",,en,700,INVESTMENT,Investment made by a private entity resident in a reporting country to acquire or add to a lasting interest(1) in an enterprise in a country on the DAC List of ODA Recipients.
+711,"Other foreign direct investment, including reinvested earnings",,en,700,INVESTMENT,Investment made by a private entity resident in a reporting country to acquire or add to a lasting interest(1) in an enterprise in a country on the DAC List of ODA Recipients.
+712,"Foreign direct investment, reinvested earnings",,en,700,INVESTMENT,Investment made by a private entity resident in a reporting country to acquire or add to a lasting interest(1) in an enterprise in a country on the DAC List of ODA Recipients.
+810,Bank bonds,,en,800,BONDS,Acquisition of bonds issued by developing countries.
+811,Non-bank  bonds,,en,800,BONDS,Acquisition of bonds issued by developing countries.
+910,Other bank securities/claims,,en,900,OTHER SECURITIES/CLAIMS,
+911,Other non-bank securities/claims,,en,900,OTHER SECURITIES/CLAIMS,
+912,Purchase of securities from issuing agencies,,en,900,OTHER SECURITIES/CLAIMS,
+913,Securities and other instruments originally issued by multilateral agencies,,en,900,OTHER SECURITIES/CLAIMS,

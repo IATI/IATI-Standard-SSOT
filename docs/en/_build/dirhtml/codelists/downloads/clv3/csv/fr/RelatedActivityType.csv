@@ -1,0 +1,6 @@
+code,name,description,category,url,status
+1,Parent,Activité qui comprend des sous-activités (sous-composantes) qui sont communiquées séparément à l’IITA,,,active
+2,Descendant,Sous-activité (ou sous-composante) faisant partie d’une activité plus large (mère) et communiquée spécifiquement à l’IITA,,,active
+3,Fratrie,Sous-activité (ou sous-composante) en lien avec une autre sous-activité dans le cadre d’une activité mère commune,,,active
+4,Co-financée,Activité financée par plusieurs organisations,,,active
+5,Tiers,"Rapport d’une autre organisation sur la même activité que celle dont vous rendez compte (à l’exclusion des activités communiquées dans le cadre d’une transaction financière, p. ex., identifiant de l’activité d’un prestataire ou activité co-financée, en utilisant le code 4)",,,active

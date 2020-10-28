@@ -1,0 +1,32 @@
+<codelist name="TagVocabulary" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Tag Vocabulary</name>
+        <description>The Tag Vocabulary codelist defines external codelists which themselves provide codes and descriptions for tag elements.</description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <url>http://agrovoc.uniroma2.it/agrovoc/agrovoc/en/</url>
+            <name>Agrovoc</name>
+            <description>A controlled vocabulary covering all areas of interest of the Food and Agriculture Organization (FAO) of the United Nations, including food, nutrition, agriculture, fisheries, forestry, environment etc.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <url>http://reference.iatistandard.org/codelists/UNSDG-Goals/</url>
+            <name>UN Sustainable Development Goals (SDG)</name>
+            <description>A value from the top-level list of UN sustainable development goals (SDGs) (e.g. &#8216;1&#8217;)</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <url>http://reference.iatistandard.org/codelists/UNSDG-Targets/</url>
+            <name>UN Sustainable Development Goals (SDG) Targets</name>
+            <description>A value from the second-level list of UN sustainable development goals (SDGs) (e.g. &#8216;1.1&#8217;)</description>
+        </codelist-item>
+        <codelist-item>
+            <code>99</code>
+            <name>Reporting Organisation</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

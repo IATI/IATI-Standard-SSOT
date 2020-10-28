@@ -1,0 +1,52 @@
+<codelist name="ActivityStatus" xml:lang="en" complete="1" embedded="1">
+    <metadata>
+        <name>Activity Status</name>
+        <description>Lifecycle status of the activity from pipeline to completion</description>
+        <category>Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Pipeline/identification</name>
+            <name xml:lang="fr">Planification</name>
+            <description>The activity is being scoped or planned </description>
+            <description xml:lang="fr">On planifie l'activit&#233; ou on en &#233;tablit la port&#233;e</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Implementation</name>
+            <name xml:lang="fr">Actif</name>
+            <description>The activity is currently being implemented</description>
+            <description xml:lang="fr">L'activit&#233; est en cours de mise en &#339;uvre</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Finalisation</name>
+            <name xml:lang="fr">Finalisation</name>
+            <description>Physical activity is complete or the final disbursement has been made, but the activity remains open pending financial sign off or M&amp;E</description>
+            <description xml:lang="fr">L'activit&#233; concr&#232;te est termin&#233;e ou le d&#233;bours final a &#233;t&#233; effectu&#233;, mais l'activit&#233; reste ouverte en attendant une signature de l'autorit&#233; financi&#232;re ou une &#233;valuation (C et E).</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Closed</name>
+            <name xml:lang="fr">Ferm&#233;</name>
+            <description>Physical activity is complete or the final disbursement has been made.</description>
+            <description xml:lang="fr">L'activit&#233; concr&#232;te est termin&#233;e ou le dernier d&#233;bours a &#233;t&#233; effectu&#233;.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>Cancelled</name>
+            <name xml:lang="fr">Annul&#233;</name>
+            <description>The activity has been cancelled</description>
+            <description xml:lang="fr">L'activit&#233; a &#233;t&#233; annul&#233;e</description>
+        </codelist-item>
+        <codelist-item>
+            <code>6</code>
+            <name>Suspended</name>
+            <name xml:lang="fr">Suspendu</name>
+            <description>The activity has been temporarily suspended</description>
+            <description xml:lang="fr">L'activit&#233; a &#233;t&#233; suspendue temporairement</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

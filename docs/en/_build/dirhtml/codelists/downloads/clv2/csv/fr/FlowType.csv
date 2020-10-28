@@ -1,0 +1,11 @@
+code,name,description,category,url,status
+10,APD,Aide Publique au Développement,,,active
+20,AASP,Autres Apports du Secteur Public,,,withdrawn
+21,AASP hors crédits-export,"Autres Apports du Secteur Public, à l'exclusion des crédits à l'exportation",,,active
+22,AASP dont crédits export,"Autres Apports du Secteur Public, comprenant les crédits à l'exportation soutenus par le secteur public et les exportations privées bénéficiant de garantie ou d'assurance publiques",,,active
+30,Financement du développement privé,"Financement par les organisations de la société civile (ONG, fondations philantropiques, etc.)",,,active
+35,Apports privés aux conditions du marché,Apports privés aux conditions du marché,,,withdrawn
+36,IDE,Investissements directs à l'étranger,,,active
+37,Autres apports privés aux conditions du marché,"Apports privés de long-terme (i.e. dont la maturité est supérieure à un an), transactions en capital faites par des résidents de pays du CAD",,,active
+40,non apports,"ex : RNB, APD%RNB, Population etc",,,active
+50,Autres apports,ex : élément non APD des opérations de maintien de la paix,,,active

@@ -1,0 +1,81 @@
+<codelist name="ActivityStatus" xml:lang="en" complete="1" embedded="1">
+    <metadata>
+        <name>
+            <narrative>Activity Status</narrative>
+        </name>
+        <description>
+            <narrative>Lifecycle status of the activity from pipeline to completion</narrative>
+        </description>
+        <category>
+            <narrative>Core</narrative>
+        </category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>
+                <narrative>Pipeline/identification</narrative>
+                <narrative xml:lang="fr">Planification</narrative>
+            </name>
+            <description>
+                <narrative>The activity is being scoped or planned </narrative>
+                <narrative xml:lang="fr">On planifie l'activité ou on en établit la portée</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>
+                <narrative>Implementation</narrative>
+                <narrative xml:lang="fr">Actif</narrative>
+            </name>
+            <description>
+                <narrative>The activity is currently being implemented</narrative>
+                <narrative xml:lang="fr">L'activité est en cours de mise en œuvre</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>
+                <narrative>Finalisation</narrative>
+                <narrative xml:lang="fr">Finalisation</narrative>
+            </name>
+            <description>
+                <narrative>Physical activity is complete or the final disbursement has been made, but the activity remains open pending financial sign off or M&amp;E</narrative>
+                <narrative xml:lang="fr">L'activité concrète est terminée ou le débours final a été effectué, mais l'activité reste ouverte en attendant une signature de l'autorité financière ou une évaluation (C et E).</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>
+                <narrative>Closed</narrative>
+                <narrative xml:lang="fr">Fermé</narrative>
+            </name>
+            <description>
+                <narrative>Physical activity is complete or the final disbursement has been made.</narrative>
+                <narrative xml:lang="fr">L'activité concrète est terminée ou le dernier débours a été effectué.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>
+                <narrative>Cancelled</narrative>
+                <narrative xml:lang="fr">Annulé</narrative>
+            </name>
+            <description>
+                <narrative>The activity has been cancelled</narrative>
+                <narrative xml:lang="fr">L'activité a été annulée</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>6</code>
+            <name>
+                <narrative>Suspended</narrative>
+                <narrative xml:lang="fr">Suspendu</narrative>
+            </name>
+            <description>
+                <narrative>The activity has been temporarily suspended</narrative>
+                <narrative xml:lang="fr">L'activité a été suspendue temporairement</narrative>
+            </description>
+        </codelist-item>
+    </codelist-items>
+</codelist>

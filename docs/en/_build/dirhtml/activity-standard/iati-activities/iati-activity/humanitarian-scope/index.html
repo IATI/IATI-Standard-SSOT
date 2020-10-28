@@ -1,0 +1,213 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>humanitarian-scope &#8212; IATI Standard 2.03 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/traditional.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.03',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex/" />
+    <link rel="search" title="Search" href="../../../../search/" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="../../../../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="humanitarian-scope">
+<h1>humanitarian-scope<a class="headerlink" href="#humanitarian-scope" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal"><span class="pre">iati-activities/iati-activity/humanitarian-scope</span></code></p>
+<p>This is the reference page for the XML element <code class="docutils literal"><span class="pre">humanitarian-scope</span></code>.</p>
+<div class="section" id="definition">
+<span id="index-0"></span><h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h2>
+<p>Classification of emergencies, appeals and other humanitarian
+events and actions.</p>
+</div>
+<div class="section" id="rules">
+<h2>Rules<a class="headerlink" href="#rules" title="Permalink to this headline">¶</a></h2>
+<p>This element may occur any number of times.</p>
+</div>
+<div class="section" id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="iati-activities-iati-activity-humanitarian-scope-type">
+<dt>&#64;type</dt>
+<dd><p class="first">A code for the type of event or action being classified.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p class="last">This value should be on the <a class="reference internal" href="../../../../codelists/HumanitarianScopeType/"><span class="doc">HumanitarianScopeType codelist</span></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="iati-activities-iati-activity-humanitarian-scope-vocabulary">
+<dt>&#64;vocabulary</dt>
+<dd><p class="first">A code for a recognised vocabulary of terms classifying the
+event or action.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p class="last">This value should be on the <a class="reference internal" href="../../../../codelists/HumanitarianScopeVocabulary/"><span class="doc">HumanitarianScopeVocabulary codelist</span></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="iati-activities-iati-activity-humanitarian-scope-vocabulary-uri">
+<dt>&#64;vocabulary-uri</dt>
+<dd><p class="first">A u.r.i. for the vocabulary specified which provides access to
+the list of codes and descriptions.</p>
+<p class="last">This value must be of type xsd:anyURI.</p>
+</dd>
+</dl>
+<dl class="docutils" id="iati-activities-iati-activity-humanitarian-scope-code">
+<dt>&#64;code</dt>
+<dd><p class="first">A code for the event or action from the vocabulary specified.</p>
+<p>This attribute is required.</p>
+<p class="last">This value must be of type xsd:string.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<p>Example <code class="docutils literal"><span class="pre">humanitarian-scope</span></code> of an <code class="docutils literal"><span class="pre">iati-activity</span></code>.</p>
+<div class="line-block">
+<div class="line">The <code class="docutils literal"><span class="pre">&#64;type</span></code> attribute declares a valid code (<em>1</em>) from the <em>HumanitarianScopeType</em> codelist.</div>
+<div class="line">The <code class="docutils literal"><span class="pre">&#64;vocabulary</span></code> attribute declares a valid code (<em>1-2</em>) from the <em>HumanitarianScopeVocabulary</em> codelist.</div>
+<div class="line">The <code class="docutils literal"><span class="pre">&#64;code</span></code> attribute declares a valid code (<em>EQ-2015-000048-NPL</em>) from the specified vocabulary.</div>
+</div>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;humanitarian-scope</span> <span class="na">type=</span><span class="s">&quot;1&quot;</span> <span class="na">vocabulary=</span><span class="s">&quot;1-2&quot;</span> <span class="na">code=</span><span class="s">&quot;EQ-2015-000048-NPL&quot;</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;/humanitarian-scope&gt;</span>
+</pre></div>
+</div>
+<p>If a publisher uses a vocabulary of 99 (i.e. ‘Reporting Organisation’), then the <code class="docutils literal"><span class="pre">&#64;vocabulary-uri</span></code> attribute should also be used, for example:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;humanitarian-scope</span> <span class="na">type=</span><span class="s">&quot;1&quot;</span> <span class="na">vocabulary=</span><span class="s">&quot;99&quot;</span> <span class="na">vocabulary-uri=</span><span class="s">&quot;http://example.com/vocab.html&quot;</span> <span class="na">code=</span><span class="s">&quot;5&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;narrative&gt;</span>Nepal Earthquake (April 2015)<span class="nt">&lt;/narrative&gt;</span>
+<span class="nt">&lt;/humanitarian-scope&gt;</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">The <code class="docutils literal"><span class="pre">humanitarian-scope</span></code> element can be repeated in any <code class="docutils literal"><span class="pre">iati-activity</span></code>.</div>
+</div>
+<div class="highlight-xml"><div class="highlight"><pre><span></span>  <span class="nt">&lt;humanitarian-scope</span> <span class="na">type=</span><span class="s">&quot;1&quot;</span> <span class="na">vocabulary=</span><span class="s">&quot;1-2&quot;</span> <span class="na">code=</span><span class="s">&quot;EQ-2015-000048-NPL&quot;</span><span class="nt">&gt;</span>
+ 	  <span class="nt">&lt;narrative&gt;</span>Nepal Earthquake April 2015<span class="nt">&lt;/narrative&gt;</span>
+    <span class="nt">&lt;narrative</span> <span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span> Népal Earthquake Avril 2015<span class="nt">&lt;/narrative&gt;</span>
+  <span class="nt">&lt;/humanitarian-scope&gt;</span>
+  <span class="nt">&lt;humanitarian-scope</span> <span class="na">type=</span><span class="s">&quot;1&quot;</span> <span class="na">vocabulary=</span><span class="s">&quot;99&quot;</span> <span class="na">vocabulary-uri=</span><span class="s">&quot;http://example.com/vocab.html&quot;</span> <span class="na">code=</span><span class="s">&quot;A1&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;narrative</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>Nepal Earthquake April 2015<span class="nt">&lt;/narrative&gt;</span>
+  <span class="nt">&lt;/humanitarian-scope&gt;</span>
+</pre></div>
+</div>
+<div class="line-block">
+<div class="line">If a vocabulary is not on the <em>HumanitarianScopeVocabulary</em> codelist, then the value of <em>99</em> (<em>Reporting Organisation</em>) should be declared.</div>
+</div>
+</div>
+<div class="section" id="changelog">
+<h2>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>2.03<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>The definition of the <code class="docutils literal"><span class="pre">&#64;vocabulary-uri</span></code> was <a class="reference external" href="https://discuss.iatistandard.org/t/guidance-on-u-r-i-usage-for-publisher-s-own-vocabularies-included-2-03/850">updated</a>.</p>
+</div>
+<div class="section" id="id2">
+<h3>2.02<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">humanitarian-scope</span></code> element was <a class="reference external" href="http://support.iatistandard.org/entries/105778163-Humanitarian-Emergencies-and-Appeals">added</a>.</p>
+</div>
+</div>
+<div class="section" id="developer-tools">
+<h2>Developer tools<a class="headerlink" href="#developer-tools" title="Permalink to this headline">¶</a></h2>
+<p>Find the source of this documentation on github:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L817">Schema</a></li>
+<li><a class="reference external" href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/humanitarian-scope.rst">Extra Documentation</a></li>
+</ul>
+</div>
+<div class="section" id="subelements">
+<h2>Subelements<a class="headerlink" href="#subelements" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="narrative/">narrative</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../../sitemap/">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">humanitarian-scope</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#rules">Rules</a></li>
+<li><a class="reference internal" href="#attributes">Attributes</a></li>
+<li><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li><a class="reference internal" href="#changelog">Changelog</a><ul>
+<li><a class="reference internal" href="#id1">2.03</a></li>
+<li><a class="reference internal" href="#id2">2.02</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#developer-tools">Developer tools</a></li>
+<li><a class="reference internal" href="#subelements">Subelements</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../../_sources/activity-standard/iati-activities/iati-activity/humanitarian-scope.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search/" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="../../../../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

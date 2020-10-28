@@ -1,0 +1,32 @@
+<codelist name="RegionVocabulary" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Region Vocabulary</name>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <url>http://reference.iatistandard.org/codelists/Region/</url>
+            <name>OECD DAC</name>
+            <name xml:lang="fr">OCDE CAD</name>
+            <description>Supra-national regions according to OECD DAC CRS recipient codes</description>
+            <description xml:lang="fr">R&#233;gions supranationales selon les codes de b&#233;n&#233;ficiaire OCDE CAD SNPC</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <url>https://unstats.un.org/unsd/methodology/m49/</url>
+            <name>UN</name>
+            <name xml:lang="fr">ONU</name>
+            <description>Supra-national regions maintained by UN Statistics Division (M49 standard)</description>
+            <description xml:lang="fr">R&#233;gions supranationales maintenues par la Division de la statistique de l'ONU</description>
+        </codelist-item>
+        <codelist-item>
+            <code>99</code>
+            <name>Reporting Organisation</name>
+            <name xml:lang="fr">Organisation d&#233;clarante</name>
+            <description>The region reported corresponds to a region vocabulary maintained by the reporting organisation for this activity.</description>
+            <description xml:lang="fr">La r&#233;gion d&#233;clar&#233;e correspond &#224; un vocabulaire r&#233;gional maintenu par l'organisation d&#233;clarante aux fins de l'activit&#233;.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

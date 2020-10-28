@@ -1,0 +1,14 @@
+code,name,description,category,url,status
+0,NON FLOW ITEMS,Non resource flow items requested on DAC table 1,,,active
+100,GRANTS,,,,active
+1000,GUARANTEES AND OTHER UNFUNDED CONTINGENT LIABILITIES,,,,active
+200,INTEREST SUBSIDY,"Subsidies to soften the terms of private export credits, or loans or credits by the banking sector.",,,withdrawn
+300,CAPITAL SUBSCRIPTION,"Payments to multilateral agencies in the form of notes and similar instruments, unconditionally cashable at sight by the recipient institutions.",,,withdrawn
+400,LOAN,Transfers in cash or in kind for which the recipient incurs legal debt.,,,withdrawn
+420,DEBT INSTRUMENTS,,,,active
+430,MEZZANINE FINANCE INSTRUMENTS,,,,active
+500,EQUITY AND SHARES IN COLLECTIVE INVESTMENT VEHICLES,,,,active
+600,DEBT RELIEF,"Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club.",,,active
+700,INVESTMENT,Investment made by a private entity resident in a reporting country to acquire or add to a lasting interest(1) in an enterprise in a country on the DAC List of ODA Recipients.,,,withdrawn
+800,BONDS,Acquisition of bonds issued by developing countries.,,,withdrawn
+900,OTHER SECURITIES/CLAIMS,,,,withdrawn

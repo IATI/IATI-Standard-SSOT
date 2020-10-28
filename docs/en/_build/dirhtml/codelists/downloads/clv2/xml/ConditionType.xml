@@ -1,0 +1,33 @@
+<codelist name="ConditionType" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Condition Type</name>
+        <name xml:lang="fr">Type de condition</name>
+        <description>Condition type &#8211; e.g. policy, performance.</description>
+        <description xml:lang="fr">Type de condition &#8211; p. ex., politique, performance</description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Policy</name>
+            <name xml:lang="fr">Politique</name>
+            <description>The condition attached requires a particular policy to be implemented by the recipient</description>
+            <description xml:lang="fr">La condition ci-jointe n&#233;cessite la mise en &#339;uvre d&#8217;une politique sp&#233;cifique par le b&#233;n&#233;ficiaire.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Performance</name>
+            <name xml:lang="fr">Performance</name>
+            <description>The condition attached requires certain outputs or outcomes to be achieved by the recipient</description>
+            <description xml:lang="fr">La condition ci-jointe n&#233;cessite la r&#233;alisation par le b&#233;n&#233;ficiaire de certains objectifs ou l&#8217;obtention de certains r&#233;sultats.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Fiduciary</name>
+            <name xml:lang="fr">Fiduciaire</name>
+            <description>The condition attached requires use of certain public financial management or public accountability measures by the recipient</description>
+            <description xml:lang="fr">La condition ci-jointe n&#233;cessite la mise en &#339;uvre par le b&#233;n&#233;ficiaire de certaines mesures en mati&#232;re de gestion des finances publiques ou de responsabilit&#233; publique.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

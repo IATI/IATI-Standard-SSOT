@@ -1,0 +1,1 @@
+{"attributes": {"name": "VerificationStatus", "complete": "1", "embedded": "0", "category-codelist": null}, "metadata": {"name": "", "description": "", "category": "", "url": ""}, "data": [{"code": "0", "status": "active"}, {"code": "1", "status": "active"}]}

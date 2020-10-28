@@ -1,0 +1,66 @@
+<codelist name="ActivityScope" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Activity Scope</name>
+        <description>Geographic scope of activity</description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Global</name>
+            <name xml:lang="fr">Mondial</name>
+            <description>The activity scope is global</description>
+            <description xml:lang="fr">L'activit&#233; est de port&#233;e mondiale</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Regional</name>
+            <name xml:lang="fr">R&#233;gional</name>
+            <description>The activity scope is a supranational region</description>
+            <description xml:lang="fr">La port&#233;e de l'activit&#233; concerne une r&#233;gion supranationale</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Multi-national</name>
+            <name xml:lang="fr">Multinational</name>
+            <description>The activity scope covers multiple countries, that don't constitute a region</description>
+            <description xml:lang="fr">La port&#233;e de l'activit&#233; concerne de multiples pays qui ne constituent pas une r&#233;gion</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>National</name>
+            <name xml:lang="fr">National</name>
+            <description>The activity scope covers one country</description>
+            <description xml:lang="fr">La port&#233;e de l'activit&#233; correspond &#224; un pays</description>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>Sub-national: Multi-first-level administrative areas</name>
+            <name xml:lang="fr">Infranational: multiples r&#233;gions administratives de premier niveau</name>
+            <description>The activity scope covers more than one first-level subnational administrative areas (e.g. counties, provinces, states)</description>
+            <description xml:lang="fr">La port&#233;e de l'activit&#233; concerne plus d'une r&#233;gion administrative infranationale de premier niveau (p. ex. comt&#233;s, provinces, &#233;tats)</description>
+        </codelist-item>
+        <codelist-item>
+            <code>6</code>
+            <name>Sub-national: Single first-level administrative area</name>
+            <name xml:lang="fr">Infranational: r&#233;gion administrative de premier niveau unique</name>
+            <description>The activity scope covers one first-level subnational administrative area (e.g. country, province, state)</description>
+            <description xml:lang="fr">La port&#233;e de l'activit&#233; concerne une seule r&#233;gion administrative infranationale de premier niveau (p. ex. comt&#233;, province, &#233;tat)</description>
+        </codelist-item>
+        <codelist-item>
+            <code>7</code>
+            <name>Sub-national: Single second-level administrative area</name>
+            <name xml:lang="fr">Infranational: r&#233;gion administrative de second niveau unique</name>
+            <description>The activity scope covers one second-level subnational administrative area (e.g. municipality or district)</description>
+            <description xml:lang="fr">La port&#233;e de l'activit&#233; concerne une seule r&#233;gion administrative infranationale de deuxi&#232;me niveau  (p. ex. municipalit&#233; ou district)</description>
+        </codelist-item>
+        <codelist-item>
+            <code>8</code>
+            <name>Single location</name>
+            <name xml:lang="fr">Un seul emplacement</name>
+            <description>The activity scope covers one single location (e.g. town, village, farm)</description>
+            <description xml:lang="fr">La port&#233;e de l'activit&#233; concerne un seul endroit (p. ex. ville, village, ferme)</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

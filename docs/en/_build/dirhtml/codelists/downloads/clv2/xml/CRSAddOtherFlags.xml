@@ -1,0 +1,38 @@
+<codelist name="CRSAddOtherFlags" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>CRS Additional Other Flags</name>
+        <description>OECD DAC classification used to distinguish aid modalities. </description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Free standing technical cooperation</name>
+            <name xml:lang="fr">Coop&#233;ration technique pure</name>
+            <description>Free standing technical cooperation (Col 24 in CRS++ Reporting format)</description>
+            <description xml:lang="fr">Coop&#233;ration technique pure (col 24 du gabarit CRS++)</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Programme-based approach</name>
+            <name xml:lang="fr">Approche-programme</name>
+            <description>Programme-based approach (Col 25 in CRS++ Reporting format)</description>
+            <description xml:lang="fr">Approche-programme (col 25 du gabarit CRS++)</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Investment project</name>
+            <name xml:lang="fr">Projet d'investissement</name>
+            <description>Investment project (Col 26 in CRS++ Reporting format)</description>
+            <description xml:lang="fr">Projet d'investissement (col 26 du gabarit CRS++)</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Associated financing</name>
+            <name xml:lang="fr">Financement associ&#233;</name>
+            <description>Associated financing (Col 27 in CRS++ Reporting format)</description>
+            <description xml:lang="fr">Financement associ&#233; (col 27 du gabarit CRS++)</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

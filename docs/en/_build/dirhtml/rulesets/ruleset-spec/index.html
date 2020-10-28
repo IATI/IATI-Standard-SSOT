@@ -1,0 +1,253 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>IATI Ruleset Spec &#8212; IATI Standard 2.03 documentation</title>
+    <link rel="stylesheet" href="../../_static/traditional.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.03',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Ruleset development" href="../ruleset-development/" />
+    <link rel="prev" title="Standard Ruleset" href="../standard-ruleset/" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../ruleset-development/" title="Ruleset development"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../standard-ruleset/" title="Standard Ruleset"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../" accesskey="U">Rulesets</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="iati-ruleset-spec">
+<h1>IATI Ruleset Spec<a class="headerlink" href="#iati-ruleset-spec" title="Permalink to this headline">¶</a></h1>
+<p>An IATI Ruleset is a JSON document. The structure is described below.</p>
+<p>A <a class="reference external" href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/schema.json">JSON schema</a> is availible to test that the structure of a Ruleset is correct.</p>
+<p>Each JSON document has the form.:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;CONTEXT&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;RULE_NAME&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;cases&quot;</span><span class="p">:</span> <span class="n">CASE_DICT_ARRAY</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Where <code class="docutils literal"><span class="pre">CONTEXT</span></code> is an xpath expression. This will be used to select the XML elements that the contained rules will be tested against.
+<code class="docutils literal"><span class="pre">RULE_NAME</span></code> is one of rule names listed below
+<code class="docutils literal"><span class="pre">CASE_DICT</span></code> is a dictionary where the contents depend on <code class="docutils literal"><span class="pre">RULE_NAME</span></code>
+<code class="docutils literal"><span class="pre">CASE_DICT_ARRAY</span></code> is an array of case dictionaries. The contents of each dictionary depend on the <code class="docutils literal"><span class="pre">RULE_NAME</span></code></p>
+<p>The possible keys in a case dictionary are:</p>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">condition</span></code></dt>
+<dd>An xpath string. If this evaluates to True, the rule will be ignored.</dd>
+<dt><code class="docutils literal"><span class="pre">eval</span></code></dt>
+<dd>An xpath string. Can evaluate to True or False.</dd>
+<dt><code class="docutils literal"><span class="pre">paths</span></code></dt>
+<dd>An array of xpath strings. These are evaluated to give a list of elements that the named rule then operates upon.</dd>
+<dt><code class="docutils literal"><span class="pre">less</span></code></dt>
+<dd>A string containing the xpath of the smaller value (or older value when working with dates).</dd>
+<dt><code class="docutils literal"><span class="pre">more</span></code></dt>
+<dd>A string containing the xpath of the larger value (or more recent value when working with dates).</dd>
+<dt><code class="docutils literal"><span class="pre">regex</span></code></dt>
+<dd>A string containing a perl style regular expression.</dd>
+<dt><code class="docutils literal"><span class="pre">sum</span></code></dt>
+<dd>A number.</dd>
+<dt><code class="docutils literal"><span class="pre">excluded</span></code></dt>
+<dd>An array of xpath strings. Evaluate which elements should not coexist with other elements.</dd>
+<dt><code class="docutils literal"><span class="pre">date</span></code></dt>
+<dd>A string containing the xpath to a date.</dd>
+<dt><code class="docutils literal"><span class="pre">start</span></code></dt>
+<dd>A string containing the xpath to a start date.</dd>
+<dt><code class="docutils literal"><span class="pre">end</span></code></dt>
+<dd>A string containing the xpath to an end date.</dd>
+<dt><code class="docutils literal"><span class="pre">one</span></code></dt>
+<dd>A string containing the xpath of something that must exist or <code class="docutils literal"><span class="pre">all</span></code> must be followed.</dd>
+<dt><code class="docutils literal"><span class="pre">all</span></code></dt>
+<dd>A string containing the condition that must be met for all elements if <code class="docutils literal"><span class="pre">one</span></code> is not met.</dd>
+<dt><code class="docutils literal"><span class="pre">foreach</span></code></dt>
+<dd>An array of xpath strings. Containing a set of xpaths to be evaluated under a different rule.</dd>
+<dt><code class="docutils literal"><span class="pre">do</span></code></dt>
+<dd>An array of rules. To evaluate with <code class="docutils literal"><span class="pre">foreach</span></code>.</dd>
+<dt><code class="docutils literal"><span class="pre">subs</span></code></dt>
+<dd>An array of xpath strings. These are to be evaluated with the rules in <code class="docutils literal"><span class="pre">do</span></code>.</dd>
+</dl>
+<div class="section" id="rule-names">
+<h2>Rule Names<a class="headerlink" href="#rule-names" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><strong>Rule names are listed in bold</strong></dt>
+<dd><p class="first">Keys: The keys for each rule are then listed.</p>
+<p class="last">Followed by a brief description of the rule’s function.</p>
+</dd>
+<dt><strong>no_more_than_one</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">condition</span></code>, <code class="docutils literal"><span class="pre">paths</span></code></p>
+<p class="last">There must be no more than one element described by the given paths.</p>
+</dd>
+<dt><strong>atleast_one</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">condition</span></code>, <code class="docutils literal"><span class="pre">paths</span></code></p>
+<p class="last">There must be at least one element described by the given paths.</p>
+</dd>
+<dt><strong>only_one_of</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">excluded</span></code>, <code class="docutils literal"><span class="pre">paths</span></code></p>
+<p class="last">If there’s a match of the elements in <code class="docutils literal"><span class="pre">excluded</span></code>, there must not be any matches in <code class="docutils literal"><span class="pre">paths</span></code>, if there are no matches in <code class="docutils literal"><span class="pre">excluded</span></code>, there must be exactly one element from <code class="docutils literal"><span class="pre">paths</span></code>.</p>
+</dd>
+<dt><strong>one_or_all</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">one</span></code>, <code class="docutils literal"><span class="pre">all</span></code></p>
+<p class="last"><code class="docutils literal"><span class="pre">one</span></code> must exist otherwise <code class="docutils literal"><span class="pre">all</span></code> other attributes or elements must exist.</p>
+</dd>
+<dt><strong>dependent</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">condition</span></code>, <code class="docutils literal"><span class="pre">paths</span></code></p>
+<p class="last">If one of the provided paths exists, they must all exist.</p>
+</dd>
+<dt><strong>sum</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">condition</span></code>, <code class="docutils literal"><span class="pre">paths</span></code>, <code class="docutils literal"><span class="pre">sum</span></code></p>
+<p class="last">The numerical sum of the values of elements matched by <code class="docutils literal"><span class="pre">paths</span></code> must match the value for the <code class="docutils literal"><span class="pre">sum</span></code> key</p>
+</dd>
+<dt><strong>date_order</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">condition</span></code>, <code class="docutils literal"><span class="pre">less</span></code>, <code class="docutils literal"><span class="pre">more</span></code></p>
+<p class="last">The date matched by <code class="docutils literal"><span class="pre">less</span></code> must not be after the date matched by <code class="docutils literal"><span class="pre">more</span></code>. If either of these dates is not found, the rule is ignored.</p>
+</dd>
+<dt><strong>date_now</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">date</span></code></p>
+<p class="last">The <code class="docutils literal"><span class="pre">date</span></code> must not be after the current date.</p>
+</dd>
+<dt><strong>time_limit</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">start</span></code>, <code class="docutils literal"><span class="pre">end</span></code></p>
+<p class="last">The difference between the <code class="docutils literal"><span class="pre">start</span></code> date and the <code class="docutils literal"><span class="pre">end</span></code> date must not be greater than a year.</p>
+</dd>
+<dt><strong>between_dates</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">date</span></code>, <code class="docutils literal"><span class="pre">start</span></code>, <code class="docutils literal"><span class="pre">end</span></code></p>
+<p class="last">The <code class="docutils literal"><span class="pre">date</span></code> must be between the <code class="docutils literal"><span class="pre">start</span></code> and <code class="docutils literal"><span class="pre">end</span></code> dates.</p>
+</dd>
+<dt><strong>regex_matches</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">condition</span></code>, <code class="docutils literal"><span class="pre">paths</span></code>, <code class="docutils literal"><span class="pre">regex</span></code></p>
+<p class="last">The provided <code class="docutils literal"><span class="pre">regex</span></code> must match the text of all elements matched by <code class="docutils literal"><span class="pre">paths</span></code></p>
+</dd>
+<dt><strong>regex_no_matches</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">condition</span></code>, <code class="docutils literal"><span class="pre">paths</span></code>, <code class="docutils literal"><span class="pre">regex</span></code></p>
+<p class="last">The provided <code class="docutils literal"><span class="pre">regex</span></code> must match the text of none of the elements matched by <code class="docutils literal"><span class="pre">paths</span></code></p>
+</dd>
+<dt><strong>startswith</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">condition</span></code>, <code class="docutils literal"><span class="pre">paths</span></code>, <code class="docutils literal"><span class="pre">start</span></code></p>
+<p class="last">The text of each element matched by <code class="docutils literal"><span class="pre">paths</span></code> must start with the text of the element matched by <code class="docutils literal"><span class="pre">start</span></code></p>
+</dd>
+<dt><strong>unique</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">condition</span></code>, <code class="docutils literal"><span class="pre">paths</span></code></p>
+<p class="last">The text of each of the elements described by <code class="docutils literal"><span class="pre">paths</span></code> must be unique</p>
+</dd>
+<dt><strong>evaluates_to_true</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">cases</span></code>, <code class="docutils literal"><span class="pre">eval</span></code></p>
+<p class="last">Each expression defined in <code class="docutils literal"><span class="pre">eval</span></code> must resolve to true</p>
+</dd>
+<dt><strong>if_then</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">condition</span></code>, <code class="docutils literal"><span class="pre">cases</span></code>, <code class="docutils literal"><span class="pre">if</span></code>, <code class="docutils literal"><span class="pre">then</span></code></p>
+<p class="last">If the condition evaluated in <code class="docutils literal"><span class="pre">if</span></code> is true, then <code class="docutils literal"><span class="pre">then</span></code> must resolve to true as well</p>
+</dd>
+<dt><strong>loop</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">foreach</span></code>, <code class="docutils literal"><span class="pre">do</span></code>, <code class="docutils literal"><span class="pre">cases</span></code>, <code class="docutils literal"><span class="pre">subs</span></code></p>
+<p class="last">All elements in <code class="docutils literal"><span class="pre">foreach</span></code> are evaluated under the rules inside <code class="docutils literal"><span class="pre">do</span></code></p>
+</dd>
+<dt><strong>strict_sum</strong></dt>
+<dd><p class="first">Keys: <code class="docutils literal"><span class="pre">paths</span></code>, <code class="docutils literal"><span class="pre">sum</span></code></p>
+<p class="last">The decimal sum of the values of elements matched by <code class="docutils literal"><span class="pre">paths</span></code> must match the value for the <code class="docutils literal"><span class="pre">sum</span></code> key</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../sitemap/">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">IATI Ruleset Spec</a><ul>
+<li><a class="reference internal" href="#rule-names">Rule Names</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../standard-ruleset/"
+                        title="previous chapter">Standard Ruleset</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../ruleset-development/"
+                        title="next chapter">Ruleset development</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/rulesets/ruleset-spec.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search/" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../ruleset-development/" title="Ruleset development"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../standard-ruleset/" title="Standard Ruleset"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../" >Rulesets</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

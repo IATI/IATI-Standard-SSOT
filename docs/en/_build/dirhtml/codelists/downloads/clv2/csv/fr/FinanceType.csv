@@ -1,0 +1,69 @@
+code,name,description,category,url,status
+1,RNB : Revenu national brut,,0,,active
+110,Dons ordinaires,Transferts en espèces ou en nature qui n'entraînent pas d'obligation juridique de remboursement pour le bénéficiaire.,100,,active
+1100,Garanties/assurances,,1000,,active
+111,Don hors réorganisation de la dette (y compris quasi-dons),,100,,withdrawn
+2,APD en % du RNB,,0,,active
+210,Bonification d'intérêt,Subventions visant à assouplir les conditions des crédits à l’exportation ou des prêts/crédits du secteur bancaire.,100,,active
+211,Bonification d’intérêt octroyée aux exportateurs privés nationaux,,100,,withdrawn
+3,Apports totaux en % du RNB,,0,,active
+310,Souscriptions au capital sur la base des dépôt,Versements aux agences multilatérales sous forme de billets à ordre et effets similaires encaissables à vue sans condition par l'institution bénéficiaire.,100,,active
+311,Souscriptions au capital sur la base des encaissements,Versements aux agences multilatérales sous forme de billets à ordre et effets similaires encaissables à vue sans condition par l'institution bénéficiaire.,100,,active
+4,Population,,0,,active
+410,Prêt d’aide hors réorganisation de la dette,,400,,withdrawn
+411,Prêt lié à un investissement dans les pays en développement,,400,,withdrawn
+412,Prêt dans une coentreprise avec le pays bénéficiaire,,400,,withdrawn
+413,Prêt à un investisseur privé national,,400,,withdrawn
+414,Prêt à un exportateur privé national,,400,,withdrawn
+421,Prêt ordinaire,"Transferts en espèce ou en nature qui entraînent une obligation juridique de remboursement pour le bénéficiaire (dont la créance n'est pas échangeable.) Lorsque les obligations de remboursement sur les prêts ordinaires sont senior, càd que le créditeur est éligible à percevoir le remboursement de sa créance avant quiconque, on parle de prêt senior.",420,,active
+422,Don remboursable,"Contribution fournie à une institution bénéficiaire à des fins d'investissement, dans une perspective de remboursement à long-terme à des conditions spécifiées dans l'accord de financement. Le fournisseur assume le risque partiel ou total de faillite de l'investissement ; il peut aussi décider si et quand il récupère son investissement.",420,,active
+423,Obligations,"Instruments de dette à intérêts fixes émis par des gouvernements, entités publiques, banques ou sociétés, échangeables sur les marchés financiers.",420,,active
+424,Titres adossés à des actifs,Actifs dont la valeur et les revenus sont dérivés de et adossés à un panier d'actifs sous-jacents.,420,,active
+425,Autres actifs de dette,,420,,active
+431,Prêt subordonné,"Prêt qui, en cas de défaut, ne sera remboursé qu'après que les obligations senior soient satisfaites. En compensation du risque accru, les détenteurs de dette mezzanine exigent un retour sur investissement plus élevé que les prêteurs garantis ou senior.",430,,active
+432,Action privilégiée,"Action qui, en cas de défaut, ne sera remboursé qu'après que les obligations senior soient satisfaites ; mais avant les détenteurs d'actions ordinaires. Il s'agit d'une source de financement plus onéreuse que la dette senior mais moins coûteuse que les actions.",430,,active
+433,Autres instruments hybrides,Incluant les dettes convertibles et les actions.,430,,active
+451,Crédits à l'exportation garantis du secteur non bancaire,,450,,withdrawn
+452,Fraction non garantie des crédits à l'exportation garantis du secteur bancaire,,400,,withdrawn
+453,Crédits à l'exportation du secteur bancaire,,400,,withdrawn
+510,Action ordinaire,Part de propriété dans une société donnant à son détenteur une créance sur la valeurs résiduelle de la société une fois que les créances de ses créditeurs ont été satisfaites.,500,,active
+511,Acquisition de prises de participation en dehors des coentreprises avec les pays en développement,,500,,withdrawn
+512,Autre acquisition de prises de participation,,500,,withdrawn
+520,Parts dans des organismes collectifs d'investissement,Placement collectif par lequel un groupe d'investisseurs abonde un fond d'actifs financiers ou non financiers ou les deux. Ces véhicules émettent des parts (en cas de structure d'entreprise) ou des unités de compte (en cas de structure fiduciaire.),500,,active
+530,Bénéfices réinvestis,Cet item n'est applicable qu'aux investissement direct étrangers (IDE). Les bénéfices réinvestis sur des IDE consistent en des bénéfices retenus d'un investissement direct à l'étranger qui sont traités comme s'ils étaient redistribués et versés aux investisseurs en proportion de leur part dans l'actionnariat puis réinvestis par eux dans l'entreprise.,500,,active
+610,Annulation/conversion de la dette : créance APD (P),,600,,active
+611,Annulation/conversion de la dette : créance APD (I),,600,,active
+612,Annulation/conversion de la dette : créance AASP (P),,600,,active
+613,Annulation/conversion de la dette : créance AASP (I),,600,,active
+614,Annulation/conversion de la dette : créance du secteur privé (P),,600,,active
+615,Annulation/conversion de la dette : créance du secteur privé (I),,600,,active
+616,Annulation/conversion de la dette : créance AASP (DSR),,600,,active
+617,Annulation/conversion de la dette : créance du secteur privé (DSR),,600,,active
+618,Annulation/conversion de la dette : autre,,600,,active
+620,Rééchelonnement de la dette : créance APD (P),,600,,active
+621,Rééchelonnement de la dette : créance APD (I),,600,,active
+622,Rééchelonnement de la dette : créance AASP (P),,600,,active
+623,Rééchelonnement de la dette : créance AASP (I),,600,,active
+624,Rééchelonnement de la dette : créance du secteur privé (P),,600,,active
+625,Rééchelonnement de la dette : créance du secteur privé (I),,600,,active
+626,Rééchelonnement de la dette : créance AASP (RSD),,600,,active
+627,Rééchelonnement de la dette : créance du secteur privé (RSD),,600,,active
+630,Rééchelonnement de la dette : créance AASP (RSD – principal du prêt d’origine),,600,,active
+631,Rééchelonnement de la dette : créance AASP (RSD – intérêts du prêt d’origine),,600,,active
+632,Rééchelonnement de la dette : créance du secteur privé (RSD – principal du prêt d’origine),,600,,active
+633,Annulation/conversion de la dette : créance de crédit à l'exportation (P),,600,,active
+634,Annulation/conversion de la dette : créance de crédit à l'exportation (I),,600,,active
+635,Annulation de la dette : créance de crédit à l'exportation (DSR),,600,,active
+636,Rééchelonnement de la dette : créance de crédit à l'exportation (P),,600,,active
+637,Rééchelonnement de la dette : créance de crédit à l'exportation (I),,600,,active
+638,Rééchelonnement de la dette : créance de crédit à l'exportation (DSR),,600,,active
+639,Rééchelonnement de la dette : créance de crédit à l'exportation (DSR - principal du prêt originel),,600,,active
+710,Investissement direct international,,700,,withdrawn
+711,"Autre investissement direct international , y compris les bénéfices réinvestis",,700,,withdrawn
+712,,,700,,withdrawn
+810,Obligations du secteur bancaire,,800,,withdrawn
+811,Obligations du secteur non bancaire,,800,,withdrawn
+910,Autres titres/créances du secteur bancaire,,900,,withdrawn
+911,Autres titres/créances du secteur non bancaire,,900,,withdrawn
+912,Titres et autres instruments émis par les agences multilatérales,,900,,withdrawn
+913,,,900,,withdrawn

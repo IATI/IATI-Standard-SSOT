@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<iati-activities version="xx">
+  <iati-activity> <!-- at least 1 -->
+    <iati-identifier></iati-identifier>  <!-- 1 and only 1-->
+    <reporting-org type="xx" ref="xx"><narrative>Organisation name</narrative></reporting-org> <!-- 1 and only 1-->
+    <title> <!-- 1 and only 1-->
+      <narrative>Xxxxxxx</narrative> <!-- At least 1-->
+    </title>
+    <description>
+      <narrative>Xxxxxxx</narrative> <!-- At least 1-->
+    </description>
+    <participating-org role="xx"></participating-org> <!-- At least 1-->
+    
+    <!--changes included fro final 2.01-->
+
+        
+    <other-identifier ref="" type="" />
+    <!-- With all options-->
+    <other-identifier ref="" type="">
+      <owner-org ref="">
+        <narrative> Some text here </narrative>
+        <narrative xml:lang="fr"> Some French text here </narrative>
+      </owner-org>
+    </other-identifier>
+    
+    <!--Without options -->
+    <other-identifier ref="" type="">
+      <owner-org>
+        <narrative> Some text here </narrative>
+      </owner-org>
+    </other-identifier>
+    
+    <!-- Without narrative -->   
+    <other-identifier ref="" type="">
+      <owner-org ref="" />
+    </other-identifier>
+    
+    <!-- technically allowed, but useless! -->
+    <other-identifier ref="" type="">
+      <owner-org>
+
+      </owner-org>
+    </other-identifier>
+
+    <!-- With namespaces -->  
+    <other-identifier ref="" type="" xmlns:x="http://www.example.org/" x:foo="">
+      <owner-org x:foo="">
+        <x:foo>yyy</x:foo>
+      </owner-org>
+      <x:foo>yyy</x:foo>
+    </other-identifier>
+    
+    
+    <activity-status code="xx"/> <!-- 1 and only 1-->
+    <activity-date type="xx" iso-date="2013-11-27"/><!-- At least 1 --> <!--Narative allowed-->
+    <activity-date type="xx" iso-date="2013-11-27"><!-- At least 1 --> <!--Narative allowed-->
+      <narrative>Some stuff ere</narrative>
+    </activity-date>
+    
+
+
+    
+  </iati-activity>
+</iati-activities>

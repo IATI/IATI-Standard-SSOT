@@ -1,0 +1,352 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Standard Ruleset &#8212; IATI Standard 2.03 documentation</title>
+    <link rel="stylesheet" href="../../_static/traditional.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.03',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="IATI Ruleset Spec" href="../ruleset-spec/" />
+    <link rel="prev" title="Rulesets" href="../" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../ruleset-spec/" title="IATI Ruleset Spec"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../" title="Rulesets"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../" accesskey="U">Rulesets</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="standard-ruleset">
+<h1>Standard Ruleset<a class="headerlink" href="#standard-ruleset" title="Permalink to this headline">¶</a></h1>
+<p>The Standard Ruleset is a collection of rules that cover most of the requirements of the IATI Standard and that a computer could, in principle, test. Typically, these are rules about the data that cannot be enforced by the schema alone. It covers for example, the ordering of dates, and checks on the format of an iati-identifier.</p>
+<p>We have created a generic framework that allows us to express many of these rules in a way that both humans and machines can understand.
+We call rules in this generic format our “Machine Readable” rules.</p>
+<p>We have written some code to interpret these rules, and hope that they will be useful, for example, for someone that wanted to build a web application that tested people’s data against these rules. They should be easy to implement.</p>
+<p>There are some things given in definitions of elements that really only a human can interpret, such as “Is a title meaningful?”. The Standard Ruleset does not even try to deal with cases such as this. There are also rules which we are not yet able to test but are important for publishers to know, these are grouped below under the heading ‘Non-Machine Readable Rules’.</p>
+<p>At the beginning of 2019 the IATI Technical Team updated the ruleset so that the majority of MUST statements in IATI are now included in the Standard Ruleset.</p>
+<div class="section" id="using-the-standard-ruleset">
+<h2>Using the Standard Ruleset<a class="headerlink" href="#using-the-standard-ruleset" title="Permalink to this headline">¶</a></h2>
+<p>The current Standard Ruleset is a collection of rules that can be used to test the data in a single <code class="docutils literal"><span class="pre">iati-activity</span></code> or <code class="docutils literal"><span class="pre">iati-organisation</span></code> record.</p>
+<p>IATI data is often found as large files containing collections of (for example) activities, so to test a file of IATI data against the Standard Ruleset means running the tests on each <code class="docutils literal"><span class="pre">iati-activity</span></code> or <code class="docutils literal"><span class="pre">iati-organisation</span></code> record in that file.</p>
+<p>Every <code class="docutils literal"><span class="pre">iati-activity</span></code> or <code class="docutils literal"><span class="pre">iati-organisation</span></code> record has the option to use different elements of the IATI Standard, and to also repeat certain elements, so in defining a Standard Ruleset it is necessary to include rules that may or may not need to apply for each individual <code class="docutils literal"><span class="pre">iati-activity</span></code> or <code class="docutils literal"><span class="pre">iati-organisation</span></code> record.</p>
+<p>If we take a <code class="docutils literal"><span class="pre">transaction</span></code> from an <code class="docutils literal"><span class="pre">iati-activity</span></code> record as an example, we can see that this element does not have to be reported. However, it may also be reported many times. There are rules in the Standard Ruleset to check that some of the data reported in transactions makes sense, so these tests could either be run many times, or not at all on a single <code class="docutils literal"><span class="pre">iati-activity</span></code> record.</p>
+<p>Hence, the minimum and maximum number of tests undertaken on an <code class="docutils literal"><span class="pre">iati-activity</span></code> or <code class="docutils literal"><span class="pre">iati-organisation</span></code> can fluctuate according to the content.</p>
+</div>
+<div class="section" id="non-machine-readable-rules">
+<h2>Non-Machine Readable Rules<a class="headerlink" href="#non-machine-readable-rules" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="iati-org-ids-ref">
+<h3>IATI Org IDs&#64;ref<a class="headerlink" href="#iati-org-ids-ref" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>When reporting an IATI Org ID either for the publishers or another agency, it MUST be a valid organisation identifier.</li>
+<li>For the publisher, the identifier MUST be the same as that recorded by the publisher on the IATI Registry.</li>
+</ul>
+</div>
+<div class="section" id="iati-identifier">
+<h3>iati-identifier<a class="headerlink" href="#iati-identifier" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>It MUST be globally unique among all activities published through the IATI Registry.</li>
+<li>Once an activity has been reported to IATI its identifier MUST NOT be changed in subsequent updates.</li>
+<li>It MUST be prefixed with EITHER the organisation identifier found in <code class="docutils literal"><span class="pre">reporting-org/&#64;ref</span></code> OR a previous <code class="docutils literal"><span class="pre">reporting-org</span> <span class="pre">identifier</span></code> reported in <code class="docutils literal"><span class="pre">other-identifier</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="recipient-country-and-recipient-region">
+<h3>recipient-country and recipient-region<a class="headerlink" href="#recipient-country-and-recipient-region" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Recipient-region MUST not be used merely to describe the region of a country reported in recipient-country, but ONLY if the region is a recipient IN ADDITION to the country.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="machine-readable-rules">
+<h2>Machine Readable Rules<a class="headerlink" href="#machine-readable-rules" title="Permalink to this headline">¶</a></h2>
+<p>These rules are defined in a <a class="reference external" href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json">JSON file</a> as part of our <a class="reference external" href="https://iatistandard.org/en/guidance/developer/ssot/">Single Source of Truth</a> that can be consumed programatically. The list below has been generated from that source.</p>
+<div class="section" id="iati-activity">
+<h3>//iati-activity<a class="headerlink" href="#iati-activity" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">activity-date[&#64;type='1'</span> <span class="pre">or</span> <span class="pre">&#64;type='2']</span></code> must be present.</li>
+<li>Either <code class="docutils literal"><span class="pre">sector</span></code> or <code class="docutils literal"><span class="pre">transaction/sector</span></code> must be present.</li>
+<li><code class="docutils literal"><span class="pre">&#64;xml:lang</span></code> must exist, otherwise all <code class="docutils literal"><span class="pre">lang</span></code> must exist.</li>
+<li><code class="docutils literal"><span class="pre">sector</span></code> must exist, otherwise all <code class="docutils literal"><span class="pre">sector</span></code> must exist.</li>
+<li><code class="docutils literal"><span class="pre">&#64;default-currency</span></code> must exist, otherwise all <code class="docutils literal"><span class="pre">currency</span></code> must exist.</li>
+<li><code class="docutils literal"><span class="pre">transaction/recipient-country</span></code> must not be present alongisde <code class="docutils literal"><span class="pre">recipient-region</span></code> and <code class="docutils literal"><span class="pre">recipient-country</span></code>.</li>
+<li><code class="docutils literal"><span class="pre">transaction/recipient-region</span></code> must not be present alongisde <code class="docutils literal"><span class="pre">recipient-region</span></code> and <code class="docutils literal"><span class="pre">recipient-country</span></code>.</li>
+<li><code class="docutils literal"><span class="pre">&#64;last-updated-datetime</span></code> must not be more recent than the current date</li>
+<li><code class="docutils literal"><span class="pre">activity-date[&#64;type='1']/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">activity-date[&#64;type='3']/&#64;iso-date</span></code></li>
+<li><code class="docutils literal"><span class="pre">activity-date[&#64;type='2']/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">activity-date[&#64;type='4']/&#64;iso-date</span></code></li>
+<li><code class="docutils literal"><span class="pre">activity-date[&#64;type='2']/&#64;iso-date</span></code> must not be in the future.</li>
+<li><code class="docutils literal"><span class="pre">activity-date[&#64;type='4']/&#64;iso-date</span></code> must not be in the future.</li>
+<li><code class="docutils literal"><span class="pre">reporting-org/&#64;ref</span></code> should match the regex <code class="docutils literal"><span class="pre">[^\/\&amp;\|\?]+</span></code></li>
+<li><code class="docutils literal"><span class="pre">iati-identifier</span></code> should match the regex <code class="docutils literal"><span class="pre">[^\/\&amp;\|\?]+</span></code></li>
+<li><code class="docutils literal"><span class="pre">participating-org/&#64;ref</span></code> should match the regex <code class="docutils literal"><span class="pre">[^\/\&amp;\|\?]+</span></code></li>
+<li><code class="docutils literal"><span class="pre">transaction/provider-org/&#64;ref</span></code> should match the regex <code class="docutils literal"><span class="pre">[^\/\&amp;\|\?]+</span></code></li>
+<li><code class="docutils literal"><span class="pre">transaction/receiver-org/&#64;ref</span></code> should match the regex <code class="docutils literal"><span class="pre">[^\/\&amp;\|\?]+</span></code></li>
+<li>The sum of values matched at <code class="docutils literal"><span class="pre">recipient-country/&#64;percentage</span></code> and <code class="docutils literal"><span class="pre">recipient-region/&#64;percentage</span></code> must be <code class="docutils literal"><span class="pre">100</span></code>.</li>
+<li>The sum of values matched at <code class="docutils literal"><span class="pre">sector[&#64;vocabulary</span> <span class="pre">=</span> <span class="pre">'1'</span> <span class="pre">or</span> <span class="pre">not(&#64;vocabulary)]/&#64;percentage</span></code> must be <code class="docutils literal"><span class="pre">100</span></code>.</li>
+<li><code class="docutils literal"><span class="pre">not(activity-date[&#64;type='2'])</span></code> must resolve to true.</li>
+<li><code class="docutils literal"><span class="pre">not(activity-date[&#64;type='4'])</span></code> must resolve to true.</li>
+<li><code class="docutils literal"><span class="pre">not(activity-date[&#64;type='4'])</span></code> must resolve to true.</li>
+<li>The value of each of the elements described by <code class="docutils literal"><span class="pre">recipient-country/&#64;percentage</span></code> must be at least <code class="docutils literal"><span class="pre">0.0</span></code> no more than <code class="docutils literal"><span class="pre">100.0</span></code> (inclusive).</li>
+<li>The value of each of the elements described by <code class="docutils literal"><span class="pre">recipient-region/&#64;percentage</span></code> must be at least <code class="docutils literal"><span class="pre">0.0</span></code> no more than <code class="docutils literal"><span class="pre">100.0</span></code> (inclusive).</li>
+<li>The value of each of the elements described by <code class="docutils literal"><span class="pre">sector/&#64;percentage</span></code> must be at least <code class="docutils literal"><span class="pre">0.0</span></code> no more than <code class="docutils literal"><span class="pre">100.0</span></code> (inclusive).</li>
+<li>The value of each of the elements described by <code class="docutils literal"><span class="pre">capital-spend/&#64;percentage</span></code> must be at least <code class="docutils literal"><span class="pre">0.0</span></code> no more than <code class="docutils literal"><span class="pre">100.0</span></code> (inclusive).</li>
+<li>The value of each of the elements described by <code class="docutils literal"><span class="pre">country-budget-items/budget-item/&#64;percentage</span></code> must be at least <code class="docutils literal"><span class="pre">0.0</span></code> no more than <code class="docutils literal"><span class="pre">100.0</span></code> (inclusive).</li>
+<li>If <code class="docutils literal"><span class="pre">count(sector[&#64;vocabulary=98</span> <span class="pre">or</span> <span class="pre">&#64;vocabulary=99])</span> <span class="pre">&gt;</span> <span class="pre">0</span></code> evaluates to true, then <code class="docutils literal"><span class="pre">count(sector[&#64;vocabulary=98</span> <span class="pre">or</span> <span class="pre">&#64;vocabulary=99]/narrative)</span> <span class="pre">&gt;=</span> <span class="pre">count(sector[&#64;vocabulary=98</span> <span class="pre">or</span> <span class="pre">&#64;vocabulary=99])</span></code> must evaluate to true.</li>
+</ul>
+</div>
+<div class="section" id="iati-activity-other-identifier-owner-org">
+<h3>//iati-activity/other-identifier/owner-org<a class="headerlink" href="#iati-activity-other-identifier-owner-org" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Either <code class="docutils literal"><span class="pre">&#64;ref</span></code> or <code class="docutils literal"><span class="pre">narrative</span></code> must be present.</li>
+</ul>
+</div>
+<div class="section" id="iati-activity-transaction-provider-org">
+<h3>//iati-activity/transaction/provider-org<a class="headerlink" href="#iati-activity-transaction-provider-org" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Either <code class="docutils literal"><span class="pre">&#64;ref</span></code> or <code class="docutils literal"><span class="pre">narrative</span></code> must be present.</li>
+</ul>
+</div>
+<div class="section" id="iati-activity-transaction-receiver-org">
+<h3>//iati-activity/transaction/receiver-org<a class="headerlink" href="#iati-activity-transaction-receiver-org" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Either <code class="docutils literal"><span class="pre">&#64;ref</span></code> or <code class="docutils literal"><span class="pre">narrative</span></code> must be present.</li>
+</ul>
+</div>
+<div class="section" id="policy-marker">
+<h3>//policy-marker<a class="headerlink" href="#policy-marker" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">&#64;significance</span></code> must be present if &#64;vocabulary=’1’ or not(&#64;vocabulary)</li>
+<li><code class="docutils literal"><span class="pre">narrative</span></code> must be present if &#64;vocabulary=’99’</li>
+</ul>
+</div>
+<div class="section" id="iati-organisation">
+<h3>//iati-organisation<a class="headerlink" href="#iati-organisation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">reporting-org/&#64;ref</span></code> should match the regex <code class="docutils literal"><span class="pre">[^\/\&amp;\|\?]+</span></code></li>
+<li><code class="docutils literal"><span class="pre">organisation-identifier</span></code> should match the regex <code class="docutils literal"><span class="pre">[^\/\&amp;\|\?]+</span></code></li>
+<li><code class="docutils literal"><span class="pre">&#64;last-updated-datetime</span></code> must not be more recent than the current date</li>
+<li><code class="docutils literal"><span class="pre">&#64;xml:lang</span></code> must exist, otherwise all <code class="docutils literal"><span class="pre">lang</span></code> must exist.</li>
+<li><code class="docutils literal"><span class="pre">&#64;default-currency</span></code> must exist, otherwise all <code class="docutils literal"><span class="pre">currency</span></code> must exist.</li>
+</ul>
+</div>
+<div class="section" id="participating-org">
+<h3>//participating-org<a class="headerlink" href="#participating-org" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Either <code class="docutils literal"><span class="pre">&#64;ref</span></code> or <code class="docutils literal"><span class="pre">narrative</span></code> must be present.</li>
+</ul>
+</div>
+<div class="section" id="transaction">
+<h3>//transaction<a class="headerlink" href="#transaction" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">transaction-date/&#64;iso-date</span></code> must not be in the future.</li>
+<li><code class="docutils literal"><span class="pre">value/&#64;value-date</span></code> must not be in the future.</li>
+</ul>
+</div>
+<div class="section" id="planned-disbursement">
+<h3>//planned-disbursement<a class="headerlink" href="#planned-disbursement" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code></li>
+</ul>
+</div>
+<div class="section" id="budget">
+<h3>//budget<a class="headerlink" href="#budget" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code></li>
+<li>The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</li>
+</ul>
+</div>
+<div class="section" id="total-budget">
+<h3>//total-budget<a class="headerlink" href="#total-budget" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code></li>
+<li>The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</li>
+</ul>
+</div>
+<div class="section" id="recipient-country-budget">
+<h3>//recipient-country-budget<a class="headerlink" href="#recipient-country-budget" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code></li>
+<li>The <code class="docutils literal"><span class="pre">budget-line/value/&#64;value-date</span></code> must be between the <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> dates.</li>
+<li>The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</li>
+</ul>
+</div>
+<div class="section" id="recipient-org-budget">
+<h3>//recipient-org-budget<a class="headerlink" href="#recipient-org-budget" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code></li>
+<li>The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</li>
+</ul>
+</div>
+<div class="section" id="recipient-region-budget">
+<h3>//recipient-region-budget<a class="headerlink" href="#recipient-region-budget" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code></li>
+<li>The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</li>
+</ul>
+</div>
+<div class="section" id="result-indicator">
+<h3>//result/indicator<a class="headerlink" href="#result-indicator" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>There must be no more than one element or attribute matched at <code class="docutils literal"><span class="pre">reference[1]</span></code> or <code class="docutils literal"><span class="pre">../reference[1]</span></code>.</li>
+<li>There must be no more than one element or attribute matched at <code class="docutils literal"><span class="pre">../reference[1]</span></code> or <code class="docutils literal"><span class="pre">reference[1]</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="result-indicator-period">
+<h3>//result/indicator/period<a class="headerlink" href="#result-indicator-period" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code></li>
+</ul>
+</div>
+<div class="section" id="total-expenditure">
+<h3>//total-expenditure<a class="headerlink" href="#total-expenditure" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</li>
+<li><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code></li>
+</ul>
+</div>
+<div class="section" id="result-indicator-measure-1-or-measure-2-or-measure-3-or-measure-4-baseline">
+<h3>//result/indicator[&#64;measure=’1’ or &#64;measure=’2’ or &#64;measure=’3’ or &#64;measure=’4’]/baseline<a class="headerlink" href="#result-indicator-measure-1-or-measure-2-or-measure-3-or-measure-4-baseline" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">&#64;value</span></code> must be present.</li>
+</ul>
+</div>
+<div class="section" id="result-indicator-measure-1-or-measure-2-or-measure-3-or-measure-4-period-target">
+<h3>//result/indicator[&#64;measure=’1’ or &#64;measure=’2’ or &#64;measure=’3’ or &#64;measure=’4’]/period/target<a class="headerlink" href="#result-indicator-measure-1-or-measure-2-or-measure-3-or-measure-4-period-target" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">&#64;value</span></code> must be present.</li>
+</ul>
+</div>
+<div class="section" id="result-indicator-measure-1-or-measure-2-or-measure-3-or-measure-4-period-actual">
+<h3>//result/indicator[&#64;measure=’1’ or &#64;measure=’2’ or &#64;measure=’3’ or &#64;measure=’4’]/period/actual<a class="headerlink" href="#result-indicator-measure-1-or-measure-2-or-measure-3-or-measure-4-period-actual" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">&#64;value</span></code> must be present.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../sitemap/">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Standard Ruleset</a><ul>
+<li><a class="reference internal" href="#using-the-standard-ruleset">Using the Standard Ruleset</a></li>
+<li><a class="reference internal" href="#non-machine-readable-rules">Non-Machine Readable Rules</a><ul>
+<li><a class="reference internal" href="#iati-org-ids-ref">IATI Org IDs&#64;ref</a></li>
+<li><a class="reference internal" href="#iati-identifier">iati-identifier</a></li>
+<li><a class="reference internal" href="#recipient-country-and-recipient-region">recipient-country and recipient-region</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#machine-readable-rules">Machine Readable Rules</a><ul>
+<li><a class="reference internal" href="#iati-activity">//iati-activity</a></li>
+<li><a class="reference internal" href="#iati-activity-other-identifier-owner-org">//iati-activity/other-identifier/owner-org</a></li>
+<li><a class="reference internal" href="#iati-activity-transaction-provider-org">//iati-activity/transaction/provider-org</a></li>
+<li><a class="reference internal" href="#iati-activity-transaction-receiver-org">//iati-activity/transaction/receiver-org</a></li>
+<li><a class="reference internal" href="#policy-marker">//policy-marker</a></li>
+<li><a class="reference internal" href="#iati-organisation">//iati-organisation</a></li>
+<li><a class="reference internal" href="#participating-org">//participating-org</a></li>
+<li><a class="reference internal" href="#transaction">//transaction</a></li>
+<li><a class="reference internal" href="#planned-disbursement">//planned-disbursement</a></li>
+<li><a class="reference internal" href="#budget">//budget</a></li>
+<li><a class="reference internal" href="#total-budget">//total-budget</a></li>
+<li><a class="reference internal" href="#recipient-country-budget">//recipient-country-budget</a></li>
+<li><a class="reference internal" href="#recipient-org-budget">//recipient-org-budget</a></li>
+<li><a class="reference internal" href="#recipient-region-budget">//recipient-region-budget</a></li>
+<li><a class="reference internal" href="#result-indicator">//result/indicator</a></li>
+<li><a class="reference internal" href="#result-indicator-period">//result/indicator/period</a></li>
+<li><a class="reference internal" href="#total-expenditure">//total-expenditure</a></li>
+<li><a class="reference internal" href="#result-indicator-measure-1-or-measure-2-or-measure-3-or-measure-4-baseline">//result/indicator[&#64;measure=’1’ or &#64;measure=’2’ or &#64;measure=’3’ or &#64;measure=’4’]/baseline</a></li>
+<li><a class="reference internal" href="#result-indicator-measure-1-or-measure-2-or-measure-3-or-measure-4-period-target">//result/indicator[&#64;measure=’1’ or &#64;measure=’2’ or &#64;measure=’3’ or &#64;measure=’4’]/period/target</a></li>
+<li><a class="reference internal" href="#result-indicator-measure-1-or-measure-2-or-measure-3-or-measure-4-period-actual">//result/indicator[&#64;measure=’1’ or &#64;measure=’2’ or &#64;measure=’3’ or &#64;measure=’4’]/period/actual</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../"
+                        title="previous chapter">Rulesets</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../ruleset-spec/"
+                        title="next chapter">IATI Ruleset Spec</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/rulesets/standard-ruleset.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search/" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../ruleset-spec/" title="IATI Ruleset Spec"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../" title="Rulesets"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../" >Rulesets</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

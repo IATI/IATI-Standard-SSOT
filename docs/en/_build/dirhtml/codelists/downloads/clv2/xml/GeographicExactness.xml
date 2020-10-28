@@ -1,0 +1,25 @@
+<codelist name="GeographicExactness" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Geographic Exactness</name>
+        <name xml:lang="fr">Exactitude g&#233;ographique</name>
+        <description/>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Exact</name>
+            <name xml:lang="fr">Exact </name>
+            <description>The designated geographic location is exact</description>
+            <description xml:lang="fr">La d&#233;signation du lieu indiqu&#233; est exacte.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Approximate</name>
+            <name xml:lang="fr">Approximatif</name>
+            <description>The designated geographic location is approximate</description>
+            <description xml:lang="fr">La d&#233;signation du lieu indiqu&#233; est approximative.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

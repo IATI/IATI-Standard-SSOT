@@ -1,0 +1,5 @@
+code,name,description,category,url,status
+1,Financement,Le gouvernement ou l'organisation qui finance l'activité.,,,active
+2,Responsabilité,Une organisation responsable de la supervision de l'activité et de ses résultats,,,active
+3,Octroi,Une organisation qui gère le budget et l'orientation d'une activité au nom de l'organisation offrant le financement,,,active
+4,Mise en œuvre,L'organisation qui exécute physiquement l'activité ou l'intervention.,,,active

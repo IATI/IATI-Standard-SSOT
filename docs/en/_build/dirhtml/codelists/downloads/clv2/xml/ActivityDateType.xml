@@ -1,0 +1,45 @@
+<codelist name="ActivityDateType" xml:lang="en" complete="1" embedded="1">
+    <metadata>
+        <name>Activity Date Type</name>
+        <description>
+            Types of date for activities.
+        
+            There are many different business models and dates that can be used
+            to describe the start and end of activities. It is recommended that
+            each publisher adopts their own consistent approach that provides
+            users with a meaningful indication of the lifespan of an activity.
+        </description>
+        <category>Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Planned start</name>
+            <name xml:lang="fr">D&#233;but pr&#233;vu</name>
+            <description>The date on which the activity is planned to start, for example the date of the first planned disbursement or when physical activity starts.</description>
+            <description xml:lang="fr">La date &#224; laquelle on pr&#233;voit que l'activit&#233; commencera, par ex. la date du premier d&#233;caissement pr&#233;vu ou la date o&#249; les activit&#233;s concr&#232;tes commenceront.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Actual start</name>
+            <name xml:lang="fr">D&#233;but r&#233;el</name>
+            <description>The actual date the activity starts, for example the date of the first disbursement or when physical activity starts.</description>
+            <description xml:lang="fr">La date &#224; laquelle l'activit&#233; commence r&#233;ellement, par ex. la date du premier d&#233;caissement ou la date o&#249; les activit&#233;s concr&#232;tes commencent.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Planned End</name>
+            <name xml:lang="fr">Fin pr&#233;vue</name>
+            <description>The date on which the activity is planned to end, for example the date of the last planned disbursement or when physical activity is complete.</description>
+            <description xml:lang="fr">La date &#224; laquelle on pr&#233;voit que l'activit&#233; prendra fin, par ex. la date du dernier d&#233;caissement pr&#233;vu ou la date o&#249; les activit&#233;s concr&#232;tes se termineront.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Actual end</name>
+            <name xml:lang="fr">Fin r&#233;elle</name>
+            <description>The actual date the activity ends, for example the date of the last disbursement or when physical activity is complete.</description>
+            <description xml:lang="fr">La date &#224; laquelle l'activit&#233; prend r&#233;ellement fin, par ex. la date du dernier d&#233;caissement pr&#233;vu ou la date o&#249; les activit&#233;s concr&#232;tes se terminent.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

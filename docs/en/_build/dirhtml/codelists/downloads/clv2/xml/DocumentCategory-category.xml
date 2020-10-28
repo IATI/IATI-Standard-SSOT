@@ -1,0 +1,20 @@
+<codelist name="DocumentCategory-category" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Document Category (category)</name>
+        <description>This codelists exists to group the Document Category codelist into categories. It is not used as a codelist in its own right.</description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>A</code>
+            <name>Activity Level</name>
+            <description>The document is relevant to a specific activity</description>
+        </codelist-item>
+        <codelist-item>
+            <code>B</code>
+            <name>Organisation Level</name>
+            <description>The document is relevant to the organisation as a whole</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

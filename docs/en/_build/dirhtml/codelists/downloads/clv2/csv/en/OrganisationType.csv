@@ -1,0 +1,17 @@
+code,name,description,category,url,status
+10,Government,,,,active
+11,Local Government,Any local (sub national) government organisation in either donor or recipient country.,,,active
+15,Other Public Sector,,,,active
+21,International NGO,,,,active
+22,National NGO,,,,active
+23,Regional NGO,,,,active
+24,Partner Country based NGO,Local and National NGO / CSO based in aid/assistance recipient country,,,active
+30,Public Private Partnership,,,,active
+40,Multilateral,,,,active
+60,Foundation,,,,active
+70,Private Sector,,,,active
+71,Private Sector in Provider Country,Is in provider / donor country.,,,active
+72,Private Sector in Aid Recipient Country,Is in aid recipient country.,,,active
+73,Private Sector in Third Country,Is not in either a donor or aid recipient country.,,,active
+80,"Academic, Training and Research",,,,active
+90,Other,,,,active

@@ -1,0 +1,14 @@
+code,name,description,category,url,status
+1,Fonds entrants,Fonds reçus pour être utilisés dans le cadre de l'activité et qui peuvent provenir d'une source externe ou interne.,,,active
+2,Engagement sortant,"Une obligation ferme et écrite d'un donateur ou d'un fournisseur d'offrir au bénéficiaire un financement d'un montant établi, conformément à des modalités précises, dans un but explicite.",,,active
+3,Décaissement,Fonds sortants mis à la disposition d'un gouvernement ou d'une organisation bénéficiaire ou fonds transférés entre deux activités faisant l'objet de déclarations distinctes.,,,active
+4,Dépenses,Fonds sortants dépensés pour acquérir des biens et services pour l'activité.,,,active
+5,Paiements d’intérêts,"Le montant réel des intérêts payés en lien avec un prêt ou une marge de crédit, y compris les frais.",,,active
+6,Remboursement du prêt,"Le montant réel du capital remboursé (amortissement), y compris les arriérés, le cas échéant.",,,active
+7,Remboursement,"Un type de décaissement qui couvre des fonds qui ont déjà été dépensés par le bénéficiaire, conformément aux modalités de la subvention ou du prêt",,,active
+8,Achat d'équité,Fonds sortants qui sont utilisés pour acquérir de l'équité dans une entreprise,,,active
+9,Vente d'équité,Fonds reçus en lien avec la vente d'équité,,,active
+10,Caution,Engagement pris par une organisation de financement pour garantir un prêt ou une marge de crédit contractés par une tierce partie.,,,active
+11,Engagement entrant,"Une obligation ferme et écrite d'un donateur ou d'un fournisseur d'offrir un financement d'un montant établi, conformément à des modalités précises et déclarée par le bénéficiaire en lien avec l'activité.",,,active
+12,Promesse sortante,Avis indicatif et sans obligation indiquant une intention de prendre un engagement sortant.,,,active
+13,Promesse entrante,Avis indicatif et sans obligation indiquant une intention de prendre un engagement entrant.,,,active

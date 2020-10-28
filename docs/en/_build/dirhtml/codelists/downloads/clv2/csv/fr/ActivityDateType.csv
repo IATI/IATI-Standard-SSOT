@@ -1,0 +1,5 @@
+code,name,description,category,url,status
+1,Début prévu,"La date à laquelle on prévoit que l'activité commencera, par ex. la date du premier décaissement prévu ou la date où les activités concrètes commenceront.",,,active
+2,Début réel,"La date à laquelle l'activité commence réellement, par ex. la date du premier décaissement ou la date où les activités concrètes commencent.",,,active
+3,Fin prévue,"La date à laquelle on prévoit que l'activité prendra fin, par ex. la date du dernier décaissement prévu ou la date où les activités concrètes se termineront.",,,active
+4,Fin réelle,"La date à laquelle l'activité prend réellement fin, par ex. la date du dernier décaissement prévu ou la date où les activités concrètes se terminent.",,,active

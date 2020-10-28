@@ -1,0 +1,10 @@
+code,name,description,category,url,status
+A,Administrative Region,,,,active
+H,Hydrographic,,,,active
+L,Area,,,,active
+P,Populated Place,,,,active
+R,Streets/Highways/Roads,,,,active
+S,Spot Features,,,,active
+T,Hypsographic,,,,active
+U,Undersea,,,,active
+V,Vegetation,,,,active

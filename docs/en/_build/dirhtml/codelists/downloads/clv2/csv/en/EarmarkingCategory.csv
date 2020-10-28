@@ -1,0 +1,5 @@
+code,name,description,category,url,status
+1,Unearmarked,"Any or all of the Earmarking Modality codes A,B or C.",,,active
+2,Softly Earmarked,"Any or all of the Earmarking Modality codes D,E or F.",,,active
+3,Earmarked,Any or all of the Earmarking Modality codes G or H.,,,active
+4,Tightly Earmarked,"Any or all of the Earmarking Modality codes I,J or K.",,,active

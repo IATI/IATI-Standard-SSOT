@@ -1,0 +1,38 @@
+<codelist name="BudgetIdentifierSector-category" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Budget Identifier Sector (category)</name>
+        <description>This codelists exists to group the Budget Identifier codelist into categories. It is not used as a codelist in its own right.</description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>General Public Service</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Justice, Law, Order and Security</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Economic Affairs</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Water, Natural Resource Management and Environment</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>Social Affairs</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6</code>
+            <name>Development Partner Affairs</name>
+        </codelist-item>
+        <codelist-item>
+            <code>7</code>
+            <name>General Budget Support and Aid support external to General Government Sector</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

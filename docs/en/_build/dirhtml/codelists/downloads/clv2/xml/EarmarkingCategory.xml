@@ -1,0 +1,31 @@
+<codelist name="EarmarkingCategory" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <url>https://reliefweb.int/sites/reliefweb.int/files/resources/Grand_Bargain_final_22_May_FINAL-2.pdf</url>
+        <name>Earmarking Category</name>
+        <description>This codelist has been created by IATI and is derived from the Grand Bargain Earmarking Modality codelist.</description>
+        <category>Replicated</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Unearmarked</name>
+            <description>Any or all of the Earmarking Modality codes A,B or C.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Softly Earmarked</name>
+            <description>Any or all of the Earmarking Modality codes D,E or F.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Earmarked</name>
+            <description>Any or all of the Earmarking Modality codes G or H.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Tightly Earmarked</name>
+            <description>Any or all of the Earmarking Modality codes I,J or K.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

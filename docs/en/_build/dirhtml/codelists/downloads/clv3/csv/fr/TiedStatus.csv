@@ -1,0 +1,4 @@
+code,name,description,category,url,status
+3,Semi-conditionnelle,"Aide publique au développement dont les biens et services correspondants doivent être achetés dans un nombre restreint de pays, qui doivent toutefois comprendre tous les pays bénéficiaires de l’aide et éventuellement le pays donateur.",,,active
+4,Conditionnelle,Subventions ou prêts officiels dont les dispositions indiquent que les biens ou services associés ne peuvent provenir que du pays donateur ou d’un groupe de pays qui ne comprend pas nécessairement tous les pays bénéficiaires de l’aide.,,,active
+5,Sans condition,Subventions et prêts pouvant être librement et intégralement utilisés pour financer les approvisionnements auprès de tous les pays de l’OCDE et de la plupart des pays en développement.,,,active

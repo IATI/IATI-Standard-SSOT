@@ -1,0 +1,4 @@
+code,name,description,category,url,status
+1,OCDE CAD,Régions supranationales selon les codes de bénéficiaire OCDE CAD SNPC,,http://reference.iatistandard.org/codelists/Region/,active
+2,ONU,Régions supranationales maintenues par la Division de la statistique de l'ONU,,https://unstats.un.org/unsd/methodology/m49/,active
+99,Organisation déclarante,La région déclarée correspond à un vocabulaire régional maintenu par l'organisation déclarante aux fins de l'activité.,,,active

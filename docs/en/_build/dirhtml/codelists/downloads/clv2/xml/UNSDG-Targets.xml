@@ -1,0 +1,856 @@
+<codelist name="UNSDG-Targets" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <url>https://unstats.un.org/sdgs/indicators/indicators-list/</url>
+        <name>UN Sustainable Development Goals (SDG) Targets</name>
+        <description>A value from the second-level list of UN sustainable development goals (SDGs) (e.g. &#8216;1.1&#8217;)</description>
+        <category>Replicated</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1.1</code>
+            <name>By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, &#233;liminer compl&#232;tement l&#8217;extr&#234;me pauvret&#233; dans le monde entier (s&#8217;entend actuellement du fait de vivre avec moins de 1,25&#160;dollar des &#201;tats&#8209;Unis par jour)</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.2</code>
+            <name>By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, r&#233;duire de moiti&#233; au moins la proportion d&#8217;hommes, de femmes et d&#8217;enfants de tous &#226;ges souffrant d&#8217;une forme ou l&#8217;autre de pauvret&#233;, telle que d&#233;finie par chaque pays</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.3</code>
+            <name>Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable</name>
+            <name xml:lang="fr">Mettre en place des syst&#232;mes et mesures de protection sociale pour tous, adapt&#233;s au contexte national, y&#160;compris des socles de protection sociale, et faire en sorte que, d&#8217;ici &#224; 2030, une part importante des pauvres et des personnes vuln&#233;rables en b&#233;n&#233;ficient</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.4</code>
+            <name>By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, faire en sorte que tous les hommes et les femmes, en particulier les pauvres et les personnes vuln&#233;rables, aient les m&#234;mes droits aux ressources &#233;conomiques et qu&#8217;ils aient acc&#232;s aux services de base, &#224; la propri&#233;t&#233; fonci&#232;re, au contr&#244;le des terres et &#224; d&#8217;autres formes de propri&#233;t&#233;, &#224; l&#8217;h&#233;ritage, aux ressources naturelles et &#224; des nouvelles technologies et des services financiers adapt&#233;s &#224; leurs besoins, y&#160;compris la microfinance</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.5</code>
+            <name>By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, renforcer la r&#233;silience des pauvres et des personnes en situation vuln&#233;rable et r&#233;duire leur exposition aux ph&#233;nom&#232;nes climatiques extr&#234;mes et &#224; d&#8217;autres chocs et catastrophes d&#8217;ordre &#233;conomique, social ou&#160;environnemental et leur vuln&#233;rabilit&#233;</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.a</code>
+            <name>Ensure significant mobilization of resources from a variety of sources, including through enhanced development cooperation, in order to provide adequate and predictable means for developing countries, in particular least developed countries, to implement programmes and policies to end poverty in all its dimensions</name>
+            <name xml:lang="fr">Garantir une mobilisation importante de ressources provenant de sources multiples, y&#160;compris par le renforcement de la coop&#233;ration pour le d&#233;veloppement, afin de doter les pays en d&#233;veloppement, en particulier les pays les moins avanc&#233;s, de moyens ad&#233;quats et pr&#233;visibles de mettre en &#339;uvre des programmes et politiques visant &#224; mettre fin &#224; la pauvret&#233; sous toutes ses formes</name>
+        </codelist-item>
+        <codelist-item>
+            <code>1.b</code>
+            <name>Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions</name>
+            <name xml:lang="fr">Mettre en place aux niveaux national, r&#233;gional et international des cadres d&#8217;action viables, fond&#233;s sur des strat&#233;gies de d&#233;veloppement favorables aux pauvres et soucieuses de la probl&#233;matique hommes-femmes, afin d&#8217;acc&#233;l&#233;rer l&#8217;investissement dans des mesures d&#8217;&#233;limination de la pauvret&#233;</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2.1</code>
+            <name>By 2030, end hunger and ensure access by all people, in particular the poor and people in vulnerable situations, including infants, to safe, nutritious and sufficient food all year round</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, &#233;liminer la faim et faire en sorte que chacun, en particulier les pauvres et les personnes en situation vuln&#233;rable, y&#160;compris les nourrissons, ait acc&#232;s toute l&#8217;ann&#233;e &#224; une alimentation saine, nutritive et suffisante</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2.2</code>
+            <name>By 2030, end all forms of malnutrition, including achieving, by 2025, the internationally agreed targets on stunting and wasting in children under 5&#160;years of age, and address the nutritional needs of adolescent girls, pregnant and lactating women and older persons</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, mettre fin &#224; toutes les formes de malnutrition, y&#160;compris en atteignant d&#8217;ici &#224; 2025 les objectifs arr&#234;t&#233;s &#224; l&#8217;&#233;chelle internationale relatifs aux retards de croissance et &#224; l&#8217;&#233;maciation chez les enfants de moins de&#160;5 ans, et r&#233;pondre aux besoins nutritionnels des adolescentes, des femmes enceintes ou allaitantes et des personnes &#226;g&#233;es</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2.3</code>
+            <name>By 2030, double the agricultural productivity and incomes of small-scale food producers, in particular women, indigenous peoples, family farmers, pastoralists and fishers, including through secure and equal access to land, other productive resources and inputs, knowledge, financial services, markets and opportunities for value addition and non-farm employment</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, doubler la productivit&#233; agricole et les revenus des petits producteurs alimentaires, en particulier des femmes, des autochtones, des exploitants familiaux, des &#233;leveurs et des p&#234;cheurs, y&#160;compris en assurant l&#8217;&#233;galit&#233; d&#8217;acc&#232;s aux terres, aux autres ressources productives et facteurs de production, au savoir, aux services financiers, aux march&#233;s et aux possibilit&#233;s d&#8217;ajout de valeur et d&#8217;emplois autres qu&#8217;agricoles</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2.4</code>
+            <name>By 2030, ensure sustainable food production systems and implement resilient agricultural practices that increase productivity and production, that help maintain ecosystems, that strengthen capacity for adaptation to climate change, extreme weather, drought, flooding and other disasters and that progressively improve land and soil quality</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, assurer la viabilit&#233; des syst&#232;mes de production alimentaire et mettre en &#339;uvre des pratiques agricoles r&#233;silientes qui permettent d&#8217;accro&#238;tre la productivit&#233; et la production, contribuent &#224; la pr&#233;servation des &#233;cosyst&#232;mes, renforcent la capacit&#233; d&#8217;adaptation aux changements climatiques, aux ph&#233;nom&#232;nes m&#233;t&#233;orologiques extr&#234;mes, &#224; la s&#233;cheresse, aux inondations et &#224; d&#8217;autres catastrophes et am&#233;liorent progressivement la qualit&#233; des terres et des sols</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2.5</code>
+            <name>By 2020, maintain the genetic diversity of seeds, cultivated plants and farmed and domesticated animals and their related wild species, including through soundly managed and diversified seed and plant banks at the national, regional and international levels, and promote access to and fair and equitable sharing of benefits arising from the utilization of genetic resources and associated traditional knowledge, as internationally agreed</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, pr&#233;server la diversit&#233; g&#233;n&#233;tique des semences, des cultures et des animaux d&#8217;&#233;levage ou domestiqu&#233;s et des esp&#232;ces sauvages apparent&#233;es, y&#160;compris au moyen de banques de semences et de plantes bien g&#233;r&#233;es et diversifi&#233;es aux niveaux national, r&#233;gional et international, et favoriser l&#8217;acc&#232;s aux avantages que pr&#233;sentent l&#8217;utilisation des ressources g&#233;n&#233;tiques et du savoir traditionnel associ&#233; ainsi que le partage juste et &#233;quitable de ces avantages, comme convenu &#224; l&#8217;&#233;chelle internationale</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2.a</code>
+            <name>Increase investment, including through enhanced international cooperation, in rural infrastructure, agricultural research and extension services, technology development and plant and livestock gene banks in order to enhance agricultural productive capacity in developing countries, in particular least developed countries</name>
+            <name xml:lang="fr">Accro&#238;tre, notamment gr&#226;ce au renforcement de la coop&#233;ration internationale, l&#8217;investissement dans l&#8217;infrastructure rurale, les services de recherche et de vulgarisation agricoles et la mise au point de technologies et de banques de plantes et de g&#232;nes d&#8217;animaux d&#8217;&#233;levage, afin de renforcer les capacit&#233;s productives agricoles des pays en d&#233;veloppement, en particulier des pays les moins avanc&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2.b</code>
+            <name>Correct and prevent trade restrictions and distortions in world agricultural markets, including through the parallel elimination of all forms of agricultural export subsidies and all export measures with equivalent effect, in accordance with the mandate of the Doha Development Round</name>
+            <name xml:lang="fr">Corriger et pr&#233;venir les restrictions et distorsions entravant le fonctionnement des march&#233;s agricoles mondiaux, y compris par l&#8217;&#233;limination parall&#232;le de toutes les&#160;formes de subventions aux exportations agricoles et de toutes les mesures &#224; l&#8217;exportation ayant un effet &#233;quivalent, conform&#233;ment au mandat du Cycle de n&#233;gociations de Doha pour le d&#233;veloppement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2.c</code>
+            <name>Adopt measures to ensure the proper functioning of food commodity markets and their derivatives and facilitate timely access to market information, including on food reserves, in order to help limit extreme food price volatility</name>
+            <name xml:lang="fr">Adopter des mesures visant &#224; assurer le bon fonctionnement des march&#233;s de denr&#233;es alimentaires et de produits d&#233;riv&#233;s et &#224; faciliter l&#8217;acc&#232;s rapide aux informations relatives &#224; ces march&#233;s, y&#160;compris le niveau des r&#233;serves alimentaires, afin de contribuer &#224; limiter l&#8217;extr&#234;me volatilit&#233; des prix alimentaires</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.1</code>
+            <name>By 2030, reduce the global maternal mortality ratio to less than 70 per 100,000 live births</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, faire passer le taux mondial de&#160;mortalit&#233; maternelle au-dessous de 70 pour 100&#160;000&#160;naissances vivantes</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.2</code>
+            <name>By 2030, end preventable deaths of newborns and children under 5&#160;years of age, with all countries aiming to reduce neonatal mortality to at least as low as 12 per 1,000 live births and under&#8209;5 mortality to at least as low as 25 per 1,000 live births</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, &#233;liminer les d&#233;c&#232;s &#233;vitables de nouveau-n&#233;s et d&#8217;enfants de moins de 5&#160;ans, tous les pays devant chercher &#224; ramener la mortalit&#233; n&#233;onatale &#224; 12 pour 1&#160;000 naissances vivantes au plus et la mortalit&#233; des enfants de moins de 5&#160;ans &#224; 25 pour 1&#160;000&#160;naissances vivantes au&#160;plus</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.3</code>
+            <name>By 2030, end the epidemics of AIDS, tuberculosis, malaria and neglected tropical diseases and combat hepatitis, water-borne diseases and other communicable diseases</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, mettre fin &#224; l&#8217;&#233;pid&#233;mie de sida, &#224; la&#160;tuberculose, au paludisme et aux maladies tropicales n&#233;glig&#233;es et combattre l&#8217;h&#233;patite, les maladies transmises par l&#8217;eau et autres maladies transmissibles</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.4</code>
+            <name>By 2030, reduce by one third premature mortality from non-communicable diseases through prevention and treatment and promote mental health and well-being</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, r&#233;duire d&#8217;un tiers, par la pr&#233;vention et le traitement, le taux de mortalit&#233; pr&#233;matur&#233;e due &#224; des maladies non transmissibles et promouvoir la sant&#233; mentale et le bien-&#234;tre</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.5</code>
+            <name>Strengthen the prevention and treatment of substance abuse, including narcotic drug abuse and harmful use of alcohol</name>
+            <name xml:lang="fr">Renforcer la pr&#233;vention et le traitement de l&#8217;abus de&#160;substances psychoactives, notamment de stup&#233;fiants et&#160;d&#8217;alcool</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.6</code>
+            <name>By 2020, halve the number of global deaths and injuries from road traffic accidents</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, diminuer de moiti&#233; &#224; l&#8217;&#233;chelle mondiale le nombre de d&#233;c&#232;s et de blessures dus &#224; des accidents de la&#160;route</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.7</code>
+            <name>By 2030, ensure universal access to sexual and reproductive health-care services, including for family planning, information and education, and the integration of reproductive health into national strategies and programmes</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, assurer l&#8217;acc&#232;s de tous &#224; des services de&#160;soins de sant&#233; sexuelle et procr&#233;ative, y&#160;compris &#224; des fins de planification familiale, d&#8217;information et d&#8217;&#233;ducation, et veiller &#224; la prise en compte de la sant&#233; procr&#233;ative dans les strat&#233;gies et programmes nationaux</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.8</code>
+            <name>Achieve universal health coverage, including financial risk protection, access to quality essential health-care services and access to safe, effective, quality and affordable essential medicines and vaccines for all</name>
+            <name xml:lang="fr">Faire en sorte que chacun b&#233;n&#233;ficie d&#8217;une couverture sanitaire universelle, comprenant une protection contre les risques financiers et donnant acc&#232;s &#224; des services de sant&#233; essentiels de qualit&#233; et &#224; des m&#233;dicaments et vaccins essentiels s&#251;rs, efficaces, de qualit&#233; et d&#8217;un co&#251;t abordable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.9</code>
+            <name>By 2030, substantially reduce the number of deaths and illnesses from hazardous chemicals and air, water and soil pollution and contamination</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, r&#233;duire nettement le nombre de d&#233;c&#232;s et&#160;de maladies dus &#224; des substances chimiques dangereuses et &#224; la pollution et &#224; la contamination de l&#8217;air, de l&#8217;eau et du&#160;sol</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.a</code>
+            <name>Strengthen the implementation of the World Health Organization Framework Convention on Tobacco Control in all countries, as appropriate</name>
+            <name xml:lang="fr">Renforcer dans tous les pays, selon qu&#8217;il convient, l&#8217;application de la Convention-cadre de l&#8217;Organisation mondiale de la Sant&#233; pour la lutte antitabac</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.b</code>
+            <name>Support the research and development of vaccines and medicines for the communicable and non&#8209;communicable diseases that primarily affect developing countries, provide access to affordable essential medicines and vaccines, in accordance with the Doha Declaration on the TRIPS Agreement and Public Health, which affirms the right of developing countries to use to the full the provisions in the Agreement on Trade-Related Aspects of Intellectual Property Rights regarding flexibilities to protect public health, and, in particular, provide access to medicines for all</name>
+            <name xml:lang="fr">Appuyer la recherche et le d&#233;veloppement de vaccins et de m&#233;dicaments contre les maladies, transmissibles ou non, qui touchent principalement les habitants des pays en&#160;d&#233;veloppement, donner acc&#232;s, &#224; un co&#251;t abordable, aux&#160;m&#233;dicaments et vaccins essentiels, conform&#233;ment &#224; la&#160;D&#233;claration de Doha sur l&#8217;Accord sur les aspects des droits de propri&#233;t&#233; intellectuelle qui touchent au commerce (ADPIC) et la sant&#233; publique, qui r&#233;affirme le droit qu&#8217;ont les pays en d&#233;veloppement de tirer pleinement parti des dispositions de cet accord qui m&#233;nagent une flexibilit&#233; lorsqu&#8217;il s&#8217;agit de prot&#233;ger la sant&#233; publique et, en particulier, d&#8217;assurer l&#8217;acc&#232;s universel aux m&#233;dicaments</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.c</code>
+            <name>Substantially increase health financing and the recruitment, development, training and retention of the health workforce in developing countries, especially in least developed countries and small island developing States</name>
+            <name xml:lang="fr">Accro&#238;tre consid&#233;rablement le budget de la sant&#233; et le&#160;recrutement, le perfectionnement, la formation et le maintien en poste du personnel de sant&#233; dans les pays en&#160;d&#233;veloppement, notamment dans les pays les moins avanc&#233;s et les petits &#201;tats insulaires en d&#233;veloppement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3.d</code>
+            <name>Strengthen the capacity of all countries, in particular developing countries, for early warning, risk reduction and management of national and global health risks</name>
+            <name xml:lang="fr">Renforcer les moyens dont disposent tous les pays, en particulier les pays en d&#233;veloppement, en mati&#232;re d&#8217;alerte rapide, de r&#233;duction des risques et de gestion des risques sanitaires nationaux et mondiaux</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4.1</code>
+            <name>By 2030, ensure that all girls and boys complete free, equitable and quality primary and secondary education leading to relevant and effective learning outcomes</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, faire en sorte que toutes les filles et tous les gar&#231;ons suivent, sur un pied d&#8217;&#233;galit&#233;, un cycle complet d&#8217;enseignement primaire et secondaire gratuit et de&#160;qualit&#233;, les dotant d&#8217;acquis v&#233;ritablement utiles</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4.2</code>
+            <name>By 2030, ensure that all girls and boys have access to quality early childhood development, care and pre&#8209;primary education so that they are ready for primary education</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, faire en sorte que toutes les filles et tous les gar&#231;ons aient acc&#232;s &#224; des services de d&#233;veloppement et de prise en charge de la petite enfance et &#224; une &#233;ducation pr&#233;scolaire de qualit&#233; qui les pr&#233;parent &#224; suivre un&#160;enseignement primaire</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4.3</code>
+            <name>By 2030, ensure equal access for all women and men to affordable and quality technical, vocational and tertiary education, including university</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, faire en sorte que toutes les femmes et&#160;tous les hommes aient acc&#232;s dans des conditions d&#8217;&#233;galit&#233; &#224; un enseignement technique, professionnel ou tertiaire, y&#160;compris universitaire, de qualit&#233; et d&#8217;un co&#251;t abordable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4.4</code>
+            <name>By 2030, substantially increase the number of youth and adults who have relevant skills, including technical and vocational skills, for employment, decent jobs and entrepreneurship</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, augmenter nettement le nombre de jeunes et d&#8217;adultes disposant des comp&#233;tences, notamment techniques et professionnelles, n&#233;cessaires &#224; l&#8217;emploi, &#224;&#160;l&#8217;obtention d&#8217;un travail d&#233;cent et &#224; l&#8217;entrepreneuriat</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4.5</code>
+            <name>By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, &#233;liminer les in&#233;galit&#233;s entre les sexes dans le domaine de l&#8217;&#233;ducation et assurer l&#8217;&#233;galit&#233; d&#8217;acc&#232;s des personnes vuln&#233;rables, y&#160;compris les personnes handicap&#233;es, les autochtones et les enfants en situation vuln&#233;rable, &#224; tous les niveaux d&#8217;enseignement et de formation professionnelle</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4.6</code>
+            <name>By 2030, ensure that all youth and a substantial proportion of adults, both men and women, achieve literacy and numeracy</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, faire en sorte que tous les jeunes et une&#160;proportion consid&#233;rable d&#8217;adultes, hommes et femmes, sachent lire, &#233;crire et compter</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4.7</code>
+            <name>By 2030, ensure that all learners acquire the knowledge and skills needed to promote sustainable development, including, among others, through education for sustainable development and sustainable lifestyles, human rights, gender equality, promotion of a culture of peace and non-violence, global citizenship and appreciation of cultural diversity and of culture&#8217;s contribution to sustainable development</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, faire en sorte que tous les &#233;l&#232;ves acqui&#232;rent les connaissances et comp&#233;tences n&#233;cessaires pour promouvoir le d&#233;veloppement durable, notamment par l&#8217;&#233;ducation en faveur du d&#233;veloppement et de modes de vie durables, des droits de l&#8217;homme, de l&#8217;&#233;galit&#233; des sexes, de la&#160;promotion d&#8217;une culture de paix et de non-violence, de la&#160;citoyennet&#233; mondiale et de l&#8217;appr&#233;ciation de la diversit&#233; culturelle et de la contribution de la culture au d&#233;veloppement durable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4.a</code>
+            <name>Build and upgrade education facilities that are child, disability and gender sensitive and provide safe, non-violent, inclusive and effective learning environments for all</name>
+            <name xml:lang="fr">Construire des &#233;tablissements scolaires qui soient adapt&#233;s aux enfants, aux personnes handicap&#233;es et aux deux&#160;sexes ou adapter les &#233;tablissements existants &#224; cette fin et fournir &#224; tous un cadre d&#8217;apprentissage s&#251;r, non violent, inclusif et efficace</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4.b</code>
+            <name>By 2020, substantially expand globally the number of scholarships available to developing countries, in particular least developed countries, small island developing States and African countries, for enrolment in higher education, including vocational training and information and communications technology, technical, engineering and scientific programmes, in developed countries and other developing countries</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, augmenter nettement &#224; l&#8217;&#233;chelle mondiale le nombre de bourses d&#8217;&#233;tudes offertes &#224; des &#233;tudiants des pays en d&#233;veloppement, en particulier des pays&#160;les moins avanc&#233;s, des petits &#201;tats insulaires en d&#233;veloppement et des pays d&#8217;Afrique, pour leur permettre de&#160;suivre des &#233;tudes sup&#233;rieures, y&#160;compris une formation professionnelle, des cursus informatiques, techniques et scientifiques et des &#233;tudes d&#8217;ing&#233;nieur, dans des pays d&#233;velopp&#233;s et d&#8217;autres pays en d&#233;veloppement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4.c</code>
+            <name>By 2030, substantially increase the supply of qualified teachers, including through international cooperation for teacher training in developing countries, especially least developed countries and small island developing States</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, accro&#238;tre nettement le nombre d&#8217;enseignants qualifi&#233;s, notamment au moyen de la coop&#233;ration internationale pour la formation d&#8217;enseignants dans les pays en d&#233;veloppement, surtout dans les pays les moins avanc&#233;s et les petits &#201;tats insulaires en d&#233;veloppement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.1</code>
+            <name>End all forms of discrimination against all women and girls everywhere</name>
+            <name xml:lang="fr">Mettre fin, partout dans le monde, &#224; toutes les formes de discrimination &#224; l&#8217;&#233;gard des femmes et des filles</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.2</code>
+            <name>Eliminate all forms of violence against all women and girls in the public and private spheres, including trafficking and sexual and other types of exploitation</name>
+            <name xml:lang="fr">&#201;liminer de la vie publique et de la vie priv&#233;e toutes les formes de violence faite aux femmes et aux filles, y&#160;compris la traite et l&#8217;exploitation sexuelle et d&#8217;autres types d&#8217;exploitation</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.3</code>
+            <name>Eliminate all harmful practices, such as child, early and forced marriage and female genital mutilation</name>
+            <name xml:lang="fr">&#201;liminer toutes les pratiques pr&#233;judiciables, telles que le mariage des enfants, le mariage pr&#233;coce ou forc&#233; et la&#160;mutilation g&#233;nitale f&#233;minine</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.4</code>
+            <name>Recognize and value unpaid care and domestic work through the provision of public services, infrastructure and social protection policies and the promotion of shared responsibility within the household and the family as nationally appropriate</name>
+            <name xml:lang="fr">Prendre en compte et valoriser les soins et travaux domestiques non r&#233;mun&#233;r&#233;s, par la mise en place de services publics, d&#8217;infrastructures et de politiques de protection sociale et par la promotion du partage des responsabilit&#233;s dans le m&#233;nage et la famille, en fonction du contexte national</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.5</code>
+            <name>Ensure women&#8217;s full and effective participation and equal opportunities for leadership at all levels of decision-making in political, economic and public life</name>
+            <name xml:lang="fr">Veiller &#224; ce que les femmes participent pleinement et&#160;effectivement aux fonctions de direction &#224; tous les niveaux de d&#233;cision, dans la vie politique, &#233;conomique et&#160;publique, et y acc&#232;dent sur un pied d&#8217;&#233;galit&#233;</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.6</code>
+            <name>Ensure universal access to sexual and reproductive health and reproductive rights as agreed in accordance with the Programme of Action of the International Conference on Population and Development and the Beijing Platform for Action and the outcome documents of their review conferences</name>
+            <name xml:lang="fr">Assurer l&#8217;acc&#232;s de tous aux soins de sant&#233; sexuelle et&#160;procr&#233;ative et faire en sorte que chacun puisse exercer ses&#160;droits en mati&#232;re de procr&#233;ation, ainsi qu&#8217;il a &#233;t&#233; d&#233;cid&#233; dans le Programme d&#8217;action de la Conf&#233;rence internationale sur la population et le d&#233;veloppement et le Programme d&#8217;action de Beijing et les documents finals des conf&#233;rences d&#8217;examen qui ont suivi</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.a</code>
+            <name>Undertake reforms to give women equal rights to economic resources, as well as access to ownership and control over land and other forms of property, financial services, inheritance and natural resources, in accordance with national laws</name>
+            <name xml:lang="fr">Entreprendre des r&#233;formes visant &#224; donner aux femmes les m&#234;mes droits aux ressources &#233;conomiques, ainsi que l&#8217;acc&#232;s &#224; la propri&#233;t&#233; et au contr&#244;le des terres et d&#8217;autres formes de propri&#233;t&#233;, aux services financiers, &#224; l&#8217;h&#233;ritage et aux ressources naturelles, dans le respect de la l&#233;gislation interne</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.b</code>
+            <name>Enhance the use of enabling technology, in particular information and communications technology, to promote the empowerment of women</name>
+            <name xml:lang="fr">Renforcer l&#8217;utilisation des technologies clefs, en&#160;particulier de l&#8217;informatique et des communications, pour&#160;favoriser l&#8217;autonomisation des femmes</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5.c</code>
+            <name>Adopt and strengthen sound policies and enforceable legislation for the promotion of gender equality and the empowerment of all women and girls at all levels</name>
+            <name xml:lang="fr">Adopter des politiques bien con&#231;ues et des dispositions l&#233;gislatives applicables en faveur de la promotion de l&#8217;&#233;galit&#233; des sexes et de l&#8217;autonomisation de toutes les femmes et de toutes les filles &#224; tous les niveaux et&#160;renforcer celles qui existent</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6.1</code>
+            <name>By 2030, achieve universal and equitable access to safe and affordable drinking water for all</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, assurer l&#8217;acc&#232;s universel et &#233;quitable &#224;&#160;l&#8217;eau potable, &#224; un co&#251;t abordable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6.2</code>
+            <name>By 2030, achieve access to adequate and equitable sanitation and hygiene for all and end open defecation, paying special attention to the needs of women and girls and those in vulnerable situations</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, assurer l&#8217;acc&#232;s de tous, dans des conditions &#233;quitables, &#224; des services d&#8217;assainissement et d&#8217;hygi&#232;ne ad&#233;quats et mettre fin &#224; la d&#233;f&#233;cation en plein air, en accordant une attention particuli&#232;re aux besoins des femmes et des filles et des personnes en situation vuln&#233;rable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6.3</code>
+            <name>By 2030, improve water quality by reducing pollution, eliminating dumping and minimizing release of hazardous chemicals and materials, halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, am&#233;liorer la qualit&#233; de l&#8217;eau en r&#233;duisant la pollution, en &#233;liminant l&#8217;immersion de d&#233;chets et en r&#233;duisant au minimum les &#233;missions de produits chimiques et de mati&#232;res dangereuses, en diminuant de moiti&#233; la proportion d&#8217;eaux us&#233;es non trait&#233;es et en augmentant nettement &#224; l&#8217;&#233;chelle mondiale le recyclage et la&#160;r&#233;utilisation sans danger de l&#8217;eau</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6.4</code>
+            <name>By 2030, substantially increase water-use efficiency across all sectors and ensure sustainable withdrawals and supply of freshwater to address water scarcity and substantially reduce the number of people suffering from water scarcity</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, faire en sorte que les ressources en eau soient utilis&#233;es beaucoup plus efficacement dans tous les secteurs et garantir la viabilit&#233; des pr&#233;l&#232;vements et de l&#8217;approvisionnement en eau douce afin de rem&#233;dier &#224; la p&#233;nurie d&#8217;eau et de r&#233;duire nettement le nombre de personnes qui manquent d&#8217;eau</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6.5</code>
+            <name>By 2030, implement integrated water resources management at all levels, including through transboundary cooperation as appropriate</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, assurer la gestion int&#233;gr&#233;e des ressources en eau &#224; tous les niveaux, y&#160;compris au moyen de&#160;la coop&#233;ration transfronti&#232;re selon qu&#8217;il convient</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6.6</code>
+            <name>By 2020, protect and restore water-related ecosystems, including mountains, forests, wetlands, rivers, aquifers and lakes</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, prot&#233;ger et restaurer les &#233;cosyst&#232;mes li&#233;s &#224; l&#8217;eau, notamment les montagnes, les for&#234;ts, les zones humides, les rivi&#232;res, les aquif&#232;res et les lacs</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6.a</code>
+            <name>By 2030, expand international cooperation and capacity-building support to developing countries in water- and sanitation-related activities and programmes, including water harvesting, desalination, water efficiency, wastewater treatment, recycling and reuse technologies</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, d&#233;velopper la coop&#233;ration internationale et l&#8217;appui au renforcement des capacit&#233;s des pays en d&#233;veloppement en ce qui concerne les activit&#233;s et programmes relatifs &#224; l&#8217;eau et &#224; l&#8217;assainissement, y&#160;compris la collecte, la d&#233;salinisation et l&#8217;utilisation rationnelle de l&#8217;eau, le traitement des eaux us&#233;es, le recyclage et les techniques de r&#233;utilisation</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6.b</code>
+            <name>Support and strengthen the participation of local communities in improving water and sanitation management</name>
+            <name xml:lang="fr">Appuyer et renforcer la participation de la population locale &#224; l&#8217;am&#233;lioration de la gestion de l&#8217;eau et de l&#8217;assainissement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>7.1</code>
+            <name>By 2030, ensure universal access to affordable, reliable and modern energy services</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, garantir l&#8217;acc&#232;s de tous &#224; des services &#233;nerg&#233;tiques fiables et modernes, &#224; un co&#251;t abordable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>7.2</code>
+            <name>By 2030, increase substantially the share of renewable energy in the global energy mix</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, accro&#238;tre nettement la part de l&#8217;&#233;nergie renouvelable dans le bouquet &#233;nerg&#233;tique mondial</name>
+        </codelist-item>
+        <codelist-item>
+            <code>7.3</code>
+            <name>By 2030, double the global rate of improvement in energy efficiency</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, multiplier par deux le taux mondial d&#8217;am&#233;lioration de l&#8217;efficacit&#233; &#233;nerg&#233;tique</name>
+        </codelist-item>
+        <codelist-item>
+            <code>7.a</code>
+            <name>By 2030, enhance international cooperation to facilitate access to clean energy research and technology, including renewable energy, energy efficiency and advanced and cleaner fossil-fuel technology, and promote investment in energy infrastructure and clean energy technology</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, renforcer la coop&#233;ration internationale en vue de faciliter l&#8217;acc&#232;s aux sciences et technologies de l&#8217;&#233;nergie propre, notamment les &#233;nergies renouvelables, l&#8217;efficacit&#233; &#233;nerg&#233;tique et les nouvelles technologies de combustion propre des combustibles fossiles, et encourager l&#8217;investissement dans l&#8217;infrastructure &#233;nerg&#233;tique et les technologies propres dans le domaine de l&#8217;&#233;nergie</name>
+        </codelist-item>
+        <codelist-item>
+            <code>7.b</code>
+            <name>By 2030, expand infrastructure and upgrade technology for supplying modern and sustainable energy services for all in developing countries, in particular least developed countries, small island developing States and landlocked developing countries, in accordance with their respective programmes of support</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, d&#233;velopper l&#8217;infrastructure et am&#233;liorer la technologie afin de fournir des services &#233;nerg&#233;tiques modernes et durables &#224; tous les habitants des pays en d&#233;veloppement, en particulier des pays les moins avanc&#233;s, des petits &#201;tats insulaires en d&#233;veloppement et des pays en d&#233;veloppement sans littoral, dans le respect des programmes d&#8217;aide qui les concernent</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8.1</code>
+            <name>Sustain per capita economic growth in accordance with national circumstances and, in particular, at least 7&#160;per&#160;cent gross domestic product growth per annum in the least developed countries</name>
+            <name xml:lang="fr">Maintenir un taux de croissance &#233;conomique par habitant adapt&#233; au contexte national et, en particulier, un taux de croissance annuelle du produit int&#233;rieur brut d&#8217;au moins 7&#160;pour&#160;cent dans les pays les moins avanc&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8.2</code>
+            <name>Achieve higher levels of economic productivity through diversification, technological upgrading and innovation, including through a focus on high-value added and labour-intensive sectors</name>
+            <name xml:lang="fr">Parvenir &#224; un niveau &#233;lev&#233; de productivit&#233; &#233;conomique par la diversification, la modernisation technologique et l&#8217;innovation, notamment en mettant l&#8217;accent sur les secteurs &#224; forte valeur ajout&#233;e et &#224; forte intensit&#233; de main-d&#8217;&#339;uvre</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8.3</code>
+            <name>Promote development-oriented policies that support productive activities, decent job creation, entrepreneurship, creativity and innovation, and encourage the formalization and growth of micro-, small- and medium-sized enterprises, including through access to financial services</name>
+            <name xml:lang="fr">Promouvoir des politiques ax&#233;es sur le d&#233;veloppement qui favorisent les activit&#233;s productives, la cr&#233;ation d&#8217;emplois d&#233;cents, l&#8217;entrepreneuriat, la cr&#233;ativit&#233; et l&#8217;innovation et stimulent la croissance des microentreprises et des petites et moyennes entreprises et facilitent leur int&#233;gration dans le secteur formel, y&#160;compris par l&#8217;acc&#232;s aux&#160;services financiers</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8.4</code>
+            <name>Improve progressively, through 2030, global resource efficiency in consumption and production and endeavour to decouple economic growth from environmental degradation, in accordance with the 10&#8209;Year Framework of Programmes on Sustainable Consumption and Production, with developed countries taking the lead</name>
+            <name xml:lang="fr">Am&#233;liorer progressivement, jusqu&#8217;en 2030, l&#8217;efficacit&#233; de l&#8217;utilisation des ressources mondiales dans les&#160;modes de consommation et de production et s&#8217;attacher &#224;&#160;dissocier croissance &#233;conomique et d&#233;gradation de l&#8217;environnement, comme pr&#233;vu dans le Cadre d&#233;cennal de programmation concernant les modes de consommation et de production durables, les pays d&#233;velopp&#233;s montrant l&#8217;exemple en la mati&#232;re</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8.5</code>
+            <name>By 2030, achieve full and productive employment and decent work for all women and men, including for young people and persons with disabilities, and equal pay for work of equal value</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, parvenir au plein emploi productif et garantir &#224; toutes les femmes et &#224; tous les hommes, y&#160;compris les jeunes et les personnes handicap&#233;es, un travail d&#233;cent et un salaire &#233;gal pour un travail de valeur &#233;gale</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8.6</code>
+            <name>By 2020, substantially reduce the proportion of youth not in employment, education or training</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, r&#233;duire nettement la proportion de&#160;jeunes non scolaris&#233;s et sans emploi ni formation</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8.7</code>
+            <name>Take immediate and effective measures to eradicate forced labour, end modern slavery and human trafficking and secure the prohibition and elimination of the worst forms of child labour, including recruitment and use of child soldiers, and by 2025 end child labour in all its forms </name>
+            <name xml:lang="fr">Prendre des mesures imm&#233;diates et efficaces pour supprimer le travail forc&#233;, mettre fin &#224; l&#8217;esclavage moderne et &#224; la traite d&#8217;&#234;tres humains, interdire et &#233;liminer les pires formes de travail des enfants, y&#160;compris le recrutement et l&#8217;utilisation d&#8217;enfants soldats, et, d&#8217;ici &#224; 2025, mettre fin au travail des enfants sous toutes ses formes</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8.8</code>
+            <name>Protect labour rights and promote safe and secure working environments for all workers, including migrant workers, in particular women migrants, and those in precarious employment</name>
+            <name xml:lang="fr">D&#233;fendre les droits des travailleurs, promouvoir la s&#233;curit&#233; sur le lieu de travail et assurer la protection de tous les travailleurs, y compris les migrants, en particulier les femmes, et ceux qui ont un emploi pr&#233;caire</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8.9</code>
+            <name>By 2030, devise and implement policies to promote sustainable tourism that creates jobs and promotes local culture and products</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, &#233;laborer et mettre en &#339;uvre des politiques visant &#224; d&#233;velopper un tourisme durable qui cr&#233;e des emplois et met en valeur la culture et les produits locaux</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8.10</code>
+            <name>Strengthen the capacity of domestic financial institutions to encourage and expand access to banking, insurance and financial services for all</name>
+            <name xml:lang="fr">Renforcer la capacit&#233; des institutions financi&#232;res nationales de favoriser et g&#233;n&#233;raliser l&#8217;acc&#232;s de tous aux services bancaires et financiers et aux services d&#8217;assurance</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8.a</code>
+            <name>Increase Aid for Trade support for developing countries, in particular least developed countries, including through the Enhanced Integrated Framework for Trade-related Technical Assistance to Least Developed Countries</name>
+            <name xml:lang="fr">Accro&#238;tre l&#8217;appui apport&#233; dans le cadre de l&#8217;initiative Aide pour le commerce aux pays en d&#233;veloppement, en particulier aux pays les moins avanc&#233;s, y&#160;compris par l&#8217;interm&#233;diaire du Cadre int&#233;gr&#233; renforc&#233; pour l&#8217;assistance technique li&#233;e au commerce en faveur des pays les moins avanc&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8.b</code>
+            <name>By 2020, develop and operationalize a global strategy for youth employment and implement the Global Jobs Pact of the International Labour Organization</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, &#233;laborer et mettre en &#339;uvre une strat&#233;gie mondiale en faveur de l&#8217;emploi des jeunes et appliquer le Pacte mondial pour l&#8217;emploi de l&#8217;Organisation internationale du Travail</name>
+        </codelist-item>
+        <codelist-item>
+            <code>9.1</code>
+            <name>Develop quality, reliable, sustainable and resilient infrastructure, including regional and transborder infrastructure, to support economic development and human well-being, with a focus on affordable and equitable access for all</name>
+            <name xml:lang="fr">Mettre en place une infrastructure de qualit&#233;, fiable, durable et r&#233;siliente, y&#160;compris une infrastructure r&#233;gionale et transfronti&#232;re, pour favoriser le d&#233;veloppement &#233;conomique et le bien-&#234;tre de l&#8217;&#234;tre humain, en privil&#233;giant un acc&#232;s universel, financi&#232;rement abordable et &#233;quitable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>9.2</code>
+            <name>Promote inclusive and sustainable industrialization and, by 2030, significantly raise industry&#8217;s share of employment and gross domestic product, in line with national circumstances, and double its share in least developed countries</name>
+            <name xml:lang="fr">Promouvoir une industrialisation durable qui profite &#224; tous et, d&#8217;ici &#224; 2030, augmenter nettement la contribution de l&#8217;industrie &#224; l&#8217;emploi et au produit int&#233;rieur brut, en fonction du contexte national, et la multiplier par deux dans les pays les moins avanc&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>9.3</code>
+            <name>Increase the access of small-scale industrial and other enterprises, in particular in developing countries, to financial services, including affordable credit, and their integration into value chains and markets</name>
+            <name xml:lang="fr">Accro&#238;tre, en particulier dans les pays en d&#233;veloppement, l&#8217;acc&#232;s des entreprises, notamment des petites entreprises industrielles, aux services financiers, y&#160;compris aux pr&#234;ts consentis &#224; des conditions abordables, et&#160;leur int&#233;gration aux cha&#238;nes de valeur et aux march&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>9.4</code>
+            <name>By 2030, upgrade infrastructure and retrofit industries to make them sustainable, with increased resource-use efficiency and greater adoption of clean and environmentally sound technologies and industrial processes, with all countries taking action in accordance with their respective capabilities</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, moderniser l&#8217;infrastructure et adapter les industries afin de les rendre durables, par une utilisation plus rationnelle des ressources et un recours accru aux technologies et proc&#233;d&#233;s industriels propres et respectueux de l&#8217;environnement, chaque pays agissant dans la mesure de ses moyens</name>
+        </codelist-item>
+        <codelist-item>
+            <code>9.5</code>
+            <name>Enhance scientific research, upgrade the technological capabilities of industrial sectors in all countries, in particular developing countries, including, by 2030, encouraging innovation and substantially increasing the number of research and development workers per 1&#160;million people and public and private research and development spending</name>
+            <name xml:lang="fr">Renforcer la recherche scientifique, perfectionner les capacit&#233;s technologiques des secteurs industriels de tous les pays, en particulier des pays en d&#233;veloppement, notamment en encourageant l&#8217;innovation et en augmentant nettement le nombre de personnes travaillant dans le secteur de la recherche-d&#233;veloppement pour 1&#160;million d&#8217;habitants et en accroissant les d&#233;penses publiques et priv&#233;es consacr&#233;es &#224; la recherche-d&#233;veloppement d&#8217;ici &#224; 2030</name>
+        </codelist-item>
+        <codelist-item>
+            <code>9.a</code>
+            <name>Facilitate sustainable and resilient infrastructure development in developing countries through enhanced financial, technological and technical support to African countries, least developed countries, landlocked developing countries and small island developing States</name>
+            <name xml:lang="fr">Faciliter la mise en place d&#8217;une infrastructure durable et r&#233;siliente dans les pays en d&#233;veloppement en renfor&#231;ant l&#8217;appui financier, technologique et technique apport&#233; aux pays d&#8217;Afrique, aux pays les moins avanc&#233;s, aux pays en d&#233;veloppement sans littoral et aux petits &#201;tats insulaires en d&#233;veloppement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>9.b</code>
+            <name>Support domestic technology development, research and innovation in developing countries, including by ensuring a conducive policy environment for, inter alia, industrial diversification and value addition to commodities</name>
+            <name xml:lang="fr">Soutenir les activit&#233;s de recherche-d&#233;veloppement et&#160;d&#8217;innovation des pays en d&#233;veloppement dans le secteur technologique, notamment en instaurant des conditions propices, entre autres, &#224; la diversification industrielle et &#224;&#160;l&#8217;ajout de valeur aux marchandises</name>
+        </codelist-item>
+        <codelist-item>
+            <code>9.c</code>
+            <name>Significantly increase access to information and communications technology and strive to provide universal and affordable access to the Internet in least developed countries by 2020</name>
+            <name xml:lang="fr">Accro&#238;tre nettement l&#8217;acc&#232;s aux technologies de l&#8217;information et des communications et faire en sorte que tous les habitants des pays les moins avanc&#233;s aient acc&#232;s &#224;&#160;Internet &#224; un co&#251;t abordable d&#8217;ici &#224; 2020</name>
+        </codelist-item>
+        <codelist-item>
+            <code>10.1</code>
+            <name>By 2030, progressively achieve and sustain income growth of the bottom 40&#160;per&#160;cent of the population at a rate higher than the national average</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, assurer progressivement et durablement une croissance des revenus des 40&#160;pour&#160;cent de la population les plus pauvres &#224; un rythme plus rapide que le revenu moyen national</name>
+        </codelist-item>
+        <codelist-item>
+            <code>10.2</code>
+            <name>By 2030, empower and promote the social, economic and political inclusion of all, irrespective of age, sex, disability, race, ethnicity, origin, religion or economic or other status</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, autonomiser toutes les personnes et favoriser leur int&#233;gration sociale, &#233;conomique et politique, ind&#233;pendamment de leur &#226;ge, de leur sexe, de leur handicap, de leur race, de leur appartenance ethnique, de leurs origines, de leur religion ou de leur statut &#233;conomique ou&#160;autre</name>
+        </codelist-item>
+        <codelist-item>
+            <code>10.3</code>
+            <name>Ensure equal opportunity and reduce inequalities of outcome, including by eliminating discriminatory laws, policies and practices and promoting appropriate legislation, policies and action in this regard</name>
+            <name xml:lang="fr">Assurer l&#8217;&#233;galit&#233; des chances et r&#233;duire l&#8217;in&#233;galit&#233; des r&#233;sultats, notamment en &#233;liminant les lois, politiques et&#160;pratiques discriminatoires et en encourageant l&#8217;adoption de lois, politiques et mesures ad&#233;quates en la mati&#232;re</name>
+        </codelist-item>
+        <codelist-item>
+            <code>10.4</code>
+            <name>Adopt policies, especially fiscal, wage and social protection policies, and progressively achieve greater equality</name>
+            <name xml:lang="fr">Adopter des politiques, notamment sur les plans budg&#233;taire, salarial et dans le domaine de la protection sociale, afin de parvenir progressivement &#224; une plus grande &#233;galit&#233;</name>
+        </codelist-item>
+        <codelist-item>
+            <code>10.5</code>
+            <name>Improve the regulation and monitoring of global financial markets and institutions and strengthen the implementation of such regulations</name>
+            <name xml:lang="fr">Am&#233;liorer la r&#233;glementation et la surveillance des institutions et march&#233;s financiers mondiaux et renforcer l&#8217;application des r&#232;gles</name>
+        </codelist-item>
+        <codelist-item>
+            <code>10.6</code>
+            <name>Ensure enhanced representation and voice for developing countries in decision-making in global international economic and financial institutions in order to deliver more effective, credible, accountable and legitimate institutions</name>
+            <name xml:lang="fr">Faire en sorte que les pays en d&#233;veloppement soient davantage repr&#233;sent&#233;s et entendus lors de la prise de d&#233;cisions dans les institutions &#233;conomiques et financi&#232;res internationales, afin que celles-ci soient plus efficaces, cr&#233;dibles, transparentes et l&#233;gitimes</name>
+        </codelist-item>
+        <codelist-item>
+            <code>10.7</code>
+            <name>Facilitate orderly, safe, regular and responsible migration and mobility of people, including through the implementation of planned and well-managed migration policies</name>
+            <name xml:lang="fr">Faciliter la migration et la mobilit&#233; de fa&#231;on ordonn&#233;e, s&#251;re, r&#233;guli&#232;re et responsable, notamment par la&#160;mise en &#339;uvre de politiques migratoires planifi&#233;es et bien&#160;g&#233;r&#233;es</name>
+        </codelist-item>
+        <codelist-item>
+            <code>10.a</code>
+            <name>Implement the principle of special and differential treatment for developing countries, in particular least developed countries, in accordance with World Trade Organization agreements</name>
+            <name xml:lang="fr">Mettre en &#339;uvre le principe d&#8217;un traitement sp&#233;cial et&#160;diff&#233;renci&#233; pour les pays en d&#233;veloppement, en particulier les pays les moins avanc&#233;s, conform&#233;ment aux accords de l&#8217;Organisation mondiale du commerce</name>
+        </codelist-item>
+        <codelist-item>
+            <code>10.b</code>
+            <name>Encourage official development assistance and financial flows, including foreign direct investment, to States where the need is greatest, in particular least developed countries, African countries, small island developing States and landlocked developing countries, in accordance with their national plans and programmes</name>
+            <name xml:lang="fr">Stimuler l&#8217;aide publique au d&#233;veloppement et les flux financiers, y&#160;compris les investissements &#233;trangers directs, en faveur des &#201;tats qui en ont le plus besoin, en particulier les pays les moins avanc&#233;s, les pays d&#8217;Afrique, les petits &#201;tats insulaires en d&#233;veloppement et les pays en d&#233;veloppement sans littoral, conform&#233;ment &#224; leurs plans et&#160;programmes nationaux</name>
+        </codelist-item>
+        <codelist-item>
+            <code>10.c</code>
+            <name>By 2030, reduce to less than 3&#160;per&#160;cent the transaction costs of migrant remittances and eliminate remittance corridors with costs higher than 5&#160;per&#160;cent</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, faire baisser au-dessous de 3&#160;pour&#160;cent les co&#251;ts de transaction des envois de fonds effectu&#233;s par les&#160;migrants et &#233;liminer les circuits d&#8217;envois de fonds dont les co&#251;ts sont sup&#233;rieurs &#224; 5&#160;pour&#160;cent</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11.1</code>
+            <name>By 2030, ensure access for all to adequate, safe and affordable housing and basic services and upgrade slums</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, assurer l&#8217;acc&#232;s de tous &#224; un logement et&#160;des services de base ad&#233;quats et s&#251;rs, &#224; un co&#251;t abordable, et&#160;assainir les quartiers de taudis</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11.2</code>
+            <name>By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities and older persons</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, assurer l&#8217;acc&#232;s de tous &#224; des syst&#232;mes de transport s&#251;rs, accessibles et viables, &#224; un co&#251;t abordable, en am&#233;liorant la s&#233;curit&#233; routi&#232;re, notamment en d&#233;veloppant les transports publics, une attention particuli&#232;re devant &#234;tre accord&#233;e aux besoins des personnes en situation vuln&#233;rable, des femmes, des enfants, des personnes handicap&#233;es et des personnes &#226;g&#233;es</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11.3</code>
+            <name>By 2030, enhance inclusive and sustainable urbanization and capacity for participatory, integrated and sustainable human settlement planning and management in all countries</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, renforcer l&#8217;urbanisation durable pour tous et les capacit&#233;s de planification et de gestion participatives, int&#233;gr&#233;es et durables des &#233;tablissements humains dans tous les pays</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11.4</code>
+            <name>Strengthen efforts to protect and safeguard the world&#8217;s cultural and natural heritage</name>
+            <name xml:lang="fr">Redoubler d&#8217;efforts pour prot&#233;ger et pr&#233;server le&#160;patrimoine culturel et naturel mondial</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11.5</code>
+            <name>By 2030, significantly reduce the number of deaths and the number of people affected and substantially decrease the direct economic losses relative to global gross domestic product caused by disasters, including water-related disasters, with a focus on protecting the poor and people in vulnerable situations</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, r&#233;duire nettement le nombre de personnes tu&#233;es et le nombre de personnes touch&#233;es par les&#160;catastrophes, y&#160;compris celles qui sont li&#233;es &#224; l&#8217;eau, et r&#233;duire nettement la part du produit int&#233;rieur brut mondial repr&#233;sent&#233;e par les pertes &#233;conomiques directement imputables &#224; ces catastrophes, l&#8217;accent &#233;tant mis sur la protection des pauvres et des personnes en situation vuln&#233;rable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11.6</code>
+            <name>By 2030, reduce the adverse per capita environmental impact of cities, including by paying special attention to air quality and municipal and other waste management</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, r&#233;duire l&#8217;impact environnemental n&#233;gatif des villes par habitant, y&#160;compris en accordant une attention particuli&#232;re &#224; la qualit&#233; de l&#8217;air et &#224; la gestion, notamment municipale, des d&#233;chets</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11.7</code>
+            <name>By 2030, provide universal access to safe, inclusive and accessible, green and public spaces, in particular for women and children, older persons and persons with disabilities</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, assurer l&#8217;acc&#232;s de tous, en particulier des femmes et des enfants, des personnes &#226;g&#233;es et des personnes handicap&#233;es, &#224; des espaces verts et des espaces publics s&#251;rs</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11.a</code>
+            <name>Support positive economic, social and environmental links between urban, peri-urban and rural areas by strengthening national and regional development planning</name>
+            <name xml:lang="fr">Favoriser l&#8217;&#233;tablissement de liens &#233;conomiques, sociaux et environnementaux positifs entre zones urbaines, p&#233;riurbaines et rurales en renfor&#231;ant la planification du d&#233;veloppement &#224; l&#8217;&#233;chelle nationale et r&#233;gionale</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11.b</code>
+            <name>By 2020, substantially increase the number of cities and human settlements adopting and implementing integrated policies and plans towards inclusion, resource efficiency, mitigation and adaptation to climate change, resilience to disasters, and develop and implement, in line with the Sendai Framework for Disaster Risk Reduction 2015&#8211;2030, holistic disaster risk management at all levels</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, accro&#238;tre nettement le nombre de villes et d&#8217;&#233;tablissements humains qui adoptent et mettent en &#339;uvre des politiques et plans d&#8217;action int&#233;gr&#233;s en faveur de l&#8217;insertion de tous, de l&#8217;utilisation rationnelle des ressources, de l&#8217;adaptation aux effets des changements climatiques et de leur att&#233;nuation et de la r&#233;silience face aux catastrophes, et &#233;laborer et mettre en &#339;uvre, conform&#233;ment au Cadre de Sendai pour la r&#233;duction des risques de catastrophe (2015&#8209;2030), une gestion globale des risques de catastrophe &#224; tous les niveaux</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11.c</code>
+            <name>Support least developed countries, including through financial and technical assistance, in building sustainable and resilient buildings utilizing local materials</name>
+            <name xml:lang="fr">Aider les pays les moins avanc&#233;s, y&#160;compris par une assistance financi&#232;re et technique, &#224; construire des b&#226;timents durables et r&#233;silients en utilisant des mat&#233;riaux locaux</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12.1</code>
+            <name>Implement the 10&#8209;Year Framework of Programmes on Sustainable Consumption and Production Patterns, all countries taking action, with developed countries taking the lead, taking into account the development and capabilities of developing countries</name>
+            <name xml:lang="fr">Mettre en &#339;uvre le Cadre d&#233;cennal de programmation concernant les modes de consommation et de production durables avec la participation de tous les pays, les pays d&#233;velopp&#233;s montrant l&#8217;exemple en la mati&#232;re, compte tenu du degr&#233; de d&#233;veloppement et des capacit&#233;s des&#160;pays en d&#233;veloppement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12.2</code>
+            <name>By 2030, achieve the sustainable management and efficient use of natural resources</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, parvenir &#224; une gestion durable et &#224; une utilisation rationnelle des ressources naturelles</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12.3</code>
+            <name>By 2030, halve per capita global food waste at the retail and consumer levels and reduce food losses along production and supply chains, including post-harvest losses</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, r&#233;duire de moiti&#233; &#224; l&#8217;&#233;chelle mondiale le volume de d&#233;chets alimentaires par habitant, au niveau de la distribution comme de la consommation, et diminuer les pertes de produits alimentaires tout au long des cha&#238;nes de production et d&#8217;approvisionnement, y&#160;compris les pertes apr&#232;s r&#233;colte</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12.4</code>
+            <name>By 2020, achieve the environmentally sound management of chemicals and all wastes throughout their life cycle, in accordance with agreed international frameworks, and significantly reduce their release to air, water and soil in order to minimize their adverse impacts on human health and the environment</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, parvenir &#224; une gestion &#233;cologiquement rationnelle des produits chimiques et de tous les d&#233;chets tout au long de leur cycle de vie, conform&#233;ment aux principes directeurs arr&#234;t&#233;s &#224; l&#8217;&#233;chelle internationale, et r&#233;duire nettement leur d&#233;versement dans l&#8217;air, l&#8217;eau et le sol, afin de&#160;minimiser leurs effets n&#233;gatifs sur la sant&#233; et l&#8217;environnement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12.5</code>
+            <name>By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, r&#233;duire nettement la production de d&#233;chets par la pr&#233;vention, la r&#233;duction, le recyclage et la r&#233;utilisation</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12.6</code>
+            <name>Encourage companies, especially large and transnational companies, to adopt sustainable practices and to integrate sustainability information into their reporting cycle</name>
+            <name xml:lang="fr">Encourager les entreprises, en particulier les grandes entreprises et les soci&#233;t&#233;s transnationales, &#224; adopter des pratiques viables et &#224; int&#233;grer dans les rapports qu&#8217;elles &#233;tablissent des informations sur la viabilit&#233;</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12.7</code>
+            <name>Promote public procurement practices that are sustainable, in accordance with national policies and priorities</name>
+            <name xml:lang="fr">Promouvoir des pratiques durables dans le cadre de&#160;la passation des march&#233;s publics, conform&#233;ment aux politiques et priorit&#233;s nationales</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12.8</code>
+            <name>By 2030, ensure that people everywhere have the relevant information and awareness for sustainable development and lifestyles in harmony with nature</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, faire en sorte que toutes les personnes, partout dans le monde, aient les informations et connaissances n&#233;cessaires au d&#233;veloppement durable et &#224; un style de vie en harmonie avec la nature</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12.a</code>
+            <name>Support developing countries to strengthen their scientific and technological capacity to move towards more sustainable patterns of consumption and production</name>
+            <name xml:lang="fr">Aider les pays en d&#233;veloppement &#224; se doter des moyens scientifiques et technologiques qui leur permettent de s&#8217;orienter vers des modes de consommation et de production plus durables</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12.b</code>
+            <name>Develop and implement tools to monitor sustainable development impacts for sustainable tourism that creates jobs and promotes local culture and products</name>
+            <name xml:lang="fr">Mettre au point et utiliser des outils de contr&#244;le de&#160;l&#8217;impact sur le d&#233;veloppement durable d&#8217;un tourisme durable cr&#233;ateur d&#8217;emplois et valorisant la culture et les produits locaux</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12.c</code>
+            <name>Rationalize inefficient fossil-fuel subsidies that encourage wasteful consumption by removing market distortions, in accordance with national circumstances, including by restructuring taxation and phasing out those harmful subsidies, where they exist, to reflect their environmental impacts, taking fully into account the specific needs and conditions of developing countries and minimizing the possible adverse impacts on their development in a manner that protects the poor and the affected communities</name>
+            <name xml:lang="fr">Rationaliser les subventions aux combustibles fossiles qui sont source de gaspillage, gr&#226;ce &#224; l&#8217;&#233;limination des distorsions du march&#233;, eu &#233;gard au contexte national, y&#160;compris au moyen de la restructuration de la fiscalit&#233; et de la suppression progressive des subventions pr&#233;judiciables qui sont en place, en mettant en &#233;vidence leur impact sur l&#8217;environnement, en tenant pleinement compte des besoins et de la situation propres aux pays en d&#233;veloppement et en r&#233;duisant au minimum les &#233;ventuels effets n&#233;gatifs sur le d&#233;veloppement de ces pays tout en prot&#233;geant les pauvres et&#160;les populations concern&#233;es</name>
+        </codelist-item>
+        <codelist-item>
+            <code>13.1</code>
+            <name>Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries</name>
+            <name xml:lang="fr">Renforcer, dans tous les pays, la r&#233;silience et les capacit&#233;s d&#8217;adaptation face aux al&#233;as climatiques et aux catastrophes naturelles li&#233;es au climat</name>
+        </codelist-item>
+        <codelist-item>
+            <code>13.2</code>
+            <name>Integrate climate change measures into national policies, strategies and planning</name>
+            <name xml:lang="fr">Incorporer des mesures relatives aux changements climatiques dans les politiques, les strat&#233;gies et la planification nationales</name>
+        </codelist-item>
+        <codelist-item>
+            <code>13.3</code>
+            <name>Improve education, awareness-raising and human and institutional capacity on climate change mitigation, adaptation, impact reduction and early warning</name>
+            <name xml:lang="fr">Am&#233;liorer l&#8217;&#233;ducation, la sensibilisation et les capacit&#233;s individuelles et institutionnelles en ce qui concerne l&#8217;adaptation aux changements climatiques, l&#8217;att&#233;nuation de leurs effets et la r&#233;duction de leur impact et&#160;les syst&#232;mes d&#8217;alerte rapide</name>
+        </codelist-item>
+        <codelist-item>
+            <code>13.a</code>
+            <name>Implement the commitment undertaken by developed-country parties to the United Nations Framework Convention on Climate Change to a goal of mobilizing jointly $100&#160;billion annually by 2020 from all sources to address the needs of developing countries in the context of meaningful mitigation actions and transparency on implementation and fully operationalize the Green Climate Fund through its capitalization as soon as possible</name>
+            <name xml:lang="fr">Mettre en &#339;uvre l&#8217;engagement que les pays d&#233;velopp&#233;s parties &#224; la Convention-cadre des Nations Unies sur les changements climatiques ont pris de mobiliser ensemble aupr&#232;s de multiples sources 100&#160;milliards de dollars par an d&#8217;ici &#224; 2020 pour r&#233;pondre aux besoins des pays en d&#233;veloppement en ce qui concerne les mesures concr&#232;tes d&#8217;att&#233;nuation et la transparence de leur mise en &#339;uvre et rendre le Fonds vert pour le climat pleinement op&#233;rationnel en le dotant dans les plus brefs d&#233;lais des moyens financiers n&#233;cessaires</name>
+        </codelist-item>
+        <codelist-item>
+            <code>13.b</code>
+            <name>Promote mechanisms for raising capacity for effective climate change-related planning and management in least developed countries and small island developing States, including focusing on women, youth and local and marginalized communities</name>
+            <name xml:lang="fr">Promouvoir des m&#233;canismes de renforcement des capacit&#233;s afin que les pays les moins avanc&#233;s et les petits &#201;tats insulaires en d&#233;veloppement se dotent de moyens efficaces de planification et de gestion pour faire face aux changements climatiques, l&#8217;accent &#233;tant mis, notamment, sur&#160;les femmes, les jeunes, la population locale et les groupes marginalis&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>14.1</code>
+            <name>By 2025, prevent and significantly reduce marine pollution of all kinds, in particular from land-based activities, including marine debris and nutrient pollution</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2025, pr&#233;venir et r&#233;duire nettement la pollution marine de tous types, en particulier celle r&#233;sultant des activit&#233;s terrestres, y&#160;compris les d&#233;chets en mer et la pollution par les nutriments</name>
+        </codelist-item>
+        <codelist-item>
+            <code>14.2</code>
+            <name>By 2020, sustainably manage and protect marine and coastal ecosystems to avoid significant adverse impacts, including by strengthening their resilience, and take action for their restoration in order to achieve healthy and productive oceans</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, g&#233;rer et prot&#233;ger durablement les &#233;cosyst&#232;mes marins et c&#244;tiers, notamment en renfor&#231;ant leur&#160;r&#233;silience, afin d&#8217;&#233;viter les graves cons&#233;quences de leur&#160;d&#233;gradation et prendre des mesures en faveur de leur restauration pour r&#233;tablir la sant&#233; et la productivit&#233; des oc&#233;ans</name>
+        </codelist-item>
+        <codelist-item>
+            <code>14.3</code>
+            <name>Minimize and address the impacts of ocean acidification, including through enhanced scientific cooperation at all levels</name>
+            <name xml:lang="fr">R&#233;duire au maximum l&#8217;acidification des oc&#233;ans et&#160;lutter contre ses effets, notamment en renfor&#231;ant la coop&#233;ration scientifique &#224; tous les niveaux</name>
+        </codelist-item>
+        <codelist-item>
+            <code>14.4</code>
+            <name>By 2020, effectively regulate harvesting and end overfishing, illegal, unreported and unregulated fishing and destructive fishing practices and implement science-based management plans, in order to restore fish stocks in the shortest time feasible, at least to levels that can produce maximum sustainable yield as determined by their biological characteristics</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, r&#233;glementer efficacement la p&#234;che, mettre un terme &#224; la surp&#234;che, &#224; la p&#234;che illicite, non d&#233;clar&#233;e et non r&#233;glement&#233;e et aux pratiques de p&#234;che destructrices et ex&#233;cuter des plans de gestion fond&#233;s sur des donn&#233;es scientifiques, l&#8217;objectif &#233;tant de r&#233;tablir les stocks de poissons le plus rapidement possible, au moins &#224; des niveaux permettant d&#8217;obtenir un rendement constant maximal compte tenu des caract&#233;ristiques biologiques</name>
+        </codelist-item>
+        <codelist-item>
+            <code>14.5</code>
+            <name>By 2020, conserve at least 10&#160;per&#160;cent of coastal and marine areas, consistent with national and international law and based on the best available scientific information</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, pr&#233;server au moins 10&#160;pour&#160;cent des zones marines et c&#244;ti&#232;res, conform&#233;ment au droit national et&#160;international et compte tenu des meilleures informations scientifiques disponibles</name>
+        </codelist-item>
+        <codelist-item>
+            <code>14.6</code>
+            <name>By 2020, prohibit certain forms of fisheries subsidies which contribute to overcapacity and overfishing, eliminate subsidies that contribute to illegal, unreported and unregulated fishing and refrain from introducing new such subsidies, recognizing that appropriate and effective special and differential treatment for developing and least developed countries should be an integral part of the World Trade Organization fisheries subsidies negotiation3</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, interdire les subventions &#224; la p&#234;che qui contribuent &#224; la surcapacit&#233; et &#224; la surp&#234;che, supprimer celles qui favorisent la p&#234;che illicite, non d&#233;clar&#233;e et non r&#233;glement&#233;e et s&#8217;abstenir d&#8217;en accorder de nouvelles, sachant que l&#8217;octroi d&#8217;un traitement sp&#233;cial et diff&#233;renci&#233; efficace et appropri&#233; aux pays en d&#233;veloppement et aux pays les moins avanc&#233;s doit faire partie int&#233;grante des n&#233;gociations sur les subventions &#224; la p&#234;che men&#233;es dans le cadre de l&#8217;Organisation mondiale du commerce3</name>
+        </codelist-item>
+        <codelist-item>
+            <code>14.7</code>
+            <name>By 2030, increase the economic benefits to small island developing States and least developed countries from the sustainable use of marine resources, including through sustainable management of fisheries, aquaculture and tourism</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, faire b&#233;n&#233;ficier plus largement les petits &#201;tats insulaires en d&#233;veloppement et les pays les moins avanc&#233;s des retomb&#233;es &#233;conomiques de l&#8217;exploitation durable des ressources marines, notamment gr&#226;ce &#224; une gestion durable des p&#234;ches, de l&#8217;aquaculture et du tourisme</name>
+        </codelist-item>
+        <codelist-item>
+            <code>14.a</code>
+            <name>Increase scientific knowledge, develop research capacity and transfer marine technology, taking into account the Intergovernmental Oceanographic Commission Criteria and Guidelines on the Transfer of Marine Technology, in order to improve ocean health and to enhance the contribution of marine biodiversity to the development of developing countries, in particular small island developing States and least developed countries</name>
+            <name xml:lang="fr">Approfondir les connaissances scientifiques, renforcer les moyens de recherche et transf&#233;rer les techniques marines, conform&#233;ment aux Crit&#232;res et principes directeurs de la Commission oc&#233;anographique intergouvernementale concernant le transfert de techniques marines, l&#8217;objectif &#233;tant d&#8217;am&#233;liorer la sant&#233; des oc&#233;ans et de renforcer la contribution de la biodiversit&#233; marine au d&#233;veloppement des pays en d&#233;veloppement, en particulier des petits &#201;tats insulaires en d&#233;veloppement et des pays les moins avanc&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>14.b</code>
+            <name>Provide access for small-scale artisanal fishers to marine resources and markets</name>
+            <name xml:lang="fr">Garantir aux petits p&#234;cheurs l&#8217;acc&#232;s aux ressources marines et aux march&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>14.c</code>
+            <name>Enhance the conservation and sustainable use of oceans and their resources by implementing international law as reflected in the United Nations Convention on the Law of the Sea, which provides the legal framework for the conservation and sustainable use of oceans and their resources, as recalled in paragraph&#160;158 of &#8220;The future we want&#8221;</name>
+            <name xml:lang="fr">Am&#233;liorer la conservation et l&#8217;utilisation durable des oc&#233;ans et de leurs ressources en application des dispositions du droit international, &#233;nonc&#233;es dans la Convention des Nations Unies sur le droit de la mer, qui fournit le cadre juridique requis pour la conservation et l&#8217;utilisation durable des oc&#233;ans et de leurs ressources, comme il est rappel&#233; au paragraphe 158 de &#171;&#160;L&#8217;avenir que nous voulons&#160;&#187;</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15.1</code>
+            <name>By 2020, ensure the conservation, restoration and sustainable use of terrestrial and inland freshwater ecosystems and their services, in particular forests, wetlands, mountains and drylands, in line with obligations under international agreements</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, garantir la pr&#233;servation, la restauration et l&#8217;exploitation durable des &#233;cosyst&#232;mes terrestres et des &#233;cosyst&#232;mes d&#8217;eau douce et des services connexes, en particulier des for&#234;ts, des zones humides, des montagnes et des zones arides, conform&#233;ment aux obligations d&#233;coulant des accords internationaux</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15.2</code>
+            <name>By 2020, promote the implementation of sustainable management of all types of forests, halt deforestation, restore degraded forests and substantially increase afforestation and reforestation globally</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, promouvoir la gestion durable de tous les types de for&#234;t, mettre un terme &#224; la d&#233;forestation, restaurer les for&#234;ts d&#233;grad&#233;es et accro&#238;tre nettement le boisement et le reboisement au niveau mondial</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15.3</code>
+            <name>By 2030, combat desertification, restore degraded land and soil, including land affected by desertification, drought and floods, and strive to achieve a land degradation-neutral world</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, lutter contre la d&#233;sertification, restaurer les terres et sols d&#233;grad&#233;s, notamment les terres touch&#233;es par la d&#233;sertification, la s&#233;cheresse et les inondations, et s&#8217;efforcer de parvenir &#224; un monde sans d&#233;gradation des terres</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15.4</code>
+            <name>By 2030, ensure the conservation of mountain ecosystems, including their biodiversity, in order to enhance their capacity to provide benefits that are essential for sustainable development</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, assurer la pr&#233;servation des &#233;cosyst&#232;mes montagneux, notamment de leur biodiversit&#233;, afin de mieux tirer parti de leurs bienfaits essentiels pour le d&#233;veloppement durable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15.5</code>
+            <name>Take urgent and significant action to reduce the degradation of natural habitats, halt the loss of biodiversity and, by 2020, protect and prevent the extinction of threatened species</name>
+            <name xml:lang="fr">Prendre d&#8217;urgence des mesures &#233;nergiques pour r&#233;duire la d&#233;gradation du milieu naturel, mettre un terme &#224; l&#8217;appauvrissement de la biodiversit&#233; et, d&#8217;ici &#224; 2020, prot&#233;ger les esp&#232;ces menac&#233;es et pr&#233;venir leur extinction</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15.6</code>
+            <name>Promote fair and equitable sharing of the benefits arising from the utilization of genetic resources and promote appropriate access to such resources, as internationally agreed</name>
+            <name xml:lang="fr">Favoriser le partage juste et &#233;quitable des b&#233;n&#233;fices d&#233;coulant de l&#8217;utilisation des ressources g&#233;n&#233;tiques et promouvoir un acc&#232;s appropri&#233; &#224; celles-ci, ainsi que cela a &#233;t&#233; d&#233;cid&#233; &#224; l&#8217;&#233;chelle internationale</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15.7</code>
+            <name>Take urgent action to end poaching and trafficking of protected species of flora and fauna and address both demand and supply of illegal wildlife products</name>
+            <name xml:lang="fr">Prendre d&#8217;urgence des mesures pour mettre un terme au braconnage et au trafic d&#8217;esp&#232;ces v&#233;g&#233;tales et animales prot&#233;g&#233;es et s&#8217;attaquer au probl&#232;me sous l&#8217;angle de l&#8217;offre et de la demande</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15.8</code>
+            <name>By 2020, introduce measures to prevent the introduction and significantly reduce the impact of invasive alien species on land and water ecosystems and control or eradicate the priority species</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, prendre des mesures pour emp&#234;cher l&#8217;introduction d&#8217;esp&#232;ces exotiques envahissantes, att&#233;nuer sensiblement les effets que ces esp&#232;ces ont sur les &#233;cosyst&#232;mes terrestres et aquatiques et contr&#244;ler ou &#233;radiquer les esp&#232;ces prioritaires</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15.9</code>
+            <name>By 2020, integrate ecosystem and biodiversity values into national and local planning, development processes, poverty reduction strategies and accounts</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, int&#233;grer la protection des &#233;cosyst&#232;mes et de la biodiversit&#233; dans la planification nationale, dans les m&#233;canismes de d&#233;veloppement, dans les strat&#233;gies de r&#233;duction de la pauvret&#233; et dans la comptabilit&#233;</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15.a</code>
+            <name>Mobilize and significantly increase financial resources from all sources to conserve and sustainably use biodiversity and ecosystems</name>
+            <name xml:lang="fr">Mobiliser des ressources financi&#232;res de toutes provenances et les augmenter nettement pour pr&#233;server la biodiversit&#233; et les &#233;cosyst&#232;mes et les exploiter durablement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15.b</code>
+            <name>Mobilize significant resources from all sources and at all levels to finance sustainable forest management and provide adequate incentives to developing countries to advance such management, including for conservation and reforestation</name>
+            <name xml:lang="fr">Mobiliser d&#8217;importantes ressources de toutes provenances et &#224; tous les niveaux pour financer la gestion durable des for&#234;ts et inciter les pays en d&#233;veloppement &#224; privil&#233;gier ce type de gestion, notamment aux fins de la pr&#233;servation des for&#234;ts et du reboisement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15.c</code>
+            <name>Enhance global support for efforts to combat poaching and trafficking of protected species, including by increasing the capacity of local communities to pursue sustainable livelihood opportunities</name>
+            <name xml:lang="fr">Apporter, &#224; l&#8217;&#233;chelon mondial, un soutien accru &#224; l&#8217;action men&#233;e pour lutter contre le braconnage et le trafic d&#8217;esp&#232;ces prot&#233;g&#233;es, notamment en donnant aux populations locales d&#8217;autres moyens d&#8217;assurer durablement leur subsistance</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16.1</code>
+            <name>Significantly reduce all forms of violence and related death rates everywhere</name>
+            <name xml:lang="fr">R&#233;duire nettement, partout dans le monde, toutes les&#160;formes de violence et les taux de mortalit&#233; qui y sont associ&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16.2</code>
+            <name>End abuse, exploitation, trafficking and all forms of violence against and torture of children</name>
+            <name xml:lang="fr">Mettre un terme &#224; la maltraitance, &#224; l&#8217;exploitation et &#224; la traite, et &#224; toutes les formes de violence et de torture dont sont victimes les enfants</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16.3</code>
+            <name>Promote the rule of law at the national and international levels and ensure equal access to justice for all</name>
+            <name xml:lang="fr">Promouvoir l&#8217;&#233;tat de droit dans l&#8217;ordre interne et international et garantir &#224; tous un &#233;gal acc&#232;s &#224; la justice</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16.4</code>
+            <name>By 2030, significantly reduce illicit financial and arms flows, strengthen the recovery and return of stolen assets and combat all forms of organized crime</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, r&#233;duire nettement les flux financiers illicites et le trafic d&#8217;armes, renforcer les activit&#233;s de r&#233;cup&#233;ration et de restitution des biens vol&#233;s et lutter contre toutes les formes de criminalit&#233; organis&#233;e</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16.5</code>
+            <name>Substantially reduce corruption and bribery in all their forms</name>
+            <name xml:lang="fr">R&#233;duire nettement la corruption et la pratique des&#160;pots-de-vin sous toutes leurs formes</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16.6</code>
+            <name>Develop effective, accountable and transparent institutions at all levels</name>
+            <name xml:lang="fr">Mettre en place des institutions efficaces, responsables et transparentes &#224; tous les niveaux</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16.7</code>
+            <name>Ensure responsive, inclusive, participatory and representative decision-making at all levels</name>
+            <name xml:lang="fr">Faire en sorte que le dynamisme, l&#8217;ouverture, la&#160;participation et la repr&#233;sentation &#224; tous les niveaux caract&#233;risent la prise de d&#233;cisions</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16.8</code>
+            <name>Broaden and strengthen the participation of developing countries in the institutions of global governance</name>
+            <name xml:lang="fr">&#201;largir et renforcer la participation des pays en d&#233;veloppement aux institutions charg&#233;es de la gouvernance au niveau mondial</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16.9</code>
+            <name>By 2030, provide legal identity for all, including birth registration</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, garantir &#224; tous une identit&#233; juridique, notamment gr&#226;ce &#224; l&#8217;enregistrement des naissances</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16.10</code>
+            <name>Ensure public access to information and protect fundamental freedoms, in accordance with national legislation and international agreements</name>
+            <name xml:lang="fr">Garantir l&#8217;acc&#232;s public &#224; l&#8217;information et prot&#233;ger les&#160;libert&#233;s fondamentales, conform&#233;ment &#224; la l&#233;gislation nationale et aux accords internationaux</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16.a</code>
+            <name>Strengthen relevant national institutions, including through international cooperation, for building capacity at all levels, in particular in developing countries, to prevent violence and combat terrorism and crime</name>
+            <name xml:lang="fr">Appuyer, notamment dans le cadre de la coop&#233;ration internationale, les institutions nationales charg&#233;es de renforcer, &#224; tous les niveaux, les moyens de pr&#233;venir la violence et de lutter contre le terrorisme et la criminalit&#233;, en&#160;particulier dans les pays en d&#233;veloppement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16.b</code>
+            <name>Promote and enforce non-discriminatory laws and policies for sustainable development</name>
+            <name xml:lang="fr">Promouvoir et appliquer des lois et politiques non discriminatoires pour le d&#233;veloppement durable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.1</code>
+            <name>Strengthen domestic resource mobilization, including through international support to developing countries, to improve domestic capacity for tax and other revenue collection</name>
+            <name xml:lang="fr">Am&#233;liorer, notamment gr&#226;ce &#224; l&#8217;aide internationale aux pays en d&#233;veloppement, la mobilisation de ressources nationales en vue de renforcer les capacit&#233;s nationales de collecte de l&#8217;imp&#244;t et d&#8217;autres recettes</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.2</code>
+            <name>Developed countries to implement fully their official development assistance commitments, including the commitment by many developed countries to achieve the target of 0.7&#160;per&#160;cent of gross national income for official development assistance (ODA/GNI) to developing countries and 0.15 to 0.20&#160;per&#160;cent of ODA/GNI to least developed countries; ODA providers are encouraged to consider setting a target to provide at least 0.20&#160;per&#160;cent of ODA/GNI to least developed countries</name>
+            <name xml:lang="fr">Faire en sorte que les pays d&#233;velopp&#233;s honorent tous leurs engagements en mati&#232;re d&#8217;aide publique au d&#233;veloppement, notamment celui pris par nombre d&#8217;entre eux de consacrer 0,7&#160;pour&#160;cent de leur revenu national brut &#224;&#160;l&#8217;aide aux pays en d&#233;veloppement et entre 0,15&#160;pour&#160;cent et&#160;0,20&#160;pour&#160;cent &#224; l&#8217;aide aux pays les moins avanc&#233;s, les bailleurs de fonds &#233;tant encourag&#233;s &#224; envisager de se fixer pour objectif de consacrer au moins 0,20&#160;pour&#160;cent de leur revenu national brut &#224; l&#8217;aide aux pays les moins avanc&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.3</code>
+            <name>Mobilize additional financial resources for developing countries from multiple sources</name>
+            <name xml:lang="fr">Mobiliser des ressources financi&#232;res suppl&#233;mentaires de diverses provenances en faveur des pays en d&#233;veloppement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.4</code>
+            <name>Assist developing countries in attaining long-term debt sustainability through coordinated policies aimed at fostering debt financing, debt relief and debt restructuring, as appropriate, and address the external debt of highly indebted poor countries to reduce debt distress</name>
+            <name xml:lang="fr">Aider les pays en d&#233;veloppement &#224; assurer la viabilit&#233; &#224; long terme de leur dette au moyen de politiques concert&#233;es visant &#224; favoriser le financement de la dette, son all&#233;gement ou sa restructuration, selon le cas, et r&#233;duire le surendettement en r&#233;glant le probl&#232;me de la dette ext&#233;rieure des pays pauvres tr&#232;s endett&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.5</code>
+            <name>Adopt and implement investment promotion regimes for least developed countries</name>
+            <name xml:lang="fr">Adopter et mettre en &#339;uvre des dispositifs visant &#224; encourager l&#8217;investissement en faveur des pays les moins avanc&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.6</code>
+            <name>Enhance North-South, South-South and triangular regional and international cooperation on and access to science, technology and innovation and enhance knowledge-sharing on mutually agreed terms, including through improved coordination among existing mechanisms, in particular at the United Nations level, and through a global technology facilitation mechanism</name>
+            <name xml:lang="fr">Renforcer l&#8217;acc&#232;s &#224; la science, &#224; la technologie et &#224;&#160;l&#8217;innovation et la coop&#233;ration Nord-Sud et Sud-Sud et la&#160;coop&#233;ration triangulaire r&#233;gionale et internationale dans ces domaines et am&#233;liorer le partage des savoirs selon des modalit&#233;s arr&#234;t&#233;es d&#8217;un commun accord, notamment en coordonnant mieux les m&#233;canismes existants, en particulier au niveau des organismes des Nations Unies, et dans le cadre d&#8217;un m&#233;canisme mondial de facilitation des technologies</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.7</code>
+            <name>Promote the development, transfer, dissemination and diffusion of environmentally sound technologies to developing countries on favourable terms, including on concessional and preferential terms, as mutually agreed</name>
+            <name xml:lang="fr">Promouvoir la mise au point, le transfert et la diffusion de technologies respectueuses de l&#8217;environnement en faveur des pays en d&#233;veloppement, &#224; des conditions favorables, y&#160;compris privil&#233;gi&#233;es et pr&#233;f&#233;rentielles, arr&#234;t&#233;es d&#8217;un commun accord</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.8</code>
+            <name>Fully operationalize the technology bank and science, technology and innovation capacity-building mechanism for least developed countries by 2017 and enhance the use of enabling technology, in particular information and communications technology</name>
+            <name xml:lang="fr">Faire en sorte que la banque de technologies et le m&#233;canisme de renforcement des capacit&#233;s scientifiques et technologiques et des capacit&#233;s d&#8217;innovation des pays les moins avanc&#233;s soient pleinement op&#233;rationnels d&#8217;ici &#224; 2017 et renforcer l&#8217;utilisation des technologies clefs, en particulier de l&#8217;informatique et des communications</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.9</code>
+            <name>Enhance international support for implementing effective and targeted capacity-building in developing countries to support national plans to implement all the Sustainable Development Goals, including through North-South, South-South and triangular cooperation</name>
+            <name xml:lang="fr">Apporter, &#224; l&#8217;&#233;chelon international, un soutien accru pour assurer le renforcement efficace et cibl&#233; des capacit&#233;s des pays en d&#233;veloppement et appuyer ainsi les plans nationaux visant &#224; atteindre tous les objectifs de d&#233;veloppement durable, notamment dans le cadre de la coop&#233;ration Nord-Sud et Sud-Sud et de la coop&#233;ration triangulaire</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.10</code>
+            <name>Promote a universal, rules-based, open, non&#8209;discriminatory and equitable multilateral trading system under the World Trade Organization, including through the conclusion of negotiations under its Doha Development Agenda</name>
+            <name xml:lang="fr">Promouvoir un syst&#232;me commercial multilat&#233;ral universel, r&#233;glement&#233;, ouvert, non discriminatoire et &#233;quitable sous l&#8217;&#233;gide de l&#8217;Organisation mondiale du commerce, notamment gr&#226;ce &#224; la tenue de n&#233;gociations dans le cadre du Programme de Doha pour le d&#233;veloppement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.11</code>
+            <name>Significantly increase the exports of developing countries, in particular with a view to doubling the least developed countries&#8217; share of global exports by 2020</name>
+            <name xml:lang="fr">Accro&#238;tre nettement les exportations des pays en d&#233;veloppement, en particulier en vue de doubler la part des&#160;pays les moins avanc&#233;s dans les exportations mondiales d&#8217;ici&#160;&#224; 2020</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.12</code>
+            <name>Realize timely implementation of duty-free and quota-free market access on a lasting basis for all least developed countries, consistent with World Trade Organization decisions, including by ensuring that preferential rules of origin applicable to imports from least developed countries are transparent and simple, and contribute to facilitating market access</name>
+            <name xml:lang="fr">Permettre l&#8217;acc&#232;s rapide de tous les pays les moins avanc&#233;s aux march&#233;s en franchise de droits et sans contingent, conform&#233;ment aux d&#233;cisions de l&#8217;Organisation mondiale du commerce, notamment en veillant &#224; ce que les r&#232;gles pr&#233;f&#233;rentielles applicables aux importations provenant des pays les moins avanc&#233;s soient transparentes et simples et facilitent l&#8217;acc&#232;s aux march&#233;s</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.13</code>
+            <name>Enhance global macroeconomic stability, including through policy coordination and policy coherence</name>
+            <name xml:lang="fr">Renforcer la stabilit&#233; macro&#233;conomique mondiale, notamment en favorisant la coordination et la coh&#233;rence des&#160;politiques</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.14</code>
+            <name>Enhance policy coherence for sustainable development</name>
+            <name xml:lang="fr">Renforcer la coh&#233;rence des politiques de&#160;d&#233;veloppement durable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.15</code>
+            <name>Respect each country&#8217;s policy space and leadership to establish and implement policies for poverty eradication and sustainable development</name>
+            <name xml:lang="fr">Respecter la marge de man&#339;uvre et l&#8217;autorit&#233; de chaque pays en ce qui concerne l&#8217;&#233;laboration et l&#8217;application des politiques d&#8217;&#233;limination de la pauvret&#233; et de d&#233;veloppement durable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.16</code>
+            <name>Enhance the Global Partnership for Sustainable Development, complemented by multi-stakeholder partnerships that mobilize and share knowledge, expertise, technology and financial resources, to support the achievement of the Sustainable Development Goals in all countries, in particular developing countries</name>
+            <name xml:lang="fr">Renforcer le Partenariat mondial pour le d&#233;veloppement durable, associ&#233; &#224; des partenariats multipartites permettant de mobiliser et de partager des savoirs, des connaissances sp&#233;cialis&#233;es, des technologies et&#160;des ressources financi&#232;res, afin d&#8217;aider tous les pays, en particulier les pays en d&#233;veloppement, atteindre les objectifs de d&#233;veloppement durable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.17</code>
+            <name>Encourage and promote effective public, public-private and civil society partnerships, building on the experience and resourcing strategies of partnerships</name>
+            <name xml:lang="fr">Encourager et promouvoir les partenariats publics, les partenariats public-priv&#233; et les partenariats avec la soci&#233;t&#233; civile, en faisant fond sur l&#8217;exp&#233;rience acquise et les&#160;strat&#233;gies de financement appliqu&#233;es en la mati&#232;re</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.18</code>
+            <name>By 2020, enhance capacity-building support to developing countries, including for least developed countries and small island developing States, to increase significantly the availability of high-quality, timely and reliable data disaggregated by income, gender, age, race, ethnicity, migratory status, disability, geographic location and other characteristics relevant in national contexts</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2020, apporter un soutien accru au renforcement des capacit&#233;s des pays en d&#233;veloppement, notamment des pays les moins avanc&#233;s et des petits &#201;tats insulaires en d&#233;veloppement, l&#8217;objectif &#233;tant de disposer d&#8217;un beaucoup plus grand nombre de donn&#233;es de qualit&#233;, actualis&#233;es et exactes, ventil&#233;es par niveau de revenu, sexe, &#226;ge, race, appartenance ethnique, statut migratoire, handicap et emplacement g&#233;ographique, et selon d&#8217;autres caract&#233;ristiques propres &#224; chaque pays</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17.19</code>
+            <name>By 2030, build on existing initiatives to develop measurements of progress on sustainable development that complement gross domestic product, and support statistical capacity-building in developing countries</name>
+            <name xml:lang="fr">D&#8217;ici &#224; 2030, tirer parti des initiatives existantes pour&#160;&#233;tablir des indicateurs de progr&#232;s en mati&#232;re de d&#233;veloppement durable qui viendraient compl&#233;ter le produit int&#233;rieur brut, et appuyer le renforcement des capacit&#233;s statistiques des pays en d&#233;veloppement</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

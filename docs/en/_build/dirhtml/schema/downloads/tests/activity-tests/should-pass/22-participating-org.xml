@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<iati-activities version="xx">
+  <iati-activity> <!-- at least 1 -->
+    <iati-identifier></iati-identifier>  <!-- 1 and only 1-->
+    <reporting-org type="xx" ref="xx"><narrative>Organisation name</narrative></reporting-org> <!-- 1 and only 1-->
+    <title> <!-- 1 and only 1-->
+      <narrative>Xxxxxxx</narrative> <!-- At least 1-->
+    </title>
+    <description>
+      <narrative>Xxxxxxx</narrative> <!-- At least 1-->
+    </description>
+    
+    <participating-org role="xx"></participating-org> <!-- At least 1-->
+    
+     <!-- full version -->
+    <participating-org xml:lang="en" ref="X" type="X" role="X">
+      <narrative>xx</narrative>
+    </participating-org>
+
+    <!-- no-text version -->
+    <participating-org ref="X" type="X" role="X"/>
+
+    <!-- minimal version -->
+    <participating-org role="X">
+      <narrative>xx</narrative>
+    </participating-org>
+
+    <!-- activity-id included -->
+    <participating-org role="X" activity-id="XXX-XX-12345678">
+      <narrative>xx</narrative>
+    </participating-org>
+    
+    <!--<other-identifier></other-identifier>-->
+    <activity-status code="xx"/> <!-- 1 and only 1-->
+    <activity-date type="xx" iso-date="2013-11-27"/><!-- At least 1 --> <!--Narative allowed-->
+
+  
+  </iati-activity>
+</iati-activities>

@@ -1,0 +1,2359 @@
+DAC 5 Digit Sector
+==================
+
+
+
+
+External URL: http://www.oecd.org/dac/stats/dacandcrscodelists.htm
+
+
+
+This is a :ref:`Replicated codelist <non_core_codelist>`.
+
+
+
+Use this codelist for
+---------------------
+
+* :ref:`iati-activities/iati-activity/sector/@code <iati-activities/iati-activity/sector/.code>`
+
+* :ref:`iati-activities/iati-activity/transaction/sector/@code <iati-activities/iati-activity/transaction/sector/.code>`
+
+
+
+Download this codelist
+----------------------
+
+.. list-table::
+   :header-rows: 1
+
+   * - :ref:`CLv1 <codelist_api_1.04>`:
+     - :ref:`CLv2 <codelist_api_1.04>`:
+     - :ref:`CLv3 <codelist_api_1.04>`:
+     - :ref:`CLv3 (french) <codelist_api_1.04>`:
+
+   * - `CSV <../downloads/clv1/codelist/Sector.csv>`__
+     - `CSV <../downloads/clv2/csv/en/Sector.csv>`__
+     - `CSV <../downloads/clv3/csv/en/Sector.csv>`__
+     - `CSV <../downloads/clv3/csv/fr/Sector.csv>`__
+
+   * - `JSON <../downloads/clv1/codelist/Sector.json>`__
+     - `JSON <../downloads/clv2/json/en/Sector.json>`__
+     - `JSON <../downloads/clv3/json/en/Sector.json>`__
+     - `JSON <../downloads/clv3/json/fr/Sector.json>`__
+
+   * - `XML <../downloads/clv1/codelist/Sector.xml>`__
+     - `XML <../downloads/clv2/xml/Sector.xml>`__
+     - `XML <../downloads/clv3/xml/Sector.xml>`__
+     - `XML <../downloads/clv3/xml/Sector.xml>`__
+
+`GitHub Source <https://github.com/IATI/IATI-Codelists-NonEmbedded/blob/master/xml/Sector.xml>`__
+
+
+
+The codelists were translated in French in April 2018 with the support of the Government of Canada. Please note that if any codelists have been added since then, they may not be available in French.
+
+Codes
+-----
+
+.. _Sector:
+.. list-table::
+   :header-rows: 1
+
+
+   * - Code
+     - Name
+     - Description
+     - Category
+
+   
+       
+   * - 11110   
+       
+     - Education policy and administrative management
+     - Education sector policy, planning and programmes; aid to education ministries, administration and management systems; institution capacity building and advice; school management and governance; curriculum and materials development; unspecified education activities.
+     - :ref:`111 <SectorCategory>`
+   
+       
+   * - 11120   
+       
+     - Education facilities and training
+     - Educational buildings, equipment, materials; subsidiary services to education (boarding facilities, staff housing); language training; colloquia, seminars, lectures, etc.
+     - :ref:`111 <SectorCategory>`
+   
+       
+   * - 11130   
+       
+     - Teacher training
+     - Teacher education (where the level of education is unspecified); in-service and pre-service training; materials development.
+     - :ref:`111 <SectorCategory>`
+   
+       
+   * - 11182   
+       
+     - Educational research
+     - Research and studies on education effectiveness, relevance and quality; systematic evaluation and monitoring.
+     - :ref:`111 <SectorCategory>`
+   
+       
+   * - 11220   
+       
+     - Primary education
+     - Formal and non-formal primary education for children; all elementary and first cycle systematic instruction; provision of learning materials.
+     - :ref:`112 <SectorCategory>`
+   
+       
+   * - 11230   
+       
+     - Basic life skills for youth and adults
+     - Formal and non-formal education for basic life skills for young people and adults (adults education); literacy and numeracy training. Excludes health education (12261) and activities related to prevention of noncommunicable diseases. (123xx).
+     - :ref:`112 <SectorCategory>`
+   
+       
+   * - 11231   
+       
+     - Basic life skills for youth
+     - Formal and non-formal education for basic life skills for young people.
+     - :ref:`112 <SectorCategory>`
+   
+       
+   * - 11232   
+       
+     - Primary education equivalent for adults
+     - Formal primary education for adults.
+     - :ref:`112 <SectorCategory>`
+   
+       
+   * - 11240   
+       
+     - Early childhood education
+     - Formal and non-formal pre-school education.
+     - :ref:`112 <SectorCategory>`
+   
+       
+   * - 11250   
+       
+     - School feeding
+     - Provision of meals or snacks at school; other uses of food for the achievement of educational outcomes including “take-home” food rations provided as economic incentives to families (or foster families, or other child care institutions) in return for a child’s regular attendance at school; food provided to adults or youth who attend literacy or vocational training programmes; food for pre-school activities with an educational component. These activities may help reduce children’s hunger during the school day if provision of food/meals contains bioavailable nutrients to address specific nutrition needs and have nutrition expected outcomes in school children, or if the rationale mainstream nutrition or expected outcome is nutrition-linked.
+     - :ref:`112 <SectorCategory>`
+   
+       
+   * - 11320   
+       
+     - Secondary education
+     - Second cycle systematic instruction at both junior and senior levels.
+     - :ref:`113 <SectorCategory>`
+   
+       
+   * - 11321   
+       
+     - Lower secondary education
+     - Second cycle systematic instruction at junior level.
+     - :ref:`113 <SectorCategory>`
+   
+       
+   * - 11322   
+       
+     - Upper secondary education
+     - Second cycle systematic instruction at senior level.
+     - :ref:`113 <SectorCategory>`
+   
+       
+   * - 11330   
+       
+     - Vocational training
+     - Elementary vocational training and secondary level technical education; on-the job training; apprenticeships; including informal vocational training.
+     - :ref:`113 <SectorCategory>`
+   
+       
+   * - 11420   
+       
+     - Higher education
+     - Degree and diploma programmes at universities, colleges and polytechnics; scholarships.
+     - :ref:`114 <SectorCategory>`
+   
+       
+   * - 11430   
+       
+     - Advanced technical and managerial training
+     - Professional-level vocational training programmes and in-service training.
+     - :ref:`114 <SectorCategory>`
+   
+       
+   * - 12110   
+       
+     - Health policy and administrative management
+     - Health sector policy, planning and programmes; aid to health ministries, public health administration; institution capacity building and advice; medical insurance programmes; including health system strengthening and health governance; unspecified health activities.
+     - :ref:`121 <SectorCategory>`
+   
+       
+   * - 12181   
+       
+     - Medical education/training
+     - Medical education and training for tertiary level services.
+     - :ref:`121 <SectorCategory>`
+   
+       
+   * - 12182   
+       
+     - Medical research
+     - General medical research (excluding basic health research and research for prevention and control of NCDs (12382)).
+     - :ref:`121 <SectorCategory>`
+   
+       
+   * - 12191   
+       
+     - Medical services
+     - Laboratories, specialised clinics and hospitals (including equipment and supplies); ambulances; dental services; medical rehabilitation. Excludes noncommunicable diseases (123xx).
+     - :ref:`121 <SectorCategory>`
+   
+       
+   * - 12196   
+       
+     - Health statistics and data
+     - Collection, production, management and dissemination of statistics and data related to health. Includes health surveys, establishment of health databases, data collection on epidemics, etc.
+     - :ref:`121 <SectorCategory>`
+   
+       
+   * - 12220   
+       
+     - Basic health care
+     - Basic and primary health care programmes; paramedical and nursing care programmes; supply of drugs, medicines and vaccines related to basic health care; activities aimed at achieving universal health coverage.
+     - :ref:`122 <SectorCategory>`
+   
+       
+   * - 12230   
+       
+     - Basic health infrastructure
+     - District-level hospitals, clinics and dispensaries and related medical equipment; excluding specialised hospitals and clinics (12191).
+     - :ref:`122 <SectorCategory>`
+   
+       
+   * - 12240   
+       
+     - Basic nutrition
+     - Micronutrient deficiency identification and supplementation; Infant and young child feeding promotion including exclusive breastfeeding; Non-emergency management of acute malnutrition and other targeted feeding programs (including complementary feeding); Staple food fortification including salt iodization; Nutritional status monitoring and national nutrition surveillance; Research, capacity building, policy development, monitoring and evaluation in support of these interventions. Use code 11250 for school feeding and 43072 for household food security.
+     - :ref:`122 <SectorCategory>`
+   
+       
+   * - 12250   
+       
+     - Infectious disease control
+     - Immunisation; prevention and control of infectious and parasite diseases, except malaria (12262), tuberculosis (12263), HIV/AIDS and other STDs (13040). It includes diarrheal diseases, vector-borne diseases (e.g. river blindness and guinea worm), viral diseases, mycosis, helminthiasis, zoonosis, diseases by other bacteria and viruses, pediculosis, etc.
+     - :ref:`122 <SectorCategory>`
+   
+       
+   * - 12261   
+       
+     - Health education
+     - Information, education and training of the population for improving health knowledge and practices; public health and awareness campaigns; promotion of improved personal hygiene practices, including use of sanitation facilities and handwashing with soap.
+     - :ref:`122 <SectorCategory>`
+   
+       
+   * - 12262   
+       
+     - Malaria control
+     - Prevention and control of malaria.
+     - :ref:`122 <SectorCategory>`
+   
+       
+   * - 12263   
+       
+     - Tuberculosis control
+     - Immunisation, prevention and control of tuberculosis.
+     - :ref:`122 <SectorCategory>`
+   
+       
+   * - 12281   
+       
+     - Health personnel development
+     - Training of health staff for basic health care services.
+     - :ref:`122 <SectorCategory>`
+   
+       
+   * - 12310   
+       
+     - NCDs control, general
+     - Programmes for the prevention and control of NCDs which cannot be broken down into the codes below.
+     - :ref:`123 <SectorCategory>`
+   
+       
+   * - 12320   
+       
+     - Tobacco use control
+     - Population/individual measures and interventions to reduce all forms of tobacco use in any form. Includes activities related to the implementation of the WHO Framework Convention on Tobacco Control, including specific high-impact demand reduction measures for effective tobacco control.
+     - :ref:`123 <SectorCategory>`
+   
+       
+   * - 12330   
+       
+     - Control of harmful use of alcohol and drugs
+     - Prevention and reduction of harmful use of alcohol and psychoactive drugs; development, implementation, monitoring and evaluation of prevention and treatment strategies, programmes and interventions; early identification and management of health conditions caused by use of alcohol and drugs [excluding narcotics traffic control (16063)].
+     - :ref:`123 <SectorCategory>`
+   
+       
+   * - 12340   
+       
+     - Promotion of mental health and well-being
+     - Promotion of programmes and interventions which support mental health and well-being resiliency; prevention, care and support to individuals vulnerable to suicide. Excluding treatment of addiction to tobacco, alcohol and drugs (included in codes 12320 and 12330).
+     - :ref:`123 <SectorCategory>`
+   
+       
+   * - 12350   
+       
+     - Other prevention and treatment of NCDs
+     - Population/individual measures to reduce exposure to unhealthy diets and physical inactivity and to strengthen capacity for prevention, early detection, treatment and sustained management of NCDs including: Cardiovascular disease control: Prevention, screening and treatment of cardiovascular diseases (including hypertension, hyperlipidaemia, ischaemic heart diseases, stroke, rheumatic heart disease, congenital heart disease, heart failure, etc.). Diabetes control: Prevention, screening, diagnosis, treatment and management of complications from all types of diabetes. Exposure to physical inactivity: Promotion of physical activity through supportive built environment (urban design, transport), sports, health care, schools and community programmes and mass media campaign. Exposure to unhealthy diet: Programmes and interventions that promote healthy diet through reduced consumption of salt, sugar and fats and increased consumption of fruits and vegetables e.g. food reformulation, nutrient labelling, food taxes, marketing restriction on unhealthy foods, nutrition education and counselling, and settings-based interventions (schools, workplaces, villages, communities). Cancer control: Prevention (including immunisation, HPV and HBV), early diagnosis (including pathology), screening, treatment (e.g. radiotherapy, chemotherapy, surgery) and palliative care for all types of cancers. Implementation, maintenance and improvement of cancer registries are also included. Chronic respiratory diseases: Prevention, early diagnosis and treatment of chronic respiratory diseases, including asthma. Excludes: Tobacco use control (12320), Control of harmful use of alcohol and drugs (12330), research for the prevention and control of NCDs (12382).
+     - :ref:`123 <SectorCategory>`
+   
+       
+   * - 12382   
+       
+     - Research for prevention and control of NCDs
+     - Research to enhance understanding of NCDs, their risk factors, epidemiology, social determinants and economic impact; translational and implementation research to enhance operationalisation of cost-effective strategies to prevent and control NCDs; surveillance and monitoring of NCD mortality, morbidity, risk factor exposures, and national capacity to prevent and control NCDs.
+     - :ref:`123 <SectorCategory>`
+   
+       
+   * - 13010   
+       
+     - Population policy and administrative management
+     - Population/development policies; demographic research/analysis; reproductive health research; unspecified population activities. (Use purpose code 15190 for data on migration and refugees. Use code 13096 for census work, vital registration and migration data collection.)
+     - :ref:`130 <SectorCategory>`
+   
+       
+   * - 13020   
+       
+     - Reproductive health care
+     - Promotion of reproductive health; prenatal and postnatal care including delivery; prevention and treatment of infertility; prevention and management of consequences of abortion; safe motherhood activities.
+     - :ref:`130 <SectorCategory>`
+   
+       
+   * - 13030   
+       
+     - Family planning
+     - Family planning services including counselling; information, education and communication (IEC) activities; delivery of contraceptives; capacity building and training.
+     - :ref:`130 <SectorCategory>`
+   
+       
+   * - 13040   
+       
+     - STD control including HIV/AIDS
+     - All activities related to sexually transmitted diseases and HIV/AIDS control e.g. information, education and communication; testing; prevention; treatment, care.
+     - :ref:`130 <SectorCategory>`
+   
+       
+   * - 13081   
+       
+     - Personnel development for population and reproductive health
+     - Education and training of health staff for population and reproductive health care services.
+     - :ref:`130 <SectorCategory>`
+   
+       
+   * - 13096   
+       
+     - Population statistics and data
+     - Collection, production, management and dissemination of statistics and data related to Population and Reproductive Health. Includes census work, vital registration, migration data collection, demographic data, etc.
+     - :ref:`130 <SectorCategory>`
+   
+       
+   * - 14010   
+       
+     - Water sector policy and administrative management
+     - Water sector policy and governance, including legislation, regulation, planning and management as well as transboundary management of water; institutional capacity development; activities supporting the Integrated Water Resource Management approach (IWRM: see box below).
+     - :ref:`140 <SectorCategory>`
+   
+       
+   * - 14015   
+       
+     - Water resources conservation (including data collection)
+     - Collection and usage of quantitative and qualitative data on water resources; creation and sharing of water knowledge; conservation and rehabilitation of inland surface waters (rivers, lakes etc.), ground water and coastal waters; prevention of water contamination.
+     - :ref:`140 <SectorCategory>`
+   
+       
+   * - 14020   
+       
+     - Water supply and sanitation - large systems
+     - Programmes where components according to 14021 and 14022 cannot be identified. When components are known, they should individually be reported under their respective purpose codes: water supply [14021], sanitation [14022], and hygiene [12261].
+     - :ref:`140 <SectorCategory>`
+   
+       
+   * - 14021   
+       
+     - Water supply - large systems
+     - Potable water treatment plants; intake works; storage; water supply pumping stations; large scale transmission / conveyance and distribution systems.
+     - :ref:`140 <SectorCategory>`
+   
+       
+   * - 14022   
+       
+     - Sanitation - large systems
+     - Large scale sewerage including trunk sewers and sewage pumping stations; domestic and industrial waste water treatment plants.
+     - :ref:`140 <SectorCategory>`
+   
+       
+   * - 14030   
+       
+     - Basic drinking water supply and basic sanitation
+     - Programmes where components according to 14031 and 14032 cannot be identified. When components are known, they should individually be reported under their respective purpose codes: water supply [14031], sanitation [14032], and hygiene [12261].
+     - :ref:`140 <SectorCategory>`
+   
+       
+   * - 14031   
+       
+     - Basic drinking water supply
+     - Rural water supply schemes using handpumps, spring catchments, gravity-fed systems, rainwater collection and fog harvesting, storage tanks, small distribution systems typically with shared connections/points of use. Urban schemes using handpumps and local neighbourhood networks including those with shared connections.
+     - :ref:`140 <SectorCategory>`
+   
+       
+   * - 14032   
+       
+     - Basic sanitation
+     - Latrines, on-site disposal and alternative sanitation systems, including the promotion of household and community investments in the construction of these facilities. (Use code 12261 for activities promoting improved personal hygiene practices.)
+     - :ref:`140 <SectorCategory>`
+   
+       
+   * - 14040   
+       
+     - River basins development
+     - Infrastructure-focused integrated river basin projects and related institutional activities; river flow control; dams and reservoirs [excluding dams primarily for irrigation (31140) and hydropower (23220) and activities related to river transport (21040)].
+     - :ref:`140 <SectorCategory>`
+   
+       
+   * - 14050   
+       
+     - Waste management/disposal
+     - Municipal and industrial solid waste management, including hazardous and toxic waste; collection, disposal and treatment; landfill areas; composting and reuse.
+     - :ref:`140 <SectorCategory>`
+   
+       
+   * - 14081   
+       
+     - Education and training in water supply and sanitation
+     - Education and training for sector professionals and service providers.
+     - :ref:`140 <SectorCategory>`
+   
+       
+   * - 15110   
+       
+     - Public sector policy and administrative management
+     - Institution-building assistance to strengthen core public sector management systems and capacities. This includes general public policy management, co-ordination, planning and reform; human resource management; organisational development; civil service reform; e-government; development planning, monitoring and evaluation; support to ministries involved in aid co-ordination; other ministries and government departments when sector cannot be specified. (Use specific sector codes for development of systems and capacities in sector ministries. For macro-economic policy use code 15142. For public procurement use code 15125.)
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15111   
+       
+     - Public finance management (PFM)
+     - Fiscal policy and planning; support to ministries of finance; strengthening financial and managerial accountability; public expenditure management; improving financial management systems; budget drafting; inter-governmental fiscal relations, public audit, public debt. (Use code 15114 for domestic revenue mobilisation and code 33120 for customs).
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15112   
+       
+     - Decentralisation and support to subnational government
+     - Decentralisation processes (including political, administrative and fiscal dimensions); intergovernmental relations and federalism; strengthening departments of regional and local government, regional and local authorities and their national associations. (Use specific sector codes for decentralisation of sector management and services.)
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15113   
+       
+     - Anti-corruption organisations and institutions
+     - Specialised organisations, institutions and frameworks for the prevention of and combat against corruption, bribery, money-laundering and other aspects of organised crime, with or without law enforcement powers, e.g. anti-corruption commissions and monitoring bodies, special investigation services, institutions and initiatives of integrity and ethics oversight, specialised NGOs, other civil society and citizens’ organisations directly concerned with corruption.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15114   
+       
+     - Domestic revenue mobilisation
+     - Support to domestic revenue mobilisation/tax policy, analysis and administration as well as non-tax public revenue, which includes work with ministries of finance, line ministries, revenue authorities or other local, regional or national public bodies. (Use code 16010 for social security and other social protection.)
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15116   
+       
+     - Tax collection
+     - Operation of the inland revenue authority.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15117   
+       
+     - Budget planning
+     - Operation of the budget office and planning as part of the budget process.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15118   
+       
+     - National audit
+     - Operation of the accounting and audit services.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15119   
+       
+     - Debt and aid management
+     - Management of public debt and foreign aid received (in the partner country). For reporting on debt reorganisation, use codes 600xx.
+     - :ref:`151 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 15120 (withdrawn)
+       
+     - Public sector financial management
+     - Strengthening financial and managerial accountability; public expenditure management; improving financial management systems; tax assessment procedures; budget drafting; field auditing; measures against waste, fraud and corruption.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15121   
+       
+     - Foreign affairs
+     - Administration of external affairs and services.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15122   
+       
+     - Diplomatic missions
+     - Operation of diplomatic and consular missions stationed abroad or at offices of international organisations.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15123   
+       
+     - Administration of developing countries' foreign aid
+     - Support to administration of developing countries' foreign aid (including triangular and south-south cooperation).
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15124   
+       
+     - General personnel services
+     - Administration and operation of the civil service including policies, procedures and regulations.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15125   
+       
+     - Public Procurement
+     - Support to public procurement, including to create and evaluate legal frameworks; advice in establishing strategic orientation of public procurement policies and reforms; advice in designing public procurement systems and processes; support to public procurement institutions (including electronic procurement) as well as structures or initiatives to assess public procurement systems; and development of professional capacity of public procurement bodies and staff.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15126   
+       
+     - Other general public services
+     - Maintenance and storage of government records and archives, operation of government-owned or occupied buildings, central motor vehicle pools, government-operated printing offices, centralised computer and data processing services, etc.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15127   
+       
+     - National monitoring and evaluation
+     - Operation or support of institutions providing national monitoring and evaluation.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15128   
+       
+     - Local government finance
+     - Financial transfers to local government; support to institutions managing such transfers. (Use specific sector codes for sector-related transfers.)
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15129   
+       
+     - Other central transfers to institutions
+     - Transfers to non sector-specific autonomous bodies or state-owned enterprises outside of local government finance; support to institutions managing such transfers. (Use specific sector codes for sector-related transfers.)
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15130   
+       
+     - Legal and judicial development
+     - Support to institutions, systems and procedures of the justice sector, both formal and informal; support to ministries of justice, the interior and home affairs; judges and courts; legal drafting services; bar and lawyers associations; professional legal education; maintenance of law and order and public safety; border management; law enforcement agencies, police, prisons and their supervision; ombudsmen; alternative dispute resolution, arbitration and mediation; legal aid and counsel; traditional, indigenous and paralegal practices that fall outside the formal legal system. Measures that support the improvement of legal frameworks, constitutions, laws and regulations; legislative and constitutional drafting and review; legal reform; integration of formal and informal systems of law. Public legal education; dissemination of information on entitlements and remedies for injustice; awareness campaigns. (Use codes 152xx for activities that are primarily aimed at supporting security system reform or undertaken in connection with post-conflict and peace building activities. Use code 15190 for capacity building in border management related to migration.)
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15131   
+       
+     - Justice, law and order policy, planning and administration
+     - Judicial law and order sectors; policy development within ministries of justice or equivalents.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15132   
+       
+     - Police
+     - Police affairs and services.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15133   
+       
+     - Fire and rescue services
+     - Fire-prevention and fire-fighting affairs and services.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15134   
+       
+     - Judicial affairs
+     - Civil and criminal law courts and the judicial system, including enforcement of fines and legal settlements imposed by the courts and operation of parole and probation systems.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15135   
+       
+     - Ombudsman
+     - Independent service representing the interests of the public by investigating and addressing complaints of unfair treatment or maladministration.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15136   
+       
+     - Immigration
+     - Immigration affairs and services, including alien registration, issuing work and travel documents to immigrants.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15137   
+       
+     - Prisons
+     - 
+     - :ref:`151 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 15140 (withdrawn)
+       
+     - Government administration
+     - Systems of government including parliament, local government, decentralisation; civil service and civil service reform. Including general services by government (or commissioned by government) not elsewhere specified e.g. police, fire protection; cartography, meteorology, legal metrology, aerial surveys and remote sensing; administrative buildings.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15142   
+       
+     - Macroeconomic policy
+     - Support to macroeconomic stability, debt sustainability and structural reforms. Includes technical assistance for strategic formulation of policies, laws and regulation; capacity building to enhance public sector development; policy-based funding. For fiscal policy and domestic revenue mobilisation use codes 15111 and 15114.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15143   
+       
+     - Meteorological services
+     - Operation or support of institutions dealing with weather forecasting.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15144   
+       
+     - National standards development
+     - Operation or support of institutions dealing with national standards development. (Use code 16062 for statistical capacity-building.)
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15150   
+       
+     - Democratic participation and civil society
+     - Support to the exercise of democracy and diverse forms of participation of citizens beyond elections (15151); direct democracy instruments such as referenda and citizens’ initiatives; support to organisations to represent and advocate for their members, to monitor, engage and hold governments to account, and to help citizens learn to act in the public sphere; curricula and teaching for civic education at various levels. (This purpose code is restricted to activities targeting governance issues. When assistance to civil society is for non-governance purposes use other appropriate purpose codes.)
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15151   
+       
+     - Elections
+     - Electoral management bodies and processes, election observation, voters' education. (Use code 15230 when in the context of an international peacekeeping operation.)
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15152   
+       
+     - Legislatures and political parties
+     - Assistance to strengthen key functions of legislatures/ parliaments including subnational assemblies and councils (representation; oversight; legislation), such as improving the capacity of legislative bodies, improving legislatures’ committees and administrative procedures,; research and information management systems; providing training programmes for legislators and support personnel. Assistance to political parties and strengthening of party systems.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15153   
+       
+     - Media and free flow of information
+     - Activities that support free and uncensored flow of information on public issues; activities that increase the editorial and technical skills and the integrity of the print and broadcast media, e.g. training of journalists. (Use codes 22010-22040 for provision of equipment and capital assistance to media.)
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15154   
+       
+     - Executive office
+     - Administration, operation or support of executive office. Includes office of the chief executive at all levels of government (monarch, governor-general, president, prime minister, governor, mayor, etc.).
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15155   
+       
+     - Tax policy and administration support
+     - 
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15156   
+       
+     - Other non-tax revenue mobilisation
+     - Non-tax public revenue, which includes line ministries, revenue authorities or other local, regional or national public bodies.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15160   
+       
+     - Human rights
+     - Measures to support specialised official human rights institutions and mechanisms at universal, regional, national and local levels in their statutory roles to promote and protect civil and political, economic, social and cultural rights as defined in international conventions and covenants; translation of international human rights commitments into national legislation; reporting and follow-up; human rights dialogue. Human rights defenders and human rights NGOs; human rights advocacy, activism, mobilisation; awareness raising and public human rights education. Human rights programming targeting specific groups, e.g. children, persons with disabilities, migrants, ethnic, religious, linguistic and sexual minorities, indigenous people and those suffering from caste discrimination, victims of trafficking, victims of torture. (Use code 15230 when in the context of a peacekeeping operation and code 15180 for ending violence against women and girls. Use code 15190 for human rights programming for refugees or migrants, including when they are victims of trafficking.Use code 16070 for Fundamental Principles and Rights at Work, i.e. Child Labour, Forced Labour, Non-discrimination in employment and occupation, Freedom of Association and Collective Bargaining.)
+     - :ref:`151 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 15161 (withdrawn)
+       
+     - Elections
+     - Electoral assistance and monitoring, voters' education [other than in connection with UN peace building (15230)].
+     - :ref:`151 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 15162 (withdrawn)
+       
+     - Human rights
+     - Monitoring of human rights performance; support for national and regional human rights bodies; protection of ethnic, religious and cultural minorities [other than in connection with un peace building (15230)].
+     - :ref:`151 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 15163 (withdrawn)
+       
+     - Free flow of information
+     - Uncensored flow of information on public issues, including activities that increase the professionalism, skills and integrity of the print and broadcast media (e.g. training of journalists).
+     - :ref:`151 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 15164 (withdrawn)
+       
+     - Women's equality organisations and institutions
+     - Support for institutions and organisations (governmental and non-governmental) working for gender equality and women's empowerment.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15170   
+       
+     - Women’s rights organisations and movements, and government institutions
+     - Support for feminist, women-led and women’s rights organisations and movements, and institutions (governmental and non-govermental) at all levels to enhance their effectiveness, influence and substainability (activities and core-funding). These organisations exist to bring about transformative change for gender equality and/or the rights of women and girls in developing countries. Their activities include agenda-setting, advocacy, policy dialogue, capacity development, awareness raising and prevention, service provision, conflict-prevention and peacebuilding, research, organising, and alliance and network building
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15180   
+       
+     - Ending violence against women and girls
+     - Support to programmes designed to prevent and eliminate all forms of violence against women and girls/gender-based violence. This encompasses a broad range of forms of physical, sexual and psychological violence including but not limited to: intimate partner violence (domestic violence); sexual violence; female genital mutilation/cutting (FGM/C); child, early and forced marriage; acid throwing; honour killings; and trafficking of women and girls. Prevention activities may include efforts to empower women and girls; change attitudes, norms and behaviour; adopt and enact legal reforms; and strengthen implementation of laws and policies on ending violence against women and girls, including through strengthening institutional capacity. Interventions to respond to violence against women and girls/gender-based violence may include expanding access to services including legal assistance, psychosocial counselling and health care; training personnel to respond more effectively to the needs of survivors; and ensuring investigation, prosecution and punishment of perpetrators of violence.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15185   
+       
+     - Local government administration
+     - Decentralisation processes (including political, administrative and fiscal dimensions); intergovernmental relations and federalism; strengthening local authorities.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15190   
+       
+     - Facilitation of orderly, safe, regular and responsible migration and mobility
+     - Assistance to developing countries that facilitates the orderly, safe, regular and responsible migration and mobility of people. This includes:• Capacity building in migration and mobility policy, analysis, planning and management. This includes support to facilitate safe and regular migration and address irregular migration, engagement with diaspora and programmes enhancing the development impact of remittances and/or their use for developmental projects in developing countries.• Measures to improve migrant labour recruitment systems in developing countries.• Capacity building for strategy and policy development as well as legal and judicial development (including border management) in developing countries. This includes support to address and reduce vulnerabilities in migration, and strengthen the transnational response to smuggling of migrants and preventing and combating trafficking in human beings.• Support to effective strategies to ensure international protection and the right to asylum.• Support to effective strategies to ensure access to justice and assistance for displaced persons.• Assistance to migrants for their safe, dignified, informed and voluntary return to their country of origin (covers only returns from another developing country; assistance to forced returns is excluded from ODA).• Assistance to migrants for their sustainable reintegration in their country of origin (use code 93010 for pre-departure assistance provided in donor countries in the context of voluntary returns). Activities that pursue first and foremost providers’ interest are excluded from ODA. Activities addressing the root causes of forced displacement and irregular migration should not be coded here, but under their relevant sector of intervention. In addition, use code 15136 for support to countries' authorities for immigration affairs and services (optional), code 24050 for programmes aiming at reducing the sending costs of remittances, code 72010 for humanitarian aspects of assistance to refugees and internally displaced persons (IDPs) such as delivery of emergency services and humanitarian protection. Use code 93010 when expenditure is for the temporary sustenance of refugees in the donor country, including for their voluntary return and for their reintegration when support is provided in a donor country in connection with the return from that donor country (i.e. pre-departure assistance), or voluntary resettlement in a third developed country.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15196   
+       
+     - Government and civil society statistics and data
+     - Collection, production, management and dissemination of statistics and data related to Government & Civil Society. Includes macroeconomic statistics, government finance, fiscal and public sector statistics, support to development of administrative data infrastructure, civil society surveys.
+     - :ref:`151 <SectorCategory>`
+   
+       
+   * - 15210   
+       
+     - Security system management and reform
+     - Technical co-operation provided to parliament, government ministries, law enforcement agencies and the judiciary to assist review and reform of the security system to improve democratic governance and civilian control; technical co-operation provided to government to improve civilian oversight and democratic control of budgeting, management, accountability and auditing of security expenditure, including military budgets, as part of a public expenditure management programme; assistance to civil society to enhance its competence and capacity to scrutinise the security system so that it is managed in accordance with democratic norms and principles of accountability, transparency and good governance. [Other than in the context of an international peacekeeping operation (15230)].
+     - :ref:`152 <SectorCategory>`
+   
+       
+   * - 15220   
+       
+     - Civilian peace-building, conflict prevention and resolution
+     - Support for civilian activities related to peace building, conflict prevention and resolution, including capacity building, monitoring, dialogue and information exchange. Bilateral participation in international civilian peace missions such as those conducted by the UN Department of Political Affairs (UNDPA) or the European Union (European Security and Defence Policy), and contributions to civilian peace funds or commissions (e.g. Peacebuilding Commission, Peacebuilding thematic window of the MDG achievement fund etc.). The contributions can take the form of financing or provision of equipment or civilian or military personnel (e.g. for training civilians).(Use code 15230 for bilateral participation in international peacekeeping operations).
+     - :ref:`152 <SectorCategory>`
+   
+       
+   * - 15230   
+       
+     - Participation in international peacekeeping operations
+     - Bilateral participation in peacekeeping operations mandated or authorised by the United Nations (UN) through Security Council resolutions, and conducted by international organisations, e.g. UN, NATO, the European Union (Security and Defence Policy security-related operations), or regional groupings of developing countries. Direct contributions to the UN Department for Peacekeeping Operations (UNDPKO) budget are excluded from bilateral ODA (they are reportable in part as multilateral ODA, see Annex 9). The activities that can be reported as bilateral ODA under this code are limited to: human rights and election monitoring; reintegration of demobilised soldiers; rehabilitation of basic national infrastructure; monitoring or retraining of civil administrators and police forces; security sector reform and other rule of law-related activities; training in customs and border control procedures; advice or training in fiscal or macroeconomic stabilisation policy; repatriation and demobilisation of armed factions, and disposal of their weapons; explosive mine removal. The enforcement aspects of international peacekeeping operations are not reportable as ODA. ODA-eligible bilateral participation in peacekeeping operations can take the form of financing or provision of equipment or military or civilian personnel (e.g. police officers). The reportable cost is calculated as the excess over what the personnel and equipment would have cost to maintain had they not been assigned to take part in a peace operation. Costs for military contingents participating in UNDPKO peacekeeping operations are not reportable as ODA. International peacekeeping operations may include humanitarian-type activities (contributions to the form of equipment or personnel), as described in codes 7xxxx. These should be included under code 15230 if they are an integrated part of the activities above, otherwise they should be reported as humanitarian aid. NB: When using this code, indicate the name of the operation in the short description of the activity reported.
+     - :ref:`152 <SectorCategory>`
+   
+       
+   * - 15240   
+       
+     - Reintegration and SALW control
+     - Reintegration of demobilised military personnel into the economy; conversion of production facilities from military to civilian outputs; technical co-operation to control, prevent and/or reduce the proliferation of small arms and light weapons (SALW) – see para. 80 of the Directives for definition of SALW activities covered. [Other than in the context of an international peacekeeping operation (15230) or child soldiers (15261)].
+     - :ref:`152 <SectorCategory>`
+   
+       
+   * - 15250   
+       
+     - Removal of land mines and explosive remnants of war
+     - All activities related to land mines and explosive remnants of war which have benefits to developing countries as their main objective, including removal of land mines and explosive remnants of war, and stockpile destruction for developmental purposes [other than in the context of an international peacekeeping operation (15230)]; risk education and awareness raising; rehabilitation, reintegration and assistance to victims, and research and development on demining and clearance. Only activities for civilian purposes are ODA-eligible.
+     - :ref:`152 <SectorCategory>`
+   
+       
+   * - 15261   
+       
+     - Child soldiers (prevention and demobilisation)
+     - Technical co-operation provided to government – and assistance to civil society organisations – to support and apply legislation designed to prevent the recruitment of child soldiers, and to demobilise, disarm, reintegrate, repatriate and resettle (DDR) child soldiers.
+     - :ref:`152 <SectorCategory>`
+   
+       
+   * - 16010   
+       
+     - Social Protection
+     - Social protection or social security strategies, legislation and administration; institution capacity building and advice; social security and other social schemes; support programmes, cash benefits, pensions and special programmes for older persons, orphans, persons with disabilities, children, mothers with newborns, those living in poverty, without jobs and other vulnerable groups; social dimensions of structural adjustment.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16011   
+       
+     - Social protection and welfare services policy, planning and administration
+     - Administration of overall social protection policies, plans, programmes and budgets including legislation, standards and statistics on social protection.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16012   
+       
+     - Social security (excl pensions)
+     - Social protection shemes in the form of cash or in-kind benefits to people unable to work due to sickness or injury.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16013   
+       
+     - General pensions
+     - Social protection schemes in the form of cash or in-kind benefits, including pensions, against the risks linked to old age.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16014   
+       
+     - Civil service pensions
+     - Pension schemes for government personnel.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16015   
+       
+     - Social services (incl youth development and women+ children)
+     - Social protection schemes in the form of cash or in-kind benefits to households with dependent children, including parental leave benefits.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16020   
+       
+     - Employment creation
+     - Employment policy and planning; institution capacity building and advice; employment creation and income generation programmes; including activities specifically designed for the needs of vulnerable groups.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16030   
+       
+     - Housing policy and administrative management
+     - Housing sector policy, planning and programmes; excluding low-cost housing and slum clearance (16040).
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16040   
+       
+     - Low-cost housing
+     - Including slum clearance.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16050   
+       
+     - Multisector aid for basic social services
+     - Basic social services are defined to include basic education, basic health, basic nutrition, population/reproductive health and basic drinking water supply and basic sanitation.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16061   
+       
+     - Culture and recreation
+     - Including libraries and museums.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16062   
+       
+     - Statistical capacity building
+     - All statistical activities, such as data collection, processing, dissemination and analysis; support to development and management of official statistics including demographic, social, economic, environmental and multi-sectoral statistics; statistical quality frameworks; development of human and technological resources for statistics, investments in data innovation. Activities related to data and statistics in the sectors 120, 130 or 150 should preferably be coded under the voluntary purpose codes 12196, 13096 and 15196. Activities with the sole purpose of monitoring development co-operation activities, including if performed by third parties, should be coded under 91010 (Administrative costs).
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16063   
+       
+     - Narcotics control
+     - In-country and customs controls including training of the police; educational programmes and awareness campaigns to restrict narcotics traffic and in-country distribution. ODA recording of narcotics control expenditures is limited to activities that focus on economic development and welfare including alternative development programmes and crop substitution (see 31165 and 43050). Activities by the donor country to interdict drug supplies destroy crops or train or finance military personnel in anti-narcotics activities are not reportable.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16064   
+       
+     - Social mitigation of HIV/AIDS
+     - Special programmes to address the consequences of HIV/AIDS, e.g. social, legal and economic assistance to people living with HIV/AIDS including food security and employment; support to vulnerable groups and children orphaned by HIV/AIDS; human rights of HIV/AIDS affected people.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16065   
+       
+     - Recreation and sport
+     - 
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16066   
+       
+     - Culture
+     - 
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16070   
+       
+     - Labour Rights
+     - Advocacy for international labour standards, labour law, fundamental principles and rights at work (child labour, forced labour, non-discrimination in the workplace, freedom of association and collective bargaining); formalisation of informal work, occupational safety and health.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 16080   
+       
+     - Social Dialogue
+     - Capacity building and advice in support of social dialogue; support to social dialogue institutions, bodies and mechanisms; capacity building of workers' and employers' organisations.
+     - :ref:`160 <SectorCategory>`
+   
+       
+   * - 21010   
+       
+     - Transport policy and administrative management
+     - Transport sector policy, planning and programmes; aid to transport ministries; institution capacity building and advice; unspecified transport; activities that combine road, rail, water and/or air transport. Includes prevention of road accidents. Whenever possible, report transport of goods under the sector of the good being transported.
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21011   
+       
+     - Transport policy, planning and administration
+     - Administration of affairs and services concerning transport systems.
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21012   
+       
+     - Public transport services
+     - Administration of affairs and services concerning public transport.
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21013   
+       
+     - Transport regulation
+     - Supervision and regulation of users, operations, construction and maintenance of transport systems (registration, licensing, inspection of equipment, operator skills and training; safety standards, franchises, tariffs, levels of service, etc.).
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21020   
+       
+     - Road transport
+     - Road infrastructure, road vehicles; passenger road transport, motor passenger cars.
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21021   
+       
+     - Feeder road construction
+     - Construction or operation of feeder road transport systems and facilities.
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21022   
+       
+     - Feeder road maintenance
+     - Maintenance of feeder road transport systems and facilities.
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21023   
+       
+     - National road construction
+     - Construction or operation of national road transport systems and facilities.
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21024   
+       
+     - National road maintenance
+     - Maintenance of national road transport systems and facilities.
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21030   
+       
+     - Rail transport
+     - Rail infrastructure, rail equipment, locomotives, other rolling stock; including light rail (tram) and underground systems.
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21040   
+       
+     - Water transport
+     - Harbours and docks, harbour guidance systems, ships and boats; river and other inland water transport, inland barges and vessels.
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21050   
+       
+     - Air transport
+     - Airports, airport guidance systems, aeroplanes, aeroplane maintenance equipment.
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21061   
+       
+     - Storage
+     - Whether or not related to transportation. Whenever possible, report storage projects under the sector of the resource being stored.
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 21081   
+       
+     - Education and training in transport and storage
+     - 
+     - :ref:`210 <SectorCategory>`
+   
+       
+   * - 22010   
+       
+     - Communications policy and administrative management
+     - Communications sector policy, planning and programmes; institution capacity building and advice; including postal services development; unspecified communications activities.
+     - :ref:`220 <SectorCategory>`
+   
+       
+   * - 22011   
+       
+     - Communications policy, planning and administration
+     - 
+     - :ref:`220 <SectorCategory>`
+   
+       
+   * - 22012   
+       
+     - Postal services
+     - Development and operation of postal services.
+     - :ref:`220 <SectorCategory>`
+   
+       
+   * - 22013   
+       
+     - Information services
+     - Provision of information services.
+     - :ref:`220 <SectorCategory>`
+   
+       
+   * - 22020   
+       
+     - Telecommunications
+     - Telephone networks, telecommunication satellites, earth stations.
+     - :ref:`220 <SectorCategory>`
+   
+       
+   * - 22030   
+       
+     - Radio/television/print media
+     - Radio and TV links, equipment; newspapers; printing and publishing.
+     - :ref:`220 <SectorCategory>`
+   
+       
+   * - 22040   
+       
+     - Information and communication technology (ICT)
+     - Computer hardware and software; internet access; IT training. When sector cannot be specified.
+     - :ref:`220 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23010 (withdrawn)
+       
+     - Energy policy and administrative management
+     - Energy sector policy, planning and programmes; aid to energy ministries; institution capacity building and advice; unspecified energy activities including energy conservation.
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23020 (withdrawn)
+       
+     - Power generation/non-renewable sources
+     - Thermal power plants including when heat source cannot be determined; combined gas-coal power plants.
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23030 (withdrawn)
+       
+     - Power generation/renewable sources
+     - Including policy, planning, development programmes, surveys and incentives. Fuelwood/ charcoal production should be included under forestry (31261).
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23040 (withdrawn)
+       
+     - Electrical transmission/ distribution
+     - Distribution from power source to end user; transmission lines.
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23050 (withdrawn)
+       
+     - Gas distribution
+     - Delivery for use by ultimate consumer.
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23061 (withdrawn)
+       
+     - Oil-fired power plants
+     - Including diesel power plants.
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23062 (withdrawn)
+       
+     - Gas-fired power plants
+     - 
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23063 (withdrawn)
+       
+     - Coal-fired power plants
+     - 
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23064 (withdrawn)
+       
+     - Nuclear power plants
+     - Including nuclear safety.
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23065 (withdrawn)
+       
+     - Hydro-electric power plants
+     - Including power-generating river barges.
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23066 (withdrawn)
+       
+     - Geothermal energy
+     - 
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23067 (withdrawn)
+       
+     - Solar energy
+     - Including photo-voltaic cells, solar thermal applications and solar heating.
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23068 (withdrawn)
+       
+     - Wind power
+     - Wind energy for water lifting and electric power generation.
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23069 (withdrawn)
+       
+     - Ocean power
+     - Including ocean thermal energy conversion, tidal and wave power.
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23070 (withdrawn)
+       
+     - Biomass
+     - Densification technologies and use of biomass for direct power generation including biogas, gas obtained from sugar cane and other plant residues, anaerobic digesters.
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23081 (withdrawn)
+       
+     - Energy education/training
+     - Applies to all energy sub-sectors; all levels of training.
+     - :ref:`230 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 23082 (withdrawn)
+       
+     - Energy research
+     - Including general inventories, surveys.
+     - :ref:`230 <SectorCategory>`
+   
+       
+   * - 23110   
+       
+     - Energy policy and administrative management
+     - Energy sector policy, planning; aid to energy ministries and other governmental or nongovernmental institutions for activities related to the SDG7; institution capacity building and advice; tariffs, market building, unspecified energy activities; energy activities for which a more specific code cannot be assigned.
+     - :ref:`231 <SectorCategory>`
+   
+       
+   * - 23111   
+       
+     - Energy sector policy, planning and administration
+     - 
+     - :ref:`231 <SectorCategory>`
+   
+       
+   * - 23112   
+       
+     - Energy regulation
+     - Regulation of the energy sector, including wholesale and retail electricity provision.
+     - :ref:`231 <SectorCategory>`
+   
+       
+   * - 23181   
+       
+     - Energy education/training
+     - All levels of training not included elsewhere.
+     - :ref:`231 <SectorCategory>`
+   
+       
+   * - 23182   
+       
+     - Energy research
+     - Including general inventories, surveys.
+     - :ref:`231 <SectorCategory>`
+   
+       
+   * - 23183   
+       
+     - Energy conservation and demand-side efficiency
+     - Support for energy demand reduction, e.g. building and industry upgrades, smart grids, metering and tariffs. For clean cooking appliances use code 32174.
+     - :ref:`231 <SectorCategory>`
+   
+       
+   * - 23210   
+       
+     - Energy generation, renewable sources - multiple technologies
+     - Renewable energy generation programmes that cannot be attributed to one single technology (codes 23220 through 23280 below). Fuelwood/charcoal production should be included under forestry 31261.
+     - :ref:`232 <SectorCategory>`
+   
+       
+   * - 23220   
+       
+     - Hydro-electric power plants
+     - Including energy generating river barges.
+     - :ref:`232 <SectorCategory>`
+   
+       
+   * - 23230   
+       
+     - Solar energy for centralised grids
+     - Including photo-voltaic cells, concentrated solar power systems connected to the main grid and net-metered decentralised solutions.
+     - :ref:`232 <SectorCategory>`
+   
+       
+   * - 23231   
+       
+     - Solar energy for isolated grids and standalone systems
+     - Solar power generation for isolated mini-grids, solar home systems (including integrated wiring and related appliances), solar lanterns distribution and commercialisation. This code refers to the power generation component only.
+     - :ref:`232 <SectorCategory>`
+   
+       
+   * - 23232   
+       
+     - Solar energy - thermal applications
+     - Solar solutions for indoor space and water heating (except for solar cook stoves 32174).
+     - :ref:`232 <SectorCategory>`
+   
+       
+   * - 23240   
+       
+     - Wind energy
+     - Wind energy for water lifting and electric power generation.
+     - :ref:`232 <SectorCategory>`
+   
+       
+   * - 23250   
+       
+     - Marine energy
+     - Including ocean thermal energy conversion, tidal and wave power.
+     - :ref:`232 <SectorCategory>`
+   
+       
+   * - 23260   
+       
+     - Geothermal energy
+     - Use of geothermal energy for generating electric power or directly as heat for agriculture, etc.
+     - :ref:`232 <SectorCategory>`
+   
+       
+   * - 23270   
+       
+     - Biofuel-fired power plants
+     - Use of solids and liquids produced from biomass for direct power generation. Also includes biogases from anaerobic fermentation (e.g. landfill gas, sewage sludge gas, fermentation of energy crops and manure) and thermal processes (also known as syngas); waste-fired power plants making use of biodegradable municipal waste (household waste and waste from companies and public services that resembles household waste, collected at installations specifically designed for their disposal with recovery of combustible liquids, gases or heat). See code 23360 for non-renewable waste-fired power plants.
+     - :ref:`232 <SectorCategory>`
+   
+       
+   * - 23310   
+       
+     - Energy generation, non-renewable sources, unspecified
+     - Thermal power plants including when energy source cannot be determined; combined gas-coal power plants.
+     - :ref:`233 <SectorCategory>`
+   
+       
+   * - 23320   
+       
+     - Coal-fired electric power plants
+     - Thermal electric power plants that use coal as the energy source.
+     - :ref:`233 <SectorCategory>`
+   
+       
+   * - 23330   
+       
+     - Oil-fired electric power plants
+     - Thermal electric power plants that use fuel oil or diesel fuel as the energy source.
+     - :ref:`233 <SectorCategory>`
+   
+       
+   * - 23340   
+       
+     - Natural gas-fired electric power plants
+     - Electric power plants that are fuelled by natural gas; related feed-in infrastructure (LNG terminals, gasifiers, pipelines to feed the plant).
+     - :ref:`233 <SectorCategory>`
+   
+       
+   * - 23350   
+       
+     - Fossil fuel electric power plants with carbon capture and storage (CCS)
+     - Fossil fuel electric power plants employing technologies to capture carbon dioxide emissions. CCS not related to power plants should be included under 41020. CCS activities are not reportable as ODA.
+     - :ref:`233 <SectorCategory>`
+   
+       
+   * - 23360   
+       
+     - Non-renewable waste-fired electric power plants
+     - Electric power plants that use non-biodegradable industrial and municipal waste as the energy source.
+     - :ref:`233 <SectorCategory>`
+   
+       
+   * - 23410   
+       
+     - Hybrid energy electric power plants
+     - Electric power plants that make use of both non-renewable and renewable energy sources.
+     - :ref:`234 <SectorCategory>`
+   
+       
+   * - 23510   
+       
+     - Nuclear energy electric power plants and nuclear safety
+     - See note regarding ODA eligibility of nuclear energy.
+     - :ref:`235 <SectorCategory>`
+   
+       
+   * - 23610   
+       
+     - Heat plants
+     - Power plants which are designed to produce heat only.
+     - :ref:`236 <SectorCategory>`
+   
+       
+   * - 23620   
+       
+     - District heating and cooling
+     - Distribution of heat generated in a centralised location, or delivery of chilled water, for residential and commercial heating or cooling purposes.
+     - :ref:`236 <SectorCategory>`
+   
+       
+   * - 23630   
+       
+     - Electric power transmission and distribution (centralised grids)
+     - Grid distribution from power source to end user; transmission lines. Also includes storage of energy to generate power (e.g. pumped hydro, batteries) and the extension of grid access, often to rural areas.
+     - :ref:`236 <SectorCategory>`
+   
+       
+   * - 23631   
+       
+     - Electric power transmission and distribution (isolated mini-grids)
+     - Includes village grids and other electricity distribution technologies to end users that are not connected to the main national grid. Also includes related electricity storage. This code refers to the network infrastructure only regardless of the power generation technologies.
+     - :ref:`236 <SectorCategory>`
+   
+       
+   * - 23640   
+       
+     - Retail gas distribution
+     - Includes urban infrastructure for the delivery of urban gas and LPG cylinder production, distribution and refill. Excludes gas distribution for purposes of electricity generation (23340) and pipelines (32262).
+     - :ref:`236 <SectorCategory>`
+   
+       
+   * - 23641   
+       
+     - Retail distribution of liquid or solid fossil fuels
+     - 
+     - :ref:`236 <SectorCategory>`
+   
+       
+   * - 23642   
+       
+     - Electric mobility infrastructures
+     - Includes electricity or hydrogen recharging stations for private and public transport systems and related infrastructure (except for rail transport 21030).
+     - :ref:`236 <SectorCategory>`
+   
+       
+   * - 24010   
+       
+     - Financial policy and administrative management
+     - Finance sector policy, planning and programmes; institution capacity building and advice; financial markets and systems.
+     - :ref:`240 <SectorCategory>`
+   
+       
+   * - 24020   
+       
+     - Monetary institutions
+     - Central banks.
+     - :ref:`240 <SectorCategory>`
+   
+       
+   * - 24030   
+       
+     - Formal sector financial intermediaries
+     - All formal sector financial intermediaries; credit lines; insurance, leasing, venture capital, etc. (except when focused on only one sector).
+     - :ref:`240 <SectorCategory>`
+   
+       
+   * - 24040   
+       
+     - Informal/semi-formal financial intermediaries
+     - Micro credit, savings and credit co-operatives etc.
+     - :ref:`240 <SectorCategory>`
+   
+       
+   * - 24050   
+       
+     - Remittance facilitation, promotion and optimisation
+     - Includes programmes aiming at reducing the sending costs of remittances.
+     - :ref:`240 <SectorCategory>`
+   
+       
+   * - 24081   
+       
+     - Education/training in banking and financial services
+     - 
+     - :ref:`240 <SectorCategory>`
+   
+       
+   * - 25010   
+       
+     - Business Policy and Administration
+     - Public sector policies and institution support to the business environment and investment climate, including business regulations, property rights, non-discrimination, investment promotion, competition policy, enterprises law, private-public partnerships.
+     - :ref:`250 <SectorCategory>`
+   
+       
+   * - 25020   
+       
+     - Privatisation
+     - When sector cannot be specified. Including general state enterprise restructuring or demonopolisation programmes; planning, programming, advice.
+     - :ref:`250 <SectorCategory>`
+   
+       
+   * - 25030   
+       
+     - Business development services
+     - Public and private provision of business development services, e.g. incubators, business strategies, commercial linkages programmes and matchmaking services. Includes support to private organisations representing businesses, e.g. business associations; chambers of commerce; producer associations; providers of know-how and other business development services. For financial services use CRS codes 24030 or 24040. For SME development and for support to companies in the industrial sector use codes 32130 through 32172. For support to companies in the agricultural sector use code 31120.
+     - :ref:`250 <SectorCategory>`
+   
+       
+   * - 25040   
+       
+     - Responsible Business Conduct
+     - Support to policy reform, implementation and enforcement of responsible business conduct (RBC) principles and standards as well as facilitation of responsible business practices by companies. Includes establishing and enforcing a legal and regulatory framework to protect stakeholder rights and the environment, rewarding best performers; exemplifying RBC in government economic activities, such as state-owned enterprises’ operations or public procurement; support to the implementation of the OECD Guidelines for MNEs, including disclosure, human rights, employment and industrial relations, environment, combating bribery, consumer interests, science and technology, competition and taxation.
+     - :ref:`250 <SectorCategory>`
+   
+       
+   * - 31110   
+       
+     - Agricultural policy and administrative management
+     - Agricultural sector policy, planning and programmes; aid to agricultural ministries; institution capacity building and advice; unspecified agriculture.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31120   
+       
+     - Agricultural development
+     - Integrated projects; farm development.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31130   
+       
+     - Agricultural land resources
+     - Including soil degradation control; soil improvement; drainage of water logged areas; soil desalination; agricultural land surveys; land reclamation; erosion control, desertification control.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31140   
+       
+     - Agricultural water resources
+     - Irrigation, reservoirs, hydraulic structures, ground water exploitation for agricultural use.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31150   
+       
+     - Agricultural inputs
+     - Supply of seeds, fertilizers, agricultural machinery/equipment.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31161   
+       
+     - Food crop production
+     - Including grains (wheat, rice, barley, maize, rye, oats, millet, sorghum); horticulture; vegetables; fruit and berries; other annual and perennial crops. [Use code 32161 for agro-industries.]
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31162   
+       
+     - Industrial crops/export crops
+     - Including sugar; coffee, cocoa, tea; oil seeds, nuts, kernels; fibre crops; tobacco; rubber. [Use code 32161 for agro-industries.]
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31163   
+       
+     - Livestock
+     - Animal husbandry; animal feed aid.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31164   
+       
+     - Agrarian reform
+     - Including agricultural sector adjustment.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31165   
+       
+     - Agricultural alternative development
+     - Projects to reduce illicit drug cultivation through other agricultural marketing and production opportunities (see code 43050 for non-agricultural alternative development).
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31166   
+       
+     - Agricultural extension
+     - Non-formal training in agriculture.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31181   
+       
+     - Agricultural education/training
+     - 
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31182   
+       
+     - Agricultural research
+     - Plant breeding, physiology, genetic resources, ecology, taxonomy, disease control, agricultural bio-technology; including livestock research (animal health, breeding and genetics, nutrition, physiology).
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31191   
+       
+     - Agricultural services
+     - Marketing policies & organisation; storage and transportation, creation of strategic reserves.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31192   
+       
+     - Plant and post-harvest protection and pest control
+     - Including integrated plant protection, biological plant protection activities, supply and management of agrochemicals, supply of pesticides, plant protection policy and legislation.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31193   
+       
+     - Agricultural financial services
+     - Financial intermediaries for the agricultural sector including credit schemes; crop insurance.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31194   
+       
+     - Agricultural co-operatives
+     - Including farmers’ organisations.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31195   
+       
+     - Livestock/veterinary services
+     - Animal health and management, genetic resources, feed resources.
+     - :ref:`311 <SectorCategory>`
+   
+       
+   * - 31210   
+       
+     - Forestry policy and administrative management
+     - Forestry sector policy, planning and programmes; institution capacity building and advice; forest surveys; unspecified forestry and agro-forestry activities.
+     - :ref:`312 <SectorCategory>`
+   
+       
+   * - 31220   
+       
+     - Forestry development
+     - Afforestation for industrial and rural consumption; exploitation and utilisation; erosion control, desertification control; integrated forestry projects.
+     - :ref:`312 <SectorCategory>`
+   
+       
+   * - 31261   
+       
+     - Fuelwood/charcoal
+     - Sustainable forestry development whose primary purpose is production of fuelwood and charcoal. Further transformation of biomass in biofuels is coded under 32173.
+     - :ref:`312 <SectorCategory>`
+   
+       
+   * - 31281   
+       
+     - Forestry education/training
+     - 
+     - :ref:`312 <SectorCategory>`
+   
+       
+   * - 31282   
+       
+     - Forestry research
+     - Including artificial regeneration, genetic improvement, production methods, fertilizer, harvesting.
+     - :ref:`312 <SectorCategory>`
+   
+       
+   * - 31291   
+       
+     - Forestry services
+     - 
+     - :ref:`312 <SectorCategory>`
+   
+       
+   * - 31310   
+       
+     - Fishing policy and administrative management
+     - Fishing sector policy, planning and programmes; institution capacity building and advice; ocean and coastal fishing; marine and freshwater fish surveys and prospecting; fishing boats/equipment; unspecified fishing activities.
+     - :ref:`313 <SectorCategory>`
+   
+       
+   * - 31320   
+       
+     - Fishery development
+     - Exploitation and utilisation of fisheries; fish stock protection; aquaculture; integrated fishery projects.
+     - :ref:`313 <SectorCategory>`
+   
+       
+   * - 31381   
+       
+     - Fishery education/training
+     - 
+     - :ref:`313 <SectorCategory>`
+   
+       
+   * - 31382   
+       
+     - Fishery research
+     - Pilot fish culture; marine/freshwater biological research.
+     - :ref:`313 <SectorCategory>`
+   
+       
+   * - 31391   
+       
+     - Fishery services
+     - Fishing harbours; fish markets; fishery transport and cold storage.
+     - :ref:`313 <SectorCategory>`
+   
+       
+   * - 32110   
+       
+     - Industrial policy and administrative management
+     - Industrial sector policy, planning and programmes; institution capacity building and advice; unspecified industrial activities; manufacturing of goods not specified below.
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32120   
+       
+     - Industrial development
+     - 
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32130   
+       
+     - Small and medium-sized enterprises (SME) development
+     - Direct support to improve the productive capacity and business management of micro, small and medium-sized enterprises in the industrial sector, including accounting, auditing, advisory services, technological transfer and skill upgrading. For business policy and institutional support use code 25010. For business development services through business intermediary organisations (e.g. business associations; chambers of commerce; producer associations; incubators; providers of know-how and other business development services) use CRS code 250xx. For farm and agricultural development use code 31120.
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32140   
+       
+     - Cottage industries and handicraft
+     - 
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32161   
+       
+     - Agro-industries
+     - Staple food processing, dairy products, slaughter houses and equipment, meat and fish processing and preserving, oils/fats, sugar refineries, beverages/tobacco, animal feeds production.
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32162   
+       
+     - Forest industries
+     - Wood production, pulp/paper production.
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32163   
+       
+     - Textiles, leather and substitutes
+     - Including knitting factories.
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32164   
+       
+     - Chemicals
+     - Industrial and non-industrial production facilities; includes pesticides production.
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32165   
+       
+     - Fertilizer plants
+     - 
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32166   
+       
+     - Cement/lime/plaster
+     - 
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32167   
+       
+     - Energy manufacturing (fossil fuels)
+     - Including gas liquefaction; petroleum refineries, wholesale distribution of fossil fuels. (Use 23640 for retail distribution of gas and 23641 for retail distribution of liquid or solid fossil fuels.)
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32168   
+       
+     - Pharmaceutical production
+     - Medical equipment/supplies; drugs, medicines, vaccines; hygienic products.
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32169   
+       
+     - Basic metal industries
+     - Iron and steel, structural metal production.
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32170   
+       
+     - Non-ferrous metal industries
+     - 
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32171   
+       
+     - Engineering
+     - Manufacturing of electrical and non-electrical machinery, engines/turbines.
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32172   
+       
+     - Transport equipment industry
+     - Shipbuilding, fishing boats building; railroad equipment; motor vehicles and motor passenger cars; aircraft; navigation/guidance systems.
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32173   
+       
+     - Modern biofuels manufacturing
+     - Includes biogas, liquid biofuels and pellets for domestic and non-domestic use. Excludes raw fuelwood and charcoal (31261).
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32174   
+       
+     - Clean cooking appliances manufacturing
+     - Includes manufacturing and distribution of efficient biomass cooking stoves, gasifiers, liquid biofuels stoves, solar stoves, gas and biogas stoves, electric stoves.
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32182   
+       
+     - Technological research and development
+     - Including industrial standards; quality management; metrology; testing; accreditation; certification.
+     - :ref:`321 <SectorCategory>`
+   
+       
+   * - 32210   
+       
+     - Mineral/mining policy and administrative management
+     - Mineral and mining sector policy, planning and programmes; mining legislation, mining cadastre, mineral resources inventory, information systems, institution capacity building and advice; unspecified mineral resources exploitation.
+     - :ref:`322 <SectorCategory>`
+   
+       
+   * - 32220   
+       
+     - Mineral prospection and exploration
+     - Geology, geophysics, geochemistry; excluding hydrogeology (14010) and environmental geology (41010), mineral extraction and processing, infrastructure, technology, economics, safety and environment management.
+     - :ref:`322 <SectorCategory>`
+   
+       
+   * - 32261   
+       
+     - Coal
+     - Including lignite and peat.
+     - :ref:`322 <SectorCategory>`
+   
+       
+   * - 32262   
+       
+     - Oil and gas (upstream)
+     - Petroleum, natural gas, condensates, liquefied petroleum gas (LPG), liquefied natural gas (LNG); including drilling and production, oil and gas pipelines.
+     - :ref:`322 <SectorCategory>`
+   
+       
+   * - 32263   
+       
+     - Ferrous metals
+     - Iron and ferro-alloy metals.
+     - :ref:`322 <SectorCategory>`
+   
+       
+   * - 32264   
+       
+     - Nonferrous metals
+     - Aluminium, copper, lead, nickel, tin, zinc.
+     - :ref:`322 <SectorCategory>`
+   
+       
+   * - 32265   
+       
+     - Precious metals/materials
+     - Gold, silver, platinum, diamonds, gemstones.
+     - :ref:`322 <SectorCategory>`
+   
+       
+   * - 32266   
+       
+     - Industrial minerals
+     - Baryte, limestone, feldspar, kaolin, sand, gypsym, gravel, ornamental stones.
+     - :ref:`322 <SectorCategory>`
+   
+       
+   * - 32267   
+       
+     - Fertilizer minerals
+     - Phosphates, potash.
+     - :ref:`322 <SectorCategory>`
+   
+       
+   * - 32268   
+       
+     - Offshore minerals
+     - Polymetallic nodules, phosphorites, marine placer deposits.
+     - :ref:`322 <SectorCategory>`
+   
+       
+   * - 32310   
+       
+     - Construction policy and administrative management
+     - Construction sector policy and planning; excluding construction activities within specific sectors (e.g., hospital or school construction).
+     - :ref:`323 <SectorCategory>`
+   
+       
+   * - 33110   
+       
+     - Trade policy and administrative management
+     - Trade policy and planning; support to ministries and departments responsible for trade policy; trade-related legislation and regulatory reforms; policy analysis and implementation of multilateral trade agreements e.g. technical barriers to trade and sanitary and phytosanitary measures (TBT/SPS) except at regional level (see 33130); mainstreaming trade in national development strategies (e.g. poverty reduction strategy papers); wholesale/retail trade; unspecified trade and trade promotion activities.
+     - :ref:`331 <SectorCategory>`
+   
+       
+   * - 33120   
+       
+     - Trade facilitation
+     - Simplification and harmonisation of international import and export procedures (e.g. customs valuation, licensing procedures, transport formalities, payments, insurance); support to customs departments and other border agencies, including in particular implementation of the provisions of the WTO Trade Facilitation Agreement; tariff reforms.
+     - :ref:`331 <SectorCategory>`
+   
+       
+   * - 33130   
+       
+     - Regional trade agreements (RTAs)
+     - Support to regional trade arrangements [e.g. Southern African Development Community (SADC), Association of Southeast Asian Nations (ASEAN), Free Trade Area of the Americas (FTAA), African Caribbean Pacific/European Union (ACP/EU)], including work on technical barriers to trade and sanitary and phytosanitary measures (TBT/SPS) at regional level; elaboration of rules of origin and introduction of special and differential treatment in RTAs.
+     - :ref:`331 <SectorCategory>`
+   
+       
+   * - 33140   
+       
+     - Multilateral trade negotiations
+     - Support developing countries’ effective participation in multilateral trade negotiations, including training of negotiators, assessing impacts of negotiations; accession to the World Trade Organisation (WTO) and other multilateral trade-related organisations.
+     - :ref:`331 <SectorCategory>`
+   
+       
+   * - 33150   
+       
+     - Trade-related adjustment
+     - Contributions to the government budget to assist the implementation of recipients' own trade reforms and adjustments to trade policy measures by other countries; assistance to manage shortfalls in the balance of payments due to changes in the world trading environment.
+     - :ref:`331 <SectorCategory>`
+   
+       
+   * - 33181   
+       
+     - Trade education/training
+     - Human resources development in trade not included under any of the above codes. Includes university programmes in trade.
+     - :ref:`331 <SectorCategory>`
+   
+       
+   * - 33210   
+       
+     - Tourism policy and administrative management
+     - 
+     - :ref:`332 <SectorCategory>`
+   
+       
+   * - 41010   
+       
+     - Environmental policy and administrative management
+     - Environmental policy, laws, regulations and economic instruments; administrational institutions and practices; environmental and land use planning and decision-making procedures; seminars, meetings; miscellaneous conservation and protection measures not specified below.
+     - :ref:`410 <SectorCategory>`
+   
+       
+   * - 41020   
+       
+     - Biosphere protection
+     - Air pollution control, ozone layer preservation; marine pollution control.
+     - :ref:`410 <SectorCategory>`
+   
+       
+   * - 41030   
+       
+     - Bio-diversity
+     - Including natural reserves and actions in the surrounding areas; other measures to protect endangered or vulnerable species and their habitats (e.g. wetlands preservation).
+     - :ref:`410 <SectorCategory>`
+   
+       
+   * - 41040   
+       
+     - Site preservation
+     - Applies to unique cultural landscape; including sites/objects of historical, archeological, aesthetic, scientific or educational value.
+     - :ref:`410 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 41050 (withdrawn)
+       
+     - Flood prevention/control
+     - Floods from rivers or the sea; including sea water intrusion control and sea level rise related activities.
+     - :ref:`410 <SectorCategory>`
+   
+       
+   * - 41081   
+       
+     - Environmental education/training
+     - 
+     - :ref:`410 <SectorCategory>`
+   
+       
+   * - 41082   
+       
+     - Environmental research
+     - Including establishment of databases, inventories/accounts of physical and natural resources; environmental profiles and impact studies if not sector specific.
+     - :ref:`410 <SectorCategory>`
+   
+       
+   * - 43010   
+       
+     - Multisector aid
+     - 
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43030   
+       
+     - Urban development and management
+     - Integrated urban development projects; local development and urban management; urban infrastructure and services; municipal finances; urban environmental management; urban development and planning; urban renewal and urban housing; land information systems.
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43031   
+       
+     - Urban land policy and management
+     - Urban development and planning; urban management, land information systems.
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43032   
+       
+     - Urban development
+     - Integrated urban development projects; local development; urban infrastructure and services; municipal finances; urban environment systems; urban renewal and urban housing.
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43040   
+       
+     - Rural development
+     - Integrated rural development projects; e.g. regional development planning; promotion of decentralised and multi-sectoral competence for planning, co-ordination and management; implementation of regional development and measures (including natural reserve management); land management; land use planning; land settlement and resettlement activities [excluding resettlement of refugees and internally displaced persons (72010)]; functional integration of rural and urban areas; geographical information systems.
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43041   
+       
+     - Rural land policy and management
+     - Regional development planning; promotion of decentralised and multi-sectoral competence for planning, co-ordination and management; land management; land use planning; geographical information systems.
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43042   
+       
+     - Rural development
+     - Integrated rural development projects; implementation of regional development and measures (including natural reserve management); land settlement and resettlement activities [excluding resettlement of refugees and internally displaced persons (72010)]; functional integration of rural and urban areas.
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43050   
+       
+     - Non-agricultural alternative development
+     - Projects to reduce illicit drug cultivation through, for example, non-agricultural income opportunities, social and physical infrastructure (see code 31165 for agricultural alternative development).
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43060   
+       
+     - Disaster Risk Reduction
+     - Disaster risk reduction activities if not sector specific. Comprises risk assessments, structural prevention measures (e.g. flood prevention infrastructure), preparedness measures (e.g. early warning systems) normative prevention measures (e.g. building codes, land-use planning), and risk transfer systems (e.g. insurance schemes, risk funds). Also includes building local and national capacities and supporting the establishment of efficient and sustainable national structures able to promote disaster risk reduction.
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43071   
+       
+     - Food security policy and administrative management
+     - Food security policy, programmes and activities; institution capacity strengthening; policies, programmes for the reduction of food loss/waste; food security information systems, data collection, statistics, analysis, tools, methods; coordination and governance mechanisms; other unspecified food security activities.
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43072   
+       
+     - Household food security programmes
+     - Short or longer term household food security programmes and activities that improve the access of households to nutritionally adequate diets (excluding any cash transfers within broader social welfare programmes that do not have a specific food security, food acquisition or nutrition focus which should be reported under code 16010).
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43073   
+       
+     - Food safety and quality
+     - Food safety and quality policies, programmes and activities, including food inspection and certification; strengthening food safety/quality capacities and development of standards along the value chain; monitoring/surveillance and laboratory capacities; and delivery of information, communication, education.
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43081   
+       
+     - Multisector education/training
+     - Including scholarships.
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 43082   
+       
+     - Research/scientific institutions
+     - When sector cannot be identified.
+     - :ref:`430 <SectorCategory>`
+   
+       
+   * - 51010   
+       
+     - General budget support-related aid
+     - Unearmarked contributions to the government budget; support for the implementation of macroeconomic reforms (structural adjustment programmes, poverty reduction strategies); general programme assistance (when not allocable by sector).
+     - :ref:`510 <SectorCategory>`
+   
+       
+   * - 52010   
+       
+     - Food assistance
+     - Supply of edible human food under national or international programmes including transport costs, cash payments made for food supplies; project food assistance aid and food assistance aid for market sales when benefiting sector not specified. Excludes food security policy and administrative management (43071), household food security programmes (43072) and emergency food assistance aid (72040). Report as multilateral: i) food assistance aid by EU financed out of its budget and allocated pro rata to EU member countries; and ii) core contributions to the World Food Programme.
+     - :ref:`520 <SectorCategory>`
+   
+       
+   * - 53030   
+       
+     - Import support (capital goods)
+     - Capital goods and services; lines of credit.
+     - :ref:`530 <SectorCategory>`
+   
+       
+   * - 53040   
+       
+     - Import support (commodities)
+     - Commodities, general goods and services, oil imports.
+     - :ref:`530 <SectorCategory>`
+   
+       
+   * - 60010   
+       
+     - Action relating to debt
+     - Actions falling outside the code headings below.
+     - :ref:`600 <SectorCategory>`
+   
+       
+   * - 60020   
+       
+     - Debt forgiveness
+     - 
+     - :ref:`600 <SectorCategory>`
+   
+       
+   * - 60030   
+       
+     - Relief of multilateral debt
+     - Grants or credits to cover debt owed to multilateral financial institutions; including contributions to Heavily Indebted Poor Countries (HIPC) Trust Fund.
+     - :ref:`600 <SectorCategory>`
+   
+       
+   * - 60040   
+       
+     - Rescheduling and refinancing
+     - 
+     - :ref:`600 <SectorCategory>`
+   
+       
+   * - 60061   
+       
+     - Debt for development swap
+     - Allocation of debt claims to use for development (e.g., debt for education, debt for environment).
+     - :ref:`600 <SectorCategory>`
+   
+       
+   * - 60062   
+       
+     - Other debt swap
+     - Where the debt swap benefits an external agent i.e. is not specifically for development purposes.
+     - :ref:`600 <SectorCategory>`
+   
+       
+   * - 60063   
+       
+     - Debt buy-back
+     - Purchase of debt for the purpose of cancellation.
+     - :ref:`600 <SectorCategory>`
+   
+       
+   * - 72010   
+       
+     - Material relief assistance and services
+     - Shelter, water, sanitation, education, health services including supply of medicines and malnutrition management, including medical nutrition management; supply of other nonfood relief items (including cash and voucher delivery modalities) for the benefit of crisisaffected people, including refugees and internally displaced people in developing countries, Includes assistance delivered by or coordinated by international civil protection units in the immediate aftermath of a disaster (in-kind assistance, deployment of specially-equipped teams, logistics and transportation, or assessment and coordination by experts sent to the field). Also includes measures to promote and protect the safety, well-being, dignity and integrity of crisis-affected people including refugees and internally displaced persons in developing countries. (Activities designed to protect the security of persons or properties through the use or display of force are not reportable as ODA.)
+     - :ref:`720 <SectorCategory>`
+   
+       
+   * - 72011   
+       
+     - Basic Health Care Services in Emergencies
+     - Provision of health services (basic health services, mental health, sexual and reproductive health), medical nutritional intervention (therapeutic feeding and medical interventions for treating malnutrition) and supply of medicines for the benefit of affected people. Excludes supplemental feeding (72040).
+     - :ref:`720 <SectorCategory>`
+   
+       
+   * - 72012   
+       
+     - Education in emergencies
+     - Support for education facilities (including restoring pre-existing essential infrastructure and school facilities), teaching, training and learning materials (including digital technologies, as appropriate) and immediate access to quality basic and primary education (including formal and non-formal education), and secondary education (including vocational training and secondary level technical education) in emergencies for the benefit of affected children and youth, particularly targeting girls and women and refugees, life skills for youth and adults, and vocational training for youth and adults
+     - :ref:`720 <SectorCategory>`
+   
+       
+   * - 72040   
+       
+     - Emergency food assistance
+     - Provision and distribution of food; cash and vouchers for the purchase of food; non-medical nutritional interventions for the benefit of crisis-affected people, including refugees and internally displaced people in developing countries in emergency situations. Includes logistical costs. Excludes non-emergency food assistance (52010), food security policy and administrative management (43071), household food programmes (43072) and medical nutrition interventions (therapeutic feeding) (72010 and 72011).
+     - :ref:`720 <SectorCategory>`
+   
+       
+   * - 72050   
+       
+     - Relief co-ordination and support services
+     - Measures to co-ordinate the assessment and safe delivery of humanitarian aid, including logistic, transport and communication systems; direct financial or technical support to national governments of affected countries to manage a disaster situation; activities to build an evidence base for humanitarian financing and operations, sharing this information and developing standards and guidelines for more effective response; funding for identifying and sharing innovative and scalable solutions to deliver effective humanitarian assistance.
+     - :ref:`720 <SectorCategory>`
+   
+       
+   * - 73010   
+       
+     - Immediate post-emergency reconstruction and rehabilitation
+     - Social and economic rehabilitation in the aftermath of emergencies to facilitate recovery and resilience building and enable populations to restore their livelihoods in the wake of an emergency situation (e.g. trauma counselling and treatment, employment programmes). Includes infrastructure necessary for the delivery of humanitarian aid; restoring pre-existing essential infrastructure and facilities (e.g. water and sanitation, shelter, health care services, education); rehabilitation of basic agricultural inputs and livestock. Excludes longer-term reconstruction (“build back better”) which is reportable against relevant sectors.
+     - :ref:`730 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 74010 (withdrawn)
+       
+     - Disaster prevention and preparedness
+     - Disaster risk reduction activities (e.g. developing knowledge, natural risks cartography, legal norms for construction); early warning systems; emergency contingency stocks and contingency planning including preparations for forced displacement.
+     - :ref:`740 <SectorCategory>`
+   
+       
+   * - 74020   
+       
+     - Multi-hazard response preparedness
+     - Building the responsiveness, capability and capacity of international, regional and national humanitarian actors to disasters. Support to the institutional capacities of national and local government, specialised humanitarian bodies, and civil society organisations to anticipate, respond and recover from the impact of potential, imminent and current hazardous events and emergency situations that pose humanitarian threats and could call for a humanitarian response. This includes risk analysis and assessment, mitigation, preparedness, such as stockpiling of emergency items and training and capacity building aimed to increase the speed and effectiveness of lifesaving assistance delivered in the occurrence of crisis.
+     - :ref:`740 <SectorCategory>`
+   
+       
+   * - 91010   
+       
+     - Administrative costs (non-sector allocable)
+     - 
+     - :ref:`910 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 92010 (withdrawn)
+       
+     - Support to national NGOs
+     - In the donor country.
+     - :ref:`920 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 92020 (withdrawn)
+       
+     - Support to international NGOs
+     - 
+     - :ref:`920 <SectorCategory>`
+   
+        
+       .. rst-class:: withdrawn
+   * - 92030 (withdrawn)
+       
+     - Support to local and regional NGOs
+     - In the recipient country or region.
+     - :ref:`920 <SectorCategory>`
+   
+       
+   * - 93010   
+       
+     - Refugees/asylum seekers in donor countries (non-sector allocable)
+     - Costs incurred in donor countries for basic assistance to asylum seekers and refugees from developing countries, up to 12 months, when costs cannot be disaggregated. See section II.6 and Annex 17.
+     - :ref:`930 <SectorCategory>`
+   
+       
+   * - 93011   
+       
+     - Refugees/asylum seekers in donor countries - food and shelter
+     - Costs incurred in donor countries for basic assistance to asylum seekers and refugees from developing countries, up to 12 months – food and shelter: - Food and other essential temporary sustenance provisions such as clothing. - Temporary accommodation facilities (e.g. reception centres, containers, tent camps). In respect of buildings, only the costs of maintenance and upkeep may be reported as ODA. The cost of renting temporary accommodation facilities is eligible. (All construction costs are excluded).
+     - :ref:`930 <SectorCategory>`
+   
+       
+   * - 93012   
+       
+     - Refugees/asylum seekers in donor countries - training
+     - Costs incurred in donor countries for basic assistance to asylum seekers and refugees from developing countries, up to 12 months – training: - Early childhood education, primary and secondary education for children (this includes school costs but excludes vocational training), as part of temporary sustenance. - Language training and other ad-hoc basic training for refugees e.g. basic life skills for youth and adults (literacy and numeracy training).
+     - :ref:`930 <SectorCategory>`
+   
+       
+   * - 93013   
+       
+     - Refugees/asylum seekers in donor countries - health
+     - Costs incurred in donor countries for basic assistance to asylum seekers and refugees from developing countries, up to 12 months: basic health care and psycho-social support for persons with specific needs e.g. unaccompanied minors, persons with disabilities, survivors of violence and torture.
+     - :ref:`930 <SectorCategory>`
+   
+       
+   * - 93014   
+       
+     - Refugees/asylum seekers in donor countries - other temporary sustenance
+     - Costs incurred in donor countries for basic assistance to asylum seekers and refugees from developing countries, up to 12 months: temporary sustenance other than food and shelter (code 93011), training (93012) and health (93013), i.e. cash “pocket money” to cover subsistence costs and assistance in the asylum procedure: translation of documents, legal and administrative counselling, interpretation services.
+     - :ref:`930 <SectorCategory>`
+   
+       
+   * - 93015   
+       
+     - Refugees/asylum seekers in donor countries - voluntary repatriation
+     - Costs incurred in donor countries for basic assistance to asylum seekers and refugees from developing countries, up to 12 months: voluntary repatriation of refugees to a developing country during first twelve months.
+     - :ref:`930 <SectorCategory>`
+   
+       
+   * - 93016   
+       
+     - Refugees/asylum seekers in donor countries - transport
+     - Costs incurred in donor countries for basic assistance to asylum seekers and refugees from developing countries, up to 12 months: transport to the host country in the case of resettlement programmes and transport within the host country.
+     - :ref:`930 <SectorCategory>`
+   
+       
+   * - 93017   
+       
+     - Refugees/asylum seekers in donor countries - rescue at sea
+     - Costs incurred in donor countries for basic assistance to asylum seekers and refugees from developing countries, up to 12 months: rescue of refugees at sea when it is the main purpose of the operation. Only the additional costs related to the operation may be counted.
+     - :ref:`930 <SectorCategory>`
+   
+       
+   * - 93018   
+       
+     - Refugees/asylum seekers in donor countries - administrative costs
+     - Costs incurred in donor countries for basic assistance to asylum seekers and refugees from developing countries, up to 12 months: administrative costs. Only overhead costs attached to the direct provision of temporary sustenance to refugees are eligible. This includes costs of personnel assigned to provide eligible services to refugees, but does not include costs of personnel who are not involved in the direct execution of these services, e.g. management, human resources, information technology.
+     - :ref:`930 <SectorCategory>`
+   
+       
+   * - 99810   
+       
+     - Sectors not specified
+     - Contributions to general development of the recipient should be included under programme assistance (51010).
+     - :ref:`998 <SectorCategory>`
+   
+       
+   * - 99820   
+       
+     - Promotion of development awareness (non-sector allocable)
+     - Spending in donor country for heightened awareness/interest in development co-operation (brochures, lectures, special research projects, etc.).
+     - :ref:`998 <SectorCategory>`
+   
+

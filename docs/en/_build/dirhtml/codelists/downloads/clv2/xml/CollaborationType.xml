@@ -1,0 +1,60 @@
+<codelist name="CollaborationType" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <url>http://www.oecd.org/dac/stats/dacandcrscodelists.htm</url>
+        <name>Collaboration Type</name>
+        <description>OECD DAC classification used to determine the character of resource flows (bilateral or multilateral).</description>
+        <category>Replicated</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item status="active">
+            <code>1</code>
+            <name>Bilateral</name>
+            <name xml:lang="fr">Bilat&#233;ral</name>
+            <description/>
+            <description xml:lang="fr"/>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>2</code>
+            <name>Multilateral (inflows)</name>
+            <name xml:lang="fr">Multilat&#233;ral (contributions des donneurs du CAD)</name>
+            <description/>
+            <description xml:lang="fr"/>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>3</code>
+            <name>Bilateral, core contributions to NGOs and other private bodies / PPPs</name>
+            <name xml:lang="fr">Contributions bilat&#233;rales au budget g&#233;n&#233;ral d'organisations non gouvernementales, d'autres organisations de la soci&#233;t&#233; civile, de partenariats publics-priv&#233;s et d'instituts de recherches</name>
+            <description/>
+            <description xml:lang="fr"/>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>4</code>
+            <name>Multilateral outflows</name>
+            <name xml:lang="fr">Apports des institutions multilat&#233;rales</name>
+            <description/>
+            <description xml:lang="fr"/>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>6</code>
+            <name>Private Sector Outflows</name>
+            <name xml:lang="fr">Apports du secteur priv&#233;</name>
+            <description/>
+            <description xml:lang="fr"/>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>7</code>
+            <name>Bilateral, ex-post reporting on NGOs&#8217; activities funded through core contributions</name>
+            <name xml:lang="fr">Contributions bilat&#233;rales, notification ex post des activit&#233;s des ONG financ&#233;es par des contributions des donneurs au budget g&#233;n&#233;ral de l'ONG.</name>
+            <description/>
+            <description xml:lang="fr"/>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>8</code>
+            <name>Bilateral, triangular co-operation.</name>
+            <name xml:lang="fr">Coop&#233;ration triangulaire bilat&#233;rale.</name>
+            <description>Activities where one or more bilateral providers of development co-operation or international organisations support South-South co-operation, joining forces with developing countries to facilitate a sharing of knowledge and experience among all partners involved. (Activities that only involve bilateral providers or multilateral agencies without a South-South co-operation element (e.g. joint programming, pooled funding or delegated co-operation) should not be assigned bi_multi 8.)</description>
+            <description xml:lang="fr">Activit&#233;s o&#249; un ou plusieurs pourvoyeurs bilat&#233;raux de coop&#233;ration pour le d&#233;veloppement ou organisations internationales soutiennent la coop&#233;ration Sud-Sud, conjointement avec des pays en d&#233;veloppement afin de faciliter le partage des connaissances et d'exp&#233;riences entre tous les partenaires impliqu&#233;s. (Les activit&#233;s qui n'impliquent que des pourvoyeurs bilat&#233;raux ou des organismes multilat&#233;raux sans coop&#233;ration Sud-Sud (programmes conjoints, financements group&#233;s ou coop&#233;ration d&#233;l&#233;gu&#233;e) ne devraient pas &#234;tre cod&#233;s bi_multi 8.)</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

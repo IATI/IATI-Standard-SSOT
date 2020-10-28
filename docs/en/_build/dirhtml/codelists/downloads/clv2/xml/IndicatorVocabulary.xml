@@ -1,0 +1,62 @@
+<codelist name="IndicatorVocabulary" xml:lang="en" complete="0" embedded="0">
+    <metadata>
+        <url/>
+        <name>Indicator Vocabulary</name>
+        <description>
+                The Indicator Vocabulary codelist defines a range of external codelists which themselves provide codes and descriptions for indicators, for example to specify results.
+            </description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <url>http://apps.who.int/gho/indicatorregistry/App_Main/indicator_registry.aspx</url>
+            <name>WHO Registry</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <url>http://www.spherehandbook.org</url>
+            <name>Sphere Handbook</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <url>http://www.state.gov/s/d/rm/rls/dosstrat/2007/html/82981.htm</url>
+            <name>US Foreign Assistance Framework</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <url>http://data.worldbank.org/data-catalog/world-development-indicators</url>
+            <name>World Bank World Development Indicators</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <url>http://mdgs.un.org/unsd/mdg/Host.aspx?Content=Indicators/OfficialList.htm</url>
+            <name>UN Millennium Development Goals Indicators</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6</code>
+            <url>https://www.humanitarianresponse.info/applications/ir/indicators</url>
+            <name>UNOCHA Humanitarian Response Indicators</name>
+        </codelist-item>
+        <codelist-item>
+            <code>7</code>
+            <url>http://www.indicatorregistry.org</url>
+            <name>HIV/AIDS Indicator Registry</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8</code>
+            <url>https://indicators.ifipartnership.org/indicators/</url>
+            <name>Harmonized Indicators for Private Sector (HIPSO)</name>
+        </codelist-item>
+        <codelist-item>
+            <code>9</code>
+            <url>https://unstats.un.org/sdgs/indicators/indicators-list/</url>
+            <name>UN Sustainable Development Goals (SDG) Indicators</name>
+        </codelist-item>
+        <codelist-item>
+            <code>99</code>
+            <name>Reporting Organisation</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

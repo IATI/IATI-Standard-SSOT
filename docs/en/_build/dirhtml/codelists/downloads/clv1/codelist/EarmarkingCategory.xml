@@ -1,0 +1,26 @@
+<codelist name="EarmarkingCategory" date-last-modified="2020-10-28T16:50:17.955250+00:00" version="" xml:lang="en">
+  <EarmarkingCategory>
+    <code>1</code>
+    <name>Unearmarked</name>
+    <language>en</language>
+    <description>Any or all of the Earmarking Modality codes A,B or C.</description>
+  </EarmarkingCategory>
+  <EarmarkingCategory>
+    <code>2</code>
+    <name>Softly Earmarked</name>
+    <language>en</language>
+    <description>Any or all of the Earmarking Modality codes D,E or F.</description>
+  </EarmarkingCategory>
+  <EarmarkingCategory>
+    <code>3</code>
+    <name>Earmarked</name>
+    <language>en</language>
+    <description>Any or all of the Earmarking Modality codes G or H.</description>
+  </EarmarkingCategory>
+  <EarmarkingCategory>
+    <code>4</code>
+    <name>Tightly Earmarked</name>
+    <language>en</language>
+    <description>Any or all of the Earmarking Modality codes I,J or K.</description>
+  </EarmarkingCategory>
+</codelist>

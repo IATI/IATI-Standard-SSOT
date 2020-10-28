@@ -1,0 +1,26 @@
+<codelist name="BudgetStatus" xml:lang="en" complete="1" embedded="1">
+    <metadata>
+        <name>Budget Status</name>
+        <description>Code to denote if the described budget is binding.</description>
+        <category>Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Indicative</name>
+            <name xml:lang="en">Indicative</name>
+            <name xml:lang="fr">Indicatif</name>
+            <description>A non-binding estimate for the described budget.</description>
+            <description xml:lang="fr">Une estimation non contraignante du budget d&#233;crit.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Committed</name>
+            <name xml:lang="en">Committed</name>
+            <name xml:lang="fr">Engag&#233;</name>
+            <description>A binding agreement for the described budget.</description>
+            <description xml:lang="fr">Une entente contraignante au sujet du budget d&#233;crit.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

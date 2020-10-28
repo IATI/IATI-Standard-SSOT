@@ -1,0 +1,17 @@
+<codelist name="BudgetNotProvided" date-last-modified="2020-10-28T16:50:17.982154+00:00" version="" xml:lang="en">
+  <BudgetNotProvided>
+    <code>1</code>
+    <name>Commercial Restrictions</name>
+    <language>en</language>
+  </BudgetNotProvided>
+  <BudgetNotProvided>
+    <code>2</code>
+    <name>Legal Restrictions</name>
+    <language>en</language>
+  </BudgetNotProvided>
+  <BudgetNotProvided>
+    <code>3</code>
+    <name>Rapid Onset Emergency</name>
+    <language>en</language>
+  </BudgetNotProvided>
+</codelist>

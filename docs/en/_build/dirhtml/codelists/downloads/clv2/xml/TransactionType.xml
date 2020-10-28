@@ -1,0 +1,100 @@
+<codelist name="TransactionType" xml:lang="en" complete="1" embedded="1">
+    <metadata>
+        <name>Transaction Type</name>
+        <category>Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Incoming Funds</name>
+            <name xml:lang="fr">Fonds entrants</name>
+            <description>Funds recieved for use on the activity, which can be from an external or internal source. </description>
+            <description xml:lang="fr">Fonds re&#231;us pour &#234;tre utilis&#233;s dans le cadre de l'activit&#233; et qui peuvent provenir d'une source externe ou interne.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Outgoing Commitment</name>
+            <name xml:lang="fr">Engagement sortant</name>
+            <description>A firm, written obligation from a donor or provider to provide a specified amount of funds, under particular terms and conditions, for specific purposes, for the benefit of the recipient. </description>
+            <description xml:lang="fr">Une obligation ferme et &#233;crite d'un donateur ou d'un fournisseur d'offrir au b&#233;n&#233;ficiaire un financement d'un montant &#233;tabli, conform&#233;ment &#224; des modalit&#233;s pr&#233;cises, dans un but explicite.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Disbursement</name>
+            <name xml:lang="fr">D&#233;caissement</name>
+            <description>Outgoing funds that are placed at the disposal of a recipient government or organisation, or funds transferred between two separately reported activities.</description>
+            <description xml:lang="fr">Fonds sortants mis &#224; la disposition d'un gouvernement ou d'une organisation b&#233;n&#233;ficiaire ou fonds transf&#233;r&#233;s entre deux activit&#233;s faisant l'objet de d&#233;clarations distinctes.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Expenditure</name>
+            <name xml:lang="fr">D&#233;penses</name>
+            <description>Outgoing funds that are spent on goods and services for the activity.</description>
+            <description xml:lang="fr">Fonds sortants d&#233;pens&#233;s pour acqu&#233;rir des biens et services pour l'activit&#233;.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>Interest Payment</name>
+            <name xml:lang="fr">Paiements d&#8217;int&#233;r&#234;ts</name>
+            <description>The actual amount of interest paid on a loan or line of credit, including fees.</description>
+            <description xml:lang="fr">Le montant r&#233;el des int&#233;r&#234;ts pay&#233;s en lien avec un pr&#234;t ou une marge de cr&#233;dit, y compris les frais.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>6</code>
+            <name>Loan Repayment</name>
+            <name xml:lang="fr">Remboursement du pr&#234;t</name>
+            <description>The actual amount of principal (amortisation) repaid, including any arrears. </description>
+            <description xml:lang="fr">Le montant r&#233;el du capital rembours&#233; (amortissement), y compris les arri&#233;r&#233;s, le cas &#233;ch&#233;ant.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>7</code>
+            <name>Reimbursement</name>
+            <name xml:lang="fr">Remboursement</name>
+            <description>A type of disbursement that covers funds that have already been spent by the recipient, as agreed in the terms of the grant or loan</description>
+            <description xml:lang="fr">Un type de d&#233;caissement qui couvre des fonds qui ont d&#233;j&#224; &#233;t&#233; d&#233;pens&#233;s par le b&#233;n&#233;ficiaire, conform&#233;ment aux modalit&#233;s de la subvention ou du pr&#234;t</description>
+        </codelist-item>
+        <codelist-item>
+            <code>8</code>
+            <name>Purchase of Equity</name>
+            <name xml:lang="fr">Achat d'&#233;quit&#233;</name>
+            <description>Outgoing funds that are used to purchase equity in a business</description>
+            <description xml:lang="fr">Fonds sortants qui sont utilis&#233;s pour acqu&#233;rir de l'&#233;quit&#233; dans une entreprise</description>
+        </codelist-item>
+        <codelist-item>
+            <code>9</code>
+            <name>Sale of Equity</name>
+            <name xml:lang="fr">Vente d'&#233;quit&#233;</name>
+            <description>Incoming funds from the sale of equity. </description>
+            <description xml:lang="fr">Fonds re&#231;us en lien avec la vente d'&#233;quit&#233;</description>
+        </codelist-item>
+        <codelist-item>
+            <code>10</code>
+            <name>Credit Guarantee</name>
+            <name xml:lang="fr">Caution</name>
+            <description>A commitment made by a funding organisation to underwrite a loan or line of credit entered into by a third party. </description>
+            <description xml:lang="fr">Engagement pris par une organisation de financement pour garantir un pr&#234;t ou une marge de cr&#233;dit contract&#233;s par une tierce partie.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>11</code>
+            <name>Incoming Commitment</name>
+            <name xml:lang="fr">Engagement entrant</name>
+            <description>A firm, written obligation from a donor or provider to provide a specified amount of funds, under particular terms and conditions, reported by a recipient for this activity.</description>
+            <description xml:lang="fr">Une obligation ferme et &#233;crite d'un donateur ou d'un fournisseur d'offrir un financement d'un montant &#233;tabli, conform&#233;ment &#224; des modalit&#233;s pr&#233;cises et d&#233;clar&#233;e par le b&#233;n&#233;ficiaire en lien avec l'activit&#233;.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>12</code>
+            <name>Outgoing Pledge</name>
+            <name xml:lang="fr">Promesse sortante</name>
+            <description>Indicative, non-binding advice of an intended outgoing commitment.</description>
+            <description xml:lang="fr">Avis indicatif et sans obligation indiquant une intention de prendre un engagement sortant.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>13</code>
+            <name>Incoming Pledge</name>
+            <name xml:lang="fr">Promesse entrante</name>
+            <description>Indicative, non-binding advice of an intended incoming commitment.</description>
+            <description xml:lang="fr">Avis indicatif et sans obligation indiquant une intention de prendre un engagement entrant.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

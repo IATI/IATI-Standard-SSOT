@@ -1,0 +1,7 @@
+Sitemap
+=======
+
+.. toctree::
+   :titlesonly:
+
+   reference

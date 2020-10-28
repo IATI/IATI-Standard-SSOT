@@ -1,0 +1,26 @@
+<codelist name="GeographicLocationClass" date-last-modified="2020-10-28T16:50:17.905751+00:00" version="" xml:lang="en">
+  <GeographicLocationClass>
+    <code>1</code>
+    <name>Administrative Region</name>
+    <language>en</language>
+    <description>The designated geographic location is an administrative region (state, county, province, district, municipality etc.)</description>
+  </GeographicLocationClass>
+  <GeographicLocationClass>
+    <code>2</code>
+    <name>Populated Place</name>
+    <language>en</language>
+    <description>The designated geographic location is a populated place (town, village, farm etc.)</description>
+  </GeographicLocationClass>
+  <GeographicLocationClass>
+    <code>3</code>
+    <name>Structure</name>
+    <language>en</language>
+    <description>The designated geopgraphic location is a structure (such as a school or a clinic)</description>
+  </GeographicLocationClass>
+  <GeographicLocationClass>
+    <code>4</code>
+    <name>Other Topographical Feature</name>
+    <language>en</language>
+    <description>The designated geographic location is a topographical feature, such as a mountain, a river, a forest</description>
+  </GeographicLocationClass>
+</codelist>

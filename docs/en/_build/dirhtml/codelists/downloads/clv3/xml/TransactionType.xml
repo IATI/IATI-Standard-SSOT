@@ -1,0 +1,155 @@
+<codelist name="TransactionType" xml:lang="en" complete="1" embedded="1">
+    <metadata>
+        <name>
+            <narrative>Transaction Type</narrative>
+        </name>
+        <category>
+            <narrative>Core</narrative>
+        </category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>
+                <narrative>Incoming Funds</narrative>
+                <narrative xml:lang="fr">Fonds entrants</narrative>
+            </name>
+            <description>
+                <narrative>Funds recieved for use on the activity, which can be from an external or internal source. </narrative>
+                <narrative xml:lang="fr">Fonds reçus pour être utilisés dans le cadre de l'activité et qui peuvent provenir d'une source externe ou interne.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>
+                <narrative>Outgoing Commitment</narrative>
+                <narrative xml:lang="fr">Engagement sortant</narrative>
+            </name>
+            <description>
+                <narrative>A firm, written obligation from a donor or provider to provide a specified amount of funds, under particular terms and conditions, for specific purposes, for the benefit of the recipient. </narrative>
+                <narrative xml:lang="fr">Une obligation ferme et écrite d'un donateur ou d'un fournisseur d'offrir au bénéficiaire un financement d'un montant établi, conformément à des modalités précises, dans un but explicite.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>
+                <narrative>Disbursement</narrative>
+                <narrative xml:lang="fr">Décaissement</narrative>
+            </name>
+            <description>
+                <narrative>Outgoing funds that are placed at the disposal of a recipient government or organisation, or funds transferred between two separately reported activities.</narrative>
+                <narrative xml:lang="fr">Fonds sortants mis à la disposition d'un gouvernement ou d'une organisation bénéficiaire ou fonds transférés entre deux activités faisant l'objet de déclarations distinctes.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>
+                <narrative>Expenditure</narrative>
+                <narrative xml:lang="fr">Dépenses</narrative>
+            </name>
+            <description>
+                <narrative>Outgoing funds that are spent on goods and services for the activity.</narrative>
+                <narrative xml:lang="fr">Fonds sortants dépensés pour acquérir des biens et services pour l'activité.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>
+                <narrative>Interest Payment</narrative>
+                <narrative xml:lang="fr">Paiements d’intérêts</narrative>
+            </name>
+            <description>
+                <narrative>The actual amount of interest paid on a loan or line of credit, including fees.</narrative>
+                <narrative xml:lang="fr">Le montant réel des intérêts payés en lien avec un prêt ou une marge de crédit, y compris les frais.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>6</code>
+            <name>
+                <narrative>Loan Repayment</narrative>
+                <narrative xml:lang="fr">Remboursement du prêt</narrative>
+            </name>
+            <description>
+                <narrative>The actual amount of principal (amortisation) repaid, including any arrears. </narrative>
+                <narrative xml:lang="fr">Le montant réel du capital remboursé (amortissement), y compris les arriérés, le cas échéant.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>7</code>
+            <name>
+                <narrative>Reimbursement</narrative>
+                <narrative xml:lang="fr">Remboursement</narrative>
+            </name>
+            <description>
+                <narrative>A type of disbursement that covers funds that have already been spent by the recipient, as agreed in the terms of the grant or loan</narrative>
+                <narrative xml:lang="fr">Un type de décaissement qui couvre des fonds qui ont déjà été dépensés par le bénéficiaire, conformément aux modalités de la subvention ou du prêt</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>8</code>
+            <name>
+                <narrative>Purchase of Equity</narrative>
+                <narrative xml:lang="fr">Achat d'équité</narrative>
+            </name>
+            <description>
+                <narrative>Outgoing funds that are used to purchase equity in a business</narrative>
+                <narrative xml:lang="fr">Fonds sortants qui sont utilisés pour acquérir de l'équité dans une entreprise</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>9</code>
+            <name>
+                <narrative>Sale of Equity</narrative>
+                <narrative xml:lang="fr">Vente d'équité</narrative>
+            </name>
+            <description>
+                <narrative>Incoming funds from the sale of equity. </narrative>
+                <narrative xml:lang="fr">Fonds reçus en lien avec la vente d'équité</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>10</code>
+            <name>
+                <narrative>Credit Guarantee</narrative>
+                <narrative xml:lang="fr">Caution</narrative>
+            </name>
+            <description>
+                <narrative>A commitment made by a funding organisation to underwrite a loan or line of credit entered into by a third party. </narrative>
+                <narrative xml:lang="fr">Engagement pris par une organisation de financement pour garantir un prêt ou une marge de crédit contractés par une tierce partie.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>11</code>
+            <name>
+                <narrative>Incoming Commitment</narrative>
+                <narrative xml:lang="fr">Engagement entrant</narrative>
+            </name>
+            <description>
+                <narrative>A firm, written obligation from a donor or provider to provide a specified amount of funds, under particular terms and conditions, reported by a recipient for this activity.</narrative>
+                <narrative xml:lang="fr">Une obligation ferme et écrite d'un donateur ou d'un fournisseur d'offrir un financement d'un montant établi, conformément à des modalités précises et déclarée par le bénéficiaire en lien avec l'activité.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>12</code>
+            <name>
+                <narrative>Outgoing Pledge</narrative>
+                <narrative xml:lang="fr">Promesse sortante</narrative>
+            </name>
+            <description>
+                <narrative>Indicative, non-binding advice of an intended outgoing commitment.</narrative>
+                <narrative xml:lang="fr">Avis indicatif et sans obligation indiquant une intention de prendre un engagement sortant.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>13</code>
+            <name>
+                <narrative>Incoming Pledge</narrative>
+                <narrative xml:lang="fr">Promesse entrante</narrative>
+            </name>
+            <description>
+                <narrative>Indicative, non-binding advice of an intended incoming commitment.</narrative>
+                <narrative xml:lang="fr">Avis indicatif et sans obligation indiquant une intention de prendre un engagement entrant.</narrative>
+            </description>
+        </codelist-item>
+    </codelist-items>
+</codelist>

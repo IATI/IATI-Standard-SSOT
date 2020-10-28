@@ -1,0 +1,39 @@
+<codelist name="GeographicLocationClass" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Geographic Location Class</name>
+        <name xml:lang="fr">Cat&#233;gorie du lieu g&#233;ographique</name>
+        <description/>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Administrative Region</name>
+            <name xml:lang="fr">R&#233;gion administrative</name>
+            <description>The designated geographic location is an administrative region (state, county, province, district, municipality etc.)</description>
+            <description xml:lang="fr">Le lieu indiqu&#233; est une r&#233;gion administrative (&#233;tat, comt&#233;, province, district, municipalit&#233;, etc.).</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Populated Place</name>
+            <name xml:lang="fr">Lieu habit&#233;</name>
+            <description>The designated geographic location is a populated place (town, village, farm etc.)</description>
+            <description xml:lang="fr">Le lieu indiqu&#233; est habit&#233; (ville, village, exploitation agricole, etc.).</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Structure</name>
+            <name xml:lang="fr">Structure</name>
+            <description>The designated geopgraphic location is a structure (such as a school or a clinic)</description>
+            <description xml:lang="fr">Le lieu indiqu&#233; est un &#233;tablissement (p. ex., une &#233;cole ou une clinique).</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Other Topographical Feature</name>
+            <name xml:lang="fr">Autre &#233;l&#233;ment topographique</name>
+            <description>The designated geographic location is a topographical feature, such as a mountain, a river, a forest</description>
+            <description xml:lang="fr">Le lieu indiqu&#233; est un &#233;l&#233;ment topographique (p. ex., une montagne, une rivi&#232;re, une for&#234;t).</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

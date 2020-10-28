@@ -1,0 +1,15 @@
+<codelist name="ResultVocabulary" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Result Vocabulary</name>
+        <description>The ResultVocabulary codelist currently includes only 1 code (99) that can be used by organisations to define different results frameworks they are using.</description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>99</code>
+            <name>Reporting Organisation</name>
+            <name xml:lang="fr">Organisation d&#233;clarante</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

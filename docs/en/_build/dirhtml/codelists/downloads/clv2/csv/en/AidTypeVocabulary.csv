@@ -1,0 +1,5 @@
+code,name,description,category,url,status
+1,OECD DAC,List of codes provided by the OECD DAC used to distinguish types of aid,,http://reference.iatistandard.org/codelists/AidType/,active
+2,Earmarking Category,This vocabulary has been created by IATI and is derived from the Grand Bargain Earmarking Modality codelist,,http://reference.iatistandard.org/codelists/EarmarkingCategory/,active
+3,Earmarking Modality,Codes A to L replicated directly from Grand Bargain document found in Annex 1 (pg.16),,https://reliefweb.int/sites/reliefweb.int/files/resources/Grand_Bargain_final_22_May_FINAL-2.pdf,active
+4,Cash and Voucher Modalities,"This vocabulary has been created by IATI, following agreements and recommendations of the Tracking Cash and Voucher Assistance (CVA) Working Group.",,http://reference.iatistandard.org/codelists/CashandVoucherModalities/,active

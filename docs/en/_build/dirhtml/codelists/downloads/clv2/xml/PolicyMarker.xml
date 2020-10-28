@@ -1,0 +1,68 @@
+<codelist name="PolicyMarker" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <url>http://www.oecd.org/dac/stats/dacandcrscodelists.htm</url>
+        <name>Policy Marker</name>
+        <description>The Policy Marker codelist is derived from the policy markers declared by the WP-STAT. The codes themselves are created by IATI.</description>
+        <category>Replicated</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Gender Equality</name>
+            <name xml:lang="fr">Egalit&#233; des genres</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Aid to Environment</name>
+            <name xml:lang="fr">Aide &#224; l'environnement</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Participatory Development/Good Governance</name>
+            <name xml:lang="fr">D&#233;veloppement participatif/Bonne gouvernance</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Trade Development</name>
+            <name xml:lang="fr">D&#233;veloppement du commerce</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>Aid Targeting the Objectives of the Convention on Biological Diversity</name>
+            <name xml:lang="fr">Aide ax&#233;e sur les objectifs de la Convention des Nations Unies sur la diversit&#233; biologique</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6</code>
+            <name>Aid Targeting the Objectives of the Framework Convention on Climate Change - Mitigation</name>
+            <name xml:lang="fr">Aide ax&#233;e sur les objectifs de la Convention-cadre des Nations Unies sur les changements climatiques - Att&#233;nuation</name>
+        </codelist-item>
+        <codelist-item>
+            <code>7</code>
+            <name>Aid Targeting the Objectives of the Framework Convention on Climate Change - Adaptation</name>
+            <name xml:lang="fr">Aide ax&#233;e sur les objectifs de la Convention-cadre des Nations Unies sur les changements climatiques - Adaptation</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8</code>
+            <name>Aid Targeting the Objectives of the Convention to Combat Desertification</name>
+            <name xml:lang="fr">Aide ax&#233;e sur les objectifs de la Convention des Nations Unies sur la lutte contre la d&#233;sertification</name>
+        </codelist-item>
+        <codelist-item>
+            <code>9</code>
+            <name>Reproductive, Maternal, Newborn and Child Health (RMNCH)</name>
+            <name xml:lang="fr">Sant&#233; g&#233;n&#233;sique, maternelle, n&#233;onatale et infantile</name>
+        </codelist-item>
+        <codelist-item>
+            <code>10</code>
+            <name>Disaster Risk Reduction(DRR)</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11</code>
+            <name>Disability</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12</code>
+            <name>Nutrition</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

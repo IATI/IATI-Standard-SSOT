@@ -1,0 +1,14 @@
+code,name,description,category,url,status
+1,Codes-secteurs OCDE CAD SNPC (5 chiffres),Le secteur déclaré correspond à un code de secteur OCDE CAD SNPC à cinq chiffres,,http://reference.iatistandard.org/codelists/Sector/,active
+2,Codes-secteurs OCDE CAD SNPC (3 chiffres),Le secteur déclaré correspond à un code de secteur OCDE CAD SNPC à trois chiffres,,http://reference.iatistandard.org/codelists/SectorCategory/,active
+3,Classification des fonctions gouvernementales (ONU),Le secteur déclaré correspond à la Classification des fonctions gouvernementales (COFOG) de l'ONU,,http://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=4,active
+4,Classification statistique sur les activités économiques dans l'Union européenne,Le secteur déclaré correspond aux classifications statistiques des activités économiques dans l'Union européenne,,http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&StrNom=NACE_REV2&StrLanguageCode=EN,active
+5,Taxonomie nationale des entités exemptes (États-Unis),Le secteur déclaré correspond à la taxonomie nationale des entités exonérées (NTEE) - États-Unis,,http://nccs.urban.org/classification/NTEE.cfm,active
+6,AidData,Le secteur déclaré correspond aux classifications AidData,,,active
+7,ODD (objectif),Valeur tirée de la liste des principaux objectifs de développement durable (ODD) de l'ONU (p. ex. '1'),,https://sustainabledevelopment.un.org/?menu=1300,active
+8,ODD (cible),Valeur tirée de la liste des sous-objectifs de développement durable (ODD) de l'ONU (p. ex. '1.1'),,http://unstats.un.org/sdgs/indicators/indicators-list/,active
+9,ODD (indicateur),Valeur tirée de la liste des indicateurs de développement durable (ODD) de deuxième niveau de l'ONU,,http://unstats.un.org/sdgs/indicators/indicators-list/,active
+10,Groupes sectoriels d'aide humanitaire (Comité permanent interorganisations),Le secteur déclaré correspond à un code de groupe sectoriel du Comité permanent interorganisations,,https://data.humdata.org/dataset/global-coordination-groups-beta,active
+11,,,,https://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017,active
+99,Organisation déclarante,Le secteur déclaré correspond à un vocabulaire sectoriel maintenu par l'organisation déclarante aux fins de l'activité,,,active
+98,Organisation déclarante 2,Le secteur déclaré correspond à un vocabulaire sectoriel maintenu par l'organisation déclarante aux fins de l'activité (si l'organisation en indique plus d'un),,,active

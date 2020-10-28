@@ -1,0 +1,44 @@
+<codelist name="BudgetIdentifierVocabulary" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Budget Identifier Vocabulary</name>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item status="withdrawn" withdrawal-date="2018-04-18">
+            <code>1</code>
+            <name>IATI</name>
+            <name xml:lang="fr">IITA</name>
+            <description>The budget identifier reported uses IATI budget identifier categories</description>
+            <description xml:lang="fr">L'identifiant budg&#233;taire d&#233;clar&#233; se sert des cat&#233;gories d'identification budg&#233;taire de l'IITA</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Country Chart of Accounts</name>
+            <name xml:lang="fr">Plan comptable national</name>
+            <description>The budget identifier reported corresponds to the recipient country chart of accounts</description>
+            <description xml:lang="fr">L'identifiant budg&#233;taire d&#233;clar&#233; correspond au plan comptable national du pays b&#233;n&#233;ficiaire</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Other Country System</name>
+            <name xml:lang="fr">Autre syst&#232;me national</name>
+            <description>The budget identifier reported corresponds to a recipient country system other than the chart of accounts</description>
+            <description xml:lang="fr">L'identifiant budg&#233;taire d&#233;clar&#233; correspond &#224; un syst&#232;me du pays b&#233;n&#233;ficiaire autre que le plan comptable</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Reporting Organisation</name>
+            <name xml:lang="fr">Organisation d&#233;clarante</name>
+            <description>The budget identifier reported corresponds to categories that are specific to the reporting organisation</description>
+            <description xml:lang="fr">L'identifiant budg&#233;taire d&#233;clar&#233; correspond &#224; des cat&#233;gories particuli&#232;res &#224; l'organisation d&#233;clarante</description>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>Other</name>
+            <name xml:lang="fr">Autre</name>
+            <description>The budget identifier reported uses a different vocabulary, not specified in the codelist </description>
+            <description xml:lang="fr">L'identifiant budg&#233;taire d&#233;clar&#233; emploie un vocabulaire diff&#233;rent ne faisant pas partie de la liste des codes</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

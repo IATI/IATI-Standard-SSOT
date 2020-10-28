@@ -1,0 +1,184 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta content="5" name="order" />
+
+    <title>Namespaces &amp; Extensions &#8212; IATI Standard 2.03 documentation</title>
+    <link rel="stylesheet" href="../_static/traditional.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2.03',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Codelists" href="../codelists/" />
+    <link rel="prev" title="Organisation Standard" href="../organisation-standard/" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../codelists/" title="Codelists"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../organisation-standard/" title="Organisation Standard"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../reference/" accesskey="U">Reference</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="namespaces-extensions">
+<h1>Namespaces &amp; Extensions<a class="headerlink" href="#namespaces-extensions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="adding-other-information">
+<h2>Adding other information<a class="headerlink" href="#adding-other-information" title="Permalink to this headline">¶</a></h2>
+<p>There will be situations where reporting organisations want to publish additional data that are not covered by the default IATI elements, or want to specify the data using the original formats or values to avoid information loss.  IATI provides two mechanisms for doing so:</p>
+<ul class="simple">
+<li>Use an XML namespace to extend the schema.</li>
+<li>Use the legacy-data element to provide original data values.</li>
+</ul>
+</div>
+<div class="section" id="xml-namespaces">
+<h2>XML namespaces<a class="headerlink" href="#xml-namespaces" title="Permalink to this headline">¶</a></h2>
+<p>The first approach allows reporting organisations to invent any required markup and add it to an IATI activity report.  IATI users who don’t recognise the extended markup are required simply to ignore it, without reporting an error.  Here is an example:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;iati-activity</span> <span class="na">xmlns:acme=</span><span class="s">&quot;http://example.org/acme/ns#&quot;</span><span class="nt">&gt;</span>
+
+...
+
+  <span class="nt">&lt;acme:risk-level&gt;</span>3<span class="nt">&lt;/acme:risk-level&gt;</span>
+
+...
+
+<span class="nt">&lt;/iati-activity&gt;</span>
+</pre></div>
+</div>
+<p>In this example, ACME has defined its own namespace using the URL <code class="docutils literal"><span class="pre">http://example.org/acme/ns#</span></code> and mapped that to the prefix <code class="docutils literal"><span class="pre">acme</span></code>.  It then adds the new element, <code class="docutils literal"><span class="pre">acme:risk-level</span></code>, to provide information about its risk assessment for the activity.  IATI users who don’t recognise the <code class="docutils literal"><span class="pre">http://example.org/acme/ns#</span></code> namespace are required to ignore the <code class="docutils literal"><span class="pre">acme:risk</span> <span class="pre">element</span></code> rather than reporting an error, so the extended markup does not harm compatibility.  Users who are familiar with the namespace, however, can take advantage of the additional information.</p>
+</div>
+<div class="section" id="adding-xml-namespaces-in-versions-2-0x">
+<h2>Adding XML namespaces in versions 2.0x<a class="headerlink" href="#adding-xml-namespaces-in-versions-2-0x" title="Permalink to this headline">¶</a></h2>
+<p>Please note: elements must occur in the order they are specified in the Schema.  When adding XML namespaces in versions 2.0x of the IATI standard, they should be placed as the last element.  At the activity level, they must only be included at the end of the activity (before &lt;/iati-activity&gt;).  If added as a subelement, the namespace element must be placed as the last subelement. Example:</p>
+<ol class="arabic simple">
+<li>XML namespace at activity level</li>
+</ol>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;iati-activity</span> <span class="na">xmlns:acme=</span><span class="s">&quot;http://example.org/acme/ns#&quot;</span><span class="nt">&gt;</span>
+
+...
+
+  <span class="nt">&lt;/fss&gt;</span>
+  <span class="nt">&lt;acme:risk-level&gt;</span>3<span class="nt">&lt;/acme:risk-level&gt;</span>
+
+...
+
+<span class="nt">&lt;/iati-activity&gt;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>XML namespace as a subelement within transaction</li>
+</ol>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;iati-activity</span> <span class="na">xmlns:acme=</span><span class="s">&quot;http://example.org/acme/ns#&quot;</span><span class="nt">&gt;</span>
+
+...
+
+  <span class="nt">&lt;transaction&gt;</span>
+
+...
+
+    <span class="nt">&lt;/value&gt;</span>
+    <span class="nt">&lt;acme:risk-level&gt;</span>3<span class="nt">&lt;/acme:risk-level&gt;</span>
+  <span class="nt">&lt;/transaction&gt;</span>
+
+...
+
+<span class="nt">&lt;/iati-activity&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../sitemap/">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Namespaces &amp; Extensions</a><ul>
+<li><a class="reference internal" href="#adding-other-information">Adding other information</a></li>
+<li><a class="reference internal" href="#xml-namespaces">XML namespaces</a></li>
+<li><a class="reference internal" href="#adding-xml-namespaces-in-versions-2-0x">Adding XML namespaces in versions 2.0x</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../organisation-standard/"
+                        title="previous chapter">Organisation Standard</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../codelists/"
+                        title="next chapter">Codelists</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/namespaces-extensions.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search/" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../codelists/" title="Codelists"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../organisation-standard/" title="Organisation Standard"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../reference/" >Reference</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+code,name,description,category,url,status
+0,AUTRE QU’APPORTS,Rubriques requises sur le tableau CAD 1 portant sur des informations autre que des apports,,,active
+100,DONS,,,,active
+1000,GARANTIES ET AUTRES ENGAGEMENTS CONDITIONNELS NON PROVISIONNÉS,,,,active
+200,BONIFICATION D’INTERET,Subventions visant à assouplir les conditions des crédits à l’exportation ou des prêts/crédits du secteur bancaire.,,,withdrawn
+300,SOUSCRIPTION AU CAPITAL,Versements aux agences multilatérales sous forme de billets à ordre et effets similaires encaissables à vue sans condition par l'institution bénéficiaire.,,,withdrawn
+400,PRÊT,Transferts en espèce ou en nature qui entraînent une obligation juridique de remboursement pour le bénéficiaire.,,,withdrawn
+420,INSTRUMENTS DE DETTE,,,,active
+430,INSTRUMENTS DE DETTE,,,,active
+500,ACTIONS ET PARTS DANS DES VEHICULES COLLECTIFS D'INVESTISSEMENT,,,,active
+600,ALLEGEMENT DE LA DETTE,"Annulation de dette, conversion de dette, rééchelonnement de dette au sein ou en dehors du Club de Paris.",,,active
+700,INVESTISSEMENTS DIRECTS INTERNATIONAUX,L’investissement direct est motivé par la volonté d’une entité résidente d’un pays déclarant d’acquérir ou de maintenir un intérêt durable1 dans une entité résidente d’un pays en développement.,,,withdrawn
+800,OBLIGATIONS,Acquisition d’obligations émises par les pays en développement.,,,withdrawn
+900,AUTRES TITRES/CREANCES,,,,withdrawn

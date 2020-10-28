@@ -1,0 +1,96 @@
+<codelist name="UNSDG-Goals" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <url>https://sustainabledevelopment.un.org/?menu=1300</url>
+        <name>UN Sustainable Development Goals (SDG)</name>
+        <description>A value from the top-level list of UN sustainable development goals (SDGs) (e.g. &#8216;1&#8217;)</description>
+        <category>Replicated</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Goal 1. End poverty in all its forms everywhere</name>
+            <name xml:lang="fr">Objectif 1. &#201;liminer la pauvret&#233; sous toutes ses formes et partout dans le monde</name>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Goal 2. End hunger, achieve food security and improved nutrition and promote sustainable agriculture</name>
+            <name xml:lang="fr">Objectif 2. &#201;liminer la faim, assurer la s&#233;curit&#233; alimentaire, am&#233;liorer la nutrition et promouvoir l&#8217;agriculture&#160;durable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Goal 3. Ensure healthy lives and promote well-being for all at all ages</name>
+            <name xml:lang="fr">Objectif 3. Permettre &#224; tous de vivre en bonne sant&#233; et promouvoir le bien-&#234;tre de tous &#224; tout &#226;ge</name>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Goal 4. Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all</name>
+            <name xml:lang="fr">Objectif 4. Assurer &#224; tous une &#233;ducation &#233;quitable, inclusive et de qualit&#233; et des possibilit&#233;s d&#8217;apprentissage tout&#160;au&#160;long de la vie</name>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>Goal 5. Achieve gender equality and empower all women and girls</name>
+            <name xml:lang="fr">Objectif 5. Parvenir &#224; l&#8217;&#233;galit&#233; des sexes et autonomiser toutes les femmes et les filles</name>
+        </codelist-item>
+        <codelist-item>
+            <code>6</code>
+            <name>Goal 6. Ensure availability and sustainable management of water and sanitation for all</name>
+            <name xml:lang="fr">Objectif 6. Garantir l&#8217;acc&#232;s de tous &#224; des services d&#8217;alimentation en eau et d&#8217;assainissement g&#233;r&#233;s de fa&#231;on durable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>7</code>
+            <name>Goal 7. Ensure access to affordable, reliable, sustainable and modern energy for all</name>
+            <name xml:lang="fr">Objectif 7. Garantir l&#8217;acc&#232;s de tous &#224; des services &#233;nerg&#233;tiques fiables, durables et modernes, &#224; un co&#251;t abordable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>8</code>
+            <name>Goal 8. Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all</name>
+            <name xml:lang="fr">Objectif 7. Garantir l&#8217;acc&#232;s de tous &#224; des services &#233;nerg&#233;tiques fiables, durables et modernes, &#224; un co&#251;t abordable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>9</code>
+            <name>Goal 9. Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation</name>
+            <name xml:lang="fr">Objectif 9. B&#226;tir une infrastructure r&#233;siliente, promouvoir une industrialisation durable qui profite &#224; tous et&#160;encourager l&#8217;innovation</name>
+        </codelist-item>
+        <codelist-item>
+            <code>10</code>
+            <name>Goal 10. Reduce inequality within and among countries</name>
+            <name xml:lang="fr">Objectif 10. R&#233;duire les in&#233;galit&#233;s dans les pays et d&#8217;un pays &#224; l&#8217;autre</name>
+        </codelist-item>
+        <codelist-item>
+            <code>11</code>
+            <name>Goal 11. Make cities and human settlements inclusive, safe, resilient and sustainable</name>
+            <name xml:lang="fr">Objectif 11. Faire en sorte que les villes et les &#233;tablissements humains soient ouverts &#224; tous, s&#251;rs, r&#233;silients et&#160;durables</name>
+        </codelist-item>
+        <codelist-item>
+            <code>12</code>
+            <name>Goal 12. Ensure sustainable consumption and production patterns</name>
+            <name xml:lang="fr">Objectif 12. &#201;tablir des modes de consommation et de production durables</name>
+        </codelist-item>
+        <codelist-item>
+            <code>13</code>
+            <name>Goal 13. Take urgent action to combat climate change and its impacts</name>
+            <name xml:lang="fr">Objectif 13. Prendre d&#8217;urgence des mesures pour lutter contre les changements climatiques et leurs r&#233;percussions</name>
+        </codelist-item>
+        <codelist-item>
+            <code>14</code>
+            <name>Goal 14. Conserve and sustainably use the oceans, seas and marine resources for sustainable development</name>
+            <name xml:lang="fr">Objectif 14. Conserver et exploiter de mani&#232;re durable les oc&#233;ans, les mers et les ressources marines aux fins du&#160;d&#233;veloppement durable</name>
+        </codelist-item>
+        <codelist-item>
+            <code>15</code>
+            <name>Goal 15. Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat&#160;desertification, and halt and reverse land degradation and halt biodiversity loss</name>
+            <name xml:lang="fr">Objectif 15. Pr&#233;server et restaurer les &#233;cosyst&#232;mes terrestres, en veillant &#224; les exploiter de fa&#231;on durable, g&#233;rer durablement les for&#234;ts, lutter contre la d&#233;sertification, enrayer et inverser le processus de d&#233;gradation des terres et&#160;mettre fin &#224; l&#8217;appauvrissement de la biodiversit&#233;</name>
+        </codelist-item>
+        <codelist-item>
+            <code>16</code>
+            <name>Goal 16. Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and&#160;build effective, accountable and inclusive institutions at all levels</name>
+            <name xml:lang="fr">Objectif 16. Promouvoir l&#8217;av&#232;nement de soci&#233;t&#233;s pacifiques et inclusives aux fins du d&#233;veloppement durable, assurer l&#8217;acc&#232;s de tous &#224; la justice et mettre en place, &#224; tous les niveaux, des institutions efficaces, responsables et&#160;ouvertes &#224; tous</name>
+        </codelist-item>
+        <codelist-item>
+            <code>17</code>
+            <name>Goal 17. Strengthen the means of implementation and revitalize the Global Partnership for Sustainable&#160;Development</name>
+            <name xml:lang="fr">Objectif 17. Renforcer les moyens de mettre en &#339;uvre le Partenariat mondial pour le d&#233;veloppement durable et&#160;le&#160;revitaliser</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

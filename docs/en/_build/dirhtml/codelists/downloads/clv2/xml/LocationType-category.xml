@@ -1,0 +1,47 @@
+<codelist name="LocationType-category" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <url>http://geonames.nga.mil/ggmagaz/</url>
+        <name>Location Type (category)</name>
+        <description>This category is equivalent to US NGA's "Feature Class"</description>
+        <category>Replicated</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>A</code>
+            <name>Administrative Region</name>
+        </codelist-item>
+        <codelist-item>
+            <code>H</code>
+            <name>Hydrographic</name>
+        </codelist-item>
+        <codelist-item>
+            <code>L</code>
+            <name>Area</name>
+        </codelist-item>
+        <codelist-item>
+            <code>P</code>
+            <name>Populated Place</name>
+        </codelist-item>
+        <codelist-item>
+            <code>R</code>
+            <name>Streets/Highways/Roads</name>
+        </codelist-item>
+        <codelist-item>
+            <code>S</code>
+            <name>Spot Features</name>
+        </codelist-item>
+        <codelist-item>
+            <code>T</code>
+            <name>Hypsographic</name>
+        </codelist-item>
+        <codelist-item>
+            <code>U</code>
+            <name>Undersea</name>
+        </codelist-item>
+        <codelist-item>
+            <code>V</code>
+            <name>Vegetation</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

@@ -1,0 +1,5 @@
+code,name,description,language,category,category-name,category-description
+1,Annual,The loan has 1 repayment per year,en,,,
+2,Semi-annual,The loan has 2 repayments per year,en,,,
+4,Quarterly,The loan has 4 repayments per year ,en,,,
+12,Monthly,"The loan has 12, monthly repayments per year",en,,,

@@ -1,0 +1,5 @@
+code,name,description,category,url,status
+1,Région administrative,"Le lieu indiqué est une région administrative (état, comté, province, district, municipalité, etc.).",,,active
+2,Lieu habité,"Le lieu indiqué est habité (ville, village, exploitation agricole, etc.).",,,active
+3,Structure,"Le lieu indiqué est un établissement (p. ex., une école ou une clinique).",,,active
+4,Autre élément topographique,"Le lieu indiqué est un élément topographique (p. ex., une montagne, une rivière, une forêt).",,,active

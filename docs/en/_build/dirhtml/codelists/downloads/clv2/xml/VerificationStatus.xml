@@ -1,0 +1,19 @@
+<codelist name="VerificationStatus" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Verification Status</name>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>0</code>
+            <name>Not verified</name>
+            <description>The data published for the activity has not been verified</description>
+        </codelist-item>
+        <codelist-item>
+            <code>1</code>
+            <name>Verified</name>
+            <description>The data published for the activity has been verified. </description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

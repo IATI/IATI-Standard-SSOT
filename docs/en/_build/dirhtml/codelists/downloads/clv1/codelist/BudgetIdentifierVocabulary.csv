@@ -1,0 +1,6 @@
+code,name,description,language,category,category-name,category-description
+1,IATI,The budget identifier reported uses IATI budget identifier categories,en,,,
+2,Country Chart of Accounts,The budget identifier reported corresponds to the recipient country chart of accounts,en,,,
+3,Other Country System,The budget identifier reported corresponds to a recipient country system other than the chart of accounts,en,,,
+4,Reporting Organisation,The budget identifier reported corresponds to categories that are specific to the reporting organisation,en,,,
+5,Other,"The budget identifier reported uses a different vocabulary, not specified in the codelist ",en,,,

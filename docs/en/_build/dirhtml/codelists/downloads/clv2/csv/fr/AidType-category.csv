@@ -1,0 +1,9 @@
+code,name,description,category,url,status
+A,Soutien budgétaire,"Pour les contributions relevant de cette catégorie, le donneur renonce au contrôle exclusif des fonds qu’il octroie en partageant cette responsabilité avec le bénéficiaire.",,,active
+B,"Contributions aux budgets réguliers des organisations, programmes et financements groupés","Pour les contributions relevant de cette catégorie, le donneur renonce au contrôle exclusif des fonds qu’il octroie en partageant cette responsabilité avec d’autres acteurs (autres donneurs, ONG, institutions multilatérales, partenariats public-privé). La catégorie couvre à la fois les contributions aux budgets réguliers des organisations (B01 et B02) et les contributions groupées préaffectées à un objectif spécifique (B03 et B04).",,,active
+C,Interventions de type projet,"N.B. Dans cette catégorie, les membres qui le peuvent notifieront dans le tableau CAD1 le montant total dédié au financement d’experts/consultants du pays donneur.1Lorsque l’activité consiste uniquement en des frais d’experts, notifier sous la catégorie D.",,,active
+D,Experts et autres formes d’assistance technique,"Cette catégorie couvre l’apport, en dehors de projets tels qu’ils sont définis dans la catégorie C01, de savoir-faire sous forme de personnel, de formation et d’activités de recherche.",,,active
+E,Bourses et autres frais d’étude dans les pays donneurs,,,,active
+F,Allégement de la dette,,,,active
+G,Frais administratifs non inclus ailleurs,,,,active
+H,Autres dépenses dans le pays donneur,Regroupe diverses contributions qui n’entraînent pas de mouvement de fonds transnationaux.,,,active

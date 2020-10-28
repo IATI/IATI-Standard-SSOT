@@ -1,0 +1,34 @@
+<codelist name="PolicySignificance" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <url>http://www.oecd.org/dac/stats/dacandcrscodelists.htm</url>
+        <name>Policy Significance</name>
+        <category>Replicated</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>0</code>
+            <name>not targeted</name>
+            <description>The score "not targeted" means that the activity was examined but found not to target the policy objective.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>1</code>
+            <name>significant objective</name>
+            <description>Significant (secondary) policy objectives are those which, although important, were not the prime motivation for undertaking the activity.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>principal objective</name>
+            <description>Principal (primary) policy objectives are those which can be identified as being fundamental in the design and impact of the activity and which are an explicit objective of the activity. They may be selected by answering the question "Would the activity have been undertaken without this objective?"</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>principal objective AND in support of an action programme</name>
+            <description>For desertification-related aid only</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Explicit primary objective</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

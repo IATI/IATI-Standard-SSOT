@@ -1,0 +1,7 @@
+code,name,description,language,category,category-name,category-description
+A1,Global Admininistrative Unit Layers,,en,,,
+A2,UN Second Administrative Level Boundary Project,"Note: the unsalb.org website is no longer accessible, and public access to the boundaries resources has been removed http://www.ungiwg.org/content/united-nations-international-and-administrative-boundaries-resources",en,,,
+A3,Global Administrative Areas,,en,,,
+A4,ISO Country (3166-1 alpha-2),,en,,,
+G1,Geonames,,en,,,
+G2,OpenStreetMap,"Note: the code should be formed by prefixing the relevant OpenStreetMap ID with node/ way/ or relation/ as appropriate, e.g. node/1234567",en,,,

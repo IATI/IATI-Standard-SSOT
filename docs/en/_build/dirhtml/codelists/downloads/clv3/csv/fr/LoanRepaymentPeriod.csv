@@ -1,0 +1,5 @@
+code,name,description,category,url,status
+1,Annuel,Le prêt a 1 remboursement par an,,,active
+2,Semi-annuel,Le prêt a 2 remboursements par an,,,active
+4,Trimestriel,Le prêt a 4 remboursements par an,,,active
+12,Mensuel,Le prêt a 12 remboursements par an,,,active

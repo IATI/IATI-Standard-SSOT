@@ -1,0 +1,35 @@
+<codelist name="AidTypeVocabulary" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Aid Type Vocabulary</name>
+        <description>The AidTypeVocabulary codelist defines a range of external codelists which themselves provide codes and descriptions for aid type.</description>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <url>http://reference.iatistandard.org/codelists/AidType/</url>
+            <name>OECD DAC</name>
+            <name xml:lang="fr">CAD OCDE</name>
+            <description>List of codes provided by the OECD DAC used to distinguish types of aid</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <url>http://reference.iatistandard.org/codelists/EarmarkingCategory/</url>
+            <name>Earmarking Category</name>
+            <description>This vocabulary has been created by IATI and is derived from the Grand Bargain Earmarking Modality codelist</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <url>https://reliefweb.int/sites/reliefweb.int/files/resources/Grand_Bargain_final_22_May_FINAL-2.pdf</url>
+            <name>Earmarking Modality</name>
+            <description>Codes A to L replicated directly from Grand Bargain document found in Annex 1 (pg.16)</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <url>http://reference.iatistandard.org/codelists/CashandVoucherModalities/</url>
+            <name>Cash and Voucher Modalities</name>
+            <description>This vocabulary has been created by IATI, following agreements and recommendations of the Tracking Cash and Voucher Assistance (CVA) Working Group.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

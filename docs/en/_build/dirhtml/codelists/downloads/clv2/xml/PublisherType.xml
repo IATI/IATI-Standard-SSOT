@@ -1,0 +1,27 @@
+<codelist name="PublisherType" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Publisher Type</name>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Aid Provider</name>
+            <name xml:lang="fr">Donateur</name>
+            <description>A government, organisation, agency or institution that provides aid funds.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Aid Recipient</name>
+            <name xml:lang="fr">R&#233;cipiendaire</name>
+            <description>A government, organisation, agency or institution that recieves aid funds.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Aggregator</name>
+            <name xml:lang="fr">Agr&#233;gateur</name>
+            <description>An organisation that collects and reproduces information from other providers or recipients</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

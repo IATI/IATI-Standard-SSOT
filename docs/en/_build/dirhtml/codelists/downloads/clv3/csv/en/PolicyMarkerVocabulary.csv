@@ -1,0 +1,3 @@
+code,name,description,category,url,status
+1,OECD DAC CRS,"The policy marker is an OECD DAC CRS policy marker, Reported in columns 20-23, 28-31 and 54 of CRS++ reporting format.",,http://reference.iatistandard.org/codelists/PolicyMarker/,active
+99,Reporting Organisation,The policy marker is one that is defined and tracked by the reporting organisation,,,active

@@ -1,0 +1,6 @@
+code,name,description,category,url,status
+1,Unit,The indicator is measured in units.,,,active
+2,Percentage,The indicator is measured in percentages,,,active
+3,Nominal,The indicator is measured as a quantitative nominal scale.,,,active
+4,Ordinal,The indicator is measured as a quantitative ordinal scale.,,,active
+5,Qualitative,The indicator is qualitative.,,,active

@@ -1,0 +1,38 @@
+<codelist name="OrganisationRole" xml:lang="en" complete="1" embedded="1">
+    <metadata>
+        <name>Organisation Role</name>
+        <description>IATI codes for the role of an organisation within an activity. An organisation can play more than one role within an activity.</description>
+        <category>Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Funding</name>
+            <name xml:lang="fr">Financement</name>
+            <description>The government or organisation which provides funds to the activity. </description>
+            <description xml:lang="fr">Le gouvernement ou l'organisation qui finance l'activit&#233;.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Accountable</name>
+            <name xml:lang="fr">Responsabilit&#233;</name>
+            <description>An organisation responsible for oversight of the activity and its outcomes</description>
+            <description xml:lang="fr">Une organisation responsable de la supervision de l'activit&#233; et de ses r&#233;sultats</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Extending</name>
+            <name xml:lang="fr">Octroi</name>
+            <description>An organisation that manages the budget and direction of an activity on behalf of the funding organisation</description>
+            <description xml:lang="fr">Une organisation qui g&#232;re le budget et l'orientation d'une activit&#233; au nom de l'organisation offrant le financement</description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>Implementing</name>
+            <name xml:lang="fr">Mise en &#339;uvre</name>
+            <description>The organisation that physically carries out the activity or intervention. </description>
+            <description xml:lang="fr">L'organisation qui ex&#233;cute physiquement l'activit&#233; ou l'intervention.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

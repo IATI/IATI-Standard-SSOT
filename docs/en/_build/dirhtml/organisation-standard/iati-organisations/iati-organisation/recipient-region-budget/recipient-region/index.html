@@ -1,0 +1,201 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta content="0" name="order" />
+
+    <title>recipient-region &#8212; IATI Standard 2.03 documentation</title>
+    <link rel="stylesheet" href="../../../../../_static/traditional.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '2.03',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex/" />
+    <link rel="search" title="Search" href="../../../../../search/" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="../../../../../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="recipient-region">
+<h1>recipient-region<a class="headerlink" href="#recipient-region" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal"><span class="pre">iati-organisations/iati-organisation/recipient-region-budget/recipient-region</span></code></p>
+<p>This is the reference page for the XML element <code class="docutils literal"><span class="pre">recipient-region</span></code>.</p>
+<div class="section" id="definition">
+<span id="index-0"></span><h2>Definition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h2>
+<p>The supranational geographic region where funds have been allocated.</p>
+</div>
+<div class="section" id="rules">
+<h2>Rules<a class="headerlink" href="#rules" title="Permalink to this headline">¶</a></h2>
+<p>This element must occur once and only once (within each parent element).</p>
+</div>
+<div class="section" id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils" id="iati-organisations-iati-organisation-recipient-region-budget-recipient-region-vocabulary">
+<dt>&#64;vocabulary</dt>
+<dd><p class="first">An IATI code for the vocabulary from which the region code is
+drawn. If it is not present, code 1 (‘OECD DAC’) is assumed.</p>
+<p>This value must be of type xsd:string.</p>
+<p class="last">This value must be on the <a class="reference internal" href="../../../../../codelists/RegionVocabulary/"><span class="doc">RegionVocabulary codelist</span></a>.</p>
+</dd>
+</dl>
+<dl class="docutils" id="iati-organisations-iati-organisation-recipient-region-budget-recipient-region-vocabulary-uri">
+<dt>&#64;vocabulary-uri</dt>
+<dd><p class="first">The URI where this vocabulary is defined. If the vocabulary is 99 (reporting organisation), the URI where this internal vocabulary is defined. While this is an optional field it is STRONGLY RECOMMENDED that all publishers use it to ensure that the meaning of their codes are fully understood by data users.</p>
+<p class="last">This value must be of type xsd:anyURI.</p>
+</dd>
+</dl>
+<dl class="docutils" id="iati-organisations-iati-organisation-recipient-region-budget-recipient-region-code">
+<dt>&#64;code</dt>
+<dd><p class="first">Either an OECD DAC, UN region code or (if code ‘99’ Reporting
+organisation is selected for recipient-region/&#64;vocabulary) a
+code from your internal vocabulary. The codelist is determined
+by vocabulary attribute. The value in recipient-region/&#64;code
+should appear within the Region codelist, if the vocabulary
+code 1 (‘OECD DAC’) is used.</p>
+<p>This value must be of type xsd:string.</p>
+<p class="last">This value must be on the <a class="reference internal" href="../../../../../codelists/Region/"><span class="doc">Region codelist</span></a>, if the relevant vocabulary is used.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<p>Example usage of <code class="docutils literal"><span class="pre">recipient-region</span></code> in context of <code class="docutils literal"><span class="pre">recipient-region-budget</span></code> element:</p>
+<div class="line-block">
+<div class="line">The <code class="docutils literal"><span class="pre">&#64;code</span></code> attribute declares a valid code (<em>489</em>) from the <em>Region</em> codelist.</div>
+<div class="line">The optional <code class="docutils literal"><span class="pre">&#64;vocabulary</span></code> attribute declares a valid code (<em>1</em>) from the <em>RegionVocabulary</em> codelist.</div>
+</div>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="nt">&lt;recipient-region</span> <span class="na">code=</span><span class="s">&quot;489&quot;</span> <span class="na">vocabulary=</span><span class="s">&quot;1&quot;</span> <span class="nt">/&gt;</span>
+</pre></div>
+</div>
+<p>If a publisher uses a vocabulary of 99 (i.e. ‘Reporting Organisation’), then the <code class="docutils literal"><span class="pre">&#64;vocabulary-uri</span></code> attribute should also be used, for example:
+.. code-block:: xml</p>
+<blockquote>
+<div>&lt;recipient-region code=”A1” vocabulary=”99” vocabulary-uri=”<a class="reference external" href="http://example.com/vocab.html">http://example.com/vocab.html</a>” /&gt;</div></blockquote>
+<p>Example of <code class="docutils literal"><span class="pre">recipient-region</span></code> in context of a complete <code class="docutils literal"><span class="pre">recipient-region-budget</span></code> element:</p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span>  <span class="nt">&lt;recipient-region-budget</span> <span class="na">status=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;recipient-region</span> <span class="na">vocabulary=</span><span class="s">&quot;99&quot;</span> <span class="na">vocabulary-uri=</span><span class="s">&quot;http://example.com/vocab.html&quot;</span> <span class="na">code=</span><span class="s">&quot;A1&quot;</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;period-start</span> <span class="na">iso-date=</span><span class="s">&quot;2014-01-01&quot;</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;period-end</span> <span class="na">iso-date=</span><span class="s">&quot;2014-12-31&quot;</span> <span class="nt">/&gt;</span>
+   <span class="nt">&lt;value</span> <span class="na">currency=</span><span class="s">&quot;USD&quot;</span> <span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>25000000<span class="nt">&lt;/value&gt;</span>
+   <span class="nt">&lt;budget-line</span> <span class="na">ref=</span><span class="s">&quot;1234&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;value</span> <span class="na">currency=</span><span class="s">&quot;USD&quot;</span> <span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>2000000<span class="nt">&lt;/value&gt;</span>
+    <span class="nt">&lt;narrative</span> <span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="nt">&gt;</span>Budget Line<span class="nt">&lt;/narrative&gt;</span>
+   <span class="nt">&lt;/budget-line&gt;</span>
+  <span class="nt">&lt;/recipient-region-budget&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="changelog">
+<h2>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>2.03<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Definition of <code class="docutils literal"><span class="pre">&#64;vocabulary-uri</span></code> attribute <a class="reference external" href="https://discuss.iatistandard.org/t/guidance-on-u-r-i-usage-for-publisher-s-own-vocabularies-included-2-03/850">updated</a>.</p>
+</div>
+<div class="section" id="id2">
+<h3>2.02<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>The optional <code class="docutils literal"><span class="pre">recipient-region-budget</span></code> element was <a class="reference external" href="http://support.iatistandard.org/entries/79323113-Org-Standard-recipient-region-budget">added</a>.</p>
+</div>
+</div>
+<div class="section" id="developer-tools">
+<h2>Developer tools<a class="headerlink" href="#developer-tools" title="Permalink to this headline">¶</a></h2>
+<p>Find the source of this documentation on github:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-organisations-schema.xsd#L391">Schema</a></li>
+<li><a class="reference external" href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/recipient-region.rst">Extra Documentation</a></li>
+</ul>
+</div>
+<div class="section" id="subelements">
+<h2>Subelements<a class="headerlink" href="#subelements" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="narrative/">narrative</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../../../sitemap/">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">recipient-region</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#rules">Rules</a></li>
+<li><a class="reference internal" href="#attributes">Attributes</a></li>
+<li><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li><a class="reference internal" href="#changelog">Changelog</a><ul>
+<li><a class="reference internal" href="#id1">2.03</a></li>
+<li><a class="reference internal" href="#id2">2.02</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#developer-tools">Developer tools</a></li>
+<li><a class="reference internal" href="#subelements">Subelements</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../../../_sources/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/recipient-region.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search/" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="../../../../../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+code,name,description,category,url,status
+1,IITA,L'identifiant budgétaire déclaré se sert des catégories d'identification budgétaire de l'IITA,,,withdrawn
+2,Plan comptable national,L'identifiant budgétaire déclaré correspond au plan comptable national du pays bénéficiaire,,,active
+3,Autre système national,L'identifiant budgétaire déclaré correspond à un système du pays bénéficiaire autre que le plan comptable,,,active
+4,Organisation déclarante,L'identifiant budgétaire déclaré correspond à des catégories particulières à l'organisation déclarante,,,active
+5,Autre,L'identifiant budgétaire déclaré emploie un vocabulaire différent ne faisant pas partie de la liste des codes,,,active

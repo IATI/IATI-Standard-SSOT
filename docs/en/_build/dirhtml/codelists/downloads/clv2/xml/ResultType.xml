@@ -1,0 +1,37 @@
+<codelist name="ResultType" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Result Type</name>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>Output</name>
+            <name xml:lang="fr">Extrant</name>
+            <description>Results of the activity that came about as a direct effect of your work and specific, what is done, and what communities are reached. For example, X number of individuals.</description>
+            <description xml:lang="fr">R&#233;sultats de l'activit&#233; d&#233;coulant directement de votre travail et pr&#233;cisions connexes (ce qui est fait, les communaut&#233;s rejointes). Par exemple, X nombre de personnes.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>Outcome</name>
+            <name xml:lang="fr">Effet</name>
+            <description>Results of the activity that produce an effect on the overall communities or issues you serve. For example lower rate of infection after a vaccination programme.</description>
+            <description xml:lang="fr">Les r&#233;sultats de l'activit&#233; qui produisent un effet sur les communaut&#233;s g&#233;n&#233;rales ou les grands enjeux sur lesquels vous intervenez. Par exemple, taux d'infection r&#233;duit apr&#232;s une campagne de vaccination.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>Impact</name>
+            <name xml:lang="fr">Impact</name>
+            <description>The long term effects of the outcomes, that lead to larger, over arching results, such as improved life-expectancy.</description>
+            <description xml:lang="fr">Les incidences &#224; long terme des effets qui m&#232;nent &#224; des r&#233;sultats de niveau sup&#233;rieur et de grande envergure, comme une am&#233;lioration de l'esp&#233;rance de vie.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>9</code>
+            <name>Other</name>
+            <name xml:lang="fr">Autre</name>
+            <description>Another type of result, not specified above.</description>
+            <description xml:lang="fr">Autre type de r&#233;sultat non d&#233;crit ci-dessus.</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

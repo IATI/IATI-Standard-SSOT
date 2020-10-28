@@ -1,0 +1,7 @@
+code,name,description,language,category,category-name,category-description
+1,Pipeline/identification,The activity is being scoped or planned ,en,,,
+2,Implementation,The activity is currently being implemented,en,,,
+3,Finalisation,"Physical activity is complete or the final disbursement has been made, but the activity remains open pending financial sign off or M&E",en,,,
+4,Closed,Physical activity is complete or the final disbursement has been made.,en,,,
+5,Cancelled,The activity has been cancelled,en,,,
+6,Suspended,The activity has been temporarily suspended,en,,,

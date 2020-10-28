@@ -1,0 +1,1606 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta content="1" name="order" />
+
+    <title>Organisation Standard Summary Table &#8212; IATI Standard 2.03 documentation</title>
+    <link rel="stylesheet" href="../../_static/traditional.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.03',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="organisation-standard-summary-table">
+<h1>Organisation Standard Summary Table<a class="headerlink" href="#organisation-standard-summary-table" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+<col width="13%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Section</th>
+<th class="head">Item</th>
+<th class="head">Description</th>
+<th class="head">Type</th>
+<th class="head">Codelist</th>
+<th class="head">XML</th>
+<th class="head">Occur</th>
+<th class="head">Rules</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="../iati-organisations/"><span class="doc">iati-organisations</span></a></td>
+<td>&#160;</td>
+<td>Top-level list of one or more IATI organisation records.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations</td>
+<td></td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>version</td>
+<td>A number indicating the IATI specification version in use.
+This is mandatory and must be a valid version.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/Version/"><span class="doc">Version</span></a></td>
+<td>iati-organisations/&#64;version</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>generated-datetime</td>
+<td>A date/time stamp for when this file was generated. This
+is not necessarily the last-updated date for the
+individual activity records in it. Use of this attribute
+is highly recommended, to allow recipients to know when a
+file has been updated.</td>
+<td>xsd:dateTime</td>
+<td>&#160;</td>
+<td>iati-organisations/&#64;generated-datetime</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../iati-organisations/iati-organisation/"><span class="doc">iati-organisation</span></a></td>
+<td>&#160;</td>
+<td>Top-level element for a single IATI organisation report.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation</td>
+<td>1..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>last-updated-datetime</td>
+<td>The last date/time that the data for this specific
+organisation was updated.  This date must change whenever
+the value of any field changes.</td>
+<td>xsd:dateTime</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/&#64;last-updated-datetime</td>
+<td>0..1</td>
+<td><code class="docutils literal"><span class="pre">&#64;last-updated-datetime</span></code> must not be more recent than the current date</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the default language of text in this organisation. It is recommended that wherever possible only codes from ISO 639-1 are used. If this is not declared then the xml:lang attribute MUST be specified for each narrative element.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/&#64;xml:lang</td>
+<td>0..1</td>
+<td><code class="docutils literal"><span class="pre">&#64;xml:lang</span></code> must exist, otherwise all <code class="docutils literal"><span class="pre">lang</span></code> must exist.</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>default-currency</td>
+<td>Default ISO 4217 currency code for all financial values in
+this activity report. If this is not declared then the
+currency attribute MUST be specified for all monetary
+values.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/Currency/"><span class="doc">Currency</span></a></td>
+<td>iati-organisations/iati-organisation/&#64;default-currency</td>
+<td>0..1</td>
+<td><code class="docutils literal"><span class="pre">&#64;default-currency</span></code> must exist, otherwise all <code class="docutils literal"><span class="pre">currency</span></code> must exist.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../iati-organisations/iati-organisation/organisation-identifier/"><span class="doc">organisation-identifier</span></a></td>
+<td>&#160;</td>
+<td>Machine-readable identification string for the organisation issuing the report. Must be in the format {RegistrationAgency}-{RegistrationNumber} where {RegistrationAgency} is a valid code in the Organisation Registration Agency code list and {RegistrationNumber} is a valid identifier issued by the {RegistrationAgency}.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/organisation-identifier</td>
+<td>1..1</td>
+<td><code class="docutils literal"><span class="pre">organisation-identifier</span></code> should match the regex <code class="docutils literal"><span class="pre">[^\/\&amp;\|\?]+</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../iati-organisations/iati-organisation/name/"><span class="doc">name</span></a></td>
+<td>&#160;</td>
+<td>The human-readable name of the organisation.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/name</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/name/narrative/"><span class="doc">narrative</span></a></td>
+<td>The free text name or description of the item being described. This can
+be repeated in multiple languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/name/narrative</td>
+<td>1..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/name/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/name/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../iati-organisations/iati-organisation/reporting-org/"><span class="doc">reporting-org</span></a></td>
+<td>&#160;</td>
+<td><p class="first">The organisation issuing the report.
+May be a primary source (reporting on its own activity as
+donor, implementing agency, etc) or a secondary source
+(reporting on the activities of another organisation).</p>
+<p>Specifying the &#64;ref attribute is mandatory.
+May contain the organisation name as content.</p>
+<p class="last">All activities in an activity xml file must contain the same
+&#64;ref AND this &#64;ref must be the same as the iati-identifier
+recorded in the registry publisher record of the account under
+which this file is published.</p>
+</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/reporting-org</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>ref</td>
+<td>Machine-readable identification string for the organisation issuing the report. Must be in the format {RegistrationAgency}-{RegistrationNumber} where {RegistrationAgency} is a valid code in the Organisation Registration Agency code list and {RegistrationNumber} is a valid identifier issued by the {RegistrationAgency}.</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/reporting-org/&#64;ref</td>
+<td>1..1</td>
+<td><code class="docutils literal"><span class="pre">reporting-org/&#64;ref</span></code> should match the regex <code class="docutils literal"><span class="pre">[^\/\&amp;\|\?]+</span></code></td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>type</td>
+<td>The type of organisation issuing the report. See IATI codelist for values.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/OrganisationType/"><span class="doc">Organisation Type</span></a></td>
+<td>iati-organisations/iati-organisation/reporting-org/&#64;type</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>secondary-reporter</td>
+<td>A flag indicating that the reporting organisation of this activity is acting as a secondary reporter. A secondary reporter is one that reproduces data on the activities of an organisation for which it is not directly responsible. This does not include a publisher officially assigned as a proxy to report on behalf of another.</td>
+<td>xsd:boolean</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/reporting-org/&#64;secondary-reporter</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/reporting-org/narrative/"><span class="doc">narrative</span></a></td>
+<td>The name of the organisation. May be repeated for
+different languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/reporting-org/narrative</td>
+<td>1..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/reporting-org/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/reporting-org/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="../iati-organisations/iati-organisation/total-budget/"><span class="doc">total-budget</span></a></td>
+<td>&#160;</td>
+<td>The total-budget element allows for the reporting of the organisation’s
+own budget. The recommendation is that, where and when possible, the
+organisation’s total annual planned budget for each of the next three
+years is reported. The status explains whether the budget being reported
+is indicative or has been formally committed. The value should appear
+within the BudgetStatus codelist. If the &#64;status attribute is not present,
+the budget is assumed to be indicative.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>status</td>
+<td>The status explains whether the budget being reported is indicative or has
+been formally committed. The value should appear within the BudgetStatus
+codelist. If the &#64;status attribute is not present, the budget is assumed
+to be indicative.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/BudgetStatus/"><span class="doc">Budget Status</span></a></td>
+<td>iati-organisations/iati-organisation/total-budget/&#64;status</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/total-budget/period-start/"><span class="doc">period-start</span></a></td>
+<td>The start of the budget period.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/period-start</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>iso-date</td>
+<td>&#160;</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/period-start/&#64;iso-date</td>
+<td>1..1</td>
+<td><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code>
+The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/total-budget/period-end/"><span class="doc">period-end</span></a></td>
+<td>The end of the period (which must not be greater than one year)</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/period-end</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>iso-date</td>
+<td>&#160;</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/period-end/&#64;iso-date</td>
+<td>1..1</td>
+<td><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code>
+The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/total-budget/value/"><span class="doc">value</span></a></td>
+<td>The total value of the organisation’s aid budget for
+this period.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/value</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount. This is required for all currency amounts unless
+the&nbsp;iati-organisation/&#64;default-currency&nbsp;attribute is
+specified.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/Currency/"><span class="doc">Currency</span></a></td>
+<td>iati-organisations/iati-organisation/total-budget/value/&#64;currency</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>value-date</td>
+<td>The date to be used for determining the exchange rate for
+currency conversions.</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/value/&#64;value-date</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/total-budget/budget-line/"><span class="doc">budget-line</span></a></td>
+<td>A breakdown of the total budget into sub-totals. The
+breakdown is determined by the reporting organisation
+and described in the narrative. The period covered is
+the same as that covered by the parent total-budget
+element. The sum of budget-line values does not have to
+equal the value given in the parent element.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/budget-line</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>ref</td>
+<td>An internal reference for this budget line taken
+from the reporting organisation’s own system.
+Optional.</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/budget-line/&#64;ref</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/total-budget/budget-line/value/"><span class="doc">value</span></a></td>
+<td>The budget sub-total. The definition of the
+sub-division is determined by
+iati-organisation/total-budget/budget-line/narrative</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/budget-line/value</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount. This is required for all currency amounts unless
+the&nbsp;iati-organisation/&#64;default-currency&nbsp;attribute is
+specified.</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/budget-line/value/&#64;currency</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>value-date</td>
+<td>The date to be used for determining the exchange rate for
+currency conversions.</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/budget-line/value/&#64;value-date</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/total-budget/budget-line/narrative/"><span class="doc">narrative</span></a></td>
+<td>The free text name or description of the item being described. This can
+be repeated in multiple languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/budget-line/narrative</td>
+<td>1..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-budget/budget-line/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/total-budget/budget-line/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-org-budget/"><span class="doc">recipient-org-budget</span></a></td>
+<td>&#160;</td>
+<td>The recipient-org-budget element allows for the reporting of
+forward looking budgets for each institution which receives
+core funding from the reporting organisation. The
+recommendation is that, where and when possible, annual
+planned budgets for each recipient institution for each of the
+next three financial years are reported. This is primarily
+applicable to donors but any provider of core funding is
+expected to use it. Earmarked budgets should be reported at
+activity-level through the Activity Standard. The status
+explains whether the budget being reported is indicative or
+has been formally committed. The value should appear within
+the BudgetStatus codelist. If the &#64;status attribute is not
+present, the budget is assumed to be indicative.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>status</td>
+<td>The status explains whether the budget being reported is indicative or has
+been formally committed. The value should appear within the BudgetStatus
+codelist. If the &#64;status attribute is not present, the budget is assumed
+to be indicative.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/BudgetStatus/"><span class="doc">Budget Status</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/&#64;status</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-org-budget/recipient-org/"><span class="doc">recipient-org</span></a></td>
+<td>The organisation that will receive the funds.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/recipient-org</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>ref</td>
+<td>Machine-readable identification string for the organisation issuing the report. Must be in the format {RegistrationAgency}-{RegistrationNumber} where {RegistrationAgency} is a valid code in the Organisation Registration Agency code list and {RegistrationNumber} is a valid identifier issued by the {RegistrationAgency}. If this is not present then the narrative MUST contain the name of the organisation.</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/recipient-org/&#64;ref</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-org-budget/recipient-org/narrative/"><span class="doc">narrative</span></a></td>
+<td>The name of the organisation. This can be repeated in multiple languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/recipient-org/narrative</td>
+<td>1..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/recipient-org/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/recipient-org/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-org-budget/period-start/"><span class="doc">period-start</span></a></td>
+<td>The start of the budget period.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/period-start</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>iso-date</td>
+<td>&#160;</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/period-start/&#64;iso-date</td>
+<td>1..1</td>
+<td><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code>
+The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-org-budget/period-end/"><span class="doc">period-end</span></a></td>
+<td>The end of the period (which must not be greater than one year)</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/period-end</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>iso-date</td>
+<td>&#160;</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/period-end/&#64;iso-date</td>
+<td>1..1</td>
+<td><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code>
+The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-org-budget/value/"><span class="doc">value</span></a></td>
+<td>The total value of the money budgeted to be disbursed to
+the specified recipient organisation during this time
+period.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/value</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount. This is required for all currency amounts unless
+the&nbsp;iati-organisation/&#64;default-currency&nbsp;attribute is
+specified.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/Currency/"><span class="doc">Currency</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/value/&#64;currency</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>value-date</td>
+<td>The date to be used for determining the exchange rate for
+currency conversions.</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/value/&#64;value-date</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-org-budget/budget-line/"><span class="doc">budget-line</span></a></td>
+<td>A breakdown of the recipient organisation’s budget into
+sub-totals. The breakdown is determined by the
+reporting organisation and described in the narrative.
+The period covered is the same as that covered by the
+parent recipient-org-budget element. The sum of
+budget-line values does not have to equal the value
+given in the parent element.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/budget-line</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>ref</td>
+<td>An internal reference for this budget line taken
+from the reporting organisation’s own system.
+Optional.</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/budget-line/&#64;ref</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-org-budget/budget-line/value/"><span class="doc">value</span></a></td>
+<td>The budget sub-total. The definition of the
+sub-division is determined by
+iati-organisation/recipient-org-budget/budget-line/narrative</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/budget-line/value</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount. This is required for all currency amounts unless
+the&nbsp;iati-organisation/&#64;default-currency&nbsp;attribute is
+specified.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/Currency/"><span class="doc">Currency</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/budget-line/value/&#64;currency</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>value-date</td>
+<td>The date to be used for determining the exchange rate for
+currency conversions.</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/budget-line/value/&#64;value-date</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-org-budget/budget-line/narrative/"><span class="doc">narrative</span></a></td>
+<td>The free text name or description of the item being described. This can
+be repeated in multiple languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/budget-line/narrative</td>
+<td>1..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/budget-line/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-org-budget/budget-line/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-region-budget/"><span class="doc">recipient-region-budget</span></a></td>
+<td>&#160;</td>
+<td>The recipient-region-budget element allows for the reporting of forward
+looking budgets where the organisation maintains region-wide, rather than
+or in addition to country-specific budgets. The recommendation is that,
+where and when possible, the organisation’s total annual planned budget
+for each of the next three financial years is reported for each recipient
+region. This must NOT include an aggregation of budgets reported in the
+recipient-country-budget element. It is strongly recommended that
+publishers report to existing defined regions wherever possible. The
+status explains whether the budget being reported is indicative or has
+been formally committed. The value should appear within the BudgetStatus
+codelist. If the &#64;status attribute is not present, the budget is assumed
+to be indicative.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>status</td>
+<td>The status explains whether the budget being reported is indicative or has
+been formally committed. The value should appear within the BudgetStatus
+codelist. If the &#64;status attribute is not present, the budget is assumed
+to be indicative.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/BudgetStatus/"><span class="doc">Budget Status</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/&#64;status</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-region-budget/recipient-region/"><span class="doc">recipient-region</span></a></td>
+<td>The supranational geographic region where funds have been allocated.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/recipient-region</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>vocabulary</td>
+<td>An IATI code for the vocabulary from which the region code is
+drawn. If it is not present, code 1 (‘OECD DAC’) is assumed.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/RegionVocabulary/"><span class="doc">Region Vocabulary</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/recipient-region/&#64;vocabulary</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>vocabulary-uri</td>
+<td>The URI where this vocabulary is defined. If the vocabulary is 99 (reporting organisation), the URI where this internal vocabulary is defined. While this is an optional field it is STRONGLY RECOMMENDED that all publishers use it to ensure that the meaning of their codes are fully understood by data users.</td>
+<td>xsd:anyURI</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/recipient-region/&#64;vocabulary-uri</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>code</td>
+<td>Either an OECD DAC, UN region code or (if code ‘99’ Reporting
+organisation is selected for recipient-region/&#64;vocabulary) a
+code from your internal vocabulary. The codelist is determined
+by vocabulary attribute. The value in recipient-region/&#64;code
+should appear within the Region codelist, if the vocabulary
+code 1 (‘OECD DAC’) is used.</td>
+<td>xsd:string</td>
+<td>(<a class="reference internal" href="../../codelists/Region/"><span class="doc">Region</span></a>)</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/recipient-region/&#64;code</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-region-budget/recipient-region/narrative/"><span class="doc">narrative</span></a></td>
+<td>The free text name or description of the item being described. This can
+be repeated in multiple languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/recipient-region/narrative</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/recipient-region/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/recipient-region/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-region-budget/period-start/"><span class="doc">period-start</span></a></td>
+<td>The start of the budget period.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/period-start</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>iso-date</td>
+<td>&#160;</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/period-start/&#64;iso-date</td>
+<td>1..1</td>
+<td><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code>
+The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-region-budget/period-end/"><span class="doc">period-end</span></a></td>
+<td>The end of the period (which must not be greater than one year)</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/period-end</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>iso-date</td>
+<td>&#160;</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/period-end/&#64;iso-date</td>
+<td>1..1</td>
+<td><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code>
+The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-region-budget/value/"><span class="doc">value</span></a></td>
+<td>The total value of the money budgeted to be disbursed to
+the specified region during this time period.  This
+element is required.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/value</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount. This is required for all currency amounts unless
+the&nbsp;iati-organisation/&#64;default-currency&nbsp;attribute is
+specified.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/Currency/"><span class="doc">Currency</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/value/&#64;currency</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>value-date</td>
+<td>The date to be used for determining the exchange rate for
+currency conversions.</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/value/&#64;value-date</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-region-budget/budget-line/"><span class="doc">budget-line</span></a></td>
+<td>A breakdown of the recipient region’s budget into sub-totals. The
+breakdown is determined by the reporting organisation and described
+in the narrative. The period covered is the same as that covered by
+the parent recipient-region-budget element. The sum of budget-line
+values does not have to equal the value given in the parent element.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/budget-line</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>ref</td>
+<td>An internal reference for this budget line taken
+from the reporting organisation’s own system.
+Optional.</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/budget-line/&#64;ref</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-region-budget/budget-line/value/"><span class="doc">value</span></a></td>
+<td>The budget sub-total. The definition of the
+sub-division is determined by
+iati-organisation/recipient-region-budget/budget-line/narrative</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/budget-line/value</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount. This is required for all currency amounts unless
+the&nbsp;iati-organisation/&#64;default-currency&nbsp;attribute is
+specified.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/Currency/"><span class="doc">Currency</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/budget-line/value/&#64;currency</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>value-date</td>
+<td>The date to be used for determining the exchange rate for
+currency conversions.</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/budget-line/value/&#64;value-date</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-region-budget/budget-line/narrative/"><span class="doc">narrative</span></a></td>
+<td>The free text name or description of the item being described. This can
+be repeated in multiple languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/budget-line/narrative</td>
+<td>1..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/budget-line/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-region-budget/budget-line/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-country-budget/"><span class="doc">recipient-country-budget</span></a></td>
+<td>&#160;</td>
+<td>The recipient-country-budget element allows for the reporting of
+forward looking budgets for each country in which the organisation
+operates. The recommendation is that, where and when possible, the
+organisation’s total annual planned budget for each of the next
+three financial years is reported for each recipient country.
+It is strongly recommended that the start and end of the reported
+financial years match those of the recipient country’s
+budgetary/planning cycle. The status explains whether the budget
+being reported is indicative or has been formally committed. The
+value should appear within the BudgetStatus codelist. If the
+&#64;status attribute is not present, the budget is assumed to be
+indicative.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>status</td>
+<td>The status explains whether the budget being reported is indicative or has
+been formally committed. The value should appear within the BudgetStatus
+codelist. If the &#64;status attribute is not present, the budget is assumed
+to be indicative.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/BudgetStatus/"><span class="doc">Budget Status</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/&#64;status</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-country-budget/recipient-country/"><span class="doc">recipient-country</span></a></td>
+<td>The recipient country.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/recipient-country</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>code</td>
+<td>ISO 3166-1 alpha-2 code for the country.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/Country/"><span class="doc">Country</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/recipient-country/&#64;code</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-country-budget/recipient-country/narrative/"><span class="doc">narrative</span></a></td>
+<td>The free text name or description of the item being described. This can
+be repeated in multiple languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/recipient-country/narrative</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/recipient-country/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/recipient-country/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-country-budget/period-start/"><span class="doc">period-start</span></a></td>
+<td>The start of the budget period.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/period-start</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>iso-date</td>
+<td>&#160;</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/period-start/&#64;iso-date</td>
+<td>1..1</td>
+<td><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code>
+The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-country-budget/period-end/"><span class="doc">period-end</span></a></td>
+<td>The end of the period (which must not be greater than one year)</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/period-end</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>iso-date</td>
+<td>&#160;</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/period-end/&#64;iso-date</td>
+<td>1..1</td>
+<td><code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code>
+The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-country-budget/value/"><span class="doc">value</span></a></td>
+<td>The total value of the money budgeted to be disbursed to
+the specified country during this time period.  This
+element is required.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/value</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount. This is required for all currency amounts unless
+the&nbsp;iati-organisation/&#64;default-currency&nbsp;attribute is
+specified.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/Currency/"><span class="doc">Currency</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/value/&#64;currency</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>value-date</td>
+<td>The date to be used for determining the exchange rate for
+currency conversions.</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/value/&#64;value-date</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-country-budget/budget-line/"><span class="doc">budget-line</span></a></td>
+<td>A breakdown of the recipient country’s budget into
+sub-totals.  The breakdown is determined by the
+reporting organisation and described in the narrative.
+The period covered is the same as that covered by the
+parent recipient-country-budget element. The sum of
+budget-line values does not have to equal the value
+given in the parent element.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/budget-line</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>ref</td>
+<td>An internal reference for this budget line taken
+from the reporting organisation’s own system.
+Optional.</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/budget-line/&#64;ref</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-country-budget/budget-line/value/"><span class="doc">value</span></a></td>
+<td>The budget sub-total. The definition of the
+sub-division is determined by
+iati-organisation/recipient-country-budget/budget-line/narrative</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/budget-line/value</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount. This is required for all currency amounts unless
+the&nbsp;iati-organisation/&#64;default-currency&nbsp;attribute is
+specified.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/Currency/"><span class="doc">Currency</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/budget-line/value/&#64;currency</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>value-date</td>
+<td>The date to be used for determining the exchange rate for
+currency conversions.</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/budget-line/value/&#64;value-date</td>
+<td>1..1</td>
+<td>The <code class="docutils literal"><span class="pre">budget-line/value/&#64;value-date</span></code> must be between the <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> dates.</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/recipient-country-budget/budget-line/narrative/"><span class="doc">narrative</span></a></td>
+<td>The free text name or description of the item being described. This can
+be repeated in multiple languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/budget-line/narrative</td>
+<td>1..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/budget-line/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/recipient-country-budget/budget-line/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../iati-organisations/iati-organisation/total-expenditure/"><span class="doc">total-expenditure</span></a></td>
+<td>&#160;</td>
+<td>The total-expenditure element allows for the reporting of the
+organisation’s international development expenditure. The
+recommendation is that, where and when possible, the organisation’s
+total expenditure for each of the past three years is reported.
+The expense line allows publishers to record further breakdown.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/total-expenditure/period-start/"><span class="doc">period-start</span></a></td>
+<td>The start of the budget period.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/period-start</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>iso-date</td>
+<td>&#160;</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/period-start/&#64;iso-date</td>
+<td>1..1</td>
+<td>The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year
+<code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/total-expenditure/period-end/"><span class="doc">period-end</span></a></td>
+<td>The end of the period (which must not be greater than one year)</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/period-end</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>iso-date</td>
+<td>&#160;</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/period-end/&#64;iso-date</td>
+<td>1..1</td>
+<td>The time between <code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> and <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code> must not be over a year
+<code class="docutils literal"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal"><span class="pre">period-end/&#64;iso-date</span></code></td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/total-expenditure/value/"><span class="doc">value</span></a></td>
+<td>The total value of the organisation’s aid expenditure for
+this period.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/value</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount. This is required for all currency amounts unless
+the&nbsp;iati-organisation/&#64;default-currency&nbsp;attribute is
+specified.</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/value/&#64;currency</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>value-date</td>
+<td>The date to be used for determining the exchange rate for
+currency conversions.</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/value/&#64;value-date</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/total-expenditure/expense-line/"><span class="doc">expense-line</span></a></td>
+<td>A breakdown of the total expenditure into sub-totals.
+The breakdown is determined by the reporting
+organisation and described in the narrative. The period
+covered is the same as that covered by the parent
+total-expenditure element. The sum of expenditure-line
+values does not have to equal the value given in the
+parent element.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/expense-line</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>ref</td>
+<td>An internal reference for this expenditure line taken
+from the reporting organisation’s own system. Optional.</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/expense-line/&#64;ref</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/total-expenditure/expense-line/value/"><span class="doc">value</span></a></td>
+<td>The expenditure sub-total. The definition of the
+sub-division is determined by
+iati-organisation/total-expenditure/expenditure-line/narrative</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/expense-line/value</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount. This is required for all currency amounts unless
+the&nbsp;iati-organisation/&#64;default-currency&nbsp;attribute is
+specified.</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/expense-line/value/&#64;currency</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>value-date</td>
+<td>The date to be used for determining the exchange rate for
+currency conversions.</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/expense-line/value/&#64;value-date</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/total-expenditure/expense-line/narrative/"><span class="doc">narrative</span></a></td>
+<td>The free text name or description of the item being described. This can
+be repeated in multiple languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/expense-line/narrative</td>
+<td>1..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/total-expenditure/expense-line/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/total-expenditure/expense-line/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="../iati-organisations/iati-organisation/document-link/"><span class="doc">document-link</span></a></td>
+<td>&#160;</td>
+<td>A link to an online, publicly accessible web page or document.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>url</td>
+<td>The target URL of the external document, e.g. “<a class="reference external" href="http://www.example.org/doc.odt">http://www.example.org/doc.odt</a>”.</td>
+<td>xsd:anyURI</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/&#64;url</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>format</td>
+<td>An IANA code for the MIME type of the document being referenced, e.g. “application/pdf”.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/FileFormat/"><span class="doc">File Format</span></a></td>
+<td>iati-organisations/iati-organisation/document-link/&#64;format</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/document-link/recipient-country/"><span class="doc">recipient-country</span></a></td>
+<td>The recipient country that is the focus of the document.
+May be repeated for multiple countries.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/recipient-country</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>code</td>
+<td>ISO 3166-1 alpha-2 code for the country.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/Country/"><span class="doc">Country</span></a></td>
+<td>iati-organisations/iati-organisation/document-link/recipient-country/&#64;code</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/document-link/recipient-country/narrative/"><span class="doc">narrative</span></a></td>
+<td>The free text name or description of the item being described. This can
+be repeated in multiple languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/recipient-country/narrative</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/recipient-country/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/document-link/recipient-country/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/document-link/title/"><span class="doc">title</span></a></td>
+<td>A short, human-readable title.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/title</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/document-link/title/narrative/"><span class="doc">narrative</span></a></td>
+<td>The free text name or description of the item being described. This can
+be repeated in multiple languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/title/narrative</td>
+<td>1..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/title/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/document-link/title/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/document-link/description/"><span class="doc">description</span></a></td>
+<td>A description of the document contents, or guidance on where to access the relevant information in the document.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/description</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/document-link/description/narrative/"><span class="doc">narrative</span></a></td>
+<td>The free text name or description of the item being described. This can
+be repeated in multiple languages.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/description/narrative</td>
+<td>1..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>xsd:string</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/description/narrative/text()</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>xml:lang</td>
+<td>A code specifying the language of text in this element. It is recommended that wherever possible only codes from ISO 639-1 are used. If not present, the default language is assumed.</td>
+<td>&#160;</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/document-link/description/narrative/&#64;xml:lang</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/document-link/category/"><span class="doc">category</span></a></td>
+<td>IATI Document Category Code</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/category</td>
+<td>1..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>code</td>
+<td>An IATI code defining the category of the document.</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/DocumentCategory/"><span class="doc">Document Category</span></a></td>
+<td>iati-organisations/iati-organisation/document-link/category/&#64;code</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/document-link/language/"><span class="doc">language</span></a></td>
+<td>The ISO 639-1 language code in which target document is written, e.g. “en”. Can be repeated to describe multi-lingual documents.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/language</td>
+<td>0..*</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>code</td>
+<td>ISO 639-1 language code</td>
+<td>xsd:string</td>
+<td><a class="reference internal" href="../../codelists/Language/"><span class="doc">Language</span></a></td>
+<td>iati-organisations/iati-organisation/document-link/language/&#64;code</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>&#160;</td>
+<td><a class="reference internal" href="../iati-organisations/iati-organisation/document-link/document-date/"><span class="doc">document-date</span></a></td>
+<td>The date of publication of the document that is being linked to.</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/document-date</td>
+<td>0..1</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>&#160;</td>
+<td>iso-date</td>
+<td>&#160;</td>
+<td>xsd:date</td>
+<td>&#160;</td>
+<td>iati-organisations/iati-organisation/document-link/document-date/&#64;iso-date</td>
+<td>1..1</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">International</span> <span class="n">Aid</span> <span class="n">Transparency</span> <span class="n">Initiative</span><span class="p">:</span> <span class="n">Organisation</span><span class="o">-</span><span class="n">Information</span> <span class="n">Schema</span>
+
+<span class="n">Release</span> <span class="mf">2.03</span><span class="p">,</span> <span class="mi">2018</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mi">19</span>
+
+<span class="n">NOTE</span><span class="p">:</span> <span class="n">the</span> <span class="n">xml</span><span class="o">.</span><span class="n">xsd</span> <span class="ow">and</span> <span class="n">iati</span><span class="o">-</span><span class="n">common</span><span class="o">.</span><span class="n">xsd</span> <span class="n">schemas</span> <span class="n">must</span> <span class="n">be</span> <span class="ow">in</span> <span class="n">the</span>
+<span class="n">same</span> <span class="n">directory</span> <span class="k">as</span> <span class="n">this</span> <span class="n">one</span><span class="o">.</span>
+
+<span class="n">This</span> <span class="n">W3C</span> <span class="n">XML</span> <span class="n">Schema</span> <span class="n">defines</span> <span class="n">an</span> <span class="n">XML</span> <span class="n">document</span> <span class="nb">type</span> <span class="k">for</span> <span class="n">information</span>
+<span class="n">about</span> <span class="n">an</span> <span class="n">aid</span> <span class="n">organisation</span><span class="p">,</span> <span class="n">following</span> <span class="n">the</span> <span class="n">standard</span> <span class="n">published</span> <span class="n">at</span>
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">iatistandard</span><span class="o">.</span><span class="n">org</span>
+
+<span class="n">This</span> <span class="n">document</span> <span class="nb">type</span> <span class="n">may</span> <span class="n">be</span> <span class="n">extended</span> <span class="k">with</span> <span class="n">additional</span> <span class="n">elements</span> <span class="ow">and</span>
+<span class="n">attributes</span><span class="p">,</span> <span class="n">but</span> <span class="n">they</span> <span class="n">must</span> <span class="n">belong</span> <span class="n">to</span> <span class="n">an</span> <span class="n">explicit</span> <span class="n">XML</span> <span class="n">namespace</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/organisation-standard/summary-table.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search/" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 2.03 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

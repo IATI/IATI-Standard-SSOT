@@ -1,0 +1,2097 @@
+<codelist name="OrganisationIdentifier" date-last-modified="2020-10-28T16:50:18.431505+00:00" version="" xml:lang="en">
+  <OrganisationIdentifier>
+    <code>AT-1</code>
+    <name>Federal Ministry of Finance</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AT-10</code>
+    <name>Ministry for Agriculture and Environment</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AT-11</code>
+    <name>Ministry of Defense</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AT-12</code>
+    <name>Ministry of Interior</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AT-2</code>
+    <name>Various ministries</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AT-3</code>
+    <name>Federal Government of Austria</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AT-4</code>
+    <name>Oesterreichische Kontrollbank AG</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AT-5</code>
+    <name>Federal Ministry of Foreign Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AT-6</code>
+    <name>Provincial governments, local communities </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AT-8</code>
+    <name>Austrian Development Agency</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AT-9</code>
+    <name>Education and Science Ministry</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AT-99</code>
+    <name>Miscellaneous</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AU-5</code>
+    <name>Australian Agency for International Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>AU-72</code>
+    <name>Export Finance and Insurance Corporation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>BE-10</code>
+    <name>Directorate General for Co-operation and Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>BE-20</code>
+    <name>Official Federal Service of Foreign Affairs (excl. DGCD)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>BE-30</code>
+    <name>Official Federal Service of Finance</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>BE-31</code>
+    <name>Ducroire National Office</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>BE-39</code>
+    <name>Other Official Federal Services</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>BE-70</code>
+    <name>Flanders Official Regional Ministries</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>BE-80</code>
+    <name>Walloon Official Regional Ministries</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>BE-91</code>
+    <name>Brussels Official Regional Ministries</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>BE-94</code>
+    <name>German speaking Official Regional Ministries</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CA-1</code>
+    <name>Canadian International Development Agency</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CA-2</code>
+    <name>International Development Research Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CA-31</code>
+    <name>Export Development Corporation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CA-4</code>
+    <name>Department of Finance</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CH-1</code>
+    <name>Federal Administration (various departments)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CH-10</code>
+    <name>Swiss Agency for the Environment, Forests and Landscape </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CH-11</code>
+    <name>Municipalities</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CH-4</code>
+    <name>Swiss Agency for Development and Co-operation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CH-5</code>
+    <name>State Secretariat for Economic Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CH-6</code>
+    <name>Federal Department of Foreign Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CH-7</code>
+    <name>State Secretariat for Education and Research</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CH-8</code>
+    <name>Federal Office for Migration</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>CH-9</code>
+    <name>Federal Department for Defence, Civil Protection and Sports </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DE-1</code>
+    <name>Bundesministerium f&#252;r Wirtschaftliche Zusammenarbeit und Entwicklung</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DE-11</code>
+    <name>Foreign Office</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DE-12</code>
+    <name>Federal States &amp; Local Governments</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DE-14</code>
+    <name>Federal Institutions</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DE-16</code>
+    <name>Federal Ministries</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DE-17</code>
+    <name>Foundations/Societies/Misc. (non federal)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DE-2</code>
+    <name>Kreditanstalt f&#252;r Wiederaufbau</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DE-34</code>
+    <name>Hermes Kreditversicherungs-AG</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DE-4</code>
+    <name>German Investment and Development Company</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DE-52</code>
+    <name>Deutsche Gesellschaft f&#252;r Technische Zusammenarbeit</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DK-1</code>
+    <name>Ministry of Foreign Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DK-2</code>
+    <name>Danish International Development Agency (Not in CRS Directives)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DK-4</code>
+    <name>Not in CRS Directives</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>DK-72</code>
+    <name>EKR</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-1</code>
+    <name>Instituto de Credito Oficial</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-10</code>
+    <name>Ministry of Environment</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-11</code>
+    <name>Ministry of Health</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-12</code>
+    <name>Ministry of Labour and Social Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-13</code>
+    <name>Ministry of Interior</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-14</code>
+    <name>Ministry of Public Administration</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-15</code>
+    <name>Compania Espanola de Seguros de Credito a la Exportaci&#243;n</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-16</code>
+    <name>Municipalities</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-17</code>
+    <name>Miscellaneous</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-18</code>
+    <name>Ministry of Science and Technology</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-19</code>
+    <name>Ministry of Defense</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-2</code>
+    <name>Autonomous Governments</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-4</code>
+    <name>Ministry of Agriculture, Fisheries, and Food </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-5</code>
+    <name>Ministry of Foreign Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-6</code>
+    <name>Ministry of Economy and Finance</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-7</code>
+    <name>Ministry of Education, Culture and Sports </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-8</code>
+    <name>Ministry of Public Works</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>ES-9</code>
+    <name>Ministry of Industry and Energy</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>EU-1</code>
+    <name>Commission of the European Communities</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>EU-2</code>
+    <name>European Development Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>EU-3</code>
+    <name>European Investment Bank</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>EU-4</code>
+    <name>Humanitarian Aid Office of the European Commission</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>FI-1</code>
+    <name>Finnish Government</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>FI-2</code>
+    <name>FinnFund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>FI-3</code>
+    <name>Ministry of Foreign Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>FI-4</code>
+    <name>FIDE</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>FI-72</code>
+    <name>FinnVera</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>FR-10</code>
+    <name>Ministry of Economy, Finance and Industry </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>FR-17</code>
+    <name>Ministry of Education, Higher education and Research </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>FR-3</code>
+    <name>French Development Agency</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>FR-43</code>
+    <name>Coface</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>FR-6</code>
+    <name>Ministry of Foreign Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GB-1</code>
+    <name>Department for International Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GB-2</code>
+    <name>CDC Capital Partners PLC</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GB-5</code>
+    <name>Export Credit Guarantee Department</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GR-1</code>
+    <name>Ministry of Foreign Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GR-2</code>
+    <name>Ministry of National Economy</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GR-20</code>
+    <name>Miscellaneous</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GR-3</code>
+    <name>Ministry of the Interior, Public Administration and Decentralisation </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GR-4</code>
+    <name>Ministry of National Defence</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GR-5</code>
+    <name>Ministry of the Environment, Land Planning and Public Works </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GR-6</code>
+    <name>Ministry of National Education and Religions</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GR-7</code>
+    <name>Ministry of Agriculture</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GR-8</code>
+    <name>Ministry of Health - Welfare</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>GR-9</code>
+    <name>Ministry of Merchant Marine</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>IE-1</code>
+    <name>Department of Foreign Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>IE-71</code>
+    <name>Department of Industry and Commerce</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>IT-2</code>
+    <name>Agenzia Erogazioni Per l'Agricoltura</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>IT-4</code>
+    <name>Direzione Generale per la Cooperazione allo Sviluppo</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>IT-5</code>
+    <name>Not in CRS Directives</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>IT-7</code>
+    <name>Central administration</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>IT-74</code>
+    <name>Sezione Speciale per l'Assicurazione del Credito all'Esportazione</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>IT-8</code>
+    <name>Local administration</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>IT-9</code>
+    <name>Artigiancassa</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>JP-1</code>
+    <name>Ministry of Agriculture, Forestry and Fisheries </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>JP-10</code>
+    <name>Japan Overseas Development Co-operation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>JP-11</code>
+    <name>Japan Bank for International Co-operation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>JP-12</code>
+    <name>Other Ministries</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>JP-13</code>
+    <name>Public Corporations</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>JP-14</code>
+    <name>Prefectures</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>JP-15</code>
+    <name>Ordinance-designed Cities</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>JP-2</code>
+    <name>Ministry of Foreign Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>JP-7</code>
+    <name>Overseas Fishery Co-operation Foundation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>JP-71</code>
+    <name>Nippon Export and Investment Insurance</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>JP-8</code>
+    <name>Japanese International Co-operation Agency</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>LU-1</code>
+    <name>Lux-Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>LU-2</code>
+    <name>Ministry of Foreign Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>LU-22</code>
+    <name>Ducroire Office</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>NL-1</code>
+    <name>Ministry of Foreign Affairs (DGIS)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>NL-33</code>
+    <name>NCM Credit Management Worldwide</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>NL-4</code>
+    <name>Netherlands Gov. through Netherlands Investment Bank for Developing Countries</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>NO-1</code>
+    <name>Norwegian Agency for Development Co-operation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>NO-4</code>
+    <name>Ministry of Foreign Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>NO-7</code>
+    <name>Statens N&#230;rings og Distriksutviklingsfond</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>NO-71</code>
+    <name>Garantiinstituttet for Eksportkreditt</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>NO-72</code>
+    <name>Eksport Finans</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>NO-8</code>
+    <name>NORFUND</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>NZ-1</code>
+    <name>Ministry of Foreign Affairs and Trade</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>NZ-2</code>
+    <name>New Zealand International Aid and Development Agency</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>PT-1</code>
+    <name>Portuguese Government</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>PT-2</code>
+    <name>Institute for Portuguese Development Aid</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>PT-3</code>
+    <name>Other</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>PT-71</code>
+    <name>Conselho de garantias financeiras</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>SE-2</code>
+    <name>Ministry of Foreign Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>SE-6</code>
+    <name>Swedish International Development Authority</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>SE-71</code>
+    <name>Swedish Export Credits Guarantee Board</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-1</code>
+    <name>Agency for International Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-10</code>
+    <name>Peace Corps</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-11</code>
+    <name>State Department</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-12</code>
+    <name>Trade and Development Agency</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-13</code>
+    <name>African Development Foundation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-15</code>
+    <name>Centers for Disease Control and Prevention</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-16</code>
+    <name>National Institutes of Health</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-17</code>
+    <name>Department of Labor</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-2</code>
+    <name>Department of Agriculture</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-31</code>
+    <name>Export Import Bank</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-5</code>
+    <name>Department of Transportation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-6</code>
+    <name>Department of Treasury</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-7</code>
+    <name>Department of Defense</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-8</code>
+    <name>Miscellaneous</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>US-9</code>
+    <name>Department of Interior</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41101</code>
+    <name>Convention to Combat Desertification</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41102</code>
+    <name>Desert Locust Control Organisation for Eastern Africa</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41103</code>
+    <name>Economic Commission for Africa</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41104</code>
+    <name>Economic Commission for Latin America and the Caribbean</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41105</code>
+    <name>Economic and Social Commission for Western Asia</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41106</code>
+    <name>Economic and Social Commission for Asia and the Pacific</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41107</code>
+    <name>International Atomic Energy Agency (Contributions to Technical Cooperation Fund Only)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41108</code>
+    <name>International Fund for Agricultural Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41109</code>
+    <name>International Research and Training Institute for the Advancement of Women</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41110</code>
+    <name>Joint United Nations Programme on HIV/AIDS</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41111</code>
+    <name>United Nations Capital Development Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41112</code>
+    <name>United Nations Conference on Trade and Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41114</code>
+    <name>United Nations Development Programme</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41116</code>
+    <name>United Nations Environment Programme</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41118</code>
+    <name>United Nations Framework Convention on Climate Change</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41119</code>
+    <name>United Nations Population Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41120</code>
+    <name>United Nations Human Settlement Programme</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41121</code>
+    <name>United Nations Office of the United Nations High Commissioner for Refugees</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41122</code>
+    <name>United Nations Children's Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41123</code>
+    <name>United Nations Industrial Development Organisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41124</code>
+    <name>United Nations Development Fund for Women</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41125</code>
+    <name>United Nations Institute for Training and Research</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41126</code>
+    <name>United Nations Mine Action Service</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41127</code>
+    <name>United Nations Office of Co-ordination of Humanitarian Affairs</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41128</code>
+    <name>United Nations Office on Drugs and Crime</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41129</code>
+    <name>United Nations Research Institute for Social Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41130</code>
+    <name>United Nations Relief and Works Agency for Palestine Refugees in the Near East</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41131</code>
+    <name>United Nations System Staff College</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41132</code>
+    <name>United Nations System Standing Committee on Nutrition</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41133</code>
+    <name>United Nations Special Initiative on Africa</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41134</code>
+    <name>United Nations University (including Endowment Fund)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41135</code>
+    <name>United Nations Volunteers</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41136</code>
+    <name>United Nations Voluntary Fund on Disability</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41137</code>
+    <name>United Nations Voluntary Fund for Technical Co-operation in the Field of Human Rights</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41138</code>
+    <name>United Nations Voluntary Fund for Victims of Torture</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41140</code>
+    <name>World Food Programme</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41141</code>
+    <name>United Nations Peacebuilding Fund (Window Two: Restricted Contributions Only)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41142</code>
+    <name>United Nations Democracy Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41143</code>
+    <name>World Health Organisation - core voluntary contributions account</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41301</code>
+    <name>Food and Agricultural Organisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41302</code>
+    <name>International Labour Organisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41303</code>
+    <name>International Telecommunications Union</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41304</code>
+    <name>United Nations Educational, Scientific and Cultural Organisation </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41305</code>
+    <name>United Nations</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41306</code>
+    <name>Universal Postal Union</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41307</code>
+    <name>World Health Organisation - assessed contributions</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41308</code>
+    <name>World Intellectual Property Organisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41309</code>
+    <name>World Meteorological Organisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41310</code>
+    <name>United Nations Department of Peacekeeping Operations (excluding UNTSO, UNMOGIP, UNFICYP, UNDOF) </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41311</code>
+    <name>United Nations Peacebuilding Fund (Window One: Flexible Contributions Only)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41312</code>
+    <name>International Atomic Energy Agency - assessed contributions</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41313</code>
+    <name>United Nations High Commissioner for Human Rights (extrabudgetary contributions only)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>41314</code>
+    <name>United Nations Economic Commission for Europe (extrabudgetary contributions only)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>42001</code>
+    <name>European Commission - Development Share of Budget</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>42003</code>
+    <name>European Commission - European Development Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>42004</code>
+    <name>European Investment Bank (interest subsidies only)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>42005</code>
+    <name>Facility for Euro-Mediterranean Investment and Partnership Trust Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>42006</code>
+    <name>Global Energy Efficiency and Renewable Energy Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>43001</code>
+    <name>International Monetary Fund - Poverty Reduction and Growth Facility Trust</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>43002</code>
+    <name>International Monetary Fund - Poverty Reduction and Growth Facility - Heavily Indebted Poor Countries Initiative Trust (includes HIPC, PRGF and PRGF-HIPC sub-accounts) </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>43003</code>
+    <name>International Monetary Fund - Subsidization of IMF Emergency Assistance for Natural Disasters</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>44001</code>
+    <name>International Bank for Reconstruction and Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>44002</code>
+    <name>International Development Association</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>44003</code>
+    <name>International Development Association - Heavily Indebted Poor Countries Debt Initiative Trust Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>44004</code>
+    <name>International Finance Corporation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>44005</code>
+    <name>Multilateral Investment Guarantee Agency</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>44006</code>
+    <name>Advance Market Commitments</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>44007</code>
+    <name>International Development Association - Multilateral Debt Relief Initiative</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>45001</code>
+    <name>World Trade Organisation - International Trade Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>45002</code>
+    <name>World Trade Organisation - Advisory Centre on WTO Law</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>45003</code>
+    <name>World Trade Organisation - Doha Development Agenda Global Trust Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>46001</code>
+    <name>African Solidarity Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>46002</code>
+    <name>African Development Bank</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>46003</code>
+    <name>African Development Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>46004</code>
+    <name>Asian Development Bank</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>46005</code>
+    <name>Asian Development Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>46006</code>
+    <name>Black Sea Trade and Development Bank</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>46007</code>
+    <name>Central American Bank for Economic Integration</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>46008</code>
+    <name>Andean Development Corporation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>46009</code>
+    <name>Caribbean Development Bank</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>46012</code>
+    <name>Inter-American Development Bank, Inter-American Investment Corporation and Multilateral Investment Fund </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>46013</code>
+    <name>Inter-American Development Fund for Special Operations</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47001</code>
+    <name>African Capacity Building Foundation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47002</code>
+    <name>Asian Productivity Organisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47003</code>
+    <name>Association of South East Asian Nations: Economic Co-operation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47004</code>
+    <name>ASEAN Cultural Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47005</code>
+    <name>African Union (excluding peacekeeping facilities)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47008</code>
+    <name>World Vegetable Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47009</code>
+    <name>African and Malagasy Council for Higher Education</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47010</code>
+    <name>Commonwealth Agency for Public Administration and Management</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47011</code>
+    <name>Caribbean Community Secretariat</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47012</code>
+    <name>Caribbean Epidemiology Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47013</code>
+    <name>Commonwealth Foundation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47014</code>
+    <name>Commonwealth Fund for Technical Co-operation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47015</code>
+    <name>Consultative Group on International Agricultural Research</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47016</code>
+    <name>Commonwealth Institute</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47017</code>
+    <name>International Centre for Tropical Agriculture</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47018</code>
+    <name>Centre for International Forestry Research</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47019</code>
+    <name>International Centre for Advanced Mediterranean Agronomic Studies</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47020</code>
+    <name>International Maize and Wheat Improvement Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47021</code>
+    <name>International Potato Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47022</code>
+    <name>Convention on International Trade in Endangered Species of Wild Flora and Fauna</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47023</code>
+    <name>Commonwealth Legal Advisory Service</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47024</code>
+    <name>Commonwealth Media Development Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47025</code>
+    <name>Commonwealth of Learning</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47026</code>
+    <name>Community of Portuguese Speaking Countries</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47027</code>
+    <name>Colombo Plan</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47028</code>
+    <name>Commonwealth Partnership for Technical Management</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47029</code>
+    <name>Sahel and West Africa Club</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47030</code>
+    <name>Commonwealth Scientific Council</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47031</code>
+    <name>Commonwealth Small States Office</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47032</code>
+    <name>Commonwealth Trade and Investment Access Facility</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47033</code>
+    <name>Commonwealth Youth Programme</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47034</code>
+    <name>Economic Community of West African States</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47035</code>
+    <name>Environmental Development Action in the Third World</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47036</code>
+    <name>European and Mediterranean Plant Protection Organisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47037</code>
+    <name>Eastern-Regional Organisation of Public Administration</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47038</code>
+    <name>INTERPOL Fund for Aid and Technical Assistance to Developing Countries</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47040</code>
+    <name>Forum Fisheries Agency</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47041</code>
+    <name>Food and Fertilizer Technology Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47042</code>
+    <name>Foundation for International Training</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47043</code>
+    <name>Global Crop Diversity Trust</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47044</code>
+    <name>Global Environment Facility</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47045</code>
+    <name>Global Fund to Fight AIDS, Tuberculosis and Malaria </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47046</code>
+    <name>International Organisation of the Francophonic</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47047</code>
+    <name>International African Institute</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47048</code>
+    <name>Inter-American Indian Institute</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47049</code>
+    <name>International Bureau of Education - International Educational Reporting System (IERS)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47050</code>
+    <name>International Cotton Advisory Committee</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47051</code>
+    <name>International Centre for Agricultural Research in Dry Areas</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47053</code>
+    <name>Centre for Health and Population Research</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47054</code>
+    <name>International Centre of Insect Physiology and Ecology</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47055</code>
+    <name>International Centre for Development Oriented Research in Agriculture</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47056</code>
+    <name>World AgroForestry Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47057</code>
+    <name>International Crop Research for Semi-Arid Tropics</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47058</code>
+    <name>International Institute for Democracy and Electoral Assistance</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47059</code>
+    <name>International Development Law Organisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47060</code>
+    <name>International Institute for Cotton</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47061</code>
+    <name>Inter-American Institute for Co-operation on Agriculture</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47062</code>
+    <name>International Institute of Tropical Agriculture</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47063</code>
+    <name>International Livestock Research Institute</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47064</code>
+    <name>International Network for Bamboo and Rattan</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47065</code>
+    <name>Intergovernmental Oceanographic Commission</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47066</code>
+    <name>International Organisation for Migration</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47067</code>
+    <name>Intergovernmental Panel on Climate Change</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47068</code>
+    <name>Asia-Pacific Fishery Commission</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47069</code>
+    <name>Biodiversity International</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47070</code>
+    <name>International Rice Research Institute</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47071</code>
+    <name>International Seed Testing Association</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47073</code>
+    <name>International Tropical Timber Organisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47074</code>
+    <name>International Vaccine Institute</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47075</code>
+    <name>International Water Management Institute</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47076</code>
+    <name>Justice Studies Centre of the Americas</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47077</code>
+    <name>Mekong River Commission</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47078</code>
+    <name>Multilateral Fund for the Implementation of the Montreal Protocol</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47079</code>
+    <name>Organisation of American States</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47080</code>
+    <name>Organisation for Economic Co-operation and Development (Contributions to special funds for Technical Co-operation Activities Only)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47081</code>
+    <name>OECD Development Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47082</code>
+    <name>Organisation of Eastern Caribbean States</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47083</code>
+    <name>Pan-American Health Organisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47084</code>
+    <name>Pan-American Institute of Geography and History</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47085</code>
+    <name>Pan-American Railway Congress Association</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47086</code>
+    <name>Private Infrastructure Development Group</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47087</code>
+    <name>Pacific Islands Forum Secretariat</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47088</code>
+    <name>Relief Net</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47089</code>
+    <name>Southern African Development Community</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47090</code>
+    <name>Southern African Transport and Communications Commission</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47091</code>
+    <name>(Colombo Plan) Special Commonwealth African Assistance Programme</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47092</code>
+    <name>South East Asian Fisheries Development Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47093</code>
+    <name>South East Asian Ministers of Education</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47094</code>
+    <name>South Pacific Applied Geoscience Commission</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47095</code>
+    <name>South Pacific Board for Educational Assessment</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47096</code>
+    <name>Secretariat of the Pacific Community</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47097</code>
+    <name>Pacific Regional Environment Programme</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47098</code>
+    <name>Unrepresented Nations and Peoples' Organisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47099</code>
+    <name>University of the South Pacific</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47100</code>
+    <name>West African Monetary Union</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47101</code>
+    <name>Africa Rice Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47102</code>
+    <name>World Customs Organisation Fellowship Programme</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47103</code>
+    <name>World Maritime University</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47104</code>
+    <name>WorldFish Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47105</code>
+    <name>Common Fund for Commodities</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47106</code>
+    <name>Geneva Centre for the Democratic Control of Armed Forces</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47107</code>
+    <name>International Finance Facility for Immunisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47108</code>
+    <name>Multi-Country Demobilisation and Reintegration Program</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47109</code>
+    <name>Asia-Pacific Economic Cooperation Support Fund (except contributions tied to counter-terrorism activities)</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47110</code>
+    <name>Organisation of the Black Sea Economic Cooperation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47111</code>
+    <name>Adaptation Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47112</code>
+    <name>Central European Initiative - Special Fund for Climate and Environmental Protection</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47113</code>
+    <name>Economic and Monetary Community of Central Africa</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47116</code>
+    <name>Integrated Framework for Trade-Related Technical Assistance to Least Developed Countries</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47117</code>
+    <name>New Partnership for Africa's Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47118</code>
+    <name>Regional Organisation for the Strengthening of Supreme Audit Institutions of Francophone Sub-Saharan Countries</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47119</code>
+    <name>Sahara and Sahel Observatory</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47120</code>
+    <name>South Asian Association for Regional Cooperation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47121</code>
+    <name>United Cities and Local Governments of Africa</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47122</code>
+    <name>Global Alliance for Vaccines and Immunization</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47123</code>
+    <name>Geneva International Centre for Humanitarian Demining</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47125</code>
+    <name>European Bank for Reconstruction and Development - Early Transition Countries Initiative</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47126</code>
+    <name>European Bank for Reconstruction and Development - Western Balkans Trust Fund</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>47127</code>
+    <name>Latin-American Energy Organisation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21001</code>
+    <name>Association of Geoscientists for International Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21002</code>
+    <name>Agency for International Trade Information and Co-operation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21003</code>
+    <name>Latin American Council for Social Sciences</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21004</code>
+    <name>Council for the Development of Economic and Social Research in Africa</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21005</code>
+    <name>Consumer Unity and Trust Society International</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21006</code>
+    <name>Development Gateway Foundation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21007</code>
+    <name>Environmental Liaison Centre International</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21008</code>
+    <name>Eurostep</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21009</code>
+    <name>Forum for Agricultural Research in Africa</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21010</code>
+    <name>Forum for African Women Educationalists</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21011</code>
+    <name>Global Campaign for Education</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21013</code>
+    <name>Health Action International</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21014</code>
+    <name>Human Rights Information and Documentation Systems</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21015</code>
+    <name>International Catholic Rural Association</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21016</code>
+    <name>International Committee of the Red Cross</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21017</code>
+    <name>International Centre for Trade and Sustainable Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21018</code>
+    <name>International Federation of Red Cross and Red Crescent Societies</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21019</code>
+    <name>International Federation of Settlements and Neighbourhood Centres</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21020</code>
+    <name>International HIV/AIDS Alliance</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21021</code>
+    <name>International Institute for Environment and Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21022</code>
+    <name>International Network for Alternative Financial Institutions</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21023</code>
+    <name>International Planned Parenthood Federation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21024</code>
+    <name>Inter Press Service, International Association </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21025</code>
+    <name>International Seismological Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21026</code>
+    <name>International Service for Human Rights</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21027</code>
+    <name>International Trust Fund for Demining and Mine Victims Assistance</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21028</code>
+    <name>International University Exchange Fund - IUEF Stip. in Africa and Latin America</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21029</code>
+    <name>Doctors Without Borders</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21030</code>
+    <name>Pan African Institute for Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21031</code>
+    <name>PANOS Institute</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21032</code>
+    <name>Population Services International</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21033</code>
+    <name>Transparency International</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21034</code>
+    <name>International Union Against Tuberculosis and Lung Disease</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21035</code>
+    <name>World Organisation Against Torture</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21036</code>
+    <name>World University Service</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21037</code>
+    <name>Women's World Banking</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21038</code>
+    <name>International Alert</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21039</code>
+    <name>International Institute for Sustainable Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21040</code>
+    <name>International Women's Tribune Centre</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21041</code>
+    <name>Society for International Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21042</code>
+    <name>International Peacebuilding Alliance</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21043</code>
+    <name>European Parliamentarians for Africa</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21044</code>
+    <name>International Council for the Control of Iodine Deficiency Disorders</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21045</code>
+    <name>African Medical and Research Foundation</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21046</code>
+    <name>Agency for Cooperation and Research in Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21047</code>
+    <name>AgriCord</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21048</code>
+    <name>Association of African Universities</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21049</code>
+    <name>European Centre for Development Policy Management</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21050</code>
+    <name>Geneva Call</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21051</code>
+    <name>Institut Sup&#233;rieur Panafricaine d'Economie Coop&#233;rative</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21053</code>
+    <name>IPAS-Protecting Women's Health, Advancing Women's Reproductive Rights </name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21054</code>
+    <name>Life and Peace Institute</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21055</code>
+    <name>Regional AIDS Training Network</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21056</code>
+    <name>Renewable Energy and Energy Efficiency Partnership</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>21057</code>
+    <name>International Centre for Transitional Justice</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>30001</code>
+    <name>Global Alliance for Improved Nutrition</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>30003</code>
+    <name>Global e-Schools and Communities Initiative</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>30004</code>
+    <name>Global Water Partnership</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>30005</code>
+    <name>International AIDS Vaccine Initiative</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>30006</code>
+    <name>International Partnership on Microbicides</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>30007</code>
+    <name>Global Alliance for ICT and Development</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>30008</code>
+    <name>Cities Alliance</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>30009</code>
+    <name>Small Arms Survey</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>30010</code>
+    <name>International drug purchase facility</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>30011</code>
+    <name>International Union for the Conservation of Nature</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>31001</code>
+    <name>Global Development Network</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+  <OrganisationIdentifier>
+    <code>31002</code>
+    <name>Global Knowledge Partnership</name>
+    <language>en</language>
+  </OrganisationIdentifier>
+</codelist>

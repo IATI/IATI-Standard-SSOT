@@ -1,0 +1,24 @@
+<codelist name="PolicyMarkerVocabulary" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Policy Marker Vocabulary</name>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <url>http://reference.iatistandard.org/codelists/PolicyMarker/</url>
+            <name>OECD DAC CRS</name>
+            <name xml:lang="fr">OCDE CAD CRS</name>
+            <description>The policy marker is an OECD DAC CRS policy marker, Reported in columns 20-23, 28-31 and 54 of CRS++ reporting format.</description>
+            <description xml:lang="fr">Le marqueur de politique est un marqueur de politique OCDE CAD SNPC, indiqu&#233; dans les colonnes 20-23, 28-31 et 54 du format de pr&#233;paration de d&#233;claration SNPC++.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>99</code>
+            <name>Reporting Organisation</name>
+            <name xml:lang="fr">Organisation d&#233;clarante</name>
+            <description>The policy marker is one that is defined and tracked by the reporting organisation</description>
+            <description xml:lang="fr">Le marqueur de politique est un marqueur d&#233;fini et suivi par l'organisation d&#233;clarante</description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

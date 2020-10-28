@@ -1,0 +1,26 @@
+<codelist name="ActivityDateType" date-last-modified="2020-10-28T16:50:17.983372+00:00" version="" xml:lang="en">
+  <ActivityDateType>
+    <code>1</code>
+    <name>Planned start</name>
+    <language>en</language>
+    <description>The date on which the activity is planned to start, for example the date of the first planned disbursement or when physical activity starts.</description>
+  </ActivityDateType>
+  <ActivityDateType>
+    <code>2</code>
+    <name>Actual start</name>
+    <language>en</language>
+    <description>The actual date the activity starts, for example the date of the first disbursement or when physical activity starts.</description>
+  </ActivityDateType>
+  <ActivityDateType>
+    <code>3</code>
+    <name>Planned End</name>
+    <language>en</language>
+    <description>The date on which the activity is planned to end, for example the date of the last planned disbursement or when physical activity is complete.</description>
+  </ActivityDateType>
+  <ActivityDateType>
+    <code>4</code>
+    <name>Actual end</name>
+    <language>en</language>
+    <description>The actual date the activity ends, for example the date of the last disbursement or when physical activity is complete.</description>
+  </ActivityDateType>
+</codelist>

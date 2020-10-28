@@ -1,0 +1,106 @@
+budget-line
+===========
+
+``iati-organisations/iati-organisation/total-budget/budget-line``
+
+This is the reference page for the XML element ``budget-line``. 
+
+.. index::
+  single: budget-line
+
+Definition
+~~~~~~~~~~
+
+
+A breakdown of the total budget into sub-totals. The
+breakdown is determined by the reporting organisation
+and described in the narrative. The period covered is
+the same as that covered by the parent total-budget
+element. The sum of budget-line values does not have to
+equal the value given in the parent element.
+
+
+Rules
+~~~~~
+
+
+
+
+
+
+
+
+This element may occur any number of times.
+
+
+
+
+
+
+
+Attributes
+~~~~~~~~~~
+
+
+.. _iati-organisations/iati-organisation/total-budget/budget-line/.ref:
+
+@ref
+  An internal reference for this budget line taken
+  from the reporting organisation's own system.
+  Optional.
+
+
+  This value must be of type xsd:string.
+
+
+
+  
+
+
+
+
+
+Example Usage
+~~~~~~~~~~~~~
+Example ``budget-line`` for ``total-budget`` of an ``iati-organisation``.
+
+| An example ``@ref`` attribute is included.
+
+.. literalinclude:: ../../../organisation-standard-example-annotated.xml
+	:language: xml
+	:start-after: <!--total-budget starts-->
+	:end-before: <!--total-budget ends-->
+
+| The ``budget-line`` element can be repeated in any ``total-budget``.
+
+
+Changelog
+~~~~~~~~~
+
+2.01
+^^^^
+| The ``budget-line`` element was `added <http://iatistandard.org/upgrades/integer-upgrade-to-2-01/2-01-changes/#budget-line-new-element>`__ as a child element of ``total-budget``.
+
+.. meta::
+  :order: 3
+
+
+Developer tools
+~~~~~~~~~~~~~~~
+
+Find the source of this documentation on github:
+
+* `Schema <https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-organisations-schema.xsd#L182>`_
+* `Extra Documentation <https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/organisation-standard/iati-organisations/iati-organisation/total-budget/budget-line.rst>`_
+
+
+Subelements
+~~~~~~~~~~~
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   budget-line/value
+   budget-line/narrative
+

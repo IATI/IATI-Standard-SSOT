@@ -1,0 +1,102 @@
+<codelist name="FinanceType-category" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <url>http://www.oecd.org/dac/stats/dacandcrscodelists.htm</url>
+        <name>Finance Type (category)</name>
+        <description>This codelists exists to group the Finance Type codelist into categories. It is not used as a codelist in its own right.</description>
+        <category>Replicated</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item status="active">
+            <code>0</code>
+            <name>NON FLOW ITEMS</name>
+            <name xml:lang="fr">AUTRE QU&#8217;APPORTS</name>
+            <description>Non resource flow items requested on DAC table 1</description>
+            <description xml:lang="fr">Rubriques requises sur le tableau CAD 1 portant sur des informations autre que des apports</description>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>100</code>
+            <name>GRANTS</name>
+            <name xml:lang="fr">DONS</name>
+            <description/>
+            <description xml:lang="fr"/>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2016-01-01">
+            <code>1000</code>
+            <name>GUARANTEES AND OTHER UNFUNDED CONTINGENT LIABILITIES</name>
+            <name xml:lang="fr">GARANTIES ET AUTRES ENGAGEMENTS CONDITIONNELS NON PROVISIONN&#201;S</name>
+            <description/>
+            <description xml:lang="fr"/>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2015-12-31">
+            <code>200</code>
+            <name>INTEREST SUBSIDY</name>
+            <name xml:lang="fr">BONIFICATION  D&#8217;INTERET</name>
+            <description>Subsidies to soften the terms of private export credits, or loans or credits by the banking sector.</description>
+            <description xml:lang="fr">Subventions visant &#224; assouplir les conditions des cr&#233;dits &#224; l&#8217;exportation ou des pr&#234;ts/cr&#233;dits du secteur bancaire.</description>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2015-12-31">
+            <code>300</code>
+            <name>CAPITAL SUBSCRIPTION</name>
+            <name xml:lang="fr">SOUSCRIPTION AU CAPITAL</name>
+            <description>Payments to multilateral agencies in the form of notes and similar instruments, unconditionally cashable at sight by the recipient institutions.</description>
+            <description xml:lang="fr">Versements aux agences multilat&#233;rales sous forme de billets &#224; ordre et effets similaires encaissables &#224; vue sans condition par l'institution b&#233;n&#233;ficiaire.</description>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2015-12-31">
+            <code>400</code>
+            <name>LOAN</name>
+            <name xml:lang="fr">PR&#202;T</name>
+            <description>Transfers in cash or in kind for which the recipient incurs legal debt.</description>
+            <description xml:lang="fr">Transferts en esp&#232;ce ou en nature qui entra&#238;nent une obligation juridique de remboursement pour le b&#233;n&#233;ficiaire.</description>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2016-01-01">
+            <code>420</code>
+            <name>DEBT INSTRUMENTS</name>
+            <name xml:lang="fr">INSTRUMENTS DE DETTE</name>
+            <description/>
+            <description xml:lang="fr"/>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2016-01-01">
+            <code>430</code>
+            <name>MEZZANINE FINANCE INSTRUMENTS</name>
+            <name xml:lang="fr">INSTRUMENTS DE DETTE</name>
+            <description/>
+            <description xml:lang="fr"/>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>500</code>
+            <name>EQUITY  AND SHARES IN COLLECTIVE INVESTMENT VEHICLES</name>
+            <name xml:lang="fr">ACTIONS ET  PARTS DANS DES VEHICULES COLLECTIFS D'INVESTISSEMENT</name>
+            <description/>
+            <description xml:lang="fr"/>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>600</code>
+            <name>DEBT RELIEF</name>
+            <name xml:lang="fr">ALLEGEMENT DE LA DETTE</name>
+            <description>Debt cancellations, debt conversions, debt rescheduling within or outside the framework of the Paris Club.</description>
+            <description xml:lang="fr">Annulation de dette, conversion de dette, r&#233;&#233;chelonnement de dette au sein ou en dehors du Club de Paris.</description>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2015-12-31">
+            <code>700</code>
+            <name>INVESTMENT</name>
+            <name xml:lang="fr">INVESTISSEMENTS DIRECTS INTERNATIONAUX</name>
+            <description>Investment made by a private entity resident in a reporting country to acquire or add to a lasting interest(1) in an enterprise in a country on the DAC List of ODA Recipients.</description>
+            <description xml:lang="fr">L&#8217;investissement direct est motiv&#233; par la volont&#233; d&#8217;une entit&#233; r&#233;sidente d&#8217;un pays d&#233;clarant d&#8217;acqu&#233;rir ou de maintenir un int&#233;r&#234;t durable1 dans une entit&#233; r&#233;sidente d&#8217;un pays en d&#233;veloppement.</description>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2015-12-31">
+            <code>800</code>
+            <name>BONDS</name>
+            <name xml:lang="fr">OBLIGATIONS</name>
+            <description>Acquisition of bonds issued by developing countries.</description>
+            <description xml:lang="fr">Acquisition d&#8217;obligations &#233;mises par les pays en d&#233;veloppement.</description>
+        </codelist-item>
+        <codelist-item status="withdrawn" withdrawal-date="2015-12-31">
+            <code>900</code>
+            <name>OTHER SECURITIES/CLAIMS</name>
+            <name xml:lang="fr">AUTRES TITRES/CREANCES</name>
+            <description/>
+            <description xml:lang="fr"/>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

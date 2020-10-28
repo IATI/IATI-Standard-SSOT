@@ -1,0 +1,4 @@
+code,name,description,category,url,status
+1,Aid Provider,"A government, organisation, agency or institution that provides aid funds.",,,active
+2,Aid Recipient,"A government, organisation, agency or institution that recieves aid funds.",,,active
+3,Aggregator,An organisation that collects and reproduces information from other providers or recipients,,,active

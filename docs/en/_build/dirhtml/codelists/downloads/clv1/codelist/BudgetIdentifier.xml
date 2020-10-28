@@ -1,0 +1,1066 @@
+<codelist name="BudgetIdentifier" date-last-modified="2020-10-28T16:50:19.490434+00:00" version="" xml:lang="en">
+  <BudgetIdentifier>
+    <code>1.1.1</code>
+    <name>Executive - executive</name>
+    <language>en</language>
+    <category>1.1</category>
+    <category-name>Executive</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.2.1</code>
+    <name>Legislative - legislative</name>
+    <language>en</language>
+    <category>1.2</category>
+    <category-name>Legislative</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.1</code>
+    <name>Accountability - macroeconomic policy</name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.2</code>
+    <name>Accountability - budgeting</name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.3</code>
+    <name>Accountability - planning</name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.4</code>
+    <name>Accountability - Treasury/Accounts</name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.5</code>
+    <name>Accountability - debt and aid management</name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.6</code>
+    <name>Accountability - tax policy</name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.7</code>
+    <name>Accountability - tax collection</name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.8</code>
+    <name>Accountability - local government finance</name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.9</code>
+    <name>Accountability - other central transfers to institutions </name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.10</code>
+    <name>Accountability - national audit</name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.11</code>
+    <name>Accountability - national monitoring and evaluation</name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.12</code>
+    <name>Accountability - monetary institutions</name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.3.13</code>
+    <name>Accountability - financial sector policy and regulation</name>
+    <language>en</language>
+    <category>1.3</category>
+    <category-name>Accountability</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.4.1</code>
+    <name>External Affairs - foreign affairs </name>
+    <language>en</language>
+    <category>1.4</category>
+    <category-name>External Affairs</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.4.2</code>
+    <name>External Affairs - diplomatic missions</name>
+    <language>en</language>
+    <category>1.4</category>
+    <category-name>External Affairs</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.4.3</code>
+    <name>External Affairs - official development assistance</name>
+    <language>en</language>
+    <category>1.4</category>
+    <category-name>External Affairs</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.5.1</code>
+    <name>General Personnel Services - general personnel services</name>
+    <language>en</language>
+    <category>1.5</category>
+    <category-name>General Personnel Services</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.6.1</code>
+    <name>Statistics - statistics</name>
+    <language>en</language>
+    <category>1.6</category>
+    <category-name>Statistics</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.7.1</code>
+    <name>Other General Services - support to civil society </name>
+    <language>en</language>
+    <category>1.7</category>
+    <category-name>Other General Services</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.7.2</code>
+    <name>Other General Services - central procurement</name>
+    <language>en</language>
+    <category>1.7</category>
+    <category-name>Other General Services</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.7.3</code>
+    <name>Other General Services - Local Government Administration</name>
+    <language>en</language>
+    <category>1.7</category>
+    <category-name>Other General Services</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.7.4</code>
+    <name>Other General Services - other general services</name>
+    <language>en</language>
+    <category>1.7</category>
+    <category-name>Other General Services</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>1.8.1</code>
+    <name>Elections - elections</name>
+    <language>en</language>
+    <category>1.8</category>
+    <category-name>Elections</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.1.1</code>
+    <name>Justice, Law and Order - policy, planning and administration</name>
+    <language>en</language>
+    <category>2.1</category>
+    <category-name>Justice, Law and Order</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.1.2</code>
+    <name>Justice, Law and Order - fire or police</name>
+    <language>en</language>
+    <category>2.1</category>
+    <category-name>Justice, Law and Order</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.1.3</code>
+    <name>Justice, Law and Order - judicial affairs</name>
+    <language>en</language>
+    <category>2.1</category>
+    <category-name>Justice, Law and Order</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.1.4</code>
+    <name>Justice, Law and Order - Ombudsman</name>
+    <language>en</language>
+    <category>2.1</category>
+    <category-name>Justice, Law and Order</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.1.5</code>
+    <name>Justice, Law and Order - human rights affairs</name>
+    <language>en</language>
+    <category>2.1</category>
+    <category-name>Justice, Law and Order</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.1.6</code>
+    <name>Justice, Law and Order - immigration</name>
+    <language>en</language>
+    <category>2.1</category>
+    <category-name>Justice, Law and Order</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.1.7</code>
+    <name>Justice, Law and Order - anti corruption</name>
+    <language>en</language>
+    <category>2.1</category>
+    <category-name>Justice, Law and Order</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.1.8</code>
+    <name>Justice, Law and Order - prisons</name>
+    <language>en</language>
+    <category>2.1</category>
+    <category-name>Justice, Law and Order</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.1.9</code>
+    <name>Justice, Law and Order - peace building</name>
+    <language>en</language>
+    <category>2.1</category>
+    <category-name>Justice, Law and Order</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.1.10</code>
+    <name>Justice, Law and Order - demobilisation</name>
+    <language>en</language>
+    <category>2.1</category>
+    <category-name>Justice, Law and Order</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.2.1</code>
+    <name>Defence - policy, planning and administration</name>
+    <language>en</language>
+    <category>2.2</category>
+    <category-name>Defence</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.2.2</code>
+    <name>Defence - military</name>
+    <language>en</language>
+    <category>2.2</category>
+    <category-name>Defence</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.2.3</code>
+    <name>Defence - civil defence</name>
+    <language>en</language>
+    <category>2.2</category>
+    <category-name>Defence</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>2.2.4</code>
+    <name>Defence - foreign military aid</name>
+    <language>en</language>
+    <category>2.2</category>
+    <category-name>Defence</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.1.1</code>
+    <name>General Economic, Commercial and Labour Affairs - policy, planning and administration</name>
+    <language>en</language>
+    <category>3.1</category>
+    <category-name>General Economic, Commercial and Labour Affairs</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.1.2</code>
+    <name>General Economic, Commercial and Labour Affairs - general economic affairs</name>
+    <language>en</language>
+    <category>3.1</category>
+    <category-name>General Economic, Commercial and Labour Affairs</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.1.3</code>
+    <name>General Economic, Commercial and Labour Affairs - investment promotion</name>
+    <language>en</language>
+    <category>3.1</category>
+    <category-name>General Economic, Commercial and Labour Affairs</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.1.4</code>
+    <name>General Economic, Commercial and Labour Affairs - privatisation</name>
+    <language>en</language>
+    <category>3.1</category>
+    <category-name>General Economic, Commercial and Labour Affairs</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.1.5</code>
+    <name>General Economic, Commercial and Labour Affairs - trade</name>
+    <language>en</language>
+    <category>3.1</category>
+    <category-name>General Economic, Commercial and Labour Affairs</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.1.6</code>
+    <name>General Economic, Commercial and Labour Affairs - labour</name>
+    <language>en</language>
+    <category>3.1</category>
+    <category-name>General Economic, Commercial and Labour Affairs</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.1.7</code>
+    <name>General Economic, Commercial and Labour Affairs - national standards development</name>
+    <language>en</language>
+    <category>3.1</category>
+    <category-name>General Economic, Commercial and Labour Affairs</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.2.1</code>
+    <name>Public Works - policy, planning and administration</name>
+    <language>en</language>
+    <category>3.2</category>
+    <category-name>Public Works</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.2.2</code>
+    <name>Public Works - construction regulation</name>
+    <language>en</language>
+    <category>3.2</category>
+    <category-name>Public Works</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.2.3</code>
+    <name>Public Works - mechanical services</name>
+    <language>en</language>
+    <category>3.2</category>
+    <category-name>Public Works</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.3.1</code>
+    <name>Agriculture - policy, planning and administration</name>
+    <language>en</language>
+    <category>3.3</category>
+    <category-name>Agriculture</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.3.2</code>
+    <name>Agriculture - irrigation</name>
+    <language>en</language>
+    <category>3.3</category>
+    <category-name>Agriculture</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.3.3</code>
+    <name>Agriculture - inputs</name>
+    <language>en</language>
+    <category>3.3</category>
+    <category-name>Agriculture</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.3.4</code>
+    <name>Agriculture - food crop</name>
+    <language>en</language>
+    <category>3.3</category>
+    <category-name>Agriculture</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.3.5</code>
+    <name>Agriculture - industrial crop</name>
+    <language>en</language>
+    <category>3.3</category>
+    <category-name>Agriculture</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.3.6</code>
+    <name>Agriculture - livestock</name>
+    <language>en</language>
+    <category>3.3</category>
+    <category-name>Agriculture</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.3.7</code>
+    <name>Agriculture - agricultural training and extension</name>
+    <language>en</language>
+    <category>3.3</category>
+    <category-name>Agriculture</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.3.8</code>
+    <name>Agriculture - research</name>
+    <language>en</language>
+    <category>3.3</category>
+    <category-name>Agriculture</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.3.9</code>
+    <name>Agriculture - other services</name>
+    <language>en</language>
+    <category>3.3</category>
+    <category-name>Agriculture</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.4.1</code>
+    <name>Forestry - policy, planning and administration</name>
+    <language>en</language>
+    <category>3.4</category>
+    <category-name>Forestry</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.4.2</code>
+    <name>Forestry - development and services</name>
+    <language>en</language>
+    <category>3.4</category>
+    <category-name>Forestry</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.4.3</code>
+    <name>Forestry - education/training</name>
+    <language>en</language>
+    <category>3.4</category>
+    <category-name>Forestry</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.4.4</code>
+    <name>Forestry - research</name>
+    <language>en</language>
+    <category>3.4</category>
+    <category-name>Forestry</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.5.1</code>
+    <name>Fishing and Hunting - policy, planning and administration</name>
+    <language>en</language>
+    <category>3.5</category>
+    <category-name>Fishing and Hunting</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.5.2</code>
+    <name>Fishing and Hunting - development and services</name>
+    <language>en</language>
+    <category>3.5</category>
+    <category-name>Fishing and Hunting</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.5.3</code>
+    <name>Fishing and Hunting - education and training</name>
+    <language>en</language>
+    <category>3.5</category>
+    <category-name>Fishing and Hunting</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.5.4</code>
+    <name>Fishing and Hunting - research</name>
+    <language>en</language>
+    <category>3.5</category>
+    <category-name>Fishing and Hunting</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.6.1</code>
+    <name>Energy - policy, planning and administration</name>
+    <language>en</language>
+    <category>3.6</category>
+    <category-name>Energy</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.6.2</code>
+    <name>Energy - education and training</name>
+    <language>en</language>
+    <category>3.6</category>
+    <category-name>Energy</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.6.3</code>
+    <name>Energy - energy regulation</name>
+    <language>en</language>
+    <category>3.6</category>
+    <category-name>Energy</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.6.4</code>
+    <name>Energy - electricity transmission</name>
+    <language>en</language>
+    <category>3.6</category>
+    <category-name>Energy</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.6.5</code>
+    <name>Energy - nuclear</name>
+    <language>en</language>
+    <category>3.6</category>
+    <category-name>Energy</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.6.6</code>
+    <name>Energy - power generation</name>
+    <language>en</language>
+    <category>3.6</category>
+    <category-name>Energy</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.6.7</code>
+    <name>Energy - gas </name>
+    <language>en</language>
+    <category>3.6</category>
+    <category-name>Energy</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.7.1</code>
+    <name>Mining and Mineral Development - policy, planning and administration</name>
+    <language>en</language>
+    <category>3.7</category>
+    <category-name>Mining and Mineral Development</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.7.2</code>
+    <name>Mining and Mineral Development - prospection and exploration</name>
+    <language>en</language>
+    <category>3.7</category>
+    <category-name>Mining and Mineral Development</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.7.3</code>
+    <name>Mining and Mineral Development - coal and other solid mineral fuels</name>
+    <language>en</language>
+    <category>3.7</category>
+    <category-name>Mining and Mineral Development</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.7.4</code>
+    <name>Mining and Mineral Development - petroleum and gas</name>
+    <language>en</language>
+    <category>3.7</category>
+    <category-name>Mining and Mineral Development</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.7.6</code>
+    <name>Mining and Mineral Development - other fuel</name>
+    <language>en</language>
+    <category>3.7</category>
+    <category-name>Mining and Mineral Development</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.7.7</code>
+    <name>Mining and Mineral Development - non fuel minerals</name>
+    <language>en</language>
+    <category>3.7</category>
+    <category-name>Mining and Mineral Development</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.1</code>
+    <name>Transport - policy, planning and administration</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.2</code>
+    <name>Transport - transport regulation</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.3</code>
+    <name>Transport - feeder road construction</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.4</code>
+    <name>Transport - feeder road maintenance</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.5</code>
+    <name>Transport - national road construction</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.6</code>
+    <name>Transport - national road maintenance</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.7</code>
+    <name>Transport - rail</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.8</code>
+    <name>Transport - water</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.9</code>
+    <name>Transport - air</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.10</code>
+    <name>Transport - pipeline</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.11</code>
+    <name>Transport - storage and distribution</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.12</code>
+    <name>Transport - public transport services</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.13</code>
+    <name>Transport - meteorological services</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.8.14</code>
+    <name>Transport - education and training</name>
+    <language>en</language>
+    <category>3.8</category>
+    <category-name>Transport</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.9.1</code>
+    <name>Industry - policy, planning and administration</name>
+    <language>en</language>
+    <category>3.9</category>
+    <category-name>Industry</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.9.2</code>
+    <name>Industry - development and services</name>
+    <language>en</language>
+    <category>3.9</category>
+    <category-name>Industry</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.9.3</code>
+    <name>Industry - industrial research</name>
+    <language>en</language>
+    <category>3.9</category>
+    <category-name>Industry</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.9.4</code>
+    <name>Industry - (investment in industry)</name>
+    <language>en</language>
+    <category>3.9</category>
+    <category-name>Industry</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.10.1</code>
+    <name>Communications - policy, planning and administration</name>
+    <language>en</language>
+    <category>3.10</category>
+    <category-name>Communications</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.10.2</code>
+    <name>Communications - ICT Infrastructure</name>
+    <language>en</language>
+    <category>3.10</category>
+    <category-name>Communications</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.10.3</code>
+    <name>Communications - telecoms and postal services</name>
+    <language>en</language>
+    <category>3.10</category>
+    <category-name>Communications</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.10.4</code>
+    <name>Communications - information services</name>
+    <language>en</language>
+    <category>3.10</category>
+    <category-name>Communications</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.11.1</code>
+    <name>Tourism - policy, planning and administration</name>
+    <language>en</language>
+    <category>3.11</category>
+    <category-name>Tourism</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.11.2</code>
+    <name>Tourism - services</name>
+    <language>en</language>
+    <category>3.11</category>
+    <category-name>Tourism</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>3.12.1</code>
+    <name>Microfinance and financial services - Microfinance and financial services</name>
+    <language>en</language>
+    <category>3.12</category>
+    <category-name>Microfinance and financial services</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.1.1</code>
+    <name>Water supply and Sanitation - policy, planning and administration</name>
+    <language>en</language>
+    <category>4.1</category>
+    <category-name>Water supply and Sanitation</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.1.2</code>
+    <name>Water supply and Sanitation - education/training</name>
+    <language>en</language>
+    <category>4.1</category>
+    <category-name>Water supply and Sanitation</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.1.3</code>
+    <name>Water supply and Sanitation - rural water supply and sanitation</name>
+    <language>en</language>
+    <category>4.1</category>
+    <category-name>Water supply and Sanitation</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.1.4</code>
+    <name>Water supply and Sanitation - urban water supply and sanitation</name>
+    <language>en</language>
+    <category>4.1</category>
+    <category-name>Water supply and Sanitation</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.1.5</code>
+    <name>Water supply and Sanitation - rural water supply</name>
+    <language>en</language>
+    <category>4.1</category>
+    <category-name>Water supply and Sanitation</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.1.6</code>
+    <name>Water supply and Sanitation - urban water supply</name>
+    <language>en</language>
+    <category>4.1</category>
+    <category-name>Water supply and Sanitation</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.1.7</code>
+    <name>Water supply and Sanitation - rural sanitation</name>
+    <language>en</language>
+    <category>4.1</category>
+    <category-name>Water supply and Sanitation</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.1.8</code>
+    <name>Water supply and Sanitation - urban sanitation</name>
+    <language>en</language>
+    <category>4.1</category>
+    <category-name>Water supply and Sanitation</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.1.9</code>
+    <name>Water supply and Sanitation - sewage and waste management</name>
+    <language>en</language>
+    <category>4.1</category>
+    <category-name>Water supply and Sanitation</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.2.1</code>
+    <name>Environment - policy, planning and administration</name>
+    <language>en</language>
+    <category>4.2</category>
+    <category-name>Environment</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.2.2</code>
+    <name>Environment - research/ education and training</name>
+    <language>en</language>
+    <category>4.2</category>
+    <category-name>Environment</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.2.3</code>
+    <name>Environment - natural resource management</name>
+    <language>en</language>
+    <category>4.2</category>
+    <category-name>Environment</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.2.4</code>
+    <name>Environment - water resources management</name>
+    <language>en</language>
+    <category>4.2</category>
+    <category-name>Environment</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>4.2.5</code>
+    <name>Environment - wildlife protection, parks and site preservation</name>
+    <language>en</language>
+    <category>4.2</category>
+    <category-name>Environment</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.1.1</code>
+    <name>Health - policy, planning and administration</name>
+    <language>en</language>
+    <category>5.1</category>
+    <category-name>Health</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.2.1</code>
+    <name>Recreation, Culture and Religion - recreation and sport</name>
+    <language>en</language>
+    <category>5.2</category>
+    <category-name>Recreation, Culture and Religion</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.2.2</code>
+    <name>Recreation, Culture and Religion - culture</name>
+    <language>en</language>
+    <category>5.2</category>
+    <category-name>Recreation, Culture and Religion</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.2.3</code>
+    <name>Recreation, Culture and Religion - broadcasting and publishing</name>
+    <language>en</language>
+    <category>5.2</category>
+    <category-name>Recreation, Culture and Religion</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.2.4</code>
+    <name>Recreation, Culture and Religion - religion</name>
+    <language>en</language>
+    <category>5.2</category>
+    <category-name>Recreation, Culture and Religion</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.1</code>
+    <name>Education - administration, policy and planning</name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.2</code>
+    <name>Education - research</name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.3</code>
+    <name>Education - pre-primary</name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.4</code>
+    <name>Education - primary</name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.5</code>
+    <name>Education - lower secondary</name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.6</code>
+    <name>Education - upper secondary</name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.7</code>
+    <name>Education - post secondary non tertiary </name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.8</code>
+    <name>Education - tertiary</name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.9</code>
+    <name>Education - vocational training</name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.10</code>
+    <name>Education - advanced technical and managerial training</name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.11</code>
+    <name>Education - basic adult education</name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.12</code>
+    <name>Education - teacher training</name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.3.13</code>
+    <name>Education - subsidiary services</name>
+    <language>en</language>
+    <category>5.3</category>
+    <category-name>Education</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.4.1</code>
+    <name>Social Protection, Land Housing and Community Amenities - policy, planning and administration</name>
+    <language>en</language>
+    <category>5.4</category>
+    <category-name>Social Protection, Land Housing and Community Amenities</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.4.2</code>
+    <name>Social Protection, Land Housing and Community Amenities - social security (excl pensions)</name>
+    <language>en</language>
+    <category>5.4</category>
+    <category-name>Social Protection, Land Housing and Community Amenities</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.4.3</code>
+    <name>Social Protection, Land Housing and Community Amenities - general pensions</name>
+    <language>en</language>
+    <category>5.4</category>
+    <category-name>Social Protection, Land Housing and Community Amenities</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.4.4</code>
+    <name>Social Protection, Land Housing and Community Amenities - civil service and military pensions</name>
+    <language>en</language>
+    <category>5.4</category>
+    <category-name>Social Protection, Land Housing and Community Amenities</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.4.5</code>
+    <name>Social Protection, Land Housing and Community Amenities - social services (incl youth development and women+ children)</name>
+    <language>en</language>
+    <category>5.4</category>
+    <category-name>Social Protection, Land Housing and Community Amenities</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.4.6</code>
+    <name>Social Protection, Land Housing and Community Amenities - land policy and management</name>
+    <language>en</language>
+    <category>5.4</category>
+    <category-name>Social Protection, Land Housing and Community Amenities</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.4.7</code>
+    <name>Social Protection, Land Housing and Community Amenities - rural devt</name>
+    <language>en</language>
+    <category>5.4</category>
+    <category-name>Social Protection, Land Housing and Community Amenities</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.4.8</code>
+    <name>Social Protection, Land Housing and Community Amenities - urban devt</name>
+    <language>en</language>
+    <category>5.4</category>
+    <category-name>Social Protection, Land Housing and Community Amenities</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.4.9</code>
+    <name>Social Protection, Land Housing and Community Amenities - housing and community amenities</name>
+    <language>en</language>
+    <category>5.4</category>
+    <category-name>Social Protection, Land Housing and Community Amenities</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.4.10</code>
+    <name>Social Protection, Land Housing and Community Amenities - emergency relief</name>
+    <language>en</language>
+    <category>5.4</category>
+    <category-name>Social Protection, Land Housing and Community Amenities</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.4.11</code>
+    <name>Social Protection, Land Housing and Community Amenities - disaster prevention and preparedness</name>
+    <language>en</language>
+    <category>5.4</category>
+    <category-name>Social Protection, Land Housing and Community Amenities</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>5.4.12</code>
+    <name>Social Protection, Land Housing and Community Amenities - support to refugees and internally displaced persons</name>
+    <language>en</language>
+    <category>5.4</category>
+    <category-name>Social Protection, Land Housing and Community Amenities</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>6.1.1</code>
+    <name>Development Partner affairs - policy planning and administration</name>
+    <language>en</language>
+    <category>6.1</category>
+    <category-name>Development Partner affairs</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>6.1.2</code>
+    <name>Development Partner affairs - Technical staff services</name>
+    <language>en</language>
+    <category>6.1</category>
+    <category-name>Development Partner affairs</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>7.1.1</code>
+    <name>External to government sector - External to general government sector</name>
+    <language>en</language>
+    <category>7.1</category>
+    <category-name>External to government sector</category-name>
+  </BudgetIdentifier>
+  <BudgetIdentifier>
+    <code>7.2.1</code>
+    <name>General Budget Support - General Budget Support</name>
+    <language>en</language>
+    <category>7.2</category>
+    <category-name>General Budget Support</category-name>
+  </BudgetIdentifier>
+</codelist>

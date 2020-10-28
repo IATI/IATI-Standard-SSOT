@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!--
+  Test that schema accepts top-level extended elements with an
+  explicit XML namespace
+-->
+<iati-organisations version="xx">
+
+  <iati-organisation>
+    <organisation-identifier>12345</organisation-identifier>
+    <name>
+      <narrative>Name here</narrative>
+    </name>
+    <reporting-org type="xx" ref="xx">
+      <narrative>Organisation name</narrative>
+    </reporting-org>
+    
+    <!-- extended foo element allowed with an XML namespace -->
+    <foo xmlns="http://www.example.org/">yyy</foo>
+  </iati-organisation>
+
+</iati-organisations>

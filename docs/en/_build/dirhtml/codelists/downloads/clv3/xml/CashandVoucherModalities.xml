@@ -1,0 +1,33 @@
+<codelist name="CashandVoucherModalities" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>
+            <narrative>Cash and Voucher Modalities</narrative>
+        </name>
+        <description>
+            <narrative>This codelist has been created by IATI following agreements and recommendations of the Tracking Cash and Voucher Assistance (CVA) Working Group. Definitions of the codes have been aligned with the CaLP Glossary:http://www.cashlearning.org/resources/glossary.</narrative>
+        </description>
+        <category>
+            <narrative>Non-Core</narrative>
+        </category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>
+                <narrative>Cash Transfer</narrative>
+            </name>
+            <description>
+                <narrative>The provision of assistance in the form of money - either physical currency or e-cash - to recipients (individuals, households or communities). Cash transfers are by definition unrestricted in terms of use and distinct from restricted modalities including vouchers and in-kind assistance.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>
+                <narrative>Voucher</narrative>
+            </name>
+            <description>
+                <narrative>A paper, token or e-voucher that can be exchanged for a set quantity or value of goods or services, denominated either as a cash value (e.g. $15) or predetermined commodities (e.g. 5 kg maize) or specific services (e.g. milling of 5 kg of maize), or a combination of value and commodities. Vouchers are restricted by default, although the degree of restriction will vary based on the programme design and type of voucher. They are redeemable with preselected vendors or in ‘fairs’ created by the implementing agency. The terms vouchers, stamps, or coupons might be used interchangeably.</narrative>
+            </description>
+        </codelist-item>
+   </codelist-items>
+</codelist>   

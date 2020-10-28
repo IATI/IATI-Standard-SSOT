@@ -1,0 +1,6 @@
+code,name,description,category,url,status
+1,Parent,An activity that contains sub-activities (sub-components) which are reported separately to IATI,,,active
+2,Child,A sub-activity (or sub-component) that sits within a larger activity (parent) which is also reported to IATI,,,active
+3,Sibling,A sub-activity (or sub-component) that is related to another sub-activity with the same parent,,,active
+4,Co-funded,An activity that receives funding from more than one organisation,,,active
+5,Third Party,"A report by another organisation on the same activity you are reporting (excluding activities reported as part of a financial transaction - e.g. provider-activity-id or a co-funded activity, using code 4)",,,active

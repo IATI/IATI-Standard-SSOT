@@ -1,0 +1,26 @@
+<codelist name="OrganisationRole" date-last-modified="2020-10-28T16:50:19.146455+00:00" version="" xml:lang="en">
+  <OrganisationRole>
+    <code>1</code>
+    <name>Funding</name>
+    <language>en</language>
+    <description>The government or organisation which provides funds to the activity. </description>
+  </OrganisationRole>
+  <OrganisationRole>
+    <code>2</code>
+    <name>Accountable</name>
+    <language>en</language>
+    <description>An organisation responsible for oversight of the activity and its outcomes</description>
+  </OrganisationRole>
+  <OrganisationRole>
+    <code>3</code>
+    <name>Extending</name>
+    <language>en</language>
+    <description>An organisation that manages the budget and direction of an activity on behalf of the funding organisation</description>
+  </OrganisationRole>
+  <OrganisationRole>
+    <code>4</code>
+    <name>Implementing</name>
+    <language>en</language>
+    <description>The organisation that physically carries out the activity or intervention. </description>
+  </OrganisationRole>
+</codelist>

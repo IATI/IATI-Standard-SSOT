@@ -1,0 +1,42 @@
+<codelist name="OtherIdentifierType" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <name>Other Identifier Type</name>
+        <name xml:lang="fr">Autre crit&#232;re d&#8217;identification</name>
+        <category>Non-Core</category>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>A1</code>
+            <name>Reporting Organisation's internal activity identifier</name>
+            <name xml:lang="fr">Identifiant interne de l&#8217;activit&#233; dans l&#8217;organisation en charge de l&#8217;&#233;laboration du rapport</name>
+        </codelist-item>
+        <codelist-item>
+            <code>A2</code>
+            <name>CRS Activity identifier</name>
+            <name xml:lang="fr">Identifiant de l&#8217;activit&#233; dans le Syst&#232;me de notification des pays cr&#233;anciers</name>
+        </codelist-item>
+        <codelist-item>
+            <code>A3</code>
+            <name>Previous Activity Identifier</name>
+            <name xml:lang="fr">Identifiant pr&#233;c&#233;dent de l&#8217;activit&#233;</name>
+            <description>The standard insists that once an activity has been reported to IATI its identifier MUST NOT be changed, even if the reporting organisation changes its organisation identifier. There may be exceptional circumstances in which this rule cannot be followed, in which case the previous identifier should be reported using this code.</description>
+            <description xml:lang="fr">La norme insiste sur le fait qu&#8217;un identifiant d&#8217;activit&#233; transmis &#224; l&#8217;IITA NE DOIT PAS &#234;tre modifi&#233;, m&#234;me si le notificateur modifie l&#8217;identifiant de l&#8217;organisation. Si des circonstances exceptionnelles emp&#234;chent le respect de cette r&#232;gle, il convient de renseigner l&#8217;identifiant pr&#233;c&#233;dent &#224; l&#8217;aide de ce code.</description>
+        </codelist-item>
+        <codelist-item>
+            <code>A9</code>
+            <name>Other Activity Identifier</name>
+            <name xml:lang="fr">Autre identifiant de l&#8217;activit&#233;</name>
+        </codelist-item>
+        <codelist-item>
+            <code>B1</code>
+            <name>Previous Reporting Organisation Identifier</name>
+            <name xml:lang="fr">Identifiant pr&#233;c&#233;dent de l&#8217;organisation en charge de l&#8217;&#233;laboration du rapport</name>
+        </codelist-item>
+        <codelist-item>
+            <code>B9</code>
+            <name>Other Organisation Identifier</name>
+            <name xml:lang="fr">Autre identifiant de l&#8217;organisation</name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+
