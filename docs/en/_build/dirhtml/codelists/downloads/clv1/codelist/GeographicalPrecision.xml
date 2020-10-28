@@ -1,4 +1,4 @@
-<codelist name="GeographicalPrecision" date-last-modified="2020-10-28T16:50:18.871299+00:00" version="" xml:lang="en">
+<codelist name="GeographicalPrecision" date-last-modified="2020-10-28T16:58:41.235841+00:00" version="" xml:lang="en">
   <GeographicalPrecision>
     <code>1</code>
     <name>Exact location</name>

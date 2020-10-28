@@ -571,7 +571,10 @@ Activity Standard Summary Table
       - 
       - iati-activities/iati-activity/activity-date/\@iso-date
       - 1..1
-      - 
+      - ``activity-date[@type='1']/@iso-date`` must be before or the same as ``activity-date[@type='3']/@iso-date``
+        ``activity-date[@type='2']/@iso-date`` must be before or the same as ``activity-date[@type='4']/@iso-date``
+        ``activity-date[@type='2']/@iso-date`` must not be in the future.
+        ``activity-date[@type='4']/@iso-date`` must not be in the future.
 
     * - 
       - :doc:`narrative </activity-standard/iati-activities/iati-activity/activity-date/narrative>`
