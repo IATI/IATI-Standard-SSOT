@@ -25,6 +25,7 @@ for VER in 1.01 1.02 1.03 1.04 1.05 2.01 2.02 2.03 ; do
     cp iati-activites-schema.xsd ../IATI-Rulesets/lib/schemata/$VER/
     cp iati-common.xsd ../IATI-Rulesets/lib/schemata/$VER/
     cp iati-organisations-schema.xsd ../IATI-Rulesets/lib/schemata/$VER/
+    cp xml.xsd ../IATI-Rulesets/lib/schemata/$VER/
     cd ../
 done
 
