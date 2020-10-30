@@ -1,1 +1,0 @@
-{"name": "BudgetType", "date-last-modified": "2020-10-28T16:58:41.234245+00:00", "version": "", "xml:lang": "en", "BudgetType": [{"code": "1", "name": "Original", "language": "en", "description": "The original budget allocated to the activity"}, {"code": "2", "name": "Revised", "language": "en", "description": "The updated budget for an activity"}]}
