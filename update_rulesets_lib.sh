@@ -5,6 +5,7 @@
 # make sure we have all submodules loaded and create a branch in IATI-Rulesets
 git submodule update --init --recursive || exit 1
 cd IATI-Rulesets
+git checkout master
 git checkout codelist-schema-update || git checkout -b codelist-schema-update 
 cd ../
 
