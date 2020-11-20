@@ -2,6 +2,7 @@
 *.pyc
 pyenv*
 .DS_Store
+.vscode
 
 # Output HTML folders
 docs/
