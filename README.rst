@@ -1,6 +1,8 @@
 IATI Standard SSOT
 ==================
 
+.. image:: https://github.com/IATI/IATI-Standard-SSOT/workflows/CI_version-2.02/badge.svg
+    :target: https://github.com/IATI/IATI-Standard-SSOT/actions
 .. image:: https://travis-ci.org/IATI/IATI-Standard-SSOT.svg?branch=version-2.02
     :target: https://travis-ci.org/IATI/IATI-Standard-SSOT
 .. image:: https://requires.io/github/IATI/IATI-Standard-SSOT/requirements.svg?branch=version-2.02
