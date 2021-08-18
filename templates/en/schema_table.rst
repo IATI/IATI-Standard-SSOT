@@ -21,7 +21,7 @@
       - {% set codelist_tuples = match_codelists(root_path+row.path) %}{% for codelist_tuple in codelist_tuples %}{%if codelist_tuple[1]%}({%endif%}:doc:`/codelists/{{codelist_tuple[0]}}`{%if codelist_tuple[1]%}){%endif%}{% endfor %}
       - {{row.path.replace('@','\@')}}
       - {{row.occur}}
-      - {{'\n        '.join(ruleset_text(row.path))}}
+      - {% set rtexts = ruleset_text(row.path) %}{% for rtext in rtexts %}`{{ rtext[0] }} <{{ rtext[2] }}>`_: {{ rtext[1] }}{{ '\n        ' }}{% endfor %}
 {% endfor %}
 
 ::
