@@ -76,6 +76,16 @@ def lookup_see_also(standard, mapping, path):
 def see_also(path, lang):
     return list()
 
+def path_to_solr(path):
+    final = path
+    if 'iati-activities/iati-activity/@' in path:
+        final = path.replace('iati-activities/iati-activity/@','')
+    elif 'iati-activities/iati-activity/' in path:
+        final = path.replace('iati-activities/iati-activity/','')
+    elif 'iati-activities' in path:
+        final = path.replace('iati-activities', 'dataset')
+    return final.replace('/@','_').replace('/','_').replace('-', '_')
+
 
 standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
 
@@ -521,7 +531,39 @@ class Schema2Doc(object):
                     occurs = attribute.get('use')
             out.append((attribute.get('name') or attribute.get('ref'), attribute.get('type'), doc.text if doc is not None else '', occurs == 'required'))
         return out
+    
+    def output_solr_order(self, element_name, path, element=None, output=False, filename=''):
+        if element is None:
+            element = self.get_schema_element('element', element_name)
+            if element is None:
+                return
 
+        extended_types = element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces)
+        full_path = '/'.join(path.split('/')[1:]) + element_name
+        solr_name = path_to_solr(full_path)       
+        rows = [{
+            "name": element_name,
+            'path': full_path,
+            "solr_field_name": solr_name
+        }]
+
+        for a_name, a_type, a_description, a_required in self.attribute_loop(element):
+            full_path = '/'.join(path.split('/')[1:]) + element_name + '/@' + a_name
+            solr_name = path_to_solr(full_path)       
+            rows.append({
+                'attribute_name': a_name,
+                'path': full_path,
+                'solr_field_name': solr_name
+            })
+
+        for child_name, child_element, child_ref_element, child_type_element, minOccurs, maxOccurs in self.element_loop(element, path):
+            rows += self.output_solr_order(child_name, path + element.attrib['name'] + '/', child_element)
+
+        if output:
+            with open(filename, 'a') as fp:
+                for row in rows:
+                    fp.write(',' + row['solr_field_name'])
+        return rows
 
 def codelists_to_docs(lang):
     dirname = 'IATI-Codelists/out/clv2/json/' + lang
