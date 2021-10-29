@@ -599,7 +599,15 @@ class Schema2Doc(object):
             if out_type == 'schema':
                 with open(filename, 'w') as fp:
                     for row in rows:
-                        fp.write('<field name="' + row['solr_field_name'] + '" type="' + row['solr_type'] + '" required="' + row['solr_required'] + '" multiValued="' + row['solr_multivalued']+ '"' '/>\n')
+                        line = '<field '
+                        line += 'name="' + row['solr_field_name'] + '" '
+                        line += 'type="' + row['solr_type'] + '" ' 
+                        line += 'multiValued="' + row['solr_multivalued'] + '" '
+                        line += 'indexed="true" '
+                        line += 'required="' + row['solr_required'] + '" '
+                        line += 'stored="true" '
+                        line += ' />\n'
+                        fp.write(line)
         return rows
 
 def codelists_to_docs(lang):
