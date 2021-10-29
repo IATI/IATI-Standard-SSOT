@@ -547,7 +547,7 @@ class Schema2Doc(object):
             out.append((attribute.get('name') or attribute.get('ref'), attribute.get('type'), doc.text if doc is not None else '', occurs == 'required'))
         return out
     
-    def output_solr(self, element_name, path, element=None, output=False, filename='', out_type='order', minOccurs='', maxOccurs='', ref_element=None, type_element=None, parent_req=True):
+    def output_solr(self, element_name, path, element=None, output=False, filename='', out_type='order', minOccurs='', maxOccurs='', ref_element=None, type_element=None, parent_req=True, parent_multi=False):
         if element is None:
             element = self.get_schema_element('element', element_name)
             if element is None:
@@ -558,8 +558,11 @@ class Schema2Doc(object):
         full_path = '/'.join(path.split('/')[1:]) + element_name
         solr_name = path_to_solr(full_path)       
         xsd_type = element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else ''
-        
         required = (minOccurs == '1') and parent_req
+        if element_name == 'iati-activity':
+            maxOccurs = '1'
+        multivalued = (maxOccurs == 'unbounded') or parent_multi
+
         rows = [{
             "name": element_name,
             'path': full_path,
@@ -567,7 +570,8 @@ class Schema2Doc(object):
             'type': xsd_type,
             'solr_type': xsd_type_to_solr(xsd_type),
             'required': required,
-            'solr_required': 'true' if required else 'false'
+            'solr_required': 'true' if required else 'false',
+            'solr_multivalued': 'true' if multivalued else 'false'
         }]
 
         for a_name, a_type, a_description, a_required in self.attribute_loop(element):
@@ -580,11 +584,12 @@ class Schema2Doc(object):
                 'solr_field_name': solr_name,
                 'type': a_type,
                 'solr_type': xsd_type_to_solr(a_type),
-                'solr_required': 'true' if required and a_required else 'false'
+                'solr_required': 'true' if required and a_required else 'false',
+                'solr_multivalued': 'true' if multivalued else 'false'
             })
 
         for child_name, child_element, child_ref_element, child_type_element, minOccurs, maxOccurs in self.element_loop(element, path):
-            rows += self.output_solr(child_name, path + element.attrib['name'] + '/', child_element, minOccurs=minOccurs, maxOccurs=maxOccurs, ref_element=child_ref_element, type_element=child_type_element, parent_req=required)
+            rows += self.output_solr(child_name, path + element.attrib['name'] + '/', child_element, minOccurs=minOccurs, maxOccurs=maxOccurs, ref_element=child_ref_element, type_element=child_type_element, parent_req=required, parent_multi=multivalued)
 
         if output:
             if out_type == 'order':
@@ -594,7 +599,7 @@ class Schema2Doc(object):
             if out_type == 'schema':
                 with open(filename, 'w') as fp:
                     for row in rows:
-                        fp.write('<field name="' + row['solr_field_name'] + '" type="' + row['solr_type'] + '" required="' + row['solr_required'] + '"' '/>\n')
+                        fp.write('<field name="' + row['solr_field_name'] + '" type="' + row['solr_type'] + '" required="' + row['solr_required'] + '" multiValued="' + row['solr_multivalued']+ '"' '/>\n')
         return rows
 
 def codelists_to_docs(lang):
