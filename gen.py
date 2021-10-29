@@ -562,17 +562,20 @@ class Schema2Doc(object):
         if element_name == 'iati-activity':
             maxOccurs = '1'
         multivalued = (maxOccurs == 'unbounded') or parent_multi
-
-        rows = [{
-            "name": element_name,
-            'path': full_path,
-            "solr_field_name": solr_name,
-            'type': xsd_type,
-            'solr_type': xsd_type_to_solr(xsd_type),
-            'required': required,
-            'solr_required': 'true' if required else 'false',
-            'solr_multivalued': 'true' if multivalued else 'false'
-        }]
+        
+        rows = []
+        # elements should only be in solr if they contain text, otherwise they wouldn't have a flattened value
+        if element.xpath('xsd:complexType[@mixed="true"] or xsd:complexType/xsd:simpleContent', namespaces=namespaces):
+            rows = [{
+                "name": element_name ,
+                'path': full_path,
+                "solr_field_name": solr_name ,
+                'type': xsd_type,
+                'solr_type': xsd_type_to_solr(xsd_type),
+                'required': required,
+                'solr_required': 'true' if required else 'false',
+                'solr_multivalued': 'true' if multivalued else 'false'
+            }]
 
         for a_name, a_type, a_description, a_required in self.attribute_loop(element):
             full_path = '/'.join(path.split('/')[1:]) + element_name + '/@' + a_name
@@ -609,7 +612,7 @@ class Schema2Doc(object):
                         line += 'type="' + row['solr_type'] + '" ' 
                         line += 'multiValued="' + row['solr_multivalued'] + '" '
                         line += 'indexed="true" '
-                        line += 'required="' + row['solr_required'] + '" '
+                        line += 'required="false" '
                         line += 'stored="true" '
                         line += ' />\n'
                         fp.write(line)
