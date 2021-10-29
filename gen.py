@@ -599,6 +599,9 @@ class Schema2Doc(object):
             if out_type == 'schema':
                 with open(filename, 'w') as fp:
                     for row in rows:
+                        if row['solr_field_name'] in ['dataset', 'dataset_iati_activity']:
+                            continue
+                        
                         line = '<field '
                         line += 'name="' + row['solr_field_name'] + '" '
                         line += 'type="' + row['solr_type'] + '" ' 
