@@ -87,8 +87,6 @@ def path_to_solr(path):
         final = path.replace('iati-activities', 'dataset')
     return final.replace('/@','_').replace('/','_').replace('-', '_')
 
-narrative_re = re.compile('_narrative$')
-
 def xsd_type_to_solr(element_name = None, xsd_type = None):
     if (element_name is not None and re.search('_narrative$', element_name) is not None):
         return "iati_narrative"
@@ -104,6 +102,7 @@ def xsd_type_to_solr(element_name = None, xsd_type = None):
      'xsd:nonNegativeInteger': 'pint',
      'xsd:positiveInteger': 'pint',
      'xsd:int': 'pint',
+     'currencyType': 'pdoubles'
     }
     return switch.get(xsd_type,"string")
 
@@ -563,7 +562,7 @@ class Schema2Doc(object):
 
         full_path = '/'.join(path.split('/')[1:]) + element_name
         solr_name = path_to_solr(full_path)       
-        xsd_type = element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else ''
+        xsd_type = element.get('type') if element.get('type') and (element.get('type').startswith('xsd:') or element.get('type') == 'currencyType') else ''
         required = (minOccurs == '1') and parent_req
         if element_name == 'iati-activity':
             maxOccurs = '1'
@@ -571,7 +570,7 @@ class Schema2Doc(object):
         
         rows = []
         # elements should only be in solr if they contain text, otherwise they wouldn't have a flattened value
-        if element.xpath('xsd:complexType[@mixed="true"] or xsd:complexType/xsd:simpleContent', namespaces=namespaces):
+        if element.xpath('xsd:complexType[@mixed="true"] or xsd:complexType/xsd:simpleContent', namespaces=namespaces) or xsd_type == 'currencyType':
             rows = [{
                 "name": element_name ,
                 'path': full_path,
