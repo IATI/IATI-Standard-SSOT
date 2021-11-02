@@ -569,8 +569,8 @@ class Schema2Doc(object):
         multivalued = (maxOccurs == 'unbounded') or parent_multi
         
         rows = []
-        # elements should only be in solr if they contain text, otherwise they wouldn't have a flattened value
-        if element.xpath('xsd:complexType[@mixed="true"] or xsd:complexType/xsd:simpleContent', namespaces=namespaces) or xsd_type == 'currencyType':
+        # elements should only be in solr if they contain something with a type, otherwise they wouldn't have a flattened value
+        if element.xpath('xsd:complexType[@mixed="true"] or xsd:complexType/xsd:simpleContent', namespaces=namespaces) or xsd_type != '':
             rows = [{
                 "name": element_name ,
                 'path': full_path,
