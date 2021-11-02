@@ -85,7 +85,7 @@ def path_to_solr(path):
         final = path.replace('iati-activities/iati-activity/','')
     elif 'iati-activities' in path:
         final = path.replace('iati-activities', 'dataset')
-    return final.replace('/@','_').replace('/','_').replace('-', '_')
+    return final.replace('/@','_').replace('/','_').replace('-', '_').replace(':','_')
 
 def xsd_type_to_solr(element_name = None, xsd_type = None):
     if (element_name is not None and re.search('_narrative$', element_name) is not None):
