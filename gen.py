@@ -602,10 +602,15 @@ class Schema2Doc(object):
         if output:
             if out_type == 'order':
                 with open(filename, 'w') as fp:
-                    for row in rows:
+                    fp.write('<str name="fl">')
+                    stop = len(rows)
+                    for i, row in enumerate(rows):
                         if row['solr_field_name'] in ['dataset', 'dataset_iati_activity']:
                             continue
-                        fp.write(',' + row['solr_field_name'])
+                        fp.write(row['solr_field_name'])
+                        if i < stop - 1:
+                            fp.write(',')
+                    fp.write('</str>')
             if out_type == 'schema':
                 with open(filename, 'w') as fp:
                     for row in rows:
