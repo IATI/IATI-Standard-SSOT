@@ -7,6 +7,7 @@ import jinja2
 from lxml import etree as ET
 from collections import defaultdict
 from iatirulesets.text import rules_text
+import re
 
 languages = ['en']
 
@@ -86,7 +87,12 @@ def path_to_solr(path):
         final = path.replace('iati-activities', 'dataset')
     return final.replace('/@','_').replace('/','_').replace('-', '_')
 
-def xsd_type_to_solr(xsd_type):
+narrative_re = re.compile('_narrative$')
+
+def xsd_type_to_solr(element_name = None, xsd_type = None):
+    if (element_name is not None and re.search('_narrative$', element_name) is not None):
+        return "iati_narrative"
+    
     switch={
      'xsd:string': 'string',
      'xsd:NMTOKEN': 'string',
@@ -571,7 +577,7 @@ class Schema2Doc(object):
                 'path': full_path,
                 "solr_field_name": solr_name ,
                 'type': xsd_type,
-                'solr_type': xsd_type_to_solr(xsd_type),
+                'solr_type': xsd_type_to_solr(solr_name, xsd_type),
                 'required': required,
                 'solr_required': 'true' if required else 'false',
                 'solr_multivalued': 'true' if multivalued else 'false'
@@ -586,7 +592,7 @@ class Schema2Doc(object):
                 'path': full_path,
                 'solr_field_name': solr_name,
                 'type': a_type,
-                'solr_type': xsd_type_to_solr(a_type),
+                'solr_type': xsd_type_to_solr(xsd_type=a_type),
                 'solr_required': 'true' if required and a_required else 'false',
                 'solr_multivalued': 'true' if multivalued else 'false'
             })
