@@ -90,6 +90,9 @@ def path_to_solr(path):
 def xsd_type_to_solr(element_name = None, xsd_type = None):
     if (element_name is not None and re.search('_narrative$', element_name) is not None):
         return "text_general"
+
+    if (element_name == 'location_administrative_level'):
+        return "string"
     
     switch={
      'xsd:string': 'string',
@@ -591,7 +594,7 @@ class Schema2Doc(object):
                 'path': full_path,
                 'solr_field_name': solr_name,
                 'type': a_type,
-                'solr_type': xsd_type_to_solr(xsd_type=a_type),
+                'solr_type': xsd_type_to_solr(solr_name, xsd_type=a_type),
                 'solr_required': 'true' if required and a_required else 'false',
                 'solr_multivalued': 'true' if multivalued else 'false'
             })
