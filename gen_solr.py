@@ -1,4 +1,6 @@
 import re
+import sys
+from pathlib import Path
 from gen import Schema2Doc
 
 # Define the namespaces necessary for opening schema files
@@ -40,7 +42,7 @@ def xsd_type_to_solr(element_name = None, xsd_type = None):
 
 class Schema2Solr(Schema2Doc):
 
-    def output_solr(self, element_name, path, element=None, output=False, filename='', out_type='order', minOccurs='', maxOccurs='', ref_element=None, type_element=None, parent_req=True, parent_multi=False):
+    def output_solr(self, element_name, path, element=None, output=False, template_path='', filename='', collection='', out_type='order', minOccurs='', maxOccurs='', ref_element=None, type_element=None, parent_req=True, parent_multi=False):
         if element is None:
             element = self.get_schema_element('element', element_name)
             if element is None:
@@ -88,42 +90,54 @@ class Schema2Solr(Schema2Doc):
             rows += self.output_solr(child_name, path + element.attrib['name'] + '/', child_element, minOccurs=minOccurs, maxOccurs=maxOccurs, ref_element=child_ref_element, type_element=child_type_element, parent_req=required, parent_multi=multivalued)
 
         if output:
+            template = Path(template_path).read_text()
+            out = ''
             if out_type == 'order':
-                with open(filename, 'w') as fp:
-                    fp.write('<str name="fl">')
-                    stop = len(rows)
-                    for i, row in enumerate(rows):
-                        if row['solr_field_name'] in ['dataset', 'dataset_iati_activity']:
-                            continue
-                        fp.write(row['solr_field_name'])
-                        if i < stop - 1:
-                            fp.write(',')
-                    fp.write('</str>')
+                order_out = '<str name="fl">'
+                stop = len(rows)
+                for i, row in enumerate(rows):
+                    if row['solr_field_name'] in ['dataset', 'dataset_iati_activity']:
+                        continue
+                    order_out += row['solr_field_name']
+                    if i < stop - 1:
+                        order_out += ','
+                order_out += '</str>'
+                out = template.replace("#SEARCHDEFAULTS#", order_out)
             if out_type == 'schema':
-                with open(filename, 'w') as fp:
-                    for row in rows:
-                        if row['solr_field_name'] in ['dataset', 'dataset_iati_activity']:
-                            continue
-                        
-                        line = '<field '
-                        line += 'name="' + row['solr_field_name'] + '" '
-                        line += 'type="' + row['solr_type'] + '" ' 
-                        line += 'multiValued="' + row['solr_multivalued'] + '" '
-                        line += 'indexed="true" '
-                        line += 'required="false" '
-                        line += 'stored="true" '
-                        line += ' />\n'
-                        fp.write(line)
+                schema_rows = ''
+                for row in rows:
+                    if row['solr_field_name'] in ['dataset', 'dataset_iati_activity']:
+                        continue
+                    
+                    line = '<field '
+                    line += 'name="' + row['solr_field_name'] + '" '
+                    line += 'type="' + row['solr_type'] + '" ' 
+                    line += 'multiValued="' + row['solr_multivalued'] + '" '
+                    line += 'indexed="true" '
+                    line += 'required="false" '
+                    line += 'stored="true" '
+                    line += ' />\n\t'
+                    schema_rows += line
+                out = template.replace("#COLLECTIONNAME#", collection).replace("#INSERTSCHEMA#", schema_rows)
+            with open(filename, 'w') as fp:
+                fp.write(out)
         return rows
 
 
+if __name__ == '__main__':
+    collection = sys.argv[1]
+    solrconfig_template = sys.argv[2]
+    solrconfig_dest = sys.argv[3]
+    solrschema_template = sys.argv[4]
+    solrschema_dest = sys.argv[5]
 
-activities = Schema2Solr('iati-activities-schema.xsd', lang='en')
-activities.output_solr(
-    'iati-activities', 'activity-standard/', output=True,
-    filename='solr_fl.xml', out_type='order'
-)
-activities.output_solr(
-    'iati-activities', 'activity-standard/', minOccurs='1', maxOccurs='1', output=True,
-    filename='solr_schema.xml', out_type='schema'
-)
+    activities = Schema2Solr('iati-activities-schema.xsd', lang='en')
+    activities.output_solr(
+        'iati-activities', 'activity-standard/', output=True, template_path=solrconfig_template,
+        filename=solrconfig_dest, collection=collection
+        , out_type='order'
+    )
+    activities.output_solr(
+        'iati-activities', 'activity-standard/', minOccurs='1', maxOccurs='1', output=True, template_path=solrschema_template,
+        filename=solrschema_dest, collection=collection, out_type='schema'
+    )
