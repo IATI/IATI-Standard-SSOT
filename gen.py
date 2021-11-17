@@ -92,12 +92,12 @@ def xsd_type_to_solr(element_name = None, xsd_type = None):
         return "text_general"
 
     if (element_name == 'location_administrative_level'):
-        return "string"
+        return "text_gen_sort"
     
     switch={
-     'xsd:string': 'string',
-     'xsd:NMTOKEN': 'string',
-     'xsd:anyURI': 'string',
+     'xsd:string': 'text_gen_sort',
+     'xsd:NMTOKEN': 'text_gen_sort',
+     'xsd:anyURI': 'text_general',
      'xsd:decimal': 'pdoubles',
      'xsd:dateTime': 'pdate',
      'xsd:date': 'pdate',
@@ -107,7 +107,7 @@ def xsd_type_to_solr(element_name = None, xsd_type = None):
      'xsd:int': 'pint',
      'currencyType': 'pdoubles'
     }
-    return switch.get(xsd_type,"string")
+    return switch.get(xsd_type,"text_gen_sort")
 
 
 standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
