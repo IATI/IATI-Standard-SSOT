@@ -1,5 +1,5 @@
 import re
-from schema2doc import Schema2Doc
+from gen import Schema2Doc
 
 # Define the namespaces necessary for opening schema files
 namespaces = {
