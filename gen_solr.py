@@ -8,37 +8,40 @@ namespaces = {
     'xsd': 'http://www.w3.org/2001/XMLSchema'
 }
 
+
 def path_to_solr(path):
     final = path
     if 'iati-activities/iati-activity/@' in path:
-        final = path.replace('iati-activities/iati-activity/@','')
+        final = path.replace('iati-activities/iati-activity/@', '')
     elif 'iati-activities/iati-activity/' in path:
-        final = path.replace('iati-activities/iati-activity/','')
+        final = path.replace('iati-activities/iati-activity/', '')
     elif 'iati-activities' in path:
         final = path.replace('iati-activities', 'dataset')
-    return final.replace('/@','_').replace('/','_').replace('-', '_').replace(':','_')
+    return final.replace('/@', '_').replace('/', '_').replace('-', '_').replace(':', '_')
 
-def xsd_type_to_solr(element_name = None, xsd_type = None):
+
+def xsd_type_to_solr(element_name=None, xsd_type=None):
     if (element_name is not None and re.search('_narrative$', element_name) is not None):
         return "text_general"
 
     if (element_name == 'location_administrative_level'):
         return "text_gen_sort"
-    
-    switch={
-    'xsd:string': 'text_gen_sort',
-    'xsd:NMTOKEN': 'text_gen_sort',
-    'xsd:anyURI': 'text_general',
-    'xsd:decimal': 'pdoubles',
-    'xsd:dateTime': 'pdate',
-    'xsd:date': 'pdate',
-    'xsd:boolean': 'boolean',
-    'xsd:nonNegativeInteger': 'pint',
-    'xsd:positiveInteger': 'pint',
-    'xsd:int': 'pint',
-    'currencyType': 'pdoubles'
+
+    switch = {
+        'xsd:string': 'text_gen_sort',
+        'xsd:NMTOKEN': 'text_gen_sort',
+        'xsd:anyURI': 'text_general',
+        'xsd:decimal': 'pdoubles',
+        'xsd:dateTime': 'pdate',
+        'xsd:date': 'pdate',
+        'xsd:boolean': 'boolean',
+        'xsd:nonNegativeInteger': 'pint',
+        'xsd:positiveInteger': 'pint',
+        'xsd:int': 'pint',
+        'currencyType': 'pdoubles'
     }
-    return switch.get(xsd_type,"text_gen_sort")
+    return switch.get(xsd_type, "text_gen_sort")
+
 
 class Schema2Solr(Schema2Doc):
 
@@ -48,23 +51,21 @@ class Schema2Solr(Schema2Doc):
             if element is None:
                 return
 
-        extended_types = element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces)
-
         full_path = '/'.join(path.split('/')[1:]) + element_name
-        solr_name = path_to_solr(full_path)       
+        solr_name = path_to_solr(full_path)
         xsd_type = element.get('type') if element.get('type') and (element.get('type').startswith('xsd:') or element.get('type') == 'currencyType') else ''
         required = (minOccurs == '1') and parent_req
         if element_name == 'iati-activity':
             maxOccurs = '1'
         multivalued = (maxOccurs == 'unbounded') or parent_multi
-        
+
         rows = []
         # elements should only be in solr if they contain something with a type, otherwise they wouldn't have a flattened value
         if element.xpath('xsd:complexType[@mixed="true"] or xsd:complexType/xsd:simpleContent', namespaces=namespaces) or xsd_type != '':
             rows = [{
-                "name": element_name ,
+                "name": element_name,
                 'path': full_path,
-                "solr_field_name": solr_name ,
+                "solr_field_name": solr_name,
                 'type': xsd_type,
                 'solr_type': xsd_type_to_solr(solr_name, xsd_type),
                 'required': required,
@@ -74,7 +75,7 @@ class Schema2Solr(Schema2Doc):
 
         for a_name, a_type, a_description, a_required in self.attribute_loop(element):
             full_path = '/'.join(path.split('/')[1:]) + element_name + '/@' + a_name
-            solr_name = path_to_solr(full_path)      
+            solr_name = path_to_solr(full_path)
 
             rows.append({
                 'attribute_name': a_name,
@@ -108,10 +109,10 @@ class Schema2Solr(Schema2Doc):
                 for row in rows:
                     if row['solr_field_name'] in ['dataset', 'dataset_iati_activity']:
                         continue
-                    
+
                     line = '<field '
                     line += 'name="' + row['solr_field_name'] + '" '
-                    line += 'type="' + row['solr_type'] + '" ' 
+                    line += 'type="' + row['solr_type'] + '" '
                     line += 'multiValued="' + row['solr_multivalued'] + '" '
                     line += 'indexed="true" '
                     line += 'required="false" '
@@ -134,8 +135,7 @@ if __name__ == '__main__':
     activities = Schema2Solr('iati-activities-schema.xsd', lang='en')
     activities.output_solr(
         'iati-activities', 'activity-standard/', output=True, template_path=solrconfig_template,
-        filename=solrconfig_dest, collection=collection
-        , out_type='order'
+        filename=solrconfig_dest, collection=collection, out_type='order'
     )
     activities.output_solr(
         'iati-activities', 'activity-standard/', minOccurs='1', maxOccurs='1', output=True, template_path=solrschema_template,
