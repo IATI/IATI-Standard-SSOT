@@ -322,12 +322,18 @@ class Schema2Doc(object):
                 return
 
         extended_types = element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces)
+        base_type = element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else ''
+        if type_element:
+            complex_base_types = type_element.xpath('xsd:simpleContent/xsd:extension/@base', namespaces=namespaces)
+            if base_type == '':
+                base_type = ','.join([x for x in complex_base_types if x.startswith('xsd:')])
+
         rows = [{
             'name': element_name,
             'path': '/'.join(path.split('/')[1:]) + element_name,
             'doc': '/' + path + element_name,
             'description': textwrap.dedent(self.schema_documentation(element, ref_element, type_element)),
-            'type': element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else '',
+            'type': base_type,
             'occur': (minOccurs or '') + '..' + ('*' if maxOccurs == 'unbounded' else maxOccurs or ''),
             'section': len(path.split('/')) < 5
         }]
