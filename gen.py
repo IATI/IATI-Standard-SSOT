@@ -324,9 +324,9 @@ class Schema2Doc(object):
         extended_types = element.xpath('xsd:complexType/xsd:simpleContent/xsd:extension/@base', namespaces=namespaces)
         base_type = element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else ''
         if type_element:
-            complex_base_types = type_element.xpath('xsd:simpleContent/xsd:extension/@base', namespaces=namespaces)
-            if base_type == '':
-                base_type = ','.join([x for x in complex_base_types if x.startswith('xsd:')])
+            complex_base_types = [x for x in type_element.xpath('xsd:simpleContent/xsd:extension/@base', namespaces=namespaces) if x.startswith('xsd:')]
+            if complex_base_types and base_type == '':
+                base_type = complex_base_types[0]
 
         rows = [{
             'name': element_name,

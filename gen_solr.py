@@ -53,9 +53,10 @@ class Schema2Solr(Schema2Doc):
         full_path = '/'.join(path.split('/')[1:]) + element_name
         solr_name = path_to_solr(full_path)
         xsd_type = element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else ''
-        complex_base_types = [x for x in type_element.xpath('xsd:simpleContent/xsd:extension/@base', namespaces=namespaces) if x.startswith('xsd:')]
-        if complex_base_types and xsd_type == '':
-            xsd_type = complex_base_types[0]
+        if type_element:
+            complex_base_types = [x for x in type_element.xpath('xsd:simpleContent/xsd:extension/@base', namespaces=namespaces) if x.startswith('xsd:')]
+            if complex_base_types and xsd_type == '':
+                xsd_type = complex_base_types[0]
         required = (minOccurs == '1') and parent_req
         if element_name == 'iati-activity':
             maxOccurs = '1'
