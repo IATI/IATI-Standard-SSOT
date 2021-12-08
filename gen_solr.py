@@ -55,7 +55,7 @@ class Schema2Solr(Schema2Doc):
         xsd_type = element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else ''
         if type_element is not None:
             complex_base_types = [x for x in type_element.xpath('xsd:simpleContent/xsd:extension/@base', namespaces=namespaces) if x.startswith('xsd:')]
-            if complex_base_types and xsd_type == '':
+            if len(complex_base_types) and xsd_type == '':
                 xsd_type = complex_base_types[0]
         required = (minOccurs == '1') and parent_req
         if element_name == 'iati-activity':
