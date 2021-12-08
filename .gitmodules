@@ -5,7 +5,7 @@
 [submodule "IATI-Rulesets"]
 	path = IATI-Rulesets
 	url = https://github.com/IATI/IATI-Rulesets.git
-	branch = v2.01/validatorV2
+	branch = version-2.01
 [submodule "IATI-Codelists"]
 	path = IATI-Codelists
 	url = https://github.com/IATI/IATI-Codelists.git
