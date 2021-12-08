@@ -37,8 +37,7 @@ def xsd_type_to_solr(element_name=None, xsd_type=None):
         'xsd:boolean': 'boolean',
         'xsd:nonNegativeInteger': 'pint',
         'xsd:positiveInteger': 'pint',
-        'xsd:int': 'pint',
-        'currencyType': 'pdoubles'
+        'xsd:int': 'pint'
     }
     return switch.get(xsd_type, "text_gen_sort")
 
@@ -53,7 +52,11 @@ class Schema2Solr(Schema2Doc):
 
         full_path = '/'.join(path.split('/')[1:]) + element_name
         solr_name = path_to_solr(full_path)
-        xsd_type = element.get('type') if element.get('type') and (element.get('type').startswith('xsd:') or element.get('type') == 'currencyType') else ''
+        xsd_type = element.get('type') if element.get('type') and element.get('type').startswith('xsd:') else ''
+        if type_element is not None:
+            complex_base_types = [x for x in type_element.xpath('xsd:simpleContent/xsd:extension/@base', namespaces=namespaces) if x.startswith('xsd:')]
+            if len(complex_base_types) and xsd_type == '':
+                xsd_type = complex_base_types[0]
         required = (minOccurs == '1') and parent_req
         if element_name == 'iati-activity':
             maxOccurs = '1'
