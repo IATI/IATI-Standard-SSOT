@@ -270,7 +270,7 @@ class Schema2Doc(object):
         rst_filename = os.path.join(self.lang, path, element_name + '.rst')
 
         children = self.element_loop(element, path)
-        for child_name, child_element, child_ref_element, child_minOccurs, child_maxOccurs in children:
+        for child_name, child_element, child_ref_element, child_type_element, child_minOccurs, child_maxOccurs in children:
             self.output_docs(child_name, path + element.attrib['name'] + '/', child_element, child_minOccurs, child_maxOccurs, child_ref_element)
 
         min_occurss = element.xpath('xsd:complexType/xsd:choice/@minOccur', namespaces=namespaces)
@@ -306,7 +306,7 @@ class Schema2Doc(object):
                 see_also=see_also(path + element_name, self.lang)
             ))
 
-    def output_schema_table(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None):
+    def output_schema_table(self, element_name, path, element=None, output=False, filename='', title='', minOccurs='', maxOccurs='', ref_element=None, type_element=None):
         if element is None:
             element = self.get_schema_element('element', element_name)
             if element is None:
@@ -344,8 +344,8 @@ class Schema2Doc(object):
                 'occur': '1..1' if a_required else '0..1'
             })
 
-        for child_name, child_element, child_ref_element, minOccurs, maxOccurs in self.element_loop(element, path):
-            rows += self.output_schema_table(child_name, path + element.attrib['name'] + '/', child_element, minOccurs=minOccurs, maxOccurs=maxOccurs, ref_element=child_ref_element)
+        for child_name, child_element, child_ref_element, child_type_element, minOccurs, maxOccurs in self.element_loop(element, path):
+            rows += self.output_schema_table(child_name, path + element.attrib['name'] + '/', child_element, minOccurs=minOccurs, maxOccurs=maxOccurs, ref_element=child_ref_element, type_element=child_type_element)
 
         if output:
             with open(os.path.join('docs', self.lang, filename), 'w') as fp:
@@ -398,10 +398,10 @@ class Schema2Doc(object):
                 str: Element name,
                 lxml.etree._Element: Represention of the element,
                 Unknown: ref element,
+                lxml.etree._Element or None: type_element,
                 str: minimum number of occurances,
                 str: maximum number of occurances (could be a number or 'unbounded')
         """
-
         a = element.attrib
         type_elements = []
         if 'type' in a:
@@ -412,6 +412,17 @@ class Schema2Doc(object):
                     complexType.findall('xsd:sequence/xsd:element', namespaces=namespaces) +
                     complexType.findall('xsd:complexContent/xsd:extension/xsd:sequence/xsd:element', namespaces=namespaces))
 
+                # If this complexType is an extension of another complexType, find the base element and include any child elements
+                try:
+                    base_name = complexType.find('xsd:complexContent/xsd:extension', namespaces=namespaces).attrib.get('base')
+                    base_type_element = self.get_schema_element('complexType', base_name)
+                    type_elements += (
+                        base_type_element.findall('xsd:choice/xsd:element', namespaces=namespaces) +
+                        base_type_element.findall('xsd:sequence/xsd:element', namespaces=namespaces))
+                except AttributeError:
+                    pass
+                    # This complexType is not extended from a complexType base
+
         children = (
             element.findall('xsd:complexType/xsd:choice/xsd:element', namespaces=namespaces)
             + element.findall('xsd:complexType/xsd:sequence/xsd:element', namespaces=namespaces)
@@ -421,10 +432,16 @@ class Schema2Doc(object):
         child_tuples = []
         for child in children:
             a = child.attrib
-            if 'name' in a:
-                child_tuples.append((a['name'], child, None, a.get('minOccurs'), a.get('maxOccurs')))
+            if 'type' in a:
+                type_element = self.get_schema_element('complexType', a['type'])
             else:
-                child_tuples.append((a['ref'], None, child, a.get('minOccurs'), a.get('maxOccurs')))
+                type_element = None
+
+            if 'name' in a:
+                child_tuples.append((a['name'], child, None, type_element, a.get('minOccurs'), a.get('maxOccurs')))
+            else:
+                child_tuples.append((a['ref'], None, child, type_element, a.get('minOccurs'), a.get('maxOccurs')))
+
         return child_tuples
 
     def attribute_loop(self, element):
