@@ -40,11 +40,13 @@ This element must occur {{minOccurs}} to {{maxOccurs}} times.
 {% endif %}
 {% endif %}
 
-{% set rtext = ruleset_text(path+element_name) %}
-{% if rtext %}
+{% set rtexts = ruleset_text(path+element_name) %}
+{% if rtexts %}
 
 
-{{'\n\n'.join(rtext)}}
+{% for rtext in rtexts %}
+`{{ rtext[0] }} <{{ rtext[2 ]}}>`_: {{ rtext[1] }}{{ '\n' }}
+{% endfor %}
 
 {%endif%}
 
@@ -69,7 +71,15 @@ Attributes
 
 {% endfor %}
 
-  {{ '\n\n  '.join(ruleset_text(path+element_name+'/@'+attribute)) }}
+{% set rtexts_attrib = ruleset_text(path+element_name+'/@'+attribute) %}
+{% if rtexts_attrib %}
+
+{% for rtext_attrib in rtexts_attrib %}
+  `{{ rtext_attrib[0] }} <{{ rtext_attrib[2] }}>`_: {{ rtext_attrib[1] }}{{ '\n' }}
+{% endfor %}
+
+{% endif %}
+
 
 {% endfor %}
 

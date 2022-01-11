@@ -72,7 +72,7 @@ standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
 
 def ruleset_page(lang):
     jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
-    ruleset = {xpath: rules_text(rules, '', True) for xpath, rules in standard_ruleset.items()}
+    ruleset = {xpath: rules_text(rules) for xpath, rules in standard_ruleset.items()}
     rst_filename = os.path.join(lang, 'rulesets', 'standard-ruleset.rst')
 
     try:
@@ -92,13 +92,12 @@ def ruleset_text(path):
     """ Return a list of text describing the rulesets for a given path (xpath) """
     out = []
     for xpath, rules in standard_ruleset.items():
-        if xpath.startswith('//'):
-            try:
-                # Use slice 1: to ensure we match /budget/ but not /total-budget/
-                reduced_path = path.split(xpath[1:] + '/')[1]
-            except IndexError:
-                continue
-            out += rules_text(rules, reduced_path)
+        try:
+            # Use slice 1: to ensure we match /budget/ but not /total-budget/
+            reduced_path = path.split(xpath[1:] + '/')[1]
+        except IndexError:
+            continue
+        out += rules_text(rules, reduced_path)
     return out
 
 
