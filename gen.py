@@ -80,7 +80,7 @@ standard_ruleset = json.load(open('./IATI-Rulesets/rulesets/standard.json'))
 
 def ruleset_page(lang):
     jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader('templates'))
-    ruleset = {xpath: rules_text(rules, '', True) for xpath, rules in standard_ruleset.items()}
+    ruleset = {xpath: rules_text(rules) for xpath, rules in standard_ruleset.items()}
     rst_filename = os.path.join(lang, 'rulesets', 'standard-ruleset.rst')
 
     try:
@@ -100,13 +100,12 @@ def ruleset_text(path):
     """ Return a list of text describing the rulesets for a given path (xpath) """
     out = []
     for xpath, rules in standard_ruleset.items():
-        if xpath.startswith('//'):
-            try:
-                # Use slice 1: to ensure we match /budget/ but not /total-budget/
-                reduced_path = path.split(xpath[1:] + '/')[1]
-            except IndexError:
-                continue
-            out += rules_text(rules, reduced_path)
+        try:
+            # Use slice 1: to ensure we match /budget/ but not /total-budget/
+            reduced_path = path.split(xpath[1:] + '/')[1]
+        except IndexError:
+            continue
+        out += rules_text(rules, reduced_path)
     return out
 
 
@@ -407,21 +406,21 @@ class Schema2Doc(object):
         if 'type' in a:
             complexType = self.get_schema_element('complexType', a['type'])
             if complexType is not None:
-                type_elements = (
-                    complexType.findall('xsd:choice/xsd:element', namespaces=namespaces) +
-                    complexType.findall('xsd:sequence/xsd:element', namespaces=namespaces) +
-                    complexType.findall('xsd:complexContent/xsd:extension/xsd:sequence/xsd:element', namespaces=namespaces))
-
                 # If this complexType is an extension of another complexType, find the base element and include any child elements
                 try:
                     base_name = complexType.find('xsd:complexContent/xsd:extension', namespaces=namespaces).attrib.get('base')
                     base_type_element = self.get_schema_element('complexType', base_name)
-                    type_elements += (
+                    type_elements = (
                         base_type_element.findall('xsd:choice/xsd:element', namespaces=namespaces) +
                         base_type_element.findall('xsd:sequence/xsd:element', namespaces=namespaces))
                 except AttributeError:
                     pass
                     # This complexType is not extended from a complexType base
+
+                type_elements += (
+                    complexType.findall('xsd:choice/xsd:element', namespaces=namespaces) +
+                    complexType.findall('xsd:sequence/xsd:element', namespaces=namespaces) +
+                    complexType.findall('xsd:complexContent/xsd:extension/xsd:sequence/xsd:element', namespaces=namespaces))
 
         children = (
             element.findall('xsd:complexType/xsd:choice/xsd:element', namespaces=namespaces)
