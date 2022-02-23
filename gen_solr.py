@@ -102,6 +102,10 @@ class Schema2Solr(Schema2Doc):
                 for i, row in enumerate(rows):
                     if row['solr_field_name'] in ['dataset', 'dataset_iati_activity']:
                         continue
+                    if collection == 'transaction' and row['solr_field_name'].startswith('budget_'):
+                        continue
+                    if collection == 'budget' and row['solr_field_name'].startswith('transaction_'):
+                        continue
                     order_out += row['solr_field_name']
                     if i < stop - 1:
                         order_out += ','
