@@ -97,16 +97,25 @@ class Schema2Solr(Schema2Doc):
             template = Path(template_path).read_text()
             out = ''
             if out_type == 'order':
-                order_out = '<str name="fl">'
+                full_order_out = '<str name="fl">'
+                partial_order_out = '<str name="fl">'
                 stop = len(rows)
                 for i, row in enumerate(rows):
                     if row['solr_field_name'] in ['dataset', 'dataset_iati_activity']:
                         continue
-                    order_out += row['solr_field_name']
+                    full_order_out += row['solr_field_name']
                     if i < stop - 1:
-                        order_out += ','
-                order_out += '</str>'
-                out = template.replace("#SEARCHDEFAULTS#", order_out)
+                        full_order_out += ','
+                    if collection == 'transaction' and row['solr_field_name'].startswith('budget_'):
+                        continue
+                    if collection == 'budget' and row['solr_field_name'].startswith('transaction_'):
+                        continue
+                    partial_order_out += row['solr_field_name']
+                    if i < stop - 1:
+                        partial_order_out += ','
+                full_order_out += '</str>'
+                partial_order_out += '</str>'
+                out = template.replace("#SEARCHDEFAULTS#", full_order_out).replace("#PARTIALSEARCHDEFAULTS#", partial_order_out)
             if out_type == 'schema':
                 schema_rows = ''
                 for row in rows:
