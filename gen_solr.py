@@ -106,7 +106,7 @@ class Schema2Solr(Schema2Doc):
                     full_order_out += row['solr_field_name']
                     if i < stop - 1:
                         full_order_out += ','
-                    if collection == 'transaction' and row['solr_field_name'].startswith('budget_'):
+                    if collection == 'transaction' and row['solr_field_name'].startswith('budget_') and row['solr_field_name'] != 'budget_not_provided':
                         continue
                     if collection == 'budget' and row['solr_field_name'].startswith('transaction_'):
                         continue
