@@ -130,11 +130,18 @@ class Schema2Solr(Schema2Doc):
             if len(codelist_name_tup) != 0:
                 codelist_name = codelist_name_tup[0][0]
                 codelist_condition = codelist_name_tup[0][1]
+
+            # use parent description if attribute description is blank (mainly for @iso-date)
+            description = ''
+            if a_description == '':
+                description = self.schema_documentation(element, ref_element, type_element)
+            else:
+                description = a_description
             rows.append({
                 'field': solr_name,
                 "label": field_to_label(solr_name),
                 'type': 'select' if codelist_name != '' else xsd_type_to_search(solr_name, xsd_type=a_type),
-                'description': textwrap.dedent(a_description),
+                'description': textwrap.dedent(description),
                 'codelist_name': codelist_name,
                 'codelist_condition': codelist_condition,
                 'attribute_name': a_name,
