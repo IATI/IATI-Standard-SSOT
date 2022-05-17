@@ -29,7 +29,7 @@ def match_codelists(path):
                 tup = (codelist, '' if condition is None else condition.text)
                 codelist_tuples.append(tup)
             else:
-                pass 
+                pass
     return codelist_tuples
 
 
