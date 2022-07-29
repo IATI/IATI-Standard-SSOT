@@ -3,6 +3,8 @@
 pyenv*
 .DS_Store
 .vscode
+**/__pycache__
+./pytest_cache
 
 # Output HTML folders
 docs/
