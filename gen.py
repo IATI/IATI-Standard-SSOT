@@ -39,18 +39,18 @@ def get_github_url(repo, path=''):
     return 'https://github.com/IATI/{0}/blob/{1}/{2}'.format(repo, github_branches[repo], path)
 
 
-def human_list(l):
+def human_list(original_list):
     """Return a human-friendly version of a list.
 
     Currently seperates list items with commas, but could be extended to insert 'and'/'or' correctly.
 
     Args:
-        l (list): The list to be made human-friendly.
+        original_list (list): The list to be made human-friendly.
 
     Returns:
         str: The human-friendly represention of the list.
     """
-    return ', '.join(l)
+    return ', '.join(original_list)
 
 
 def lookup_see_also(standard, mapping, path):
