@@ -159,14 +159,14 @@ class Schema2Solr(Schema2Doc):
             if out_type == 'filter':
                 out = list(filter(filter_columns, rows))
                 with open(filename, 'w') as fp:
-                    json.dump(out, fp)
+                    json.dump(out, fp, indent=2)
                 codelists = {}
                 for row in out:
                     if 'codelist_name' in row and row['codelist_name'] != '':
                         name = row['codelist_name']
                         codelists[name] = (get_codelist_json(name))
                 with open(codelist_dest, 'w') as fp:
-                    json.dump(codelists, fp)
+                    json.dump(codelists, fp, indent=2)
         return rows
 
 
