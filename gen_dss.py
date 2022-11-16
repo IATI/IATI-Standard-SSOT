@@ -125,11 +125,8 @@ class Schema2Solr(Schema2Doc):
             full_path = '/'.join(path.split('/')[1:]) + element_name + '/@' + a_name
             solr_name = path_to_solr(full_path)
             codelist_name_tup = match_codelists(full_path)
-            codelist_name = ''
-            codelist_condition = ''
-            if len(codelist_name_tup) != 0:
-                codelist_name = codelist_name_tup[0][0]
-                codelist_condition = codelist_name_tup[0][1]
+            codelist_names = [tup[0] for tup in codelist_name_tup]
+            codelist_conditions = [tup[1] for tup in codelist_name_tup]
 
             # use parent description if attribute description is blank (mainly for @iso-date)
             description = ''
@@ -140,10 +137,10 @@ class Schema2Solr(Schema2Doc):
             rows.append({
                 'field': solr_name,
                 "label": field_to_label(solr_name),
-                'type': 'select' if codelist_name != '' else xsd_type_to_search(solr_name, xsd_type=a_type),
+                'type': 'combo' if len(codelist_conditions) > 0 else 'select' if len(codelist_names) > 0 else xsd_type_to_search(solr_name, xsd_type=a_type),
                 'description': textwrap.dedent(description),
-                'codelist_name': codelist_name,
-                'codelist_condition': codelist_condition,
+                'codelist_names': codelist_names,
+                'codelist_conditions': codelist_conditions,
                 'attribute_name': a_name,
                 'path': full_path,
                 'xsd_type': a_type,
