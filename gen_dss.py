@@ -125,8 +125,8 @@ class Schema2Solr(Schema2Doc):
             full_path = '/'.join(path.split('/')[1:]) + element_name + '/@' + a_name
             solr_name = path_to_solr(full_path)
             codelist_name_tup = match_codelists(full_path)
-            codelist_names = [tup[0] for tup in codelist_name_tup]
-            codelist_conditions = [tup[1] for tup in codelist_name_tup]
+            codelist_names = [tup[0] for tup in codelist_name_tup if tup[0] != '']
+            codelist_conditions = [tup[1] for tup in codelist_name_tup if tup[1] != '']
 
             # use parent description if attribute description is blank (mainly for @iso-date)
             description = ''
