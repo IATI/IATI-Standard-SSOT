@@ -4,7 +4,7 @@ lxml==5.1.0
 flake8==7.0.0
 Jinja2==3.1.3
 pytz==2024.1
-python-dateutil==2.8.2
+python-dateutil==2.9.0
 # These are requirements above, added here to pin versions
 docutils==0.20.1
 Pygments==2.17.2
