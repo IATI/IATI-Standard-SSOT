@@ -1,5 +1,5 @@
 pip==24.0
-Sphinx==7.2.6
+Sphinx==7.4.7
 lxml==5.1.0
 flake8==7.0.0
 Jinja2==3.1.3
