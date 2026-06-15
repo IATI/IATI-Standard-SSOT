@@ -24,6 +24,10 @@ An additional 3 repos, IATI-Developer-Documentation, IATI-Guidance and IATI-Webs
 Updating the SSOT
 -----------------
 
+If your update is to IATI-Codelists-NonEmbedded, you don't need to update this repo; just go straight to the Reference Generator. 
+
+If your update is to one of the repos included via a submodule, then you need to update the SSOT before using the Reference Generator.
+
 Once the PR(s) have been merged into the relevant repos:
 
 Check out the repo:::
